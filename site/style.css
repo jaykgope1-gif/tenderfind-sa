@@ -123,3 +123,22 @@ select {
 /* Footer */
 .foot { border-top: 1px solid var(--line); padding: 16px 0 28px; color: var(--muted); font-size: 0.88rem; }
 .foot a { font-weight: 600; color: var(--ink); }
+
+/* Tender pages (site/tender/<id>.html) */
+.page { padding-top: 12px; padding-bottom: 8px; }
+.crumbs { margin: 0 0 10px; }
+.crumbs a { font-weight: 600; }
+.card h3 a { text-decoration: none; }
+.card h3 a:hover { text-decoration: underline; }
+.tender h1 { font-size: 1.3rem; line-height: 1.3; margin: 2px 0 6px; }
+.tag.closed { background: var(--muted); color: var(--card); }
+.closed-note { background: var(--soon-bg); border-left: 4px solid var(--soon); border-radius: 8px; padding: 12px 14px; margin: 0 0 12px; }
+.closed-note[hidden] { display: none; }
+.similar h2 { font-size: 1.1rem; margin: 20px 0 6px; }
+.similar ol { list-style: none; margin: 0; padding: 0; }
+.similar li { background: var(--card); border: 1px solid var(--line); border-radius: 10px; margin: 0 0 8px; }
+.similar li a { display: block; padding: 10px 12px; text-decoration: none; }
+.similar li b { display: block; }
+.similar li span { display: block; font-size: 0.88rem; color: var(--muted); }
+.similar li .due { color: var(--ink); font-weight: 600; margin: 2px 0 0; }
+.similar li .due.soon { color: var(--soon); }

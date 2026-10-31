@@ -12,7 +12,7 @@ function fail(msg) {
   process.exit(1);
 }
 
-for (const f of ["index.html", "app.js", "format.js", "style.css", "data/tenders.json"]) {
+for (const f of ["index.html", "app.js", "format.js", "style.css", "data/tenders.json", "sitemap.xml", "robots.txt", "404.html"]) {
   if (!fs.existsSync(path.join(SITE, f))) fail(`missing site/${f}`);
 }
 
@@ -27,5 +27,9 @@ if (list.length < MIN_TENDERS) fail(`only ${list.length} open tenders (minimum $
 
 const missing = list.filter((t) => !fs.existsSync(path.join(SITE, "data", "t", `${t.id}.json`)));
 if (missing.length) fail(`${missing.length} tender detail files missing (e.g. ${missing[0].id})`);
+const noPage = list.filter((t) => !fs.existsSync(path.join(SITE, "tender", `${t.id}.html`)));
+if (noPage.length) fail(`${noPage.length} tender pages missing (e.g. tender/${noPage[0].id}.html)`);
+const inMap = (fs.readFileSync(path.join(SITE, "sitemap.xml"), "utf8").match(/<loc>/g) || []).length;
+if (inMap < list.length + 1) fail(`sitemap.xml lists ${inMap} URLs, expected at least ${list.length + 1}`);
 
-console.log(`✓ Site OK: ${list.length} open tenders, all detail files present.`);
+console.log(`✓ Site OK: ${list.length} open tenders, all detail files and pages present, sitemap has ${inMap} URLs.`);

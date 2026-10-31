@@ -54,7 +54,38 @@
     return { text, soon: days <= 3, closed: false };
   }
 
-  const api = { NOT_STATED, esc, fieldHtml, briefingText, shortDate, closingText, countdown, ymd };
+  // Plain-English summary, built only from stated facts.
+  function detailHtml(d) {
+    const docUrl = d.documents[0]?.url;
+    // Evidence snippets start at an arbitrary character; begin at the next whole word.
+    const why = (f) => (f.snippet ? `<span class="why">From the documents: “…${esc(f.snippet.replace(/^\S*\s/, "").slice(0, 160))}…”</span>` : "");
+    const where = d.location.value
+      ? fieldHtml(d.location, docUrl)
+      : fieldHtml(d.province, docUrl) + (d.province.source === "buyer-mapping" ? ` <small class="auto">${d.province.value === "National" ? "national buyer, site may be anywhere" : "based on who is buying"}</small>` : "");
+    const reqs = [
+      ["CIDB grade", d.cidb_grade],
+      ["B-BBEE minimum level", d.bbbee_level],
+      ["CSD registration", d.csd_required, () => "Required"],
+    ];
+    const docs = d.documents.length
+      ? `<ol class="docs">${d.documents.map((x) => `<li><a href="${esc(x.url)}" target="_blank" rel="nofollow noopener">${esc(x.title || "Document")}</a></li>`).join("")}</ol>`
+      : `<p class="missing">${esc(NOT_STATED)}</p>`;
+    const updated = d.updated
+      ? `<p class="upd-note">Updated ${esc(shortDate(d.updated))}: ${esc((d.changes || []).join(" and ") || "details")} changed since first published.</p>`
+      : "";
+    return `${updated}<dl>
+      <dt>What they want</dt><dd>${esc(d.description || NOT_STATED)}</dd>
+      <dt>Who is buying</dt><dd>${esc(d.buyer || NOT_STATED)}${d.type ? ` · ${esc(d.type)}` : ""}${d.reference ? ` · Ref ${esc(d.reference)}` : ""}</dd>
+      <dt>Where</dt><dd>${where}</dd>
+      <dt>Closing date</dt><dd>${esc(closingText(d.closing))}</dd>
+      <dt>Briefing session</dt><dd>${fieldHtml(d.briefing, docUrl, briefingText)}${why(d.briefing)}</dd>
+      ${reqs.map(([label, f, fmt]) => `<dt>${label}</dt><dd>${fieldHtml(f, docUrl, fmt)}${why(f)}</dd>`).join("")}
+      <dt>Tender documents</dt><dd>${docs}</dd>
+      <dt>Official record</dt><dd><a href="${esc(d.source)}" target="_blank" rel="nofollow noopener">National Treasury eTenders data</a></dd>
+    </dl>`;
+  }
+
+  const api = { NOT_STATED, esc, fieldHtml, briefingText, shortDate, closingText, countdown, detailHtml, ymd };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.TF = api;
 })(typeof window !== "undefined" ? window : globalThis);

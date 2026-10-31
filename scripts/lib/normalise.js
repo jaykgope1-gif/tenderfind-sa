@@ -12,7 +12,7 @@ const TRADES = [
   // Titles that open with "supply ..." / "purchase of" / "to procure" are buying goods.
   ["Supplies", /^(re-?advertisement:?\s*)?(request for (a )?quot\w*\s*(\(rfq\))?\s*(for|of)?\s*(the )?)?(supply|purchase of|to procure)\b/i],
   ["Security", /\b(security services?|security (systems?|company|guards?|officers?)|guarding|guards?|cctv|access control|alarm|armed response|surveillance)\b/i],
-  ["Cleaning", /\b(cleaning|cleaners?|hygiene|sanitary|sanitation services|pest control|fumigation|refuse|waste|grass cutting|garden(ing)?|grounds maintenance|landscaping|horticultur\w*|laundry|alien (invasive )?(vegetation|plant)|invasive|vegetation (clearing|management)|firebreaks?|beautification|dredging)\b/i],
+  ["Cleaning", /\b(cleaning|cleaners?|hygiene|sanitary|sanitation services|pest control|fumigation|refuse|waste|grass cutting|garden(ing)?(?! route)|grounds maintenance|landscaping|horticultur\w*|laundry|alien (invasive )?(vegetation|plant)|invasive|vegetation (clearing|management)|firebreaks?|beautification|dredging)\b/i],
   ["Catering", /\b(catering|meals|food|refreshments|canteen|kitchen)\b/i],
   ["Transport", /\b(transport(ation)?|vehicle hire|car hire|bus(es)?|fleet|shuttle|courier|logistics|travel management|removal of furniture|aircraft|uld pallets|gear ?box(es)?|gerbox(es)?|diffs|mercedes|fuel bowsers?|mobile crane|trucks?)\b/i],
   // Electrical/mechanical equipment: named outright, or any maintenance/repair word plus a piece of kit.

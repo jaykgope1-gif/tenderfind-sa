@@ -6,14 +6,22 @@
 //   site/data/tenders.json      compact index of all open tenders (what the search page loads)
 //   site/data/p/<province>.json the same, one file per province
 //   site/data/t/<id>.json       full detail per tender, fetched when someone taps "View"
+//   site/tender/<id>.html       a page per tender, open or closed within the last year (data/archive)
+//   site/sitemap.xml, site/robots.txt, site/404.html
 // Read-only on data/extracted.json, so it is safe to run while extraction is in progress.
 const fs = require("fs");
 const path = require("path");
 const { STORE, loadTenders } = require("./lib/store");
 const { classify } = require("./lib/normalise");
+const { loadArchive } = require("./lib/archive");
+const pages = require("./lib/pages");
 
 const ROOT = path.join(__dirname, "..");
-const OUT = path.join(ROOT, "site", "data");
+const SITE = path.join(ROOT, "site");
+const OUT = path.join(SITE, "data");
+const PAGES = path.join(SITE, "tender");
+// Where the site is published; change it here (or set SITE_URL) when a custom domain is added.
+const SITE_URL = (process.env.SITE_URL || "https://jaykgope1-gif.github.io/tenderfind-sa").replace(/\/$/, "");
 
 function arg(name) {
   const i = process.argv.indexOf(`--${name}`);
@@ -43,17 +51,20 @@ function main() {
   const extracted = readJsonRetry(path.join(ROOT, "data", "extracted.json"), {});
   const now = new Date();
 
-  const tenders = loadTenders(input)
-    .map(classify)
+  const stored = loadTenders(input).map(classify);
+  const tenders = stored
     .filter((t) => new Date(t.closing) > now)
     .filter((t) => !ids || ids.has(t.id))
     .sort((a, b) => a.closing.localeCompare(b.closing));
 
   fs.rmSync(OUT, { recursive: true, force: true });
+  fs.rmSync(PAGES, { recursive: true, force: true });
+  fs.mkdirSync(PAGES, { recursive: true });
   fs.mkdirSync(path.join(OUT, "t"), { recursive: true });
   fs.mkdirSync(path.join(OUT, "p"), { recursive: true });
 
   const index = [];
+  const details = [];
   for (const t of tenders) {
     const x = extracted[t.id]?.fields || {};
     const b = val(x.briefing);
@@ -88,7 +99,9 @@ function main() {
       location: field(x.location),
     };
     fs.writeFileSync(path.join(OUT, "t", `${t.id}.json`), JSON.stringify(detail));
+    details.push(detail);
   }
+  if (!ids) writePages(details, stored, now);
 
   const meta = { updated: now.toISOString(), count: index.length };
   fs.writeFileSync(path.join(OUT, "tenders.json"), JSON.stringify({ ...meta, tenders: index }));
@@ -102,6 +115,33 @@ function main() {
   const size = fs.statSync(path.join(OUT, "tenders.json")).size;
   const withX = index.filter((r) => extracted[r.id]).length;
   console.log(`Built ${index.length} open tenders (${withX} with PDF extraction), index ${(size / 1024).toFixed(1)} KB, ${Object.keys(byProvince).length} province files`);
+}
+
+// One page per tender. Closed ones come from the archive (plus any in the store that closed since
+// the last fetch) and point people to similar open tenders.
+function writePages(open, stored, now) {
+  const openIds = new Set(open.map((t) => t.id));
+  const closedById = new Map();
+  for (const t of [...loadArchive(now).map(classify), ...stored.filter((t) => !openIds.has(t.id))]) {
+    if (!openIds.has(t.id)) closedById.set(t.id, t);
+  }
+  const openByTrade = {};
+  for (const t of open) (openByTrade[t.trade] ||= []).push(t);
+
+  const listed = [];
+  const write = (t, closed) => {
+    const html = pages.tenderPage(t, { siteUrl: SITE_URL, closed, similarList: pages.similar(t, openByTrade) });
+    fs.writeFileSync(path.join(PAGES, `${t.id}.html`), html);
+    listed.push({ id: t.id, lastmod: pages.ymdOf(closed ? t.closing : t.updated || t.firstSeen || t.published) });
+  };
+  for (const t of open) write(t, false);
+  for (const t of closedById.values()) write(t, true);
+
+  const today = now.toISOString().slice(0, 10);
+  fs.writeFileSync(path.join(SITE, "sitemap.xml"), pages.sitemap(SITE_URL, listed, today));
+  fs.writeFileSync(path.join(SITE, "robots.txt"), pages.robots(SITE_URL));
+  fs.writeFileSync(path.join(SITE, "404.html"), pages.notFound(SITE_URL));
+  console.log(`Pages: ${open.length} open + ${closedById.size} closed tender pages, sitemap with ${listed.length + 1} URLs`);
 }
 
 main();

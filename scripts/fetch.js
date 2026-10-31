@@ -14,6 +14,7 @@ const path = require("path");
 const crypto = require("crypto");
 const { normalise } = require("./lib/normalise");
 const { STORE, ROOT, writeJsonAtomic, loadTenders } = require("./lib/store");
+const { addToArchive } = require("./lib/archive");
 
 const API = process.env.ETENDERS_API || "https://ocds-api.etenders.gov.za/api/OCDSReleases";
 const CACHE = path.join(ROOT, "data", "extracted.json");
@@ -104,7 +105,7 @@ function latestPerOcid(releases) {
 // Pure merge so it can be tested: returns the new tender list plus what happened.
 function merge(existing, releases, now = new Date(), today = now.toISOString().slice(0, 10)) {
   const byId = new Map(existing.map((t) => [t.id, t]));
-  const result = { added: [], updated: [], unchanged: 0, removed: [] };
+  const result = { added: [], updated: [], unchanged: 0, removed: [], closed: [] };
 
   for (const r of latestPerOcid(releases)) {
     const t = normalise(r);
@@ -136,7 +137,7 @@ function merge(existing, releases, now = new Date(), today = now.toISOString().s
   }
 
   for (const [id, t] of byId) {
-    if (!t.closing || new Date(t.closing) <= now) { byId.delete(id); result.removed.push(id); }
+    if (!t.closing || new Date(t.closing) <= now) { byId.delete(id); result.removed.push(id); result.closed.push(t); }
   }
   const tenders = [...byId.values()].sort((a, b) => a.closing.localeCompare(b.closing));
   return { tenders, ...result };
@@ -204,6 +205,8 @@ async function main() {
   for (const id of [...m.updated.map((u) => u.id), ...m.removed]) if (cache[id]) { delete cache[id]; dropped++; }
   if (dropped) writeJsonAtomic(CACHE, cache, true);
 
+  // Closed tenders move to data/archive so their pages can say "This tender has closed".
+  if (m.closed.length) addToArchive(m.closed);
   writeJsonAtomic(STORE, { fetched_at: now.toISOString(), count: m.tenders.length, tenders: m.tenders });
 
   Object.assign(entry, { releases: releases.length, added: m.added.length, updated: m.updated, unchanged: m.unchanged, removed: m.removed.length, total: m.tenders.length });

@@ -1,6 +1,6 @@
 // TenderFind SA search page. Plain JS, no framework: loads data/tenders.json once and filters in memory.
 (function () {
-  const { esc, fieldHtml, briefingText, shortDate, closingText, countdown, ymd, NOT_STATED } = window.TF;
+  const { esc, shortDate, closingText, countdown, detailHtml, ymd } = window.TF;
 
   const TRADES = ["Cleaning", "Security", "Construction", "Maintenance & repairs", "Catering", "IT", "Transport", "Supplies", "Professional services", "Other"];
   const PAGE = 30;
@@ -22,7 +22,7 @@
   const today = () => ymd.format(new Date());
   const daysUntil = (iso) => Math.round((Date.parse(ymd.format(new Date(iso))) - Date.parse(today())) / 864e5);
   const isNew = (t) => -daysUntil(t.pu) < NEW_DAYS;
-  const tenderUrl = (id) => `${location.origin}${location.pathname}#t${id}`; // step 4 replaces with tender/<id>.html
+  const tenderUrl = (id) => `${location.origin}${location.pathname.replace(/[^/]*$/, "")}tender/${id}.html`;
 
   function briefingTag(t) {
     if (t.bc === undefined) return "";
@@ -118,7 +118,7 @@
     const facts = [briefingTag(t), t.g && `CIDB ${t.g}`].filter(Boolean);
     return `<li class="card" id="t${esc(t.id)}">
       <div class="tags">${tags.join("")}</div>
-      <h3>${esc(t.t)}</h3>
+      <h3><a href="tender/${esc(t.id)}.html">${esc(t.t)}</a></h3>
       <p class="meta">${esc(t.b || "Buyer not stated")} · ${esc(t.l || t.p || "Province not stated")}</p>
       <p class="due${cd.soon ? " soon" : ""}">${esc(cd.text)} <span class="meta">(${esc(closingText(t.c))})</span></p>
       <p class="summary">${esc([t.ty, t.r && `Ref ${t.r}`].filter(Boolean).join(" · "))}</p>
@@ -150,36 +150,6 @@
       (soon.length > 4 ? `<li><a href="#" class="all" data-week>See all ${soon.length} closing this week</a></li>` : "");
   }
 
-  // Plain-English summary, built only from stated facts.
-  function detailHtml(d) {
-    const docUrl = d.documents[0]?.url;
-    // Evidence snippets start at an arbitrary character; begin at the next whole word.
-    const why = (f) => (f.snippet ? `<span class="why">From the documents: “…${esc(f.snippet.replace(/^\S*\s/, "").slice(0, 160))}…”</span>` : "");
-    const where = d.location.value
-      ? fieldHtml(d.location, docUrl)
-      : fieldHtml(d.province, docUrl) + (d.province.source === "buyer-mapping" ? ` <small class="auto">${d.province.value === "National" ? "national buyer, site may be anywhere" : "based on who is buying"}</small>` : "");
-    const reqs = [
-      ["CIDB grade", d.cidb_grade],
-      ["B-BBEE minimum level", d.bbbee_level],
-      ["CSD registration", d.csd_required, () => "Required"],
-    ];
-    const docs = d.documents.length
-      ? `<ol class="docs">${d.documents.map((x) => `<li><a href="${esc(x.url)}" target="_blank" rel="nofollow noopener">${esc(x.title || "Document")}</a></li>`).join("")}</ol>`
-      : `<p class="missing">${esc(NOT_STATED)}</p>`;
-    const updated = d.updated
-      ? `<p class="upd-note">Updated ${esc(shortDate(d.updated))}: ${esc((d.changes || []).join(" and ") || "details")} changed since first published.</p>`
-      : "";
-    return `${updated}<dl>
-      <dt>What they want</dt><dd>${esc(d.description || NOT_STATED)}</dd>
-      <dt>Who is buying</dt><dd>${esc(d.buyer || NOT_STATED)}${d.type ? ` · ${esc(d.type)}` : ""}${d.reference ? ` · Ref ${esc(d.reference)}` : ""}</dd>
-      <dt>Where</dt><dd>${where}</dd>
-      <dt>Closing date</dt><dd>${esc(closingText(d.closing))}</dd>
-      <dt>Briefing session</dt><dd>${fieldHtml(d.briefing, docUrl, briefingText)}${why(d.briefing)}</dd>
-      ${reqs.map(([label, f, fmt]) => `<dt>${label}</dt><dd>${fieldHtml(f, docUrl, fmt)}${why(f)}</dd>`).join("")}
-      <dt>Tender documents</dt><dd>${docs}</dd>
-      <dt>Official record</dt><dd><a href="${esc(d.source)}" target="_blank" rel="nofollow noopener">National Treasury eTenders data</a></dd>
-    </dl>`;
-  }
 
   async function toggleView(btn) {
     const li = btn.closest(".card");
@@ -227,6 +197,13 @@
   }
 
   // ---------- setup ----------
+
+  // Links from tender pages: ?trade=Cleaning and/or ?province=Gauteng
+  function fromQuery() {
+    const q = new URLSearchParams(location.search);
+    if (TRADES.includes(q.get("trade"))) { trade = q.get("trade"); syncChips(); }
+    if ([...el.province.options].some((o) => o.value === q.get("province"))) el.province.value = q.get("province");
+  }
 
   function syncChips() {
     el.trades.querySelectorAll(".chip").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.trade === trade)));
@@ -294,6 +271,7 @@
       all = data.tenders;
       el.updated.textContent = `Updated ${closingText(data.updated)}.`;
       setupFilters();
+      fromQuery();
       render();
       openFromHash();
     } catch {
