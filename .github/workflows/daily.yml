@@ -1,0 +1,76 @@
+# Daily update: fetch new tenders -> read their PDFs -> rebuild the site -> save data -> publish.
+# Runs at 03:00 UTC (05:00 South Africa time) and whenever you press "Run workflow".
+name: Daily update
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write # commit the updated data back to the repo
+  pages: write # publish to GitHub Pages
+  id-token: write
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # Keeps yesterday's data (and still succeeds) if the eTenders API is down.
+      - name: Fetch tenders
+        run: node scripts/fetch.js
+
+      # Only new or changed tenders are read. AI is used only if the ANTHROPIC_API_KEY secret exists.
+      - name: Read tender documents
+        run: node scripts/extract.js
+        continue-on-error: true # a PDF problem should never stop the site updating
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Build site
+        run: node scripts/build.js
+
+      - name: Safety check (never publish an empty site)
+        run: node scripts/check-site.js
+
+      - name: Save data to the repo
+        run: |
+          git config user.name "tenderfind-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/tenders.json data/extracted.json data/fetch-log.json
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "Daily data update $(date -u +%Y-%m-%d)"
+            git pull --rebase
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

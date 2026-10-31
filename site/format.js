@@ -1,0 +1,60 @@
+// Display rules shared by the browser (window.TF) and the Node page generator (require).
+(function (root) {
+  const NOT_STATED = "Not stated — check the tender documents";
+  const TZ = "Africa/Johannesburg";
+  const AUTO = { regex: 1, ai: 1 };
+
+  const esc = (s) =>
+    String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+
+  // field: { value, source }; docUrl: where to send people when it's missing
+  function fieldHtml(field, docUrl, format) {
+    if (!field || field.value == null || field.value === "") {
+      const link = docUrl ? ` <a href="${esc(docUrl)}" rel="nofollow noopener" target="_blank">Open documents</a>` : "";
+      return `<span class="missing">${esc(NOT_STATED)}</span>${link}`;
+    }
+    const v = format ? format(field.value) : field.value;
+    const note = AUTO[field.source] ? ` <small class="auto">auto-extracted, confirm before bidding</small>` : "";
+    return `${esc(v)}${note}`;
+  }
+
+  const dayFmt = new Intl.DateTimeFormat("en-ZA", { timeZone: TZ, weekday: "short", day: "numeric", month: "short" });
+  const fullFmt = new Intl.DateTimeFormat("en-ZA", { timeZone: TZ, weekday: "short", day: "numeric", month: "short", year: "numeric" });
+  const timeFmt = new Intl.DateTimeFormat("en-ZA", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false });
+  const ymd = new Intl.DateTimeFormat("en-CA", { timeZone: TZ }); // YYYY-MM-DD in SA time
+
+  // "2026-11-06" (a date with no time) -> "Fri 6 Nov"
+  function shortDate(isoDate) {
+    return dayFmt.format(new Date(`${isoDate}T12:00:00+02:00`));
+  }
+
+  function closingText(iso) {
+    const d = new Date(iso);
+    return `${fullFmt.format(d)}, ${timeFmt.format(d)}`;
+  }
+
+  function briefingText(b) {
+    if (b.held === false) return "No briefing session";
+    const kind = b.compulsory === true ? "Compulsory briefing" : b.compulsory === false ? "Non-compulsory briefing" : "Briefing";
+    return [kind, b.date && shortDate(b.date), b.time, b.venue].filter(Boolean).join(" · ");
+  }
+
+  // { text: "Closes in 3 days", soon: true, closed: false }
+  function countdown(iso, now = new Date()) {
+    const end = new Date(iso);
+    const ms = end - now;
+    if (ms <= 0) return { text: "Closed", soon: false, closed: true };
+    const days = Math.round((Date.parse(ymd.format(end)) - Date.parse(ymd.format(now))) / 864e5);
+    const at = timeFmt.format(end);
+    let text;
+    if (ms < 36e5) text = `Closes in ${Math.max(1, Math.round(ms / 6e4))} min`;
+    else if (days === 0) text = `Closes today at ${at}`;
+    else if (days === 1) text = `Closes tomorrow at ${at}`;
+    else text = `Closes in ${days} days`;
+    return { text, soon: days <= 3, closed: false };
+  }
+
+  const api = { NOT_STATED, esc, fieldHtml, briefingText, shortDate, closingText, countdown, ymd };
+  if (typeof module !== "undefined" && module.exports) module.exports = api;
+  else root.TF = api;
+})(typeof window !== "undefined" ? window : globalThis);

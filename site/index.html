@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TenderFind SA — every SA government tender, in plain English</title>
+  <meta name="description" content="Search open South African government tenders by trade and province. Closing dates, briefing sessions and CIDB grades in plain English, with one-tap WhatsApp sharing.">
+  <meta name="theme-color" content="#0b5d3b">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="data/tenders.json" as="fetch" crossorigin>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="./">TenderFind <span>SA</span></a>
+      <p class="promise">Every SA government tender, in plain English, on your phone.</p>
+      <form class="search" role="search" onsubmit="return false">
+        <label class="sr" for="q">Search tenders</label>
+        <input id="q" type="search" placeholder="Search e.g. cleaning, Polokwane, security" autocomplete="off" enterkeyhint="search">
+      </form>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="filters" aria-label="Filters">
+      <div class="chips" id="trades" role="group" aria-label="Trade"></div>
+      <div class="row">
+        <label><span>Province</span>
+          <select id="province"><option value="">All provinces</option></select>
+        </label>
+        <label><span>Closing</span>
+          <select id="closing">
+            <option value="">Any time</option>
+            <option value="7">Next 7 days</option>
+            <option value="14">Next 14 days</option>
+            <option value="30">Next 30 days</option>
+          </select>
+        </label>
+        <label><span>Sort</span>
+          <select id="sort">
+            <option value="relevance">Best match</option>
+            <option value="closing" selected>Closing soonest</option>
+            <option value="newest">Newest first</option>
+          </select>
+        </label>
+      </div>
+      <details class="more">
+        <summary>More filters</summary>
+        <label><span>Department or municipality</span>
+          <select id="buyer"><option value="">All buyers</option></select>
+        </label>
+        <label class="check"><input type="checkbox" id="new"> Only newly published (last 3 days)</label>
+        <label class="check"><input type="checkbox" id="briefing"> Only tenders with a briefing session</label>
+      </details>
+    </section>
+
+    <section id="missed" class="missed" hidden>
+      <h2>Did you miss these? <small>Closing in the next 7 days</small></h2>
+      <ol id="missed-list"></ol>
+    </section>
+
+    <p id="status" class="status" aria-live="polite">Loading tenders…</p>
+    <ol id="results" class="results"></ol>
+    <button id="more" class="btn wide" hidden>Show more tenders</button>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>Data from National Treasury eTenders (public domain). Always confirm details on the official portal before bidding.</p>
+      <p id="contact" hidden><a id="contact-link" href="#">Questions? Chat to us on WhatsApp</a></p>
+      <p class="updated" id="updated"></p>
+    </div>
+  </footer>
+
+  <script src="format.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
