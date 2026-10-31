@@ -21,6 +21,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0; background: var(--bg); color: var(--ink);
@@ -142,3 +143,20 @@ select {
 .similar li span { display: block; font-size: 0.88rem; color: var(--muted); }
 .similar li .due { color: var(--ink); font-weight: 600; margin: 2px 0 0; }
 .similar li .due.soon { color: var(--soon); }
+
+/* Sign-up box (every page) */
+.signup { background: var(--card); border: 2px solid var(--wa); border-radius: 12px; padding: 14px; margin: 20px 0 8px; }
+.signup h2 { font-size: 1.1rem; margin: 0 0 4px; }
+.signup p { margin: 0 0 12px; color: var(--muted); }
+.signup .btn.wide { margin: 0; }
+.signup-form { margin-top: 4px; background: #fff; border-radius: 8px; padding: 4px 8px; } /* Tally has no dark mode */
+.signup-form iframe { display: block; border: 0; }
+.promise a { color: inherit; font-weight: 700; }
+.foot .links { margin-top: 6px; }
+
+/* About / privacy */
+.prose h1 { font-size: 1.4rem; margin: 0 0 8px; }
+.prose h2 { font-size: 1.08rem; margin: 18px 0 4px; }
+.prose p, .prose li { line-height: 1.55; }
+.prose ul { padding-left: 20px; margin: 4px 0; }
+.prose li { margin: 4px 0; }
