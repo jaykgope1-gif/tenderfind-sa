@@ -9,8 +9,11 @@
     "fetch": "node scripts/fetch.js",
     "extract": "node scripts/extract.js",
     "build": "node scripts/build.js",
-    "daily": "node scripts/fetch.js && node scripts/extract.js && node scripts/build.js",
-    "serve": "node scripts/serve.js"
+    "daily": "node scripts/fetch.js && node scripts/extract.js && node scripts/build.js && node scripts/alerts.js",
+    "serve": "node scripts/serve.js",
+    "alerts": "node scripts/alerts.js",
+    "check": "node scripts/check-site.js",
+    "test": "node scripts/test-match.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.3.0",

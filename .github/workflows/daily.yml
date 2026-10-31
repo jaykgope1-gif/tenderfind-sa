@@ -44,6 +44,11 @@ jobs:
       - name: Build site
         run: node scripts/build.js
 
+      # New tenders + "closing in 3 days", grouped for the WhatsApp alerts (docs/n8n-alerts.md).
+      - name: Alerts file
+        run: node scripts/alerts.js
+        continue-on-error: true # n8n refuses a stale file, so this must never block the site
+
       - name: Safety check (never publish an empty site)
         run: node scripts/check-site.js
 
@@ -53,6 +58,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/tenders.json data/extracted.json data/fetch-log.json
           [ -d data/archive ] && git add data/archive
+          git add -A data/alerts
           if git diff --cached --quiet; then
             echo "No data changes."
           else

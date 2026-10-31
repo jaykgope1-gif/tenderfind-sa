@@ -198,11 +198,12 @@
 
   // ---------- setup ----------
 
-  // Links from tender pages: ?trade=Cleaning and/or ?province=Gauteng
+  // Links from tender pages and alerts: ?trade=Cleaning, ?province=Gauteng, ?new=1
   function fromQuery() {
     const q = new URLSearchParams(location.search);
     if (TRADES.includes(q.get("trade"))) { trade = q.get("trade"); syncChips(); }
     if ([...el.province.options].some((o) => o.value === q.get("province"))) el.province.value = q.get("province");
+    if (q.get("new") === "1") { el.isNew.checked = true; el.isNew.closest("details").open = true; } // show that the filter is on
   }
 
   function syncChips() {

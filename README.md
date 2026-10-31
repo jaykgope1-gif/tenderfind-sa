@@ -50,8 +50,9 @@ eTenders API ──► fetch.js ──► extract.js ──► build.js ──�
    - one page per tender
    - about and privacy pages
    - `sitemap.xml`, `robots.txt` and `404.html`
-4. **`scripts/check-site.js`** stops the deploy if there are fewer than 20 tenders or any file is missing. **The site is never published empty.** Yesterday's version stays live instead.
-5. The job saves the updated data back to the repository and publishes `site/` to GitHub Pages.
+4. **`scripts/alerts.js`** writes the day’s WhatsApp alerts file: tenders new today and tenders closing in 3 days, grouped by trade and province. It goes to `data/alerts/<date>.json` and is published at `/alerts/latest.json` for n8n. See [docs/n8n-alerts.md](docs/n8n-alerts.md).
+5. **`scripts/check-site.js`** stops the deploy if there are fewer than 20 tenders or any file is missing. **The site is never published empty.** Yesterday's version stays live instead.
+6. The job saves the updated data back to the repository and publishes `site/` to GitHub Pages.
 
 You can also run it any time: on GitHub, go to **Actions → Daily update → Run workflow**.
 
@@ -71,6 +72,9 @@ You can also run it any time: on GitHub, go to **Actions → Daily update → Ru
 | `data/tenders.json` | All open tenders (saved daily by the Action) |
 | `data/extracted.json` | What was found in each tender's documents |
 | `data/archive/` | Closed tenders, one file per month |
+| `data/alerts/` | Daily alerts files for the WhatsApp sender (60 days) |
+| `scripts/lib/match.js` | Who gets which tenders: the code pasted into n8n (tested by `npm test`) |
+| `docs/n8n-alerts.md` | The WhatsApp alerts design: n8n workflows, templates, STOP handling, Meta setup |
 | `data/fetch-log.json` | The last 60 daily runs: how many tenders, errors |
 
 ---
@@ -139,6 +143,7 @@ Useful extras:
 node scripts/fetch.js --days 7             # look back further than 3 days
 node scripts/extract.js --ids 176422       # re-read one tender's documents
 node scripts/check-site.js                 # the same safety check the Action runs
+npm test                                   # check the WhatsApp matching against today’s alerts
 ```
 
 ---
@@ -158,5 +163,5 @@ Tender data comes from National Treasury eTenders (public domain) via the offici
 
 ## Roadmap
 
-- **Phase E:** a daily alerts file of new tenders by trade and province, then an n8n workflow that sends one WhatsApp message per subscriber, with STOP handling and an optional "closing in 3 days" reminder.
+- **Phase E (designed):** the alerts file is generated daily; the n8n workflows, message templates and WhatsApp Business setup are in [docs/n8n-alerts.md](docs/n8n-alerts.md). Sending starts once a WhatsApp Business account and n8n are set up.
 - **Phase F:** a pricing page (Free / Alerts R149 a month / Bid Help) and subscriber status (Trial / Paying / Cancelled) with a 14-day trial.
