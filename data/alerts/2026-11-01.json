@@ -1,0 +1,75 @@
+{
+ "date": "2026-11-01",
+ "generated_at": "2026-11-01T06:54:46.953Z",
+ "site": "https://jaykgope1-gif.github.io/tenderfind-sa",
+ "note": "Tenders with province 'National' or 'Not stated' should go to subscribers in every province.",
+ "counts": {
+  "new": 0,
+  "closing_soon": 4
+ },
+ "new": {},
+ "closing_soon": {
+  "Supplies": {
+   "Free State": [
+    {
+     "id": "176060",
+     "title": "C11/2026 - Supply and Delivery of Tools (As per specification and Pictures)",
+     "buyer": "CENTLEC SOC LTD",
+     "province": "Free State",
+     "trade": "Supplies",
+     "closing": "2026-11-04T11:00:00+02:00",
+     "closing_text": "Wed, 04 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176060.html"
+    }
+   ],
+   "National": [
+    {
+     "id": "176139",
+     "title": "Supply and delivery of tong tattoo pliers,syringe’s,needles, electroguard gel and aminogrow, vaccines,guano booster 100% organic…",
+     "buyer": "Correctional Services",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-04T11:00:00+02:00",
+     "closing_text": "Wed, 04 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176139.html"
+    },
+    {
+     "id": "176086",
+     "title": "Provision for the supply and delivery of a4 printing paper for a twenty - four (24) months period as and when required",
+     "buyer": "Energy and Water Sector Education and Training Authority",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-04T13:00:00+02:00",
+     "closing_text": "Wed, 04 Nov 2026, 13:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176086.html"
+    }
+   ]
+  },
+  "Cleaning": {
+   "National": [
+    {
+     "id": "176201",
+     "title": "Procurement of service provider/s to collect, treat and dispose of general and pharmaceutical waste in mpumalanga and kwazulu-natal",
+     "buyer": "Border Management Authority",
+     "province": "National",
+     "trade": "Cleaning",
+     "closing": "2026-11-04T11:00:00+02:00",
+     "closing_text": "Wed, 04 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176201.html"
+    }
+   ]
+  }
+ }
+}
