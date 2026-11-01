@@ -6,11 +6,13 @@ module.exports = {
   // Who runs the service. Shown on the privacy page as the POPIA "responsible party" and
   // the contact for access, correction and deletion requests. Fill in before taking sign-ups.
   OPERATOR: {
-    name: "", // e.g. "Jane Dlamini t/a TenderFind SA"
-    email: "", // e.g. "hello@tenderfind.co.za"
+    name: "", // TODO: still to come from the owner, e.g. "Jane Dlamini t/a TenderFind SA"
+    location: "Pretoria, South Africa",
+    email: "jobkgope1@gmail.com",
     whatsapp: "", // international format, e.g. "27821234567". Also powers "WhatsApp us to subscribe" on /pricing.
   },
 
   // Shown on /pricing and in the sign-up box. The trial length must match TRIAL_DAYS in scripts/lib/match.js.
-  PRICING: { alerts: 149, trialDays: 14 },
+  // bidHelpFrom: Bid Help starting price in rand; null shows "Ask us" until it's set.
+  PRICING: { alerts: 149, trialDays: 14, bidHelpFrom: null },
 };

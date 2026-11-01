@@ -1,5 +1,6 @@
 // Static HTML for each tender (site/tender/<id>.html), plus sitemap.xml, robots.txt and 404.html.
 // Pages work without JavaScript; a few lines of script only keep the countdown current.
+const { OPERATOR } = require("./config");
 const { esc, detailHtml, closingText, countdown, briefingText, NOT_STATED } = require("./display");
 
 const BRAND = "TenderFind SA";
@@ -77,7 +78,7 @@ ${signup ? signupHtml(root) : ""}
 </main>
 <footer class="foot"><div class="wrap">
 <p>${esc(DISCLAIMER)}</p>
-<p class="links"><a href="${root}">Search tenders</a> · <a href="${root}pricing.html">Pricing</a> · <a href="${root}about.html">About</a> · <a href="${root}privacy.html">Privacy</a></p>
+<p class="links"><a href="${root}">Search tenders</a> · <a href="${root}pricing.html">Pricing</a> · <a href="${root}about.html">About</a> · <a href="${root}privacy.html">Privacy</a>${OPERATOR.email ? ` · <a href="mailto:${esc(OPERATOR.email)}">Contact</a>` : ""}</p>
 </div></footer>
 ${signup ? `<script src="${root}signup.js" defer></script>
 ` : ""}${script}</body>
