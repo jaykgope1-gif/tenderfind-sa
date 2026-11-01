@@ -5,7 +5,7 @@
   const TRADES = ["Cleaning", "Security", "Construction", "Maintenance & repairs", "Catering", "IT", "Transport", "Supplies", "Professional services", "Other"];
   const PAGE = 30;
   const NEW_DAYS = 3;
-  const CONTACT_WHATSAPP = ""; // TODO: business WhatsApp number in international format, e.g. "27821234567"
+  const CONTACT_WHATSAPP = "27692898507"; // business WhatsApp, international format (also in scripts/lib/config.js)
 
   const $ = (id) => document.getElementById(id);
   const el = { q: $("q"), trades: $("trades"), province: $("province"), closing: $("closing"), sort: $("sort"), buyer: $("buyer"),
