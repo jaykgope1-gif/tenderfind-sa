@@ -3,7 +3,7 @@
 How the morning WhatsApp alerts work, from the Google Sheet of sign-ups to one message per subscriber. This is a design: nothing here sends messages yet. Sending needs a WhatsApp Business account (section 5), which costs money per message.
 
 ```
-05:00  GitHub Action ──► site/alerts/latest.json   (new tenders + closing in 3 days, by trade → province)
+05:17  GitHub Action ──► site/alerts/latest.json   (new tenders + closing in 3 days, by trade → province)
 06:30  n8n "Morning alerts"
          ├─ download latest.json  ── not today's? stop and email you
          ├─ read Google Sheet: Responses (Tally) + Status + Log
@@ -98,7 +98,7 @@ If you later add card payments (PayFast, Yoco, Paystack and similar can send a w
 
 | # | Node | Settings |
 |---|---|---|
-| 1 | **Schedule Trigger** | Every day 06:30, timezone Africa/Johannesburg. The GitHub job starts at 05:00 and takes about 2 minutes, plus a few more for Pages to publish. |
+| 1 | **Schedule Trigger** | Every day 06:30, timezone Africa/Johannesburg. The GitHub job runs at 05:17 (backup 06:07) and takes about 2 minutes, plus a few more for Pages to publish. |
 | 2 | **HTTP Request** "Get alerts" | GET `https://jaykgope1-gif.github.io/tenderfind-sa/alerts/latest.json?d={{$now.toFormat('yyyyLLdd')}}`. The query string avoids a cached copy. |
 | 3 | **IF** "Is today's file?" | `{{$json.date}}` equals `{{$now.setZone('Africa/Johannesburg').toFormat('yyyy-LL-dd')}}`. **False:** send yourself an email/WhatsApp ("Tender data didn't update today, alerts not sent") and stop. Never send yesterday's tenders as new. |
 | 4 | **Google Sheets** "Read sign-ups" | Get Rows, sheet = Responses. |

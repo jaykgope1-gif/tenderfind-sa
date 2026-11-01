@@ -29,7 +29,7 @@ If a detail isn't in the eTenders feed or the tender documents, the site says **
 
 ## How it works
 
-Every day at **03:00 UTC (05:00 SA time)**, a GitHub Action (`.github/workflows/daily.yml`) runs these steps:
+Every day at **05:17 SA time** (with a backup run at 06:07), a GitHub Action (`.github/workflows/daily.yml`) runs these steps:
 
 ```
 eTenders API ──► fetch.js ──► extract.js ──► build.js ──► check-site.js ──► GitHub Pages

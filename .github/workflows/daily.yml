@@ -1,10 +1,12 @@
 # Daily update: fetch new tenders -> read their PDFs -> rebuild the site -> save data -> publish.
-# Runs at 03:00 UTC (05:00 South Africa time) and whenever you press "Run workflow".
+# Runs at 05:17 South Africa time, again at 06:07 as a backup (GitHub sometimes delays or skips
+# scheduled runs; a second run just finds nothing new), and whenever you press "Run workflow".
 name: Daily update
 
 on:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "17 3 * * *" # 05:17 SAST; off the hour, when GitHub is less busy
+    - cron: "7 4 * * *" # 06:07 SAST backup, still before the 06:30 WhatsApp send
   workflow_dispatch:
 
 permissions:
