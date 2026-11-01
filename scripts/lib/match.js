@@ -21,6 +21,7 @@ function pickKnown(cell, known) {
 function normalisePhone(cell) {
   let d = String(cell || "").replace(/\D/g, "");
   if (d.length === 10 && d.startsWith("0")) d = "27" + d.slice(1);
+  if (d.length === 12 && d.startsWith("270")) d = "27" + d.slice(3); // typed 082… after the form's +27
   return /^\d{10,15}$/.test(d) ? d : null;
 }
 
