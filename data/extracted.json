@@ -10438,6 +10438,33 @@
   },
   "extracted_at": "2026-10-31T11:15:54.990Z"
  },
+ "176364": {
+  "status": "no-pdf",
+  "docs": [],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-01T22:31:21.548Z"
+ },
  "176365": {
   "status": "ok",
   "docs": [
@@ -10698,6 +10725,33 @@
    }
   },
   "extracted_at": "2026-10-31T11:17:42.068Z"
+ },
+ "176373": {
+  "status": "no-pdf",
+  "docs": [],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-01T22:31:26.428Z"
  },
  "176374": {
   "status": "ok",
@@ -15276,6 +15330,47 @@
   },
   "extracted_at": "2026-10-31T11:18:49.959Z"
  },
+ "176509": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Volume 1A- Carport Installation RFQ.pdf",
+    "pages": 55,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-10",
+     "time": "10:30",
+     "venue": "Richards Bay Airport Road Birdswood, Richards Bay KwaZulu‑Natal South Africa"
+    },
+    "source": "regex",
+    "snippet": "E 02 November 2026 COMPULSORY SITE VISIT Venue for the site visit: Richards Bay Airport Road Birdswood, Richards Bay KwaZulu‑Natal South Africa Date: 10 November 2026 Time: 10h30 – 12h30 CLOSING DATE 16 November 2026 CLOSING TIME 11h00, CAT BID SUBMISSION MAY BE ADDRESSED TO All bid submissions must be"
+   },
+   "cidb_grade": {
+    "value": "2GB",
+    "source": "regex",
+    "snippet": "ill not be accepted as substitutes. (ii) CIDB Grading – 2GB or Higher Bidder to submit proof of registration with Construction Industry Development Board (CIDB) Grading 2GB or clearly indicating CRS Number g) ATNS shall verify the active status on CI"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "................................ 21 32 Registration On the CSD ........................................................................... 21 33 Registration Certificates and Accreditation with OEMS Or Professional Bodies 21 SECTION D: STANDARD BIDDING DOC"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-01T22:31:21.546Z"
+ },
  "176510": {
   "status": "scanned",
   "docs": [
@@ -16644,5 +16739,105 @@
    }
   },
   "extracted_at": "2026-10-31T11:19:42.027Z"
+ },
+ "176563": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "NRWDI RFQ FOR SUPPLY AND DELIVERY OF ELECTRONIC PERSONAL DOSIMETERS AND SOFTWARE pdf.pdf",
+    "pages": 13,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "........................................................ CSD NO:.................................................................................................................. Email Address:............................................................."
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-01T22:31:21.514Z"
+ },
+ "176572": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "BID DOCUMENT PUCMA22PK.pdf",
+    "pages": 49,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-01T22:31:21.552Z"
+ },
+ "176573": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "BID DOCUMENT PUCMA23PK.pdf",
+    "pages": 45,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-01T22:31:25.651Z"
  }
 }
