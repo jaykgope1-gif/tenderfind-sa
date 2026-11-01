@@ -24,6 +24,7 @@ const row = (phone, o = {}) => ({
 
 assert.strictEqual(normalisePhone("082 000 0001"), "27820000001");
 assert.strictEqual(normalisePhone("+27 82 000 0001"), "27820000001");
+assert.strictEqual(normalisePhone("+27 08 200 00000"), "27820000000"); // typed 082… after the form's +27
 assert.strictEqual(normalisePhone("123"), null);
 assert.deepStrictEqual(parseRow(row("1", { "Your trade(s)": "Maintenance & repairs, IT" })).trades, ["Maintenance & repairs", "IT"]);
 
