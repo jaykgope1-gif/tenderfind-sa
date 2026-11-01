@@ -160,3 +160,21 @@ select {
 .prose p, .prose li { line-height: 1.55; }
 .prose ul { padding-left: 20px; margin: 4px 0; }
 .prose li { margin: 4px 0; }
+
+/* Pricing */
+.page-h { font-size: 1.5rem; margin: 4px 0 2px; }
+.lede { color: var(--muted); margin: 0 0 14px; }
+.plans { display: grid; gap: 12px; }
+@media (min-width: 720px) { .plans { grid-template-columns: repeat(3, 1fr); align-items: start; } }
+.plan { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.plan.main { border: 2px solid var(--wa); }
+.plan h2 { font-size: 1.1rem; margin: 0; }
+.plan .price { font-size: 1.8rem; font-weight: 800; margin: 4px 0 8px; }
+.plan .price small { font-size: 0.9rem; font-weight: 400; color: var(--muted); }
+.plan ul { padding-left: 18px; margin: 0 0 14px; }
+.plan li { margin: 6px 0; }
+.plan .btn.wide { margin: 0; }
+.plan .small { text-align: center; margin: 8px 0 0; font-size: 0.9rem; }
+.faq { margin-top: 16px; }
+.faq h3 { font-size: 1rem; margin: 14px 0 2px; }
+.faq p { margin: 0; }

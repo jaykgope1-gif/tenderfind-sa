@@ -8,6 +8,9 @@ module.exports = {
   OPERATOR: {
     name: "", // e.g. "Jane Dlamini t/a TenderFind SA"
     email: "", // e.g. "hello@tenderfind.co.za"
-    whatsapp: "", // international format, e.g. "27821234567"
+    whatsapp: "", // international format, e.g. "27821234567". Also powers "WhatsApp us to subscribe" on /pricing.
   },
+
+  // Shown on /pricing and in the sign-up box. The trial length must match TRIAL_DAYS in scripts/lib/match.js.
+  PRICING: { alerts: 149, trialDays: 14 },
 };

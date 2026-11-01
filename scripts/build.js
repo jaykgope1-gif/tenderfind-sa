@@ -7,7 +7,7 @@
 //   site/data/p/<province>.json the same, one file per province
 //   site/data/t/<id>.json       full detail per tender, fetched when someone taps "View"
 //   site/tender/<id>.html       a page per tender, open or closed within the last year (data/archive)
-//   site/about.html, site/privacy.html, site/sitemap.xml, site/robots.txt, site/404.html
+//   site/about.html, site/privacy.html, site/pricing.html, site/sitemap.xml, site/robots.txt, site/404.html
 // Read-only on data/extracted.json, so it is safe to run while extraction is in progress.
 const fs = require("fs");
 const path = require("path");
@@ -21,7 +21,7 @@ const SITE = path.join(ROOT, "site");
 const OUT = path.join(SITE, "data");
 const PAGES = path.join(SITE, "tender");
 const { SITE_URL } = require("./lib/config");
-const { aboutPage, privacyPage } = require("./lib/info-pages");
+const { aboutPage, privacyPage, pricingPage } = require("./lib/info-pages");
 
 function arg(name) {
   const i = process.argv.indexOf(`--${name}`);
@@ -143,7 +143,8 @@ function writePages(open, stored, now) {
   fs.writeFileSync(path.join(SITE, "404.html"), pages.notFound(SITE_URL));
   fs.writeFileSync(path.join(SITE, "about.html"), aboutPage(SITE_URL, open.length));
   fs.writeFileSync(path.join(SITE, "privacy.html"), privacyPage(SITE_URL));
-  console.log(`Pages: ${open.length} open + ${closedById.size} closed tender pages, sitemap with ${listed.length + 3} URLs`);
+  fs.writeFileSync(path.join(SITE, "pricing.html"), pricingPage(SITE_URL));
+  console.log(`Pages: ${open.length} open + ${closedById.size} closed tender pages, sitemap with ${listed.length + 4} URLs`);
 }
 
 main();

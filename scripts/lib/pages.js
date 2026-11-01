@@ -7,10 +7,10 @@ const PROMISE = "Every SA government tender, in plain English, on your phone.";
 const DISCLAIMER = "Data from National Treasury eTenders (public domain). Always confirm details on the official portal before bidding.";
 
 // The sign-up box shown on every page (site/index.html has the same markup). site/signup.js loads the form on tap.
-const SIGNUP = `<section class="signup" id="signup" aria-labelledby="signup-h">
+const signupHtml = (root) => `<section class="signup" id="signup" aria-labelledby="signup-h">
 <h2 id="signup-h">Get tenders for your trade on WhatsApp every morning</h2>
-<p>Free. Pick your trade and province and we’ll send you the new tenders each morning.</p>
-<button class="btn wa wide" type="button" data-signup>Sign up for free alerts</button>
+<p>Free for 14 days, then R149 a month. Pick your trade and province and we’ll send you the new tenders each morning. <a href="${root}pricing.html">See pricing</a></p>
+<button class="btn wa wide" type="button" data-signup>Start my 14-day free trial</button>
 <div class="signup-form" hidden><iframe title="Sign up for tender alerts" width="100%" height="1150" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
 <noscript><p><a href="https://tally.so/r/EqKWVX">Open the sign-up form</a></p></noscript>
 </section>`;
@@ -73,11 +73,11 @@ ${extraHead}<link rel="stylesheet" href="${root}style.css">
 </div></header>
 <main class="wrap page">
 ${body}
-${signup ? SIGNUP : ""}
+${signup ? signupHtml(root) : ""}
 </main>
 <footer class="foot"><div class="wrap">
 <p>${esc(DISCLAIMER)}</p>
-<p class="links"><a href="${root}">Search tenders</a> · <a href="${root}about.html">About</a> · <a href="${root}privacy.html">Privacy</a></p>
+<p class="links"><a href="${root}">Search tenders</a> · <a href="${root}pricing.html">Pricing</a> · <a href="${root}about.html">About</a> · <a href="${root}privacy.html">Privacy</a></p>
 </div></footer>
 ${signup ? `<script src="${root}signup.js" defer></script>
 ` : ""}${script}</body>
@@ -155,7 +155,7 @@ ${similarHtml(t, similarList)}`;
 }
 
 function sitemap(siteUrl, pages, today) {
-  const urls = [{ loc: `${siteUrl}/`, lastmod: today }, { loc: `${siteUrl}/about.html` }, { loc: `${siteUrl}/privacy.html` }, ...pages.map((p) => ({ loc: `${siteUrl}/tender/${p.id}.html`, lastmod: p.lastmod }))];
+  const urls = [{ loc: `${siteUrl}/`, lastmod: today }, { loc: `${siteUrl}/about.html` }, { loc: `${siteUrl}/privacy.html` }, { loc: `${siteUrl}/pricing.html` }, ...pages.map((p) => ({ loc: `${siteUrl}/tender/${p.id}.html`, lastmod: p.lastmod }))];
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((u) => `<url><loc>${esc(u.loc)}</loc>${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ""}</url>`).join("\n")}
@@ -177,4 +177,4 @@ function notFound(siteUrl) {
   });
 }
 
-module.exports = { SIGNUP, shell, tenderPage, sitemap, robots, notFound, similar, ymdOf };
+module.exports = { signupHtml, shell, tenderPage, sitemap, robots, notFound, similar, ymdOf };

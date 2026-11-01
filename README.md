@@ -18,7 +18,7 @@ TenderFind SA is a fast, mobile-first search engine for South African government
 - **"Closing soon" badges**, countdowns and a "Did you miss these?" list.
 - **A page per tender** (`/tender/<id>.html`) that shares nicely on WhatsApp and can be found on Google.
 - **Closed tenders** keep their page for a year, saying "This tender has closed" with similar open tenders.
-- **A sign-up box** on every page for free WhatsApp alerts by trade and province.
+- **A sign-up box** on every page for WhatsApp alerts by trade and province: 14 days free, then R149 a month (see `/pricing.html`).
 - **Light first load:** about 40 KB on the search page. The sign-up form only loads when tapped.
 
 ### The one rule: never invent tender details
@@ -84,7 +84,8 @@ You can also run it any time: on GitHub, go to **Actions → Daily update → Ru
 Edit **`scripts/lib/config.js`**:
 
 - `SITE_URL`: the public address. Change it when you add your own domain.
-- `OPERATOR`: your name or business, email and WhatsApp number. These appear on the privacy page as the POPIA responsible party and contact. **Fill this in before promoting sign-ups.**
+- `OPERATOR`: your name or business, email and WhatsApp number. These appear on the privacy page as the POPIA responsible party and contact. The WhatsApp number also turns on the "WhatsApp us to subscribe" button on /pricing. **Fill this in before promoting sign-ups.**
+- `PRICING`: the Alerts price and trial length shown on the site. If you change the trial length, change `TRIAL_DAYS` in `scripts/lib/match.js` too.
 
 Other settings:
 
@@ -164,4 +165,4 @@ Tender data comes from National Treasury eTenders (public domain) via the offici
 ## Roadmap
 
 - **Phase E (designed):** the alerts file is generated daily; the n8n workflows, message templates and WhatsApp Business setup are in [docs/n8n-alerts.md](docs/n8n-alerts.md). Sending starts once a WhatsApp Business account and n8n are set up.
-- **Phase F:** a pricing page (Free / Alerts R149 a month / Bid Help) and subscriber status (Trial / Paying / Cancelled) with a 14-day trial.
+- **Phase F (done):** `/pricing.html` (Free / Alerts R149 a month / Bid Help) and subscriber status (Trial / Paying until a date / Cancelled) with a 14-day trial. The rules are in `scripts/lib/match.js`, and how to record a payment is in [docs/n8n-alerts.md §2a](docs/n8n-alerts.md#2a-subscriber-status-trial-and-payments-phase-f).
