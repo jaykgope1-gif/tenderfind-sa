@@ -1,5 +1,7 @@
 # WhatsApp tender alerts: n8n design
 
+> **What runs today is email, not WhatsApp:** see [email-alerts.md](email-alerts.md). This document is the WhatsApp design for once Meta approves a WhatsApp Business account. Sign-ups now live in the n8n "TenderFind subscribers" table rather than a Google Sheet; the matching rules and statuses below are the same.
+
 How the morning WhatsApp alerts work, from the Google Sheet of sign-ups to one message per subscriber. This is a design: nothing here sends messages yet. Sending needs a WhatsApp Business account (section 5), which costs money per message.
 
 ```

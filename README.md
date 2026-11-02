@@ -18,7 +18,7 @@ TenderFind SA is a fast, mobile-first search engine for South African government
 - **"Closing soon" badges**, countdowns and a "Did you miss these?" list.
 - **A page per tender** (`/tender/<id>.html`) that shares nicely on WhatsApp and can be found on Google.
 - **Closed tenders** keep their page for a year, saying "This tender has closed" with similar open tenders.
-- **A sign-up box** on every page for WhatsApp alerts by trade and province: 14 days free, then R149 a month (see `/pricing.html`).
+- **A sign-up box** on every page for morning tender alerts by trade and province, **by email for now** (WhatsApp later): 14 days free, then R149 a month (see `/pricing.html`).
 - **Light first load:** about 40 KB on the search page. The sign-up form only loads when tapped.
 
 ### The one rule: never invent tender details
@@ -29,7 +29,7 @@ If a detail isn't in the eTenders feed or the tender documents, the site says **
 
 ## How it works
 
-Every day at **05:17 SA time** (with a backup run at 06:07), a GitHub Action (`.github/workflows/daily.yml`) runs these steps:
+Every morning a GitHub Action (`.github/workflows/daily.yml`) runs these steps. It is started at **04:47 SA time by n8n** (workflow "TenderFind SA - Daily update trigger", which waits for it, logs the result and retries once), with GitHub's own timer at **05:47** as a backup. GitHub's timer on its own proved unreliable: it never fired for this repository.
 
 ```
 eTenders API ──► fetch.js ──► extract.js ──► build.js ──► check-site.js ──► GitHub Pages
@@ -50,7 +50,7 @@ eTenders API ──► fetch.js ──► extract.js ──► build.js ──�
    - one page per tender
    - about and privacy pages
    - `sitemap.xml`, `robots.txt` and `404.html`
-4. **`scripts/alerts.js`** writes the day’s WhatsApp alerts file: tenders new today and tenders closing in 3 days, grouped by trade and province. It goes to `data/alerts/<date>.json` and is published at `/alerts/latest.json` for n8n. See [docs/n8n-alerts.md](docs/n8n-alerts.md).
+4. **`scripts/alerts.js`** writes the day’s alerts file (used for the email alerts now, WhatsApp later): tenders new today and tenders closing in 3 days, grouped by trade and province. It goes to `data/alerts/<date>.json` and is published at `/alerts/latest.json` for n8n. See [docs/email-alerts.md](docs/email-alerts.md).
 5. **`scripts/check-site.js`** stops the deploy if there are fewer than 20 tenders or any file is missing. **The site is never published empty.** Yesterday's version stays live instead.
 6. The job saves the updated data back to the repository and publishes `site/` to GitHub Pages.
 
@@ -72,9 +72,10 @@ You can also run it any time: on GitHub, go to **Actions → Daily update → Ru
 | `data/tenders.json` | All open tenders (saved daily by the Action) |
 | `data/extracted.json` | What was found in each tender's documents |
 | `data/archive/` | Closed tenders, one file per month |
-| `data/alerts/` | Daily alerts files for the WhatsApp sender (60 days) |
-| `scripts/lib/match.js` | Who gets which tenders: the code pasted into n8n (tested by `npm test`) |
-| `docs/n8n-alerts.md` | The WhatsApp alerts design: n8n workflows, templates, STOP handling, Meta setup |
+| `data/alerts/` | Daily alerts files for the alert sender (60 days) |
+| `scripts/lib/match.js` | Who gets which tenders, by email or WhatsApp: the same code runs inside n8n (tested by `npm test`) |
+| `docs/email-alerts.md` | **What runs today:** the n8n workflows, tables, sign-up webhook and the go-live checklist |
+| `docs/n8n-alerts.md` | The later WhatsApp design: templates, STOP handling, Meta setup |
 | `data/fetch-log.json` | The last 60 daily runs: how many tenders, errors |
 
 ---
@@ -94,26 +95,22 @@ Other settings:
 
 ---
 
-## Sign-ups (Tally → Google Sheet)
+## Sign-ups (Tally → n8n)
 
 The sign-up form is a Tally form: https://tally.so/r/EqKWVX. It asks for:
 
-- name
-- business name
-- trade(s)
-- province(s)
-- WhatsApp number (South African by default)
-- the required POPIA consent: "I agree to receive tender alerts on WhatsApp. Reply STOP anytime."
+- name and business name
+- **email address** (required): alerts go by email for now
+- trade(s) and province(s)
+- WhatsApp number (optional, for when WhatsApp alerts start)
+- whether to get "closing in 3 days" reminders
+- the required POPIA consent: "I agree to receive tender alerts by email, and on WhatsApp if I gave my number. I can unsubscribe at any time."
 
 A hidden `page` field records which page the person signed up from.
 
-**To send sign-ups to Google Sheets (one-time):**
+Each sign-up goes from Tally's webhook to n8n, which saves it in the **TenderFind subscribers** data table. No Google Sheet is needed. The webhook only accepts requests carrying a private header key, which is kept in n8n and Tally and never in this repository. See [docs/email-alerts.md](docs/email-alerts.md).
 
-1. Open the form in Tally: https://tally.so/forms/EqKWVX/edit.
-2. Click **Integrations** → **Google Sheets** → **Connect**, and sign in with your Google account.
-3. Choose **Create a new spreadsheet**. Every new sign-up then appears as a new row.
-
-To edit the questions, use the Tally editor and click **Publish**. The website doesn't need changing. If you ever create a different form, put its ID in `site/signup.js` and `scripts/lib/pages.js`.
+To edit the questions, use the Tally editor and click **Publish**. The website doesn't need changing. If you rename a question, check the names used in n8n's "Parse Tally sign-up" step. If you ever create a different form, put its ID in `site/signup.js` and `scripts/lib/pages.js`.
 
 ---
 
@@ -144,13 +141,14 @@ Useful extras:
 node scripts/fetch.js --days 7             # look back further than 3 days
 node scripts/extract.js --ids 176422       # re-read one tender's documents
 node scripts/check-site.js                 # the same safety check the Action runs
-npm test                                   # check the WhatsApp matching against today’s alerts
+npm test                                   # check the email and WhatsApp matching
 ```
 
 ---
 
 ## When something goes wrong
 
+- **n8n emails you** if the morning update fails twice, or if the alerts file isn't today's. The **TenderFind run log** table in n8n shows every morning's result.
 - **GitHub emails you about a failed run.** Open **Actions**, click the red run, and read the step that failed. The live site keeps yesterday's data, so nobody sees a broken page.
 - **"eTenders API unreachable; kept previous data"** in the log means the government API was down. Nothing to do; tomorrow's run catches up. The `fetch.js` step looks back 3 days.
 - **A tender is in the wrong trade:** adjust the keywords in `scripts/lib/normalise.js`, then run `npm run build` to check.
@@ -164,5 +162,6 @@ Tender data comes from National Treasury eTenders (public domain) via the offici
 
 ## Roadmap
 
-- **Phase E (designed):** the alerts file is generated daily; the n8n workflows, message templates and WhatsApp Business setup are in [docs/n8n-alerts.md](docs/n8n-alerts.md). Sending starts once a WhatsApp Business account and n8n are set up.
+- **Email alerts (built, not yet switched on for subscribers):** n8n workflows, subscriber and run-log tables, and the go-live checklist are in [docs/email-alerts.md](docs/email-alerts.md).
+- **WhatsApp alerts (designed):** templates, STOP handling and WhatsApp Business setup are in [docs/n8n-alerts.md](docs/n8n-alerts.md). They start once a Meta WhatsApp Business account is approved.
 - **Phase F (done):** `/pricing.html` (Free / Alerts R149 a month / Bid Help) and subscriber status (Trial / Paying until a date / Cancelled) with a 14-day trial. The rules are in `scripts/lib/match.js`, and how to record a payment is in [docs/n8n-alerts.md §2a](docs/n8n-alerts.md#2a-subscriber-status-trial-and-payments-phase-f).
