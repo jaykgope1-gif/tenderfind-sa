@@ -51,3 +51,7 @@ Final checks before switching on real sending, all passed:
 Then the test subscriber rows were deleted and the send-only list emptied. The first real alerts go out at 06:45 the next morning.
 
 **Each morning, check the run log for:** `github_update ok` (about 04:50), `daily_update ok` and `email_alerts N sent` (about 06:46). No `email_alerts` line means nobody had matching tenders, or there were no subscribers yet.
+
+## Daily social post (owner only)
+
+n8n workflow **TenderFind SA - Daily social post (owner only)** runs at 06:45 SA time and emails jobkgope1@gmail.com a ready-to-paste WhatsApp Status / Facebook post ("Today's post – copy and share"): up to 5 broadly useful Gauteng tenders closing in the next 7 days, under 600 characters, ending with the sign-up link. It skips the day if the tender data wasn't rebuilt that morning. The selection rules are in `scripts/lib/social-post.js` (same code as in n8n).
