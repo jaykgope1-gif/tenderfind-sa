@@ -19838,5 +19838,84 @@
    }
   },
   "extracted_at": "2026-11-02T14:57:12.319Z"
+ },
+ "176709": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "Request for quote of Payments of Stipents BMA IM2272026.pdf",
+    "pages": 6,
+    "result": "scanned"
+   },
+   {
+    "title": "New SBD 4 Declaration form effect from 01 August 2026.pdf",
+    "pages": 3,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T15:18:28.033Z"
+ },
+ "176710": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "TFR-2026-08-0012-114651-RFQ - RFQ Repairs of SF6 Gas.pdf",
+    "pages": 123,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-10",
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": ": 02 NOVEMBER 2026 COMPULSORY TENDER CLARIFICATION MEETING: 10 NOVEMBER 2026 CLOSING DATE : 17 NOVEMBER 2026 CLOSING TIME : 10h00am TENDER VALIDITY PERIOD : 09 FEBRUARY 2027 Note to the bidders: Bidders are required to ensure that e"
+   },
+   "cidb_grade": {
+    "value": "3EP",
+    "source": "regex",
+    "snippet": "struction Industry Development Regulations, designation of 3EP or higher class of construction work, are eligible to have their tenders evaluated. b) Joint Venture (JV) Joint ventures are eligible to submit tenders subject to the following: 1. every m"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "-register on National Treasury’s Central Supplier Database (CSD) which has been established to centrally administer supplier information for all organs of state and facilitate the verification of certain key supplier information. The CSD can be"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T15:18:28.055Z"
  }
 }

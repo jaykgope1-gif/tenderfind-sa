@@ -1,10 +1,10 @@
 {
  "date": "2026-11-02",
- "generated_at": "2026-11-02T14:58:15.860Z",
+ "generated_at": "2026-11-02T15:19:32.104Z",
  "site": "https://jaykgope1-gif.github.io/tenderfind-sa",
  "note": "Tenders with province 'National' or 'Not stated' should go to subscribers in every province.",
  "counts": {
-  "new": 99,
+  "new": 101,
   "closing_soon": 26
  },
  "new": {
@@ -515,6 +515,295 @@
     }
    ]
   },
+  "Professional services": {
+   "National": [
+    {
+     "id": "176709",
+     "title": "Request for quote o Payments of Stipents BMA IM2272026",
+     "buyer": "Tourism",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176709.html"
+    },
+    {
+     "id": "176678",
+     "title": "Request for Quote : TOGAF EA Training Course Level 1&2 Combined incl exam (2 delegates)",
+     "buyer": "Statistics South Africa",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-09T11:00:00+02:00",
+     "closing_text": "Mon, 09 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176678.html"
+    },
+    {
+     "id": "176598",
+     "title": "The Road Accident Fund (RAF) wishes to appoint a suitable service provider to provide and assist with World Aids Day event at the Cape…",
+     "buyer": "Road Accident Fund",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-09T15:00:00+02:00",
+     "closing_text": "Mon, 09 Nov 2026, 15:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176598.html"
+    },
+    {
+     "id": "176692",
+     "title": "The Road Accident Fund (RAF) wishes to appoint experienced tax expert, to provide independent tax advisory services to the RAF relating to…",
+     "buyer": "Road Accident Fund",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-11T11:00:00+02:00",
+     "closing_text": "Wed, 11 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176692.html"
+    },
+    {
+     "id": "176572",
+     "title": "Appointment of a professional service provider to conduct an agricultural pollution assessment in the upper umngeni catchment for pongola…",
+     "buyer": "Water and Sanitation",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-23T11:00:00+02:00",
+     "closing_text": "Mon, 23 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176572.html"
+    },
+    {
+     "id": "176587",
+     "title": "The national metrology institute of south africa (nmisa) wishes to procure the services of a panel of service providers to provide…",
+     "buyer": "NATIONAL METROLOGY INSTITUTE OF SOUTH AFRICA",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-24T11:00:00+02:00",
+     "closing_text": "Tue, 24 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176587.html"
+    },
+    {
+     "id": "176595",
+     "title": "Nmisa wishes to procure services for the panel of attorneys for a five-year (5) period",
+     "buyer": "NATIONAL METROLOGY INSTITUTE OF SOUTH AFRICA",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-24T11:00:00+02:00",
+     "closing_text": "Tue, 24 Nov 2026, 11:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176595.html"
+    },
+    {
+     "id": "176622",
+     "title": "Re-advert: appointment of an independent external auditor for the provision of external audit services to agrément south africa for a…",
+     "buyer": "Agrément South Africa",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-24T12:00:00+02:00",
+     "closing_text": "Tue, 24 Nov 2026, 12:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176622.html"
+    },
+    {
+     "id": "176700",
+     "title": "For the provision of a service provider to conduct productivity analysis and strategic workforce planning within the core functions of…",
+     "buyer": "Transnet SOC Ltd",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-27T10:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 10:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176700.html"
+    },
+    {
+     "id": "176648",
+     "title": "Appointment of a panel of bidders to provide printing service and deliver printed material to government printing works for a period of…",
+     "buyer": "Government Printing Works",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-27T11:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · Mon, 09 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176648.html"
+    }
+   ],
+   "Northern Cape": [
+    {
+     "id": "176594",
+     "title": "DRPQ 077_2026 Appointment of a Training Provider JTG Intake",
+     "buyer": "Northern Cape - Roads and Public works",
+     "province": "Northern Cape",
+     "trade": "Professional services",
+     "closing": "2026-11-09T11:00:00+02:00",
+     "closing_text": "Mon, 09 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176594.html"
+    },
+    {
+     "id": "176619",
+     "title": "Rfq 04/2027: appointment of the service provider for the review of spatial development planning and land use management scheme of…",
+     "buyer": "Kareeberg Municipality",
+     "province": "Northern Cape",
+     "trade": "Professional services",
+     "closing": "2026-11-10T12:00:00+02:00",
+     "closing_text": "Tue, 10 Nov 2026, 12:00",
+     "briefing": "Briefing · 15:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176619.html"
+    }
+   ],
+   "Not stated": [
+    {
+     "id": "176636",
+     "title": "A panel of professional services for occupational therapists to support college students for 3 years",
+     "buyer": "IKHALA PUBLIC TVET COLLEGE",
+     "province": "Not stated",
+     "trade": "Professional services",
+     "closing": "2026-11-13T11:00:00+02:00",
+     "closing_text": "Fri, 13 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176636.html"
+    },
+    {
+     "id": "176651",
+     "title": "Panel of service providers for the supply of parts for falcon f50-150 slashers, f80-200 slashers, stihl fs250 brush cutters, john deer…",
+     "buyer": "Emalahleni Local Municipality",
+     "province": "Not stated",
+     "trade": "Professional services",
+     "closing": "2026-12-02T11:00:00+02:00",
+     "closing_text": "Wed, 02 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176651.html"
+    }
+   ],
+   "KwaZulu-Natal": [
+    {
+     "id": "176573",
+     "title": "Appointment of a professional service provider (psp) to provide support on water availability assessment within the matigulu river system…",
+     "buyer": "Water and Sanitation",
+     "province": "KwaZulu-Natal",
+     "trade": "Professional services",
+     "closing": "2026-11-23T11:00:00+02:00",
+     "closing_text": "Mon, 23 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176573.html"
+    },
+    {
+     "id": "176593",
+     "title": "Appointment of a professional service provider (psp) to provide support on water availability assessment within the mfolozi-hluhluwe river…",
+     "buyer": "Water and Sanitation",
+     "province": "KwaZulu-Natal",
+     "trade": "Professional services",
+     "closing": "2026-11-23T11:00:00+02:00",
+     "closing_text": "Mon, 23 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176593.html"
+    }
+   ],
+   "Mpumalanga": [
+    {
+     "id": "176575",
+     "title": "Appointment of professional agencies for travel accommodation services for nkangala economic development agency for a period of three (3)…",
+     "buyer": "Nkangala District Municipality",
+     "province": "Mpumalanga",
+     "trade": "Professional services",
+     "closing": "2026-11-30T12:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176575.html"
+    },
+    {
+     "id": "176659",
+     "title": "Appointment of an additional two(2) attorneys firms to the panel for rendering legal services as and when required for a period of 36 months",
+     "buyer": "Steve Tshwete Local Municipality",
+     "province": "Mpumalanga",
+     "trade": "Professional services",
+     "closing": "2026-12-02T12:00:00+02:00",
+     "closing_text": "Wed, 02 Dec 2026, 12:00",
+     "briefing": "Compulsory briefing · Mon, 16 Nov · 09:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176659.html"
+    },
+    {
+     "id": "176681",
+     "title": "Tender for printing and posting of monthly accounts for 36 months",
+     "buyer": "Steve Tshwete Local Municipality",
+     "province": "Mpumalanga",
+     "trade": "Professional services",
+     "closing": "2026-12-03T12:00:00+02:00",
+     "closing_text": "Thu, 03 Dec 2026, 12:00",
+     "briefing": "Non-compulsory briefing · Tue, 17 Nov · 10:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176681.html"
+    }
+   ],
+   "Western Cape": [
+    {
+     "id": "176582",
+     "title": "Provision of professional engineering services for various projects for a multi – year period ending 30 june 2029",
+     "buyer": "Cederberg Municipality",
+     "province": "Western Cape",
+     "trade": "Professional services",
+     "closing": "2026-12-01T12:00:00+02:00",
+     "closing_text": "Tue, 01 Dec 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176582.html"
+    }
+   ],
+   "North West": [
+    {
+     "id": "176689",
+     "title": "Appointment of a service provider for the provision of drinking water quality monitoring programme in the Rustenburg jurisdiction for a…",
+     "buyer": "Rustenburg Local Municipality",
+     "province": "North West",
+     "trade": "Professional services",
+     "closing": "2026-12-04T10:00:00+02:00",
+     "closing_text": "Fri, 04 Dec 2026, 10:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176689.html"
+    }
+   ]
+  },
   "Other": {
    "National": [
     {
@@ -798,6 +1087,19 @@
      "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176509.html"
     },
     {
+     "id": "176710",
+     "title": "For the dismantling and repairs of sf6 gas leaks and mechanical failures on various types of circuit breakers at various traction…",
+     "buyer": "Transnet SOC Ltd",
+     "province": "National",
+     "trade": "Construction",
+     "closing": "2026-11-17T10:00:00+02:00",
+     "closing_text": "Tue, 17 Nov 2026, 10:00",
+     "briefing": "Compulsory briefing · Tue, 10 Nov",
+     "compulsory_briefing": true,
+     "cidb": "3EP",
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176710.html"
+    },
+    {
      "id": "176676",
      "title": "Appointment of a Service Provider for the Maintenance and Restoration of the Access Road at the Sentech Boesmanskop Site.",
      "buyer": "Sentech Limited",
@@ -936,282 +1238,6 @@
      "compulsory_briefing": true,
      "cidb": "9CE",
      "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176589.html"
-    }
-   ]
-  },
-  "Professional services": {
-   "Northern Cape": [
-    {
-     "id": "176594",
-     "title": "DRPQ 077_2026 Appointment of a Training Provider JTG Intake",
-     "buyer": "Northern Cape - Roads and Public works",
-     "province": "Northern Cape",
-     "trade": "Professional services",
-     "closing": "2026-11-09T11:00:00+02:00",
-     "closing_text": "Mon, 09 Nov 2026, 11:00",
-     "briefing": "Compulsory briefing",
-     "compulsory_briefing": true,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176594.html"
-    },
-    {
-     "id": "176619",
-     "title": "Rfq 04/2027: appointment of the service provider for the review of spatial development planning and land use management scheme of…",
-     "buyer": "Kareeberg Municipality",
-     "province": "Northern Cape",
-     "trade": "Professional services",
-     "closing": "2026-11-10T12:00:00+02:00",
-     "closing_text": "Tue, 10 Nov 2026, 12:00",
-     "briefing": "Briefing · 15:00",
-     "compulsory_briefing": false,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176619.html"
-    }
-   ],
-   "National": [
-    {
-     "id": "176678",
-     "title": "Request for Quote : TOGAF EA Training Course Level 1&2 Combined incl exam (2 delegates)",
-     "buyer": "Statistics South Africa",
-     "province": "National",
-     "trade": "Professional services",
-     "closing": "2026-11-09T11:00:00+02:00",
-     "closing_text": "Mon, 09 Nov 2026, 11:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176678.html"
-    },
-    {
-     "id": "176598",
-     "title": "The Road Accident Fund (RAF) wishes to appoint a suitable service provider to provide and assist with World Aids Day event at the Cape…",
-     "buyer": "Road Accident Fund",
-     "province": "National",
-     "trade": "Professional services",
-     "closing": "2026-11-09T15:00:00+02:00",
-     "closing_text": "Mon, 09 Nov 2026, 15:00",
-     "briefing": "Compulsory briefing",
-     "compulsory_briefing": true,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176598.html"
-    },
-    {
-     "id": "176692",
-     "title": "The Road Accident Fund (RAF) wishes to appoint experienced tax expert, to provide independent tax advisory services to the RAF relating to…",
-     "buyer": "Road Accident Fund",
-     "province": "National",
-     "trade": "Professional services",
-     "closing": "2026-11-11T11:00:00+02:00",
-     "closing_text": "Wed, 11 Nov 2026, 11:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176692.html"
-    },
-    {
-     "id": "176572",
-     "title": "Appointment of a professional service provider to conduct an agricultural pollution assessment in the upper umngeni catchment for pongola…",
-     "buyer": "Water and Sanitation",
-     "province": "National",
-     "trade": "Professional services",
-     "closing": "2026-11-23T11:00:00+02:00",
-     "closing_text": "Mon, 23 Nov 2026, 11:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176572.html"
-    },
-    {
-     "id": "176587",
-     "title": "The national metrology institute of south africa (nmisa) wishes to procure the services of a panel of service providers to provide…",
-     "buyer": "NATIONAL METROLOGY INSTITUTE OF SOUTH AFRICA",
-     "province": "National",
-     "trade": "Professional services",
-     "closing": "2026-11-24T11:00:00+02:00",
-     "closing_text": "Tue, 24 Nov 2026, 11:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176587.html"
-    },
-    {
-     "id": "176595",
-     "title": "Nmisa wishes to procure services for the panel of attorneys for a five-year (5) period",
-     "buyer": "NATIONAL METROLOGY INSTITUTE OF SOUTH AFRICA",
-     "province": "National",
-     "trade": "Professional services",
-     "closing": "2026-11-24T11:00:00+02:00",
-     "closing_text": "Tue, 24 Nov 2026, 11:00",
-     "briefing": "No briefing session",
-     "compulsory_briefing": false,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176595.html"
-    },
-    {
-     "id": "176622",
-     "title": "Re-advert: appointment of an independent external auditor for the provision of external audit services to agrément south africa for a…",
-     "buyer": "Agrément South Africa",
-     "province": "National",
-     "trade": "Professional services",
-     "closing": "2026-11-24T12:00:00+02:00",
-     "closing_text": "Tue, 24 Nov 2026, 12:00",
-     "briefing": "No briefing session",
-     "compulsory_briefing": false,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176622.html"
-    },
-    {
-     "id": "176700",
-     "title": "For the provision of a service provider to conduct productivity analysis and strategic workforce planning within the core functions of…",
-     "buyer": "Transnet SOC Ltd",
-     "province": "National",
-     "trade": "Professional services",
-     "closing": "2026-11-27T10:00:00+02:00",
-     "closing_text": "Fri, 27 Nov 2026, 10:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176700.html"
-    },
-    {
-     "id": "176648",
-     "title": "Appointment of a panel of bidders to provide printing service and deliver printed material to government printing works for a period of…",
-     "buyer": "Government Printing Works",
-     "province": "National",
-     "trade": "Professional services",
-     "closing": "2026-11-27T11:00:00+02:00",
-     "closing_text": "Fri, 27 Nov 2026, 11:00",
-     "briefing": "Compulsory briefing · Mon, 09 Nov · 10:00",
-     "compulsory_briefing": true,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176648.html"
-    }
-   ],
-   "Not stated": [
-    {
-     "id": "176636",
-     "title": "A panel of professional services for occupational therapists to support college students for 3 years",
-     "buyer": "IKHALA PUBLIC TVET COLLEGE",
-     "province": "Not stated",
-     "trade": "Professional services",
-     "closing": "2026-11-13T11:00:00+02:00",
-     "closing_text": "Fri, 13 Nov 2026, 11:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176636.html"
-    },
-    {
-     "id": "176651",
-     "title": "Panel of service providers for the supply of parts for falcon f50-150 slashers, f80-200 slashers, stihl fs250 brush cutters, john deer…",
-     "buyer": "Emalahleni Local Municipality",
-     "province": "Not stated",
-     "trade": "Professional services",
-     "closing": "2026-12-02T11:00:00+02:00",
-     "closing_text": "Wed, 02 Dec 2026, 11:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176651.html"
-    }
-   ],
-   "KwaZulu-Natal": [
-    {
-     "id": "176573",
-     "title": "Appointment of a professional service provider (psp) to provide support on water availability assessment within the matigulu river system…",
-     "buyer": "Water and Sanitation",
-     "province": "KwaZulu-Natal",
-     "trade": "Professional services",
-     "closing": "2026-11-23T11:00:00+02:00",
-     "closing_text": "Mon, 23 Nov 2026, 11:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176573.html"
-    },
-    {
-     "id": "176593",
-     "title": "Appointment of a professional service provider (psp) to provide support on water availability assessment within the mfolozi-hluhluwe river…",
-     "buyer": "Water and Sanitation",
-     "province": "KwaZulu-Natal",
-     "trade": "Professional services",
-     "closing": "2026-11-23T11:00:00+02:00",
-     "closing_text": "Mon, 23 Nov 2026, 11:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176593.html"
-    }
-   ],
-   "Mpumalanga": [
-    {
-     "id": "176575",
-     "title": "Appointment of professional agencies for travel accommodation services for nkangala economic development agency for a period of three (3)…",
-     "buyer": "Nkangala District Municipality",
-     "province": "Mpumalanga",
-     "trade": "Professional services",
-     "closing": "2026-11-30T12:00:00+02:00",
-     "closing_text": "Mon, 30 Nov 2026, 12:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176575.html"
-    },
-    {
-     "id": "176659",
-     "title": "Appointment of an additional two(2) attorneys firms to the panel for rendering legal services as and when required for a period of 36 months",
-     "buyer": "Steve Tshwete Local Municipality",
-     "province": "Mpumalanga",
-     "trade": "Professional services",
-     "closing": "2026-12-02T12:00:00+02:00",
-     "closing_text": "Wed, 02 Dec 2026, 12:00",
-     "briefing": "Compulsory briefing · Mon, 16 Nov · 09:00",
-     "compulsory_briefing": true,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176659.html"
-    },
-    {
-     "id": "176681",
-     "title": "Tender for printing and posting of monthly accounts for 36 months",
-     "buyer": "Steve Tshwete Local Municipality",
-     "province": "Mpumalanga",
-     "trade": "Professional services",
-     "closing": "2026-12-03T12:00:00+02:00",
-     "closing_text": "Thu, 03 Dec 2026, 12:00",
-     "briefing": "Non-compulsory briefing · Tue, 17 Nov · 10:00",
-     "compulsory_briefing": false,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176681.html"
-    }
-   ],
-   "Western Cape": [
-    {
-     "id": "176582",
-     "title": "Provision of professional engineering services for various projects for a multi – year period ending 30 june 2029",
-     "buyer": "Cederberg Municipality",
-     "province": "Western Cape",
-     "trade": "Professional services",
-     "closing": "2026-12-01T12:00:00+02:00",
-     "closing_text": "Tue, 01 Dec 2026, 12:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176582.html"
-    }
-   ],
-   "North West": [
-    {
-     "id": "176689",
-     "title": "Appointment of a service provider for the provision of drinking water quality monitoring programme in the Rustenburg jurisdiction for a…",
-     "buyer": "Rustenburg Local Municipality",
-     "province": "North West",
-     "trade": "Professional services",
-     "closing": "2026-12-04T10:00:00+02:00",
-     "closing_text": "Fri, 04 Dec 2026, 10:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176689.html"
     }
    ]
   },
