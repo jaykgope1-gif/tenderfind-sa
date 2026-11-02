@@ -1,10 +1,10 @@
 {
  "date": "2026-11-02",
- "generated_at": "2026-11-02T15:19:32.104Z",
+ "generated_at": "2026-11-02T15:38:18.686Z",
  "site": "https://jaykgope1-gif.github.io/tenderfind-sa",
  "note": "Tenders with province 'National' or 'Not stated' should go to subscribers in every province.",
  "counts": {
-  "new": 101,
+  "new": 102,
   "closing_soon": 26
  },
  "new": {
@@ -646,6 +646,19 @@
      "compulsory_briefing": true,
      "cidb": null,
      "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176648.html"
+    },
+    {
+     "id": "176711",
+     "title": "THE APPOINTMENT OF A PROFESSIONAL SERVICE PROVIDER TO CONDUCT AN ECONOMIC AND SOCIAL COST-BENEFIT ANALYSIS OF CLIMATE CHANGE IMPACTS AND…",
+     "buyer": "National - Environment, Forestry and Fisheries",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-12-02T11:00:00+02:00",
+     "closing_text": "Wed, 02 Dec 2026, 11:00",
+     "briefing": "Compulsory briefing · Fri, 13 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176711.html"
     }
    ],
    "Northern Cape": [

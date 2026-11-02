@@ -19917,5 +19917,45 @@
    }
   },
   "extracted_at": "2026-11-02T15:18:28.055Z"
+ },
+ "176711": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "DFFE-B015 (26-27) ADVERT.pdf",
+    "pages": 70,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-13",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "AM There will be a compulsory briefing session: Date: 13 NOVEMBER 2026 Time: 10H00 – 11H00 Platform: (https://teams.microsoft.com/meet/3120225428288908?p=LwxPyHR3x85NzNQalk) SBD1 PART A INVITATION TO BID YOU ARE HEREBY INVITED TO BID FOR REQUIREMENTS OF THE DEPARTMENT OF FORESTRY, FISHERIES AND THE ENVI"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "dffe.gov.za NATIONAL TREASURY CENTRAL SUPPLIER DATABASE (CSD) REGISTRATION INFORMATION Company name Supplier registration number Unique reference number Main contractor Sub-contracted/ joint venture comp 1 Sub-contracted/"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T15:37:14.547Z"
  }
 }
