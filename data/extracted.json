@@ -19770,5 +19770,73 @@
    }
   },
   "extracted_at": "2026-11-02T14:39:18.509Z"
+ },
+ "176707": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "TENDER DOCUMENT SUPPLY AND DELIVERY OF CLEANING MATERIAL NOV 26.pdf",
+    "pages": 20,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "do so will render the bid not responsive. • Valid Full CSD Proof of registration • Completed and Signed Declarations (MBD1-9) attached on the tender document. • A Valid SARS TCS Pin printout • A signed letter by the bidder confirming that no und"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T14:57:12.292Z"
+ },
+ "176708": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "TENDER DOCUMENT SUPPLY AND DELIVERY OF STATUTES LIBRARY NOV 26.pdf",
+    "pages": 20,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "do so will render the bid not responsive. • Valid Full CSD Proof of registration • Completed and Signed Declarations (MBD1-9) attached on the tender document. • A Valid SARS TCS Pin printout • A signed letter by the bidder confirming that no und"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T14:57:12.319Z"
  }
 }
