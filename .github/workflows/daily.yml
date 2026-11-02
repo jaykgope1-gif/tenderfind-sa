@@ -1,12 +1,12 @@
 # Daily update: fetch new tenders -> read their PDFs -> rebuild the site -> save data -> publish.
-# Runs at 05:17 South Africa time, again at 06:07 as a backup (GitHub sometimes delays or skips
-# scheduled runs; a second run just finds nothing new), and whenever you press "Run workflow".
+# Started every morning at 04:47 SA time by n8n ("TenderFind SA - Daily update trigger"), which
+# waits for it, logs the result and retries once. GitHub's own timer below is only a backup: it is
+# best-effort and often skipped. A run that finds nothing new is harmless. "Run workflow" works any time.
 name: Daily update
 
 on:
   schedule:
-    - cron: "17 3 * * *" # 05:17 SAST; off the hour, when GitHub is less busy
-    - cron: "7 4 * * *" # 06:07 SAST backup, still before the 06:30 WhatsApp send
+    - cron: "47 3 * * *" # 05:47 SAST backup, an hour after the n8n trigger
   workflow_dispatch:
 
 permissions:
