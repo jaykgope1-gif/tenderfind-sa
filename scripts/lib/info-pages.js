@@ -106,7 +106,7 @@ function waLink(text) {
 }
 
 function pricingPage(siteUrl) {
-  const { alerts, trialDays, bidHelpFrom } = PRICING;
+  const { alerts, trialDays, bidHelpPrice } = PRICING;
   const subscribe = waLink("Hi, I'd like to subscribe to tender alerts");
   const bidHelp = waLink("Hi, I'd like help with a tender bid");
   const plan = (name, price, sub, items, action) => `<section class="plan${action.main ? " main" : ""}">
@@ -134,10 +134,11 @@ ${plan("Alerts", `R${alerts}`, "a month", [
 ], { main: true, html: subscribe
   ? `<a class="btn wa wide" href="${subscribe}" target="_blank" rel="noopener">WhatsApp us to subscribe</a><p class="small"><a href="#signup">Or start the ${trialDays}-day free trial</a></p>`
   : `<a class="btn wa wide" href="#signup">Start your ${trialDays}-day free trial</a>` })}
-${plan("Bid Help", bidHelpFrom ? `from R${bidHelpFrom}` : "Ask us", "per tender, depending on size", [
+${plan("Bid Help", bidHelpPrice ? `R${bidHelpPrice}` : "Ask us", "per tender", [
   "We read the tender documents and list everything you need to submit",
   "We draft your cover letter and a compliance checklist",
   "We flag deadlines, briefing sessions and missing documents",
+  "Pay once per tender, before we start",
   "<b>We don’t guarantee a win.</b> You submit the bid yourself.",
 ], { html: bidHelp ? `<a class="btn wide" href="${bidHelp}" target="_blank" rel="noopener">WhatsApp us about Bid Help</a>` : "" })}
 </div>

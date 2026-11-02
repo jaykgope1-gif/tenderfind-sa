@@ -13,6 +13,6 @@ module.exports = {
   },
 
   // Shown on /pricing and in the sign-up box. The trial length must match TRIAL_DAYS in scripts/lib/match.js.
-  // bidHelpFrom: Bid Help starting price in rand; null shows "Ask us" until it's set.
-  PRICING: { alerts: 149, trialDays: 14, bidHelpFrom: 500 },
+  // bidHelpPrice: Bid Help price per tender in rand, paid once before work starts; null shows "Ask us".
+  PRICING: { alerts: 149, trialDays: 14, bidHelpPrice: 550 },
 };
