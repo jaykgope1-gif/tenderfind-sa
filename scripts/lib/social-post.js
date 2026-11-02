@@ -79,4 +79,4 @@ function buildSocialPost(tenders, now = new Date()) {
   return { text, count: lines.length, chars: text.length, ids: chosen.slice(0, lines.length).map((t) => t.id) };
 }
 
-if (typeof module !== "undefined" && module.exports) module.exports = { buildSocialPost, shortTitle };
+if (typeof module !== "undefined" && module.exports) module.exports = { buildSocialPost, shortTitle, shortBuyer, dayLabel, dayKey };

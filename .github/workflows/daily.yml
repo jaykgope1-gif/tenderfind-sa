@@ -51,6 +51,11 @@ jobs:
         run: node scripts/alerts.js
         continue-on-error: true # n8n refuses a stale file, so this must never block the site
 
+      # Picture of the day's social post (site/social/card.png), attached to the owner's 06:45 email.
+      - name: Social card
+        run: node scripts/social-card.js
+        continue-on-error: true # a missing picture should never stop the site updating
+
       - name: Safety check (never publish an empty site)
         run: node scripts/check-site.js
 
