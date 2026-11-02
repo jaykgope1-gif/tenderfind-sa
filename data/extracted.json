@@ -8156,17 +8156,17 @@
    "briefing": {
     "value": {
      "compulsory": true,
-     "date": "2026-11-03",
+     "date": "2026-11-05",
      "time": "11:00",
-     "venue": "SABS-Groenkloof 1 Dr Lategan Road, Groenkloof, Pretoria @11:00am"
+     "venue": null
     },
     "source": "regex",
-    "snippet": "-MAIL ADDRESS Compulsory Briefing Session Date: 03 November 2026 Venue: SABS-Groenkloof 1 Dr Lategan Road, Groenkloof, Pretoria @11:00am Closing Date and Time No late submissions will be accepted. 11 November 2026 at 11:00am Method of submissi"
+    "snippet": "AND E-MAIL ADDRESS Compulsory Briefing Session Date: 05 November 2026 Venue: SABS-Groenkloof 1 Dr Lategan Road, Groenkloof, Pretoria @11:00am Closing Date and Time No late submissions will be accepted. 13 November 2026 at 11:00am Method of submission. Proposals/Bids submitted via a link and/or “We transfer”"
    },
    "csd_required": {
     "value": true,
     "source": "regex",
-    "snippet": "uotations: ▪ National Treasury Central Supplier Database (CSD) registration report ▪ A valid copy of BBBEE certificate/ Sworn Affidavit (to claim specific goals) ▪ SBD 4 Bidders Disclosure Form ▪ SBD 6.1 Preference points claim form in terms of the Prefe"
+    "snippet": "quotations: ▪ National Treasury Central Supplier Database (CSD) registration report ▪ A valid copy of BBBEE certificate/ Sworn Affidavit (to claim specific goals) ▪ SBD 4 Bidders Disclosure Form ▪ SBD 6.1 Preference points claim form in terms of the Prefer"
    },
    "cidb_grade": {
     "value": null,
@@ -8181,7 +8181,7 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:13:41.844Z"
+  "extracted_at": "2026-11-02T06:30:35.302Z"
  },
  "176297": {
   "status": "ok",
@@ -16839,5 +16839,130 @@
    }
   },
   "extracted_at": "2026-11-01T22:31:25.651Z"
+ },
+ "176575": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "3 Tender data  print on pink.pdf",
+    "pages": 15,
+    "result": "text"
+   },
+   {
+    "title": "1 COVER PAGE Print in colour.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "cation Meeting A compulsory clarification meeting will be held on: N/A 11.1 In the case of a Joint Venture a representative of each of the Companies in the Joint Venture partnership should attend the meeting. 11.2 No individual may represent more than one tenderer at the compulsory briefing session. Non-comp"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "been submitted.  The Tenderer must affix the latest CSD report stating the status of the Tax Clearance Certificate 25. If the Tender does not meet the requirements contained in the NEDA Procurement Policy, and the mentioned framework, it"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T06:30:38.075Z"
+ },
+ "176576": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "WTE1064CE-NTSHINGWAYO PLUMBING REVISED SPECIFICATION rev1.pdf",
+    "pages": 46,
+    "result": "text"
+   },
+   {
+    "title": "BBBEE -EME-QME REPORTING  LETTER (3).pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-10",
+     "time": "11:00",
+     "venue": "Ntshingwayo Dam near Newcastle Town"
+    },
+    "source": "regex",
+    "snippet": "am HOWICK 3290 Compulsory Briefing Session Date: 10 November 2026 Time: 11:00am Venue: Ntshingwayo Dam near Newcastle Town Coordinates - 27°94'78\"S and 29°94'87\"E. COMPILED BY: CONSTRUCTION EAST BIDDER: (Company address and stamp)"
+   },
+   "cidb_grade": {
+    "value": "1GB",
+    "source": "regex",
+    "snippet": "AL PROVINCE- CIDB CONTRACTOR GRADING DESIGNATION OF (CIDB -1GB). SUBMIT COMPLETED BID DOCUMENTS TO: TO BE DEPOSITED IN: Department Water and Sanitation The bid box at the entrance of Construction East Office Building R103 Prospect Road Midmar Dam"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM PERSONS IN"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T06:30:35.303Z"
+ },
+ "176577": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Volume 1A - Bid document - supplies.pdf",
+    "pages": 48,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "................ 18 3 | P a g e 31 Registration On the CSD ........................................................................... 18 32 Registration Certificates and Accreditation with OEMS Or Professional Bodies 18 SECTION D: STANDARD BIDDING DOC"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T06:30:35.266Z"
  }
 }

@@ -1,10 +1,10 @@
 {
  "date": "2026-11-02",
- "generated_at": "2026-11-01T22:36:52.239Z",
+ "generated_at": "2026-11-02T06:31:40.894Z",
  "site": "https://jaykgope1-gif.github.io/tenderfind-sa",
  "note": "Tenders with province 'National' or 'Not stated' should go to subscribers in every province.",
  "counts": {
-  "new": 6,
+  "new": 9,
   "closing_soon": 23
  },
  "new": {
@@ -22,6 +22,38 @@
      "compulsory_briefing": null,
      "cidb": null,
      "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176563.html"
+    }
+   ]
+  },
+  "Supplies": {
+   "National": [
+    {
+     "id": "176577",
+     "title": "Appointment of a service provider for the supply and delivery of three (3) brainboxes ed-008 ethernet to digital i/o devices and 100m cat5…",
+     "buyer": "Air Traffic and Navigation Services Company Limited",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-09T11:00:00+02:00",
+     "closing_text": "Mon, 09 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176577.html"
+    }
+   ],
+   "KwaZulu-Natal": [
+    {
+     "id": "176576",
+     "title": "Supply, deliver, install and connection of local content plumbing, fresh water and sanitary ware at ntshingwayo dam project near newcastle…",
+     "buyer": "Water and Sanitation",
+     "province": "KwaZulu-Natal",
+     "trade": "Supplies",
+     "closing": "2026-11-16T11:00:00+02:00",
+     "closing_text": "Mon, 16 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · Tue, 10 Nov · 11:00 · Ntshingwayo Dam near Newcastle Town",
+     "compulsory_briefing": true,
+     "cidb": "1GB",
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176576.html"
     }
    ]
   },
@@ -99,6 +131,21 @@
      "compulsory_briefing": null,
      "cidb": null,
      "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176573.html"
+    }
+   ],
+   "Mpumalanga": [
+    {
+     "id": "176575",
+     "title": "Appointment of professional agencies for travel accommodation services for nkangala economic development agency for a period of three (3)…",
+     "buyer": "Nkangala District Municipality",
+     "province": "Mpumalanga",
+     "trade": "Professional services",
+     "closing": "2026-11-30T12:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 12:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176575.html"
     }
    ]
   }

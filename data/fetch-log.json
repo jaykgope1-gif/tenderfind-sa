@@ -1,5 +1,39 @@
 [
  {
+  "at": "2026-11-02T06:30:31.519Z",
+  "ok": true,
+  "days": {
+   "2026-10-31": {
+    "releases": 3,
+    "badRecords": 0
+   },
+   "2026-11-01": {
+    "releases": 3,
+    "badRecords": 0
+   },
+   "2026-11-02": {
+    "releases": 7,
+    "badRecords": 0
+   }
+  },
+  "releases": 13,
+  "added": 3,
+  "updated": [
+   {
+    "id": "176296",
+    "changes": [
+     "closing date",
+     "documents"
+    ],
+    "from": "2026-11-11T11:00:00+02:00",
+    "to": "2026-11-13T11:00:00+02:00"
+   }
+  ],
+  "unchanged": 9,
+  "removed": 0,
+  "total": 452
+ },
+ {
   "at": "2026-11-01T22:36:47.896Z",
   "ok": true,
   "days": {
