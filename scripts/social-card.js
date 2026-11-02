@@ -49,30 +49,34 @@ function cardHtml(tenders, now) {
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { width: 1080px; height: 1920px; overflow: hidden; }
   body { background: #0b5d3b; font-family: "Noto Sans", "Segoe UI", "DejaVu Sans", Arial, sans-serif; color: #16191a;
-         display: flex; flex-direction: column; padding: ${five ? "100px" : "120px"} 72px ${five ? "90px" : "110px"}; }
+         display: flex; flex-direction: column; padding: ${five ? "80px" : "110px"} 72px ${five ? "70px" : "100px"}; }
   .kicker { color: #f2b705; font-size: 42px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; }
-  h1 { color: #fff; font-size: ${five ? 84 : 92}px; line-height: 1.05; font-weight: 800; margin: 20px 0 ${five ? 44 : 56}px; }
-  .list { display: flex; flex-direction: column; gap: ${five ? 24 : 30}px; flex: 1; }
-  .t { background: #fff; border-radius: 28px; padding: ${five ? "28px 36px" : "36px 40px"}; border-left: 16px solid #f2b705; }
+  h1 { color: #fff; font-size: ${five ? 80 : 92}px; line-height: 1.05; font-weight: 800; margin: 16px 0 ${five ? 36 : 52}px; }
+  .list { display: flex; flex-direction: column; gap: ${five ? 20 : 28}px; flex: 1; }
+  .t { background: #fff; border-radius: 28px; padding: ${five ? "24px 34px" : "34px 40px"}; border-left: 16px solid #f2b705; }
   .t.soon { border-left-color: #b42318; }
   .what { font-size: ${five ? 44 : 50}px; font-weight: 700; line-height: 1.15; }
   .meta { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-top: 14px; font-size: ${five ? 33 : 36}px; color: #545b5e; }
   .close { flex: none; font-weight: 700; color: #0b5d3b; background: #e8f1ec; padding: 6px 20px; border-radius: 40px; }
   .soon .close { color: #b42318; background: #fdecea; }
-  .foot { margin-top: ${five ? 44 : 56}px; color: #fff; text-align: center; }
-  .foot .cta { font-size: 44px; font-weight: 600; line-height: 1.3; }
-  .foot .brand { margin-top: 26px; font-size: 62px; font-weight: 800; }
+  .trust { margin-top: ${five ? 30 : 44}px; border: 3px solid #f2b705; border-radius: 24px; padding: 22px 30px;
+           color: #fff; font-size: 34px; line-height: 1.35; text-align: center; }
+  .trust b { color: #f2b705; }
+  .foot { margin-top: ${five ? 30 : 40}px; color: #fff; text-align: center; }
+  .foot .cta { font-size: 38px; font-weight: 600; line-height: 1.3; }
+  .foot .brand { margin-top: 14px; font-size: 60px; font-weight: 800; }
   .foot .brand span { color: #f2b705; }
-  .foot .free { margin-top: 8px; font-size: 36px; color: #cfe3d8; }
+  .foot .free { margin-top: 4px; font-size: 34px; color: #cfe3d8; }
 </style></head>
 <body>
-  <div class="kicker">Government tenders</div>
+  <div class="kicker">Public government tenders</div>
   <h1>Gauteng tenders closing this week</h1>
   <div class="list">
 ${items}
   </div>
+  <div class="trust">Public tenders from National Treasury’s eTenders.<br><b>We don’t sell tenders.</b> You bid yourself.</div>
   <div class="foot">
-    <div class="cta">New tenders for your trade,<br>in your inbox every morning</div>
+    <div class="cta">Tenders for your trade, emailed every morning</div>
     <div class="brand">TenderFind <span>SA</span></div>
     <div class="free">Free for 14 days · link in caption</div>
   </div>
