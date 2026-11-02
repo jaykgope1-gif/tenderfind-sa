@@ -1,10 +1,10 @@
 {
  "date": "2026-11-02",
- "generated_at": "2026-11-02T07:07:52.742Z",
+ "generated_at": "2026-11-02T07:31:04.040Z",
  "site": "https://jaykgope1-gif.github.io/tenderfind-sa",
  "note": "Tenders with province 'National' or 'Not stated' should go to subscribers in every province.",
  "counts": {
-  "new": 14,
+  "new": 19,
   "closing_soon": 23
  },
  "new": {
@@ -65,6 +65,19 @@
      "compulsory_briefing": null,
      "cidb": null,
      "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176577.html"
+    },
+    {
+     "id": "176586",
+     "title": "The nmisa requires the supply and delivery of high purity gases and gas mixtures including cylinder rentals for a period of five years.",
+     "buyer": "NATIONAL METROLOGY INSTITUTE OF SOUTH AFRICA",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-24T11:00:00+02:00",
+     "closing_text": "Tue, 24 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · Tue, 10 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176586.html"
     }
    ],
    "KwaZulu-Natal": [
@@ -152,6 +165,21 @@
      "cidb": null,
      "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176373.html"
     }
+   ],
+   "Not stated": [
+    {
+     "id": "176589",
+     "title": "Construction of the 1200 nd midstation to newton bulk water welded steel pipeline (re-advert)",
+     "buyer": "Solplaatje Local Municipality",
+     "province": "Not stated",
+     "trade": "Construction",
+     "closing": "2026-12-04T10:00:00+02:00",
+     "closing_text": "Fri, 04 Dec 2026, 10:00",
+     "briefing": "Compulsory briefing · Thu, 12 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": "9CE",
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176589.html"
+    }
    ]
   },
   "Professional services": {
@@ -168,6 +196,19 @@
      "compulsory_briefing": null,
      "cidb": null,
      "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176572.html"
+    },
+    {
+     "id": "176587",
+     "title": "The national metrology institute of south africa (nmisa) wishes to procure the services of a panel of service providers to provide…",
+     "buyer": "NATIONAL METROLOGY INSTITUTE OF SOUTH AFRICA",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-24T11:00:00+02:00",
+     "closing_text": "Tue, 24 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176587.html"
     }
    ],
    "KwaZulu-Natal": [
@@ -213,6 +254,40 @@
      "compulsory_briefing": null,
      "cidb": null,
      "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176582.html"
+    }
+   ]
+  },
+  "Maintenance & repairs": {
+   "National": [
+    {
+     "id": "176588",
+     "title": "Electrical Engineer: Barberton Magistrate Court: Installation of a back up generator and uninterruptible power system",
+     "buyer": "Public Works",
+     "province": "National",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-11-23T11:00:00+02:00",
+     "closing_text": "Mon, 23 Nov 2026, 11:00",
+     "briefing": "Briefing · 02:13 · N/A Virtual Meeting: N/A",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176588.html"
+    }
+   ]
+  },
+  "Other": {
+   "Western Cape": [
+    {
+     "id": "176585",
+     "title": "Sd03/2026-2027 appointment of a service provider for the rendering of home-based care services at the sivuyile residential facility…",
+     "buyer": "Western Cape - Social Development",
+     "province": "Western Cape",
+     "trade": "Other",
+     "closing": "2026-11-30T11:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · 10:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176585.html"
     }
    ]
   }

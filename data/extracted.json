@@ -17136,5 +17136,199 @@
    }
   },
   "extracted_at": "2026-11-02T07:06:44.789Z"
+ },
+ "176585": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "SD03 2026 -2027 - Sivuyile Home-Based Care (signed).pdf",
+    "pages": 18,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "mpulsory information briefing session: 2.7.1 A compulsory information briefing session will be held online on: Date : Time : 10:00 Meeting Link : 2.7.2 Each bidder will be required to register for and attend the information briefing session using the Meeting link above. 2.7.3 Attendance will be"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T07:30:00.735Z"
+ },
+ "176586": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "NMISA (26-27) T0001A.pdf",
+    "pages": 43,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-10",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "Compulsory Briefing Session Details (Pretoria) Date: 10 November 2026 Time: 10:00am SAST Venue: CSIR Campus, Building 5, Meiring Naude Road, Brumme"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T07:29:57.193Z"
+ },
+ "176587": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "NMISA (26-27) T0008 Tender Document.pdf",
+    "pages": 38,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "EACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERE"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T07:29:57.195Z"
+ },
+ "176588": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "ELECTRICAL ENGINEER-BARBERTON MAGISTRATE OFFICE INSTALLATION OF A BACK-UP GENERATOR-NST26-014.pdf",
+    "pages": 105,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": null,
+     "time": "02:13",
+     "venue": "N/A Virtual Meeting: N/A"
+    },
+    "source": "regex",
+    "snippet": "aluation. [C.2.7] A tender clarification meeting will N/A held in respect of this tender N/A Attendance of said clarification meeting is not compulsory.t the particulars for said tender clarification meeting are: Location: N/A Venue: N/A Virtual Meeting: N/A Date: N/A Starting time: N/A [C.2.1"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "istration on National Treasury’s Central Supplier Database (CSD). Insert the Supplier Registration Number on the form of offer, including proposed sub- consultants if any 10 Upon request, submission of fingerprints obtainable from local"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T07:29:57.157Z"
+ },
+ "176589": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "BFI01 26 MBSC6 - CONSTRUCTION OF THE 1200 ND MIDSTATION TO NEWTON BULK WATER WELDED STEEL PIPELINE (RE-ADVERT)...pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-12",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "Order No. SCM 011 Compulsory Briefing Session A Briefing meeting with representatives of the Employer will be held on Thursday, 12 November 2026, at 10:00 am at KIMBERLEY CITY HALL, OLD DE BEERS ROAD, KIMBERLEY. The briefing meeting will be followed by a site visit, with all tenderers proceeding directly to a secti"
+   },
+   "cidb_grade": {
+    "value": "9CE",
+    "source": "regex",
+    "snippet": "l Points for the specific goal 10 Points CIDB Grading 9 CE Local Content Applicable as per Tender Document (MBD 6.2) Tender document The tender document will be available for purchase from 09 November 2026 @ 12:00 pm Where bids can be collected"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "D 4: 3.13. • Full disclosure of business interests as per CSD on MBD 4: 3.14. • The main contractor will be required to achieve a set Contract Participation Goal (CPG) of 30% made up by subcontracting work to local SMMEs using local labor and using local p"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T07:30:01.447Z"
  }
 }
