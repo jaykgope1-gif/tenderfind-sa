@@ -16844,31 +16844,20 @@
   "status": "ok",
   "docs": [
    {
-    "title": "3 Tender data  print on pink.pdf",
-    "pages": 15,
+    "title": "11 Scope of Work Blue page.pdf",
+    "pages": 4,
     "result": "text"
    },
    {
-    "title": "1 COVER PAGE Print in colour.pdf",
-    "pages": 1,
+    "title": "11 Scope of Work Blue page.pdf",
+    "pages": 4,
     "result": "text"
    }
   ],
   "fields": {
    "briefing": {
-    "value": {
-     "compulsory": true,
-     "date": null,
-     "time": null,
-     "venue": null
-    },
-    "source": "regex",
-    "snippet": "cation Meeting A compulsory clarification meeting will be held on: N/A 11.1 In the case of a Joint Venture a representative of each of the Companies in the Joint Venture partnership should attend the meeting. 11.2 No individual may represent more than one tenderer at the compulsory briefing session. Non-comp"
-   },
-   "csd_required": {
-    "value": true,
-    "source": "regex",
-    "snippet": "been submitted.  The Tenderer must affix the latest CSD report stating the status of the Tax Clearance Certificate 25. If the Tender does not meet the requirements contained in the NEDA Procurement Policy, and the mentioned framework, it"
+    "value": null,
+    "source": "not found"
    },
    "cidb_grade": {
     "value": null,
@@ -16878,12 +16867,16 @@
     "value": null,
     "source": "not found"
    },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
    "location": {
     "value": null,
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-02T06:30:38.075Z"
+  "extracted_at": "2026-11-02T07:06:48.145Z"
  },
  "176576": {
   "status": "ok",
@@ -16964,5 +16957,184 @@
    }
   },
   "extracted_at": "2026-11-02T06:30:35.266Z"
+ },
+ "176578": {
+  "status": "no-pdf",
+  "docs": [],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T07:06:44.783Z"
+ },
+ "176579": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ 12240 Grading of perimeter road at King Phalo Airport.pdf",
+    "pages": 77,
+    "result": "text"
+   },
+   {
+    "title": "NEC_ Supply Short Contract_Grading of Perimeter Road at King Phalo Airport.pdf",
+    "pages": 48,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": false,
+     "date": "2026-11-11",
+     "time": "12:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "al Confidential Non - COMPULSORY BRIEFING SESSION SCHEDULED AS FOLLOWS A non-compulsory clarification meeting with representatives of the Employer will take place in person on the 11 November 2026 @ 12:00PM Wednesday King Phalo Airport, Administrator Office, 66 Settler’s Way, 1st Floor, East London,"
+   },
+   "cidb_grade": {
+    "value": "1CE",
+    "source": "regex",
+    "snippet": "PORT Only tenderers who are a CIDB contractor grading of 1CE or Higher as stated on the Tender Data may submit tender offers. Only those tenderers who are registered with the cidb, or are capable of being so prior to the evaluation of submissions, in a"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. NB: FAILURE TO PROVIDE / OR COMPLY WITH ANY OF T"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T07:06:44.783Z"
+ },
+ "176581": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ IDT PPE.pdf",
+    "pages": 12,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T07:06:44.747Z"
+ },
+ "176582": {
+  "status": "no-pdf",
+  "docs": [],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T07:06:51.740Z"
+ },
+ "176584": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ 12113 Apron Repairs at King Phalo Airport.pdf",
+    "pages": 76,
+    "result": "text"
+   },
+   {
+    "title": "RFQ12113 -2 King Phalo Apron Repair Contract.pdf",
+    "pages": 49,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": false,
+     "date": "2026-11-11",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "of this tender. Non - COMPULSORY BRIEFING Session A non-compulsory clarification meeting with representatives of the Employer will take place in person on the 11 November 2026 @11:00PM Wednesday King Phalo Airport, Administrator Office, 66 Settler’s Way, 1st Floor, East London, Eastern Cape, South"
+   },
+   "cidb_grade": {
+    "value": "1CE",
+    "source": "regex",
+    "snippet": "IRPORT (KPA) Tenderers who are a CIDB contractor grading 1 CE or higher as stated on the Tender Data may submit tender offers. TENDER DOCUMENT AVAILABILITY Tender documents are available from 02 November 2026, for free download from National Treasury’s"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. NB: FAILURE TO PROVIDE / OR COMPLY WITH ANY OF T"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T07:06:44.789Z"
  }
 }

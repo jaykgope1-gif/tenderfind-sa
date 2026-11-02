@@ -1,10 +1,10 @@
 {
  "date": "2026-11-02",
- "generated_at": "2026-11-02T06:31:40.894Z",
+ "generated_at": "2026-11-02T07:07:52.742Z",
  "site": "https://jaykgope1-gif.github.io/tenderfind-sa",
  "note": "Tenders with province 'National' or 'Not stated' should go to subscribers in every province.",
  "counts": {
-  "new": 9,
+  "new": 14,
   "closing_soon": 23
  },
  "new": {
@@ -22,11 +22,37 @@
      "compulsory_briefing": null,
      "cidb": null,
      "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176563.html"
+    },
+    {
+     "id": "176578",
+     "title": "Request for bid: renewal of veeam data cloud for microsoft 365 subscription for a period of thirty-six (36) months with an option to renew…",
+     "buyer": "SOUTH AFRICAN HEALTH PRODUCTS REGULATORY AUTHORITY",
+     "province": "National",
+     "trade": "IT",
+     "closing": "2026-11-24T11:00:00+02:00",
+     "closing_text": "Tue, 24 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176578.html"
     }
    ]
   },
   "Supplies": {
    "National": [
+    {
+     "id": "176581",
+     "title": "To procure branded T-shirts for IDT",
+     "buyer": "Independent Development Trust",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176581.html"
+    },
     {
      "id": "176577",
      "title": "Appointment of a service provider for the supply and delivery of three (3) brainboxes ed-008 ethernet to digital i/o devices and 100m cat5…",
@@ -71,6 +97,32 @@
      "compulsory_briefing": true,
      "cidb": "2GB",
      "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176509.html"
+    },
+    {
+     "id": "176579",
+     "title": "Request for quote of the appointment of a service provider for the grading of the perimeter fence road as sacaa audit findings at king…",
+     "buyer": "Airports Company of South Africa",
+     "province": "National",
+     "trade": "Construction",
+     "closing": "2026-11-27T12:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 12:00",
+     "briefing": "Non-compulsory briefing · Wed, 11 Nov · 12:00",
+     "compulsory_briefing": false,
+     "cidb": "1CE",
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176579.html"
+    },
+    {
+     "id": "176584",
+     "title": "Request for a service provider to repair broken and cracked concrete edges on the main apron blocks for the period not exceeding six…",
+     "buyer": "Airports Company of South Africa",
+     "province": "National",
+     "trade": "Construction",
+     "closing": "2026-11-27T12:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 12:00",
+     "briefing": "Non-compulsory briefing · Wed, 11 Nov · 11:00",
+     "compulsory_briefing": false,
+     "cidb": "1CE",
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176584.html"
     }
    ],
    "KwaZulu-Natal": [
@@ -142,10 +194,25 @@
      "trade": "Professional services",
      "closing": "2026-11-30T12:00:00+02:00",
      "closing_text": "Mon, 30 Nov 2026, 12:00",
-     "briefing": "Compulsory briefing",
-     "compulsory_briefing": true,
+     "briefing": null,
+     "compulsory_briefing": null,
      "cidb": null,
      "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176575.html"
+    }
+   ],
+   "Western Cape": [
+    {
+     "id": "176582",
+     "title": "Provision of professional engineering services for various projects for a multi – year period ending 30 june 2029",
+     "buyer": "Cederberg Municipality",
+     "province": "Western Cape",
+     "trade": "Professional services",
+     "closing": "2026-12-01T12:00:00+02:00",
+     "closing_text": "Tue, 01 Dec 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176582.html"
     }
    ]
   }
