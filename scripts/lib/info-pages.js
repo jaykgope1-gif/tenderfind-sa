@@ -72,9 +72,9 @@ function privacyPage(siteUrl) {
 <p>We use a few services to run the alerts. They store or process your information on our behalf and may do so outside South Africa, under their own data-protection terms:</p>
 <ul>
 <li><b>Tally</b> (the sign-up form)</li>
-<li><b>Google Sheets</b> (where sign-ups are kept)</li>
+<li><b>Google Sheets</b> (a backup copy of sign-ups)</li>
 <li><b>Gmail (Google)</b> (to send the alert emails)</li>
-<li><b>n8n</b> (the automation service that prepares and sends the morning alerts)</li>
+<li><b>n8n</b> (where sign-ups are stored, and which prepares and sends the morning alerts)</li>
 <li><b>WhatsApp / Meta</b> (once WhatsApp alerts start)</li>
 </ul>
 

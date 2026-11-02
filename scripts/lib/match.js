@@ -90,7 +90,12 @@ const clean = (s, max) => {
   return s.length > max ? s.slice(0, max - 1).replace(/\s+\S*$/, "") + "…" : s;
 };
 const shortDate = (closingText) => closingText.replace(/ \d{4},/, ",").replace(/^(\w+),/, "$1"); // "Tue, 03 Nov 2026, 10:00" -> "Tue 03 Nov, 10:00"
-const firstName = (sub) => clean(sub.name.split(" ")[0] || "there", 30);
+// First name from the sign-up, or "" (the greeting then just says "Good morning,"). Placeholder names are ignored.
+const firstName = (sub) => {
+  const n = clean(sub.name.split(" ")[0] || "", 30);
+  return /^(test|testing|n\/?a|none|-)$/i.test(n) ? "" : n;
+};
+const greet = (word, sub) => `${word}${firstName(sub) ? " " + firstName(sub) : ""},`;
 
 // One line per tender, e.g. "Cleaning, Gauteng: Cleaning of Polokwane clinics… Closes 06 Nov, 11:00. Compulsory briefing. https://…"
 function tenderLine(t) {
@@ -122,8 +127,9 @@ const unsubscribeHtml = () =>
 function emailItem(t) {
   return {
     text: `${t.title}\n${t.buyer || "Buyer not stated"}\nCloses ${shortDate(t.closing_text)}\n${t.url}`,
-    html: `<p style="margin:0 0 14px"><a href="${escHtml(t.url)}" style="font-weight:bold;color:#0b5d3b">${escHtml(t.title)}</a><br>` +
-      `${escHtml(t.buyer || "Buyer not stated")}<br>Closes ${escHtml(shortDate(t.closing_text))}</p>`,
+    html: `<p style="margin:0 0 16px"><b>${escHtml(t.title)}</b><br>` +
+      `${escHtml(t.buyer || "Buyer not stated")}<br>Closes ${escHtml(shortDate(t.closing_text))}<br>` +
+      `<a href="${escHtml(t.url)}" style="color:#0b5d3b;font-weight:bold">View tender</a></p>`,
   };
 }
 
@@ -136,7 +142,7 @@ function emailMessage(sub, today, fresh, soon) {
       heading: `New today (${fresh.total})`,
       items: fresh.list.map(emailItem),
       footText: `See all new tenders: ${MATCH.SITE}/${seeAllSuffix(sub)}`,
-      footHtml: `<a href="${escHtml(MATCH.SITE + "/" + seeAllSuffix(sub))}">${more > 0 ? `See all ${fresh.total} new tenders` : "See them on the website"}</a>`,
+      footHtml: `<a href="${escHtml(MATCH.SITE + "/" + seeAllSuffix(sub))}">${more > 0 ? `See all ${fresh.total} new tenders on TenderFind SA` : "Open TenderFind SA"}</a>`,
     });
   }
   if (soon.list.length) sections.push({ heading: "Closing in 3 days", items: soon.list.map(emailItem) });
@@ -145,38 +151,38 @@ function emailMessage(sub, today, fresh, soon) {
     ? `${fresh.total} new tender${fresh.total === 1 ? "" : "s"} for you, ${day}`
     : `Tenders closing in 3 days, ${day}`;
   const text = [
-    `Good morning ${firstName(sub)},`,
+    greet("Good morning", sub),
     "",
     ...sections.flatMap((s) => [s.heading.toUpperCase(), "", ...s.items.map((i) => i.text + "\n"), ...(s.footText ? [s.footText, ""] : [])]),
     "Always read the tender documents before you bid.",
     "",
     "--",
-    `TenderFind SA · ${MATCH.SITE}`,
+    "TenderFind SA: every SA government tender, in plain English.",
     UNSUBSCRIBE_TEXT,
   ].join("\n");
   const html = `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.45;color:#16191a;max-width:560px">` +
-    `<p>Good morning ${escHtml(firstName(sub))},</p>` +
+    `<p>${escHtml(greet("Good morning", sub))}</p>` +
     sections.map((s) => `<h3 style="font-size:15px;margin:18px 0 8px">${escHtml(s.heading)}</h3>${s.items.map((i) => i.html).join("")}${s.footHtml ? `<p>${s.footHtml}</p>` : ""}`).join("") +
     `<p style="color:#545b5e">Always read the tender documents before you bid.</p>` +
     `<hr style="border:0;border-top:1px solid #d9ddd7;margin:18px 0">` +
-    `<p style="font-size:12px;color:#545b5e">TenderFind SA · <a href="${MATCH.SITE}/">${MATCH.SITE.replace("https://", "")}</a><br>${unsubscribeHtml()}</p></div>`;
+    `<p style="font-size:12px;color:#545b5e"><a href="${MATCH.SITE}/" style="color:#545b5e">TenderFind SA</a>: every SA government tender, in plain English.<br>${unsubscribeHtml()}</p></div>`;
   return { subject, text, html };
 }
 
 function trialEndedEmail(sub) {
   const subject = "Your free trial of TenderFind SA alerts has ended";
   const text = [
-    `Hi ${firstName(sub)},`,
+    greet("Hi", sub),
     "",
     "Your 14-day free trial of TenderFind SA tender alerts has ended. To keep getting new tenders for your trade every morning, it's R149 a month. Nothing is charged automatically.",
     "",
-    `How to subscribe: ${MATCH.SITE}/pricing.html (or just reply to this email).`,
+    "To subscribe, reply to this email or see Pricing on TenderFind SA.",
     "",
     "--",
     UNSUBSCRIBE_TEXT,
   ].join("\n");
   const html = `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.45;color:#16191a;max-width:560px">` +
-    `<p>Hi ${escHtml(firstName(sub))},</p><p>Your 14-day free trial of TenderFind SA tender alerts has ended. To keep getting new tenders for your trade every morning, it's R149 a month. Nothing is charged automatically.</p>` +
+    `<p>${escHtml(greet("Hi", sub))}</p><p>Your 14-day free trial of TenderFind SA tender alerts has ended. To keep getting new tenders for your trade every morning, it's R149 a month. Nothing is charged automatically.</p>` +
     `<p><a href="${MATCH.SITE}/pricing.html">See how to subscribe</a>, or just reply to this email.</p>` +
     `<hr style="border:0;border-top:1px solid #d9ddd7;margin:18px 0"><p style="font-size:12px;color:#545b5e">${unsubscribeHtml()}</p></div>`;
   return { subject, text, html };
@@ -275,7 +281,7 @@ function matchSubscribers(alerts, rows, sentToday = [], today = alerts.date, cha
 
     // WhatsApp: one approved template per message.
     if (can.trialEnded) {
-      messages.push({ to: key, phone: key, kind: "trial_ended", template: "trial_ended", params: [firstName(sub)] });
+      messages.push({ to: key, phone: key, kind: "trial_ended", template: "trial_ended", params: [firstName(sub) || "there"] });
       continue;
     }
     const fresh = pick(alerts.new, sub, MATCH.MAX_NEW);
@@ -285,7 +291,7 @@ function matchSubscribers(alerts, rows, sentToday = [], today = alerts.date, cha
         phone: key,
         kind: "new",
         template: `tender_alert_${fresh.list.length}`,
-        params: [firstName(sub), String(fresh.total), ...fresh.list.map(tenderLine)],
+        params: [firstName(sub) || "there", String(fresh.total), ...fresh.list.map(tenderLine)],
         button_suffix: seeAllSuffix(sub),
         tender_ids: fresh.list.map((t) => t.id),
         more: fresh.total - fresh.list.length,
