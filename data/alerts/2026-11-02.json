@@ -1,10 +1,10 @@
 {
  "date": "2026-11-02",
- "generated_at": "2026-11-02T15:38:18.686Z",
+ "generated_at": "2026-11-02T16:58:44.018Z",
  "site": "https://jaykgope1-gif.github.io/tenderfind-sa",
  "note": "Tenders with province 'National' or 'Not stated' should go to subscribers in every province.",
  "counts": {
-  "new": 102,
+  "new": 103,
   "closing_soon": 26
  },
  "new": {
@@ -61,6 +61,19 @@
      "compulsory_briefing": false,
      "cidb": null,
      "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176608.html"
+    },
+    {
+     "id": "176712",
+     "title": "Procurement of 889 Security Insignia.",
+     "buyer": "Transnet SOC Ltd",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176712.html"
     },
     {
      "id": "176577",

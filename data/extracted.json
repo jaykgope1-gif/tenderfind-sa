@@ -19957,5 +19957,44 @@
    }
   },
   "extracted_at": "2026-11-02T15:37:14.547Z"
+ },
+ "176712": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "TRIM202608208410679_RFQ.pdf",
+    "pages": 31,
+    "result": "text"
+   },
+   {
+    "title": "General Bid Conditions.pdf",
+    "pages": 11,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "TO MEET THE RESPONDENTS TAX OBLIGATIONS. TCS PIN OR CSD NO: SUPPLIER COMPLIANCE STATUS Yes No BBEEE STATUS LEVEL SWORN AFFIDAVIT Yes, Who was the Certificate issued by AN ACCOUNTING OFFICER AS CONTEMPLATED"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-02T16:57:39.009Z"
  }
 }
