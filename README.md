@@ -162,6 +162,6 @@ Tender data comes from National Treasury eTenders (public domain) via the offici
 
 ## Roadmap
 
-- **Email alerts (built, not yet switched on for subscribers):** n8n workflows, subscriber and run-log tables, and the go-live checklist are in [docs/email-alerts.md](docs/email-alerts.md).
+- **Email alerts (live since 2 Nov 2026):** n8n workflows, subscriber and run-log tables, and the go-live checklist are in [docs/email-alerts.md](docs/email-alerts.md).
 - **WhatsApp alerts (designed):** templates, STOP handling and WhatsApp Business setup are in [docs/n8n-alerts.md](docs/n8n-alerts.md). They start once a Meta WhatsApp Business account is approved.
 - **Phase F (done):** `/pricing.html` (Free / Alerts R149 a month / Bid Help) and subscriber status (Trial / Paying until a date / Cancelled) with a 14-day trial. The rules are in `scripts/lib/match.js`, and how to record a payment is in [docs/n8n-alerts.md §2a](docs/n8n-alerts.md#2a-subscriber-status-trial-and-payments-phase-f).

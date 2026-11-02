@@ -19,9 +19,9 @@ any time  Tally form ──webhook──► n8n "Sign-ups from Tally" ──► 
 
 | Piece | Type | What it does |
 |---|---|---|
-| **TenderFind SA - Daily update trigger** | workflow | 04:47 SA time: starts the GitHub Action via `workflow_dispatch`, checks it every minute until it finishes (max 40 min), logs `github_update` ok / failed, retries once, then emails the owner. Needs the **GitHub – tenderfind** credential on its three GitHub steps. |
+| **TenderFind SA - Daily update trigger** | workflow (on) | 04:47 SA time: starts the GitHub Action via `workflow_dispatch`, checks it every minute until it finishes (max 40 min), logs `github_update` ok / failed, retries once, then emails the owner. Needs the **GitHub – tenderfind** credential on its three GitHub steps. |
 | **TenderFind SA - Sign-ups from Tally** | workflow (on) | Tally webhook → checks email and consent → saves to the subscribers table. A repeat sign-up updates trades/provinces but keeps the first sign-up date (the free trial can't be restarted) and the status. Only accepts requests with the `x-tenderfind-key` header; the value lives only in this workflow's webhook settings and in Tally. |
-| **TenderFind SA - Morning email alerts** | workflow (off) | 06:45 SA time: reads the alerts file and the subscribers table, matches, emails each subscriber, logs `daily_update` and `email_alerts`. Contains a **send-only list** that blocks every address except the owner's until it is emptied. |
+| **TenderFind SA - Morning email alerts** | workflow (**live since 2 Nov 2026**) | 06:45 SA time: reads the alerts file and the subscribers table, matches, emails every consented, non-cancelled subscriber, logs `daily_update` and `email_alerts`. Its **send-only list** is empty; putting the owner's address back in it pauses sending to everyone else. |
 | **TenderFind subscribers** | data table | email, whatsapp, name, business, trades, provinces, reminders, consent, consent_text, signup_date, status, paid_until, submission_id, is_test |
 | **TenderFind run log** | data table | run_date, kind (`github_update`, `daily_update`, `email_alerts`), result, details |
 
@@ -39,11 +39,15 @@ Edit the **status** column in the subscribers table:
 
 Subject like "4 new tenders for you, Mon, 02 Nov". Up to 10 new tenders (title, buyer, closing date, link), a link to see the rest, up to 3 "closing in 3 days" reminders if they asked, and an unsubscribe line on every email. Sent from the owner's Gmail as "TenderFind SA". A normal Gmail account can send about 500 emails a day.
 
-## Before switching alerts on for real subscribers
+## Go-live record (2 Nov 2026)
 
-1. Create the **GitHub – tenderfind** credential in n8n. Open the trigger workflow, open "Start GitHub daily update", and use Credential → Create new (templated auth, `Authorization: Bearer {{api_key}}`). Pick it in "Find the run" and "Check the run" too, and save.
-2. Put the current webhook key in Tally: form → Integrations → Webhooks → HTTP headers → `x-tenderfind-key`.
-3. Run the trigger workflow once by hand and check the run log shows `github_update ok`.
-4. Switch the trigger workflow on, and check the run log after one unattended morning.
-5. Sign up once with the owner's email through the live form, check the next morning's email, then delete that row.
-6. Owner's go-ahead: empty `SEND_ONLY_TO` in "Match tenders to subscribers" and switch on "Morning email alerts".
+Final checks before switching on real sending, all passed:
+
+1. n8n started the GitHub update, it succeeded, and the run log says `github_update ok`.
+2. One alert email reached the owner (test mode).
+3. A subscriber set to **Cancelled** got nothing (dry run).
+4. An alerts file that isn't today's blocks every email and logs **STALE** (dry run).
+
+Then the test subscriber rows were deleted and the send-only list emptied. The first real alerts go out at 06:45 the next morning.
+
+**Each morning, check the run log for:** `github_update ok` (about 04:50), `daily_update ok` and `email_alerts N sent` (about 06:46). No `email_alerts` line means nobody had matching tenders, or there were no subscribers yet.
