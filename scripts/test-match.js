@@ -3,7 +3,7 @@
 const assert = require("assert");
 const path = require("path");
 const fs = require("fs");
-const { matchSubscribers, normalisePhone, parseRow, applyStatus } = require("./lib/match");
+const { matchSubscribers, normalisePhone, normaliseEmail, dayOf, parseRow, applyStatus } = require("./lib/match");
 
 const file = process.argv[2] || path.join(__dirname, "fixtures", "alerts-sample.json");
 const alerts = JSON.parse(fs.readFileSync(file, "utf8"));
@@ -26,6 +26,9 @@ assert.strictEqual(normalisePhone("082 000 0001"), "27820000001");
 assert.strictEqual(normalisePhone("+27 82 000 0001"), "27820000001");
 assert.strictEqual(normalisePhone("+27 08 200 00000"), "27820000000"); // typed 082… after the form's +27
 assert.strictEqual(normalisePhone("123"), null);
+assert.strictEqual(normaliseEmail(" Thandi@Example.CO.ZA "), "thandi@example.co.za");
+assert.strictEqual(normaliseEmail("not-an-email"), null);
+assert.strictEqual(dayOf("2026-11-01 23:30:00"), "2026-11-01", "a late sign-up must not move to the next day");
 assert.deepStrictEqual(parseRow(row("1", { "Your trade(s)": "Maintenance & repairs, IT" })).trades, ["Maintenance & repairs", "IT"]);
 
 const rows = [
@@ -51,7 +54,7 @@ const status = [
 ];
 const { messages, skipped } = matchSubscribers(alerts, applyStatus(rows, status), ["27820000010"]);
 const sentTo = (phone, kind) => messages.some((m) => m.phone === phone && m.kind === kind);
-const reason = (phone) => (skipped.find((s) => s.phone === phone) || {}).reason;
+const reason = (phone) => (skipped.find((s) => s.to === phone) || {}).reason;
 
 // Newest sign-up wins (two trades), but the trial still counts from the first sign-up.
 assert.ok(messages.some((m) => m.phone === "27820000001" && m.button_suffix === "?province=Gauteng&new=1"));
@@ -70,6 +73,37 @@ for (const m of messages) {
   if (m.kind !== "trial_ended") assert.strictEqual(m.template, `tender_${m.kind === "new" ? "alert" : "closing"}_${m.tender_ids.length}`);
 }
 
-console.log(`${path.basename(file)} (today = ${today}): ${messages.length} messages for ${rows.length} rows — all checks passed`);
-for (const m of messages) console.log(`  → ${m.phone} ${m.template}${m.more ? ` (+${m.more} more)` : ""}`);
-for (const s of skipped) console.log(`  ✗ ${s.phone} ${s.reason}`);
+// ---------- email channel: same rules, keyed by email; WhatsApp is optional ----------
+const erow = (email, o = {}) => row("", { "Email address": email, "WhatsApp number (optional)": "",
+  "Consent": "I agree to receive tender alerts by email, and on WhatsApp if I gave my number. I can unsubscribe at any time.", ...o });
+const erows = [
+  erow("thandi@example.co.za", { "Your name": "Thandi Mokoena", "Your trade(s)": "Cleaning, Construction" }),
+  erow("NoMail"),                                                                             // invalid email
+  erow("gone@example.co.za"),                                                                 // unsubscribed
+  erow("late@example.co.za", { "Submitted at": `${day(-14)} 08:00:00` }),                    // trial over today
+  erow("remind@example.co.za", { "Your trade(s)": "Maintenance & repairs", "Province(s) you can work in": "Limpopo",
+    "Also remind me 3 days before matching tenders close?": "Yes, send reminders" }),
+  erow("both@example.co.za", { "WhatsApp number (optional)": "+27820000020" }),                // cancelled via WhatsApp STOP
+];
+const estatus = [{ Email: "gone@example.co.za", Status: "Cancelled" }, { Phone: "27820000020", Status: "Cancelled" }];
+const em = matchSubscribers(alerts, applyStatus(erows, estatus), [], today, "email");
+const mail = (to) => em.messages.find((m) => m.to === to);
+const eskip = (to) => (em.skipped.find((s) => s.to === to) || {}).reason;
+const t = mail("thandi@example.co.za");
+assert.ok(t && /^\d+ new tenders? for you, /.test(t.subject), "digest subject");
+assert.ok(t.tender_ids.length <= 10, "at most 10 tenders per email");
+for (const body of [t.text, t.html]) assert.ok(/unsubscribe/i.test(body), "every email has an unsubscribe line");
+assert.ok(!/<script/i.test(t.html) && t.html.includes("Closes "), "html: title, buyer, closing date, link");
+assert.strictEqual(eskip(null), "no valid email");
+assert.strictEqual(eskip("gone@example.co.za"), "cancelled");
+assert.strictEqual(mail("late@example.co.za").kind, "trial_ended");
+assert.ok(/unsubscribe/i.test(mail("late@example.co.za").text));
+assert.ok(/Closing in 3 days/.test(mail("remind@example.co.za").html), "reminders go in the same email");
+assert.strictEqual(eskip("both@example.co.za"), "cancelled", "STOP on WhatsApp also stops email");
+
+console.log(`${path.basename(file)} (today = ${today}): WhatsApp ${messages.length} messages for ${rows.length} rows, email ${em.messages.length} for ${erows.length} — all checks passed`);
+for (const m of messages) console.log(`  → ${m.to} ${m.template}${m.more ? ` (+${m.more} more)` : ""}`);
+for (const s of skipped) console.log(`  ✗ ${s.to} ${s.reason}`);
+for (const m of em.messages) console.log(`  ✉ ${m.to} "${m.subject}" (${m.kind})`);
+for (const s of em.skipped) console.log(`  ✗ ${s.to} ${s.reason}`);
+console.log("\n--- sample email (text version) ---\n" + t.text);

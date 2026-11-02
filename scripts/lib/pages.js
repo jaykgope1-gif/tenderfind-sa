@@ -9,8 +9,8 @@ const DISCLAIMER = "Data from National Treasury eTenders (public domain). Always
 
 // The sign-up box shown on every page (site/index.html has the same markup). site/signup.js loads the form on tap.
 const signupHtml = (root) => `<section class="signup" id="signup" aria-labelledby="signup-h">
-<h2 id="signup-h">Get tenders for your trade on WhatsApp every morning</h2>
-<p>Free for 14 days, then R149 a month. Pick your trade and province and we’ll send you the new tenders each morning. <a href="${root}pricing.html">See pricing</a></p>
+<h2 id="signup-h">Get tenders for your trade by email every morning</h2>
+<p>Free for 14 days, then R149 a month. Pick your trade and province and we’ll email you the new tenders each morning. WhatsApp alerts are coming soon. <a href="${root}pricing.html">See pricing</a></p>
 <button class="btn wa wide" type="button" data-signup>Start my 14-day free trial</button>
 <div class="signup-form" hidden><iframe title="Sign up for tender alerts" width="100%" height="1150" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
 <noscript><p><a href="https://tally.so/r/EqKWVX">Open the sign-up form</a></p></noscript>

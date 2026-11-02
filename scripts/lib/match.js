@@ -1,14 +1,17 @@
-// Subscriber matching for the morning WhatsApp alerts.
+// Subscriber matching for the morning tender alerts, by email (now) or WhatsApp (once Meta approves).
 // Plain JavaScript with no require(): paste the whole file into an n8n Code node (see docs/n8n-alerts.md).
 // Tested locally by scripts/test-match.js.
 
 const MATCH = {
-  MAX_NEW: 5, // tenders per morning message
+  MAX_NEW: 5, // tenders per WhatsApp message (template variables)
+  MAX_EMAIL: 10, // tenders per email; the rest are behind "See all"
   MAX_REMIND: 3, // "closing in 3 days" reminders
   TRADES: ["Cleaning", "Security", "Construction", "Maintenance & repairs", "Catering", "IT", "Transport", "Supplies", "Professional services", "Other"],
   PROVINCES: ["Eastern Cape", "Free State", "Gauteng", "KwaZulu-Natal", "Limpopo", "Mpumalanga", "North West", "Northern Cape", "Western Cape"],
   EVERYWHERE: ["National", "Not stated"], // sent to subscribers in every province
   TRIAL_DAYS: 14, // free days from the first sign-up (sign-up day is day 1)
+  SITE: "https://jaykgope1-gif.github.io/tenderfind-sa",
+  UNSUBSCRIBE_TO: "jobkgope1@gmail.com", // where "UNSUBSCRIBE" replies go (the sending Gmail)
 };
 
 // Tally writes ticked boxes as "Cleaning, Security"; keep only known values so typos can't match.
@@ -25,10 +28,15 @@ function normalisePhone(cell) {
   return /^\d{10,15}$/.test(d) ? d : null;
 }
 
+function normaliseEmail(cell) {
+  const e = String(cell || "").trim().toLowerCase();
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e) ? e : null;
+}
+
 // "2026-11-01 14:23:11", "2026-11-01T12:23:11Z" -> "2026-11-01" (SA date)
 function dayOf(cell) {
   const s = String(cell || "").trim();
-  if (/^d{4}-d{2}-d{2}( |$)/.test(s)) return s.slice(0, 10);
+  if (/^\d{4}-\d{2}-\d{2}( |$)/.test(s)) return s.slice(0, 10);
   const t = Date.parse(s);
   return isNaN(t) ? "" : new Date(t + 2 * 36e5).toISOString().slice(0, 10);
 }
@@ -45,15 +53,21 @@ function parseRow(row) {
   return {
     name: String(get("Your name", "Name")).trim(),
     business: String(get("Business name")).trim(),
-    phone: normalisePhone(get("WhatsApp number", "Phone")),
+    email: normaliseEmail(get("Email address", "Email")),
+    phone: normalisePhone(get("WhatsApp number (optional)", "WhatsApp number", "Phone")),
     trades: pickKnown(get("Your trade(s)", "Trades"), MATCH.TRADES),
     provinces: pickKnown(get("Province(s) you can work in", "Provinces"), MATCH.PROVINCES),
-    consent: yes(get("Consent", "I agree to receive tender alerts on WhatsApp. Reply STOP anytime.")),
+    consent: yes(get("Consent")) || Object.keys(row).some((k) => /^i agree/i.test(k) && yes(row[k])),
     reminders: /^yes/i.test(String(get("Reminders", "Also remind me 3 days before matching tenders close?")).trim()), // blank = not asked = no
     signedUp: dayOf(get("Submitted at", "Created at", "Timestamp")),
     access: row._access || { status: "Trial", paidUntil: "", cancelled: false },
   };
 }
+
+// Who a row belongs to, for the chosen channel: their email or their WhatsApp number.
+const keyOf = (sub, channel) => (channel === "email" ? sub.email : sub.phone);
+const rowKey = (r, channel) =>
+  channel === "email" ? normaliseEmail(r["Email address"] || r.Email) : normalisePhone(r["WhatsApp number (optional)"] || r["WhatsApp number"] || r.Phone);
 
 // alerts.new / alerts.closing_soon -> tenders for this subscriber, own provinces first, then national.
 function pick(grouped, sub, max) {
@@ -76,6 +90,7 @@ const clean = (s, max) => {
   return s.length > max ? s.slice(0, max - 1).replace(/\s+\S*$/, "") + "…" : s;
 };
 const shortDate = (closingText) => closingText.replace(/ \d{4},/, ",").replace(/^(\w+),/, "$1"); // "Tue, 03 Nov 2026, 10:00" -> "Tue 03 Nov, 10:00"
+const firstName = (sub) => clean(sub.name.split(" ")[0] || "there", 30);
 
 // One line per tender, e.g. "Cleaning, Gauteng: Cleaning of Polokwane clinics… Closes 06 Nov, 11:00. Compulsory briefing. https://…"
 function tenderLine(t) {
@@ -85,7 +100,7 @@ function tenderLine(t) {
   return clean(`${t.trade}, ${t.province}: ${clean(t.title, 80)} ${facts.join(". ")}. ${t.url}`, 230);
 }
 
-// The "See all" button: the search page filtered to the subscriber's first trade and province.
+// The "See all" link: the search page filtered to the subscriber's trade and province when there's just one.
 function seeAllSuffix(sub) {
   const q = [];
   if (sub.trades.length === 1) q.push(`trade=${encodeURIComponent(sub.trades[0])}`);
@@ -94,27 +109,111 @@ function seeAllSuffix(sub) {
   return `?${q.join("&")}`;
 }
 
-// The "Status" tab: Phone | Status | Paid until | Changed | Note. Lines are read top to bottom:
+// ---------- email ----------
+
+const escHtml = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+const prettyDay = (day) => new Date(day + "T12:00:00Z").toLocaleDateString("en-ZA", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" });
+
+const UNSUBSCRIBE_TEXT = `Don't want these emails? Reply with UNSUBSCRIBE, or email ${MATCH.UNSUBSCRIBE_TO}, and we'll stop them.`;
+const unsubscribeHtml = () =>
+  `Don't want these emails? <a href="mailto:${MATCH.UNSUBSCRIBE_TO}?subject=UNSUBSCRIBE">Unsubscribe</a> (or just reply with UNSUBSCRIBE).`;
+
+// Title, buyer, closing date, link: nothing else, so it reads well on a phone.
+function emailItem(t) {
+  return {
+    text: `${t.title}\n${t.buyer || "Buyer not stated"}\nCloses ${shortDate(t.closing_text)}\n${t.url}`,
+    html: `<p style="margin:0 0 14px"><a href="${escHtml(t.url)}" style="font-weight:bold;color:#0b5d3b">${escHtml(t.title)}</a><br>` +
+      `${escHtml(t.buyer || "Buyer not stated")}<br>Closes ${escHtml(shortDate(t.closing_text))}</p>`,
+  };
+}
+
+function emailMessage(sub, today, fresh, soon) {
+  const day = prettyDay(today);
+  const sections = [];
+  if (fresh.list.length) {
+    const more = fresh.total - fresh.list.length;
+    sections.push({
+      heading: `New today (${fresh.total})`,
+      items: fresh.list.map(emailItem),
+      footText: `See all new tenders: ${MATCH.SITE}/${seeAllSuffix(sub)}`,
+      footHtml: `<a href="${escHtml(MATCH.SITE + "/" + seeAllSuffix(sub))}">${more > 0 ? `See all ${fresh.total} new tenders` : "See them on the website"}</a>`,
+    });
+  }
+  if (soon.list.length) sections.push({ heading: "Closing in 3 days", items: soon.list.map(emailItem) });
+
+  const subject = fresh.total
+    ? `${fresh.total} new tender${fresh.total === 1 ? "" : "s"} for you, ${day}`
+    : `Tenders closing in 3 days, ${day}`;
+  const text = [
+    `Good morning ${firstName(sub)},`,
+    "",
+    ...sections.flatMap((s) => [s.heading.toUpperCase(), "", ...s.items.map((i) => i.text + "\n"), ...(s.footText ? [s.footText, ""] : [])]),
+    "Always read the tender documents before you bid.",
+    "",
+    "--",
+    `TenderFind SA · ${MATCH.SITE}`,
+    UNSUBSCRIBE_TEXT,
+  ].join("\n");
+  const html = `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.45;color:#16191a;max-width:560px">` +
+    `<p>Good morning ${escHtml(firstName(sub))},</p>` +
+    sections.map((s) => `<h3 style="font-size:15px;margin:18px 0 8px">${escHtml(s.heading)}</h3>${s.items.map((i) => i.html).join("")}${s.footHtml ? `<p>${s.footHtml}</p>` : ""}`).join("") +
+    `<p style="color:#545b5e">Always read the tender documents before you bid.</p>` +
+    `<hr style="border:0;border-top:1px solid #d9ddd7;margin:18px 0">` +
+    `<p style="font-size:12px;color:#545b5e">TenderFind SA · <a href="${MATCH.SITE}/">${MATCH.SITE.replace("https://", "")}</a><br>${unsubscribeHtml()}</p></div>`;
+  return { subject, text, html };
+}
+
+function trialEndedEmail(sub) {
+  const subject = "Your free trial of TenderFind SA alerts has ended";
+  const text = [
+    `Hi ${firstName(sub)},`,
+    "",
+    "Your 14-day free trial of TenderFind SA tender alerts has ended. To keep getting new tenders for your trade every morning, it's R149 a month. Nothing is charged automatically.",
+    "",
+    `How to subscribe: ${MATCH.SITE}/pricing.html (or just reply to this email).`,
+    "",
+    "--",
+    UNSUBSCRIBE_TEXT,
+  ].join("\n");
+  const html = `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.45;color:#16191a;max-width:560px">` +
+    `<p>Hi ${escHtml(firstName(sub))},</p><p>Your 14-day free trial of TenderFind SA tender alerts has ended. To keep getting new tenders for your trade every morning, it's R149 a month. Nothing is charged automatically.</p>` +
+    `<p><a href="${MATCH.SITE}/pricing.html">See how to subscribe</a>, or just reply to this email.</p>` +
+    `<hr style="border:0;border-top:1px solid #d9ddd7;margin:18px 0"><p style="font-size:12px;color:#545b5e">${unsubscribeHtml()}</p></div>`;
+  return { subject, text, html };
+}
+
+// ---------- status, trial and payments ----------
+
+// The "Status" tab: Email | Phone | Status | Paid until | Changed | Note. Lines are read top to bottom:
 //   Trial     back to the free trial (it still ends 14 days after the first sign-up)
 //   Paying    paid; alerts run until "Paid until" (YYYY-MM-DD; blank = no end date)
-//   Cancelled no more messages (the STOP workflow writes this; "Stopped" means the same)
-//   Resumed   undo Cancelled and carry on as before (the START workflow writes this)
-// A number with no lines is on the free trial.
+//   Cancelled no more messages (unsubscribe / STOP; "Stopped" means the same)
+//   Resumed   undo Cancelled and carry on as before
+// Someone with no lines is on the free trial. A line can name the email, the phone or both.
 function applyStatus(rows, statusRows) {
   const acc = {};
+  const keysOf = (email, phone) => [email && `e:${email}`, phone && `p:${phone}`].filter(Boolean);
   for (const s of statusRows || []) {
-    const phone = normalisePhone(s.Phone);
-    if (!phone) continue;
-    const a = (acc[phone] ||= { status: "Trial", paidUntil: "", cancelled: false });
+    const keys = keysOf(normaliseEmail(s.Email), normalisePhone(s.Phone));
+    if (!keys.length) continue;
     const st = String(s.Status || "").trim().toLowerCase();
-    if (st === "paying") Object.assign(a, { status: "Paying", paidUntil: dayOf(s["Paid until"]), cancelled: false });
-    else if (st === "trial") Object.assign(a, { status: "Trial", paidUntil: "", cancelled: false });
-    else if (st === "cancelled" || st === "stopped") a.cancelled = true;
-    else if (st === "resumed" || st === "active") a.cancelled = false;
+    for (const k of keys) {
+      const a = (acc[k] ||= { status: "Trial", paidUntil: "", cancelled: false });
+      if (st === "paying") Object.assign(a, { status: "Paying", paidUntil: dayOf(s["Paid until"]), cancelled: false });
+      else if (st === "trial") Object.assign(a, { status: "Trial", paidUntil: "", cancelled: false });
+      else if (st === "cancelled" || st === "stopped" || st === "unsubscribed") a.cancelled = true;
+      else if (st === "resumed" || st === "active") a.cancelled = false;
+    }
   }
   return rows.map((r) => {
-    const phone = normalisePhone(r["WhatsApp number"] || r.Phone);
-    return phone && acc[phone] ? { ...r, _access: acc[phone] } : r;
+    const keys = keysOf(rowKey(r, "email"), rowKey(r, "whatsapp"));
+    const found = keys.map((k) => acc[k]).filter(Boolean);
+    if (!found.length) return r;
+    // Cancelled on either channel stops both; a paid period on either counts.
+    const merged = { ...found[found.length - 1], cancelled: found.some((a) => a.cancelled) };
+    const paying = found.find((a) => a.status === "Paying");
+    if (paying) Object.assign(merged, { status: "Paying", paidUntil: paying.paidUntil });
+    return { ...r, _access: merged };
   });
 }
 
@@ -130,68 +229,77 @@ function access(sub, firstSignup, today) {
   return { why: `trial ended ${end}` };
 }
 
+// ---------- matching ----------
+
 // rows: sheet rows (objects keyed by column name), oldest first. Returns one entry per message to send.
-// If a number signed up more than once, the newest sign-up is used (people re-sign to change trades).
-// sentToday: phones already sent a morning or trial-ended message today (from the Log), so a re-run never double-sends.
-function matchSubscribers(alerts, rows, sentToday = [], today = alerts.date) {
-  const already = new Set(sentToday.map(normalisePhone));
-  const firstSignup = {}; // the trial runs from someone's first sign-up, not a later re-sign-up
+// channel: "email" (one digest per person) or "whatsapp" (approved templates).
+// If someone signed up more than once, the newest sign-up is used (people re-sign to change trades),
+// but the free trial counts from their first sign-up.
+// sentToday: emails/numbers already sent a morning or trial-ended message today (from the Log),
+// so a re-run never double-sends.
+function matchSubscribers(alerts, rows, sentToday = [], today = alerts.date, channel = "whatsapp") {
+  const norm = channel === "email" ? normaliseEmail : normalisePhone;
+  const already = new Set(sentToday.map(norm));
+  const firstSignup = {};
   for (const r of rows) {
-    const p = normalisePhone(r["WhatsApp number"] || r.Phone);
+    const k = rowKey(r, channel);
     const d = dayOf(r["Submitted at"] || r["Created at"] || r.Timestamp);
-    if (p && d && (!firstSignup[p] || d < firstSignup[p])) firstSignup[p] = d;
+    if (k && d && (!firstSignup[k] || d < firstSignup[k])) firstSignup[k] = d;
   }
-  const seenPhones = new Set();
+  const seen = new Set();
   const messages = [];
   const skipped = [];
   for (const row of [...rows].reverse()) {
     const sub = parseRow(row);
+    const key = keyOf(sub, channel);
     const why =
-      !sub.phone ? "no valid WhatsApp number" :
+      !key ? (channel === "email" ? "no valid email" : "no valid WhatsApp number") :
       !sub.consent ? "no consent" :
       !sub.trades.length ? "no trades" :
-      seenPhones.has(sub.phone) ? "duplicate sign-up" :
-      already.has(sub.phone) ? "already sent today" : null;
-    if (why) { skipped.push({ phone: sub.phone, reason: why }); continue; }
-    seenPhones.add(sub.phone);
+      seen.has(key) ? "duplicate sign-up" :
+      already.has(key) ? "already sent today" : null;
+    if (why) { skipped.push({ to: key, reason: why }); continue; }
+    seen.add(key);
 
-    const can = access(sub, firstSignup[sub.phone], today);
-    if (can.why) { skipped.push({ phone: sub.phone, reason: can.why }); continue; }
-    if (can.trialEnded) {
-      // One message on the first day after the trial; the button opens the pricing page.
-      messages.push({ phone: sub.phone, kind: "trial_ended", template: "trial_ended", params: [clean(sub.name.split(" ")[0] || "there", 30)] });
+    const can = access(sub, firstSignup[key], today);
+    if (can.why) { skipped.push({ to: key, reason: can.why }); continue; }
+
+    if (channel === "email") {
+      if (can.trialEnded) { messages.push({ to: key, kind: "trial_ended", ...trialEndedEmail(sub) }); continue; }
+      const fresh = pick(alerts.new, sub, MATCH.MAX_EMAIL);
+      const soon = sub.reminders ? pick(alerts.closing_soon, sub, MATCH.MAX_REMIND) : { list: [], total: 0 };
+      if (!fresh.list.length && !soon.list.length) { skipped.push({ to: key, reason: "nothing new for their trades today" }); continue; }
+      messages.push({ to: key, kind: "new", tender_ids: [...fresh.list, ...soon.list].map((t) => t.id), ...emailMessage(sub, today, fresh, soon) });
       continue;
     }
 
+    // WhatsApp: one approved template per message.
+    if (can.trialEnded) {
+      messages.push({ to: key, phone: key, kind: "trial_ended", template: "trial_ended", params: [firstName(sub)] });
+      continue;
+    }
     const fresh = pick(alerts.new, sub, MATCH.MAX_NEW);
     if (fresh.list.length) {
       messages.push({
-        phone: sub.phone,
+        to: key,
+        phone: key,
         kind: "new",
         template: `tender_alert_${fresh.list.length}`,
-        params: [clean(sub.name.split(" ")[0] || "there", 30), String(fresh.total), ...fresh.list.map(tenderLine)],
+        params: [firstName(sub), String(fresh.total), ...fresh.list.map(tenderLine)],
         button_suffix: seeAllSuffix(sub),
         tender_ids: fresh.list.map((t) => t.id),
         more: fresh.total - fresh.list.length,
       });
     }
-    if (sub.reminders) {
-      const soon = pick(alerts.closing_soon, sub, MATCH.MAX_REMIND);
-      if (soon.list.length) {
-        messages.push({
-          phone: sub.phone,
-          kind: "reminder",
-          template: `tender_closing_${soon.list.length}`,
-          params: soon.list.map(tenderLine),
-          tender_ids: soon.list.map((t) => t.id),
-        });
-      }
+    const soon = sub.reminders ? pick(alerts.closing_soon, sub, MATCH.MAX_REMIND) : { list: [] };
+    if (soon.list.length) {
+      messages.push({ to: key, phone: key, kind: "reminder", template: `tender_closing_${soon.list.length}`, params: soon.list.map(tenderLine), tender_ids: soon.list.map((t) => t.id) });
     }
-    if (!fresh.list.length && !(sub.reminders && pick(alerts.closing_soon, sub, 1).list.length)) {
-      skipped.push({ phone: sub.phone, reason: "nothing new for their trades today" });
-    }
+    if (!fresh.list.length && !soon.list.length) skipped.push({ to: key, reason: "nothing new for their trades today" });
   }
   return { messages, skipped };
 }
 
-if (typeof module !== "undefined" && module.exports) module.exports = { MATCH, parseRow, normalisePhone, applyStatus, access, matchSubscribers, tenderLine };
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = { MATCH, parseRow, normalisePhone, normaliseEmail, dayOf, applyStatus, access, matchSubscribers, tenderLine };
+}

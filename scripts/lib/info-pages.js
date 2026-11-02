@@ -48,7 +48,7 @@ function privacyPage(siteUrl) {
   const contact = contactLines();
   const body = `<article class="card prose">
 <h1>Privacy notice</h1>
-<p>This notice explains what personal information TenderFind SA collects when you sign up for WhatsApp tender alerts, why, and your rights under the Protection of Personal Information Act (POPIA).</p>
+<p>This notice explains what personal information TenderFind SA collects when you sign up for tender alerts (by email now, and on WhatsApp once it starts), why, and your rights under the Protection of Personal Information Act (POPIA).</p>
 
 <h2>Who is responsible</h2>
 <p>The responsible party is ${who}.${contact.length ? `<br>${contact.join("<br>")}` : ""}</p>
@@ -58,7 +58,7 @@ function privacyPage(siteUrl) {
 <ul>
 <li>your name and business name</li>
 <li>the trades and provinces you choose, and whether you want closing reminders</li>
-<li>your WhatsApp number</li>
+<li>your email address, and your WhatsApp number if you give it</li>
 <li>your consent to receive alerts, and the date you gave it</li>
 <li>which page of this site you signed up from</li>
 </ul>
@@ -73,16 +73,17 @@ function privacyPage(siteUrl) {
 <ul>
 <li><b>Tally</b> (the sign-up form)</li>
 <li><b>Google Sheets</b> (where sign-ups are kept)</li>
-<li><b>WhatsApp / Meta</b> (to deliver the messages)</li>
-<li>the automation service that sends the morning messages</li>
+<li><b>Gmail (Google)</b> (to send the alert emails)</li>
+<li><b>n8n</b> (the automation service that prepares and sends the morning alerts)</li>
+<li><b>WhatsApp / Meta</b> (once WhatsApp alerts start)</li>
 </ul>
 
 <h2>How long we keep it</h2>
-<p>For as long as you stay subscribed. When you reply STOP, the messages stop straight away and we delete your details within 30 days.</p>
+<p>For as long as you stay subscribed. When you unsubscribe (or reply STOP on WhatsApp), the alerts stop and we delete your details within 30 days.</p>
 
 <h2>Your rights</h2>
 <ul>
-<li><b>Stop at any time:</b> reply STOP to any alert.</li>
+<li><b>Stop at any time:</b> use the unsubscribe line in any alert email, or reply UNSUBSCRIBE.</li>
 <li><b>See, correct or delete</b> the information we hold about you${contact.length ? " by contacting us using the details above" : " by replying to any alert"}.</li>
 <li><b>Complain</b> to the Information Regulator if you're unhappy with how we handle your information: <a href="https://inforegulator.org.za/" rel="noopener">inforegulator.org.za</a>.</li>
 </ul>
@@ -92,7 +93,7 @@ function privacyPage(siteUrl) {
 </article>`;
   return shell({
     title: "Privacy notice | TenderFind SA",
-    description: "What TenderFind SA collects when you sign up for WhatsApp tender alerts, why, and your rights under POPIA.",
+    description: "What TenderFind SA collects when you sign up for tender alerts (by email now, and on WhatsApp once it starts), why, and your rights under POPIA.",
     canonical: `${siteUrl}/privacy.html`,
     root: "./",
     body,
@@ -126,10 +127,10 @@ ${plan("Free", "R0", "", [
 ], { html: `<a class="btn wide" href="./">Search tenders</a>` })}
 ${plan("Alerts", `R${alerts}`, "a month", [
   "Everything in Free",
-  "One WhatsApp message every morning with new tenders for your trades and provinces",
+  "One email every morning with new tenders for your trades and provinces (WhatsApp coming soon)",
   "Optional reminder 3 days before matching tenders close",
   `<b>${trialDays} days free</b> when you sign up, no payment details needed`,
-  "Cancel any time: reply STOP",
+  "Cancel any time: unsubscribe from any email",
 ], { main: true, html: subscribe
   ? `<a class="btn wa wide" href="${subscribe}" target="_blank" rel="noopener">WhatsApp us to subscribe</a><p class="small"><a href="#signup">Or start the ${trialDays}-day free trial</a></p>`
   : `<a class="btn wa wide" href="#signup">Start your ${trialDays}-day free trial</a>` })}
@@ -144,17 +145,17 @@ ${plan("Bid Help", bidHelpFrom ? `from R${bidHelpFrom}` : "Ask us", "per tender,
 <article class="card prose faq">
 <h2>Questions</h2>
 <h3>What happens after the free trial?</h3>
-<p>On day ${trialDays + 1} we send you one message saying the trial has ended. Alerts stop unless you subscribe. Nothing is charged automatically.</p>
+<p>On day ${trialDays + 1} we send you one email saying the trial has ended. Alerts stop unless you subscribe. Nothing is charged automatically.</p>
 <h3>How do I pay?</h3>
-<p>${subscribe ? "Tap “WhatsApp us to subscribe” and we’ll send you the payment details." : "When your trial ends, reply to our message and we’ll send you the payment details."} Your alerts carry on as soon as payment is confirmed.</p>
+<p>${subscribe ? "Tap “WhatsApp us to subscribe” and we’ll send you the payment details." : "When your trial ends, reply to our email and we’ll send you the payment details."} Your alerts carry on as soon as payment is confirmed.</p>
 <h3>How do I cancel?</h3>
-<p>Reply STOP to any alert. The messages stop straight away.</p>
+<p>Use the unsubscribe line at the bottom of any alert email, or just reply UNSUBSCRIBE.</p>
 <h3>Can I change my trades or provinces?</h3>
-<p>Yes. Sign up again with the same WhatsApp number and your new choices; the newest sign-up is used.</p>
+<p>Yes. Sign up again with the same email address and your new choices; the newest sign-up is used.</p>
 </article>`;
   return shell({
     title: "Pricing | TenderFind SA",
-    description: `Search every South African government tender free. Get new tenders for your trade on WhatsApp every morning for R${alerts} a month, with a ${trialDays}-day free trial.`,
+    description: `Search every South African government tender free. Get new tenders for your trade by email every morning for R${alerts} a month, with a ${trialDays}-day free trial.`,
     canonical: `${siteUrl}/pricing.html`,
     root: "./",
     body,
