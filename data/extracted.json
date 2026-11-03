@@ -20823,6 +20823,39 @@
   },
   "extracted_at": "2026-11-03T11:22:04.072Z"
  },
+ "176753": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "MTH11-2026.pdf",
+    "pages": 124,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T14:51:39.724Z"
+ },
  "176754": {
   "status": "ok",
   "docs": [
@@ -23622,5 +23655,190 @@
    }
   },
   "extracted_at": "2026-11-03T14:14:06.279Z"
+ },
+ "176874": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFB RAF 2026 00072 External Capacitation.pdf",
+    "pages": 50,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": false,
+     "date": "2026-11-09",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "03 NOVEMBER 2026 NON-COMPULSORY BRIEFING SESSION DATE AND TIME: 09 NOVEMBER 2026 @ 11:00 AM A NON-COMPULSORY BRIEFING SESSION WILL BE HELD ON MICROSOFT TEAMS: https://teams.microsoft.com/meet/3709418655353902?p=Lu0uim1BCJAmtNOe63 CLOSING DATE: 01 DECEMBER 2026 @ 11H00 AM"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "H PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T14:51:46.150Z"
+ },
+ "176875": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Volume 1A - Re-advert - Business English Writing  Training.pdf",
+    "pages": 54,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "............................... 22 33. Registration On the CSD ........................................................................... 22 34. Registration Certificates and Accreditation with OEMS Or Professional Bodies 22 SECTION D: STANDARD BIDDING DO"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T14:51:39.687Z"
+ },
+ "176876": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Invitation to Tender (ITT) - Supply and Delivery of MAGNET OIL COOLED SELF-CLEANER at Matimba Power Station.pdf",
+    "pages": 59,
+    "result": "text"
+   },
+   {
+    "title": "Technical Evaluation Criteria -  E3743GXLPMAT-Supply and Delivery of MAGNET OIL COOLED SELF-CLEANER at Matimba Power Station.pdf",
+    "pages": 2,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": null,
+     "time": "02:16",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "enquiry close 2.15 Site visit and/or clarification meeting No Clarification meeting 2.16 Seeking clarification The tenderer will notify Eskom of any clarifications required before the closing time for clarification queries, which is 5 working days before the deadline for tender submission. 2.22"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "a footprint in South Africa but that are not registered on CSD and have not provided a SARS pin number) and local tenderers (that have not provided their SARS e-filing PIN number for verification by Eskom and/or their CSD profile / CSD number). √"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T14:51:39.723Z"
+ },
+ "176877": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "T07-2026_Advert.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T14:51:43.599Z"
+ },
+ "176878": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "T29-2026_Advert.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T14:51:45.445Z"
  }
 }

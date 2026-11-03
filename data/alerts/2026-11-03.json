@@ -1,10 +1,10 @@
 {
  "date": "2026-11-03",
- "generated_at": "2026-11-03T14:23:37.268Z",
+ "generated_at": "2026-11-03T14:52:48.364Z",
  "site": "https://tenderfind.co.za",
  "note": "Tenders with province 'National' or 'Not stated' should go to subscribers in every province.",
  "counts": {
-  "new": 111,
+  "new": 117,
   "closing_soon": 53
  },
  "new": {
@@ -309,6 +309,19 @@
      "compulsory_briefing": null,
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176764.html"
+    },
+    {
+     "id": "176753",
+     "title": "Maintenance, service and repairs of standby generators for 36 months: area 1",
+     "buyer": "Public Works",
+     "province": "National",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-11-26T11:00:00+02:00",
+     "closing_text": "Thu, 26 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176753.html"
     }
    ],
    "KwaZulu-Natal": [
@@ -477,6 +490,19 @@
      "url": "https://tenderfind.co.za/tender/176826.html"
     },
     {
+     "id": "176875",
+     "title": "Appointment of suitably qualified and accredited training service provider to deliver business english, professional writing, and…",
+     "buyer": "Air Traffic and Navigation Services Company Limited",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-17T11:00:00+02:00",
+     "closing_text": "Tue, 17 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176875.html"
+    },
+    {
      "id": "176829",
      "title": "Appointment of a service provider under a co-sourcing arrangement to support the review of the idc and group annual financial statements…",
      "buyer": "Industrial Development Corporation of South Africa Limited",
@@ -553,6 +579,19 @@
      "compulsory_briefing": false,
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176727.html"
+    },
+    {
+     "id": "176874",
+     "title": "Appointment of a service provider to conduct a comprehensive operational diagnostic assessment, business process re-engineering exercise…",
+     "buyer": "Road Accident Fund",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-12-01T11:00:00+02:00",
+     "closing_text": "Tue, 01 Dec 2026, 11:00",
+     "briefing": "Non-compulsory briefing · Mon, 09 Nov · 11:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176874.html"
     },
     {
      "id": "176728",
@@ -924,6 +963,19 @@
      "url": "https://tenderfind.co.za/tender/176820.html"
     },
     {
+     "id": "176876",
+     "title": "Supply and delivery of magnet oil cooled self-cleaner",
+     "buyer": "ESKOM",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-24T10:00:00+02:00",
+     "closing_text": "Tue, 24 Nov 2026, 10:00",
+     "briefing": "Briefing · 02:16",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176876.html"
+    },
+    {
      "id": "176736",
      "title": "Invitation of prospective bidders to supply and letting South African Social Security Agency office accommodation to Bizana Local Office…",
      "buyer": "South African Social Security Agency",
@@ -1265,6 +1317,32 @@
      "compulsory_briefing": null,
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176759.html"
+    },
+    {
+     "id": "176877",
+     "title": "Provision Of Office Premises to Lease for Overstrand Sub-District in Hermanus for The Period Ending 30 June 2029",
+     "buyer": "Overberg District Municipality",
+     "province": "Western Cape",
+     "trade": "Other",
+     "closing": "2026-11-27T12:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176877.html"
+    },
+    {
+     "id": "176878",
+     "title": "Provision of Office Premises to Lease for Overstrand Sub-District in Kleinmond for The Period Ending 30 June 2029",
+     "buyer": "Overberg District Municipality",
+     "province": "Western Cape",
+     "trade": "Other",
+     "closing": "2026-11-27T12:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176878.html"
     }
    ],
    "KwaZulu-Natal": [
