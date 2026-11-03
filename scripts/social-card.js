@@ -3,8 +3,8 @@
 //
 //   node scripts/social-card.js [--chrome <path>]
 //
-// Writes site/social/card.png and site/social/card.json ({ day, ids }). No web address goes on
-// the picture: the sign-up link belongs in the caption, where it can be tapped.
+// Writes site/social/card.png and site/social/card.json ({ day, ids }). The picture shows the short
+// sign-up address (tenderfind.co.za/signup) so it works even when shared without a caption.
 // Never fails the daily run: with no Chrome or no suitable tenders it just leaves no card.
 const fs = require("fs");
 const path = require("path");
@@ -64,9 +64,10 @@ function cardHtml(tenders, now) {
   .trust b { color: #f2b705; }
   .foot { margin-top: ${five ? 30 : 40}px; color: #fff; text-align: center; }
   .foot .cta { font-size: 38px; font-weight: 600; line-height: 1.3; }
-  .foot .brand { margin-top: 14px; font-size: 60px; font-weight: 800; }
+  .foot .brand { margin-top: 10px; font-size: 54px; font-weight: 800; }
   .foot .brand span { color: #f2b705; }
-  .foot .free { margin-top: 4px; font-size: 34px; color: #cfe3d8; }
+  .foot .url { display: inline-block; margin-top: 14px; background: #f2b705; color: #16191a; font-size: 44px; font-weight: 800; padding: 10px 34px; border-radius: 60px; }
+  .foot .free { margin-top: 10px; font-size: 32px; color: #cfe3d8; }
 </style></head>
 <body>
   <div class="kicker">Public government tenders</div>
@@ -78,7 +79,8 @@ ${items}
   <div class="foot">
     <div class="cta">Tenders for your trade, emailed every morning</div>
     <div class="brand">TenderFind <span>SA</span></div>
-    <div class="free">Free for 14 days · link in caption</div>
+    <div class="url">tenderfind.co.za/signup</div>
+    <div class="free">Free for 14 days · no card needed</div>
   </div>
 </body></html>`;
 }
