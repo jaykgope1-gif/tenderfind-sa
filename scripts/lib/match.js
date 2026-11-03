@@ -90,10 +90,11 @@ const clean = (s, max) => {
   return s.length > max ? s.slice(0, max - 1).replace(/\s+\S*$/, "") + "…" : s;
 };
 const shortDate = (closingText) => closingText.replace(/ \d{4},/, ",").replace(/^(\w+),/, "$1"); // "Tue, 03 Nov 2026, 10:00" -> "Tue 03 Nov, 10:00"
-// First name from the sign-up, or "" (the greeting then just says "Good morning,"). Placeholder names are ignored.
+// First name from the sign-up, capitalised ("jay" -> "Jay"), or "" (the greeting then just says "Good morning,").
+// Placeholder names are ignored.
 const firstName = (sub) => {
   const n = clean(sub.name.split(" ")[0] || "", 30);
-  return /^(test|testing|n\/?a|none|-)$/i.test(n) ? "" : n;
+  return /^(test|testing|n\/?a|none|-)$/i.test(n) ? "" : n.charAt(0).toUpperCase() + n.slice(1);
 };
 const greet = (word, sub) => `${word}${firstName(sub) ? " " + firstName(sub) : ""},`;
 

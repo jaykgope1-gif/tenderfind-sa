@@ -97,6 +97,8 @@ assert.ok(!/<script/i.test(t.html) && t.html.includes("Closes "), "html: title, 
 assert.ok(t.html.includes(">View tender</a>") && !/>[^<]*github\.io/.test(t.html), "friendly link text, no raw address shown");
 assert.ok(/^Good morning Thandi,/.test(t.text));
 const noName = matchSubscribers(alerts, [erow("anon@example.co.za", { "Your name": "" }), erow("t@example.co.za", { "Your name": "TEST Person" })], [], today, "email").messages;
+const lower = matchSubscribers(alerts, [erow("lower@example.co.za", { "Your name": "jay kgope" })], [], today, "email").messages[0];
+assert.ok(/^Good morning Jay,/.test(lower.text), "lower-case names are capitalised");
 assert.ok(noName.length === 2 && noName.every((m) => m.text.split("\n")[0] === "Good morning," && !/test/i.test(m.subject)), "no name or a test name: plain 'Good morning,'");
 assert.strictEqual(eskip(null), "no valid email");
 assert.strictEqual(eskip("gone@example.co.za"), "cancelled");
