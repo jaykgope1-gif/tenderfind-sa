@@ -1,10 +1,10 @@
 {
  "date": "2026-11-03",
- "generated_at": "2026-11-03T11:23:37.525Z",
- "site": "https://jaykgope1-gif.github.io/tenderfind-sa",
+ "generated_at": "2026-11-03T13:08:37.980Z",
+ "site": "https://tenderfind.co.za",
  "note": "Tenders with province 'National' or 'Not stated' should go to subscribers in every province.",
  "counts": {
-  "new": 66,
+  "new": 89,
   "closing_soon": 52
  },
  "new": {
@@ -21,7 +21,20 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176744.html"
+     "url": "https://tenderfind.co.za/tender/176744.html"
+    },
+    {
+     "id": "176831",
+     "title": "Appointment of a service provider for the provision, implementation, configuration, maintenance and support of a compliance management…",
+     "buyer": "Industrial Development Corporation of South Africa Limited",
+     "province": "National",
+     "trade": "Construction",
+     "closing": "2026-11-19T11:00:00+02:00",
+     "closing_text": "Thu, 19 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176831.html"
     },
     {
      "id": "176723",
@@ -34,7 +47,20 @@
      "briefing": "Briefing · Thu, 12 Nov · 10:00",
      "compulsory_briefing": false,
      "cidb": "1SQ",
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176723.html"
+     "url": "https://tenderfind.co.za/tender/176723.html"
+    },
+    {
+     "id": "176833",
+     "title": "The Afrikaans Language Museum and Monument (ATM) hereby invites quotations for the provision of professional mechanical repair and…",
+     "buyer": "Die Afrikaanse Taal Museum",
+     "province": "National",
+     "trade": "Construction",
+     "closing": "2026-11-27T11:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176833.html"
     },
     {
      "id": "176719",
@@ -47,7 +73,7 @@
      "briefing": "Compulsory briefing · Thu, 12 Nov · 10:00",
      "compulsory_briefing": true,
      "cidb": "7EP",
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176719.html"
+     "url": "https://tenderfind.co.za/tender/176719.html"
     }
    ],
    "KwaZulu-Natal": [
@@ -62,7 +88,7 @@
      "briefing": "Compulsory briefing",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176815.html"
+     "url": "https://tenderfind.co.za/tender/176815.html"
     },
     {
      "id": "176730",
@@ -75,7 +101,7 @@
      "briefing": "Briefing · 11:00",
      "compulsory_briefing": false,
      "cidb": "1GB",
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176730.html"
+     "url": "https://tenderfind.co.za/tender/176730.html"
     }
    ],
    "Gauteng": [
@@ -90,7 +116,7 @@
      "briefing": "Compulsory briefing · Mon, 09 Nov · 12:00",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176776.html"
+     "url": "https://tenderfind.co.za/tender/176776.html"
     }
    ],
    "Limpopo": [
@@ -105,7 +131,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176604.html"
+     "url": "https://tenderfind.co.za/tender/176604.html"
     },
     {
      "id": "176605",
@@ -118,7 +144,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176605.html"
+     "url": "https://tenderfind.co.za/tender/176605.html"
     },
     {
      "id": "176607",
@@ -131,7 +157,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176607.html"
+     "url": "https://tenderfind.co.za/tender/176607.html"
     }
    ],
    "Mpumalanga": [
@@ -146,7 +172,7 @@
      "briefing": "Compulsory briefing · 11:00",
      "compulsory_briefing": true,
      "cidb": "3CE",
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176731.html"
+     "url": "https://tenderfind.co.za/tender/176731.html"
     },
     {
      "id": "176743",
@@ -159,7 +185,7 @@
      "briefing": "Compulsory briefing · Wed, 11 Nov · 11:00 · Emakhazeni Local Municipality, 25 Scheepers Street, Emakhazeni",
      "compulsory_briefing": true,
      "cidb": "4SQ",
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176743.html"
+     "url": "https://tenderfind.co.za/tender/176743.html"
     }
    ]
   },
@@ -176,7 +202,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176762.html"
+     "url": "https://tenderfind.co.za/tender/176762.html"
     },
     {
      "id": "176786",
@@ -189,7 +215,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176786.html"
+     "url": "https://tenderfind.co.za/tender/176786.html"
     },
     {
      "id": "176754",
@@ -202,7 +228,20 @@
      "briefing": "No briefing session",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176754.html"
+     "url": "https://tenderfind.co.za/tender/176754.html"
+    },
+    {
+     "id": "176827",
+     "title": "Appointment of a Sanitation Expert to Advise the Technical Executive Committee of Agrément South Africa.",
+     "buyer": "Agrément South Africa",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-10T12:00:00+02:00",
+     "closing_text": "Tue, 10 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176827.html"
     },
     {
      "id": "176733",
@@ -215,7 +254,59 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176733.html"
+     "url": "https://tenderfind.co.za/tender/176733.html"
+    },
+    {
+     "id": "176837",
+     "title": "Request for quotation for service provider for social media markerting training.",
+     "buyer": "Passenger Rail Agency of South Africa",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-12T10:00:00+02:00",
+     "closing_text": "Thu, 12 Nov 2026, 10:00",
+     "briefing": "Briefing · Fri, 06 Nov · 10:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176837.html"
+    },
+    {
+     "id": "176843",
+     "title": "Request for quotation (rfq) for service provider for solar pv training.",
+     "buyer": "Passenger Rail Agency of South Africa",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-12T10:00:00+02:00",
+     "closing_text": "Thu, 12 Nov 2026, 10:00",
+     "briefing": "Briefing · Fri, 06 Nov · 11:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176843.html"
+    },
+    {
+     "id": "176826",
+     "title": "Appointment of a suitably qualified actuarial firm to perform an actuarial valuation of The South African Human Rights Commission long…",
+     "buyer": "South African Human Rights Commission",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-13T11:00:00+02:00",
+     "closing_text": "Fri, 13 Nov 2026, 11:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176826.html"
+    },
+    {
+     "id": "176829",
+     "title": "Appointment of a service provider under a co-sourcing arrangement to support the review of the idc and group annual financial statements…",
+     "buyer": "Industrial Development Corporation of South Africa Limited",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-18T11:00:00+02:00",
+     "closing_text": "Wed, 18 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176829.html"
     },
     {
      "id": "176814",
@@ -228,7 +319,7 @@
      "briefing": "Non-compulsory briefing · Wed, 11 Nov · 11:00",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176814.html"
+     "url": "https://tenderfind.co.za/tender/176814.html"
     },
     {
      "id": "176755",
@@ -241,7 +332,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176755.html"
+     "url": "https://tenderfind.co.za/tender/176755.html"
     },
     {
      "id": "176721",
@@ -254,7 +345,20 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176721.html"
+     "url": "https://tenderfind.co.za/tender/176721.html"
+    },
+    {
+     "id": "176828",
+     "title": "The Afrikaans Language Museum and Monument (ATM) hereby invites quotations for the provision of professional grass-cutting and grounds…",
+     "buyer": "Die Afrikaanse Taal Museum",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-27T11:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176828.html"
     },
     {
      "id": "176727",
@@ -267,7 +371,7 @@
      "briefing": "Non-compulsory briefing · Thu, 12 Nov · 11:00",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176727.html"
+     "url": "https://tenderfind.co.za/tender/176727.html"
     },
     {
      "id": "176728",
@@ -280,7 +384,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176728.html"
+     "url": "https://tenderfind.co.za/tender/176728.html"
     },
     {
      "id": "176729",
@@ -293,7 +397,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176729.html"
+     "url": "https://tenderfind.co.za/tender/176729.html"
     },
     {
      "id": "176803",
@@ -306,7 +410,7 @@
      "briefing": "Compulsory briefing",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176803.html"
+     "url": "https://tenderfind.co.za/tender/176803.html"
     },
     {
      "id": "176801",
@@ -319,7 +423,7 @@
      "briefing": "Compulsory briefing",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176801.html"
+     "url": "https://tenderfind.co.za/tender/176801.html"
     },
     {
      "id": "176806",
@@ -332,7 +436,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176806.html"
+     "url": "https://tenderfind.co.za/tender/176806.html"
     },
     {
      "id": "176796",
@@ -345,7 +449,20 @@
      "briefing": "Compulsory briefing",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176796.html"
+     "url": "https://tenderfind.co.za/tender/176796.html"
+    },
+    {
+     "id": "176834",
+     "title": "Request for proposals for the provision of joint monitoring team professional services for the design, supply, installations and…",
+     "buyer": "Airports Company of South Africa",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2027-01-22T11:00:00+02:00",
+     "closing_text": "Fri, 22 Jan 2027, 11:00",
+     "briefing": "Compulsory briefing · Fri, 13 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176834.html"
     }
    ],
    "Limpopo": [
@@ -360,7 +477,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176657.html"
+     "url": "https://tenderfind.co.za/tender/176657.html"
     },
     {
      "id": "176732",
@@ -373,7 +490,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176732.html"
+     "url": "https://tenderfind.co.za/tender/176732.html"
     }
    ],
    "Gauteng": [
@@ -388,7 +505,7 @@
      "briefing": "Compulsory briefing · Mon, 09 Nov · 10:00",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176766.html"
+     "url": "https://tenderfind.co.za/tender/176766.html"
     },
     {
      "id": "176780",
@@ -401,7 +518,7 @@
      "briefing": "Compulsory briefing · Mon, 09 Nov · 11:00",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176780.html"
+     "url": "https://tenderfind.co.za/tender/176780.html"
     },
     {
      "id": "176816",
@@ -414,7 +531,20 @@
      "briefing": "Compulsory briefing · Thu, 12 Nov · 10:00",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176816.html"
+     "url": "https://tenderfind.co.za/tender/176816.html"
+    },
+    {
+     "id": "176820",
+     "title": "The supply of training on risk management course to the department of water and sanitation employees at infrastructure branch training…",
+     "buyer": "Water and Sanitation",
+     "province": "Gauteng",
+     "trade": "Professional services",
+     "closing": "2026-11-18T11:00:00+02:00",
+     "closing_text": "Wed, 18 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · Thu, 12 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176820.html"
     }
    ],
    "Eastern Cape": [
@@ -429,7 +559,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176768.html"
+     "url": "https://tenderfind.co.za/tender/176768.html"
     }
    ],
    "Free State": [
@@ -444,7 +574,22 @@
      "briefing": "No briefing session",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176772.html"
+     "url": "https://tenderfind.co.za/tender/176772.html"
+    }
+   ],
+   "Mpumalanga": [
+    {
+     "id": "176825",
+     "title": "Request for proposal for internal audit services at nkangala tvet college for the a period of five (5) years bid no nktvet/2026/11/01",
+     "buyer": "Nkangala TVET College",
+     "province": "Mpumalanga",
+     "trade": "Professional services",
+     "closing": "2026-11-24T11:00:00+02:00",
+     "closing_text": "Tue, 24 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176825.html"
     }
    ],
    "North West": [
@@ -459,7 +604,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176813.html"
+     "url": "https://tenderfind.co.za/tender/176813.html"
     }
    ],
    "KwaZulu-Natal": [
@@ -474,7 +619,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176795.html"
+     "url": "https://tenderfind.co.za/tender/176795.html"
     }
    ]
   },
@@ -491,7 +636,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176809.html"
+     "url": "https://tenderfind.co.za/tender/176809.html"
     },
     {
      "id": "176771",
@@ -504,7 +649,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176771.html"
+     "url": "https://tenderfind.co.za/tender/176771.html"
     },
     {
      "id": "176725",
@@ -517,7 +662,20 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176725.html"
+     "url": "https://tenderfind.co.za/tender/176725.html"
+    },
+    {
+     "id": "176836",
+     "title": "Request for Quotation for supply, implementation, configuration, and ongoing management of Human Risk Management and Security Awareness",
+     "buyer": "South African Airways (Pty) Limited",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-12T16:00:00+02:00",
+     "closing_text": "Thu, 12 Nov 2026, 16:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176836.html"
     },
     {
      "id": "176775",
@@ -530,7 +688,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176775.html"
+     "url": "https://tenderfind.co.za/tender/176775.html"
     },
     {
      "id": "176724",
@@ -543,7 +701,7 @@
      "briefing": "Compulsory briefing · Wed, 11 Nov · 11:00",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176724.html"
+     "url": "https://tenderfind.co.za/tender/176724.html"
     },
     {
      "id": "176736",
@@ -556,7 +714,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176736.html"
+     "url": "https://tenderfind.co.za/tender/176736.html"
     },
     {
      "id": "176718",
@@ -569,7 +727,7 @@
      "briefing": "Briefing · 02:16",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176718.html"
+     "url": "https://tenderfind.co.za/tender/176718.html"
     },
     {
      "id": "176713",
@@ -582,7 +740,7 @@
      "briefing": "Briefing · 01:19",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176713.html"
+     "url": "https://tenderfind.co.za/tender/176713.html"
     },
     {
      "id": "176722",
@@ -595,7 +753,7 @@
      "briefing": "Compulsory briefing",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176722.html"
+     "url": "https://tenderfind.co.za/tender/176722.html"
     },
     {
      "id": "176716",
@@ -608,7 +766,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176716.html"
+     "url": "https://tenderfind.co.za/tender/176716.html"
     },
     {
      "id": "176720",
@@ -621,7 +779,20 @@
      "briefing": "Compulsory briefing · Thu, 12 Nov",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176720.html"
+     "url": "https://tenderfind.co.za/tender/176720.html"
+    },
+    {
+     "id": "176821",
+     "title": "Request for the Provisions to Design, supply, installations, and commissioning of new Automated Weather Observations Systems (AWOS), as…",
+     "buyer": "Airports Company of South Africa",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2027-01-25T11:00:00+02:00",
+     "closing_text": "Mon, 25 Jan 2027, 11:00",
+     "briefing": "Compulsory briefing · Thu, 12 Nov · 11:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176821.html"
     }
    ],
    "Not stated": [
@@ -636,7 +807,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176741.html"
+     "url": "https://tenderfind.co.za/tender/176741.html"
     }
    ],
    "Eastern Cape": [
@@ -651,7 +822,61 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176748.html"
+     "url": "https://tenderfind.co.za/tender/176748.html"
+    }
+   ],
+   "Gauteng": [
+    {
+     "id": "176822",
+     "title": "Supply, delivery, installation and servicing of specified hygiene services with local content items included for infrastructure branch…",
+     "buyer": "Water and Sanitation",
+     "province": "Gauteng",
+     "trade": "Supplies",
+     "closing": "2026-11-18T11:00:00+02:00",
+     "closing_text": "Wed, 18 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · Thu, 12 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": "1GB",
+     "url": "https://tenderfind.co.za/tender/176822.html"
+    },
+    {
+     "id": "176824",
+     "title": "Supply, delivery and installation of local content curtains and blinds for department of water and sanitation at infrastructure branch…",
+     "buyer": "Water and Sanitation",
+     "province": "Gauteng",
+     "trade": "Supplies",
+     "closing": "2026-11-18T11:00:00+02:00",
+     "closing_text": "Wed, 18 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · Thu, 12 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": "1GB",
+     "url": "https://tenderfind.co.za/tender/176824.html"
+    },
+    {
+     "id": "176841",
+     "title": "Supply and install 316 stainless steel ladder to be wall mounted",
+     "buyer": "Johannesburg Water",
+     "province": "Gauteng",
+     "trade": "Supplies",
+     "closing": "2026-11-18T16:00:00+02:00",
+     "closing_text": "Wed, 18 Nov 2026, 16:00",
+     "briefing": "Compulsory briefing · Wed, 11 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176841.html"
+    },
+    {
+     "id": "176777",
+     "title": "Bid - 2637g - supply and delivery of medical and pharmaceutical supplies",
+     "buyer": "City Power – Johannesburg",
+     "province": "Gauteng",
+     "trade": "Supplies",
+     "closing": "2026-12-08T11:00:00+02:00",
+     "closing_text": "Tue, 08 Dec 2026, 11:00",
+     "briefing": "Briefing · 02:10",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176777.html"
     }
    ],
    "Western Cape": [
@@ -666,26 +891,26 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176783.html"
-    }
-   ],
-   "Gauteng": [
-    {
-     "id": "176777",
-     "title": "Bid - 2637g - supply and delivery of medical and pharmaceutical supplies",
-     "buyer": "City Power – Johannesburg",
-     "province": "Gauteng",
-     "trade": "Supplies",
-     "closing": "2026-12-08T11:00:00+02:00",
-     "closing_text": "Tue, 08 Dec 2026, 11:00",
-     "briefing": "Briefing · 02:10",
-     "compulsory_briefing": false,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176777.html"
+     "url": "https://tenderfind.co.za/tender/176783.html"
     }
    ]
   },
   "Other": {
+   "Gauteng": [
+    {
+     "id": "176819",
+     "title": "Request for quotation for the provision of property management services for the gauteng partnership fund at 32 end street johannesburg cbd…",
+     "buyer": "Gauteng Partnership Fund",
+     "province": "Gauteng",
+     "trade": "Other",
+     "closing": "2026-11-09T11:00:00+02:00",
+     "closing_text": "Mon, 09 Nov 2026, 11:00",
+     "briefing": "Non-compulsory briefing · Thu, 05 Nov · 11:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176819.html"
+    }
+   ],
    "National": [
     {
      "id": "176714",
@@ -698,7 +923,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176714.html"
+     "url": "https://tenderfind.co.za/tender/176714.html"
     },
     {
      "id": "176752",
@@ -711,7 +936,7 @@
      "briefing": "Briefing · 00:00",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176752.html"
+     "url": "https://tenderfind.co.za/tender/176752.html"
     },
     {
      "id": "176792",
@@ -724,7 +949,20 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176792.html"
+     "url": "https://tenderfind.co.za/tender/176792.html"
+    },
+    {
+     "id": "176830",
+     "title": "Appointment of a new business partner to support sage 300, sage 300 people and bpm over a period of thirty-six (36) months.",
+     "buyer": "Petroleum Agency SA",
+     "province": "National",
+     "trade": "Other",
+     "closing": "2026-12-07T12:00:00+02:00",
+     "closing_text": "Mon, 07 Dec 2026, 12:00",
+     "briefing": "Briefing · 01:11",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176830.html"
     }
    ],
    "Limpopo": [
@@ -739,7 +977,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176603.html"
+     "url": "https://tenderfind.co.za/tender/176603.html"
     }
    ],
    "Western Cape": [
@@ -754,7 +992,22 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176759.html"
+     "url": "https://tenderfind.co.za/tender/176759.html"
+    }
+   ],
+   "KwaZulu-Natal": [
+    {
+     "id": "176846",
+     "title": "Request for proposal: for the leasing of managed office space for trade & investment kwazulu-natal regional office in pretoria for 36 months",
+     "buyer": "Kwa-Zulu Natal - Trade and Investment KwaZulu-Natal",
+     "province": "KwaZulu-Natal",
+     "trade": "Other",
+     "closing": "2026-11-25T12:00:00+02:00",
+     "closing_text": "Wed, 25 Nov 2026, 12:00",
+     "briefing": "Compulsory briefing · Thu, 12 Nov · 11:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176846.html"
     }
    ],
    "Mpumalanga": [
@@ -769,7 +1022,95 @@
      "briefing": "Briefing · 01:10",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176717.html"
+     "url": "https://tenderfind.co.za/tender/176717.html"
+    }
+   ]
+  },
+  "Cleaning": {
+   "National": [
+    {
+     "id": "176832",
+     "title": "The Road Accident Fund (RAF) wishes to appoint a suitable service provider to conduct Occupational Hygiene Survey and Ergonomics…",
+     "buyer": "Road Accident Fund",
+     "province": "National",
+     "trade": "Cleaning",
+     "closing": "2026-11-10T10:00:00+02:00",
+     "closing_text": "Tue, 10 Nov 2026, 10:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176832.html"
+    },
+    {
+     "id": "176738",
+     "title": "Provision for firebreaks services on various eskom land properties split into four (4) regions across the 9 provinces (mpumalanga…",
+     "buyer": "ESKOM",
+     "province": "National",
+     "trade": "Cleaning",
+     "closing": "2026-11-30T10:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 10:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176738.html"
+    }
+   ]
+  },
+  "IT": {
+   "National": [
+    {
+     "id": "176840",
+     "title": "Appointment of a service provider to assist with the renewal of the Checkpoint 9200 firewall license for twelve (12) months",
+     "buyer": "Council for Medical Schemes",
+     "province": "National",
+     "trade": "IT",
+     "closing": "2026-11-11T00:00:00+02:00",
+     "closing_text": "Wed, 11 Nov 2026, 00:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176840.html"
+    },
+    {
+     "id": "176823",
+     "title": "Re-advert: Appointment of a service provider to Design, Supply, implement, and maintain a Cloud-based Voice Over Internet Protocol (VoIP)…",
+     "buyer": "Agrément South Africa",
+     "province": "National",
+     "trade": "IT",
+     "closing": "2026-11-12T12:00:00+02:00",
+     "closing_text": "Thu, 12 Nov 2026, 12:00",
+     "briefing": "Compulsory briefing · Mon, 09 Nov · 11:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176823.html"
+    },
+    {
+     "id": "176726",
+     "title": "Supply and delivery of new server infrastructure",
+     "buyer": "South African Nuclear Energy Corporation Limited",
+     "province": "National",
+     "trade": "IT",
+     "closing": "2026-12-02T11:00:00+02:00",
+     "closing_text": "Wed, 02 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176726.html"
+    }
+   ],
+   "KwaZulu-Natal": [
+    {
+     "id": "176742",
+     "title": "Appointment of a service provider to provide business continuity management (bcm) services for the rbidz",
+     "buyer": "The Richards Bay Industrial Development Zone",
+     "province": "KwaZulu-Natal",
+     "trade": "IT",
+     "closing": "2026-12-01T12:00:00+02:00",
+     "closing_text": "Tue, 01 Dec 2026, 12:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176742.html"
     }
    ]
   },
@@ -786,7 +1127,7 @@
      "briefing": "Compulsory briefing · Wed, 11 Nov · 11:00",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176750.html"
+     "url": "https://tenderfind.co.za/tender/176750.html"
     },
     {
      "id": "176760",
@@ -799,7 +1140,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176760.html"
+     "url": "https://tenderfind.co.za/tender/176760.html"
     },
     {
      "id": "176763",
@@ -812,7 +1153,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176763.html"
+     "url": "https://tenderfind.co.za/tender/176763.html"
     },
     {
      "id": "176764",
@@ -825,7 +1166,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176764.html"
+     "url": "https://tenderfind.co.za/tender/176764.html"
     }
    ],
    "Western Cape": [
@@ -840,7 +1181,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176756.html"
+     "url": "https://tenderfind.co.za/tender/176756.html"
     }
    ]
   },
@@ -857,7 +1198,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176740.html"
+     "url": "https://tenderfind.co.za/tender/176740.html"
     }
    ],
    "KwaZulu-Natal": [
@@ -872,7 +1213,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176715.html"
+     "url": "https://tenderfind.co.za/tender/176715.html"
     }
    ],
    "Limpopo": [
@@ -887,56 +1228,24 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176735.html"
+     "url": "https://tenderfind.co.za/tender/176735.html"
     }
    ]
   },
-  "Cleaning": {
+  "Catering": {
    "National": [
     {
-     "id": "176738",
-     "title": "Provision for firebreaks services on various eskom land properties split into four (4) regions across the 9 provinces (mpumalanga…",
-     "buyer": "ESKOM",
+     "id": "176839",
+     "title": "The Afrikaans Language Museum and Monument (ATM) hereby invites quotations for the provision of professional catering services. The…",
+     "buyer": "Die Afrikaanse Taal Museum",
      "province": "National",
-     "trade": "Cleaning",
-     "closing": "2026-11-30T10:00:00+02:00",
-     "closing_text": "Mon, 30 Nov 2026, 10:00",
-     "briefing": null,
-     "compulsory_briefing": null,
+     "trade": "Catering",
+     "closing": "2026-11-27T11:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176738.html"
-    }
-   ]
-  },
-  "IT": {
-   "KwaZulu-Natal": [
-    {
-     "id": "176742",
-     "title": "Appointment of a service provider to provide business continuity management (bcm) services for the rbidz",
-     "buyer": "The Richards Bay Industrial Development Zone",
-     "province": "KwaZulu-Natal",
-     "trade": "IT",
-     "closing": "2026-12-01T12:00:00+02:00",
-     "closing_text": "Tue, 01 Dec 2026, 12:00",
-     "briefing": "No briefing session",
-     "compulsory_briefing": false,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176742.html"
-    }
-   ],
-   "National": [
-    {
-     "id": "176726",
-     "title": "Supply and delivery of new server infrastructure",
-     "buyer": "South African Nuclear Energy Corporation Limited",
-     "province": "National",
-     "trade": "IT",
-     "closing": "2026-12-02T11:00:00+02:00",
-     "closing_text": "Wed, 02 Dec 2026, 11:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176726.html"
+     "url": "https://tenderfind.co.za/tender/176839.html"
     }
    ]
   }
@@ -955,7 +1264,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176241.html"
+     "url": "https://tenderfind.co.za/tender/176241.html"
     },
     {
      "id": "176385",
@@ -968,7 +1277,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176385.html"
+     "url": "https://tenderfind.co.za/tender/176385.html"
     }
    ],
    "Eastern Cape": [
@@ -983,7 +1292,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176404.html"
+     "url": "https://tenderfind.co.za/tender/176404.html"
     },
     {
      "id": "176405",
@@ -996,7 +1305,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176405.html"
+     "url": "https://tenderfind.co.za/tender/176405.html"
     }
    ],
    "National": [
@@ -1011,7 +1320,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176482.html"
+     "url": "https://tenderfind.co.za/tender/176482.html"
     },
     {
      "id": "176058",
@@ -1024,7 +1333,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176058.html"
+     "url": "https://tenderfind.co.za/tender/176058.html"
     }
    ]
   },
@@ -1041,7 +1350,7 @@
      "briefing": "Briefing · 02:15",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176140.html"
+     "url": "https://tenderfind.co.za/tender/176140.html"
     },
     {
      "id": "176596",
@@ -1054,7 +1363,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176596.html"
+     "url": "https://tenderfind.co.za/tender/176596.html"
     },
     {
      "id": "176679",
@@ -1067,7 +1376,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176679.html"
+     "url": "https://tenderfind.co.za/tender/176679.html"
     }
    ]
   },
@@ -1084,7 +1393,7 @@
      "briefing": "Compulsory briefing",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176194.html"
+     "url": "https://tenderfind.co.za/tender/176194.html"
     }
    ],
    "Mpumalanga": [
@@ -1099,7 +1408,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176119.html"
+     "url": "https://tenderfind.co.za/tender/176119.html"
     },
     {
      "id": "176133",
@@ -1112,7 +1421,7 @@
      "briefing": "Non-compulsory briefing · Mon, 02 Nov · 11:00",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176133.html"
+     "url": "https://tenderfind.co.za/tender/176133.html"
     }
    ],
    "National": [
@@ -1127,7 +1436,7 @@
      "briefing": "No briefing session",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176309.html"
+     "url": "https://tenderfind.co.za/tender/176309.html"
     },
     {
      "id": "176282",
@@ -1140,7 +1449,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176282.html"
+     "url": "https://tenderfind.co.za/tender/176282.html"
     },
     {
      "id": "176349",
@@ -1153,7 +1462,7 @@
      "briefing": "No briefing session",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176349.html"
+     "url": "https://tenderfind.co.za/tender/176349.html"
     },
     {
      "id": "176362",
@@ -1166,7 +1475,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176362.html"
+     "url": "https://tenderfind.co.za/tender/176362.html"
     },
     {
      "id": "176455",
@@ -1179,7 +1488,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176455.html"
+     "url": "https://tenderfind.co.za/tender/176455.html"
     },
     {
      "id": "176459",
@@ -1192,7 +1501,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176459.html"
+     "url": "https://tenderfind.co.za/tender/176459.html"
     },
     {
      "id": "176465",
@@ -1205,7 +1514,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176465.html"
+     "url": "https://tenderfind.co.za/tender/176465.html"
     },
     {
      "id": "176709",
@@ -1218,7 +1527,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176709.html"
+     "url": "https://tenderfind.co.za/tender/176709.html"
     },
     {
      "id": "176469",
@@ -1231,7 +1540,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176469.html"
+     "url": "https://tenderfind.co.za/tender/176469.html"
     },
     {
      "id": "176494",
@@ -1244,7 +1553,7 @@
      "briefing": "Compulsory briefing",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176494.html"
+     "url": "https://tenderfind.co.za/tender/176494.html"
     },
     {
      "id": "176146",
@@ -1257,7 +1566,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176146.html"
+     "url": "https://tenderfind.co.za/tender/176146.html"
     },
     {
      "id": "176762",
@@ -1270,7 +1579,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176762.html"
+     "url": "https://tenderfind.co.za/tender/176762.html"
     }
    ],
    "Eastern Cape": [
@@ -1285,7 +1594,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176113.html"
+     "url": "https://tenderfind.co.za/tender/176113.html"
     }
    ]
   },
@@ -1302,7 +1611,7 @@
      "briefing": "No briefing session",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176131.html"
+     "url": "https://tenderfind.co.za/tender/176131.html"
     },
     {
      "id": "176347",
@@ -1315,7 +1624,7 @@
      "briefing": "No briefing session",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176347.html"
+     "url": "https://tenderfind.co.za/tender/176347.html"
     }
    ],
    "National": [
@@ -1330,7 +1639,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176234.html"
+     "url": "https://tenderfind.co.za/tender/176234.html"
     },
     {
      "id": "176581",
@@ -1343,7 +1652,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176581.html"
+     "url": "https://tenderfind.co.za/tender/176581.html"
     },
     {
      "id": "176608",
@@ -1356,7 +1665,7 @@
      "briefing": "No briefing session",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176608.html"
+     "url": "https://tenderfind.co.za/tender/176608.html"
     },
     {
      "id": "176712",
@@ -1369,7 +1678,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176712.html"
+     "url": "https://tenderfind.co.za/tender/176712.html"
     },
     {
      "id": "176227",
@@ -1382,7 +1691,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176227.html"
+     "url": "https://tenderfind.co.za/tender/176227.html"
     }
    ],
    "Free State": [
@@ -1397,7 +1706,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176454.html"
+     "url": "https://tenderfind.co.za/tender/176454.html"
     }
    ],
    "Western Cape": [
@@ -1412,7 +1721,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176463.html"
+     "url": "https://tenderfind.co.za/tender/176463.html"
     },
     {
      "id": "176018",
@@ -1425,7 +1734,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176018.html"
+     "url": "https://tenderfind.co.za/tender/176018.html"
     },
     {
      "id": "176088",
@@ -1438,7 +1747,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176088.html"
+     "url": "https://tenderfind.co.za/tender/176088.html"
     },
     {
      "id": "176438",
@@ -1451,7 +1760,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176438.html"
+     "url": "https://tenderfind.co.za/tender/176438.html"
     }
    ],
    "KwaZulu-Natal": [
@@ -1466,7 +1775,7 @@
      "briefing": "No briefing session",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176471.html"
+     "url": "https://tenderfind.co.za/tender/176471.html"
     },
     {
      "id": "176080",
@@ -1479,7 +1788,7 @@
      "briefing": "Compulsory briefing",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176080.html"
+     "url": "https://tenderfind.co.za/tender/176080.html"
     },
     {
      "id": "176396",
@@ -1492,7 +1801,7 @@
      "briefing": "Compulsory briefing",
      "compulsory_briefing": true,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176396.html"
+     "url": "https://tenderfind.co.za/tender/176396.html"
     }
    ],
    "North West": [
@@ -1507,7 +1816,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176312.html"
+     "url": "https://tenderfind.co.za/tender/176312.html"
     },
     {
      "id": "176314",
@@ -1520,7 +1829,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176314.html"
+     "url": "https://tenderfind.co.za/tender/176314.html"
     }
    ]
   },
@@ -1537,7 +1846,7 @@
      "briefing": "Briefing · Mon, 02 Nov · 10:00",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176222.html"
+     "url": "https://tenderfind.co.za/tender/176222.html"
     },
     {
      "id": "176461",
@@ -1550,7 +1859,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176461.html"
+     "url": "https://tenderfind.co.za/tender/176461.html"
     }
    ]
   },
@@ -1567,7 +1876,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176744.html"
+     "url": "https://tenderfind.co.za/tender/176744.html"
     }
    ],
    "Mpumalanga": [
@@ -1582,7 +1891,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176704.html"
+     "url": "https://tenderfind.co.za/tender/176704.html"
     }
    ],
    "Gauteng": [
@@ -1597,7 +1906,7 @@
      "briefing": "Briefing · NOT APPLICABLE",
      "compulsory_briefing": false,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176401.html"
+     "url": "https://tenderfind.co.za/tender/176401.html"
     }
    ]
   },
@@ -1614,7 +1923,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176230.html"
+     "url": "https://tenderfind.co.za/tender/176230.html"
     }
    ]
   },
@@ -1631,7 +1940,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176660.html"
+     "url": "https://tenderfind.co.za/tender/176660.html"
     }
    ]
   },
@@ -1648,7 +1957,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176447.html"
+     "url": "https://tenderfind.co.za/tender/176447.html"
     },
     {
      "id": "176286",
@@ -1661,7 +1970,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176286.html"
+     "url": "https://tenderfind.co.za/tender/176286.html"
     }
    ]
   },
@@ -1678,7 +1987,7 @@
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176271.html"
+     "url": "https://tenderfind.co.za/tender/176271.html"
     }
    ]
   }

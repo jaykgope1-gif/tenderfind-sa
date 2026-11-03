@@ -10931,7 +10931,7 @@
      "venue": "NOT APPLICABLE"
     },
     "source": "regex",
-    "snippet": "gov.za/) COMPOLSORY BRIEFING SESSION - VENUE: NOT APPLICABLE DATE: TIME: CONTACT PERSON SUPPLY CHAIN MANAGEMENT Name: Tlangelani Nkuna Tel No: 011 688 1925 Email: tlangelani.nkuna@jwater.co.za CONTACT PERSON END USER DEPARTMENT Name: Kippie Ncube Tel No: 011 483 9500 Email: kippie.ncube@jwater.co.za Name"
+    "snippet": ".gov.za/) COMPOLSORY BRIEFING SESSION - VENUE: NOT APPLICABLE DATE: TIME: CONTACT PERSON SUPPLY CHAIN MANAGEMENT Name: Tlangelani Nkuna Tel No: 011 688 1925 Email: tlangelani.nkuna@jwater.co.za CONTACT PERSON END USER DEPARTMENT Name: Kippie Ncube Tel No: 011 483 9500 Email: kippie.ncube@jwater.co.za Name"
    },
    "csd_required": {
     "value": true,
@@ -10951,7 +10951,7 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:16:19.041Z"
+  "extracted_at": "2026-11-03T13:07:15.205Z"
  },
  "176402": {
   "status": "ok",
@@ -22000,5 +22000,909 @@
    }
   },
   "extracted_at": "2026-11-03T11:22:07.089Z"
+ },
+ "176819": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "COVER Page for RFQ GPFQ781 FOR APPOINMTMENT OF PROPERTY MANAGEMENT SERVICE PROVIDER FOR 32 END STREET.pdf",
+    "pages": 19,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": false,
+     "date": "2026-11-05",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "NB: There will be a Non- Compulsory Briefing Session scheduled as follows: Date and time: 05 November 2026 at 11:00am Location: Microsoft Teams meeting Join: https://teams.microsoft.com/meet/3936585188271898?p=yNaSphNhmGpbOV5UKN Meeting ID: 393 658 518 827 189 8 Passcode: gQ2kQ7Wu NB: All submissions must"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "Compliance Status (TCS) PIN. • Central Supplier Database (CSD) registration number (MAAA). • Standard Bidding Document (SBD) 4 – Declaration of Interest, duly completed and signed. Failure to submit a duly completed SBD 4 will result in disqualification."
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:15.241Z"
+ },
+ "176820": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "WTE1074CE.pdf",
+    "pages": 61,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-12",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "5900 Compulsory Briefing Session Date: 12 NOVEMBER 2026 Time: 10:00 am Venue: Department of Water and Sanitation Infrastructure Branch Training Centre (IBTC) at Roodeplaat Dam Access Rd, Off Kwa Mhlanga Rd (R573) near Pretoria in Gauteng Province. GPS Coordinates: (Lat-25."
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM PERSONS IN THE SER"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:24.283Z"
+ },
+ "176821": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFP AWOS COR10931-2026-RFP- FINAL.pdf",
+    "pages": 87,
+    "result": "text"
+   },
+   {
+    "title": "2024 2025 INSURANCE CLAUSES FOR LANDSIDE CONSTRUCTION CONTRACTS LESS THAN R150 MILLION.pdf",
+    "pages": 12,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-12",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "e 03 November 2026 Compulsory Briefing Session ONLINE - 12 November 2026 @11h00am Compulsory Site Inspection Date & Time Every bidder must come to the site with the following: (a) Reflective jacket (b) Identity Document and a copy of your ID (not driver’s license) (c) Relevant PPE for site inspe"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. NB: FAILURE TO PROVIDE / OR COMPLY WITH ANY OF T"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:33.827Z"
+ },
+ "176822": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "WTE1075CE.pdf",
+    "pages": 60,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-12",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "a 5900 Compulsory Briefing Session Date:12 NOVEMBER 2026 Time: 10:00 am Venue: Department of Water and Sanitation Infrastructure Branch Training Centre (IBTC) at Roodeplaat Dam Access Rd, Off Kwa Mhlanga Rd (R573) near Pretoria in Gauteng Province. GPS Coordinates: (Lat-2"
+   },
+   "cidb_grade": {
+    "value": "1GB",
+    "source": "regex",
+    "snippet": "GAUTENG PROVINCE FOR A PERIOD OF 18 MONTHS, CIDB GRADING: 1GB SUBMIT COMPLETED AND SIGNED BID DOCUMENTS TO: TO BE DEPOSITED IN: The bid box at the entrance of: Department of Water and Sanitation Construction East Office Building Mthatha Dam"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM PERSONS IN THE SER"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:24.612Z"
+ },
+ "176823": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Terms of Reference - VOIP.pdf",
+    "pages": 12,
+    "result": "text"
+   },
+   {
+    "title": "REVISED SBD 4.pdf",
+    "pages": 3,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-09",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "e 03 November 2026 Compulsory Briefing Session 09 November 2026 @11:00 am to 12:00 noon https://teams.microsoft.com/meet/3888531724 305560?p=YQszqzTpB5MRI0Oa3v Closing Date & Time 12 November 2026 @12:00 noon NO LATE SUBMISSIONS WILL BE ACCEPTED Submissions procurement@agrement.co.za Supply Chain Manage"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "nts. • National Treasury’s Central Supplier Database (CSD) report. It must be noted that no contract with a service provider will be entered into if such a service provider is not registered on the CSD, • Completed and signed sta"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:21.435Z"
+ },
+ "176824": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "WTE1076CE.pdf",
+    "pages": 58,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-12",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "Mthatha 5900 Compulsory Briefing Session Date: 12 NOVEMBER 2026 Time: 10:00 am Venue: Department of Water and Sanitation Infrastructure Branch Training Centre (IBTC) at Roodeplaat Dam Access Rd, Off Kwa Mhlanga Rd (R573) near Pretoria in Gauteng Province. GPS Coordinates: (Lat-25.618439° an"
+   },
+   "cidb_grade": {
+    "value": "1GB",
+    "source": "regex",
+    "snippet": "C) AT ROODEPLAAT PRETORIA, GAUTENG PROVINCE, CIDB GRADING: 1GB SUBMIT COMPLETED AND SIGNED BID DOCUMENTS TO: TO BE DEPOSITED IN: The bid box at the entrance of: Department of Water and Sanitation Construction East Office Building Mthatha Dam Mt"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM PERSONS IN THE SER"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:24.776Z"
+ },
+ "176825": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "TENDER FOR INTERNAL AUDIT SERVICES 20261101.pdf",
+    "pages": 31,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:28.437Z"
+ },
+ "176826": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "SAHRC Terms of Reference Actuarial Valuation Long Service Awards (004).pdf",
+    "pages": 20,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "held": false
+    },
+    "source": "regex",
+    "snippet": "IN TERMS OF GRAP 25 PUBLISHED DATE: 03 November 2026 RFQ BRIEFING Not applicable CLOSING DATE DATE: 13 Nov 2026 TIME: 11H00 (GMT +2) ADDRESS: South African Human Rights Commission Supply Chain Management 32 Princess of Wales Terrace ss S"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "all be verified using the Central Supplier Database Report (CSD) and/or valid B-BBEE certificate/affidavit. 14.SUBMISSION, ENQUIRIES AND CLOSING DATE •Quotations must be submitted on or before 13 November 2026 at 11h00 (GMT +2), and late submissions will not b"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:22.676Z"
+ },
+ "176827": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Terms of Reference - TECO Sanitation Expert Q3.pdf",
+    "pages": 11,
+    "result": "text"
+   },
+   {
+    "title": "SBD 6.1 IN TERMS OF PPR2022 .pdf",
+    "pages": 5,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ocuments • National Treasury’s Central Supplier Database (CSD) report. It must be noted that no contract with a service provider will be entered if such a service provider is not registered on the CSD. • Completed and Signed Standard bidding documents, SBD"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:17.898Z"
+ },
+ "176828": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "ATM 2026-2027-09 SPECIALISED SERVICES OF A PROFESSIONAL SERVICE PROVIDER FOR GRASS CUTTING SERVICES AT THE AFRIKAANSE TAALMUSEUM AND MONUMENT (ATM), PAARL.pdf",
+    "pages": 45,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "03 November 2026 Compulsory briefing session: ------------------------------ Closing date and time: 27 November 2026 @ 11:00 Quoting company/person: ............................................................................................................... Quoting company: Authorised signatory:..."
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "umente • Registrasie op die Sentrale Verskaffersdatabasis (CSD) en voltooide SBD4-vorm • Minimaal 2 jaar ondervinding in gras sny- en terreinonderhoudsdienste, met kontakbare verwysings • Alle personeel moet opgelei wees in veilige hantering van toerusting"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:29.490Z"
+ },
+ "176829": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "T60-11-26-REVIEW OF THE IDC AND GROUP ANNUAL FINANCIAL STATEMENTS AND RELATED FINANCIAL REPORTING PROCESSES.pdf",
+    "pages": 37,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ing: • IDC will make use of the Central Supplier Database (CSD) to access key information which is required to conduct supplier vetting including Company Registration status, tax compliance status and any other relevant checks conducted on CSD. • In the ev"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:26.661Z"
+ },
+ "176830": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Tender documents PASA-T-2027-03 Business Partner.pdf",
+    "pages": 34,
+    "result": "text"
+   },
+   {
+    "title": "SBD 1 Invitation to bid.pdf",
+    "pages": 2,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": null,
+     "time": "01:11",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "ct. This may include site visits. 1.11 Awarding of Contract Petroleum Agency SA will award the contract to the successful bidder subject to proven relevant experience providing the required services including the ability to deliver effective and reliable services that has also been determined to be the"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "each party must submit a separate TCS certificate / pin / CSD number. 2.1.6 Where no TCS pin is available but the bidder is registered on the Central Supplier Database (CSD), a CSD number must be provided. 2.2 Procurement Legislation Petroleum"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:31.755Z"
+ },
+ "176831": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "T61-11-26-PROVISION IMPLEMENTATION CONFIGURATION MAINTENANCE AND SUPPORT OF A COMPLIANCE MANAGEMENT SYSTEM.pdf",
+    "pages": 39,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ing: • IDC will make use of the Central Supplier Database (CSD) to access key information which is required to conduct supplier vetting including Company Registration status, tax compliance status and any other relevant checks conducted on CSD."
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:27.583Z"
+ },
+ "176832": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Annexure A - Security Measures.pdf",
+    "pages": 4,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:15.242Z"
+ },
+ "176833": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "ATM 2026-2027-10 SPECIALISED SERVICES FROM A QUALIFIED MECHANICAL REPAIR AND MAINTENANCE SERVICE PROVIDER FOR THE AFRIKAANS LANGUAGE MUSEUM AND MONUMENT (ATM), PAARL.pdf",
+    "pages": 50,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "03 November 2026 Compulsory briefing session: ------------------------------ Closing date and time: 27 November 2026 @ 11:00 Quoting company/person: ............................................................................................................... Quoting company: Authorised signatory:..."
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "mente. • Registrasie op die Sentrale Verskaffersdatabasis (CSD). • Voltooide en ondertekende SBD4-verklaring van belang. • Minstens vyf (5) jaar se bewese ervaring in die lewering van professionele meganiese herstel- en onderhoudsdienste. • Gekwalifiseerd"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:30.000Z"
+ },
+ "176834": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "FINAL JMT AWOS COR10932-2026-RFP_FINAL.pdf",
+    "pages": 86,
+    "result": "text"
+   },
+   {
+    "title": "NEC3 PSC - JMT Automated Weather Observation System Replacement Program final.pdf",
+    "pages": 111,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-13",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "lsory Virtual/Online Briefing Every bidder must come to the site with the following: (a) Reflective jacket (b) Identity Document and a copy of your ID (not driver’s license) (c) Relevant PPE for site inspection 13 November 2026 @ 10h00am Non-Compulsory Site Inspection Dat"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. NB: FAILURE TO PROVIDE / OR COMPLY WITH ANY OF T"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:32.193Z"
+ },
+ "176836": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ GSM085-2026 -Request for Quotation for supply, implementation,configuration, and ongoing management of the Human Risk Management and Security Awareness.pdf",
+    "pages": 10,
+    "result": "text"
+   },
+   {
+    "title": "Annexure 3 - SAA General conditions of contract.pdf",
+    "pages": 11,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:21.789Z"
+ },
+ "176837": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ -SOCIAL MEDIA MARKETING TRAINING_.pdf",
+    "pages": 24,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": "2026-11-06",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "e: 03 November 2026 Briefing date Address 06 November 2026 @ 10H00 Shosholoza Meyl Junction, Crn Leyds and 78 Simmonds Street, Braamfontein 6 th Floor Boardroom Closing Date for Submissions of Bids 12 November 2026 @ CAT 10H00 Contact person: Khuthadzo Tshikhudo Tel: 011 085 7060 Email: metrorailgpten"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "H PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM PERSONS IN THE"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:18.497Z"
+ },
+ "176839": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "ATM 2026-2027-11 SPECIALISED SERVICES FROM A REGISTERED PROFESSIONAL SERVICE PROVIDER FOR CATERING SERVICES AT THE AFRIKAANS LANGUAGE MUSEUM AND MONUMENT (ATM), PAARL.pdf",
+    "pages": 46,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "03 November 2026 Compulsory briefing session: ------------------------------ Closing date and time: 27 November 2026 @ 11:00 Quoting company/person: ............................................................................................................... Quoting company: Authorised signatory:..."
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "mente. • Registrasie op die Sentrale Verskaffersdatabasis (CSD) en voltooide SBD4-vorm. • Minimum van 5 jaar ondervinding in professionele Spysenieringdienste, met verwysings. • Personeel moet geldige Voedselhanteringsertifikate hê. • Verskaffing van profe"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:31.533Z"
+ },
+ "176840": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "APPOIN~4.PDF",
+    "pages": 30,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM PERSONS IN THE"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:18.325Z"
+ },
+ "176841": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQJW0099SM2026 - Supply and install steel ladder.pdf",
+    "pages": 30,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-11",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "afety file Compulsory Site briefing Address: 1 Ffennell Road Depot (Flow Laboratory) Date: 11 Nov 2026 Time: 10h00 SUBMIT WITH QUOTATION CIDB SL registration certificate Trade Test certificate for Boilermaker Structural Engineer registration ECSA certificate"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "TATIONS SHOULD BE REGISTERED ON CENTRAL SUPPLIER DATABASE (CSD) 1. QUOTATIONS MUST BE ON COMPANY LETTERHEADS 2. QUOTATIONS RECEIVED AFTER CLOSIND DATE AND TIME WILL NOT BE ACCEPTED. 3. QUOTATIONS WITHOUT BRAND NAMES WHERE REQUIRED WILL NOT BE ACCEPTED 4"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:27.271Z"
+ },
+ "176843": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ -SOLAR PV  TRAINING  -Readvert.pdf",
+    "pages": 25,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": "2026-11-06",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "e: 03 November 2026 Briefing date Address 06 November 2026 @ 11H00 Shosholoza Meyl Junction, Crn Leyds and 78 Simmonds Street, Braamfontein 6 th Floor Boardroom Closing Date for Submissions of Bids 12 November 2026 @ CAT 10H00 Contact person: Khuthadzo Tshikhudo Tel: 011 085 7060 Email: metrorailgpten"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "H PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM PERSONS IN THE"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:20.833Z"
+ },
+ "176846": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "TOR GAUTENG LEASE OF OFFICE SPACE OCT2026.pdf",
+    "pages": 42,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-12",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "NB: Attendance at Compulsory Briefing Session is a mandatory requirement for participation in the Bid process. PLEASE USE THE LINK IN THE ADVERT TO JOIN THE COMPULSORY BRIEFING ON THE 12 NOVEMBER 2026 at 11h00 am. 7. ALTERATIONS OR WITHDRAWAL OF PROPOSALS Service Providers may withdraw their proposals by writt"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "DECLARATION THAT INFORMATION ON CENTRAL SUPPLIER DATABASE (CSD) IS CORRECT AND UP TO DATE SECTION E CERTIFICATION OF CORRECTNESS OF INFORMATION SUPPLIED IN THIS DOCUMENT SECTION F BIDDER’S DISCLOSURE FORM (SBD 4) SECTION H PRICING SCHEDULE SECTION I AUT"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T13:07:29.377Z"
  }
 }
