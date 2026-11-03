@@ -1,7 +1,7 @@
 // site/about.html, site/privacy.html and site/pricing.html. Plain words; no claims the service can't back up.
 const { esc } = require("./display");
 const { shell } = require("./pages");
-const { OPERATOR, PRICING, HELP_WEBHOOK } = require("./config");
+const { OPERATOR, PRICING, HELP_WEBHOOK, PAYMENTS_LIVE } = require("./config");
 
 function contactLines() {
   const lines = [];
@@ -106,8 +106,11 @@ function waLink(text) {
 }
 
 function pricingPage(siteUrl) {
-  const { alerts, trialDays, bidHelpPrice } = PRICING;
+  const { alerts, alertsYear, trialDays, bidHelpPrice } = PRICING;
+  // Until PayFast is live, "subscribe" means WhatsApp us; once live, it goes to the secure pay page (pay/).
+  const payButton = (planId, label, cls = "btn wa wide") => `<a class="${cls}" href="pay/?plan=${planId}">${label}</a>`;
   const subscribe = waLink("Hi, I'd like to subscribe to tender alerts");
+  const subscribeYear = waLink("Hi, I'd like the yearly tender alerts plan");
   const bidHelp = waLink("Hi, I'd like help with a tender bid");
   const plan = (name, price, sub, items, action) => `<section class="plan${action.main ? " main" : ""}">
 <h2>${name}</h2>
@@ -131,9 +134,19 @@ ${plan("Alerts", `R${alerts}`, "a month", [
   "Optional reminder 3 days before matching tenders close",
   `<b>${trialDays} days free</b> when you sign up, no payment details needed`,
   "Cancel any time: unsubscribe from any email",
-], { main: true, html: subscribe
+], { main: true, html: PAYMENTS_LIVE
+  ? `${payButton("monthly", `Subscribe: R${alerts} a month`)}<p class="small"><a href="#signup">Or start the ${trialDays}-day free trial first</a></p>`
+  : subscribe
   ? `<a class="btn wa wide" href="${subscribe}" target="_blank" rel="noopener">WhatsApp us to subscribe</a><p class="small"><a href="#signup">Or start the ${trialDays}-day free trial</a></p>`
   : `<a class="btn wa wide" href="#signup">Start your ${trialDays}-day free trial</a>` })}
+${plan("Alerts yearly", `R${alertsYear.toLocaleString("en-ZA").replace(/\s/g, ",")}`, "a year", [
+  "Everything in Alerts",
+  `<b>2 months free</b>: R${(alerts * 12 - alertsYear).toLocaleString("en-ZA").replace(/\s/g, ",")} less than paying monthly`,
+  "One payment a year, no monthly debit",
+  "Cancel any time; alerts run to the end of your year",
+], { html: PAYMENTS_LIVE
+  ? payButton("annual", `Subscribe: R${alertsYear.toLocaleString("en-ZA").replace(/\s/g, ",")} a year`, "btn wide")
+  : subscribeYear ? `<a class="btn wide" href="${subscribeYear}" target="_blank" rel="noopener">WhatsApp us for the yearly plan</a>` : "" })}
 ${plan("Bid Help", bidHelpPrice ? `R${bidHelpPrice}` : "Ask us", "per tender", [
   "We read the tender documents and list everything you need to submit",
   "We draft your cover letter and a compliance checklist",
@@ -149,7 +162,7 @@ ${plan("Bid Help", bidHelpPrice ? `R${bidHelpPrice}` : "Ask us", "per tender", [
 <h3>What happens after the free trial?</h3>
 <p>On day ${trialDays + 1} we send you one email saying the trial has ended. Alerts stop unless you subscribe. Nothing is charged automatically.</p>
 <h3>How do I pay?</h3>
-<p>${subscribe ? "Tap “WhatsApp us to subscribe” and we’ll send you the payment details." : "When your trial ends, reply to our email and we’ll send you the payment details."} Your alerts carry on as soon as payment is confirmed.</p>
+<p>${PAYMENTS_LIVE ? "Tap Subscribe and pay securely with PayFast (card, Instant EFT, SnapScan and more). Monthly and yearly plans renew automatically until you cancel." : subscribe ? "Tap “WhatsApp us to subscribe” and we’ll send you the payment details." : "When your trial ends, reply to our email and we’ll send you the payment details."} Your alerts carry on as soon as payment is confirmed.</p>
 <h3>How do I cancel?</h3>
 <p>Use the unsubscribe line at the bottom of any alert email, or just reply UNSUBSCRIBE.</p>
 <h3>Can I change my trades or provinces?</h3>

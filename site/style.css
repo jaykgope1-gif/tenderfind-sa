@@ -165,7 +165,7 @@ select {
 .page-h { font-size: 1.5rem; margin: 4px 0 2px; }
 .lede { color: var(--muted); margin: 0 0 14px; }
 .plans { display: grid; gap: 12px; }
-@media (min-width: 720px) { .plans { grid-template-columns: repeat(3, 1fr); align-items: start; } }
+@media (min-width: 720px) { .plans { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); align-items: start; } }
 .plan { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
 .plan.main { border: 2px solid var(--wa); }
 .plan h2 { font-size: 1.1rem; margin: 0; }
