@@ -1,0 +1,921 @@
+{
+ "date": "2026-11-03",
+ "generated_at": "2026-11-03T02:49:26.561Z",
+ "site": "https://jaykgope1-gif.github.io/tenderfind-sa",
+ "note": "Tenders with province 'National' or 'Not stated' should go to subscribers in every province.",
+ "counts": {
+  "new": 13,
+  "closing_soon": 50
+ },
+ "new": {
+  "Other": {
+   "National": [
+    {
+     "id": "176714",
+     "title": "Hire pilot boat for 12 months at the port of durban",
+     "buyer": "Transnet SOC Ltd",
+     "province": "National",
+     "trade": "Other",
+     "closing": "2026-11-10T12:00:00+02:00",
+     "closing_text": "Tue, 10 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176714.html"
+    }
+   ],
+   "Limpopo": [
+    {
+     "id": "176603",
+     "title": "Drilling and installation ofborehole including pressure pump @ mutale sub office",
+     "buyer": "Thulamela Local Municipality",
+     "province": "Limpopo",
+     "trade": "Other",
+     "closing": "2026-11-18T11:00:00+02:00",
+     "closing_text": "Wed, 18 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176603.html"
+    }
+   ],
+   "Mpumalanga": [
+    {
+     "id": "176717",
+     "title": "Appointment of a suitably qualified service provider to develop conservation and wildlife management plans for marloth park and lionspruit…",
+     "buyer": "Nkomazi Local Municipality",
+     "province": "Mpumalanga",
+     "trade": "Other",
+     "closing": "2026-12-03T12:00:00+02:00",
+     "closing_text": "Thu, 03 Dec 2026, 12:00",
+     "briefing": "Briefing · 01:10",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176717.html"
+    }
+   ]
+  },
+  "Professional services": {
+   "Limpopo": [
+    {
+     "id": "176657",
+     "title": "Request for the procurement of cyber security and office 365 administration training",
+     "buyer": "Vhembe District Municipality",
+     "province": "Limpopo",
+     "trade": "Professional services",
+     "closing": "2026-11-11T12:00:00+02:00",
+     "closing_text": "Wed, 11 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176657.html"
+    }
+   ]
+  },
+  "Construction": {
+   "Limpopo": [
+    {
+     "id": "176604",
+     "title": "Drilling and installation of borehole including pressure pump @ makwarela stadium",
+     "buyer": "Thulamela Local Municipality",
+     "province": "Limpopo",
+     "trade": "Construction",
+     "closing": "2026-11-18T11:00:00+02:00",
+     "closing_text": "Wed, 18 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176604.html"
+    },
+    {
+     "id": "176605",
+     "title": "Drilling and installation of borehole including pressure pump @ tshilamba community hall",
+     "buyer": "Thulamela Local Municipality",
+     "province": "Limpopo",
+     "trade": "Construction",
+     "closing": "2026-11-18T11:00:00+02:00",
+     "closing_text": "Wed, 18 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176605.html"
+    },
+    {
+     "id": "176607",
+     "title": "Drilling and installation of borehole including pressure pump@makwarela community hall",
+     "buyer": "Thulamela Local Municipality",
+     "province": "Limpopo",
+     "trade": "Construction",
+     "closing": "2026-11-18T11:00:00+02:00",
+     "closing_text": "Wed, 18 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176607.html"
+    }
+   ],
+   "National": [
+    {
+     "id": "176719",
+     "title": "Provision of Installation and Infrastructure Upgrade for Anti-climb Perimeter Security Fence at Eskom Megawatt Park (MWP) for a period of…",
+     "buyer": "ESKOM",
+     "province": "National",
+     "trade": "Construction",
+     "closing": "2026-12-02T10:00:00+02:00",
+     "closing_text": "Wed, 02 Dec 2026, 10:00",
+     "briefing": "Compulsory briefing · Thu, 12 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": "7EP",
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176719.html"
+    }
+   ]
+  },
+  "Supplies": {
+   "National": [
+    {
+     "id": "176718",
+     "title": "Supply and delivery of electrical testing equipment at kendal power station",
+     "buyer": "ESKOM",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-27T10:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 10:00",
+     "briefing": "Briefing · 02:16",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176718.html"
+    },
+    {
+     "id": "176713",
+     "title": "Request for information (rfi) hosted and managed private infrastructure-as-a-service",
+     "buyer": "Agricultural Research Council",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-27T11:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 11:00",
+     "briefing": "Briefing · 01:19",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176713.html"
+    },
+    {
+     "id": "176716",
+     "title": "Design, procure, supply and installation of effluent neutralisation sump temporary bypass for lethabo power station for period of 18 months",
+     "buyer": "ESKOM",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-30T10:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 10:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176716.html"
+    },
+    {
+     "id": "176720",
+     "title": "Request for the Provisions to Design, supply, installations, and commissioning of new Automated Weather Observations Systems (AWOS), as…",
+     "buyer": "Airports Company of South Africa",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2027-01-22T11:00:00+02:00",
+     "closing_text": "Fri, 22 Jan 2027, 11:00",
+     "briefing": "Compulsory briefing · Thu, 12 Nov",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176720.html"
+    }
+   ]
+  },
+  "Security": {
+   "KwaZulu-Natal": [
+    {
+     "id": "176715",
+     "title": "Provision of security service for a period of 36 months re-advert",
+     "buyer": "Dr Nkosazana Dlamini Zuma Local Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Security",
+     "closing": "2026-11-30T12:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176715.html"
+    }
+   ]
+  }
+ },
+ "closing_soon": {
+  "IT": {
+   "Gauteng": [
+    {
+     "id": "176241",
+     "title": "Request for Quotation for SAP Technical and Functional Support and Maintenance Services for SAP ECC 6.0 EHP7 and SAP S/4HANA (12 Months)",
+     "buyer": "Rand Water",
+     "province": "Gauteng",
+     "trade": "IT",
+     "closing": "2026-11-06T00:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 00:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176241.html"
+    },
+    {
+     "id": "176385",
+     "title": "RFQJW056NS26-27 Supply and Installation of OptiX RTN 380AXH One Hop Microwave Network",
+     "buyer": "Johannesburg Water",
+     "province": "Gauteng",
+     "trade": "IT",
+     "closing": "2026-11-06T16:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 16:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176385.html"
+    }
+   ],
+   "Eastern Cape": [
+    {
+     "id": "176404",
+     "title": "Web hosting, maintenance and support of the website for a period of 12 months",
+     "buyer": "BUFFALO CITY METROPOLITAN DEVELOPMENT AGENCY",
+     "province": "Eastern Cape",
+     "trade": "IT",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176404.html"
+    },
+    {
+     "id": "176405",
+     "title": "Renewal of microsoft office licenses for a period of 12 months",
+     "buyer": "BUFFALO CITY METROPOLITAN DEVELOPMENT AGENCY",
+     "province": "Eastern Cape",
+     "trade": "IT",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176405.html"
+    }
+   ],
+   "National": [
+    {
+     "id": "176482",
+     "title": "The Road Accident Fund (RAF) wishes to appoint a service provider for the Renewal of CISCO Firewall Licenses, Maintenance and Support for…",
+     "buyer": "Road Accident Fund",
+     "province": "National",
+     "trade": "IT",
+     "closing": "2026-11-06T14:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 14:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176482.html"
+    },
+    {
+     "id": "176058",
+     "title": "Request for quotation : mimecast licenses for a period of 36 months",
+     "buyer": "South African Human Rights Commission",
+     "province": "National",
+     "trade": "IT",
+     "closing": "2026-11-06T23:30:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 23:30",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176058.html"
+    }
+   ]
+  },
+  "Other": {
+   "National": [
+    {
+     "id": "176140",
+     "title": "Re-advertisement of invitation to submit an offer for the purchase and removal of scrap conveyor belt at kusile and kendal power station…",
+     "buyer": "ESKOM",
+     "province": "National",
+     "trade": "Other",
+     "closing": "2026-11-06T10:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 10:00",
+     "briefing": "Briefing · 02:15",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176140.html"
+    },
+    {
+     "id": "176596",
+     "title": "Request for quotation – kaspersky next optimum security",
+     "buyer": "Independent Development Trust",
+     "province": "National",
+     "trade": "Other",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176596.html"
+    },
+    {
+     "id": "176679",
+     "title": "Debris Removal of dredged Material in the Port of Cape Town - Once Off",
+     "buyer": "Transnet SOC Ltd",
+     "province": "National",
+     "trade": "Other",
+     "closing": "2026-11-06T14:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 14:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176679.html"
+    }
+   ]
+  },
+  "Professional services": {
+   "Gauteng": [
+    {
+     "id": "176194",
+     "title": "Re-advertisement: appointment of a service provider for headhunting services for two section 56 senior managers",
+     "buyer": "City of Tshwane",
+     "province": "Gauteng",
+     "trade": "Professional services",
+     "closing": "2026-11-06T10:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 10:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176194.html"
+    }
+   ],
+   "Mpumalanga": [
+    {
+     "id": "176119",
+     "title": "Plumbing preparation and trade test training at standerton in mpumalanga province.",
+     "buyer": "Water and Sanitation",
+     "province": "Mpumalanga",
+     "trade": "Professional services",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176119.html"
+    },
+    {
+     "id": "176133",
+     "title": "Hybrid services for mpumalanga province stakeholder engagement",
+     "buyer": "Manufacturing, Engineering and Related Services SETA (merSETA)",
+     "province": "Mpumalanga",
+     "trade": "Professional services",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": "Non-compulsory briefing · Mon, 02 Nov · 11:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176133.html"
+    }
+   ],
+   "National": [
+    {
+     "id": "176309",
+     "title": "REQUEST FOR POTENTIAL SERVICE PROVIDERS TO SUBMIT A QUOTATION TO AIDC FOR ON AND OFF-SITE CALIBRATION OF EQUIPMENT AND INSTRUMENTS FOR…",
+     "buyer": "Automotive Industry Development Centre (AIDC)",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176309.html"
+    },
+    {
+     "id": "176282",
+     "title": "Appointment of a service provider for the provision of sage enterprise intelligence training for 6 candidates",
+     "buyer": "Trans-Caledon Tunnel Authority",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176282.html"
+    },
+    {
+     "id": "176349",
+     "title": "RFQ363/2026: Appointment of an independent quality assurance assessor to perform the external quality assurance (EQAR) review for the…",
+     "buyer": "Higher Education & Training",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176349.html"
+    },
+    {
+     "id": "176362",
+     "title": "Appointment of a service provider to review the wrc organisational structure to ensure alignment with the mandate, vision, mission…",
+     "buyer": "Water Research Commission",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176362.html"
+    },
+    {
+     "id": "176455",
+     "title": "The RAF wishes to appoint a service provider to perform Enterprise Risk Management Process Audit",
+     "buyer": "Road Accident Fund",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176455.html"
+    },
+    {
+     "id": "176459",
+     "title": "Procurement of ohs training",
+     "buyer": "Department of Corporative Governance and Traditional Affairs",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176459.html"
+    },
+    {
+     "id": "176465",
+     "title": "The Road Accident Fund (RAF) wishes to appoint a suitable service provider to provide Intermediate MS Excel Training for One Hundred and…",
+     "buyer": "Road Accident Fund",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176465.html"
+    },
+    {
+     "id": "176709",
+     "title": "Request for quote o Payments of Stipents BMA IM2272026",
+     "buyer": "Tourism",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176709.html"
+    },
+    {
+     "id": "176469",
+     "title": "Appointment of a Service Provider for Internal Communications Measurement and Evaluation",
+     "buyer": "South African National Parks",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176469.html"
+    },
+    {
+     "id": "176494",
+     "title": "Appointment of a service provider to render wall mural service at Sentech Head Office.",
+     "buyer": "Sentech Limited",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176494.html"
+    },
+    {
+     "id": "176146",
+     "title": "THE REVIEW OF THE DRAFT REGULATIONS CONTEMPLATED IN SECTION 62 OF THE RAILWAY SAFETY ACT,2024 (Act No.30 of 2024)",
+     "buyer": "Railway Safety Regulator",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-06T15:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 15:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176146.html"
+    }
+   ],
+   "Eastern Cape": [
+    {
+     "id": "176113",
+     "title": "Capacitation of 90 Manufacturing Hubs Beneficiaries",
+     "buyer": "Winnie Madikizela-Mandela Local Municipality",
+     "province": "Eastern Cape",
+     "trade": "Professional services",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176113.html"
+    }
+   ]
+  },
+  "Supplies": {
+   "Mpumalanga": [
+    {
+     "id": "176131",
+     "title": "Appointment of a service for supply and delivery of carwash support materials and equipment for city of mbombela",
+     "buyer": "Mbombela Local Municipality",
+     "province": "Mpumalanga",
+     "trade": "Supplies",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176131.html"
+    },
+    {
+     "id": "176347",
+     "title": "Supply and delivery of industrial wet and dry vacuum cleaners for city of mbombela",
+     "buyer": "Mbombela Local Municipality",
+     "province": "Mpumalanga",
+     "trade": "Supplies",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176347.html"
+    }
+   ],
+   "National": [
+    {
+     "id": "176234",
+     "title": "Supply and deliver ppe",
+     "buyer": "National - Environment, Forestry and Fisheries",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176234.html"
+    },
+    {
+     "id": "176581",
+     "title": "To procure branded T-shirts for IDT",
+     "buyer": "Independent Development Trust",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176581.html"
+    },
+    {
+     "id": "176608",
+     "title": "Provision to supply and deliver of branded diaries and notebooks for 2027",
+     "buyer": "Ports Regulator of South Africa",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176608.html"
+    },
+    {
+     "id": "176712",
+     "title": "Procurement of 889 Security Insignia.",
+     "buyer": "Transnet SOC Ltd",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176712.html"
+    },
+    {
+     "id": "176227",
+     "title": "Main engine oil",
+     "buyer": "Transnet SOC Ltd",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-06T14:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 14:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176227.html"
+    }
+   ],
+   "Free State": [
+    {
+     "id": "176454",
+     "title": "C12/2026 - Supply, Delivery and Installation of Office Equipment at CENTLEC Bloemfontein",
+     "buyer": "CENTLEC SOC LTD",
+     "province": "Free State",
+     "trade": "Supplies",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176454.html"
+    }
+   ],
+   "Western Cape": [
+    {
+     "id": "176463",
+     "title": "Request for quotation (rfq) for the supply and delivery of audiovisual equipment and installation periherals for the holding sp(l)ace for…",
+     "buyer": "Iziko Museums of Cape Town",
+     "province": "Western Cape",
+     "trade": "Supplies",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176463.html"
+    },
+    {
+     "id": "176018",
+     "title": "Supply and delivery of operational materials, tools and equipment",
+     "buyer": "Prince Albert Municipality",
+     "province": "Western Cape",
+     "trade": "Supplies",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176018.html"
+    },
+    {
+     "id": "176088",
+     "title": "Supply & delivery of marketing material",
+     "buyer": "Cape Agulhas Municipality",
+     "province": "Western Cape",
+     "trade": "Supplies",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176088.html"
+    },
+    {
+     "id": "176438",
+     "title": "Supply and delivery of a heavy-duty industrial shredder",
+     "buyer": "Langeberg Municipality",
+     "province": "Western Cape",
+     "trade": "Supplies",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176438.html"
+    }
+   ],
+   "KwaZulu-Natal": [
+    {
+     "id": "176471",
+     "title": "The appointment of a service provider for the supply and delivery of corporate uniforms for luthuli museum’s front desk employees.",
+     "buyer": "Luthuli museum",
+     "province": "KwaZulu-Natal",
+     "trade": "Supplies",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176471.html"
+    },
+    {
+     "id": "176080",
+     "title": "Request for quotations from suitable service providers for the supply, branding and delivery of promotional items for tikzn",
+     "buyer": "Kwa-Zulu Natal - Trade and Investment KwaZulu-Natal",
+     "province": "KwaZulu-Natal",
+     "trade": "Supplies",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176080.html"
+    },
+    {
+     "id": "176396",
+     "title": "Supply & deliver of building supplies",
+     "buyer": "KwaZulu-Natal Museum",
+     "province": "KwaZulu-Natal",
+     "trade": "Supplies",
+     "closing": "2026-11-06T16:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 16:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176396.html"
+    }
+   ],
+   "North West": [
+    {
+     "id": "176312",
+     "title": "Supply and delivery of cleaning material",
+     "buyer": "Naledi - NW Local Municipality",
+     "province": "North West",
+     "trade": "Supplies",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176312.html"
+    },
+    {
+     "id": "176314",
+     "title": "Supply and delivery of cleaning material",
+     "buyer": "Naledi - NW Local Municipality",
+     "province": "North West",
+     "trade": "Supplies",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176314.html"
+    }
+   ]
+  },
+  "Security": {
+   "National": [
+    {
+     "id": "176222",
+     "title": "Appointment of a bidder to render service of maintenance, servicing, repair and monitoring of intruder alarm system for 36 months.",
+     "buyer": "South African Diamond and Precious Metals Regulator",
+     "province": "National",
+     "trade": "Security",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": "Briefing · Mon, 02 Nov · 10:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176222.html"
+    },
+    {
+     "id": "176461",
+     "title": "The Road Accident Fund (RAF) wishes to appoint a suitable service provider to Maintain, Service and Repair Security System at Hatfield…",
+     "buyer": "Road Accident Fund",
+     "province": "National",
+     "trade": "Security",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176461.html"
+    }
+   ]
+  },
+  "Cleaning": {
+   "Gauteng": [
+    {
+     "id": "176230",
+     "title": "Request for quotation (rfq) for provision of cleaning, hygiene and horticulture services at braamfontein yard depot of the south gauteng…",
+     "buyer": "Passenger Rail Agency of South Africa",
+     "province": "Gauteng",
+     "trade": "Cleaning",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176230.html"
+    }
+   ]
+  },
+  "Catering": {
+   "Western Cape": [
+    {
+     "id": "176660",
+     "title": "RFQ0117/2026 Long Service Awards 2026 Catering and Decor",
+     "buyer": "Artscape",
+     "province": "Western Cape",
+     "trade": "Catering",
+     "closing": "2026-11-06T12:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176660.html"
+    }
+   ]
+  },
+  "Construction": {
+   "Mpumalanga": [
+    {
+     "id": "176704",
+     "title": "Provision supply delivery of drinking water, reflling of standby tanks, and deslusge and disposal of sewer in the northern region…",
+     "buyer": "Transnet SOC Ltd",
+     "province": "Mpumalanga",
+     "trade": "Construction",
+     "closing": "2026-11-06T14:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 14:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176704.html"
+    }
+   ],
+   "Gauteng": [
+    {
+     "id": "176401",
+     "title": "Rfqjw151tn26 - plumbing and electrical supplies",
+     "buyer": "Johannesburg Water",
+     "province": "Gauteng",
+     "trade": "Construction",
+     "closing": "2026-11-06T16:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 16:00",
+     "briefing": "Briefing · NOT APPLICABLE",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176401.html"
+    }
+   ]
+  },
+  "Transport": {
+   "National": [
+    {
+     "id": "176447",
+     "title": "Request for Quotation of RFQ-GSM082_2026 for Leasing of Aircraft ULD Pallets",
+     "buyer": "South African Airways (Pty) Limited",
+     "province": "National",
+     "trade": "Transport",
+     "closing": "2026-11-06T16:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 16:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176447.html"
+    },
+    {
+     "id": "176286",
+     "title": "Request for quotation (rfq) for the appointment of service provider to remove, repair and fitting of mercedes benz gearbox – pretoria depot",
+     "buyer": "Passenger Rail Agency of South Africa",
+     "province": "National",
+     "trade": "Transport",
+     "closing": "2026-11-06T23:30:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 23:30",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176286.html"
+    }
+   ]
+  },
+  "Maintenance & repairs": {
+   "National": [
+    {
+     "id": "176271",
+     "title": "For the provision of lifting equipment load testing services for transnet soc ltd (registration no. 1990/000900/30) operating as transnet…",
+     "buyer": "Transnet SOC Ltd",
+     "province": "National",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-11-06T23:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 23:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://jaykgope1-gif.github.io/tenderfind-sa/tender/176271.html"
+    }
+   ]
+  }
+ }
+}

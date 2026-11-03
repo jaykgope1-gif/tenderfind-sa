@@ -1534,40 +1534,6 @@
   },
   "extracted_at": "2026-10-31T10:27:38.416Z"
  },
- "176037": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "Fuel Calibration - EL.pdf",
-    "pages": 12,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "csd_required": {
-    "value": true,
-    "source": "regex",
-    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 1.6 WHERE NO TCS IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. NB: FAILURE TO PROVIDE / OR COMPLY WITH ANY OF THE"
-   },
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T11:11:38.354Z"
- },
  "176038": {
   "status": "ok",
   "docs": [
@@ -17301,6 +17267,134 @@
   },
   "extracted_at": "2026-11-02T14:39:20.804Z"
  },
+ "176603": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "DRILLING AND INSTALLATION OF BOREHOLE INCLUDING PRESSURE PUMP @ MUTALE SUB OFFICE.pdf",
+    "result": "too-large"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T02:48:10.231Z"
+ },
+ "176604": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "DRILLING AND INSTALLATION OF BOREHOLE INCLUDING PRESSURE PUMP@MAKWARELA STADIUM.pdf",
+    "result": "too-large"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T02:48:13.708Z"
+ },
+ "176605": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "DRILLING AND INSTALLATION OF BOREHOLE INCLUDING PRESSURE PUMP @ TSHILAMBA COMMUNITY HALL.pdf",
+    "result": "too-large"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T02:48:14.343Z"
+ },
+ "176607": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "DRILLING AND INSTALLATION OF BOREHOLE INCLUDING PRESSURE PUMP @ MAKWARELA COMMUNITY HALL.pdf",
+    "result": "too-large"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T02:48:14.703Z"
+ },
  "176608": {
   "status": "ok",
   "docs": [
@@ -18490,6 +18584,39 @@
    }
   },
   "extracted_at": "2026-11-02T14:39:25.511Z"
+ },
+ "176657": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "REQUEST FOR THE PROCUREMENT OF CYBER SECURITY AND OFFICE 365 ADMINISTRATION.pdf",
+    "pages": 43,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T02:48:10.229Z"
  },
  "176659": {
   "status": "ok",
@@ -19996,5 +20123,330 @@
    }
   },
   "extracted_at": "2026-11-02T16:57:39.009Z"
+ },
+ "176713": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Bid Document for The Request For Information (RFI) Hosted and Managed Private Infrastructure-As-A-Service.pdf",
+    "pages": 56,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": null,
+     "time": "01:19",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "of the bid. 1.18 SITE INSPECTION The ARC reserves the right to conduct a site inspection of the premises of the recommended service provider and/or the recommended service provider’s clients at any given time. 1.19 PRIVACY AND PROTECTION OF PERSONAL INFORMATION ACT 4 OF 2013 Protecting personal information"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": ".......................................................... CSD number: ...................................................................................................... COMPANY NAME SUPPLIER REGISTRATION NUMBER UNIQUE REGISTRATION NUMBER"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T02:48:16.347Z"
+ },
+ "176714": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": ".RFQ Document - Hire of Pilot Boat - 27.10 (004).pdf",
+    "pages": 27,
+    "result": "text"
+   },
+   {
+    "title": "Annexure D - Schedule 1_Schedule of Requirements for RFQ.pdf",
+    "pages": 6,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "H PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM PERSONS"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T02:48:10.196Z"
+ },
+ "176715": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "SECURITY ADVERT.pdf",
+    "pages": 3,
+    "result": "scanned"
+   },
+   {
+    "title": "CORP-B063-25-26-PROVISION-OF-SECURITY-SERVICE-FOR-A-PERIOD-OF-36-MONTHS.pdf",
+    "pages": 63,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T02:48:16.509Z"
+ },
+ "176716": {
+  "status": "no-pdf",
+  "docs": [],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T02:48:16.489Z"
+ },
+ "176717": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "TENDER-DOCUMENT-NKO-58-2026.pdf",
+    "pages": 81,
+    "result": "text"
+   },
+   {
+    "title": "TENDER-NKO-58-2026.pdf",
+    "pages": 1,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": null,
+     "time": "01:10",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "cipality may issue Briefing Notes during the briefing session which may contain amendments or information that may assist bidders in articulating their bids. 1.10 Nkomazi Local Municipality require as a condition of the bid that the non-compulsory/optional explanatory meeting be attended by prospective"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "rent municipal account for all addresses that appear on the CSD report (not older than 3 months and not in arrears for more than three months) of the business. If the business address is not owned by the business, please submit the following documents: i. C"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T02:48:21.302Z"
+ },
+ "176718": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Invitation to Tender (ITT) or Request for Proposal (RFP) Template Rev. 28 - 21 April 2026 (5- Suppy  Delivery of Electrical Testing Equipment.pdf",
+    "pages": 67,
+    "result": "text"
+   },
+   {
+    "title": "SAP RFQ - 6000447078.pdf",
+    "pages": 7,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": null,
+     "time": "02:16",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": ": 120 days 2.15 Site visit and/or clarification meeting Not applicable 2.16 Seeking clarification The tenderer will notify Eskom of any clarifications required before the closing time for clarification queries, which is 5 working days before the deadline for tender submission. 2.22 Alternative tenders"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "t must be included in all tenders is the following: - • CSD registration Additional Contractual Requirements that may be included if applicable: • SHEQ requirements; and/or • Financial viability (submission of financial statements) / (financial an"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T02:48:16.218Z"
+ },
+ "176719": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "240-105658000 Supplier Quality Management Specification (3).pdf",
+    "pages": 28,
+    "result": "text"
+   },
+   {
+    "title": "Invitation to Tender (ITT).pdf",
+    "pages": 61,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-12",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "losing date and time Clarification meeting Compulsory clarification meeting will be held. Date:12 November 2026 at 10:00 AM. Venue: Eskom Megawatt Park (MWP) - Newtons 1 and 2 Address: Maxwell Dr, Sunninghill, Sandton, 2157 Tenders are to be delivered to the following address by the stipulated closing dat"
+   },
+   "cidb_grade": {
+    "value": "7EP",
+    "source": "regex",
+    "snippet": "stry Development Board (CIDB) contractor grading of .......7EP........... or higher [Insert the best estimate of required Contractor grading designation. The clause above must be omitted: - (i) where the contract involves goods or services; or (ii) the"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "be included in all tenders is the following: - • Proof of CSD registration Additional Contractual Requirements that may be included if applicable: • SHEQ requirements; and/or • Financial viability (submission of financial statements); and/or • Any oth"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T02:48:19.947Z"
+ },
+ "176720": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "AWOS COR 8218_2026_RFP-FINAL.pdf",
+    "pages": 87,
+    "result": "text"
+   },
+   {
+    "title": "2024 2025 INSURANCE CLAUSES FOR LANDSIDE CONSTRUCTION CONTRACTS LESS THAN R150 MILLION.pdf",
+    "pages": 12,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-12",
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "e 02 November 2026 Compulsory Briefing Session and Site Inspection ONLINE - 12 November 2026 @11am Compulsory Site Inspection Date & Time Every bidder must come to the site with the following: (a) Reflective jacket (b) Identity Document and a copy of your ID (not driver’s license) (c) Relevant"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. NB: FAILURE TO PROVIDE / OR COMPLY WITH ANY OF T"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T02:48:22.361Z"
  }
 }

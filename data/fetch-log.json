@@ -1,5 +1,29 @@
 [
  {
+  "at": "2026-11-03T02:48:00.769Z",
+  "ok": true,
+  "days": {
+   "2026-11-01": {
+    "releases": 3,
+    "badRecords": 0
+   },
+   "2026-11-02": {
+    "releases": 116,
+    "badRecords": 0
+   },
+   "2026-11-03": {
+    "releases": 6,
+    "badRecords": 0
+   }
+  },
+  "releases": 125,
+  "added": 13,
+  "updated": [],
+  "unchanged": 112,
+  "removed": 1,
+  "total": 546
+ },
+ {
   "at": "2026-11-02T17:25:51.606Z",
   "ok": true,
   "days": {
