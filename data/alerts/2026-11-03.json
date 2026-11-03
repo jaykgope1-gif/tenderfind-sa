@@ -1,11 +1,11 @@
 {
  "date": "2026-11-03",
- "generated_at": "2026-11-03T13:08:37.980Z",
+ "generated_at": "2026-11-03T14:15:09.334Z",
  "site": "https://tenderfind.co.za",
  "note": "Tenders with province 'National' or 'Not stated' should go to subscribers in every province.",
  "counts": {
-  "new": 89,
-  "closing_soon": 52
+  "new": 111,
+  "closing_soon": 53
  },
  "new": {
   "Construction": {
@@ -22,6 +22,32 @@
      "compulsory_briefing": null,
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176744.html"
+    },
+    {
+     "id": "176866",
+     "title": "Repair and Load Test of Scissor Lift",
+     "buyer": "South African Airways (Pty) Limited",
+     "province": "National",
+     "trade": "Construction",
+     "closing": "2026-11-10T10:00:00+02:00",
+     "closing_text": "Tue, 10 Nov 2026, 10:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176866.html"
+    },
+    {
+     "id": "176853",
+     "title": "An integrated traction motor and controller system",
+     "buyer": "Transnet SOC Ltd",
+     "province": "National",
+     "trade": "Construction",
+     "closing": "2026-11-10T14:00:00+02:00",
+     "closing_text": "Tue, 10 Nov 2026, 14:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176853.html"
     },
     {
      "id": "176831",
@@ -186,6 +212,148 @@
      "compulsory_briefing": true,
      "cidb": "4SQ",
      "url": "https://tenderfind.co.za/tender/176743.html"
+    },
+    {
+     "id": "176852",
+     "title": "Appointment of a contractor for siting; drilling and equipping of boreholes in palmietfontein 104 jt (2), bloemfontein 399 jt, rondebosch…",
+     "buyer": "Department of Land Reform and Rural Development",
+     "province": "Mpumalanga",
+     "trade": "Construction",
+     "closing": "2026-11-26T11:00:00+02:00",
+     "closing_text": "Thu, 26 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · Wed, 11 Nov · 13:00 · Emakhazeni Local Municipality, 25 Scheepers Street, Emakhazeni",
+     "compulsory_briefing": true,
+     "cidb": "3CE",
+     "url": "https://tenderfind.co.za/tender/176852.html"
+    }
+   ],
+   "North West": [
+    {
+     "id": "176861",
+     "title": "Panel of service provider for the assessment of the existing boreholes-pump-testing, re-drilling, equipping of boreholes, construction of…",
+     "buyer": "Ngaka Modiri Molema District Municipality",
+     "province": "North West",
+     "trade": "Construction",
+     "closing": "2026-12-03T11:00:00+02:00",
+     "closing_text": "Thu, 03 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": "5CE",
+     "url": "https://tenderfind.co.za/tender/176861.html"
+    }
+   ]
+  },
+  "Maintenance & repairs": {
+   "National": [
+    {
+     "id": "176854",
+     "title": "Once off servicing of fire equipment at gert sibande,nkangala and ehlazeni districts",
+     "buyer": "Public Works",
+     "province": "National",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176854.html"
+    },
+    {
+     "id": "176750",
+     "title": "The appointment of a service provider for a once off servicing of diesel engines at the sanpc refinery.",
+     "buyer": "CEF (Pty) Ltd",
+     "province": "National",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-11-19T12:00:00+02:00",
+     "closing_text": "Thu, 19 Nov 2026, 12:00",
+     "briefing": "Compulsory briefing · Wed, 11 Nov · 11:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176750.html"
+    },
+    {
+     "id": "176760",
+     "title": "Maintenance, service and repairs of standby generators for 36 months: area 2",
+     "buyer": "Public Works",
+     "province": "National",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-11-26T11:00:00+02:00",
+     "closing_text": "Thu, 26 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176760.html"
+    },
+    {
+     "id": "176763",
+     "title": "Maintenance, service and repairs of standby generators for 36 months: area 3",
+     "buyer": "Public Works",
+     "province": "National",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-11-26T11:00:00+02:00",
+     "closing_text": "Thu, 26 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176763.html"
+    },
+    {
+     "id": "176764",
+     "title": "Maintenance, service and repairs of standby generators for 36 months: area 4",
+     "buyer": "Public Works",
+     "province": "National",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-11-26T11:00:00+02:00",
+     "closing_text": "Thu, 26 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176764.html"
+    }
+   ],
+   "KwaZulu-Natal": [
+    {
+     "id": "176860",
+     "title": "Disposal - establishment of an enabling agreement for the disposal of 1 x 20mva transformer from empangeni substation in kwazulunatal…",
+     "buyer": "ESKOM",
+     "province": "KwaZulu-Natal",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-11-17T10:00:00+02:00",
+     "closing_text": "Tue, 17 Nov 2026, 10:00",
+     "briefing": "Briefing · 02:15",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176860.html"
+    }
+   ],
+   "Gauteng": [
+    {
+     "id": "176862",
+     "title": "Rfqjw0100dm26 - supply, delivery and installation of security turnstile at head office turbine hall and perplex glass",
+     "buyer": "Johannesburg Water",
+     "province": "Gauteng",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-11-17T12:00:00+02:00",
+     "closing_text": "Tue, 17 Nov 2026, 12:00",
+     "briefing": "Briefing · Tue, 10 Nov · 10:00 · 65 NTEMI PILISO STREET",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176862.html"
+    }
+   ],
+   "Western Cape": [
+    {
+     "id": "176756",
+     "title": "Maintenance and support for the telephone systems in swartland municipality for the period ending 30 june 2029",
+     "buyer": "Swartland Municipality",
+     "province": "Western Cape",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-12-11T12:00:00+02:00",
+     "closing_text": "Fri, 11 Dec 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176756.html"
     }
    ]
   },
@@ -242,6 +410,19 @@
      "compulsory_briefing": null,
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176827.html"
+    },
+    {
+     "id": "176871",
+     "title": "Request for Training: National Certificate: Field Guiding.",
+     "buyer": "National - Environment, Forestry and Fisheries",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-11T11:00:00+02:00",
+     "closing_text": "Wed, 11 Nov 2026, 11:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176871.html"
     },
     {
      "id": "176733",
@@ -465,6 +646,34 @@
      "url": "https://tenderfind.co.za/tender/176834.html"
     }
    ],
+   "North West": [
+    {
+     "id": "176858",
+     "title": "The Moses Kotane Research Institute (MKRI) invites prospective bidders to submit quotations for supply, delivery and install subscription…",
+     "buyer": "Moses Kotane Institute",
+     "province": "North West",
+     "trade": "Professional services",
+     "closing": "2026-11-11T11:00:00+02:00",
+     "closing_text": "Wed, 11 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176858.html"
+    },
+    {
+     "id": "176813",
+     "title": "Panel of consulting for town & regional planning services to be used on as and when required basis for a period not exceeding three years",
+     "buyer": "Ngaka Modiri Molema District Municipality",
+     "province": "North West",
+     "trade": "Professional services",
+     "closing": "2026-12-04T11:00:00+02:00",
+     "closing_text": "Fri, 04 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176813.html"
+    }
+   ],
    "Limpopo": [
     {
      "id": "176657",
@@ -532,19 +741,6 @@
      "compulsory_briefing": true,
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176816.html"
-    },
-    {
-     "id": "176820",
-     "title": "The supply of training on risk management course to the department of water and sanitation employees at infrastructure branch training…",
-     "buyer": "Water and Sanitation",
-     "province": "Gauteng",
-     "trade": "Professional services",
-     "closing": "2026-11-18T11:00:00+02:00",
-     "closing_text": "Wed, 18 Nov 2026, 11:00",
-     "briefing": "Compulsory briefing · Thu, 12 Nov · 10:00",
-     "compulsory_briefing": true,
-     "cidb": null,
-     "url": "https://tenderfind.co.za/tender/176820.html"
     }
    ],
    "Eastern Cape": [
@@ -592,21 +788,6 @@
      "url": "https://tenderfind.co.za/tender/176825.html"
     }
    ],
-   "North West": [
-    {
-     "id": "176813",
-     "title": "Panel of consulting for town & regional planning services to be used on as and when required basis for a period not exceeding three years",
-     "buyer": "Ngaka Modiri Molema District Municipality",
-     "province": "North West",
-     "trade": "Professional services",
-     "closing": "2026-12-04T11:00:00+02:00",
-     "closing_text": "Fri, 04 Dec 2026, 11:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://tenderfind.co.za/tender/176813.html"
-    }
-   ],
    "KwaZulu-Natal": [
     {
      "id": "176795",
@@ -652,6 +833,19 @@
      "url": "https://tenderfind.co.za/tender/176771.html"
     },
     {
+     "id": "176848",
+     "title": "Appointment of a Service Provider for the Supply of Ten (10) Bonding Devices for Sentech.",
+     "buyer": "Sentech Limited",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-10T12:00:00+02:00",
+     "closing_text": "Tue, 10 Nov 2026, 12:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176848.html"
+    },
+    {
      "id": "176725",
      "title": "Request for quote for delivery of office stationery",
      "buyer": "Statistics South Africa",
@@ -678,6 +872,19 @@
      "url": "https://tenderfind.co.za/tender/176836.html"
     },
     {
+     "id": "176867",
+     "title": "Appointment of a service provider for the supply and delivery of radar tools at george airport (fagg)",
+     "buyer": "Air Traffic and Navigation Services Company Limited",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-17T11:00:00+02:00",
+     "closing_text": "Tue, 17 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176867.html"
+    },
+    {
      "id": "176775",
      "title": "Ikageng sewage treatment plant operation for a period of three (3) months",
      "buyer": "ESKOM",
@@ -702,6 +909,19 @@
      "compulsory_briefing": true,
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176724.html"
+    },
+    {
+     "id": "176820",
+     "title": "Supply, delivery, repair and certification of the existing gas installation with some local content accessories at the department of water…",
+     "buyer": "Water and Sanitation",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-18T11:00:00+02:00",
+     "closing_text": "Wed, 18 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · Thu, 12 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176820.html"
     },
     {
      "id": "176736",
@@ -769,6 +989,19 @@
      "url": "https://tenderfind.co.za/tender/176716.html"
     },
     {
+     "id": "176872",
+     "title": "Re-advertisement: appointment of a service provider for the supply, deliver install, configure, test, train, commission and integrate…",
+     "buyer": "Water Research Commission",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-12-03T11:00:00+02:00",
+     "closing_text": "Thu, 03 Dec 2026, 11:00",
+     "briefing": "Compulsory briefing · Fri, 13 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176872.html"
+    },
+    {
      "id": "176720",
      "title": "Request for the Provisions to Design, supply, installations, and commissioning of new Automated Weather Observations Systems (AWOS), as…",
      "buyer": "Airports Company of South Africa",
@@ -825,6 +1058,60 @@
      "url": "https://tenderfind.co.za/tender/176748.html"
     }
    ],
+   "Western Cape": [
+    {
+     "id": "176856",
+     "title": "Quotation for the supply & delivery of new office shredder",
+     "buyer": "George Municipality",
+     "province": "Western Cape",
+     "trade": "Supplies",
+     "closing": "2026-11-13T12:00:00+02:00",
+     "closing_text": "Fri, 13 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176856.html"
+    },
+    {
+     "id": "176783",
+     "title": "Supply and delivery of non-woven needle pinched geotextile for the rehabilitation of clanwilliam dam in the western cape for dws…",
+     "buyer": "Water and Sanitation",
+     "province": "Western Cape",
+     "trade": "Supplies",
+     "closing": "2026-11-19T11:00:00+02:00",
+     "closing_text": "Thu, 19 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176783.html"
+    },
+    {
+     "id": "176865",
+     "title": "Supply and delivery of shutter release oil for the rehabilitation of clanwilliam dam in the western cape for dws construction south.",
+     "buyer": "Water and Sanitation",
+     "province": "Western Cape",
+     "trade": "Supplies",
+     "closing": "2026-11-19T11:00:00+02:00",
+     "closing_text": "Thu, 19 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176865.html"
+    },
+    {
+     "id": "176868",
+     "title": "SUPPLY, INSTALLATION AND MANAGEMENT OF A STS COMPLIANT PREPAYMENT ELECTRICITY VENDING, DATA MANAGEMENT, REVENUE PROTECTION and AUTOMATIC…",
+     "buyer": "SALDANHA BAY MUNICIPALITY",
+     "province": "Western Cape",
+     "trade": "Supplies",
+     "closing": "2026-12-11T12:00:00+02:00",
+     "closing_text": "Fri, 11 Dec 2026, 12:00",
+     "briefing": "Compulsory briefing · Wed, 18 Nov · 12:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176868.html"
+    }
+   ],
    "Gauteng": [
     {
      "id": "176822",
@@ -877,21 +1164,6 @@
      "compulsory_briefing": false,
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176777.html"
-    }
-   ],
-   "Western Cape": [
-    {
-     "id": "176783",
-     "title": "Supply and delivery of non-woven needle pinched geotextile for the rehabilitation of clanwilliam dam in the western cape for dws…",
-     "buyer": "Water and Sanitation",
-     "province": "Western Cape",
-     "trade": "Supplies",
-     "closing": "2026-11-19T11:00:00+02:00",
-     "closing_text": "Thu, 19 Nov 2026, 11:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://tenderfind.co.za/tender/176783.html"
     }
    ]
   },
@@ -1085,6 +1357,19 @@
      "url": "https://tenderfind.co.za/tender/176823.html"
     },
     {
+     "id": "176849",
+     "title": "Request for quotation for preventative and corrective maintenance of the power reticulation network (mv & lv) for a period of 36 months at…",
+     "buyer": "Airports Company of South Africa",
+     "province": "National",
+     "trade": "IT",
+     "closing": "2026-11-20T16:00:00+02:00",
+     "closing_text": "Fri, 20 Nov 2026, 16:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": "3EP",
+     "url": "https://tenderfind.co.za/tender/176849.html"
+    },
+    {
      "id": "176726",
      "title": "Supply and delivery of new server infrastructure",
      "buyer": "South African Nuclear Energy Corporation Limited",
@@ -1096,6 +1381,19 @@
      "compulsory_briefing": null,
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176726.html"
+    },
+    {
+     "id": "176850",
+     "title": "Request for proposals: appointment of a reputable service provider to provide an audit software for the internal audit function of…",
+     "buyer": "Agricultural Sector Education and Training Authority",
+     "province": "National",
+     "trade": "IT",
+     "closing": "2026-12-02T11:00:00+02:00",
+     "closing_text": "Wed, 02 Dec 2026, 11:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176850.html"
     }
    ],
    "KwaZulu-Natal": [
@@ -1114,77 +1412,6 @@
     }
    ]
   },
-  "Maintenance & repairs": {
-   "National": [
-    {
-     "id": "176750",
-     "title": "The appointment of a service provider for a once off servicing of diesel engines at the sanpc refinery.",
-     "buyer": "CEF (Pty) Ltd",
-     "province": "National",
-     "trade": "Maintenance & repairs",
-     "closing": "2026-11-19T12:00:00+02:00",
-     "closing_text": "Thu, 19 Nov 2026, 12:00",
-     "briefing": "Compulsory briefing · Wed, 11 Nov · 11:00",
-     "compulsory_briefing": true,
-     "cidb": null,
-     "url": "https://tenderfind.co.za/tender/176750.html"
-    },
-    {
-     "id": "176760",
-     "title": "Maintenance, service and repairs of standby generators for 36 months: area 2",
-     "buyer": "Public Works",
-     "province": "National",
-     "trade": "Maintenance & repairs",
-     "closing": "2026-11-26T11:00:00+02:00",
-     "closing_text": "Thu, 26 Nov 2026, 11:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://tenderfind.co.za/tender/176760.html"
-    },
-    {
-     "id": "176763",
-     "title": "Maintenance, service and repairs of standby generators for 36 months: area 3",
-     "buyer": "Public Works",
-     "province": "National",
-     "trade": "Maintenance & repairs",
-     "closing": "2026-11-26T11:00:00+02:00",
-     "closing_text": "Thu, 26 Nov 2026, 11:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://tenderfind.co.za/tender/176763.html"
-    },
-    {
-     "id": "176764",
-     "title": "Maintenance, service and repairs of standby generators for 36 months: area 4",
-     "buyer": "Public Works",
-     "province": "National",
-     "trade": "Maintenance & repairs",
-     "closing": "2026-11-26T11:00:00+02:00",
-     "closing_text": "Thu, 26 Nov 2026, 11:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://tenderfind.co.za/tender/176764.html"
-    }
-   ],
-   "Western Cape": [
-    {
-     "id": "176756",
-     "title": "Maintenance and support for the telephone systems in swartland municipality for the period ending 30 june 2029",
-     "buyer": "Swartland Municipality",
-     "province": "Western Cape",
-     "trade": "Maintenance & repairs",
-     "closing": "2026-12-11T12:00:00+02:00",
-     "closing_text": "Fri, 11 Dec 2026, 12:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://tenderfind.co.za/tender/176756.html"
-    }
-   ]
-  },
   "Security": {
    "Eastern Cape": [
     {
@@ -1199,6 +1426,21 @@
      "compulsory_briefing": null,
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176740.html"
+    }
+   ],
+   "National": [
+    {
+     "id": "176863",
+     "title": "Appointment of a service provider to render security services to the independent communications authority of south africa (icasa) for a…",
+     "buyer": "Independent Communications Authority of South Africa (ICASA)",
+     "province": "National",
+     "trade": "Security",
+     "closing": "2026-11-27T11:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176863.html"
     }
    ],
    "KwaZulu-Natal": [
@@ -1232,6 +1474,53 @@
     }
    ]
   },
+  "Transport": {
+   "Mpumalanga": [
+    {
+     "id": "176859",
+     "title": "Request for proposals for panel of service providers for a travel management services for a period of five (05) years bid no…",
+     "buyer": "Nkangala TVET College",
+     "province": "Mpumalanga",
+     "trade": "Transport",
+     "closing": "2026-11-24T11:00:00+02:00",
+     "closing_text": "Tue, 24 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176859.html"
+    }
+   ],
+   "National": [
+    {
+     "id": "176870",
+     "title": "The South African Social Security Agency (SASSA) hereby invites proposals for the appointment of a service provider to render travel…",
+     "buyer": "South African Social Security Agency",
+     "province": "National",
+     "trade": "Transport",
+     "closing": "2026-11-24T11:00:00+02:00",
+     "closing_text": "Tue, 24 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176870.html"
+    }
+   ],
+   "Western Cape": [
+    {
+     "id": "176847",
+     "title": "The Afrikaans Language Museum and Monument (ATM) hereby invites quotations for the provision of professional transport services. The…",
+     "buyer": "Die Afrikaanse Taal Museum",
+     "province": "Western Cape",
+     "trade": "Transport",
+     "closing": "2026-11-27T11:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176847.html"
+    }
+   ]
+  },
   "Catering": {
    "National": [
     {
@@ -1246,6 +1535,19 @@
      "compulsory_briefing": true,
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176839.html"
+    },
+    {
+     "id": "176864",
+     "title": "Tbh 305/2026: open bid: for the supply and delivery of fresh meat products for the food services department at tygerberg hospital for a…",
+     "buyer": "Tygerburg Hospital",
+     "province": "National",
+     "trade": "Catering",
+     "closing": "2026-12-03T11:00:00+02:00",
+     "closing_text": "Thu, 03 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176864.html"
     }
    ]
   }
@@ -1910,6 +2212,36 @@
     }
    ]
   },
+  "Maintenance & repairs": {
+   "National": [
+    {
+     "id": "176854",
+     "title": "Once off servicing of fire equipment at gert sibande,nkangala and ehlazeni districts",
+     "buyer": "Public Works",
+     "province": "National",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176854.html"
+    },
+    {
+     "id": "176271",
+     "title": "For the provision of lifting equipment load testing services for transnet soc ltd (registration no. 1990/000900/30) operating as transnet…",
+     "buyer": "Transnet SOC Ltd",
+     "province": "National",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-11-06T23:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 23:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176271.html"
+    }
+   ]
+  },
   "Cleaning": {
    "Gauteng": [
     {
@@ -1971,23 +2303,6 @@
      "compulsory_briefing": null,
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176286.html"
-    }
-   ]
-  },
-  "Maintenance & repairs": {
-   "National": [
-    {
-     "id": "176271",
-     "title": "For the provision of lifting equipment load testing services for transnet soc ltd (registration no. 1990/000900/30) operating as transnet…",
-     "buyer": "Transnet SOC Ltd",
-     "province": "National",
-     "trade": "Maintenance & repairs",
-     "closing": "2026-11-06T23:00:00+02:00",
-     "closing_text": "Fri, 06 Nov 2026, 23:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://tenderfind.co.za/tender/176271.html"
     }
    ]
   }
