@@ -1,7 +1,7 @@
 // Site-wide settings. Change them here; the next build updates every page.
 module.exports = {
-  // Where the site is published. Update when a custom domain is added (or set SITE_URL).
-  SITE_URL: (process.env.SITE_URL || "https://jaykgope1-gif.github.io/tenderfind-sa").replace(/\/$/, ""),
+  // Where the site is published (custom domain since 2026-11-03; or set SITE_URL).
+  SITE_URL: (process.env.SITE_URL || "https://tenderfind.co.za").replace(/\/$/, ""),
 
   // Who runs the service. Shown on the privacy page as the POPIA "responsible party" and
   // the contact for access, correction and deletion requests. Fill in before taking sign-ups.

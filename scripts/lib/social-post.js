@@ -3,7 +3,7 @@
 // Input: the site's compact index (site/data/tenders.json: { tenders: [{ id, t, b, p, tr, c }] }).
 
 const SOCIAL = {
-  SIGNUP: "https://tally.so/r/EqKWVX", // the sign-up form itself; customers never see the github.io address
+  SIGNUP: "https://tenderfind.co.za/signup", // short link to the sign-up form (site/signup/)
 
   PROVINCE: "Gauteng",
   DAYS: 7,

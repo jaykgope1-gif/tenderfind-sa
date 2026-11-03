@@ -10,7 +10,7 @@ const MATCH = {
   PROVINCES: ["Eastern Cape", "Free State", "Gauteng", "KwaZulu-Natal", "Limpopo", "Mpumalanga", "North West", "Northern Cape", "Western Cape"],
   EVERYWHERE: ["National", "Not stated"], // sent to subscribers in every province
   TRIAL_DAYS: 14, // free days from the first sign-up (sign-up day is day 1)
-  SITE: "https://jaykgope1-gif.github.io/tenderfind-sa",
+  SITE: "https://tenderfind.co.za",
   UNSUBSCRIBE_TO: "jobkgope1@gmail.com", // where "UNSUBSCRIBE" replies go (the sending Gmail)
 };
 

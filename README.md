@@ -2,7 +2,7 @@
 
 Every open South African government tender, in plain English, on your phone.
 
-**Live site:** https://jaykgope1-gif.github.io/tenderfind-sa/
+**Live site:** https://tenderfind.co.za/
 
 TenderFind SA is a fast, mobile-first search engine for South African government tenders. It updates itself every morning from National Treasury's eTenders open-data feed, reads the tender documents to find briefing sessions and CIDB grades, and publishes a static website on GitHub Pages. Running it costs nothing. The only optional cost is AI help with reading documents.
 

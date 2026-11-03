@@ -22,7 +22,7 @@ any time  n8n "Replies"
 
 `scripts/alerts.js` runs in the daily GitHub Action after the build. It writes `data/alerts/<date>.json` (kept 60 days in git) and publishes:
 
-- `https://jaykgope1-gif.github.io/tenderfind-sa/alerts/latest.json`, which n8n reads
+- `https://tenderfind.co.za/alerts/latest.json`, which n8n reads
 - `…/alerts/<date>.json` for the last 14 days
 
 ```json
@@ -101,7 +101,7 @@ If you later add card payments (PayFast, Yoco, Paystack and similar can send a w
 | # | Node | Settings |
 |---|---|---|
 | 1 | **Schedule Trigger** | Every day 06:30, timezone Africa/Johannesburg. The GitHub job runs at 05:17 (backup 06:07) and takes about 2 minutes, plus a few more for Pages to publish. |
-| 2 | **HTTP Request** "Get alerts" | GET `https://jaykgope1-gif.github.io/tenderfind-sa/alerts/latest.json?d={{$now.toFormat('yyyyLLdd')}}`. The query string avoids a cached copy. |
+| 2 | **HTTP Request** "Get alerts" | GET `https://tenderfind.co.za/alerts/latest.json?d={{$now.toFormat('yyyyLLdd')}}`. The query string avoids a cached copy. |
 | 3 | **IF** "Is today's file?" | `{{$json.date}}` equals `{{$now.setZone('Africa/Johannesburg').toFormat('yyyy-LL-dd')}}`. **False:** send yourself an email/WhatsApp ("Tender data didn't update today, alerts not sent") and stop. Never send yesterday's tenders as new. |
 | 4 | **Google Sheets** "Read sign-ups" | Get Rows, sheet = Responses. |
 | 5 | **Google Sheets** "Read status" | Get Rows, sheet = Status. Turn on *Always Output Data*. |
@@ -202,11 +202,11 @@ Meta templates can't contain line breaks inside a variable, so each tender is it
   ```
 
 - **Footer:** `Reply STOP to unsubscribe`
-- **Button:** *Visit website*, dynamic URL. Text: `See all new tenders`. URL: `https://jaykgope1-gif.github.io/tenderfind-sa/{{1}}`
+- **Button:** *Visit website*, dynamic URL. Text: `See all new tenders`. URL: `https://tenderfind.co.za/{{1}}`
 - **Sample values** (Meta asks for them):
   - {{1}} `Thandi`
   - {{2}} `11`
-  - {{3}} `Cleaning, Gauteng: Provision of cleaning, hygiene and horticulture services at Braamfontein yard depot… Closes Fri 06 Nov, 12:00. https://jaykgope1-gif.github.io/tenderfind-sa/tender/176230.html`
+  - {{3}} `Cleaning, Gauteng: Provision of cleaning, hygiene and horticulture services at Braamfontein yard depot… Closes Fri 06 Nov, 12:00. https://tenderfind.co.za/tender/176230.html`
   - button `?trade=Cleaning&province=Gauteng&new=1`
 
 ### `tender_closing_1` … `tender_closing_3` (only for people who chose reminders)
@@ -242,7 +242,7 @@ What a subscriber sees (from today's real data):
 
 - **Body:** *"Hi {{1}}, your 14-day free trial of TenderFind SA tender alerts has ended. To keep getting new tenders for your trade every morning, it's R149 a month. Nothing is charged automatically. Tap below to see how to subscribe, or reply to this message."*
 - **Footer:** `Reply STOP to unsubscribe`
-- **Button:** *Visit website*, static URL `https://jaykgope1-gif.github.io/tenderfind-sa/pricing.html`, text `Subscribe`
+- **Button:** *Visit website*, static URL `https://tenderfind.co.za/pricing.html`, text `Subscribe`
 - **Sample:** {{1}} `Sipho`
 
 If they reply, the 24-hour window opens, and you can send payment details as a normal message, free-form, no template needed.
