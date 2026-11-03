@@ -23840,5 +23840,476 @@
    }
   },
   "extracted_at": "2026-11-03T14:51:45.445Z"
+ },
+ "176880": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Q08-2026A_Bid Doc.pdf",
+    "pages": 68,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": "2026-11-12",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "ose who attended the site meeting will be considered (Bidders who have already attended the site inspection session for Q08-2026 are not obligated to attend the upcoming session, as their previous attendance will be recognized). Date : 12 November 2026 Times : 11:00 Location 1 : ODM Head office, 2"
+   },
+   "cidb_grade": {
+    "value": "1SN",
+    "source": "regex",
+    "snippet": "ubmit proof of their valid CIDB registration with a minimum 1SN grading. Sealed envelope endorsed “Q08-2026A : PROVISION FOR REPAIRS, REMOVAL, SEALING AND WATERPROOFING OF LEAKING ROOF AT OVERBERG DISTRICT MUNICIPALITY”, must be placed in the Bid box at"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "EGISTRATION NUMBER TAX COMPLIANCE STATUS TCS PIN: CSD No: B-BBEE STATUS LEVEL VERIFICATION CERTIFICATE [TICK APPLICABLE BOX] Yes No B-BBEE STATUS LEVEL SWORN AFFIDAVIT Yes No [A B-BBEE STATUS LEVEL VERIFICATION CERTIF"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T17:07:50.271Z"
+ },
+ "176883": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Q08-2026A_Bid Doc.pdf",
+    "pages": 68,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": "2026-11-12",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "ose who attended the site meeting will be considered (Bidders who have already attended the site inspection session for Q08-2026 are not obligated to attend the upcoming session, as their previous attendance will be recognized). Date : 12 November 2026 Times : 11:00 Location 1 : ODM Head office, 2"
+   },
+   "cidb_grade": {
+    "value": "1SN",
+    "source": "regex",
+    "snippet": "ubmit proof of their valid CIDB registration with a minimum 1SN grading. Sealed envelope endorsed “Q08-2026A : PROVISION FOR REPAIRS, REMOVAL, SEALING AND WATERPROOFING OF LEAKING ROOF AT OVERBERG DISTRICT MUNICIPALITY”, must be placed in the Bid box at"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "EGISTRATION NUMBER TAX COMPLIANCE STATUS TCS PIN: CSD No: B-BBEE STATUS LEVEL VERIFICATION CERTIFICATE [TICK APPLICABLE BOX] Yes No B-BBEE STATUS LEVEL SWORN AFFIDAVIT Yes No [A B-BBEE STATUS LEVEL VERIFICATION CERTIF"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T17:07:46.156Z"
+ },
+ "176884": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Q09-2026A Bid Doc.pdf",
+    "pages": 68,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "EGISTRATION NUMBER TAX COMPLIANCE STATUS TCS PIN: CSD No: B-BBEE STATUS LEVEL VERIFICATION CERTIFICATE [TICK APPLICABLE BOX] Yes No B-BBEE STATUS LEVEL SWORN AFFIDAVIT Yes No [A B-BBEE STATUS LEVEL VERIFICATION CERTIF"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T17:07:50.185Z"
+ },
+ "176885": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Bid Document for ZNTL001 Security Services 2026 (002).pdf",
+    "pages": 45,
+    "result": "text"
+   },
+   {
+    "title": "NOTIFICATION OF TENDER FOR ZNTL001 2026 DPWI SECURITY SERVICES MRO .pdf",
+    "pages": 2,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-18",
+     "time": "10:00",
+     "venue": "AUDITORIUM 71 KARALLANDMAN SREET DUNDEE, 3000"
+    },
+    "source": "regex",
+    "snippet": "05: REF NO 003/2026 Briefing Session (briefing is compulsory) Date: 18 NOVEMBER 2026 Venue: AUDITORIUM 71 KARALLANDMAN SREET DUNDEE, 3000 Time: 10:00AM Queries relating to the issue of these documents may be addressed to Name : MRS. N"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM PERSONS IN THE"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T17:07:55.568Z"
+ },
+ "176886": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Bis Document for ZNTL002 UMzinyathi Sub  Security Services 2026.pdf",
+    "pages": 45,
+    "result": "text"
+   },
+   {
+    "title": "NOTIFICATION  OT TENDER ZNTL002 2026 DPWI SECURITY SERVICES UMZINYATHI SUB DISTRICT OFFICE.pdf",
+    "pages": 3,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-18",
+     "time": "10:00",
+     "venue": "AUDITORIUM 71 KARELLANDMAN STREET DUNDEE 3000"
+    },
+    "source": "regex",
+    "snippet": "05: REF NO 003/2026 Briefing Session (briefing is compulsory) DATE: 18 NOVEMBER 2026 VENUE: AUDITORIUM 71 KARELLANDMAN STREET DUNDEE 3000 TIME: 10:00AM Queries relating to the issue of these documents may be addressed to"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM PERSONS IN THE"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T17:07:55.773Z"
+ },
+ "176887": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Q17-2026_Bid Doc.pdf",
+    "pages": 66,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "EGISTRATION NUMBER TAX COMPLIANCE STATUS TCS PIN: CSD No: B-BBEE STATUS LEVEL VERIFICATION CERTIFICATE [TICK APPLICABLE BOX] Yes No B-BBEE STATUS LEVEL SWORN AFFIDAVIT Yes No [A B-BBEE STATUS LEVEL VERIFICATION CERTIF"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T17:07:51.935Z"
+ },
+ "176888": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ35 2026-2027 TRANSFER DIGITAL CONTENT FROM MASTER USBs to REQUIRED USB FLASH DRIVE.pdf",
+    "pages": 22,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "e. Company profile Additional returnable documents f. CSD registration proof g. Valid TCC Status or Pin certificate h. B-BBEE Certificate/Sworn Affidavit SBD 4 BIDDER’S DISCLOSURE 1. PURPOSE OF THE FORM Any person (natural or juristic)"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T17:07:46.119Z"
+ },
+ "176889": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Q16-2026 Bid Doc.pdf",
+    "pages": 69,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "EGISTRATION NUMBER TAX COMPLIANCE STATUS TCS PIN: CSD No: B-BBEE STATUS LEVEL VERIFICATION CERTIFICATE [TICK APPLICABLE BOX] Yes No B-BBEE STATUS LEVEL SWORN AFFIDAVIT Yes No [A B-BBEE STATUS LEVEL VERIFICATION CERTIF"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T17:07:52.993Z"
+ },
+ "176890": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ36 2026-2027 APPOINTMENT OF A SERVICE PROVIDER TO PROVIDE SCRIBER SERVICES FOR NFVF.pdf",
+    "pages": 22,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "e. Company profile Additional returnable documents f. CSD registration proof g. Valid TCC Status or Pin certificate h. B-BBEE Certificate/Sworn Affidavit SBD 4 BIDDER’S DISCLOSURE 1. PURPOSE OF THE FORM Any person (natural or juristi"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T17:07:46.154Z"
+ },
+ "176891": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Bid Document for ZNTL003 UMzinyathi  Security Services 2026.pdf",
+    "pages": 45,
+    "result": "text"
+   },
+   {
+    "title": "NOTIFICATION OF TENDER FOR ZNTL003 2026 DPWI SECURITY SERVICES UMZINYATHI DISTRICT OFFICE.pdf",
+    "pages": 2,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-18",
+     "time": "10:00",
+     "venue": "AUDITORIUM 71 KALLARANDMAN STREET DUNDEE 3000"
+    },
+    "source": "regex",
+    "snippet": "05: REF NO 003/2026 Briefing Session (briefing is compulsory) Date: 18 NOVEMBER 2026 Venue: AUDITORIUM 71 KALLARANDMAN STREET DUNDEE 3000 Time: 10:00AM Queries relating to the issue of these documents may be addressed to Name : Ms NP"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM PERSONS IN THE"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T17:07:58.248Z"
+ },
+ "176892": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Goldfields Advert-Leseding Technical High School 03112026.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": null,
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "ormation Session and Site Inspection to be held at Leseding Technical High School. Address: 10976 Constantia Road Thabong 9463 24 November 2026 at 11h00 Tender Submission will be Electronic on www.purcosa.co.za Supplier Hub- Online Tender Submission Guide Technical Enquiries: Ms. Nyiko Sithole on t"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T17:07:54.657Z"
+ },
+ "176893": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "2 - Terms of Reference NT012-2026.pdf",
+    "pages": 27,
+    "result": "text"
+   },
+   {
+    "title": "6.1 Tax on service providers Questionnaire B Other than individuals.pdf",
+    "pages": 3,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": false,
+     "date": "2026-11-10",
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "HREE (3) YEARS NON-COMPULSORY VIRTUAL BRIEFING SESSION TO BE HELD: 10 NOVEMBER 2026 (MICROSOFT TEAMS) CLOSING DATE AND TIME OF BID 27 NOVEMBER 2026 AT 11H00 BID VALIDITY PERIOD: 90 DAYS"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "rment CIPC Companies and Intellectual Property Commission CSD Central Supplier Database NT National Treasury PPR 2022 Preferential Procurement Regulation 2022 QSE Qualified Small Enterprise RSA Republic of South Africa SLA Service Level Agreement SAR"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T17:07:54.913Z"
  }
 }

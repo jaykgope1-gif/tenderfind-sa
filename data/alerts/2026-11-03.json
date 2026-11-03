@@ -1,10 +1,10 @@
 {
  "date": "2026-11-03",
- "generated_at": "2026-11-03T14:52:48.364Z",
+ "generated_at": "2026-11-03T17:09:02.315Z",
  "site": "https://tenderfind.co.za",
  "note": "Tenders with province 'National' or 'Not stated' should go to subscribers in every province.",
  "counts": {
-  "new": 117,
+  "new": 129,
   "closing_soon": 53
  },
  "new": {
@@ -225,6 +225,34 @@
      "compulsory_briefing": true,
      "cidb": "3CE",
      "url": "https://tenderfind.co.za/tender/176852.html"
+    }
+   ],
+   "Western Cape": [
+    {
+     "id": "176883",
+     "title": "Provision For Repairs, Removal, Sealing and Waterproofing of Leaking Roof at Overberg District Municipality",
+     "buyer": "Overberg District Municipality",
+     "province": "Western Cape",
+     "trade": "Construction",
+     "closing": "2026-11-20T11:00:00+02:00",
+     "closing_text": "Fri, 20 Nov 2026, 11:00",
+     "briefing": "Briefing · Thu, 12 Nov · 11:00",
+     "compulsory_briefing": false,
+     "cidb": "1SN",
+     "url": "https://tenderfind.co.za/tender/176883.html"
+    },
+    {
+     "id": "176880",
+     "title": "Provision For Repairs, Removal, Sealing and Waterproofing of Leaking Roof at Overberg District Municipality",
+     "buyer": "Overberg District Municipality",
+     "province": "Western Cape",
+     "trade": "Construction",
+     "closing": "2026-11-20T12:00:00+02:00",
+     "closing_text": "Fri, 20 Nov 2026, 12:00",
+     "briefing": "Briefing · Thu, 12 Nov · 11:00",
+     "compulsory_briefing": false,
+     "cidb": "1SN",
+     "url": "https://tenderfind.co.za/tender/176880.html"
     }
    ],
    "North West": [
@@ -568,6 +596,19 @@
      "url": "https://tenderfind.co.za/tender/176828.html"
     },
     {
+     "id": "176893",
+     "title": "Appointment of a panel of service providers for events management for a period of three (3) years",
+     "buyer": "National Treasury",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-27T11:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 11:00",
+     "briefing": "Non-compulsory briefing · Tue, 10 Nov",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176893.html"
+    },
+    {
      "id": "176727",
      "title": "Appointment of service providers for the provision of temporary staff as and when required",
      "buyer": "Banking Sector Education and Training Authority",
@@ -812,6 +853,34 @@
      "url": "https://tenderfind.co.za/tender/176772.html"
     }
    ],
+   "Western Cape": [
+    {
+     "id": "176884",
+     "title": "Provision For Traffic Management Training",
+     "buyer": "Overberg District Municipality",
+     "province": "Western Cape",
+     "trade": "Professional services",
+     "closing": "2026-11-20T11:00:00+02:00",
+     "closing_text": "Fri, 20 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176884.html"
+    },
+    {
+     "id": "176889",
+     "title": "Provision for supervisor management training",
+     "buyer": "Overberg District Municipality",
+     "province": "Western Cape",
+     "trade": "Professional services",
+     "closing": "2026-11-20T12:00:00+02:00",
+     "closing_text": "Fri, 20 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176889.html"
+    }
+   ],
    "Mpumalanga": [
     {
      "id": "176825",
@@ -974,6 +1043,19 @@
      "compulsory_briefing": false,
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176876.html"
+    },
+    {
+     "id": "176892",
+     "title": "Appointment of a service provider for the supply, delivery, installation and commissioning of a– 4iR Centre of Excellence Lab at Leseding…",
+     "buyer": "Purchasing Consortium Southern Africa (PURCOSA)",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-24T11:00:00+02:00",
+     "closing_text": "Tue, 24 Nov 2026, 11:00",
+     "briefing": "Briefing · 11:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176892.html"
     },
     {
      "id": "176736",
@@ -1151,6 +1233,19 @@
      "url": "https://tenderfind.co.za/tender/176865.html"
     },
     {
+     "id": "176887",
+     "title": "Supply and delivery of oil and grease",
+     "buyer": "Overberg District Municipality",
+     "province": "Western Cape",
+     "trade": "Supplies",
+     "closing": "2026-11-20T12:00:00+02:00",
+     "closing_text": "Fri, 20 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176887.html"
+    },
+    {
      "id": "176868",
      "title": "SUPPLY, INSTALLATION AND MANAGEMENT OF A STS COMPLIANT PREPAYMENT ELECTRICITY VENDING, DATA MANAGEMENT, REVENUE PROTECTION and AUTOMATIC…",
      "buyer": "SALDANHA BAY MUNICIPALITY",
@@ -1236,6 +1331,32 @@
     }
    ],
    "National": [
+    {
+     "id": "176888",
+     "title": "Appointment of service provider to transfer digital content on usb flash drive for safta judging",
+     "buyer": "National Film and Video Foundation of South Africa",
+     "province": "National",
+     "trade": "Other",
+     "closing": "2026-11-09T11:00:00+02:00",
+     "closing_text": "Mon, 09 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176888.html"
+    },
+    {
+     "id": "176890",
+     "title": "Appointment of a service provider to provide scriber services (draft minutes) for nfvf panel meetings",
+     "buyer": "National Film and Video Foundation of South Africa",
+     "province": "National",
+     "trade": "Other",
+     "closing": "2026-11-09T11:00:00+02:00",
+     "closing_text": "Mon, 09 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176890.html"
+    },
     {
      "id": "176714",
      "title": "Hire pilot boat for 12 months at the port of durban",
@@ -1358,6 +1479,45 @@
      "compulsory_briefing": true,
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176846.html"
+    },
+    {
+     "id": "176885",
+     "title": "Appointment of a Service Provider for Rendering Security for a Period of 36 Months at the Department of Public Works & Infrastructure…",
+     "buyer": "Kwazulu Natal - Public Works (Head Office)",
+     "province": "KwaZulu-Natal",
+     "trade": "Other",
+     "closing": "2026-12-04T11:00:00+02:00",
+     "closing_text": "Fri, 04 Dec 2026, 11:00",
+     "briefing": "Compulsory briefing · Wed, 18 Nov · 10:00 · AUDITORIUM 71 KARALLANDMAN SREET DUNDEE, 3000",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176885.html"
+    },
+    {
+     "id": "176886",
+     "title": "Appointment of a Service Provider for Rendering Security for a Period of 36 Months at the Department of Public Works & Infrastructure…",
+     "buyer": "Kwazulu Natal - Public Works (Head Office)",
+     "province": "KwaZulu-Natal",
+     "trade": "Other",
+     "closing": "2026-12-04T11:00:00+02:00",
+     "closing_text": "Fri, 04 Dec 2026, 11:00",
+     "briefing": "Compulsory briefing · Wed, 18 Nov · 10:00 · AUDITORIUM 71 KARELLANDMAN STREET DUNDEE 3000",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176886.html"
+    },
+    {
+     "id": "176891",
+     "title": "Appointment of a Service Provider for Rendering Security for a Period of 36 Months at the Department of Public Works & Infrastructure…",
+     "buyer": "Kwazulu Natal - Public Works (Head Office)",
+     "province": "KwaZulu-Natal",
+     "trade": "Other",
+     "closing": "2026-12-04T11:00:00+02:00",
+     "closing_text": "Fri, 04 Dec 2026, 11:00",
+     "briefing": "Compulsory briefing · Wed, 18 Nov · 10:00 · AUDITORIUM 71 KALLARANDMAN STREET DUNDEE 3000",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176891.html"
     }
    ],
    "Mpumalanga": [
