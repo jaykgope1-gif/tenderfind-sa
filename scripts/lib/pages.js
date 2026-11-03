@@ -78,7 +78,7 @@ ${signup ? signupHtml(root) : ""}
 </main>
 <footer class="foot"><div class="wrap">
 <p>${esc(DISCLAIMER)}</p>
-<p class="links"><a href="${root}">Search tenders</a> · <a href="${root}pricing.html">Pricing</a> · <a href="${root}about.html">About</a> · <a href="${root}privacy.html">Privacy</a>${OPERATOR.email ? ` · <a href="mailto:${esc(OPERATOR.email)}">Contact</a>` : ""}</p>
+<p class="links"><a href="${root}">Search tenders</a> · <a href="${root}tenders/">Tenders by trade</a> · <a href="${root}pricing.html">Pricing</a> · <a href="${root}registration-help.html">CSD &amp; CIDB help</a> ·<a href="${root}about.html">About</a> · <a href="${root}privacy.html">Privacy</a>${OPERATOR.email ? ` · <a href="mailto:${esc(OPERATOR.email)}">Contact</a>` : ""}</p>
 </div></footer>
 ${signup ? `<script src="${root}signup.js" defer></script>
 ` : ""}${script}</body>
@@ -141,6 +141,7 @@ ${t.documents?.[0] ? `<a class="btn" href="${esc(t.documents[0].url)}" target="_
 <p class="due${!closed && cd.soon ? " soon" : ""}">${closed ? "Closed" : `<span id="due" data-closing="${esc(t.closing)}">${esc(cd.text)}</span>`} <span class="meta">(${esc(closingText(t.closing))})</span></p>
 ${share}
 ${facts}
+${closed ? "" : `<p class="help-link"><b>Need help with this tender?</b> We go through the documents with you and give you a checklist of everything to submit. <a href="../help.html?service=bid&amp;tender=${esc(t.id)}">Request Bid Help (R550)</a></p>`}
 </article>
 ${similarHtml(t, similarList)}`;
 
@@ -155,8 +156,11 @@ ${similarHtml(t, similarList)}`;
   });
 }
 
-function sitemap(siteUrl, pages, today) {
-  const urls = [{ loc: `${siteUrl}/`, lastmod: today }, { loc: `${siteUrl}/about.html` }, { loc: `${siteUrl}/privacy.html` }, { loc: `${siteUrl}/pricing.html` }, ...pages.map((p) => ({ loc: `${siteUrl}/tender/${p.id}.html`, lastmod: p.lastmod }))];
+// extra: other site paths (e.g. "tenders/cleaning-tenders-gauteng.html"), rebuilt today.
+function sitemap(siteUrl, pages, today, extra = []) {
+  const urls = [{ loc: `${siteUrl}/`, lastmod: today }, { loc: `${siteUrl}/about.html` }, { loc: `${siteUrl}/privacy.html` }, { loc: `${siteUrl}/pricing.html` },
+    ...extra.map((p) => ({ loc: `${siteUrl}/${p}`, lastmod: today })),
+    ...pages.map((p) => ({ loc: `${siteUrl}/tender/${p.id}.html`, lastmod: p.lastmod }))];
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((u) => `<url><loc>${esc(u.loc)}</loc>${u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : ""}</url>`).join("\n")}

@@ -95,6 +95,7 @@ assert.ok(t.tender_ids.length <= 10, "at most 10 tenders per email");
 for (const body of [t.text, t.html]) assert.ok(/unsubscribe/i.test(body), "every email has an unsubscribe line");
 assert.ok(!/<script/i.test(t.html) && t.html.includes("Closes "), "html: title, buyer, closing date, link");
 assert.ok(t.html.includes(">View tender</a>") && !/>[^<]*github\.io/.test(t.html), "friendly link text, no raw address shown");
+assert.ok(/help\.html\?service=bid&amp;tender=\w+/.test(t.html) && t.html.includes("Need help with this tender? Bid Help (R550)"), "every tender has a Bid Help request link");
 assert.ok(/^Good morning Thandi,/.test(t.text));
 const noName = matchSubscribers(alerts, [erow("anon@example.co.za", { "Your name": "" }), erow("t@example.co.za", { "Your name": "TEST Person" })], [], today, "email").messages;
 const lower = matchSubscribers(alerts, [erow("lower@example.co.za", { "Your name": "jay kgope" })], [], today, "email").messages[0];

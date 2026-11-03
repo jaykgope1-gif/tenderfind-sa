@@ -14,5 +14,7 @@ module.exports = {
 
   // Shown on /pricing and in the sign-up box. The trial length must match TRIAL_DAYS in scripts/lib/match.js.
   // bidHelpPrice: Bid Help price per tender in rand, paid once before work starts; null shows "Ask us".
-  PRICING: { alerts: 149, trialDays: 14, bidHelpPrice: 550 },
+  PRICING: { alerts: 149, trialDays: 14, bidHelpPrice: 550, csdHelpPrice: 300, cidbHelpPrice: 500 },
+  // Help requests (Bid Help, CSD, CIDB) from site/help.js go to this n8n webhook, which emails the owner.
+  HELP_WEBHOOK: "https://jaykgope.app.n8n.cloud/webhook/tenderfind-help",
 };

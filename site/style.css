@@ -178,3 +178,13 @@ select {
 .faq { margin-top: 16px; }
 .faq h3 { font-size: 1rem; margin: 14px 0 2px; }
 .faq p { margin: 0; }
+
+/* Help-request form (help.html, registration-help.html) and the Bid Help line on tender pages */
+.help-form label { display: block; margin: 0 0 10px; }
+.help-form input, .help-form select, .help-form textarea { width: 100%; font: inherit; padding: 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--ink); box-sizing: border-box; }
+.help-form .check { display: flex; gap: 8px; align-items: flex-start; }
+.help-form .check input { width: 22px; height: 22px; flex: none; }
+.help-form .hp { position: absolute; left: -9999px; }
+.help-tender { background: var(--tag); padding: 8px 10px; border-radius: 8px; margin: 0 0 10px; }
+.form-msg { color: var(--soon); min-height: 1em; margin: 6px 0 0; }
+.help-link { border-top: 1px solid var(--line); margin: 14px 0 0; padding-top: 12px; }

@@ -1,7 +1,7 @@
 // site/about.html, site/privacy.html and site/pricing.html. Plain words; no claims the service can't back up.
 const { esc } = require("./display");
 const { shell } = require("./pages");
-const { OPERATOR, PRICING } = require("./config");
+const { OPERATOR, PRICING, HELP_WEBHOOK } = require("./config");
 
 function contactLines() {
   const lines = [];
@@ -140,8 +140,9 @@ ${plan("Bid Help", bidHelpPrice ? `R${bidHelpPrice}` : "Ask us", "per tender", [
   "We flag deadlines, briefing sessions and missing documents",
   "Pay once per tender, before we start",
   "<b>We don’t guarantee a win.</b> You submit the bid yourself.",
-], { html: bidHelp ? `<a class="btn wide" href="${bidHelp}" target="_blank" rel="noopener">WhatsApp us about Bid Help</a>` : "" })}
+], { html: `<a class="btn wide" href="help.html?service=bid">Request Bid Help</a>${bidHelp ? `<p class="small"><a href="${bidHelp}" target="_blank" rel="noopener">Or WhatsApp us about Bid Help</a></p>` : ""}` })}
 </div>
+<p class="lede">Not registered yet? <a href="registration-help.html">CSD and CIDB registration help</a> from R${PRICING.csdHelpPrice}.</p>
 
 <article class="card prose faq">
 <h2>Questions</h2>
@@ -163,4 +164,80 @@ ${plan("Bid Help", bidHelpPrice ? `R${bidHelpPrice}` : "Ask us", "per tender", [
   });
 }
 
-module.exports = { aboutPage, privacyPage, pricingPage };
+// The help-request form (site/help.js posts it to n8n, which emails the owner). No payment is taken here:
+// we reply with the details and how to pay before any work starts.
+function helpForm(preselect) {
+  const { bidHelpPrice, csdHelpPrice, cidbHelpPrice } = PRICING;
+  const opt = (value, text) => `<option value="${value}"${value === preselect ? " selected" : ""}>${esc(text)}</option>`;
+  return `<form class="card help-form" id="help-form" data-endpoint="${esc(HELP_WEBHOOK)}" novalidate>
+<label><span>What do you need help with?</span><select name="service" required>
+${opt("bid", `Bid Help for a tender (R${bidHelpPrice})`)}
+${opt("csd", `CSD registration (R${csdHelpPrice})`)}
+${opt("cidb", `CIDB registration (R${cidbHelpPrice})`)}
+${opt("csd+cidb", `CSD and CIDB registration (R${csdHelpPrice + cidbHelpPrice})`)}
+</select></label>
+<p class="help-tender" id="help-tender" hidden></p>
+<input type="hidden" name="tender">
+<label><span>Your name</span><input name="name" required autocomplete="name"></label>
+<label><span>Business name</span><input name="business" autocomplete="organization"></label>
+<label><span>Email address</span><input name="email" type="email" required autocomplete="email"></label>
+<label><span>WhatsApp number</span><input name="whatsapp" type="tel" autocomplete="tel" placeholder="e.g. 082 123 4567"></label>
+<label><span>Anything we should know? (optional)</span><textarea name="message" rows="3" placeholder="e.g. tender number, closing date, what you're unsure about"></textarea></label>
+<label class="hp" aria-hidden="true">Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label>
+<label class="check"><input type="checkbox" name="consent" value="yes" required> <span>I agree that TenderFind SA may contact me about this request. <a href="privacy.html">Privacy notice</a></span></label>
+<button class="btn wa wide" type="submit">Send my request</button>
+<p class="form-msg" id="help-msg" role="status"></p>
+<p class="small">No payment now. We'll reply within one working day with what we need from you and how to pay. Work starts once payment is received.</p>
+</form>`;
+}
+
+function helpPage(siteUrl) {
+  const { bidHelpPrice } = PRICING;
+  const body = `<h1 class="page-h">Get help with a tender</h1>
+<p class="lede">Tell us what you need and we'll get back to you within one working day.</p>
+${helpForm("bid")}
+<article class="card prose">
+<h2>Bid Help (R${bidHelpPrice} per tender)</h2>
+<ul>
+<li>We read the tender documents and list everything you must submit</li>
+<li>We draft your cover letter and a compliance checklist</li>
+<li>We flag deadlines, briefing sessions and missing documents</li>
+</ul>
+<p><b>We don’t guarantee a win.</b> You submit the bid yourself.</p>
+<p>Need to register first? See <a href="registration-help.html">CSD and CIDB registration help</a>.</p>
+</article>`;
+  return shell({
+    title: "Get help with a tender | TenderFind SA",
+    description: `Bid Help for South African government tenders: we go through the documents with you and give you a checklist of everything to submit. R${bidHelpPrice} per tender.`,
+    canonical: `${siteUrl}/help.html`,
+    root: "./",
+    body,
+    signup: false,
+    script: `<script src="help.js" defer></script>\n`,
+  });
+}
+
+function registrationHelpPage(siteUrl) {
+  const { csdHelpPrice, cidbHelpPrice } = PRICING;
+  const body = `<h1 class="page-h">CSD and CIDB registration help</h1>
+<p class="lede">You can’t bid on most government tenders without these. We’ll help you get registered properly, the first time.</p>
+<div class="plans">
+<section class="plan"><h2>CSD registration</h2><p class="price">R${csdHelpPrice} <small>once-off</small></p>
+<ul><li>Register your business on National Treasury’s Central Supplier Database (CSD)</li><li>We check your tax, bank and B-BBEE details are captured correctly</li><li>You get your CSD supplier number (MAAA…) to use on every bid</li></ul></section>
+<section class="plan"><h2>CIDB registration</h2><p class="price">R${cidbHelpPrice} <small>once-off</small></p>
+<ul><li>For construction, building and maintenance tenders</li><li>We help you choose the right class of works and grade</li><li>We prepare and submit your application on the CIDB portal with you</li></ul></section>
+</div>
+<p class="small">Our fee is for our help only. Registration on the CSD is free; any CIDB fees are paid to the CIDB directly. Approval is decided by the CSD and CIDB, not by us.</p>
+<h2 class="page-h" id="request">Request help</h2>
+${helpForm("csd")}`;
+  return shell({
+    title: "CSD and CIDB registration help | TenderFind SA",
+    description: `Get registered on the Central Supplier Database (CSD) and with the CIDB so you can bid on government tenders. CSD help R${csdHelpPrice}, CIDB help R${cidbHelpPrice}.`,
+    canonical: `${siteUrl}/registration-help.html`,
+    root: "./",
+    body,
+    script: `<script src="help.js" defer></script>\n`,
+  });
+}
+
+module.exports = { aboutPage, privacyPage, pricingPage, helpPage, registrationHelpPage };

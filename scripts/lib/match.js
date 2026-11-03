@@ -11,6 +11,7 @@ const MATCH = {
   EVERYWHERE: ["National", "Not stated"], // sent to subscribers in every province
   TRIAL_DAYS: 14, // free days from the first sign-up (sign-up day is day 1)
   SITE: "https://tenderfind.co.za",
+  BID_HELP: 550, // Bid Help price per tender, linked under every tender in the email (help.html)
   UNSUBSCRIBE_TO: "jobkgope1@gmail.com", // where "UNSUBSCRIBE" replies go (the sending Gmail)
 };
 
@@ -124,13 +125,15 @@ const UNSUBSCRIBE_TEXT = `Don't want these emails? Reply with UNSUBSCRIBE, or em
 const unsubscribeHtml = () =>
   `Don't want these emails? <a href="mailto:${MATCH.UNSUBSCRIBE_TO}?subject=UNSUBSCRIBE">Unsubscribe</a> (or just reply with UNSUBSCRIBE).`;
 
-// Title, buyer, closing date, link: nothing else, so it reads well on a phone.
+// Title, buyer, closing date, link, and a Bid Help request link: nothing else, so it reads well on a phone.
+const helpUrl = (t) => `${MATCH.SITE}/help.html?service=bid&tender=${encodeURIComponent(t.id)}`;
 function emailItem(t) {
   return {
-    text: `${t.title}\n${t.buyer || "Buyer not stated"}\nCloses ${shortDate(t.closing_text)}\n${t.url}`,
+    text: `${t.title}\n${t.buyer || "Buyer not stated"}\nCloses ${shortDate(t.closing_text)}\n${t.url}\nNeed help with this tender? ${helpUrl(t)}`,
     html: `<p style="margin:0 0 16px"><b>${escHtml(t.title)}</b><br>` +
       `${escHtml(t.buyer || "Buyer not stated")}<br>Closes ${escHtml(shortDate(t.closing_text))}<br>` +
-      `<a href="${escHtml(t.url)}" style="color:#0b5d3b;font-weight:bold">View tender</a></p>`,
+      `<a href="${escHtml(t.url)}" style="color:#0b5d3b;font-weight:bold">View tender</a>` +
+      ` · <a href="${escHtml(helpUrl(t))}" style="color:#545b5e">Need help with this tender? Bid Help (R${MATCH.BID_HELP})</a></p>`,
   };
 }
 
