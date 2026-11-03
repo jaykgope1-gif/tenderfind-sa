@@ -39,7 +39,13 @@
   var q = new URLSearchParams(location.search);
   ["plan", "email", "name", "tender", "test"].forEach(function (k) { if (q.get(k) && form[k]) form[k].value = q.get(k); });
   var go = function () { location.replace(ENDPOINT + "?" + new URLSearchParams(new FormData(form)).toString()); };
-  if (q.get("plan") && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(q.get("email") || "")) { document.getElementById("pay-msg").textContent = "Opening secure payment…"; go(); }
+  // A complete link (plan + email) goes straight through with its own values, so plans that aren't in the
+  // drop-down (e.g. the R5 go-live test) still reach the checkout builder, which checks them.
+  if (q.get("plan") && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(q.get("email") || "")) {
+    document.getElementById("pay-msg").textContent = "Opening secure payment…";
+    location.replace(ENDPOINT + location.search);
+    return;
+  }
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.value.trim())) { document.getElementById("pay-msg").textContent = "Please enter the email address you signed up with."; form.email.focus(); return; }
