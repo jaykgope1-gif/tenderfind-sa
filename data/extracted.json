@@ -1507,33 +1507,6 @@
   },
   "extracted_at": "2026-10-31T11:12:14.490Z"
  },
- "176034": {
-  "status": "no-pdf",
-  "docs": [],
-  "fields": {
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "csd_required": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T10:27:38.416Z"
- },
  "176038": {
   "status": "ok",
   "docs": [
@@ -2087,67 +2060,6 @@
    }
   },
   "extracted_at": "2026-10-31T11:11:54.393Z"
- },
- "176074": {
-  "status": "no-pdf",
-  "docs": [],
-  "fields": {
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "csd_required": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T11:11:45.061Z"
- },
- "176078": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "RFQ 2579b - Adobe Acrobat and Creative Suite license (003).pdf",
-    "pages": 32,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "csd_required": {
-    "value": true,
-    "source": "regex",
-    "snippet": "EACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED F"
-   },
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T11:11:45.063Z"
  },
  "176079": {
   "status": "ok",
@@ -3547,40 +3459,6 @@
   },
   "extracted_at": "2026-10-31T10:27:52.291Z"
  },
- "176145": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "6000080660 Supply and delivery of toilet paper soap and pine gel.pdf",
-    "pages": 26,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "csd_required": {
-    "value": true,
-    "source": "regex",
-    "snippet": "NS SHOULD BE REGISTERED ON CENTRAL SUPPLIER DATABASE (CSD) 1. QUOTATIONS MUST BE ON COMPANY LETTERHEADS 2. QUOTATIONS RECEIVED AFTER CLOSIND DATE AND TIME WILL NOT BE ACCEPTED. 3. QUOTATIONS WITHOUT BRAND NAMES WHERE REQUIRED WILL NOT BE ACCEPTED 4"
-   },
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T11:11:46.031Z"
- },
  "176146": {
   "status": "ok",
   "docs": [
@@ -3620,39 +3498,6 @@
   },
   "extracted_at": "2026-10-31T11:12:02.507Z"
  },
- "176147": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "Annexure A - Security Measures.pdf",
-    "pages": 4,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "csd_required": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T11:11:43.200Z"
- },
  "176148": {
   "status": "no-pdf",
   "docs": [],
@@ -3679,40 +3524,6 @@
    }
   },
   "extracted_at": "2026-10-31T11:12:54.602Z"
- },
- "176149": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "6000080661 Supply and delivery of gate valves.pdf",
-    "pages": 26,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "csd_required": {
-    "value": true,
-    "source": "regex",
-    "snippet": "NS SHOULD BE REGISTERED ON CENTRAL SUPPLIER DATABASE (CSD) 1. QUOTATIONS MUST BE ON COMPANY LETTERHEADS 2. QUOTATIONS RECEIVED AFTER CLOSIND DATE AND TIME WILL NOT BE ACCEPTED. 3. QUOTATIONS WITHOUT BRAND NAMES WHERE REQUIRED WILL NOT BE ACCEPTED 4"
-   },
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T11:11:49.485Z"
  },
  "176150": {
   "status": "ok",
@@ -4020,40 +3831,6 @@
   },
   "extracted_at": "2026-10-31T11:12:55.838Z"
  },
- "176160": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "6000080662 Supply and delivery of distance piece.pdf",
-    "pages": 29,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "csd_required": {
-    "value": true,
-    "source": "regex",
-    "snippet": "NS SHOULD BE REGISTERED ON CENTRAL SUPPLIER DATABASE (CSD) 1. QUOTATIONS MUST BE ON COMPANY LETTERHEADS 2. QUOTATIONS RECEIVED AFTER CLOSIND DATE AND TIME WILL NOT BE ACCEPTED. 3. QUOTATIONS WITHOUT BRAND NAMES WHERE REQUIRED WILL NOT BE ACCEPTED 4"
-   },
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T11:11:50.505Z"
- },
  "176161": {
   "status": "ok",
   "docs": [
@@ -4252,40 +4029,6 @@
    }
   },
   "extracted_at": "2026-10-31T11:12:24.264Z"
- },
- "176169": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "UPDATED RFQ189 2026_27 PROVISION OF CATERING SERVICE IN EAST LONDON FOR THE SIU OFFICE.pdf",
-    "pages": 20,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "csd_required": {
-    "value": true,
-    "source": "regex",
-    "snippet": "NATIONAL TREASURY-CENTRAL SUPPLIER DATABASE NUMBER: CSD MAAA............................................ SARS PIN TELEPHONE NUMBER EMAIL ADDRESS POSTAL ADDRES PHYSICAL/STREET ADRESS Protecting the public interest"
-   },
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T11:11:51.829Z"
  },
  "176170": {
   "status": "ok",
@@ -5197,40 +4940,6 @@
   },
   "extracted_at": "2026-10-31T11:12:58.432Z"
  },
- "176197": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "RFQ Defensive Driving Training - final training 291026.pdf",
-    "pages": 31,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "csd_required": {
-    "value": true,
-    "source": "regex",
-    "snippet": "t be considered after the closing date and time • Provide CSD Summary Report (www.csd.gov.za ) • The attached forms to be completed by the Bidder (where applicable): o SBD 4 – Bidder disclose o SBD 6.1 – Preference Points Claim (South African Companies O"
-   },
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T11:14:02.647Z"
- },
  "176198": {
   "status": "ok",
   "docs": [
@@ -5453,44 +5162,6 @@
    }
   },
   "extracted_at": "2026-10-31T11:13:30.363Z"
- },
- "176205": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "Revised specification for 29 trainees.pdf",
-    "pages": 11,
-    "result": "scanned"
-   },
-   {
-    "title": "Standard Bidding Document (SBD3.1) -Firm Prices.pdf",
-    "pages": 3,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "csd_required": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T11:14:05.566Z"
  },
  "176210": {
   "status": "no-pdf",
@@ -6090,33 +5761,6 @@
   },
   "extracted_at": "2026-10-31T11:13:33.864Z"
  },
- "176236": {
-  "status": "no-pdf",
-  "docs": [],
-  "fields": {
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "csd_required": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T11:13:37.274Z"
- },
  "176238": {
   "status": "scanned",
   "docs": [
@@ -6261,40 +5905,6 @@
    }
   },
   "extracted_at": "2026-10-31T11:15:33.416Z"
- },
- "176244": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "RFQ 202134 - Gas Repairs 36 months.pdf",
-    "pages": 16,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "csd_required": {
-    "value": true,
-    "source": "regex",
-    "snippet": "e quotations: ▪National Treasury Central Supplier Database (CSD) registration report ▪A valid copy of BBBEE certificate/ Sworn Affidavit (to claim specific goals) ▪SBD 4 Bidders Disclosure Form ▪SBD 6.1 Preference points claim form in terms of the Preferential"
-   },
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T10:27:54.366Z"
  },
  "176246": {
   "status": "scanned",
@@ -6738,45 +6348,6 @@
    }
   },
   "extracted_at": "2026-10-31T11:13:41.275Z"
- },
- "176266": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "ISC012610RFQ00000004.pdf",
-    "pages": 11,
-    "result": "text"
-   },
-   {
-    "title": "Detailed Specification.pdf",
-    "pages": 1,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "csd_required": {
-    "value": true,
-    "source": "regex",
-    "snippet": "ial quotation • Duly completed and signed RFQ document • CSD • Valid BBBEE • Valid Tax pin 1. You are kindly requested to submit a written quotation to the Agricultural Research Council as per below or attached terms of reference (TOR). Descr"
-   },
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T11:14:06.769Z"
  },
  "176268": {
   "status": "ok",
@@ -18027,6 +17598,11 @@
     "title": "RFQ2026-27-11.pdf",
     "pages": 20,
     "result": "text"
+   },
+   {
+    "title": "REVISED SBD 4 -Annexure A.pdf",
+    "pages": 3,
+    "result": "text"
    }
   ],
   "fields": {
@@ -18052,7 +17628,7 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-02T14:39:21.981Z"
+  "extracted_at": "2026-11-03T11:21:51.555Z"
  },
  "176635": {
   "status": "ok",
@@ -18981,12 +18557,29 @@
   "extracted_at": "2026-11-02T14:39:38.137Z"
  },
  "176674": {
-  "status": "no-pdf",
-  "docs": [],
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFP - GPAA 09 2026.pdf",
+    "pages": 53,
+    "result": "text"
+   }
+  ],
   "fields": {
    "briefing": {
-    "value": null,
-    "source": "not found"
+    "value": {
+     "compulsory": false,
+     "date": "2026-11-12",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "ember 2026 @ 11h00 Non - Compulsory Briefing Session 12 November 2026 @ 11h00 Microsoft Teams meeting Join: https://teams.microsoft.com/meet/3966376752139688?p=qILrQxOnSBKv18SBRO Meeting ID: 396 637 675 213 968 8 Passcode: aG2bW3bC Tender Submission Method All bids must be submitted electronically vi"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "completed in full. • The bidder must be registered on the CSD or any of its directors must not be restricted from doing business with the state; Note: Bidders who do not submit the requested documents, will be given a maximum of 2 working/business days to"
    },
    "cidb_grade": {
     "value": null,
@@ -18996,16 +18589,12 @@
     "value": null,
     "source": "not found"
    },
-   "csd_required": {
-    "value": null,
-    "source": "not found"
-   },
    "location": {
     "value": null,
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-02T14:39:49.015Z"
+  "extracted_at": "2026-11-03T11:22:11.076Z"
  },
  "176675": {
   "status": "ok",
@@ -19394,6 +18983,11 @@
     "title": "RFQ2026-27-63C - CISCO DUO LICENSES.pdf",
     "pages": 12,
     "result": "text"
+   },
+   {
+    "title": "REVISED SBD 4 -Annexure A.pdf",
+    "pages": 3,
+    "result": "text"
    }
   ],
   "fields": {
@@ -19419,7 +19013,7 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-02T14:39:31.529Z"
+  "extracted_at": "2026-11-03T11:21:57.965Z"
  },
  "176686": {
   "status": "ok",
@@ -20448,5 +20042,1963 @@
    }
   },
   "extracted_at": "2026-11-03T02:48:22.361Z"
+ },
+ "176721": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Scope of Work.pdf",
+    "pages": 10,
+    "result": "text"
+   },
+   {
+    "title": "20261027_Cat2 (without D)- Quality  Req _SDL&I monitoring, verification.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:20.653Z"
+ },
+ "176722": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Tender Document - Final .pdf",
+    "pages": 50,
+    "result": "text"
+   },
+   {
+    "title": "Tender Advert.pdf",
+    "pages": 2,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "ED POWER AMPLIFIER Compulsory Briefing Session: N/A Register of Prospective Bidders: Register your interest in this tender by completing the form contained in the Link below as soon as possible following the tender advert date, 3 November 2026. This will enable SARAO to contact you regarding any matter"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "in to the portal using your Central Supplier Database (CSD) login details. Browse opportunities and search using the Tender Number [NRF/SARAO SICT/XX/2026-27]. Download and read all documents pertaining to the tender carefully. Prepare your submission."
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:21.776Z"
+ },
+ "176723": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Fraschoek Fence RFQ (002) (2)zzzzzz (002) zzzzzzzzz.pdf",
+    "pages": 30,
+    "result": "text"
+   },
+   {
+    "title": "Revised Standard Bidding Document (SDB) 4_Annexure A (3) ZZZZZZ (3).pdf",
+    "pages": 3,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": "2026-11-12",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": ": 26 October 2026 Briefing session Date 12 November 2026 @10:00 We will meet next to La Motte Fire Station( Robertsvlei Rd,(https://maps.app.goo.gl/D4KGC2H8H8qQKnSFA) then proceed to site Closing date: 26 November 2026 Closing time: 12h00 Validity period: 90 days You are invited to provide a quote"
+   },
+   "cidb_grade": {
+    "value": "1SQ",
+    "source": "regex",
+    "snippet": "lid CIDB Certificate Attach a valid CIDB Certificate: 1 SQ and above NOTE: Bidders that do not comply with all the above criteria will not be evaluated further. 6 of 30 Functional Evaluation Criteria Functional criteria Points The ser"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:19.282Z"
+ },
+ "176724": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RR69078-26_27 (Birdproofing).pdf",
+    "pages": 21,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-11",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "sue Date 03/11/2026 Briefing Session (indicate if it is compulsory or not) COMPULSORY Briefing Session Address and Venue 11 th November 2026 @ 11:00 Armscor Dockyard, Simon's Town, Western Cape RFQ Closing Date 18/11/2026 @11:00am Please return your quotation on/or before the closing date and time stipul"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ts Submitted [Yes or No] 1. Central Supplier database (CSD) registration report or Unique Registration Reference Number Yes ☐ No ☐ 2. Valid Tax Clearance Certificate (s) and or proof of application endorsed by SARS and / or SARS issued verificat"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:06.314Z"
+ },
+ "176725": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Pen fine liner picture sample.pdf",
+    "pages": 1,
+    "result": "scanned"
+   },
+   {
+    "title": "Standard Bidding Document(SBD4).pdf",
+    "pages": 4,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "2.4.1 If so, indicate all companies registered in the CSD in the table below: Supplier registration number (MAAA) Status (active/inactive/deleted) Failure to disclose all CSD-registered a"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:00.728Z"
+ },
+ "176726": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Specification.pdf",
+    "pages": 6,
+    "result": "text"
+   },
+   {
+    "title": "4. Necsa Confidentiality Agreement.pdf",
+    "pages": 5,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:24.268Z"
+ },
+ "176727": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Temporary Staff final.pdf",
+    "pages": 39,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": false,
+     "date": "2026-11-12",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "REQUIRED ONLINE NON- COMPULSORY BRIEFING SESSION 12 NOVEMBER 2026 – 11:00 HOURS Email for Briefing link to be sent jackiek@bankseta.org.za /scm@bankseta.org.za Respondent details (Use this as a cover page for response document and envelope) Company Name: Contact person: Comp"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ovider must be registered on the Central Supplier Database (CSD) maintained by the National Treasury and accessible on www.treasury.gov.za 10.1 The BANKSETA, before making an award, shall check on the central supplier database (CSD) whethe"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:22.835Z"
+ },
+ "176728": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "MPR EIA Scope of Work_Geotechnical and Geophysical Survey 003.pdf",
+    "pages": 9,
+    "result": "text"
+   },
+   {
+    "title": "5. SHEQ-INS-0100 Rev 9.0_NECSA Safety, Health and Environmental Policy.pdf",
+    "pages": 3,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:24.720Z"
+ },
+ "176729": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "AC-ADM-SPE-26001 1  - TENDER TECHNICAL SPECIFICATION_INERT-ATMOSPHERE GLOVEBOX SYSTEM.pdf",
+    "pages": 1,
+    "result": "text"
+   },
+   {
+    "title": "6. SHEQ-INS-5450-REV5.0.pdf",
+    "pages": 8,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:24.927Z"
+ },
+ "176730": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Tender 009-2026 Draft Thatch Advert (111).pdf",
+    "pages": 47,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": null,
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "itten response. A site briefing meeting will be held on the 09 of November 2026 at 11:00am at the eMpophomeni Zulu Tourism experience. Tender documents must be properly bound and placed in the tender box situated at the ground floor of the uMgungundlovu Economic Development Agency Offices,"
+   },
+   "cidb_grade": {
+    "value": "1GB",
+    "source": "regex",
+    "snippet": "2. Completion of MBDs. 3. Registration with CIDB grading 1GB 4. Proof of Good Standing (COIDA) certificate. 5. A valid Tax Compliance Status Pin Sheet; 6. VAT Registration Certificate (if applicable); 7. Proof of experience in installation of that"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "lephone No. Fax No. E-Mail Address Tender Price CSD Registration No. 1 | P a g e TABLE OF CONTENTS Contents TENDER ADVERT ......................................................................................................."
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:04.909Z"
+ },
+ "176731": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "GSDM21-2026 Construction of New Boreholes and Refurbishment of Damaged Existing Boreholes RE-ADVERT.pdf",
+    "pages": 71,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "ulsory clarification briefing session to be held on the 10 of November 2026 at GSDM Ermelo offices, Auditorium level 2. At 11:00am All tenders will be subjected to functionality evaluation. The 80/20-point system shall apply whereby a contract will be allocated to a tenderer in accordance with the Preferential Pr"
+   },
+   "cidb_grade": {
+    "value": "3CE",
+    "source": "regex",
+    "snippet": ". Tender should have a minimum CIDB contract grading of 3CE or higher Tender documents will be obtainable as from 03 NOVEMBER 2026. Documents can be obtained during normal working hours which are 07h30 - 16h30 Mondays to Thursdays and 07h30 t"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "idders must be registered on the Central Supplier Database (CSD). Tenderers must have the necessary skills, experience and capacity to perform the required work. The closing date and time for the tender is 18 November 2026 at 12H00. Telegraph"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:07.970Z"
+ },
+ "176732": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "RE-ADVERT TRAVEL AGENCY.pdf",
+    "pages": 50,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:28.268Z"
+ },
+ "176733": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "INVITATION TO QUOTE - Post-Retirement Medical Aid.pdf",
+    "pages": 18,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "plying with National Treasury - Central Supplier Database (CSD) requirements (CSD report). 5.2. Proof of Specific goals - Ownership and verification may be conducted in various forms including but not limited to the following documents namely: - CIPC docume"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:00.755Z"
+ },
+ "176735": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "RE-ADVERT SECURITY.pdf",
+    "pages": 53,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:28.468Z"
+ },
+ "176736": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Final Bizana Bid Document - SASSA 07-26-FM-EC - 2 November 2026.pdf",
+    "pages": 51,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDER"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:13.315Z"
+ },
+ "176738": {
+  "status": "no-pdf",
+  "docs": [],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:22.833Z"
+ },
+ "176740": {
+  "status": "no-pdf",
+  "docs": [],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:11.857Z"
+ },
+ "176741": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ 006 SUPPLY AND DELIVERY OF PPE Signed.pdf",
+    "pages": 33,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "pliers must be registered on the Central Supplier Database (CSD) and a proof of valid CSD registration report printout must be submitted; • Bids submitted by persons in the service of government (national, provincial, local or SOCs) will not be considered;"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:21:56.099Z"
+ },
+ "176742": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Bid Invitation -MO_ADM_562_26.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "held": false
+    },
+    "source": "regex",
+    "snippet": "or receiving bid documents, please contact 035 797 2652. No briefing meeting or site inspection will be conducted for this project. Tenders are to be completed in accordance with the conditions attached to the documents and must be sealed and endorsed wi"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:23.292Z"
+ },
+ "176743": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "CONMP0005 RONDEBOSCH DRIEFONTEIN PALMIETFONTEIN.pdf",
+    "pages": 268,
+    "result": "text"
+   },
+   {
+    "title": "ViewTenderNoticePdf (1).pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-11",
+     "time": "11:00",
+     "venue": "Emakhazeni Local Municipality, 25 Scheepers Street, Emakhazeni"
+    },
+    "source": "regex",
+    "snippet": "of this tender A COMPULSORY TENDER CLARIFICATION MEETING will be held on: Date: 11 November 2026 Venue: Emakhazeni Local Municipality, 25 Scheepers Street, Emakhazeni Time: 11h00 GPS Coordinates: Latitude 25°34'59.99\" Longitude S 30°04'60.00\" E The lowest or"
+   },
+   "cidb_grade": {
+    "value": "4SQ",
+    "source": "regex",
+    "snippet": "/Contract No.: CONMP0005 (2026/2027) A Tender for Category 4SQ OR HIGHER CIDB Registered Contractors APPOINTMENT OF A CONTRACTOR FOR SUPPLY, DELIVERY, AND INSTALLATION OF 2 KM BARBED WIRE FENCE AT PORTION 189 OF THE FARM RONDEBOSCH 403 JS; 8"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "________________________________________ National Treasury CSD Registration Number: ____________________________________________________ ISSUED BY: PREPARED BY: Director: Supply Chain and Facilities Manag"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:13.364Z"
+ },
+ "176744": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "id-3296810 DOL Lydenburg.pdf",
+    "pages": 66,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:21:51.526Z"
+ },
+ "176748": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RNS 16.pdf",
+    "pages": 15,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FRO"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:21:59.132Z"
+ },
+ "176750": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "1. RFQ document.pdf",
+    "pages": 9,
+    "result": "text"
+   },
+   {
+    "title": "6. CEF KYC Questionnaires.pdf",
+    "pages": 5,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-11",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "03 NOVEMBER 2026 COMPULSORY SITE VISIT : 11 NOVEMBER 2026 @11:00 MORNING CLOSING DATE : 19 NOVEMBER 2026 CLOSING TIME : 12:00 INTERESTED BIDDERS ARE REQUIRED TO RSVP TO: tenderbriefing@cefgroup.co.za ADRRESS :1 REFINERY ROAD, ISIPINGO, PROSPECTON, DURBAN. NB"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:09.305Z"
+ },
+ "176752": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "APPOINTMENT OF LAND SURVEYORS REIRS SUR26 001.pdf",
+    "pages": 61,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": null,
+     "time": "00:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "ber 2026 11:00 Bid Briefing Date & Time (If applicable) N/A N/A Venue N/A SCM SPECIFIC ENQUIRIES: Motshidisi Boitse Motshidisi.Boitse@dpw.gov.za 051 408 7451 TECHNICAL / PROJECT SPECIFIC ENQUIRIES Ayanda Segone Ayanda.segone@dpw.gov.za 057 408 7341 Bid Document Price R0.00 Procurement Pla"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "e: N/A Quotation Briefing Meeting time: N/A Tenderers CSD No: .......................................................................... Name of the Tenderer: ...................................................................... Bid Box Address"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:04.072Z"
+ },
+ "176754": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ- PROVISION FOR PROFESSIONAL PHOTOGRAPHY AND VIDEOGRAPHY SERVICES.pdf",
+    "pages": 5,
+    "result": "text"
+   },
+   {
+    "title": "Supplier POPIA Consent.pdf",
+    "pages": 3,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "held": false
+    },
+    "source": "regex",
+    "snippet": "MENT RFQ RFQ2026/27/31 RFQ ISSUE DATE 03 NOVEMBER 2026 BRIEFING SESSION N/A RFQ DESCRIPTION PROVISION FOR PROFESSIONAL PHOTOGRAPHY AND VIDEOGRAPHY SERVICES FOR THE PORTS REGULATOR OF SOUTH AFRICA RECORD OF DECISION ANNOUNCEMENT CLOSING DATE & TIME 09"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "e. SUPPLIER NAME: POSTAL ADDRESS: MAAA NUMBER (CSD NO): TELEPHONE NO: FAX NO: E MAIL ADDRESS: CONTACT PERSON: CELL NO: SIGNATURE OF SERVICE PROVIDER: DETAILED RFA PROVISION FOR PROFESSIONAL PHOTOGRAPHY AND VIDE"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:21:57.035Z"
+ },
+ "176755": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFP - MUNICIPAL DEBT RECEIVABLES MONETISATION AND RECOVERY SOLUTIONS update (002) (002).pdf",
+    "pages": 11,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "at such statements are not available, for the last year, • CSD number, • Pricing must be inclusive of VAT. Failure to submit the original response, copies of the tender and integrity declaration form will disqualify your submission. Failure to submit B-BBE"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:11.860Z"
+ },
+ "176756": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "T28.26.27 Maintenance Agreement Telephone System(Notice).pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:33.906Z"
+ },
+ "176759": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "T30.26.27 Renewal of Management Endpoint Security(Notice).pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:10.526Z"
+ },
+ "176760": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "MTH12-2026.pdf",
+    "pages": 124,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:13.515Z"
+ },
+ "176762": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ-APPOINTMENT OF A SERVICE PROVIDER FOR PRIOR-YEAR ACCRUALS EVIDENCE REVIEW AND ASSURANCE TEAM.pdf",
+    "pages": 26,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "E-mail address Postal address Physical address CSD Supplier number I certify that the information furnished on this form is true and correct. I further accept that, in addition to cancellation of a contract, action may be taken against me"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:21:51.554Z"
+ },
+ "176763": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "MTH13-2026.pdf",
+    "pages": 124,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:15.474Z"
+ },
+ "176764": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "MTH14-2026.pdf",
+    "pages": 124,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:18.464Z"
+ },
+ "176766": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ - CCTV INSTALLATION AND MAINTENANCE TRAINING.pdf",
+    "pages": 27,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-09",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": ": 03 November 2026 Compulsory briefing 09 November 2026 @ CAT 10H00 Venue for briefing session Shosholoza meyl junction, Cnr Leyds and Simmonds street Closing Date for Submissions of Bids 12 November 2026 @ CAT 10H00 SECTION 1: PART A INVITATION TO BID 2 SBD1 YOU ARE"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "H PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM PERSONS IN THE"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:01.491Z"
+ },
+ "176768": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "TERMS OF REFERENCE NOTICE 265 OF 2026 .pdf",
+    "pages": 33,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "T REGISTRATION NUMBER TAX COMPLIANCE STATUS TCS PIN: OR CSD No: B-BBEE STATUS LEVEL VERIFICATION CERTIFICATE [TICK APPLICABLE BOX] Yes No B-BBEE STATUS LEVEL SWORN AFFIDAVIT Yes No 4 4 [A B-BBEE STATUS LEVEL VERIFIC"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:03.043Z"
+ },
+ "176771": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RE-ISSUE RFQ 12342 Procurement of Various Equipment.pdf",
+    "pages": 20,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ILABLEBUTTHEBIDDERISREGISTEREDONTHECENTRAL SUPPLIERDATABASE(CSD),ACSDNUMBERMUSTBEPROVIDED. 2.7NOBIDSWILLBECONSIDEREDFROMPERSONSINTHESERVICEOFTHESTATE,COMPANIES WITHDIRECTORSWHOAREPERSONSINTHESERVICEOFTHESTATE,ORCLOSE CORPORATIONSWITHMEMBERSPERSONSINTHESERVICEO"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:21:59.306Z"
+ },
+ "176772": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ - Home Affairs ID Verification Services.pdf",
+    "pages": 6,
+    "result": "text"
+   },
+   {
+    "title": "SBD 4_ NASMUS_final2.pdf",
+    "pages": 4,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "held": false
+    },
+    "source": "regex",
+    "snippet": "@nasmus.co.za QUERIES Mr. G. Dlamini scm@nasmus.co.za BRIEFING SESSION n/a DATE n/a LOCATION ADDRESS n/a 1. Background to the National Museum The National Museum - a natural history, cultural history and art museum was established in 1877 a"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "greement if renting. 4.4. The bidder must be registered on CSD and CSD supplier report must be attached. 4.5. The bidder must be an active company registered in the Republic of South Africa and a copy of CIPC registration documents must be attached. 4.6. T"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:03.262Z"
+ },
+ "176775": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Sewage Plant operation tender technical evaluation strategy Rev 02.pdf",
+    "pages": 11,
+    "result": "text"
+   },
+   {
+    "title": "6000447083.pdf",
+    "pages": 2,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:05.517Z"
+ },
+ "176776": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ-Training for OTN Installation Configuration and Maintenance for Telecoms Department Gauteng Region.pdf",
+    "pages": 26,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-09",
+     "time": "12:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": ": 03 November 2026 Compulsory Briefing 09 November 2026@CAT 12H00 6 th floor booadroom Shosholoza Meyl building Braamfontein Closing Date for Submissions of Bids 12 November 2026 @ CAT 10H00 Contact person: Khuthadzo Tshikhudo Tel: 011 085 7060 Email: metrorailgptenders2@prasa.com and khuthadzo.tshikhud"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDER"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:02.305Z"
+ },
+ "176777": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Bid Number 2637G - Bid Document for Supply and Delivery of Medical and Pharmaceutical Supplies.pdf",
+    "pages": 85,
+    "result": "text"
+   },
+   {
+    "title": "Standard for Provision of Pharmaceutical Supplies 03 November 2026.pdf",
+    "pages": 11,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": null,
+     "time": "02:10",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "isqualified. F2.7 Clarification meeting are: N/A Location: N/A Date: N/A Starting time: N/A F2.8. Requests for clarification from the employer will be allowed up to five working days before the bid closes and all questions related to the bid should be communicated via email to the buyer responsible"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ts for the past three years  Central Supplier Database (CSD) Registration Report  Additional Soft copy of Bid Document must be submitted on Memory Stick 4.2 OTHER DOCUMENTS REQUIRED FOR EVALUATION PURPOSE 4.3 DOCUMENTS THAT WILL BE INCORPORATED"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:32.424Z"
+ },
+ "176780": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ  UNDERGROUND FIBER TRAINING.pdf",
+    "pages": 27,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-09",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": ": 03 November 2026 Compulsory briefing 09 November 2026 at 11:00 6 th floor Shosholoza Meyl Junction Braamfontein Closing Date for Submissions of Bids 12 November 2026 @ CAT 10H00 Contact person: Khuthadzo Tshikhudo Tel: 011 085 7060 Email: metrorailgptenders2@prasa.com and khuthadzo.tshikhudo@prasa.com"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDER"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:02.419Z"
+ },
+ "176783": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "WTE-0601 CS -SUPPLY AND DELIVERY OF NON-WOVEN NEEDLE PINCHED GEOTEXTILE...pdf",
+    "pages": 56,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:08.362Z"
+ },
+ "176786": {
+  "status": "no-pdf",
+  "docs": [],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:21:55.193Z"
+ },
+ "176792": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Publication of Names of Ermelo lease.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:10.004Z"
+ },
+ "176795": {
+  "status": "no-pdf",
+  "docs": [],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:33.904Z"
+ },
+ "176796": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "ATM 2026-2027 -06 APPOINTMENT OF A PANEL OF PROFESSIONAL SERVICE PROVIDERS FOR SUSTAINABLE FUNDRAISING - ATM.pdf",
+    "pages": 60,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "03 November 2026 Compulsory briefing session: --------------------------------- Closing date and time: 18 December 2026 @ 11:00 Quoting company/person: ............................................................................................................... Quoting company: Authorised signatory:"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "• Geldige registrasie op die Sentrale Verskaffersdatabasis (CSD); • Geldige belastingnakomingstatus by die Suid-Afrikaanse Inkomstediens (SARS); • Volledig ingevulde en ondertekende toepaslike standaard tenderdokumente (SBD); • Maatskappyregistrasiedokument"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:35.399Z"
+ },
+ "176801": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "ATM 2026-2027-07 PREPARING OF YEAR-END FINANCIAL STATEMENTS FOR THE AFRIKAANSE TAALMUSEUM AND -MONUMENT.pdf",
+    "pages": 51,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "03 November 2026 Compulsory briefing session: ------------------------------ Closing date and time: 04 December 2026 @ 11:00 Quoting company/person: ............................................................................................................... Quoting company: Authorised signatory:..."
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "f 51 • Registrasie op die Sentrale Verskaffersdatabasis (CSD); • Voltooide en ondertekende toepaslike SBD-vorms; • Gesertifiseerde afskrif van maatskappyregistrasiedokumente of geldige identiteitsdokument, waar van toepassing; • Geldige B-BBEE-sertifika"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:29.869Z"
+ },
+ "176803": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "ATM 2026-2027-08 PROVISION OF INTERNAL AUDIT SERVICES TO THE AFRIKAANS LANGUAGE MUSEUM AND MONUMENT.pdf",
+    "pages": 52,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "03 November 2026 Compulsory briefing session: ------------------------------ Closing date and time: 04 December 2026 @ 11:00 Quoting company/person: ............................................................................................................... Quoting company: Authorised signatory:..."
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "mente; • Registrasie op die Sentrale Verskaffersdatabasis (CSD); • Voltooide en ondertekende toepaslike SBD-vorms, insluitend SBD 4; • Geldige B-BBEE-sertifikaat of beëdigde verklaring, waar van toepassing; • Bewys van bankbesonderhede; en • Vergoedingsko"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:27.997Z"
+ },
+ "176806": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "OHS Specification for Professional Services Design of Station Dam Level Indicators_ (002).pdf",
+    "pages": 41,
+    "result": "text"
+   },
+   {
+    "title": "KUS-20250414 Kusile Power Station Professional Services  Scope of Work for the Design of Station Dirty Dam level indicators project Rev 1 (002) (002) (003).pdf",
+    "pages": 24,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:30.591Z"
+ },
+ "176809": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ 202140 Chemical and Materials Solid Density Meter.pdf",
+    "pages": 16,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "with the quotation: ▪ Treasury Central Supplier Database (CSD) registration report ▪ A valid BBBEE certificate/Sworn Affidavit (Specific Goal point claim) ▪ SBD 4 Bidder’s Disclosure ▪ SBD 6.1 Preference points claim form in terms of the Prefer"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:21:55.195Z"
+ },
+ "176813": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "TENDER DOCUMENT PANEL OF TOWN PLANNERS APPROVED.pdf",
+    "pages": 30,
+    "result": "text"
+   },
+   {
+    "title": "GCC.pdf",
+    "pages": 15,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "AT REGISTRATION NUMBER TAX COMPLIANCE STATUS TCS PIN: OR CSD No: ARE YOU THE ACCREDITED REPRESENTATIVE IN SOUTH AFRICA FOR THE GOODS /SERVICES OFFERED? Yes No [IF YES ENCLOSE PROOF] ARE YOU A FOREIGN BASED SUPPLIER FOR"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:31.116Z"
+ },
+ "176814": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFP Project Management.pdf",
+    "pages": 56,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": false,
+     "date": "2026-11-11",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "mber 2026, 11:00am Compulsory Briefing Session Non-Compulsory Online Briefing Session 11 th November 2026 11:00am Join: https://teams.microsoft.com/meet/3327667395446818?p=mFJWt3E7 gmFScIglGT Meeting ID: 332 766 739 544 681 8 Passcode: LZ2Ng6Wa Tender Submission Address Online submission of proposals Tende"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "omplete online SBD) • The bidder must be registered on the CSD or any of its directors must not be restricted from doing business with the state. Note: Bidders who do not submit the requested documents, will be given a maximum of 2 workin"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:11.520Z"
+ },
+ "176815": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RE – ADVERSITED RFQ-KZN.M04AUG098.pdf",
+    "pages": 16,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "SIGNATURE: DATE: Compulsory Briefing/ Site Visit: NO Suppliers to provide the CSD Supplier Number (MAAA ) and Tax Pin Certificate Quotations must be sent to scm@nmsa.org.za Enquiries regarding the advert to be directed to scm@nmsa.org.za The RFQ creates no obligation whatsoever on the part of the Museum The Mus"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "mpulsory Briefing/ Site Visit: NO Suppliers to provide the CSD Supplier Number (MAAA ) and Tax Pin Certificate Quotations must be sent to scm@nmsa.org.za Enquiries regarding the advert to be directed to scm@nmsa.org.za The RFQ creates no obligation whatsoe"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:21:57.351Z"
+ },
+ "176816": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "WTE1028CE.pdf",
+    "pages": 50,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-12",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "Compulsory Briefing Session Date: 12 November 2026 Time: 10:00 am Venue: Department of Water and Sanitation Infrastructure Branch Training Centre (IBTC) at Roodeplaat Dam Access Rd, Off Kwa Mhlanga Rd (R573) near Pretoria in Gauteng Province. GPS Coordinates: (Lat-25.618439° an"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM PERSONS IN"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-03T11:22:07.089Z"
  }
 }
