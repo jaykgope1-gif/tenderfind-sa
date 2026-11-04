@@ -14,7 +14,10 @@ function aboutPage(siteUrl, count) {
   const body = `<article class="card prose">
 <h1>About TenderFind SA</h1>
 <p>TenderFind SA helps small businesses find government work that fits them. Every morning we email subscribers the new tenders for their trade and province, so they don't have to search eTenders themselves. Anyone can also search all open tenders on this site for free, on a phone.</p>
-<p>TenderFind SA is run by ${esc(OPERATOR.name || "an independent operator")}${OPERATOR.location ? ` in ${esc(OPERATOR.location.replace(/, South Africa$/, ""))}` : ""}.</p>
+<div class="founder">
+<img src="img/jay-kgope.jpg" width="160" height="200" alt="${esc(OPERATOR.name || "The founder")}, founder of TenderFind SA" loading="lazy">
+<p>TenderFind SA is run by <b>${esc(OPERATOR.name || "an independent operator")}</b>${OPERATOR.location ? ` in ${esc(OPERATOR.location.replace(/, South Africa$/, ""))}` : ""}. I started it because good small businesses keep missing government work they could do, simply because they hear about it too late. If you have a question, email me at <a href="mailto:${esc(OPERATOR.email)}">${esc(OPERATOR.email)}</a> and I'll answer it myself.</p>
+</div>
 
 <h2>Where the tenders come from</h2>
 <p>The tenders come from National Treasury's eTenders portal, through its official open-data feed. We check it every morning, so new tenders, changed closing dates and closed tenders show up the same day. Right now we list ${count} open tenders. Tenders that a municipality or state company publishes only on its own website, and not on eTenders, are not included yet.</p>

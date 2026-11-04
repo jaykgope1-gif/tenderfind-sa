@@ -217,3 +217,9 @@ select {
 .facts dt { font-weight: 600; }
 .facts dd { margin: 0; }
 @media (max-width: 520px) { .facts { grid-template-columns: 1fr; } .facts dd { margin-bottom: .5rem; } }
+
+/* About page: founder photo next to the intro */
+.founder { display: flex; gap: 16px; align-items: flex-start; margin: 1rem 0 1.25rem; }
+.founder img { flex: none; width: 160px; height: 200px; object-fit: cover; border-radius: 12px; }
+.founder p { margin: 0; }
+@media (max-width: 480px) { .founder { flex-direction: column; } .founder img { width: 140px; height: 175px; } }
