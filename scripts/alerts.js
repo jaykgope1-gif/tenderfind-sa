@@ -44,7 +44,10 @@ function entry(t, x) {
   const b = x.briefing?.value;
   return {
     id: t.id,
-    title: t.title,
+    title: t.summary || t.title, // plain-English one-liner
+    official_title: t.title,
+    nationwide: !!t.nationwide, // national buyer, work across the country
+    hq: t.hq || null, // national buyer with a head office here and no other place named
     buyer: t.buyer,
     province: t.province.value || "Not stated",
     trade: t.trade,
@@ -81,7 +84,7 @@ function main() {
     date: today,
     generated_at: now.toISOString(),
     site: SITE_URL,
-    note: "Tenders with province 'National' or 'Not stated' should go to subscribers in every province.",
+    note: "National tenders go only to subscribers in their head-office province (hq) or, when nationwide is true, to everyone.",
     counts: { new: fresh.length, closing_soon: remind.length },
     new: group(fresh.map((t) => entry(t, fields(t)))),
     closing_soon: group(remind.map((t) => entry(t, fields(t)))),

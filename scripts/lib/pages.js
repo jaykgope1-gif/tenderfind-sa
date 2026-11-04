@@ -39,14 +39,14 @@ function metaDescription(t, closed) {
     closed ? `Closed ${closingText(t.closing)}.` : `Closes ${closingText(t.closing)}.`,
     !closed && b && b.compulsory === true ? `Compulsory briefing.` : "",
     !closed && t.cidb_grade?.value ? `CIDB ${t.cidb_grade.value}.` : "",
-    `${t.title}.`,
+    `${t.summary || t.title}.`,
   ];
   return cut(parts.filter(Boolean).join(" "), 158);
 }
 
 function whatsappText(t, url) {
   const b = t.briefing?.value;
-  const lines = [`*${t.title}*`, `${t.buyer || ""}${place(t) ? " · " + place(t) : ""}`, `Closes: ${closingText(t.closing)}`];
+  const lines = [`*${t.summary || t.title}*`, `${t.buyer || ""}${place(t) ? " · " + place(t) : ""}`, `Closes: ${closingText(t.closing)}`];
   if (b && b.compulsory === true) lines.push(`Compulsory briefing${b.date ? ": " + briefingText(b) : " (see documents)"}`);
   if (t.cidb_grade?.value) lines.push(`CIDB: ${t.cidb_grade.value}`);
   lines.push("", `Details: ${url}`);
@@ -93,7 +93,7 @@ function similarHtml(t, list) {
 <p>No other open ${esc(t.trade)} tenders right now. <a href="../">Search all open tenders</a></p></section>`;
   }
   return `<section id="similar" class="similar"><h2>Similar open tenders</h2>
-<ol>${list.map((o) => `<li><a href="${esc(o.id)}.html"><b>${esc(o.title)}</b><span>${esc(o.buyer || "")}${place(o) ? " · " + esc(place(o)) : ""}</span><span class="due" data-closing="${esc(o.closing)}">Closes ${esc(closingText(o.closing))}</span></a></li>`).join("")}</ol>
+<ol>${list.map((o) => `<li><a href="${esc(o.id)}.html"><b>${esc(o.summary || o.title)}</b><span>${esc(o.buyer || "")}${place(o) ? " · " + esc(place(o)) : ""}</span><span class="due" data-closing="${esc(o.closing)}">Closes ${esc(closingText(o.closing))}</span></a></li>`).join("")}</ol>
 <p><a class="btn wide" href="${esc(tradeLink)}">See all open ${esc(t.trade)} tenders</a></p></section>`;
 }
 
@@ -136,7 +136,7 @@ ${t.documents?.[0] ? `<a class="btn" href="${esc(t.documents[0].url)}" target="_
 <div class="closed-note" id="closed-note"${closed ? "" : " hidden"}><b>This tender has closed.</b> Bids can no longer be submitted. <a href="#similar">See similar open tenders</a></div>
 <article class="card tender">
 <div class="tags">${tags.join("")}</div>
-<h1>${esc(t.title)}</h1>
+<h1>${esc(t.summary || t.title)}</h1>
 <p class="meta">${esc(t.buyer || "Buyer not stated")} · ${esc(where || "Province not stated")}</p>
 <p class="due${!closed && cd.soon ? " soon" : ""}">${closed ? "Closed" : `<span id="due" data-closing="${esc(t.closing)}">${esc(cd.text)}</span>`} <span class="meta">(${esc(closingText(t.closing))})</span></p>
 ${share}
@@ -146,7 +146,7 @@ ${closed ? "" : `<p class="help-link"><b>Need help with this tender?</b> We go t
 ${similarHtml(t, similarList)}`;
 
   return shell({
-    title: `${cut(t.title, 70)}${closed ? " (closed)" : ""} | ${BRAND}`,
+    title: `${cut(t.summary || t.title, 70)}${closed ? " (closed)" : ""} | ${BRAND}`,
     description: metaDescription(t, closed),
     canonical: url,
     root: "../",

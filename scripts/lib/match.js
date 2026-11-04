@@ -8,7 +8,9 @@ const MATCH = {
   MAX_REMIND: 3, // "closing in 3 days" reminders
   TRADES: ["Cleaning", "Security", "Construction", "Maintenance & repairs", "Catering", "IT", "Transport", "Supplies", "Professional services", "Other"],
   PROVINCES: ["Eastern Cape", "Free State", "Gauteng", "KwaZulu-Natal", "Limpopo", "Mpumalanga", "North West", "Northern Cape", "Western Cape"],
-  EVERYWHERE: ["National", "Not stated"], // sent to subscribers in every province
+  // National buyers' tenders are only sent when the work is nationwide, or the buyer's head office is in one of the
+  // subscriber's provinces and no other place is named. "Not stated" (a local body we couldn't place) is never sent.
+  NATIONAL: "National",
   TRIAL_DAYS: 14, // free days from the first sign-up (sign-up day is day 1)
   SITE: "https://tenderfind.co.za",
   BID_HELP: 550, // Bid Help price per tender, linked under every tender in the email (help.html)
@@ -77,7 +79,7 @@ function pick(grouped, sub, max) {
   for (const trade of sub.trades) {
     const byProvince = (grouped || {})[trade] || {};
     for (const p of sub.provinces) own.push(...(byProvince[p] || []));
-    for (const p of MATCH.EVERYWHERE) wide.push(...(byProvince[p] || []));
+    wide.push(...(byProvince[MATCH.NATIONAL] || []).filter((t) => t.nationwide || (t.hq && sub.provinces.includes(t.hq))));
   }
   const seen = new Set();
   const all = [...own.sort(byClosing), ...wide.sort(byClosing)].filter((t) => !seen.has(t.id) && seen.add(t.id));

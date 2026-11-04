@@ -79,6 +79,27 @@ const PLACES = {
   ],
 };
 
+// Towns, suburbs and well-known sites (power stations, ports, airports) that tell us where the work is when the
+// buyer is a national body. Only used to read the tender's own text, never the buyer's name.
+const SITES = {
+  "Eastern Cape": ["gqeberha", "port elizabeth", "east london", "mthatha", "coega", "ngqura", "queenstown", "komani", "qonce", "king william's town", "makhanda", "grahamstown", "uitenhage", "kariega", "butterworth", "port alfred", "aliwal north", "mzimvubu"],
+  "Free State": ["lethabo", "bethlehem", "harrismith", "parys", "bloemfontein", "sasolburg", "kroonstad", "welkom", "qwaqwa", "phuthaditjhaba"],
+  Gauteng: ["megawatt park", "sunninghill", "braamfontein", "sandton", "midrand", "centurion", "kempton park", "benoni", "boksburg", "springs", "randburg", "roodepoort", "krugersdorp", "vanderbijlpark", "alberton", "hatfield", "arcadia", "rosslyn", "lanseria", "ortia", "eikenhof", "soshanguve", "mamelodi", "atteridgeville", "tembisa", "alexandra", "diepsloot", "orange farm", "pretoria", "tshwane", "johannesburg", "soweto", "germiston", "vereeniging", "ekurhuleni"],
+  "KwaZulu-Natal": ["durban", "pinetown", "port shepstone", "empangeni", "howick", "king shaka", "eshowe", "richards bay", "pietermaritzburg", "newcastle", "ladysmith", "vryheid", "kokstad", "umhlanga", "stanger", "kzn"],
+  Limpopo: ["matimba", "medupi", "tzaneen", "thohoyandou", "mokopane", "phalaborwa", "lephalale", "giyani", "polokwane", "musina", "louis trichardt", "bela-bela", "modimolle", "burgersfort", "jane furse"],
+  Mpumalanga: ["kendal", "duvha", "matla", "kriel", "hendrina", "arnot", "komati", "camden", "grootvlei", "tutuka", "majuba", "kusile", "witbank", "emalahleni", "secunda", "standerton", "ermelo", "mbombela", "nelspruit", "white river", "barberton", "lydenburg", "mashishing", "kwamhlanga"],
+  "North West": ["brits", "mahikeng", "mafikeng", "rustenburg", "potchefstroom", "klerksdorp", "vryburg", "lichtenburg", "zeerust", "schweizer reneke", "schweizer-reneke", "hartbeespoort"],
+  "Northern Cape": ["kimberley", "upington", "springbok", "kuruman", "de aar", "sutherland", "kathu", "postmasburg", "alexander bay"],
+  "Western Cape": ["koeberg", "cape town", "paarl", "worcester", "saldanha", "clanwilliam", "bellville", "khayelitsha", "mitchells plain", "stellenbosch", "george airport", "mossel bay", "wilderness section", "knysna", "beaufort west", "atlantis"],
+};
+
+// Said in the tender's own words: the work is spread across the country.
+const NATIONWIDE = /\b(nation(al)?[- ]?wide|countrywide|country[- ]wide|all (nine |9 |the )?provinces|across (the country|south africa|all provinces)|national footprint|throughout south africa|various (sites|offices|regions) (across|throughout|in) (the country|south africa)|regional offices nationally)\b/i;
+
+// National bodies whose tenders, when no place is named, are almost always for their head office in Gauteng.
+// Site-based buyers (Eskom, Transnet, Airports Company, SANParks) are deliberately not listed.
+const GAUTENG_HQ = /^national\s*-|\b(road accident fund|south african revenue service|sars|sassa|social security agency|csir|bureau of standards|sabs|national health laboratory|nhls|sanral|roads agency|development bank|dbsa|industrial development corporation|land bank|state information technology|sita|national credit regulator|national research foundation|sentech|independent communications|icasa|cipc|companies and intellectual property|armscor|denel|nersa|energy regulator|compensation fund|unemployment insurance|public investment corporation|government employees medical|sabc|broadcasting corporation|post office|council for geoscience|human sciences research|hsrc|national lotteries|national treasury|statistics south africa|stats sa|auditor-general|public protector|human rights commission|competition commission|financial sector conduct|fsca|reserve bank|national youth development|nyda|small enterprise development|sefa|national empowerment fund|construction industry development board|council for medical schemes|health products regulatory|sahpra|water research commission|agricultural research council)\b/i;
+
 // Local bodies we couldn't place: say "Not stated" rather than guess.
 const LOCAL_BODY = /\b(municipality|metro(politan)?|district|tvet|college)\b/i;
 
@@ -93,10 +114,30 @@ function buyerProvince(buyer) {
   return "National"; // national departments, SOEs, SETAs, regulators, agencies
 }
 
-// A province named in the tender's own description beats the buyer's location.
+const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const PLACE_RES = Object.entries(PLACES).map(([p, names]) => [p, new RegExp(`\\b(${[...names, ...SITES[p]].map(escapeRe).join("|")})\\b`, "i")]);
+
+// Every province the tender's own text points to: by name, or by a municipality, town or known site in it.
+function textProvinces(text) {
+  const t = (text || "").replace(/\bo\.?\s?r\.?\s?tambo international\b/gi, "ortia"); // the airport (Gauteng), not the OR Tambo district (EC)
+  const found = new Set(PROVINCE_NAMES.filter(([, re]) => re.test(t)).map(([p]) => p));
+  for (const [p, re] of PLACE_RES) if (re.test(t)) found.add(p);
+  return [...found];
+}
+
+// A single province named or implied in the tender's own description beats the buyer's location.
 function descriptionProvince(text) {
-  const found = PROVINCE_NAMES.filter(([, re]) => re.test(text || "")).map(([p]) => p);
+  const found = textProvinces(text);
   return found.length === 1 ? found[0] : null;
 }
 
-module.exports = { buyerProvince, descriptionProvince, PROVINCE_NAMES };
+// Where the work is, for national buyers: "nationwide" when the text says so or names 3+ provinces;
+// otherwise the province of a Gauteng-based head office, when no place is named at all.
+function scope(text, buyer) {
+  const found = textProvinces(text);
+  if (NATIONWIDE.test(text || "") || found.length >= 3) return { nationwide: true, hq: null };
+  if (!found.length && GAUTENG_HQ.test((buyer || "").trim())) return { nationwide: false, hq: "Gauteng" };
+  return { nationwide: false, hq: null };
+}
+
+module.exports = { buyerProvince, descriptionProvince, textProvinces, scope, PROVINCE_NAMES };

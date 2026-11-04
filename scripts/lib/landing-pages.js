@@ -17,7 +17,7 @@ const place = (t) => t.location?.value || t.province?.value || null;
 const byClosing = (a, b) => a.closing.localeCompare(b.closing);
 
 function listHtml(list) {
-  return `<ol>${list.map((t) => `<li><a href="../tender/${esc(t.id)}.html"><b>${esc(t.title)}</b><span>${esc(t.buyer || "")}${place(t) ? " · " + esc(place(t)) : ""}</span><span class="due" data-closing="${esc(t.closing)}">Closes ${esc(closingText(t.closing))}</span></a></li>`).join("")}</ol>`;
+  return `<ol>${list.map((t) => `<li><a href="../tender/${esc(t.id)}.html"><b>${esc(t.summary || t.title)}</b><span>${esc(t.buyer || "")}${place(t) ? " · " + esc(place(t)) : ""}</span><span class="due" data-closing="${esc(t.closing)}">Closes ${esc(closingText(t.closing))}</span></a></li>`).join("")}</ol>`;
 }
 
 function page({ siteUrl, file, title, h1, intro, sections, related }) {

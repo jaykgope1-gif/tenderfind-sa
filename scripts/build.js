@@ -77,7 +77,8 @@ function main() {
     index.push({
       id: t.id,
       r: t.reference,
-      t: t.title,
+      t: t.summary || t.title,
+      ...(t.summary && t.summary !== t.title && { o: t.title }), // the official wording, still searchable
       b: t.buyer,
       p: t.province.value,
       tr: t.trade,

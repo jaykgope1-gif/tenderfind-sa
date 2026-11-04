@@ -1,18 +1,25 @@
 // OCDS release -> flat tender. Field paths verified against live eTenders data (Oct 2026):
 // the feed has no province, briefing, CIDB or contact fields; items/parties are always empty.
-const { buyerProvince, descriptionProvince } = require("./provinces");
+const { buyerProvince, descriptionProvince, scope } = require("./provinces");
+const { summary, SALE } = require("./summary");
 
 const NOT_STATED = "Not stated — check the tender documents";
 
 // Checked in order; the first trade whose pattern matches wins. Specific before general:
 // training before the trade it trains for, cyber-security before guarding, services before "supply".
 const TRADES = [
+  // The buyer is selling (scrap, e-waste, vehicles): not work a supplier bids on, so never in alerts.
+  ["Sales & auctions", SALE],
+  // Specialised waste needs licences a cleaning company doesn't have.
+  ["Other", /\b(medical|pharmaceutical|health ?care risk|hazardous|chemical|radioactive|nuclear|clinical) waste\b/i],
+  ["Professional services", /\b(occupational (health|hygiene)|health and safety|ohs|medical surveillance|wellness days?|ergonomic\w*)\b/i],
   ["Professional services", /\b(training|trade test|short courses?|learnerships?|skills? development|capacitation|entrepreneurship (development )?programme|marketing agency|consulting engineer\w*|implementing agent)\b/i],
   ["IT", /\b(cyber ?security|security operations cent(er|re)|threat intelligence|off-site backup|backup tapes|backup (storage|solution|software)|ibm|analytics|information technology|ict|it services|software|sap|network|laptops?|computers?|monitors?|licen[cs]es?|servers?|cloud|website|microsoft|data cent(er|re)|digital display|signage solution|business continuity)\b/i],
   // Titles that open with "supply ..." / "purchase of" / "to procure" are buying goods.
-  ["Supplies", /^(re-?advertisement:?\s*)?(request for (a )?quot\w*\s*(\(rfq\))?\s*(for|of)?\s*(the )?)?(supply|purchase of|to procure)\b/i],
+  ["Supplies", /^(re-?advertisement:?\s*)?(request for (a )?quot\w*\s*(\(rfq\))?\s*(for|of)?\s*(the )?)?(supply(?! chain)|purchase of|to procure)\b/i],
+  ["Supplies", /^(the )?(procurement|purchase|acquisition) of (?!(a |an |the )?(suitabl|qualified|service|professional|panel|consult|contractor|compan))/i],
   ["Security", /\b(security services?|security (systems?|company|guards?|officers?)|guarding|guards?|cctv|access control|alarm|armed response|surveillance)\b/i],
-  ["Cleaning", /\b(cleaning|cleaners?|hygiene|sanitary|sanitation services|pest control|fumigation|refuse|waste|grass cutting|garden(ing)?(?! route)|grounds maintenance|landscaping|horticultur\w*|laundry|alien (invasive )?(vegetation|plant)|invasive|vegetation (clearing|management)|firebreaks?|beautification|dredging)\b/i],
+  ["Cleaning", /\b(cleaning|cleaners?|hygiene|sanitary|sanitation services|pest control|fumigation|refuse|(galley |general |domestic |contaminated )?waste (removal|collection|disposal|management services)|removal[\w ,]{0,30} waste|grass cutting|garden(ing)?(?! route)|grounds maintenance|landscaping|horticultur\w*|laundry|alien (invasive )?(vegetation|plant)|invasive|vegetation (clearing|management)|firebreaks?|beautification|dredging)\b/i],
   ["Catering", /\b(catering|meals|food|refreshments|canteen|kitchen)\b/i],
   ["Transport", /\b(transport(ation)?|vehicle hire|car hire|bus(es)?|fleet|shuttle|courier|logistics|travel management|removal of furniture|aircraft|uld pallets|gear ?box(es)?|gerbox(es)?|diffs|mercedes|fuel bowsers?|mobile crane|trucks?)\b/i],
   // Electrical/mechanical equipment: named outright, or any maintenance/repair word plus a piece of kit.
@@ -84,8 +91,11 @@ function normalise(r) {
 }
 
 // Trade and province are re-derived at build time, so rule changes apply without a refetch.
+// Also adds a one-line plain-English summary and, for national buyers, where the work is (nationwide or a head office).
 function classify(t) {
-  return { ...t, trade: trade(t), province: province(t.buyer || "", t.description || "") };
+  const prov = province(t.buyer || "", t.description || "");
+  const where = prov.value === "National" || !prov.value ? scope(t.description || t.title || "", t.buyer) : { nationwide: false, hq: null };
+  return { ...t, trade: trade(t), province: prov, summary: summary(t.description, t.title), nationwide: where.nationwide, hq: where.hq };
 }
 
 module.exports = { normalise, classify, NOT_STATED };

@@ -108,6 +108,15 @@ assert.ok(/unsubscribe/i.test(mail("late@example.co.za").text));
 assert.ok(/Closing in 3 days/.test(mail("remind@example.co.za").html), "reminders go in the same email");
 assert.strictEqual(eskip("both@example.co.za"), "cancelled", "STOP on WhatsApp also stops email");
 
+// National tenders: only when nationwide, or the buyer's head office is in the subscriber's province.
+const nat = alerts.new.Cleaning.National;
+const gp = matchSubscribers(alerts, [erow("gp@example.co.za", { "Your trade(s)": "Cleaning", "Province(s) you can work in": "Gauteng" })], [], today, "email").messages[0];
+const wc = matchSubscribers(alerts, [erow("wc@example.co.za", { "Your trade(s)": "Cleaning", "Province(s) you can work in": "Western Cape" })], [], today, "email").messages[0];
+assert.ok(gp.tender_ids.includes(nat[0].id), "Gauteng subscriber gets a national tender whose head office is in Gauteng");
+assert.ok(!wc.tender_ids.includes(nat[0].id), "Western Cape subscriber doesn't");
+assert.ok(nat.slice(1).every((x) => !gp.tender_ids.includes(x.id) && !wc.tender_ids.includes(x.id)), "other national tenders (no place, not nationwide) go to nobody");
+assert.ok(mail("remind@example.co.za").html.includes(alerts.closing_soon["Maintenance & repairs"].National[0].title.slice(0, 20)), "nationwide tenders go to everyone in the trade");
+
 console.log(`${path.basename(file)} (today = ${today}): WhatsApp ${messages.length} messages for ${rows.length} rows, email ${em.messages.length} for ${erows.length} — all checks passed`);
 for (const m of messages) console.log(`  → ${m.to} ${m.template}${m.more ? ` (+${m.more} more)` : ""}`);
 for (const s of skipped) console.log(`  ✗ ${s.to} ${s.reason}`);
