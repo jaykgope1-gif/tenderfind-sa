@@ -47,7 +47,7 @@
   function indexOf(t) {
     return (t._i ||= {
       title: tokens(`${t.t} ${t.tr}`),
-      other: tokens([t.b, t.r, t.p, t.ty, t.l, t.g && `cidb ${t.g}`].filter(Boolean).join(" ")),
+      other: tokens([t.o, t.b, t.r, t.p, t.ty, t.l, t.g && `cidb ${t.g}`].filter(Boolean).join(" ")),
     });
   }
 
