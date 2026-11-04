@@ -129,7 +129,7 @@ function tenderPage(t, { siteUrl, closed, similarList }) {
 
   const share = closed ? "" : `<div class="actions">
 <a class="btn wa" id="share" href="https://wa.me/?text=${encodeURIComponent(whatsappText(t, url))}" target="_blank" rel="noopener">Share on WhatsApp</a>
-${t.documents?.[0] ? `<a class="btn" href="${esc(t.documents[0].url)}" target="_blank" rel="nofollow noopener">Open documents</a>` : ""}
+${t.documents?.[0] ? `<a class="btn" href="${esc(t.documents[0].url)}" target="_blank" rel="nofollow noopener">Open documents</a>` : t.portal ? `<a class="btn" href="${esc(t.portal.url)}" target="_blank" rel="noopener">Get the documents</a>` : ""}
 </div>`;
 
   const body = `<p class="crumbs"><a href="../">← All open tenders</a></p>

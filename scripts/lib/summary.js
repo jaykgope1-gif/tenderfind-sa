@@ -56,6 +56,9 @@ const FILLER = [
 // Acronyms that look wrong in lower case.
 const ACRONYMS = ["ppe", "ohs", "epwp", "sabs", "idp", "kzn", "dbsa", "nrf", "sarao", "cctv", "ict", "hvac", "ups", "mv", "lv", "sanral", "prasa", "sars", "sassa", "csir", "nhls", "raf", "dws", "saps", "sanpc", "cidb", "csd", "tvet", "it", "sla", "ccma", "dpwi", "eoi", "atm", "lan", "wan", "pabx", "cpd", "sita", "sap"];
 const ACR = new RegExp(`\\b(${ACRONYMS.join("|")})\\b`, "gi");
+// Places and departments that need their capital back after a SHOUTED title is lower-cased.
+const PROPER = new RegExp(`\\b(${["gauteng", "tshwane", "johannesburg", "joburg", "ekurhuleni", "sedibeng", "west rand", "pretoria", "soweto", "midrand", "sandton", "centurion", "limpopo", "mpumalanga", "free state", "north west", "northern cape", "western cape", "eastern cape", "kwazulu-natal", "polokwane", "durban", "cape town", "gqeberha", "bloemfontein", "mahikeng", "mbombela", "kimberley", "rand water", "eskom", "transnet", "national treasury", "provincial treasury"].join("|")})\\b`, "gi");
+const properCase = (w) => w.replace(/(^|[\s-])([a-z])/g, (m, a, b) => a + b.toUpperCase());
 
 const tame = (s) => {
   const letters = s.replace(/[^A-Za-z]/g, "");
@@ -95,7 +98,7 @@ function summary(description, title) {
   if (!s || s.length < 3) s = stripRef(tame(original)); // nothing useful left: keep the original
   if (goods) s = "Supply of " + s.replace(/^supply of /i, "");
   if (sale) s = "For sale by the buyer: " + s.replace(/^((of )?invitation to submit )?(an? )?(offer (to|for the) purchase,?( collectio\w* and removal| and removal)?( of)?|sale of|disposal of|purchase,? collection and (removal|disposal) of)\s*/i, "");
-  s = s.replace(ACR, (a) => a.toUpperCase());
+  s = s.replace(ACR, (a) => a.toUpperCase()).replace(PROPER, (p) => (p === p.toLowerCase() ? properCase(p) : p));
   s = s.charAt(0).toUpperCase() + s.slice(1);
   const tail = d.length ? ` (${d.length})` : "";
   return cut(s, MAX - tail.length) + tail;

@@ -36,6 +36,11 @@ jobs:
       - name: Fetch tenders
         run: node scripts/fetch.js
 
+      # Gauteng department tenders that are only on the Gauteng e-Tender portal. Never blocks the job.
+      - name: Fetch Gauteng portal tenders
+        run: node scripts/fetch-gauteng.js
+        continue-on-error: true
+
       # Only new or changed tenders are read. AI is used only if the ANTHROPIC_API_KEY secret exists.
       - name: Read tender documents
         run: node scripts/extract.js

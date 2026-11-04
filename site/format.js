@@ -69,6 +69,8 @@
     ];
     const docs = d.documents.length
       ? `<ol class="docs">${d.documents.map((x) => `<li><a href="${esc(x.url)}" target="_blank" rel="nofollow noopener">${esc(x.title || "Document")}</a></li>`).join("")}</ol>`
+      : d.portal
+      ? `<p>Download them from <a href="${esc(d.portal.url)}" target="_blank" rel="noopener">${esc(d.portal.name)}</a> (tap the tender number).</p>`
       : `<p class="missing">${esc(NOT_STATED)}</p>`;
     const updated = d.updated
       ? `<p class="upd-note">Updated ${esc(shortDate(d.updated))}: ${esc((d.changes || []).join(" and ") || "details")} changed since first published.</p>`
@@ -81,7 +83,9 @@
       <dt>Briefing session</dt><dd>${fieldHtml(d.briefing, docUrl, briefingText)}${why(d.briefing)}</dd>
       ${reqs.map(([label, f, fmt]) => `<dt>${label}</dt><dd>${fieldHtml(f, docUrl, fmt)}${why(f)}</dd>`).join("")}
       <dt>Tender documents</dt><dd>${docs}</dd>
-      <dt>Check it on eTenders</dt><dd>${d.reference ? `Search for <b>${esc(d.reference)}</b> on ` : ""}<a href="https://www.etenders.gov.za/" target="_blank" rel="noopener">etenders.gov.za</a>, the official portal</dd>
+      ${d.portal
+        ? `<dt>Where it's advertised</dt><dd>Only on <a href="${esc(d.portal.url)}" target="_blank" rel="noopener">${esc(d.portal.name)}</a>${d.reference ? `: look for <b>${esc(d.reference)}</b>` : ""}</dd>`
+        : `<dt>Check it on eTenders</dt><dd>${d.reference ? `Search for <b>${esc(d.reference)}</b> on ` : ""}<a href="https://www.etenders.gov.za/" target="_blank" rel="noopener">etenders.gov.za</a>, the official portal</dd>`}
     </dl>`;
   }
 
