@@ -1,13 +1,137 @@
 {
  "date": "2026-11-04",
- "generated_at": "2026-11-04T07:47:27.687Z",
+ "generated_at": "2026-11-04T11:36:35.018Z",
  "site": "https://tenderfind.co.za",
  "note": "National tenders go only to subscribers in their head-office province (hq) or, when nationwide is true, to everyone.",
  "counts": {
-  "new": 20,
+  "new": 28,
   "closing_soon": 0
  },
  "new": {
+  "Cleaning": {
+   "Gauteng": [
+    {
+     "id": "gp-drt-09-09-2026",
+     "title": "Establishment of a panel for the supply and application of herbicides on roads, pest control… (3 years)",
+     "official_title": "ESTABLISHMENT OF A PANEL FOR THE SUPPLY AND APPLICATION OF HERBICIDES ON ROADS, PEST CONTROL AND FUMIGATION SERVICES ACROSS ALL FACILITIES…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Gauteng - Roads and Transport",
+     "province": "Gauteng",
+     "trade": "Cleaning",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · Fri, 23 Oct · 10:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/gp-drt-09-09-2026.html"
+    },
+    {
+     "id": "gp-cogta-01-01-2026",
+     "title": "Cleaning, hygiene, fumigation, pest control and fogging services in the department… (36 months)",
+     "official_title": "APPOINTMENT OF A SERVICE PROVIDER TO PROVIDE CLEANING, HYGIENE, FUMIGATION, PEST CONTROL AND FOGGING SERVICES IN THE DEPARTMENT OF…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Gauteng - Co-Operative Governance and Traditional Affairs",
+     "province": "Gauteng",
+     "trade": "Cleaning",
+     "closing": "2026-11-09T11:00:00+02:00",
+     "closing_text": "Mon, 09 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · Mon, 26 Oct · 11:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/gp-cogta-01-01-2026.html"
+    },
+    {
+     "id": "176894",
+     "title": "Horticulture services at West Rand various stations, depots and vacant land on an as and when… (24 months)",
+     "official_title": "Request for quotation (rfq) for the appointment of two service providers to provide horticulture services at west rand various stations…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Passenger Rail Agency of South Africa",
+     "province": "Gauteng",
+     "trade": "Cleaning",
+     "closing": "2026-11-17T12:00:00+02:00",
+     "closing_text": "Tue, 17 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": "3SH",
+     "url": "https://tenderfind.co.za/tender/176894.html"
+    },
+    {
+     "id": "gp-hla-4-2-4-2026-03",
+     "title": "Hygiene, sanitation and pest control services for Gauteng department of human settlement (gdhs) (36 months)",
+     "official_title": "THE APPOINTMENT OF SERVICE PROVIDER FOR THE PROVISION OF HYGIENE, SANITATION AND PEST CONTROL SERVICES FOR GAUTENG DEPARTMENT OF HUMAN…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Gauteng - Human Settlement",
+     "province": "Gauteng",
+     "trade": "Cleaning",
+     "closing": "2026-11-20T11:00:00+02:00",
+     "closing_text": "Fri, 20 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · Tue, 03 Nov · 11:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/gp-hla-4-2-4-2026-03.html"
+    }
+   ]
+  },
+  "Other": {
+   "Gauteng": [
+    {
+     "id": "gp-gt-gpt-033-2026",
+     "title": "Municipal finance hands-on support programme advisors at Gauteng Provincial Treasury – general advisors",
+     "official_title": "MUNICIPAL FINANCE HANDS-ON SUPPORT PROGRAMME ADVISORS AT GAUTENG PROVINCIAL TREASURY – GENERAL ADVISORS",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Gauteng - Treasury",
+     "province": "Gauteng",
+     "trade": "Other",
+     "closing": "2026-11-06T11:00:00+02:00",
+     "closing_text": "Fri, 06 Nov 2026, 11:00",
+     "briefing": "Briefing · Mon, 19 Oct · 11:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/gp-gt-gpt-033-2026.html"
+    }
+   ],
+   "KwaZulu-Natal": [
+    {
+     "id": "176817",
+     "title": "Land evaluator at KwaZulu Natal",
+     "official_title": "Provision of land evaluator at KwaZulu Natal",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Special Investigation Unit",
+     "province": "KwaZulu-Natal",
+     "trade": "Other",
+     "closing": "2026-11-09T12:00:00+02:00",
+     "closing_text": "Mon, 09 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176817.html"
+    }
+   ],
+   "National": [
+    {
+     "id": "176897",
+     "title": "Replacement of the existing Avaya IP Telephony and Contact Centre Solution",
+     "official_title": "Appointment of Service Provider for the replacement of the existing Avaya IP Telephony and Contact Centre Solution",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "SASRIA",
+     "province": "National",
+     "trade": "Other",
+     "closing": "2026-11-27T12:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176897.html"
+    }
+   ]
+  },
   "Catering": {
    "Western Cape": [
     {
@@ -46,43 +170,23 @@
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176844.html"
     }
-   ]
-  },
-  "Other": {
-   "KwaZulu-Natal": [
-    {
-     "id": "176817",
-     "title": "Land evaluator at KwaZulu Natal",
-     "official_title": "Provision of land evaluator at KwaZulu Natal",
-     "nationwide": false,
-     "hq": null,
-     "buyer": "Special Investigation Unit",
-     "province": "KwaZulu-Natal",
-     "trade": "Other",
-     "closing": "2026-11-09T12:00:00+02:00",
-     "closing_text": "Mon, 09 Nov 2026, 12:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "url": "https://tenderfind.co.za/tender/176817.html"
-    }
    ],
-   "National": [
+   "Northern Cape": [
     {
-     "id": "176897",
-     "title": "Replacement of the existing Avaya IP Telephony and Contact Centre Solution",
-     "official_title": "Appointment of Service Provider for the replacement of the existing Avaya IP Telephony and Contact Centre Solution",
+     "id": "176909",
+     "title": "Supply of IT equipment - laptops",
+     "official_title": "Supply and delivery of it equipment - laptops",
      "nationwide": false,
      "hq": null,
-     "buyer": "SASRIA",
-     "province": "National",
-     "trade": "Other",
-     "closing": "2026-11-27T12:00:00+02:00",
-     "closing_text": "Fri, 27 Nov 2026, 12:00",
+     "buyer": "Pixley Ka Seme District Municipality",
+     "province": "Northern Cape",
+     "trade": "IT",
+     "closing": "2026-11-11T12:00:00+02:00",
+     "closing_text": "Wed, 11 Nov 2026, 12:00",
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
-     "url": "https://tenderfind.co.za/tender/176897.html"
+     "url": "https://tenderfind.co.za/tender/176909.html"
     }
    ]
   },
@@ -191,6 +295,40 @@
      "url": "https://tenderfind.co.za/tender/176896.html"
     }
    ],
+   "Gauteng": [
+    {
+     "id": "gp-gt-gdh-036-2026",
+     "title": "The supply, delivery, installation, commissioning and maintenance of urology suites for Gauteng… (3 years)",
+     "official_title": "THE SUPPLY, DELIVERY, INSTALLATION, COMMISSIONING AND MAINTENANCE OF UROLOGY SUITES FOR GAUTENG DEPARTMENT OF HEALTH INSTITUTIONS. FOR A…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Gauteng - Health",
+     "province": "Gauteng",
+     "trade": "Construction",
+     "closing": "2026-11-13T11:00:00+02:00",
+     "closing_text": "Fri, 13 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · Fri, 30 Oct · 10:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/gp-gt-gdh-036-2026.html"
+    },
+    {
+     "id": "gp-gt-gdenv-026-2026",
+     "title": "The public private partnership opportunity for the financing, redevelopment, operation and maintenance…",
+     "official_title": "THE PUBLIC PRIVATE PARTNERSHIP OPPORTUNITY FOR THE FINANCING, REDEVELOPMENT, OPERATION AND MAINTENANCE OF THE CONCESSION AREAS IN THE…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Gauteng - Agriculture and Rural Development",
+     "province": "Gauteng",
+     "trade": "Construction",
+     "closing": "2026-11-23T11:00:00+02:00",
+     "closing_text": "Mon, 23 Nov 2026, 11:00",
+     "briefing": "Briefing · Wed, 16 Sept · 09:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/gp-gt-gdenv-026-2026.html"
+    }
+   ],
    "KwaZulu-Natal": [
     {
      "id": "176773",
@@ -263,8 +401,24 @@
   "Maintenance & repairs": {
    "Gauteng": [
     {
+     "id": "gp-gt-gdh-037-2026",
+     "title": "The supply, delivery, installation, commissioning and maintenance of nuclear medicine equipment… (3 years)",
+     "official_title": "THE SUPPLY, DELIVERY, INSTALLATION, COMMISSIONING AND MAINTENANCE OF NUCLEAR MEDICINE EQUIPMENT AT VARIOUS GAUTENG HEALTH INSTITUTIONS FOR…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Gauteng - Health",
+     "province": "Gauteng",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-11-13T11:00:00+02:00",
+     "closing_text": "Fri, 13 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · Fri, 30 Oct · 12:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/gp-gt-gdh-037-2026.html"
+    },
+    {
      "id": "176901",
-     "title": "Supply, service and emergency repairs of ethylene gas generators for the ripening centre of the tshwane market",
+     "title": "Supply, service and emergency repairs of ethylene gas generators for the ripening centre of the Tshwane market",
      "official_title": "Advertisement: appointment of a service provider for the supply, service and emergency repairs of ethylene gas generators for the ripening…",
      "nationwide": false,
      "hq": null,
@@ -331,26 +485,6 @@
      "compulsory_briefing": null,
      "cidb": null,
      "url": "https://tenderfind.co.za/tender/176842.html"
-    }
-   ]
-  },
-  "Cleaning": {
-   "Gauteng": [
-    {
-     "id": "176894",
-     "title": "Horticulture services at west rand various stations, depots and vacant land on an as and when… (24 months)",
-     "official_title": "Request for quotation (rfq) for the appointment of two service providers to provide horticulture services at west rand various stations…",
-     "nationwide": false,
-     "hq": null,
-     "buyer": "Passenger Rail Agency of South Africa",
-     "province": "Gauteng",
-     "trade": "Cleaning",
-     "closing": "2026-11-17T12:00:00+02:00",
-     "closing_text": "Tue, 17 Nov 2026, 12:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": "3SH",
-     "url": "https://tenderfind.co.za/tender/176894.html"
     }
    ]
   },

@@ -1814,40 +1814,6 @@
   },
   "extracted_at": "2026-10-31T11:12:05.858Z"
  },
- "176060": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "Advert C11-2026.pdf",
-    "pages": 38,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "csd_required": {
-    "value": true,
-    "source": "regex",
-    "snippet": "uld accompany your offer. • Bidders must be registered on CSD. Submit the CSD report and certified ID copy/copies of the company owner(s) as proof. • Supply municipal services (water, sanitation, rates, and electricity) clearance certificate or Lease Agr"
-   },
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T11:11:44.998Z"
- },
  "176064": {
   "status": "scanned",
   "docs": [
@@ -2182,40 +2148,6 @@
    }
   },
   "extracted_at": "2026-10-31T11:11:55.597Z"
- },
- "176086": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "RFQ047- A4 Printing Paper.pdf",
-    "pages": 33,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "csd_required": {
-    "value": true,
-    "source": "regex",
-    "snippet": "pliers or Register of Tender Defaulters. 4.1.3 Bidders CSD (Central Supplier Database) Report / Number 4.1.4 Valid B-BBEE Certificate (issued by a SANAS accredited entity) or duly completed and commissioned B-BBEE Affidavit ( for EME’s and QSE’s)"
-   },
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T10:27:38.367Z"
  },
  "176087": {
   "status": "scanned",
@@ -3189,39 +3121,6 @@
    }
   },
   "extracted_at": "2026-10-31T11:12:24.256Z"
- },
- "176139": {
-  "status": "scanned",
-  "docs": [
-   {
-    "title": "NTU 111 2026 2027.pdf",
-    "pages": 33,
-    "result": "scanned"
-   }
-  ],
-  "fields": {
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "csd_required": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T11:11:56.610Z"
  },
  "176140": {
   "status": "ok",
@@ -4981,40 +4880,6 @@
    }
   },
   "extracted_at": "2026-10-31T11:14:17.404Z"
- },
- "176201": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "QUOTE PACK.pdf",
-    "pages": 28,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "csd_required": {
-    "value": true,
-    "source": "regex",
-    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FRO"
-   },
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-10-31T11:14:02.713Z"
  },
  "176202": {
   "status": "no-pdf",
@@ -25064,5 +24929,269 @@
    }
   },
   "extracted_at": "2026-11-04T07:46:23.900Z"
+ },
+ "176909": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "RFQ 09 - 2026 -SUPPLY AND DELIVERY OF LAPTOPS.pdf",
+    "pages": 36,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T11:35:31.296Z"
+ },
+ "gp-hla-4-2-4-2026-03": {
+  "status": "ok",
+  "docs": [],
+  "extracted_at": "2026-11-04T11:35:28.246Z",
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-03",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "portal",
+    "snippet": "Briefing session: 03 November, 2026 11:00 AMCompulsory"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "location": {
+    "value": null,
+    "source": "not stated on the portal"
+   }
+  }
+ },
+ "gp-gt-gdh-036-2026": {
+  "status": "ok",
+  "docs": [],
+  "extracted_at": "2026-11-04T11:35:28.246Z",
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-10-30",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "portal",
+    "snippet": "Briefing session: 30 October, 2026 10:00 AMCompulsory"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "location": {
+    "value": null,
+    "source": "not stated on the portal"
+   }
+  }
+ },
+ "gp-gt-gdh-037-2026": {
+  "status": "ok",
+  "docs": [],
+  "extracted_at": "2026-11-04T11:35:28.246Z",
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-10-30",
+     "time": "12:00",
+     "venue": null
+    },
+    "source": "portal",
+    "snippet": "Briefing session: 30 October, 2026 12:00 PMCompulsory"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "location": {
+    "value": null,
+    "source": "not stated on the portal"
+   }
+  }
+ },
+ "gp-cogta-01-01-2026": {
+  "status": "ok",
+  "docs": [],
+  "extracted_at": "2026-11-04T11:35:28.246Z",
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-10-26",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "portal",
+    "snippet": "Briefing session: 26 October, 2026 11:00 AMCompulsory"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "location": {
+    "value": null,
+    "source": "not stated on the portal"
+   }
+  }
+ },
+ "gp-drt-09-09-2026": {
+  "status": "ok",
+  "docs": [],
+  "extracted_at": "2026-11-04T11:35:28.246Z",
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-10-23",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "portal",
+    "snippet": "Briefing session: 23 October, 2026 10:00 AMCompulsory"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "location": {
+    "value": null,
+    "source": "not stated on the portal"
+   }
+  }
+ },
+ "gp-gt-gpt-033-2026": {
+  "status": "ok",
+  "docs": [],
+  "extracted_at": "2026-11-04T11:35:28.246Z",
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": "2026-10-19",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "portal",
+    "snippet": "Briefing session: 19 October, 2026 11:00 AM"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "location": {
+    "value": null,
+    "source": "not stated on the portal"
+   }
+  }
+ },
+ "gp-gt-gdenv-026-2026": {
+  "status": "ok",
+  "docs": [],
+  "extracted_at": "2026-11-04T11:35:28.246Z",
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": "2026-09-16",
+     "time": "09:00",
+     "venue": null
+    },
+    "source": "portal",
+    "snippet": "Briefing session: 16 September, 2026 09:00 AM"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not stated on the portal"
+   },
+   "location": {
+    "value": null,
+    "source": "not stated on the portal"
+   }
+  }
  }
 }
