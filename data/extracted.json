@@ -24948,5 +24948,121 @@
    }
   },
   "extracted_at": "2026-11-04T02:48:21.306Z"
+ },
+ "176906": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "COMBINED ADVERT- MUNICIPAL STORES.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "ER CLOSING DATE COMPULSORY BRIEFING SESSION DOCUMENT PRICE PPPFA ENQUIRIES APPOINTMENT OF A PROFESSIONAL CIVIL & STRUCTURAL ENGINEERING CONSULTING FOR THE CONSTRUCTION OF MUNICIPAL STORES SCM19/10/2026 19 NOVEMBER 2026 06 NOVEMBER 2026 Address: Budget and Treasury Office, 25-27 Owen Street, K"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T07:46:23.937Z"
+ },
+ "176907": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "COMBINED ADVERT- RIPLE CONTROL.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "ER CLOSING DATE COMPULSORY BRIEFING SESSION DOCUMENT PRICE PPPFA ENQUIRIES APPOINTMENT OF A PROFESSIONAL CIVIL & STRUCTURAL ENGINEERING CONSULTING FOR THE CONSTRUCTION OF MUNICIPAL STORES SCM19/10/2026 19 NOVEMBER 2026 06 NOVEMBER 2026 Address: Budget and Treasury Office, 25-27 Owen Street, K"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T07:46:23.936Z"
+ },
+ "176908": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "Request for quote of catering 14 and 15 November 2026 IM2262026.pdf",
+    "pages": 6,
+    "result": "scanned"
+   },
+   {
+    "title": "New SBD 4 Declaration form effect from 01 August 2026.pdf",
+    "pages": 3,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T07:46:23.900Z"
  }
 }
