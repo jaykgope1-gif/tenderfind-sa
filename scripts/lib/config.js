@@ -8,7 +8,7 @@ module.exports = {
   OPERATOR: {
     name: "Jay Kgope",
     location: "Pretoria, South Africa",
-    email: "jobkgope1@gmail.com",
+    email: "info@tenderfind.co.za", // Zoho Mail (free), set up 2026-11-04. Alerts still send from the Gmail in n8n.
     whatsapp: "27692898507", // international format, e.g. "27821234567". Also powers "WhatsApp us to subscribe" on /pricing.
     // Supplier details the ECT Act (section 43) requires on the Terms page. null shows "available on request"
     // and the build prints a reminder; fill them in as soon as you have them.

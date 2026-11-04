@@ -39,7 +39,7 @@
       })
       .catch(function () {
         button.disabled = false;
-        msg.textContent = "Sorry, that didn’t go through. Please try again, or email jobkgope1@gmail.com.";
+        msg.textContent = "Sorry, that didn’t go through. Please try again, or email info@tenderfind.co.za.";
       });
   });
 })();
