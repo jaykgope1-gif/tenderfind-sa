@@ -1,5 +1,5 @@
 // Sign-up box: the Tally form (about 300KB) only loads when someone taps the button,
-// so pages stay light on 3G. Submissions go to Tally, which forwards them to the Google Sheet.
+// so pages stay light on 3G. Tally sends each submission to the n8n sign-ups workflow.
 (function () {
   var FORM_ID = "EqKWVX"; // https://tally.so/r/EqKWVX
 
@@ -22,8 +22,9 @@
     btn.hidden = true;
     wrap.hidden = false;
     if (frame.dataset.tallySrc) return;
-    // "page" is a hidden field in the form: which page the person signed up from.
-    var url = "https://tally.so/embed/" + FORM_ID + "?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&page=" + encodeURIComponent(location.pathname);
+    // Hidden fields in the form: "page" (where they signed up) and "ref" (who sent them, from ?ref= on the link).
+    var ref = (location.search.match(/[?&]ref=([^&#]*)/) || [])[1] || "";
+    var url = "https://tally.so/embed/" + FORM_ID + "?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&page=" + encodeURIComponent(location.pathname) + (ref ? "&ref=" + ref : "");
     frame.dataset.tallySrc = url;
     loadTally(function () {
       if (window.Tally) window.Tally.loadEmbeds();

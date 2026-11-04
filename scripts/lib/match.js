@@ -163,7 +163,7 @@ function emailMessage(sub, today, fresh, soon) {
     "Always read the tender documents before you bid.",
     "",
     "--",
-    "TenderFind SA: every SA government tender, in plain English.",
+    "TenderFind SA, Pretoria: new government tenders for your trade, every morning.",
     UNSUBSCRIBE_TEXT,
   ].join("\n");
   const html = `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.45;color:#16191a;max-width:560px">` +
@@ -171,7 +171,7 @@ function emailMessage(sub, today, fresh, soon) {
     sections.map((s) => `<h3 style="font-size:15px;margin:18px 0 8px">${escHtml(s.heading)}</h3>${s.items.map((i) => i.html).join("")}${s.footHtml ? `<p>${s.footHtml}</p>` : ""}`).join("") +
     `<p style="color:#545b5e">Always read the tender documents before you bid.</p>` +
     `<hr style="border:0;border-top:1px solid #d9ddd7;margin:18px 0">` +
-    `<p style="font-size:12px;color:#545b5e"><a href="${MATCH.SITE}/" style="color:#545b5e">TenderFind SA</a>: every SA government tender, in plain English.<br>${unsubscribeHtml()}</p></div>`;
+    `<p style="font-size:12px;color:#545b5e"><a href="${MATCH.SITE}/" style="color:#545b5e">TenderFind SA</a>, Pretoria: new government tenders for your trade, every morning. <a href="${MATCH.SITE}/terms.html" style="color:#545b5e">Terms</a> · <a href="${MATCH.SITE}/privacy.html" style="color:#545b5e">Privacy</a><br>${unsubscribeHtml()}</p></div>`;
   return { subject, text, html };
 }
 

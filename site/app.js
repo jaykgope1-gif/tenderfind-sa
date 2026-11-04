@@ -2,7 +2,7 @@
 (function () {
   const { esc, shortDate, closingText, countdown, detailHtml, ymd } = window.TF;
 
-  const TRADES = ["Cleaning", "Security", "Construction", "Maintenance & repairs", "Catering", "IT", "Transport", "Supplies", "Professional services", "Other"];
+  const TRADES = ["Cleaning", "Security", "Construction", "Maintenance & repairs", "Catering", "IT", "Transport", "Supplies", "Professional services", "Other", "Sales & auctions"];
   const PAGE = 30;
   const NEW_DAYS = 3;
   const CONTACT_WHATSAPP = "27692898507"; // business WhatsApp, international format (also in scripts/lib/config.js)
@@ -263,6 +263,32 @@
     }
   }
 
+  // ---------- home page proof: this week's count and a sample morning email from real tenders ----------
+
+  function showProof() {
+    const week = all.filter((t) => t.pu && -daysUntil(t.pu) < 7 && daysUntil(t.c) >= 0);
+    const focus = week.filter((t) => t.p === "Gauteng" && (t.tr === "Cleaning" || t.tr === "Security"));
+    const weekEl = $("week");
+    if (weekEl && week.length) {
+      weekEl.textContent = `This week: ${week.length} new government tenders` + (focus.length ? `, including ${focus.length} for cleaning and security in Gauteng.` : ".");
+      weekEl.hidden = false;
+    }
+    const box = $("sample-box");
+    if (!box) return;
+    // Prefer what a Gauteng cleaning or security company would get; fall back to any Gauteng tenders, then any.
+    const gp = week.filter((t) => t.p === "Gauteng" && t.tr !== "Sales & auctions");
+    const pickFrom = focus.length >= 2 ? focus : gp.length >= 2 ? gp : week.filter((t) => t.tr !== "Sales & auctions");
+    const picks = pickFrom.slice().sort((a, b) => (b.pu || "").localeCompare(a.pu || "")).slice(0, 3);
+    if (!picks.length) return;
+    const who = pickFrom === focus ? "a cleaning or security company in Gauteng" : pickFrom === gp ? "a business in Gauteng" : "a business like yours";
+    $("sample-note").textContent = `A real example: tenders published this week that would have gone to ${who}.`;
+    $("sample").innerHTML = `<p class="em-from"><b>TenderFind SA</b> · ${picks.length} new tender${picks.length === 1 ? "" : "s"} for you</p>
+      <p>Good morning,</p><h3>New today (${picks.length})</h3>` +
+      picks.map((t) => `<p class="em-item"><b>${esc(t.t)}</b><br>${esc(t.b || "Buyer not stated")}<br>Closes ${esc(closingText(t.c))}${t.bc === true ? "<br><b>Compulsory briefing</b>" : ""}<br><a href="tender/${esc(t.id)}.html">View tender</a></p>`).join("") +
+      `<p class="em-foot">Always read the tender documents before you bid. Unsubscribe any time.</p>`;
+    box.hidden = false;
+  }
+
   async function init() {
     bind();
     try {
@@ -271,6 +297,7 @@
       const data = await res.json();
       all = data.tenders;
       el.updated.textContent = `Updated ${closingText(data.updated)}.`;
+      showProof();
       setupFilters();
       fromQuery();
       render();

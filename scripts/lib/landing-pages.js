@@ -58,7 +58,7 @@ function landingPages(open, siteUrl, now) {
         siteUrl, file,
         title: `${trade} tenders in ${p}`,
         h1: `${trade} tenders in ${p}`,
-        intro: `${list.length} open government ${lower(trade)} tender${list.length === 1 ? "" : "s"} in ${esc(p)} on ${day}, from National Treasury's eTenders. Plain-English summaries, closing dates and briefing sessions. Updated every morning.`,
+        intro: `${list.length} open government ${lower(trade)} tender${list.length === 1 ? "" : "s"} in ${esc(p)} on ${day}, from National Treasury's eTenders, each with a one-line summary, closing date and any briefing session. Updated every morning.`,
         sections: [
           { heading: `Open in ${p}`, list: list.slice(0, MAX_LIST), more: list.length > MAX_LIST ? `<p><a class="btn wide" href="../?trade=${encodeURIComponent(trade)}&amp;province=${encodeURIComponent(p)}">See all ${list.length}</a></p>` : "" },
           ...(national.length ? [{ heading: `National ${lower(trade)} tenders (open to ${p} businesses too)`, list: national.slice(0, MAX_NATIONAL) }] : []),
@@ -83,7 +83,7 @@ function landingPages(open, siteUrl, now) {
   }
 
   const body = `<h1 class="page-h">Government tenders by trade and province</h1>
-<p class="lede">Every open South African government tender from National Treasury's eTenders, grouped by trade and province. Updated every morning (${esc(day)}).</p>
+<p class="lede">All open tenders on National Treasury's eTenders, grouped by trade and province. Updated every morning (${esc(day)}).</p>
 ${index.map((i) => `<section class="card"><h2><a href="${esc(tradeFile(i.trade))}">${esc(i.trade)} tenders</a> <small>(${i.total})</small></h2>
 <p>${i.combos.map((c) => `<a href="${esc(comboFile(i.trade, c.p))}">${esc(c.p)} (${c.list.length})</a>`).join(" · ") || "National only"}</p></section>`).join("\n")}`;
   out.push({ file: "index.html", html: shell({

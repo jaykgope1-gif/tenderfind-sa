@@ -54,7 +54,7 @@
     return { text, soon: days <= 3, closed: false };
   }
 
-  // Plain-English summary, built only from stated facts.
+  // The tender's details, built only from stated facts.
   function detailHtml(d) {
     const docUrl = d.documents[0]?.url;
     // Evidence snippets start at an arbitrary character; begin at the next whole word.
@@ -81,7 +81,7 @@
       <dt>Briefing session</dt><dd>${fieldHtml(d.briefing, docUrl, briefingText)}${why(d.briefing)}</dd>
       ${reqs.map(([label, f, fmt]) => `<dt>${label}</dt><dd>${fieldHtml(f, docUrl, fmt)}${why(f)}</dd>`).join("")}
       <dt>Tender documents</dt><dd>${docs}</dd>
-      <dt>Official record</dt><dd><a href="${esc(d.source)}" target="_blank" rel="nofollow noopener">National Treasury eTenders data</a></dd>
+      <dt>Check it on eTenders</dt><dd>${d.reference ? `Search for <b>${esc(d.reference)}</b> on ` : ""}<a href="https://www.etenders.gov.za/" target="_blank" rel="noopener">etenders.gov.za</a>, the official portal</dd>
     </dl>`;
   }
 

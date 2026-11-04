@@ -10,6 +10,11 @@ module.exports = {
     location: "Pretoria, South Africa",
     email: "jobkgope1@gmail.com",
     whatsapp: "27692898507", // international format, e.g. "27821234567". Also powers "WhatsApp us to subscribe" on /pricing.
+    // Supplier details the ECT Act (section 43) requires on the Terms page. null shows "available on request"
+    // and the build prints a reminder; fill them in as soon as you have them.
+    legalStatus: "a sole proprietor (not a registered company)", // or e.g. "TenderFind SA (Pty) Ltd, registration number 2026/123456/07"
+    address: null, // full physical address for legal notices, e.g. "12 Example Street, Hatfield, Pretoria, 0083"
+    vatRegistered: false, // true once registered for VAT; prices then say "including VAT"
   },
 
   // Shown on /pricing and in the sign-up box. The trial length must match TRIAL_DAYS in scripts/lib/match.js.

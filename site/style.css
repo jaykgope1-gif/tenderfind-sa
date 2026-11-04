@@ -188,3 +188,32 @@ select {
 .help-tender { background: var(--tag); padding: 8px 10px; border-radius: 8px; margin: 0 0 10px; }
 .form-msg { color: var(--soon); min-height: 1em; margin: 6px 0 0; }
 .help-link { border-top: 1px solid var(--line); margin: 14px 0 0; padding-top: 12px; }
+
+/* Home page: headline, proof and sign-up first; search below */
+.top-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.topnav { display: flex; gap: 14px; font-size: 0.95rem; }
+.topnav a { text-decoration: none; font-weight: 600; opacity: 0.95; }
+.hero { padding: 22px 0 6px; }
+.hero h1 { font-size: 1.75rem; line-height: 1.2; margin: 0 0 10px; letter-spacing: -0.01em; }
+.hero-sub { font-size: 1.05rem; color: var(--muted); margin: 0 0 10px; }
+.week { font-weight: 700; color: var(--brand); margin: 0 0 4px; }
+.btn.big { font-size: 1.1rem; padding: 14px 16px; }
+.sample-box { margin: 24px 0 8px; }
+.sample-box h2 { font-size: 1.15rem; margin: 0 0 2px; }
+.sample-note { color: var(--muted); margin: 0 0 10px; font-size: 0.95rem; }
+.email-sample { background: #fff; color: #16191a; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; font-family: Arial, sans-serif; font-size: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+.email-sample h3 { font-size: 15px; margin: 14px 0 8px; }
+.email-sample .em-from { margin: 0 0 10px; padding-bottom: 8px; border-bottom: 1px solid #d9ddd7; color: #545b5e; font-size: 14px; }
+.email-sample .em-item { margin: 0 0 14px; }
+.email-sample a { color: #0b5d3b; font-weight: 700; }
+.email-sample .em-foot { color: #545b5e; font-size: 13px; margin: 8px 0 0; }
+#search { margin-top: 28px; }
+.bottom-cta { margin: 24px 0 8px; }
+.bottom-cta .btn { text-align: center; text-decoration: none; display: block; }
+@media (min-width: 720px) { .hero h1 { font-size: 2.1rem; } }
+
+/* Terms page: supplier details */
+.facts { display: grid; grid-template-columns: minmax(8rem, 14rem) 1fr; gap: .35rem 1rem; margin: 0 0 1rem; }
+.facts dt { font-weight: 600; }
+.facts dd { margin: 0; }
+@media (max-width: 520px) { .facts { grid-template-columns: 1fr; } .facts dd { margin-bottom: .5rem; } }

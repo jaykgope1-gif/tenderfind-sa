@@ -8,7 +8,7 @@
 //   site/data/t/<id>.json       full detail per tender, fetched when someone taps "View"
 //   site/tender/<id>.html       a page per tender, open or closed within the last year (data/archive)
 //   site/tenders/*.html         trade and province pages for Google ("Cleaning tenders in Gauteng")
-//   site/about.html, site/privacy.html, site/pricing.html, site/help.html, site/registration-help.html,
+//   site/about.html, site/privacy.html, site/terms.html, site/pricing.html, site/help.html, site/registration-help.html,
 //   site/sitemap.xml, site/robots.txt, site/404.html
 // Read-only on data/extracted.json, so it is safe to run while extraction is in progress.
 const fs = require("fs");
@@ -23,7 +23,7 @@ const SITE = path.join(ROOT, "site");
 const OUT = path.join(SITE, "data");
 const PAGES = path.join(SITE, "tender");
 const { SITE_URL } = require("./lib/config");
-const { aboutPage, privacyPage, pricingPage, helpPage, registrationHelpPage } = require("./lib/info-pages");
+const { aboutPage, privacyPage, pricingPage, helpPage, registrationHelpPage, termsPage } = require("./lib/info-pages");
 const { landingPages } = require("./lib/landing-pages");
 
 function arg(name) {
@@ -149,7 +149,7 @@ function writePages(open, stored, now) {
   for (const p of landing) fs.writeFileSync(path.join(LANDING, p.file), p.html);
 
   const today = now.toISOString().slice(0, 10);
-  const extra = ["help.html", "registration-help.html", ...landing.map((p) => (p.file === "index.html" ? "tenders/" : `tenders/${p.file}`))];
+  const extra = ["help.html", "registration-help.html", "terms.html", ...landing.map((p) => (p.file === "index.html" ? "tenders/" : `tenders/${p.file}`))];
   fs.writeFileSync(path.join(SITE, "sitemap.xml"), pages.sitemap(SITE_URL, listed, today, extra));
   fs.writeFileSync(path.join(SITE, "robots.txt"), pages.robots(SITE_URL));
   fs.writeFileSync(path.join(SITE, "404.html"), pages.notFound(SITE_URL));
@@ -158,6 +158,9 @@ function writePages(open, stored, now) {
   fs.writeFileSync(path.join(SITE, "pricing.html"), pricingPage(SITE_URL));
   fs.writeFileSync(path.join(SITE, "help.html"), helpPage(SITE_URL));
   fs.writeFileSync(path.join(SITE, "registration-help.html"), registrationHelpPage(SITE_URL));
+  fs.writeFileSync(path.join(SITE, "terms.html"), termsPage(SITE_URL));
+  const { OPERATOR } = require("./lib/config");
+  if (!OPERATOR.address) console.log("Reminder: add your physical address to OPERATOR.address in scripts/lib/config.js (the ECT Act requires it on the Terms page).");
   console.log(`Pages: ${open.length} open + ${closedById.size} closed tender pages, ${landing.length} trade/province pages, sitemap with ${listed.length + 4 + extra.length} URLs`);
 }
 

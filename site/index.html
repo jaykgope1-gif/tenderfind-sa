@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TenderFind SA — every SA government tender, in plain English</title>
-  <meta name="description" content="Search open South African government tenders by trade and province. Closing dates, briefing sessions and CIDB grades in plain English, with one-tap WhatsApp sharing.">
+  <title>TenderFind SA — new government tenders for your trade, every morning</title>
+  <meta name="description" content="We check National Treasury's eTenders every day and email you only the new government tenders for your trade and province, with a one-line summary and closing date. Free for 14 days.">
   <meta name="theme-color" content="#0b5d3b">
   <meta name="google-site-verification" content="N_6Mpf9J6rYFcjEUYIkM_PYoPnT3K0StglE3MTaSzys">
   <link rel="canonical" href="https://tenderfind.co.za/">
   <meta property="og:site_name" content="TenderFind SA">
-  <meta property="og:title" content="TenderFind SA — every SA government tender, in plain English">
-  <meta property="og:description" content="Search open South African government tenders by trade and province, in plain English.">
+  <meta property="og:title" content="TenderFind SA — new government tenders for your trade, every morning">
+  <meta property="og:description" content="Government tenders for your trade and province, emailed every morning. Free for 14 days.">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebSite","name":"TenderFind SA","alternateName":"TenderFind","url":"https://tenderfind.co.za/"}
   </script>
@@ -19,17 +19,42 @@
 </head>
 <body>
   <header class="top">
-    <div class="wrap">
+    <div class="wrap top-row">
       <a class="brand" href="./">TenderFind <span>SA</span></a>
-      <p class="promise">Every SA government tender, in plain English, on your phone. <a href="#signup">Get tender alerts by email</a></p>
-      <form class="search" role="search" onsubmit="return false">
-        <label class="sr" for="q">Search tenders</label>
-        <input id="q" type="search" placeholder="Search e.g. cleaning, Polokwane, security" autocomplete="off" enterkeyhint="search">
-      </form>
+      <nav class="topnav" aria-label="Main"><a href="#search">Search tenders</a><a href="pricing.html">Pricing</a></nav>
     </div>
   </header>
 
   <main class="wrap">
+    <!-- What we do, in five seconds: headline, proof from this week's data, and the sign-up button. -->
+    <section class="hero" aria-labelledby="hero-h">
+      <h1 id="hero-h">New government tenders for your trade, in your inbox every morning</h1>
+      <p class="hero-sub">We check National Treasury’s eTenders every day and email you only the tenders that fit your trade and province: a one-line summary, who is buying, the closing date and any compulsory briefing.</p>
+      <p class="week" id="week" hidden></p>
+
+      <!-- Same sign-up box as signupHtml() in scripts/lib/pages.js -->
+      <section class="signup" id="signup" aria-labelledby="signup-h">
+        <h2 id="signup-h">Start your free 14-day trial</h2>
+        <p>4 quick questions. No card needed. Then R149 a month (or R1,490 a year), only if you want to keep it.</p>
+        <button class="btn wa wide big" type="button" data-signup>Get my tender alerts</button>
+        <div class="signup-form" hidden><iframe title="Sign up for tender alerts" width="100%" height="720" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
+        <noscript><p><a href="https://tally.so/r/EqKWVX">Open the sign-up form</a></p></noscript>
+      </section>
+    </section>
+
+    <!-- A real example of the morning email, built from this week's tenders by app.js. -->
+    <section class="sample-box" id="sample-box" aria-labelledby="sample-h" hidden>
+      <h2 id="sample-h">What the morning email looks like</h2>
+      <p class="sample-note" id="sample-note"></p>
+      <div class="email-sample" id="sample"></div>
+    </section>
+
+    <h2 class="page-h" id="search">Search all open tenders</h2>
+    <form class="search" role="search" onsubmit="return false">
+      <label class="sr" for="q">Search tenders</label>
+      <input id="q" type="search" placeholder="Search e.g. cleaning, Polokwane, security" autocomplete="off" enterkeyhint="search">
+    </form>
+
     <section class="filters" aria-label="Filters">
       <div class="chips" id="trades" role="group" aria-label="Trade"></div>
       <div class="row">
@@ -71,20 +96,13 @@
     <ol id="results" class="results"></ol>
     <button id="more" class="btn wide" hidden>Show more tenders</button>
 
-    <!-- Same markup as signupHtml() in scripts/lib/pages.js -->
-    <section class="signup" id="signup" aria-labelledby="signup-h">
-      <h2 id="signup-h">Get tenders for your trade by email every morning</h2>
-      <p>Free for 14 days, then R149 a month (or R1,490 a year, 2 months free). Pick your trade and province and we’ll email you the new tenders each morning. WhatsApp alerts are coming soon. <a href="pricing.html">See pricing</a></p>
-      <button class="btn wa wide" type="button" data-signup>Start my 14-day free trial</button>
-      <div class="signup-form" hidden><iframe title="Sign up for tender alerts" width="100%" height="1150" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
-      <noscript><p><a href="https://tally.so/r/EqKWVX">Open the sign-up form</a></p></noscript>
-    </section>
+    <p class="bottom-cta"><a class="btn wa wide" href="#signup">Get these tenders by email every morning: free for 14 days</a></p>
   </main>
 
   <footer class="foot">
     <div class="wrap">
-      <p>Data from National Treasury eTenders (public domain). Always confirm details on the official portal before bidding.</p>
-      <p class="links"><a href="pricing.html">Pricing</a> · <a href="about.html">About</a> · <a href="privacy.html">Privacy</a> · <a href="mailto:jobkgope1@gmail.com">Contact</a></p>
+      <p>Tenders from National Treasury’s eTenders (public information). TenderFind SA is independent and doesn’t sell tenders. Always confirm details in the official documents before bidding.</p>
+      <p class="links"><a href="./">Search tenders</a> · <a href="tenders/">Tenders by trade</a> · <a href="pricing.html">Pricing</a> · <a href="registration-help.html">CSD &amp; CIDB help</a> · <a href="about.html">About</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="mailto:jobkgope1@gmail.com">Contact</a></p>
       <p id="contact" hidden><a id="contact-link" href="#">Questions? Chat to us on WhatsApp</a></p>
       <p class="updated" id="updated"></p>
     </div>

@@ -4,15 +4,15 @@ const { OPERATOR } = require("./config");
 const { esc, detailHtml, closingText, countdown, briefingText, NOT_STATED } = require("./display");
 
 const BRAND = "TenderFind SA";
-const PROMISE = "Every SA government tender, in plain English, on your phone.";
+const PROMISE = "New government tenders for your trade, emailed every morning.";
 const DISCLAIMER = "Data from National Treasury eTenders (public domain). Always confirm details on the official portal before bidding.";
 
 // The sign-up box shown on every page (site/index.html has the same markup). site/signup.js loads the form on tap.
 const signupHtml = (root) => `<section class="signup" id="signup" aria-labelledby="signup-h">
 <h2 id="signup-h">Get tenders for your trade by email every morning</h2>
-<p>Free for 14 days, then R149 a month (or R1,490 a year, 2 months free). Pick your trade and province and we’ll email you the new tenders each morning. WhatsApp alerts are coming soon. <a href="${root}pricing.html">See pricing</a></p>
+<p>4 quick questions. No card needed. Free for 14 days, then R149 a month (or R1,490 a year), only if you want to keep it. <a href="${root}pricing.html">See pricing</a></p>
 <button class="btn wa wide" type="button" data-signup>Start my 14-day free trial</button>
-<div class="signup-form" hidden><iframe title="Sign up for tender alerts" width="100%" height="1150" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
+<div class="signup-form" hidden><iframe title="Sign up for tender alerts" width="100%" height="720" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
 <noscript><p><a href="https://tally.so/r/EqKWVX">Open the sign-up form</a></p></noscript>
 </section>`;
 
@@ -78,7 +78,7 @@ ${signup ? signupHtml(root) : ""}
 </main>
 <footer class="foot"><div class="wrap">
 <p>${esc(DISCLAIMER)}</p>
-<p class="links"><a href="${root}">Search tenders</a> · <a href="${root}tenders/">Tenders by trade</a> · <a href="${root}pricing.html">Pricing</a> · <a href="${root}registration-help.html">CSD &amp; CIDB help</a> ·<a href="${root}about.html">About</a> · <a href="${root}privacy.html">Privacy</a>${OPERATOR.email ? ` · <a href="mailto:${esc(OPERATOR.email)}">Contact</a>` : ""}</p>
+<p class="links"><a href="${root}">Search tenders</a> · <a href="${root}tenders/">Tenders by trade</a> · <a href="${root}pricing.html">Pricing</a> · <a href="${root}registration-help.html">CSD &amp; CIDB help</a> · <a href="${root}about.html">About</a> · <a href="${root}terms.html">Terms</a> · <a href="${root}privacy.html">Privacy</a>${OPERATOR.email ? ` · <a href="mailto:${esc(OPERATOR.email)}">Contact</a>` : ""}</p>
 </div></footer>
 ${signup ? `<script src="${root}signup.js" defer></script>
 ` : ""}${script}</body>
@@ -123,7 +123,7 @@ function tenderPage(t, { siteUrl, closed, similarList }) {
 <dt>What they wanted</dt><dd>${esc(t.description || NOT_STATED)}</dd>
 <dt>Who was buying</dt><dd>${esc(t.buyer || NOT_STATED)}${t.type ? ` · ${esc(t.type)}` : ""}${t.reference ? ` · Ref ${esc(t.reference)}` : ""}</dd>
 <dt>Closed</dt><dd>${esc(closingText(t.closing))}</dd>
-<dt>Official record</dt><dd><a href="${esc(t.source)}" target="_blank" rel="nofollow noopener">National Treasury eTenders data</a></dd>
+<dt>Check it on eTenders</dt><dd>${t.reference ? `Search for <b>${esc(t.reference)}</b> on ` : ""}<a href="https://www.etenders.gov.za/" target="_blank" rel="noopener">etenders.gov.za</a>, the official portal</dd>
 </dl></div>`
     : `<div class="detail">${detailHtml(t)}</div>`;
 
