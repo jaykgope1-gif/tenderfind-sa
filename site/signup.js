@@ -26,6 +26,13 @@
     var ref = (location.search.match(/[?&]ref=([^&#]*)/) || [])[1] || "";
     var url = "https://tally.so/embed/" + FORM_ID + "?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&page=" + encodeURIComponent(location.pathname) + (ref ? "&ref=" + ref : "");
     frame.dataset.tallySrc = url;
+    // Slow or blocked connection: after 8 seconds, offer the form on its own page as well.
+    var loaded = false;
+    frame.addEventListener("load", function () { if (frame.src) loaded = true; });
+    setTimeout(function () {
+      var fb = box.querySelector(".signup-fallback");
+      if (!loaded && fb) fb.hidden = false;
+    }, 8000);
     loadTally(function () {
       if (window.Tally) window.Tally.loadEmbeds();
       else frame.src = url; // embed script blocked: plain iframe still works, just a fixed height

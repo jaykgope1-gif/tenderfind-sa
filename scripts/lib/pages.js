@@ -5,16 +5,35 @@ const { esc, detailHtml, closingText, countdown, briefingText, NOT_STATED } = re
 
 const BRAND = "TenderFind SA";
 const PROMISE = "New government tenders for your trade, emailed every morning.";
-const DISCLAIMER = "Data from National Treasury eTenders (public domain). Always confirm details on the official portal before bidding.";
+const DISCLAIMER = "Tenders from National Treasury’s eTenders and the Gauteng e-Tender portal (public information). Always confirm details in the official documents before bidding.";
 
-// The sign-up box shown on every page (site/index.html has the same markup). site/signup.js loads the form on tap.
+// Shared pieces of every page. site/index.html has the same header, footer and sign-up box (with on-page links).
+const icon = (root, id, cls = "icon") => `<svg class="${cls}" aria-hidden="true"><use href="${root}icons.svg#${id}"/></svg>`;
+const MARK = (bg, sheet, lines) => `<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="${bg}"/><g transform="rotate(-4 16 18)"><rect x="8.5" y="9.5" width="15" height="16" rx="1" fill="${sheet}"/><path d="M11.5 15h9M11.5 18.5h9M11.5 22h5.5" stroke="${lines}" stroke-width="1.7" stroke-linecap="round"/></g><circle cx="16" cy="9.5" r="3" fill="#f3c744" stroke="#16191a" stroke-width="1.2"/></svg>`;
+
+// The sign-up box. site/signup.js loads the Tally form on tap.
 const signupHtml = (root) => `<section class="signup" id="signup" aria-labelledby="signup-h">
-<h2 id="signup-h">Get tenders for your trade by email every morning</h2>
-<p>4 quick questions. No card needed. Free for 14 days, then R149 a month (or R1,490 a year), only if you want to keep it. <a href="${root}pricing.html">See pricing</a></p>
-<button class="btn wa wide" type="button" data-signup>Start my 14-day free trial</button>
+<h2 id="signup-h">Get tenders like this by email every morning</h2>
+<p>Four quick questions. No card needed. After 14 days it’s R149 a month (or R1,490 a year), or stop. <a href="${root}pricing.html">See the price</a></p>
+<button class="btn primary wide big" type="button" data-signup>Try it free for 14 days ${icon(root, "go", "icon icon-go")}</button>
 <div class="signup-form" hidden><iframe title="Sign up for tender alerts" width="100%" height="720" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
+<p class="signup-fallback" hidden>The form is taking a while. <a href="https://tally.so/r/EqKWVX">Open the sign-up form in a new page</a>.</p>
 <noscript><p><a href="https://tally.so/r/EqKWVX">Open the sign-up form</a></p></noscript>
 </section>`;
+
+const headerHtml = (root, cta) => `<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="container head-row">
+<a class="brand" href="${root}" aria-label="TenderFind SA home">${MARK("#1d4a37", "#faf8f3", "#1d4a37")}TenderFind <b>SA</b></a>
+<nav class="nav" aria-label="Main"><a href="${root}#board">This week’s tenders</a><a href="${root}#search">Search</a><a href="${root}tenders/">By trade</a><a href="${root}pricing.html">Price</a></nav>
+<a class="btn primary head-cta" href="${cta}" data-signup-jump>Try it free</a>
+</div></header>`;
+const footerHtml = (root) => `<footer class="site-foot"><div class="container foot-grid">
+<div><a class="brand" href="${root}" aria-label="TenderFind SA home">${MARK("#faf8f3", "#1d4a37", "#faf8f3")}TenderFind <b>SA</b></a>
+<p>Government tenders for your trade, emailed every weekday morning. Run by ${esc(OPERATOR.name || "an independent operator")} in Pretoria.</p>
+<p class="foot-note">${esc(DISCLAIMER)} TenderFind SA is independent and doesn’t sell tenders.</p></div>
+<div><h3>Tenders</h3><ul><li><a href="${root}#search">Search tenders</a></li><li><a href="${root}tenders/">Tenders by trade</a></li><li><a href="${root}pricing.html">Price</a></li><li><a href="${root}help.html">Bid Help</a></li><li><a href="${root}registration-help.html">CSD &amp; CIDB help</a></li></ul></div>
+<div><h3>TenderFind</h3><ul><li><a href="${root}about.html">About</a></li>${OPERATOR.email ? `<li><a href="mailto:${esc(OPERATOR.email)}">${esc(OPERATOR.email)}</a></li>` : ""}<li><a href="${root}terms.html">Terms &amp; refunds</a></li><li><a href="${root}privacy.html">Privacy</a></li></ul></div>
+</div><div class="container foot-base"><p>© ${new Date().getFullYear()} TenderFind SA · Pretoria</p></div></footer>`;
 
 const cut = (s, max) => (s.length <= max ? s : s.slice(0, s.lastIndexOf(" ", max - 1)).replace(/[\s,;:.(–-]+$/, "") + "…");
 const place = (t) => t.location?.value || t.province?.value || null;
@@ -53,33 +72,45 @@ function whatsappText(t, url) {
   return lines.join("\n");
 }
 
-function shell({ title, description, canonical, body, root, extraHead = "", script = "", signup = true }) {
+function shell({ title, description, canonical, body, root, extraHead = "", script = "", signup = true, image = "img/share.jpg" }) {
+  const cta = signup ? "#signup" : `${root}#signup`;
   return `<!doctype html>
 <html lang="en-ZA">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
-${canonical ? `<link rel="canonical" href="${esc(canonical)}">\n<meta property="og:url" content="${esc(canonical)}">\n` : ""}<meta property="og:site_name" content="${BRAND}">
+${canonical ? `<link rel="canonical" href="${esc(canonical)}">
+<meta property="og:url" content="${esc(canonical)}">
+` : ""}<meta name="theme-color" content="#1d4a37">
+<link rel="icon" href="${root}favicon.svg" type="image/svg+xml">
+<link rel="icon" href="${root}favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="${root}apple-touch-icon.png">
+<link rel="manifest" href="${root}site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="${BRAND}">
+<meta property="og:locale" content="en_ZA">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
-<meta name="theme-color" content="#0b5d3b">
+<meta property="og:image" content="https://tenderfind.co.za/${image}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="${root}fonts/fraunces-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="${root}fonts/public-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="${root}fonts/public-sans-800.woff2" as="font" type="font/woff2" crossorigin>
 ${extraHead}<link rel="stylesheet" href="${root}style.css">
 </head>
-<body>
-<header class="top"><div class="wrap">
-<a class="brand" href="${root}">TenderFind <span>SA</span></a>
-<p class="promise">${esc(PROMISE)}</p>
-</div></header>
-<main class="wrap page">
+<body class="has-sticky">
+${headerHtml(root, cta)}
+<main class="wrap page" id="main">
 ${body}
 ${signup ? signupHtml(root) : ""}
 </main>
-<footer class="foot"><div class="wrap">
-<p>${esc(DISCLAIMER)}</p>
-<p class="links"><a href="${root}">Search tenders</a> · <a href="${root}tenders/">Tenders by trade</a> · <a href="${root}pricing.html">Pricing</a> · <a href="${root}registration-help.html">CSD &amp; CIDB help</a> · <a href="${root}about.html">About</a> · <a href="${root}terms.html">Terms</a> · <a href="${root}privacy.html">Privacy</a>${OPERATOR.email ? ` · <a href="mailto:${esc(OPERATOR.email)}">Contact</a>` : ""}</p>
-</div></footer>
+${footerHtml(root)}
+<a class="sticky-cta" href="${cta}" data-signup-jump>Try it free for 14 days ${icon(root, "go", "icon icon-go")}</a>
+<script src="${root}ui.js" defer></script>
 ${signup ? `<script src="${root}signup.js" defer></script>
 ` : ""}${script}</body>
 </html>
@@ -132,7 +163,7 @@ function tenderPage(t, { siteUrl, closed, similarList }) {
 ${t.documents?.[0] ? `<a class="btn" href="${esc(t.documents[0].url)}" target="_blank" rel="nofollow noopener">Open documents</a>` : t.portal ? `<a class="btn" href="${esc(t.portal.url)}" target="_blank" rel="noopener">Get the documents</a>` : ""}
 </div>`;
 
-  const body = `<p class="crumbs"><a href="../">← All open tenders</a></p>
+  const body = `<p class="crumbs"><a href="../#search">${icon("../", "back", "icon icon-sm")}All open tenders</a></p>
 <div class="closed-note" id="closed-note"${closed ? "" : " hidden"}><b>This tender has closed.</b> Bids can no longer be submitted. <a href="#similar">See similar open tenders</a></div>
 <article class="card tender">
 <div class="tags">${tags.join("")}</div>
@@ -172,14 +203,27 @@ const robots = (siteUrl) => `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/site
 
 // GitHub Pages serves this for any missing path, so links must be absolute.
 function notFound(siteUrl) {
+  const root = `${siteUrl}/`;
   return shell({
     title: `Page not found | ${BRAND}`,
-    description: "This page doesn't exist. Search open South African government tenders.",
-    root: `${siteUrl}/`,
-    body: `<div class="card"><h1>Page not found</h1>
-<p>This tender may be more than a year old, or the link was mistyped.</p>
-<p><a class="btn wide" href="${esc(siteUrl)}/">Search all open tenders</a></p></div>`,
+    description: "This page doesn't exist. Search today's open South African government tenders.",
+    root,
+    signup: false,
+    body: `<section class="lost">
+<p class="code" aria-hidden="true">404</p>
+<h1 class="page-h">This page isn’t here</h1>
+<p class="lede">It may be an old tender that has closed and been removed, or the link was typed wrong. Search the tenders that are open today:</p>
+<form action="${root}" method="get" role="search">
+<div class="search"><label class="sr" for="q404">Search tenders</label>${icon(root, "search")}<input id="q404" name="q" type="search" placeholder="Tshwane, cleaning, Eskom…" enterkeyhint="search"></div>
+<button class="btn primary" type="submit">Search</button>
+</form>
+<ul>
+<li><a class="btn" href="${root}">${icon(root, "back", "icon icon-sm")}Home page</a></li>
+<li><a class="btn" href="${root}tenders/">Tenders by trade</a></li>
+<li><a class="btn" href="mailto:info@tenderfind.co.za">Email us</a></li>
+</ul>
+</section>`,
   });
 }
 
-module.exports = { signupHtml, shell, tenderPage, sitemap, robots, notFound, similar, ymdOf };
+module.exports = { icon, signupHtml, headerHtml, footerHtml, shell, tenderPage, sitemap, robots, notFound, similar, ymdOf };

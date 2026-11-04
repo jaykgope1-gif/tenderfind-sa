@@ -2,7 +2,7 @@
 // in South Africa", plus an index. Rebuilt every morning from the open tenders, so they never go stale.
 // Only combinations with at least one open tender get a page; the rest would be empty pages Google ignores.
 const { esc, closingText } = require("./display");
-const { shell } = require("./pages");
+const { shell, icon } = require("./pages");
 
 const PROVINCES = ["Eastern Cape", "Free State", "Gauteng", "KwaZulu-Natal", "Limpopo", "Mpumalanga", "North West", "Northern Cape", "Western Cape"];
 const MAX_LIST = 60; // tenders listed on one page; the rest are a tap away in the search
@@ -21,7 +21,7 @@ function listHtml(list) {
 }
 
 function page({ siteUrl, file, title, h1, intro, sections, related }) {
-  const body = `<p class="crumbs"><a href="./">← All trades and provinces</a></p>
+  const body = `<p class="crumbs"><a href="./">${icon("../", "back", "icon icon-sm")}All trades and provinces</a></p>
 <h1 class="page-h">${esc(h1)}</h1>
 <p class="lede">${intro}</p>
 ${sections.map((s) => `<section class="similar"><h2>${esc(s.heading)}</h2>${listHtml(s.list)}${s.more || ""}</section>`).join("\n")}

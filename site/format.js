@@ -18,10 +18,12 @@
     return `${esc(v)}${note}`;
   }
 
-  const dayFmt = new Intl.DateTimeFormat("en-ZA", { timeZone: TZ, weekday: "short", day: "numeric", month: "short" });
-  const fullFmt = new Intl.DateTimeFormat("en-ZA", { timeZone: TZ, weekday: "short", day: "numeric", month: "short", year: "numeric" });
-  const timeFmt = new Intl.DateTimeFormat("en-ZA", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false });
-  const ymd = new Intl.DateTimeFormat("en-CA", { timeZone: TZ }); // YYYY-MM-DD in SA time
+  // Date formatters are built on first use: setting up time-zone data is slow on cheap phones.
+  const lazyFmt = (locale, opts) => { let f; return { format: (d) => (f ||= new Intl.DateTimeFormat(locale, { timeZone: TZ, ...opts })).format(d) }; };
+  const dayFmt = lazyFmt("en-ZA", { weekday: "short", day: "numeric", month: "short" });
+  const fullFmt = lazyFmt("en-ZA", { weekday: "short", day: "numeric", month: "short", year: "numeric" });
+  const timeFmt = lazyFmt("en-ZA", { hour: "2-digit", minute: "2-digit", hour12: false });
+  const ymd = lazyFmt("en-CA", {}); // YYYY-MM-DD in SA time
 
   // "2026-11-06" (a date with no time) -> "Fri 6 Nov"
   function shortDate(isoDate) {
