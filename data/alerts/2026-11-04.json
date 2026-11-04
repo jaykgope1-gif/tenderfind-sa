@@ -1,0 +1,274 @@
+{
+ "date": "2026-11-04",
+ "generated_at": "2026-11-04T02:49:38.718Z",
+ "site": "https://tenderfind.co.za",
+ "note": "Tenders with province 'National' or 'Not stated' should go to subscribers in every province.",
+ "counts": {
+  "new": 17,
+  "closing_soon": 0
+ },
+ "new": {
+  "IT": {
+   "National": [
+    {
+     "id": "176844",
+     "title": "Computer (CPU) with Monitor (All in one AI PC-Intel Core 5235 1 TB SSD 32GB)",
+     "buyer": "Statistics South Africa",
+     "province": "National",
+     "trade": "IT",
+     "closing": "2026-11-09T11:00:00+02:00",
+     "closing_text": "Mon, 09 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176844.html"
+    }
+   ]
+  },
+  "Other": {
+   "KwaZulu-Natal": [
+    {
+     "id": "176817",
+     "title": "Provision of land evaluator at KwaZulu Natal",
+     "buyer": "Special Investigation Unit",
+     "province": "KwaZulu-Natal",
+     "trade": "Other",
+     "closing": "2026-11-09T12:00:00+02:00",
+     "closing_text": "Mon, 09 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176817.html"
+    }
+   ],
+   "National": [
+    {
+     "id": "176897",
+     "title": "Appointment of Service Provider for the replacement of the existing Avaya IP Telephony and Contact Centre Solution",
+     "buyer": "SASRIA",
+     "province": "National",
+     "trade": "Other",
+     "closing": "2026-11-27T12:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176897.html"
+    }
+   ]
+  },
+  "Professional services": {
+   "National": [
+    {
+     "id": "176899",
+     "title": "CALIBRATION OF EQUIPMENT (COMPLAINCE) | TNPA_SHEQ_2026/27_Professional Services _952",
+     "buyer": "Transnet SOC Ltd",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-10T16:00:00+02:00",
+     "closing_text": "Tue, 10 Nov 2026, 16:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176899.html"
+    },
+    {
+     "id": "176902",
+     "title": "RE-ADVERTISEMENT RFQ 2026-010-016 Appointment for the recruitment of Office Assistant for12 months",
+     "buyer": "National Lotteries Commission",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-12T11:00:00+02:00",
+     "closing_text": "Thu, 12 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176902.html"
+    },
+    {
+     "id": "176898",
+     "title": "Appointment of a service provider to render professional entertainent acts for the 2026 atns rewards & recognition awards",
+     "buyer": "Air Traffic and Navigation Services Company Limited",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-13T11:00:00+02:00",
+     "closing_text": "Fri, 13 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176898.html"
+    }
+   ],
+   "Gauteng": [
+    {
+     "id": "176903",
+     "title": "Advertisement: appointment of a service provider to provide cogta-approved competency assessments for senior and top management candidates…",
+     "buyer": "City of Tshwane",
+     "province": "Gauteng",
+     "trade": "Professional services",
+     "closing": "2026-11-13T10:00:00+02:00",
+     "closing_text": "Fri, 13 Nov 2026, 10:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176903.html"
+    },
+    {
+     "id": "176818",
+     "title": "The supply of training on risk management course to the department of water and sanitation employees at infrastructure branch training…",
+     "buyer": "Water and Sanitation",
+     "province": "Gauteng",
+     "trade": "Professional services",
+     "closing": "2026-11-18T11:00:00+02:00",
+     "closing_text": "Wed, 18 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · Thu, 12 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176818.html"
+    }
+   ]
+  },
+  "Construction": {
+   "National": [
+    {
+     "id": "176896",
+     "title": "Consolidated crm support and maintenance for twelve (12) months",
+     "buyer": "National Housing Finance Corporation Limited",
+     "province": "National",
+     "trade": "Construction",
+     "closing": "2026-11-13T11:00:00+02:00",
+     "closing_text": "Fri, 13 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176896.html"
+    }
+   ],
+   "KwaZulu-Natal": [
+    {
+     "id": "176773",
+     "title": "Repairs",
+     "buyer": "Kwa-Zulu Natal - Ezemvelo KwaZulu-Natal Wildlife",
+     "province": "KwaZulu-Natal",
+     "trade": "Construction",
+     "closing": "2026-11-18T11:00:00+02:00",
+     "closing_text": "Wed, 18 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176773.html"
+    },
+    {
+     "id": "176838",
+     "title": "Bid No: 08/2027- Acquisition on a full maintenance lease agreement for 5 years period ( 60 months)",
+     "buyer": "Umdoni Local Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Construction",
+     "closing": "2026-12-04T12:00:00+02:00",
+     "closing_text": "Fri, 04 Dec 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176838.html"
+    }
+   ],
+   "Eastern Cape": [
+    {
+     "id": "176900",
+     "title": "Maintenance of Municipal Buildings- Main Office (Phase 1)",
+     "buyer": "Winnie Madikizela-Mandela Local Municipality",
+     "province": "Eastern Cape",
+     "trade": "Construction",
+     "closing": "2026-11-19T12:00:00+02:00",
+     "closing_text": "Thu, 19 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176900.html"
+    }
+   ]
+  },
+  "Maintenance & repairs": {
+   "Gauteng": [
+    {
+     "id": "176901",
+     "title": "Advertisement: appointment of a service provider for the supply, service and emergency repairs of ethylene gas generators for the ripening…",
+     "buyer": "City of Tshwane",
+     "province": "Gauteng",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-11-17T10:00:00+02:00",
+     "closing_text": "Tue, 17 Nov 2026, 10:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176901.html"
+    }
+   ],
+   "National": [
+    {
+     "id": "176895",
+     "title": "The supply of a skid mounted, fuel (petrol/diesel) driven air compressor. This compressor must be able to offer 5-7 bar and give a minimum…",
+     "buyer": "ESKOM",
+     "province": "National",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-11-18T10:00:00+02:00",
+     "closing_text": "Wed, 18 Nov 2026, 10:00",
+     "briefing": "Briefing · Wed, 11 Nov · 10:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176895.html"
+    }
+   ],
+   "KwaZulu-Natal": [
+    {
+     "id": "176842",
+     "title": "Bid No: SUPPLY, INSTALL SERVICE AND MAINTENANCE OF FOUR(4) 12kv SUBMERSIBLE PUMPS FOR PUMPING SEAWATER INTO SCOTTBURGH SWIMMING…",
+     "buyer": "Umdoni Local Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-12-04T11:00:00+02:00",
+     "closing_text": "Fri, 04 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176842.html"
+    }
+   ]
+  },
+  "Cleaning": {
+   "National": [
+    {
+     "id": "176894",
+     "title": "Request for quotation (rfq) for the appointment of two service providers to provide horticulture services at west rand various stations…",
+     "buyer": "Passenger Rail Agency of South Africa",
+     "province": "National",
+     "trade": "Cleaning",
+     "closing": "2026-11-17T12:00:00+02:00",
+     "closing_text": "Tue, 17 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": "3SH",
+     "url": "https://tenderfind.co.za/tender/176894.html"
+    }
+   ]
+  },
+  "Supplies": {
+   "Western Cape": [
+    {
+     "id": "176624",
+     "title": "Supply and delivery of protective clothing and equipment for a period of three (3) years",
+     "buyer": "Hessequa Municipality",
+     "province": "Western Cape",
+     "trade": "Supplies",
+     "closing": "2026-12-11T12:00:00+02:00",
+     "closing_text": "Fri, 11 Dec 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176624.html"
+    }
+   ]
+  }
+ },
+ "closing_soon": {}
+}

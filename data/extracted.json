@@ -17206,6 +17206,44 @@
   },
   "extracted_at": "2026-11-02T14:39:54.630Z"
  },
+ "176624": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "SPECIFICATIONS.pdf",
+    "pages": 24,
+    "result": "scanned"
+   },
+   {
+    "title": "FUNCTIONALITY EVALUATION.pdf",
+    "pages": 12,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:32.239Z"
+ },
  "176625": {
   "status": "ok",
   "docs": [
@@ -21281,6 +21319,46 @@
   },
   "extracted_at": "2026-11-03T11:22:03.262Z"
  },
+ "176773": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "SUPPLY AND DELIVERY OF CCA-TREATED TIMBER FOR DECK AT MPILA CAMP (HiP) OF EZEMVELO KZN WILDLIFE..pdf",
+    "pages": 32,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "initialed. 8. For compulsory briefing sessions - Bidders must ensure that during a briefing session, the attendance register is signed. Failure to sign the attendance will result in the bid being disqualified. 9. Quotations must be emailed to procurement@kznwildlife.com before the closing time and date. Failure to"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "se. 2. Prospective suppliers should self-register on the CSD website www.csd.gov.za 3. If a business is registered on the Database and it is found subsequently that false or incorrect information has been supplied, then the Ezemvelo KZN Wildlife may, w"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:25.972Z"
+ },
  "176775": {
   "status": "ok",
   "docs": [
@@ -21915,6 +21993,73 @@
    }
   },
   "extracted_at": "2026-11-03T11:22:07.089Z"
+ },
+ "176817": {
+  "status": "no-pdf",
+  "docs": [],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:18.068Z"
+ },
+ "176818": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "WTE1058CE.pdf",
+    "pages": 51,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": "2026-11-12",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "5100 Compulsory Briefing Session Date: 12 NOVEMBER 2026 Time: 10:00 am Venue: Department of Water and Sanitation Infrastructure Branch Training Centre (IBTC) at Roodeplaat Dam Access Rd, Off Kwa Mhlanga Rd (R573) near Pretoria in Gauteng Province. GPS Coordinates: (Lat-25.618439° an"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM PERSONS IN THE SER"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:27.624Z"
  },
  "176819": {
   "status": "ok",
@@ -22626,6 +22771,39 @@
   },
   "extracted_at": "2026-11-03T13:07:18.497Z"
  },
+ "176838": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "ACQUISITION OF FLEET.pdf",
+    "pages": 72,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:31.147Z"
+ },
  "176839": {
   "status": "ok",
   "docs": [
@@ -22740,6 +22918,39 @@
   },
   "extracted_at": "2026-11-03T13:07:27.271Z"
  },
+ "176842": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "SWIMMING POOL AND PUMPS.pdf",
+    "pages": 47,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:29.757Z"
+ },
  "176843": {
   "status": "ok",
   "docs": [
@@ -22779,6 +22990,45 @@
    }
   },
   "extracted_at": "2026-11-03T13:07:20.833Z"
+ },
+ "176844": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Specification.pdf",
+    "pages": 1,
+    "result": "scanned"
+   },
+   {
+    "title": "Standard Bidding Document(SBD6.1) new.pdf",
+    "pages": 6,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ip percentage (CIPC), BBBEE Certificate / Sworn Affidavit, CSD full detail report to show substantiate ownership equity. ii. Women: - attach company registration document which shows ownership percentage (CIPC), BBBEE Certificate, BBBEE Certificate / Swo"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:18.032Z"
  },
  "176846": {
   "status": "ok",
@@ -24311,5 +24561,392 @@
    }
   },
   "extracted_at": "2026-11-03T17:07:54.913Z"
+ },
+ "176894": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "SCOPE OF WORK FOR HORTICULTURE SERVICES AT WEST RAND VARIOUS STATION.pdf",
+    "pages": 9,
+    "result": "text"
+   },
+   {
+    "title": "RFQ FOR APPOINTMENT OF TWO SERVICE PROVIDERS FOR HORTCULTURE AND TREE FELLING EAST RAND.pdf",
+    "pages": 32,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "cidb_grade": {
+    "value": "3SH",
+    "source": "regex",
+    "snippet": "mission will be disqualified automatically • CIDB grade 3SH or higher ANNEXURE 1: Health Safety Requirements Template For Issuing of Site Access CONTRACTOR SAFETY FILE CONTENTS LIST The purpose of this checklist is to guide the contract"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD 4 Request For Quotation SCM_2024"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:24.623Z"
+ },
+ "176895": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Invitation to Tender (ITT)  AIR COMPRESSOR.pdf",
+    "pages": 57,
+    "result": "text"
+   },
+   {
+    "title": "NEC Scope of work Draft compressor SSC.pdf",
+    "pages": 20,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": "2026-11-11",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "losing date and time Clarification meeting 11 November 2026 at 10h00 (SAST) Ms Teams: Click on the link below Clarification Meeting: https://teams.microsoft.com/meet Tenders are to be delivered to the following address by the stipulated closing date and time. The tenderer will notify the employer represen"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "tenders is the following: - • Proof of valid and current CSD Registration (CSD number/CSD Report) Additional Contractual Requirements that may be included if applicable: • SHEQ requirements; and/or • Financial viability (submission of financial sta"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:24.682Z"
+ },
+ "176896": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ_CRM SUPPORT AND MAINTENANCE .pdf",
+    "pages": 43,
+    "result": "text"
+   },
+   {
+    "title": "Annexure 10- GCC.pdf",
+    "pages": 15,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "EACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM PERSONS IN THE"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:21.749Z"
+ },
+ "176897": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFP2026.34-Appointment of Service Provider for the replacement of the existing Avaya IP Telephony and Contact Centre solution.pdf",
+    "pages": 42,
+    "result": "text"
+   },
+   {
+    "title": "Annexure E Detailed Requirement List-Telephony and Contact Centre.pdf",
+    "pages": 6,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "t 6 of this RFP Document (duly completed and signed); a) CSD number to verify tax compliance; b) Valid B-BBEE verification certificate or Affidavit. An Exempted Micro Enterprises (EME) with an annual turnover less than R10 million, is only required t"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:28.147Z"
+ },
+ "176898": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ -Professional Entertainment.pdf",
+    "pages": 56,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "............................... 24 33. Registration On the CSD ........................................................................... 24 34. Registration Certificates and Accreditation with OEMS Or Professional Bodies 25 SECTION D: STANDARD BIDDING DO"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:22.851Z"
+ },
+ "176899": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Standard Terms and Conditions.pdf",
+    "pages": 12,
+    "result": "text"
+   },
+   {
+    "title": "RFQ SBD 1- Fire Equipment Calibration.pdf",
+    "pages": 29,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "H PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. 2.7 NO BIDS WILL BE CONSIDERED FROM"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:18.068Z"
+ },
+ "176900": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "TENDER DOCUMENT - MAINTENANCE OF MUNICIPAL BUILDING-.pdf",
+    "result": "too-large"
+   },
+   {
+    "title": "Tender BOQ  Rev 1.pdf",
+    "pages": 116,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:28.020Z"
+ },
+ "176901": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Q51-2026-27 QUOTATION DOCUMENT.pdf",
+    "pages": 36,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "Contact Officials Compulsory Briefing Session Closing date Q51- 2026-27 ADVERTISEMENT: APPOINTMENT OF A SERVICE PROVIDER FOR THE SUPPLY, SERVICE AND EMERGENCY REPAIRS OF ETHYLENE GAS GENERATORS FOR THE RIPENING CENTRE OF THE TSHWANE MARKET, AS AND WHEN REQUIRED EDSP Josia Masenya (012) 358 0658 jos ia"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "0001 Tel: (012) 358 9999 Only bidders registered on the central supplier database and with CSD Number will be considered for this tender as it is a requirement from National Treasury. CLOSING DATE 17 NOVEMBER 2026 CIT Y OF TSHWANE METROPOLITAN MUNI"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:23.464Z"
+ },
+ "176902": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RE-ADVERTISEMENT RFQ 2026-010-016 Appointment for the recruitment of Office Assistant for12 months.pdf",
+    "pages": 25,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "r Database at www.csd.gov.za, Suppliers must provide their CSD registration number (and attach CSD Registration report) and ensure that the Tax Matters are compliant. 1.7 All questions regarding this RFQ must be forwarded to maureen@nlcsa.org.za 2"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:18.076Z"
+ },
+ "176903": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Q53-2026-27 QUOTATION DOCUMENT.pdf",
+    "pages": 29,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": true,
+     "date": null,
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "Contact Officials Compulsory Briefing Session Closing date Q53-2026- 27 ADVERTISEMENT: APPOINTMENT OF A SERVICE PROVIDER TO PROVIDE COGTA- APPROVED COMPETENCY ASSESSMENTS FOR SENIOR AND TOP MANAGEMENT CANDIDATES FOR GROUP HUMAN CAPITAL MANAGEMENT GHCM Josia Masenya (012) 358 0658 j osiasma@tshwane.g"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "0001 Tel: (012) 358 9999 Only bidders registered on the central supplier database and with CSD Number will be considered for this tender as it is a requirement from National Treasury. CLOSING DATE 13 NOVEMBER 2026 C ITY OF TSHWANE METROPOLITAN MUNICI"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-04T02:48:21.306Z"
  }
 }
