@@ -465,6 +465,16 @@ dl.facts dd { margin: 0; }
 .plan { display: flex; flex-direction: column; background: var(--surface); border: var(--hair); border-radius: var(--r); padding: var(--s5); }
 .plan.main { border: var(--bold); box-shadow: var(--lift); }
 .plan h2, .plan h3 { font-family: var(--f-text); font-size: 1.1875rem; letter-spacing: 0; margin: 0; }
+/* "What makes TenderFind different" (pricing page and home page) */
+.different { margin: 0 0 var(--s6); }
+.different h2 { margin: 0 0 var(--s4); }
+.diff-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s4); }
+@media (min-width: 820px) { .diff-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.diff-list li { display: grid; grid-template-columns: 28px 1fr; gap: var(--s3); align-items: start; background: var(--surface); border: var(--hair); border-radius: var(--r); padding: var(--s4); }
+.diff-list .icon { width: 24px; height: 24px; color: var(--green); margin-top: 2px; }
+.diff-list h3 { font-family: var(--f-text); font-size: 1.0625rem; letter-spacing: 0; margin: 0 0 var(--s2); }
+.diff-list p { margin: 0; line-height: 1.55; }
+.diff-list .tag { vertical-align: middle; margin-left: var(--s1); }
 .plan-who { margin: 0 0 var(--s3); color: var(--muted); font-size: .9375rem; }
 .plan-group { margin: var(--s7) 0 var(--s6); }
 .group-h { font-size: 1.5rem; margin: 0 0 var(--s4); padding-top: var(--s3); border-top: var(--bold); }

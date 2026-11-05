@@ -22,6 +22,25 @@ const signupHtml = (root) => `<section class="signup" id="signup" aria-labelledb
 <noscript><p><a href="https://tally.so/r/EqKWVX">Open the sign-up form</a></p></noscript>
 </section>`;
 
+// "What makes us different": on the pricing page and the home page (build.js fills the block marked
+// <!-- build:different --> in site/index.html). Only claims the site can back up: the summary is summary.js
+// (rule-based, from the official wording), and the checklist is what extract.js finds in the documents.
+const CHECKLIST_LIVE = false; // true once the per-tender checklist (Phase 4) is built
+const differentHtml = (root) => `<section class="different" aria-labelledby="diff-h">
+<h2 id="diff-h">What makes TenderFind different</h2>
+<ul class="diff-list">
+<li>${icon(root, "doc")}<div><h3>Every tender in plain English</h3><p>Each tender starts with a short summary of what they want, then who is buying, where, and when it closes. No need to read a 60-page document to see if it’s for you.</p></div></li>
+<li>${icon(root, "check")}<div><h3>A checklist of what to submit${CHECKLIST_LIVE ? "" : ` <span class="tag soon-tag">Coming soon</span>`}</h3><p>The returnable documents and forms a tender asks for (SBD forms, CSD report, tax PIN, CIDB grade, B-BBEE), listed from the tender documents, so your bid doesn’t get disqualified for a missing page.</p></div></li>
+<li>${icon(root, "briefing")}<div><h3>We can do the bid work for you</h3><p>With <a href="${root}help.html">Bid Help</a> and <a href="${root}pricing.html#g-for-you">Tender Desk</a>, we read the documents, build the checklist and prepare the pack. You submit.</p></div></li>
+</ul>
+</section>`;
+
+// Fills the generated blocks in the hand-written site/index.html. Same input -> same output, so it only changes
+// the file when the block's source changes.
+function fillHomeBlocks(html) {
+  return html.replace(/(<!-- build:different -->)[\s\S]*?(<!-- \/build:different -->)/, (m, a, b) => `${a}\n${differentHtml("")}\n${b}`);
+}
+
 const headerHtml = (root, cta) => `<a class="skip" href="#main">Skip to content</a>
 <header class="site-head"><div class="container head-row">
 <a class="brand" href="${root}" aria-label="TenderFind SA home">${MARK("#1d4a37", "#faf8f3", "#1d4a37")}TenderFind <b>SA</b></a>
@@ -227,4 +246,4 @@ function notFound(siteUrl) {
   });
 }
 
-module.exports = { icon, signupHtml, headerHtml, footerHtml, shell, tenderPage, sitemap, robots, notFound, similar, ymdOf };
+module.exports = { icon, differentHtml, fillHomeBlocks, CHECKLIST_LIVE, signupHtml, headerHtml, footerHtml, shell, tenderPage, sitemap, robots, notFound, similar, ymdOf };

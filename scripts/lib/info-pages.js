@@ -1,6 +1,6 @@
 // site/about.html, site/privacy.html and site/pricing.html. Plain words; no claims the service can't back up.
 const { esc } = require("./display");
-const { shell } = require("./pages");
+const { shell, differentHtml, CHECKLIST_LIVE } = require("./pages");
 const { OPERATOR, PRICING, HELP_WEBHOOK, PAYMENTS_LIVE } = require("./config");
 const { P } = require("./prices");
 
@@ -14,19 +14,21 @@ function contactLines() {
 function aboutPage(siteUrl, count) {
   const body = `<article class="card prose">
 <h1>About TenderFind SA</h1>
-<p>TenderFind SA helps small businesses find government work that fits them. Every morning we email subscribers the new tenders for their trade and province, so they don't have to search eTenders themselves. Anyone can also search all open tenders on this site for free, on a phone.</p>
+<p>TenderFind SA helps small businesses find government work that fits them, and bid for it properly. Every morning we email subscribers the new tenders for their trade and province, so they don't have to search eTenders themselves. Every tender is explained in plain English, and if you want, we do the bid paperwork for you. Anyone can also search all open tenders on this site for free, on a phone.</p>
 <div class="founder">
 <img src="img/jay-kgope.jpg" width="160" height="200" alt="${esc(OPERATOR.name || "The founder")}, founder of TenderFind SA" loading="lazy">
 <p>TenderFind SA is run by <b>${esc(OPERATOR.name || "an independent operator")}</b>${OPERATOR.location ? ` in ${esc(OPERATOR.location.replace(/, South Africa$/, ""))}` : ""}. I started it because good small businesses keep missing government work they could do, simply because they hear about it too late. If you have a question, email me at <a href="mailto:${esc(OPERATOR.email)}">${esc(OPERATOR.email)}</a> and I'll answer it myself.</p>
 </div>
 
 <h2>Where the tenders come from</h2>
-<p>The tenders come from National Treasury's eTenders portal, through its official open-data feed. We check it every morning, so new tenders, changed closing dates and closed tenders show up the same day. Right now we list ${count} open tenders. Tenders that a municipality or state company publishes only on its own website, and not on eTenders, are not included yet.</p>
+<p>The tenders come from National Treasury's eTenders portal, through its official open-data feed, and from the Gauteng e-Tender portal for Gauteng department tenders that aren't on eTenders. We check them every morning, so new tenders, changed closing dates and closed tenders show up the same day. Right now we list ${count} open tenders. Tenders that a municipality or state company publishes only on its own website, and not on eTenders, are not included yet.</p>
 
 <h2>What we add</h2>
 <ul>
-<li><b>A one-line summary.</b> Our software shortens each tender's official description into one line (for example "Cleaning services for the Polokwane office (36 months)"). It works from the official wording only, so it can be clumsy; the full official description is always on the tender's page.</li>
+<li><b>Every tender in plain English.</b> Our software shortens each tender's official description into one line (for example "Cleaning services for the Polokwane office (36 months)"), and the page shows who is buying, where, and when it closes. It works from the official wording only, so it can be clumsy; the full official description is always on the tender's page.</li>
 <li><b>Briefings and CIDB grades.</b> We read the tender documents to find compulsory briefing sessions, CIDB grades and CSD requirements. These are marked "auto-extracted, confirm before bidding" because a computer read them.</li>
+<li><b>A checklist of what to submit${CHECKLIST_LIVE ? "" : " (coming soon)"}.</b> From the tender documents, we list the returnable documents and forms the tender asks for, such as SBD forms, the CSD report, your tax PIN, CIDB grade and B-BBEE. If we can't read the documents, we say so. The official documents always win.</li>
+<li><b>We can do the bid work for you.</b> With <a href="help.html">Bid Help</a> (${P.bidHelp} per tender) and <a href="pricing.html#g-for-you">Tender Desk</a> (${P.desk} a month), we read the documents, build the checklist and prepare the pack. You approve and submit the bid yourself, and we don't guarantee a win.</li>
 <li><b>Trades and provinces.</b> Tenders are tagged by trade (cleaning, security, construction and more) and by province. The province comes from the place named in the tender where there is one, and otherwise from who is buying. National tenders are only sent to you when the work is nationwide or at the buyer's offices in your province.</li>
 <li><b>Closing soon.</b> Countdowns and "Did you miss these?" so deadlines don't slip past.</li>
 <li><b>Morning email.</b> New tenders for your trade and province by email every morning (<a href="pricing.html">${P.trialDays} days free, then ${P.alerts} a month</a>). You can also share any tender on WhatsApp in one tap.</li>
@@ -41,7 +43,7 @@ ${contactLines().length ? `<h2>Contact</h2><p>${contactLines().join("<br>")}</p>
 </article>`;
   return shell({
     title: "About | TenderFind SA",
-    description: "TenderFind SA emails small businesses the new government tenders for their trade and province every morning, from National Treasury eTenders.",
+    description: "TenderFind SA emails small businesses the new government tenders for their trade every morning, explains each tender in plain English, and can do the bid paperwork for you.",
     canonical: `${siteUrl}/about.html`,
     root: "./",
     body,
@@ -136,6 +138,7 @@ ${action.html}
 </section>`;
   const body = `<h1 class="page-h">Pricing</h1>
 <p class="lede">Searching tenders is free, always. Pay if you want them sent to you, or if you want us to do the paperwork.</p>
+${differentHtml("./")}
 <section class="plan-group" aria-labelledby="g-yourself">
 <h2 class="group-h" id="g-yourself">Find tenders yourself</h2>
 <div class="plans">

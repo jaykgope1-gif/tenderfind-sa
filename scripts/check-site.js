@@ -20,6 +20,7 @@ for (const f of ["index.html", "app.js", "format.js", "signup.js", "style.css", 
 const { fillPrices } = require("./lib/prices");
 const home = fs.readFileSync(path.join(SITE, "index.html"), "utf8");
 if (fillPrices(home) !== home) fail("site/index.html prices don't match PRICING in scripts/lib/config.js (run node scripts/build.js)");
+if (require("./lib/pages").fillHomeBlocks(home) !== home) fail("site/index.html's generated blocks are out of date (run node scripts/build.js)");
 const OLD_PRICES = /\bR ?550\b/;
 for (const f of ["index.html", "pricing.html", "help.html", "terms.html", "registration-help.html", "about.html", "pay/index.html"]) {
   if (OLD_PRICES.test(fs.readFileSync(path.join(SITE, f), "utf8"))) fail(`site/${f} still shows an old price (R550)`);

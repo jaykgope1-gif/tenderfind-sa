@@ -166,8 +166,8 @@ function writePages(open, stored, now) {
   // The home page is hand-written; only its marked prices are rewritten (no change when prices are the same).
   const home = path.join(SITE, "index.html");
   const before = fs.readFileSync(home, "utf8");
-  const after = fillPrices(before);
-  if (after !== before) { fs.writeFileSync(home, after); console.log("Home page prices updated from PRICING (commit site/index.html)."); }
+  const after = pages.fillHomeBlocks(fillPrices(before));
+  if (after !== before) { fs.writeFileSync(home, after); console.log("Home page prices or blocks updated (commit site/index.html)."); }
   const { OPERATOR } = require("./lib/config");
   if (!OPERATOR.address) console.log("Reminder: add your physical address to OPERATOR.address in scripts/lib/config.js (the ECT Act requires it on the Terms page).");
   console.log(`Pages: ${open.length} open + ${closedById.size} closed tender pages, ${landing.length} trade/province pages, sitemap with ${listed.length + 4 + extra.length} URLs`);
