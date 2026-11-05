@@ -375,7 +375,7 @@ ul.facts li { padding: 2px var(--s2); border: var(--hair); border-radius: var(--
 .price-grid { display: grid; gap: var(--s6); align-items: center; }
 @media (min-width: 900px) { .price-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s8); } }
 .big-price { font-family: var(--f-text); font-weight: 800; font-size: clamp(4rem, 2.6rem + 6vw, 7rem); line-height: .95; letter-spacing: -0.045em; color: var(--green); margin: 0; }
-.big-price span { margin-left: var(--s2); font-size: 1.125rem; font-weight: 600; letter-spacing: 0; color: var(--muted); }
+.big-price span:not([data-price]) { margin-left: var(--s2); font-size: 1.125rem; font-weight: 600; letter-spacing: 0; color: var(--muted); }
 .price-sub { font-size: 1.125rem; margin: var(--s3) 0 var(--s5); }
 .price-list { list-style: none; margin: 0; padding: 0; border-top: var(--bold); }
 .price-list li { display: grid; grid-template-columns: 20px 1fr; gap: var(--s3); padding: var(--s4) 0; border-bottom: var(--hair); }

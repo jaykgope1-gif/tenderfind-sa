@@ -60,7 +60,7 @@
             <a class="btn primary big" href="#signup" data-signup-jump>Try it free for 14 days <svg class="icon icon-go" aria-hidden="true"><use href="icons.svg#go"/></svg></a>
             <a class="btn quiet big" href="#board">See this week’s tenders</a>
           </div>
-          <p class="fine">No card needed. After 14 days it’s R149 a month, or stop. Nothing is charged automatically.</p>
+          <p class="fine">No card needed. After <span data-price="trialDays">14</span> days it’s <span data-price="alerts">R149</span> a month, or stop. Nothing is charged automatically.</p>
           <div class="picker">
             <p class="label">What do you do? Open right now:</p>
             <div class="picker-row" id="picker">
@@ -233,15 +233,15 @@
       <div class="container reveal price-grid">
         <div>
           <h2 id="pricing-h" class="sr">Price</h2>
-          <p class="big-price">R149<span>a month</span></p>
-          <p class="price-sub">after 14 free days, or stop. Or R1,490 a year, which is two months free.</p>
+          <p class="big-price"><span data-price="alerts">R149</span><span>a month</span></p>
+          <p class="price-sub">after <span data-price="trialDays">14</span> free days, or stop. Or <span data-price="alertsYear">R1,490</span> a year, which is two months free.</p>
           <a class="btn primary big" href="#signup" data-signup-jump>Start the free 14 days <svg class="icon icon-go" aria-hidden="true"><use href="icons.svg#go"/></svg></a>
         </div>
         <ul class="price-list">
           <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>Searching is free.</b> Always. No account needed.</span></li>
           <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>No card for the trial.</b> When it ends we email you once. Nothing is charged automatically.</span></li>
           <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>Cancel by replying UNSUBSCRIBE</b> to any email. Paid securely through PayFast, with a full refund within 7 days.</span></li>
-          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>Need a hand?</b> <a href="help.html">Bid Help</a> R550 per tender · <a href="registration-help.html">CSD registration help</a> R300 · CIDB R500.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>Need a hand?</b> <a href="help.html">Bid Help</a> <span data-price="bidHelp">from R1,500</span> per tender · <a href="registration-help.html">CSD registration help</a> <span data-price="csd">R300</span> · CIDB <span data-price="cidb">R500</span>.</span></li>
         </ul>
       </div>
     </section>
@@ -253,7 +253,7 @@
           <details><summary>Where do the tenders come from?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>National Treasury’s eTenders portal and the Gauteng e-Tender portal, checked every morning. Some municipalities and state companies put a few tenders only on their own websites; we don’t have those yet.</p></div></details>
           <details><summary>Do I need to be on the CSD to use this?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>No. But you’ll need CSD registration to bid on almost any government tender. If you’re not registered yet, we can <a href="registration-help.html">help with CSD and CIDB</a>.</p></div></details>
           <details><summary>What does “compulsory briefing” mean?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>The buyer holds a meeting or site visit before the closing date, and only companies that attended may bid. We show the date and time when the documents state it. Always check the documents too.</p></div></details>
-          <details><summary>What happens after the 14 days?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>We send one email to say the trial is over. Nothing is charged. To keep getting tenders, it’s R149 a month or R1,490 a year through PayFast.</p></div></details>
+          <details><summary>What happens after the 14 days?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>We send one email to say the trial is over. Nothing is charged. To keep getting tenders, it’s <span data-price="alerts">R149</span> a month or <span data-price="alertsYear">R1,490</span> a year through PayFast.</p></div></details>
           <details><summary>Can I change my trade or provinces?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>Yes. Sign up again with the same email address and pick again. Your trial still counts from your first sign-up.</p></div></details>
           <details><summary>Do you sell tenders or promise I’ll win?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>No. Tenders are public and free, and you bid yourself, the normal way. We find them and make them easy to read. See our <a href="terms.html">terms</a> and <a href="privacy.html">privacy notice</a>.</p></div></details>
         </div>
@@ -269,7 +269,7 @@
         <div>
           <section class="signup" id="signup" aria-labelledby="signup-h">
             <h2 id="signup-h">Start your free 14 days</h2>
-            <p>No card needed. After 14 days it’s R149 a month (or R1,490 a year), or stop.</p>
+            <p>No card needed. After <span data-price="trialDays">14</span> days it’s <span data-price="alerts">R149</span> a month (or <span data-price="alertsYear">R1,490</span> a year), or stop.</p>
             <button class="btn primary wide big" type="button" data-signup>Get my tender emails <svg class="icon icon-go" aria-hidden="true"><use href="icons.svg#go"/></svg></button>
             <div class="signup-form" hidden><iframe title="Sign up for tender alerts" width="100%" height="720" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
             <p class="signup-fallback" hidden>The form is taking a while. <a href="https://tally.so/r/EqKWVX">Open the sign-up form in a new page</a>.</p>

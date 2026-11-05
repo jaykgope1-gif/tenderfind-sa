@@ -17,9 +17,17 @@ module.exports = {
     vatRegistered: false, // true once registered for VAT; prices then say "including VAT"
   },
 
-  // Shown on /pricing and in the sign-up box. The trial length must match TRIAL_DAYS in scripts/lib/match.js.
-  // bidHelpPrice: Bid Help price per tender in rand, paid once before work starts; null shows "Ask us".
-  PRICING: { alerts: 149, alertsYear: 1490, trialDays: 14, bidHelpPrice: 550, csdHelpPrice: 300, cidbHelpPrice: 500 },
+  // Every price on the site comes from here (pricing, home page, sign-up box, help form, pay page, terms).
+  // scripts/lib/match.js runs inside n8n and can't read this file, so it repeats ALERTS_PRICE, BID_HELP and
+  // TRIAL_DAYS: npm test fails if they don't match these. After changing a price, also change it in n8n
+  // (see README "Pricing").
+  PRICING: {
+    alerts: 149, alertsYear: 1490, trialDays: 14, // Alerts: the main plan
+    pro: 499, proYear: 4990, proEmails: 3, // Pro: Alerts plus up to proEmails addresses, checklist in the email, priority WhatsApp
+    bidHelpFrom: 1500, bidHelpMax: 5000, // Bid Help per tender: "from" price; bigger tenders quoted up to the max
+    deskFrom: 3500, // Tender Desk: done-for-you, "from" price per month
+    csdHelpPrice: 300, cidbHelpPrice: 500,
+  },
   // false until the real PayFast account is approved: subscribe buttons stay "WhatsApp us" and pay/ links are test-only.
   // When live: set true here AND MODE = 'live' in the n8n "Payments: pay link" workflow.
   PAYMENTS_LIVE: false,

@@ -9,7 +9,8 @@
 //   site/tender/<id>.html       a page per tender, open or closed within the last year (data/archive)
 //   site/tenders/*.html         trade and province pages for Google ("Cleaning tenders in Gauteng")
 //   site/about.html, site/privacy.html, site/terms.html, site/pricing.html, site/help.html, site/registration-help.html,
-//   site/sitemap.xml, site/robots.txt, site/404.html
+//   site/pay/index.html, site/sitemap.xml, site/robots.txt, site/404.html
+//   and fills the prices in the hand-written site/index.html (<span data-price="...">) from PRICING
 // Read-only on data/extracted.json, so it is safe to run while extraction is in progress.
 const fs = require("fs");
 const path = require("path");
@@ -23,7 +24,8 @@ const SITE = path.join(ROOT, "site");
 const OUT = path.join(SITE, "data");
 const PAGES = path.join(SITE, "tender");
 const { SITE_URL } = require("./lib/config");
-const { aboutPage, privacyPage, pricingPage, helpPage, registrationHelpPage, termsPage } = require("./lib/info-pages");
+const { aboutPage, privacyPage, pricingPage, helpPage, registrationHelpPage, termsPage, payPage } = require("./lib/info-pages");
+const { fillPrices } = require("./lib/prices");
 const { landingPages } = require("./lib/landing-pages");
 
 function arg(name) {
@@ -159,6 +161,13 @@ function writePages(open, stored, now) {
   fs.writeFileSync(path.join(SITE, "help.html"), helpPage(SITE_URL));
   fs.writeFileSync(path.join(SITE, "registration-help.html"), registrationHelpPage(SITE_URL));
   fs.writeFileSync(path.join(SITE, "terms.html"), termsPage(SITE_URL));
+  fs.mkdirSync(path.join(SITE, "pay"), { recursive: true });
+  fs.writeFileSync(path.join(SITE, "pay", "index.html"), payPage());
+  // The home page is hand-written; only its marked prices are rewritten (no change when prices are the same).
+  const home = path.join(SITE, "index.html");
+  const before = fs.readFileSync(home, "utf8");
+  const after = fillPrices(before);
+  if (after !== before) { fs.writeFileSync(home, after); console.log("Home page prices updated from PRICING (commit site/index.html)."); }
   const { OPERATOR } = require("./lib/config");
   if (!OPERATOR.address) console.log("Reminder: add your physical address to OPERATOR.address in scripts/lib/config.js (the ECT Act requires it on the Terms page).");
   console.log(`Pages: ${open.length} open + ${closedById.size} closed tender pages, ${landing.length} trade/province pages, sitemap with ${listed.length + 4 + extra.length} URLs`);

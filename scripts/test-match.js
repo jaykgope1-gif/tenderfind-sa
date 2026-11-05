@@ -3,7 +3,14 @@
 const assert = require("assert");
 const path = require("path");
 const fs = require("fs");
-const { matchSubscribers, normalisePhone, normaliseEmail, dayOf, parseRow, applyStatus } = require("./lib/match");
+const { MATCH, matchSubscribers, normalisePhone, normaliseEmail, dayOf, parseRow, applyStatus } = require("./lib/match");
+const { PRICING } = require("./lib/config");
+const { P } = require("./lib/prices");
+
+// match.js runs inside n8n and keeps its own copy of the prices: they must equal PRICING in config.js.
+assert.strictEqual(MATCH.ALERTS_PRICE, PRICING.alerts, "match.js ALERTS_PRICE must equal PRICING.alerts");
+assert.strictEqual(MATCH.BID_HELP, P.bidHelp, "match.js BID_HELP must equal the Bid Help price from PRICING");
+assert.strictEqual(MATCH.TRIAL_DAYS, PRICING.trialDays, "match.js TRIAL_DAYS must equal PRICING.trialDays");
 
 const file = process.argv[2] || path.join(__dirname, "fixtures", "alerts-sample.json");
 const alerts = JSON.parse(fs.readFileSync(file, "utf8"));
@@ -95,7 +102,7 @@ assert.ok(t.tender_ids.length <= 10, "at most 10 tenders per email");
 for (const body of [t.text, t.html]) assert.ok(/unsubscribe/i.test(body), "every email has an unsubscribe line");
 assert.ok(!/<script/i.test(t.html) && t.html.includes("Closes "), "html: title, buyer, closing date, link");
 assert.ok(t.html.includes(">View tender</a>") && !/>[^<]*github\.io/.test(t.html), "friendly link text, no raw address shown");
-assert.ok(/help\.html\?service=bid&amp;tender=\w+/.test(t.html) && t.html.includes("Need help with this tender? Bid Help (R550)"), "every tender has a Bid Help request link");
+assert.ok(/help\.html\?service=bid&amp;tender=\w+/.test(t.html) && t.html.includes(`Need help with this tender? Bid Help (${P.bidHelp})`), "every tender has a Bid Help request link");
 assert.ok(/^Good morning Thandi,/.test(t.text));
 const noName = matchSubscribers(alerts, [erow("anon@example.co.za", { "Your name": "" }), erow("t@example.co.za", { "Your name": "TEST Person" })], [], today, "email").messages;
 const lower = matchSubscribers(alerts, [erow("lower@example.co.za", { "Your name": "jay kgope" })], [], today, "email").messages[0];
@@ -104,6 +111,9 @@ assert.ok(noName.length === 2 && noName.every((m) => m.text.split("\n")[0] === "
 assert.strictEqual(eskip(null), "no valid email");
 assert.strictEqual(eskip("gone@example.co.za"), "cancelled");
 assert.strictEqual(mail("late@example.co.za").kind, "trial_ended");
+for (const body of [mail("late@example.co.za").text, mail("late@example.co.za").html]) {
+  assert.ok(body.includes(`${PRICING.trialDays}-day free trial`) && body.includes(`${P.alerts} a month`), "trial-ended email shows the trial length and price from PRICING");
+}
 assert.ok(/unsubscribe/i.test(mail("late@example.co.za").text));
 assert.ok(/Closing in 3 days/.test(mail("remind@example.co.za").html), "reminders go in the same email");
 assert.strictEqual(eskip("both@example.co.za"), "cancelled", "STOP on WhatsApp also stops email");

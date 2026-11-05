@@ -1,6 +1,7 @@
 // Static HTML for each tender (site/tender/<id>.html), plus sitemap.xml, robots.txt and 404.html.
 // Pages work without JavaScript; a few lines of script only keep the countdown current.
 const { OPERATOR } = require("./config");
+const { P } = require("./prices");
 const { esc, detailHtml, closingText, countdown, briefingText, NOT_STATED } = require("./display");
 
 const BRAND = "TenderFind SA";
@@ -14,8 +15,8 @@ const MARK = (bg, sheet, lines) => `<svg class="brand-mark" viewBox="0 0 32 32" 
 // The sign-up box. site/signup.js loads the Tally form on tap.
 const signupHtml = (root) => `<section class="signup" id="signup" aria-labelledby="signup-h">
 <h2 id="signup-h">Get tenders like this by email every morning</h2>
-<p>Four quick questions. No card needed. After 14 days it’s R149 a month (or R1,490 a year), or stop. <a href="${root}pricing.html">See the price</a></p>
-<button class="btn primary wide big" type="button" data-signup>Try it free for 14 days ${icon(root, "go", "icon icon-go")}</button>
+<p>Four quick questions. No card needed. After ${P.trialDays} days it’s ${P.alerts} a month (or ${P.alertsYear} a year), or stop. <a href="${root}pricing.html">See the price</a></p>
+<button class="btn primary wide big" type="button" data-signup>Try it free for ${P.trialDays} days ${icon(root, "go", "icon icon-go")}</button>
 <div class="signup-form" hidden><iframe title="Sign up for tender alerts" width="100%" height="720" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
 <p class="signup-fallback" hidden>The form is taking a while. <a href="https://tally.so/r/EqKWVX">Open the sign-up form in a new page</a>.</p>
 <noscript><p><a href="https://tally.so/r/EqKWVX">Open the sign-up form</a></p></noscript>
@@ -109,7 +110,7 @@ ${body}
 ${signup ? signupHtml(root) : ""}
 </main>
 ${footerHtml(root)}
-<a class="sticky-cta" href="${cta}" data-signup-jump>Try it free for 14 days ${icon(root, "go", "icon icon-go")}</a>
+<a class="sticky-cta" href="${cta}" data-signup-jump>Try it free for ${P.trialDays} days ${icon(root, "go", "icon icon-go")}</a>
 <script src="${root}ui.js" defer></script>
 ${signup ? `<script src="${root}signup.js" defer></script>
 ` : ""}${script}</body>
@@ -172,7 +173,7 @@ ${t.documents?.[0] ? `<a class="btn" href="${esc(t.documents[0].url)}" target="_
 <p class="due${!closed && cd.soon ? " soon" : ""}">${closed ? "Closed" : `<span id="due" data-closing="${esc(t.closing)}">${esc(cd.text)}</span>`} <span class="meta">(${esc(closingText(t.closing))})</span></p>
 ${share}
 ${facts}
-${closed ? "" : `<p class="help-link"><b>Need help with this tender?</b> We go through the documents with you and give you a checklist of everything to submit. <a href="../help.html?service=bid&amp;tender=${esc(t.id)}">Request Bid Help (R550)</a></p>`}
+${closed ? "" : `<p class="help-link"><b>Need help with this tender?</b> We go through the documents with you and give you a checklist of everything to submit. <a href="../help.html?service=bid&amp;tender=${esc(t.id)}">Request Bid Help (${P.bidHelp})</a></p>`}
 </article>
 ${similarHtml(t, similarList)}`;
 

@@ -13,7 +13,9 @@ const MATCH = {
   NATIONAL: "National",
   TRIAL_DAYS: 14, // free days from the first sign-up (sign-up day is day 1)
   SITE: "https://tenderfind.co.za",
-  BID_HELP: 550, // Bid Help price per tender, linked under every tender in the email (help.html)
+  // Prices: copies of PRICING in scripts/lib/config.js (this file can't read it inside n8n). npm test fails if they differ.
+  ALERTS_PRICE: 149, // Alerts, rand a month (trial-ended email)
+  BID_HELP: "from R1,500", // Bid Help per tender, linked under every tender in the email (help.html)
   UNSUBSCRIBE_TO: "jobkgope1@gmail.com", // where "UNSUBSCRIBE" replies go (the sending Gmail)
 };
 
@@ -135,7 +137,7 @@ function emailItem(t) {
     html: `<p style="margin:0 0 16px"><b>${escHtml(t.title)}</b><br>` +
       `${escHtml(t.buyer || "Buyer not stated")}<br>Closes ${escHtml(shortDate(t.closing_text))}<br>` +
       `<a href="${escHtml(t.url)}" style="color:#0b5d3b;font-weight:bold">View tender</a>` +
-      ` · <a href="${escHtml(helpUrl(t))}" style="color:#545b5e">Need help with this tender? Bid Help (R${MATCH.BID_HELP})</a></p>`,
+      ` · <a href="${escHtml(helpUrl(t))}" style="color:#545b5e">Need help with this tender? Bid Help (${MATCH.BID_HELP})</a></p>`,
   };
 }
 
@@ -177,10 +179,11 @@ function emailMessage(sub, today, fresh, soon) {
 
 function trialEndedEmail(sub) {
   const subject = "Your free trial of TenderFind SA alerts has ended";
+  const ended = `Your ${MATCH.TRIAL_DAYS}-day free trial of TenderFind SA tender alerts has ended. To keep getting new tenders for your trade every morning, it's R${MATCH.ALERTS_PRICE} a month. Nothing is charged automatically.`;
   const text = [
     greet("Hi", sub),
     "",
-    "Your 14-day free trial of TenderFind SA tender alerts has ended. To keep getting new tenders for your trade every morning, it's R149 a month. Nothing is charged automatically.",
+    ended,
     "",
     "To subscribe, reply to this email or see Pricing on TenderFind SA.",
     "",
@@ -188,7 +191,7 @@ function trialEndedEmail(sub) {
     UNSUBSCRIBE_TEXT,
   ].join("\n");
   const html = `<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.45;color:#16191a;max-width:560px">` +
-    `<p>${escHtml(greet("Hi", sub))}</p><p>Your 14-day free trial of TenderFind SA tender alerts has ended. To keep getting new tenders for your trade every morning, it's R149 a month. Nothing is charged automatically.</p>` +
+    `<p>${escHtml(greet("Hi", sub))}</p><p>${escHtml(ended)}</p>` +
     `<p><a href="${MATCH.SITE}/pricing.html">See how to subscribe</a>, or just reply to this email.</p>` +
     `<hr style="border:0;border-top:1px solid #d9ddd7;margin:18px 0"><p style="font-size:12px;color:#545b5e">${unsubscribeHtml()}</p></div>`;
   return { subject, text, html };

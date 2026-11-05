@@ -2,6 +2,7 @@
 const { esc } = require("./display");
 const { shell } = require("./pages");
 const { OPERATOR, PRICING, HELP_WEBHOOK, PAYMENTS_LIVE } = require("./config");
+const { P } = require("./prices");
 
 function contactLines() {
   const lines = [];
@@ -28,7 +29,7 @@ function aboutPage(siteUrl, count) {
 <li><b>Briefings and CIDB grades.</b> We read the tender documents to find compulsory briefing sessions, CIDB grades and CSD requirements. These are marked "auto-extracted, confirm before bidding" because a computer read them.</li>
 <li><b>Trades and provinces.</b> Tenders are tagged by trade (cleaning, security, construction and more) and by province. The province comes from the place named in the tender where there is one, and otherwise from who is buying. National tenders are only sent to you when the work is nationwide or at the buyer's offices in your province.</li>
 <li><b>Closing soon.</b> Countdowns and "Did you miss these?" so deadlines don't slip past.</li>
-<li><b>Morning email.</b> New tenders for your trade and province by email every morning (<a href="pricing.html">14 days free, then R${PRICING.alerts} a month</a>). You can also share any tender on WhatsApp in one tap.</li>
+<li><b>Morning email.</b> New tenders for your trade and province by email every morning (<a href="pricing.html">${P.trialDays} days free, then ${P.alerts} a month</a>). You can also share any tender on WhatsApp in one tap.</li>
 </ul>
 
 <h2>What we never do</h2>
@@ -116,7 +117,7 @@ function waLink(text) {
 }
 
 function pricingPage(siteUrl) {
-  const { alerts, alertsYear, trialDays, bidHelpPrice } = PRICING;
+  const { trialDays } = PRICING;
   // Until PayFast is live, "subscribe" means WhatsApp us; once live, it goes to the secure pay page (pay/).
   const payButton = (planId, label, cls = "btn wa wide") => `<a class="${cls}" href="pay/?plan=${planId}">${label}</a>`;
   const subscribe = waLink("Hi, I'd like to subscribe to tender alerts");
@@ -138,34 +139,35 @@ ${plan("Free", "R0", "", [
   "Closing-soon countdowns and “Did you miss these?”",
   "Share any tender on WhatsApp",
 ], { html: `<a class="btn wide" href="./">Search tenders</a>` })}
-${plan("Alerts", `R${alerts}`, "a month", [
+${plan("Alerts", P.alerts, "a month", [
   "Everything in Free",
   "One email every morning with new tenders for your trades and provinces",
   "A reminder 3 days before matching tenders close",
   `<b>${trialDays} days free</b> when you sign up, no payment details needed`,
   "Cancel any time: unsubscribe from any email",
 ], { main: true, html: PAYMENTS_LIVE
-  ? `${payButton("monthly", `Subscribe: R${alerts} a month`)}<p class="small"><a href="#signup">Or start the ${trialDays}-day free trial first</a></p>`
+  ? `${payButton("monthly", `Subscribe: ${P.alerts} a month`)}<p class="small"><a href="#signup">Or start the ${trialDays}-day free trial first</a></p>`
   : subscribe
   ? `<a class="btn wa wide" href="${subscribe}" target="_blank" rel="noopener">WhatsApp us to subscribe</a><p class="small"><a href="#signup">Or start the ${trialDays}-day free trial</a></p>`
   : `<a class="btn wa wide" href="#signup">Start your ${trialDays}-day free trial</a>` })}
-${plan("Alerts yearly", `R${alertsYear.toLocaleString("en-ZA").replace(/\s/g, ",")}`, "a year", [
+${plan("Alerts yearly", P.alertsYear, "a year", [
   "Everything in Alerts",
-  `<b>2 months free</b>: R${(alerts * 12 - alertsYear).toLocaleString("en-ZA").replace(/\s/g, ",")} less than paying monthly`,
+  `<b>2 months free</b>: ${P.alertsSaving} less than paying monthly`,
   "One payment a year, no monthly debit",
   "Cancel any time; alerts run to the end of your year",
 ], { html: PAYMENTS_LIVE
-  ? payButton("annual", `Subscribe: R${alertsYear.toLocaleString("en-ZA").replace(/\s/g, ",")} a year`, "btn wide")
+  ? payButton("annual", `Subscribe: ${P.alertsYear} a year`, "btn wide")
   : subscribeYear ? `<a class="btn wide" href="${subscribeYear}" target="_blank" rel="noopener">WhatsApp us for the yearly plan</a>` : "" })}
-${plan("Bid Help", bidHelpPrice ? `R${bidHelpPrice}` : "Ask us", "per tender", [
+${plan("Bid Help", P.bidHelp, "per tender", [
   "We read the tender documents and list everything you need to submit",
   "We draft your cover letter and a compliance checklist",
   "We flag deadlines, briefing sessions and missing documents",
+  `Bigger or complex tenders: we quote you (up to ${P.bidHelpMax}) after we see the documents`,
   "Pay once per tender, before we start",
   "<b>We don’t guarantee a win.</b> You submit the bid yourself.",
 ], { html: `<a class="btn wide" href="help.html?service=bid">Request Bid Help</a>${bidHelp ? `<p class="small"><a href="${bidHelp}" target="_blank" rel="noopener">Or WhatsApp us about Bid Help</a></p>` : ""}` })}
 </div>
-<p class="lede">Not registered yet? <a href="registration-help.html">CSD and CIDB registration help</a> from R${PRICING.csdHelpPrice}.</p>
+<p class="lede">Not registered yet? <a href="registration-help.html">CSD and CIDB registration help</a> from ${P.csd}.</p>
 
 <article class="card prose faq">
 <h2>Questions</h2>
@@ -180,7 +182,7 @@ ${plan("Bid Help", bidHelpPrice ? `R${bidHelpPrice}` : "Ask us", "per tender", [
 </article>`;
   return shell({
     title: "Pricing | TenderFind SA",
-    description: `Search all open eTenders government tenders free. Get new tenders for your trade by email every morning for R${alerts} a month, with a ${trialDays}-day free trial.`,
+    description: `Search all open eTenders government tenders free. Get new tenders for your trade by email every morning for ${P.alerts} a month, with a ${trialDays}-day free trial.`,
     canonical: `${siteUrl}/pricing.html`,
     root: "./",
     body,
@@ -190,14 +192,13 @@ ${plan("Bid Help", bidHelpPrice ? `R${bidHelpPrice}` : "Ask us", "per tender", [
 // The help-request form (site/help.js posts it to n8n, which emails the owner). No payment is taken here:
 // we reply with the details and how to pay before any work starts.
 function helpForm(preselect) {
-  const { bidHelpPrice, csdHelpPrice, cidbHelpPrice } = PRICING;
   const opt = (value, text) => `<option value="${value}"${value === preselect ? " selected" : ""}>${esc(text)}</option>`;
   return `<form class="card help-form" id="help-form" data-endpoint="${esc(HELP_WEBHOOK)}" novalidate>
 <label><span>What do you need help with?</span><select name="service" required>
-${opt("bid", `Bid Help for a tender (R${bidHelpPrice})`)}
-${opt("csd", `CSD registration (R${csdHelpPrice})`)}
-${opt("cidb", `CIDB registration (R${cidbHelpPrice})`)}
-${opt("csd+cidb", `CSD and CIDB registration (R${csdHelpPrice + cidbHelpPrice})`)}
+${opt("bid", `Bid Help for a tender (${P.bidHelp})`)}
+${opt("csd", `CSD registration (${P.csd})`)}
+${opt("cidb", `CIDB registration (${P.cidb})`)}
+${opt("csd+cidb", `CSD and CIDB registration (${P.csdCidb})`)}
 </select></label>
 <p class="help-tender" id="help-tender" hidden></p>
 <input type="hidden" name="tender">
@@ -215,23 +216,23 @@ ${opt("csd+cidb", `CSD and CIDB registration (R${csdHelpPrice + cidbHelpPrice})`
 }
 
 function helpPage(siteUrl) {
-  const { bidHelpPrice } = PRICING;
   const body = `<h1 class="page-h">Get help with a tender</h1>
 <p class="lede">Tell us what you need and we'll get back to you within one working day.</p>
 ${helpForm("bid")}
 <article class="card prose">
-<h2>Bid Help (R${bidHelpPrice} per tender)</h2>
+<h2>Bid Help (${P.bidHelp} per tender)</h2>
 <ul>
 <li>We read the tender documents and list everything you must submit</li>
 <li>We draft your cover letter and a compliance checklist</li>
 <li>We flag deadlines, briefing sessions and missing documents</li>
 </ul>
+<p>Bigger or complex tenders: we look at the documents first and quote you a price (up to ${P.bidHelpMax}). You pay once we agree the price, before we start.</p>
 <p><b>We don’t guarantee a win.</b> You submit the bid yourself.</p>
 <p>Need to register first? See <a href="registration-help.html">CSD and CIDB registration help</a>.</p>
 </article>`;
   return shell({
     title: "Get help with a tender | TenderFind SA",
-    description: `Bid Help for South African government tenders: we go through the documents with you and give you a checklist of everything to submit. R${bidHelpPrice} per tender.`,
+    description: `Bid Help for South African government tenders: we go through the documents with you and give you a checklist of everything to submit. Prices start ${P.bidHelp} per tender.`,
     canonical: `${siteUrl}/help.html`,
     root: "./",
     body,
@@ -241,13 +242,12 @@ ${helpForm("bid")}
 }
 
 function registrationHelpPage(siteUrl) {
-  const { csdHelpPrice, cidbHelpPrice } = PRICING;
   const body = `<h1 class="page-h">CSD and CIDB registration help</h1>
 <p class="lede">You can’t bid on most government tenders without these. We’ll help you get registered properly, the first time.</p>
 <div class="plans">
-<section class="plan"><h2>CSD registration</h2><p class="price">R${csdHelpPrice} <small>once-off</small></p>
+<section class="plan"><h2>CSD registration</h2><p class="price">${P.csd} <small>once-off</small></p>
 <ul><li>Register your business on National Treasury’s Central Supplier Database (CSD)</li><li>We check your tax, bank and B-BBEE details are captured correctly</li><li>You get your CSD supplier number (MAAA…) to use on every bid</li></ul></section>
-<section class="plan"><h2>CIDB registration</h2><p class="price">R${cidbHelpPrice} <small>once-off</small></p>
+<section class="plan"><h2>CIDB registration</h2><p class="price">${P.cidb} <small>once-off</small></p>
 <ul><li>For construction, building and maintenance tenders</li><li>We help you choose the right class of works and grade</li><li>We prepare and submit your application on the CIDB portal with you</li></ul></section>
 </div>
 <p class="small">Our fee is for our help only. Registration on the CSD is free; any CIDB fees are paid to the CIDB directly. Approval is decided by the CSD and CIDB, not by us.</p>
@@ -255,7 +255,7 @@ function registrationHelpPage(siteUrl) {
 ${helpForm("csd")}`;
   return shell({
     title: "CSD and CIDB registration help | TenderFind SA",
-    description: `Get registered on the Central Supplier Database (CSD) and with the CIDB so you can bid on government tenders. CSD help R${csdHelpPrice}, CIDB help R${cidbHelpPrice}.`,
+    description: `Get registered on the Central Supplier Database (CSD) and with the CIDB so you can bid on government tenders. CSD help ${P.csd}, CIDB help ${P.cidb}.`,
     canonical: `${siteUrl}/registration-help.html`,
     root: "./",
     body,
@@ -267,8 +267,7 @@ ${helpForm("csd")}`;
 // Electronic Communications and Transactions (ECT) Act requires of anyone selling online.
 // Refund rules follow the ECT Act cooling-off period (s44) and the Consumer Protection Act on fixed-term plans (s14).
 function termsPage(siteUrl) {
-  const { alerts, alertsYear, trialDays, bidHelpPrice, csdHelpPrice, cidbHelpPrice } = PRICING;
-  const rand = (n) => `R${n.toLocaleString("en-ZA").replace(/\s/g, ",")}`;
+  const { trialDays } = PRICING;
   const onRequest = "available on request: email us";
   const phone = OPERATOR.whatsapp ? `0${OPERATOR.whatsapp.slice(2, 4)} ${OPERATOR.whatsapp.slice(4, 7)} ${OPERATOR.whatsapp.slice(7)}` : null;
   const tax = OPERATOR.vatRegistered ? "All prices include VAT." : "We are not registered for VAT, so no VAT is added: the price shown is the full price.";
@@ -291,9 +290,9 @@ ${phone ? `<dt>Phone and WhatsApp</dt><dd>${esc(phone)}</dd>` : ""}
 <h2>2. What we offer and what it costs</h2>
 <ul>
 <li><b>Free search.</b> Searching and reading open tenders on this site is free.</li>
-<li><b>Tender alerts: ${rand(alerts)} a month, or ${rand(alertsYear)} a year.</b> One email each morning with the new tenders for the trades and provinces you choose, plus a reminder 3 days before matching tenders close. The first ${trialDays} days are free and we don't ask for payment details. Nothing is charged automatically when the trial ends.</li>
-<li><b>Bid Help: ${rand(bidHelpPrice)} per tender.</b> We read the tender documents, list everything you must submit, draft a cover letter and a compliance checklist, and flag deadlines and briefing sessions. You submit the bid yourself.</li>
-<li><b>CSD registration help: ${rand(csdHelpPrice)}. CIDB registration help: ${rand(cidbHelpPrice)}.</b> Once-off fees for our help only. CSD registration itself is free; CIDB fees are paid to the CIDB.</li>
+<li><b>Tender alerts: ${P.alerts} a month, or ${P.alertsYear} a year.</b> One email each morning with the new tenders for the trades and provinces you choose, plus a reminder 3 days before matching tenders close. The first ${trialDays} days are free and we don't ask for payment details. Nothing is charged automatically when the trial ends.</li>
+<li><b>Bid Help: ${P.bidHelp} per tender.</b> We read the tender documents, list everything you must submit, draft a cover letter and a compliance checklist, and flag deadlines and briefing sessions. For bigger or complex tenders we quote a price (up to ${P.bidHelpMax}) after we see the documents, and you agree it before we start. You submit the bid yourself.</li>
+<li><b>CSD registration help: ${P.csd}. CIDB registration help: ${P.cidb}.</b> Once-off fees for our help only. CSD registration itself is free; CIDB fees are paid to the CIDB.</li>
 </ul>
 <p>${tax} Prices are in South African rand.</p>
 
@@ -342,4 +341,67 @@ ${phone ? `<dt>Phone and WhatsApp</dt><dd>${esc(phone)}</dd>` : ""}
   });
 }
 
-module.exports = { aboutPage, privacyPage, pricingPage, helpPage, registrationHelpPage, termsPage };
+// site/pay/index.html: tenderfind.co.za/pay/?plan=monthly&email=... goes straight to the signed PayFast checkout
+// (built in the n8n "Payments: pay link" workflow, where the merchant key lives AND its own price list: keep both in
+// step). Without an email it shows this short form first. Only plans the n8n workflow knows are listed here.
+function payPage() {
+  return `<!doctype html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Subscribe | TenderFind SA</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="../">TenderFind <span>SA</span></a>
+<p class="promise">New government tenders for your trade, emailed every morning.</p></div></header>
+<main class="wrap page">
+<!-- Generated by scripts/build.js (payPage in scripts/lib/info-pages.js). Prices come from PRICING in scripts/lib/config.js. -->
+<h1 class="page-h">Subscribe to TenderFind SA</h1>
+<p class="lede" id="pay-note">Secure payment by PayFast: card, Instant EFT, SnapScan and more.</p>
+<form class="card help-form" id="pay-form" novalidate>
+<label><span>Choose</span><select name="plan">
+<option value="monthly">Tender alerts: ${P.alerts} a month</option>
+<option value="annual">Tender alerts: ${P.alertsYear} a year (2 months free)</option>
+<option value="bid">Bid Help for one tender: ${P.bidHelpFrom} (bigger tenders are quoted first)</option>
+<option value="csd">CSD registration help: ${P.csd}</option>
+<option value="cidb">CIDB registration help: ${P.cidb}</option>
+<option value="csd+cidb">CSD and CIDB registration help: ${P.csdCidb}</option>
+</select></label>
+<label><span>Email address you signed up with</span><input name="email" type="email" required autocomplete="email"></label>
+<label><span>Your name</span><input name="name" autocomplete="name"></label>
+<input type="hidden" name="tender"><input type="hidden" name="test">
+<button class="btn wa wide" type="submit">Continue to secure payment</button>
+<p class="form-msg" id="pay-msg" role="status"></p>
+<p class="small">Monthly and yearly plans renew automatically until you cancel. Reply to any of our emails to cancel.</p>
+</form>
+</main>
+<script>
+(function () {
+  var ENDPOINT = "https://jaykgope.app.n8n.cloud/webhook/tenderfind-pay";
+  var form = document.getElementById("pay-form");
+  var q = new URLSearchParams(location.search);
+  ["plan", "email", "name", "tender", "test"].forEach(function (k) { if (q.get(k) && form[k]) form[k].value = q.get(k); });
+  var go = function () { location.replace(ENDPOINT + "?" + new URLSearchParams(new FormData(form)).toString()); };
+  // A complete link (plan + email) goes straight through with its own values, so plans that aren't in the
+  // drop-down (e.g. the R5 go-live test) still reach the checkout builder, which checks them.
+  if (q.get("plan") && /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(q.get("email") || "")) {
+    document.getElementById("pay-msg").textContent = "Opening secure payment…";
+    location.replace(ENDPOINT + location.search);
+    return;
+  }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(form.email.value.trim())) { document.getElementById("pay-msg").textContent = "Please enter the email address you signed up with."; form.email.focus(); return; }
+    go();
+  });
+})();
+</script>
+</body>
+</html>
+`;
+}
+
+module.exports = { aboutPage, privacyPage, pricingPage, helpPage, registrationHelpPage, termsPage, payPage };
