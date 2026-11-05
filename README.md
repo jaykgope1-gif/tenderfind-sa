@@ -120,8 +120,9 @@ All prices live in `PRICING` in `scripts/lib/config.js`. Nothing on the site has
 **When you change a price, also change:**
 
 1. `scripts/lib/match.js` (it runs inside n8n and can't read config.js): `ALERTS_PRICE`, `BID_HELP`, `TRIAL_DAYS` and `PRO_EMAILS`. `npm test` fails until they match `PRICING`. Then paste `match.js` into n8n.
-2. The n8n "Payments: pay link" workflow's own price list (monthly, annual, bid, csd, cidb).
-3. The Terms page says price changes are emailed to subscribers 20 working days before they apply to them.
+2. The n8n "Payments: pay link" workflow's own price list (monthly, annual, bid, csd, cidb). **Its Bid Help price is still 550:** change it to 1500 yourself before payments go live.
+3. The n8n "Help requests" workflow: the service names and prices in its "Check and shape request" step (`SERVICES`).
+4. The Terms page says price changes are emailed to subscribers 20 working days before they apply to them.
 
 ## Sign-ups (Tally → n8n)
 

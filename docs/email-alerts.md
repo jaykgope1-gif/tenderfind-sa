@@ -37,24 +37,26 @@ Edit the **status** column in the subscribers table:
 
 ## Pro subscribers
 
-Pro (see README **Pricing**) is a paying subscriber with two extra columns in the subscribers table:
+Pro (see README **Pricing**) is a paying subscriber with two extra columns in the subscribers table (added 5 Nov 2026):
 
-- **plan**: `Pro` (blank or anything else = Alerts)
+- **pro**: tick it for Pro. Untick it, or leave it blank, for Alerts. Pro only counts while **status** is Paying and **paid_until** hasn't passed.
 - **team_emails**: up to 2 more addresses, separated by commas, e.g. `ops@firm.co.za, estimator@firm.co.za`
 
-For these to reach the matcher, "Shape subscriber rows" passes them inside `_access`:
+The table's older **plan** column (e.g. "monthly") is not used for Pro, so a payment can never switch Pro off by accident.
+
+"Shape subscriber rows" passes them to the matcher inside `_access` (live since 5 Nov 2026):
 
 ```js
 _access: {
-  status: ..., paidUntil: ..., cancelled: ...,   // as now
-  plan: r.plan || '',
+  status: ..., paidUntil: ..., cancelled: ...,
+  plan: r.pro === true ? 'Pro' : 'Alerts',
   team: r.team_emails || '',
 },
 ```
 
 The matcher then gives each Pro email (only while status is Paying and paid_until hasn't passed):
 
-- `cc`: the team addresses (`""` for everyone else). In "Send alert email", set **Options → CC** to `{{ $json.cc }}`.
+- `cc`: the team addresses (`""` for everyone else). "Send alert email" has **Options → CC** set to `{{ $json.cc || '' }}`.
 - a "You'll need: …" line under each tender, from the tender's "What you'll need to submit" list (in the alerts file), or "check the tender documents" when there's no list.
 
 Alerts subscribers' emails don't change.
