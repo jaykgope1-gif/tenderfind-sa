@@ -1,5 +1,38 @@
 [
  {
+  "at": "2026-11-05T02:47:56.870Z",
+  "ok": true,
+  "days": {
+   "2026-11-03": {
+    "releases": 139,
+    "badRecords": 1
+   },
+   "2026-11-04": {
+    "releases": 11,
+    "badRecords": 0
+   },
+   "2026-11-05": {
+    "releases": 1,
+    "badRecords": 0
+   }
+  },
+  "releases": 151,
+  "added": 2,
+  "updated": [
+   {
+    "id": "176718",
+    "changes": [
+     "documents"
+    ],
+    "from": "2026-11-27T10:00:00+02:00",
+    "to": "2026-11-27T10:00:00+02:00"
+   }
+  ],
+  "unchanged": 148,
+  "removed": 1,
+  "total": 671
+ },
+ {
   "at": "2026-11-04T11:35:05.147Z",
   "ok": true,
   "days": {

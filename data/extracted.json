@@ -19735,7 +19735,7 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-03T02:48:16.218Z"
+  "extracted_at": "2026-11-05T02:48:24.731Z"
  },
  "176719": {
   "status": "ok",
@@ -24963,10 +24963,43 @@
   },
   "extracted_at": "2026-11-04T11:35:31.296Z"
  },
+ "176921": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Vehicle advert - Final.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-05T02:48:24.766Z"
+ },
  "gp-hla-4-2-4-2026-03": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-04T11:35:28.246Z",
+  "extracted_at": "2026-11-05T02:48:19.019Z",
   "fields": {
    "briefing": {
     "value": {
@@ -24999,7 +25032,7 @@
  "gp-gt-gdh-036-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-04T11:35:28.246Z",
+  "extracted_at": "2026-11-05T02:48:19.019Z",
   "fields": {
    "briefing": {
     "value": {
@@ -25032,7 +25065,7 @@
  "gp-gt-gdh-037-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-04T11:35:28.246Z",
+  "extracted_at": "2026-11-05T02:48:19.019Z",
   "fields": {
    "briefing": {
     "value": {
@@ -25065,7 +25098,7 @@
  "gp-cogta-01-01-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-04T11:35:28.246Z",
+  "extracted_at": "2026-11-05T02:48:19.019Z",
   "fields": {
    "briefing": {
     "value": {
@@ -25098,7 +25131,7 @@
  "gp-drt-09-09-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-04T11:35:28.246Z",
+  "extracted_at": "2026-11-05T02:48:19.019Z",
   "fields": {
    "briefing": {
     "value": {
@@ -25131,7 +25164,7 @@
  "gp-gt-gpt-033-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-04T11:35:28.246Z",
+  "extracted_at": "2026-11-05T02:48:19.019Z",
   "fields": {
    "briefing": {
     "value": {
@@ -25164,7 +25197,7 @@
  "gp-gt-gdenv-026-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-04T11:35:28.246Z",
+  "extracted_at": "2026-11-05T02:48:19.019Z",
   "fields": {
    "briefing": {
     "value": {

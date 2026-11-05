@@ -1,0 +1,33 @@
+{
+ "date": "2026-11-05",
+ "generated_at": "2026-11-05T02:49:31.999Z",
+ "site": "https://tenderfind.co.za",
+ "note": "National tenders go only to subscribers in their head-office province (hq) or, when nationwide is true, to everyone.",
+ "counts": {
+  "new": 1,
+  "closing_soon": 0
+ },
+ "new": {
+  "Supplies": {
+   "KwaZulu-Natal": [
+    {
+     "id": "176921",
+     "title": "The service provider to supply and deliver motor vehicle for his majesty king misuzulu",
+     "official_title": "Appointment of the service provider to supply and deliver motor vehicle for his majesty king misuzulu",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Kwazulu Natal - Office of the Premier",
+     "province": "KwaZulu-Natal",
+     "trade": "Supplies",
+     "closing": "2026-11-27T11:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "url": "https://tenderfind.co.za/tender/176921.html"
+    }
+   ]
+  }
+ },
+ "closing_soon": {}
+}
