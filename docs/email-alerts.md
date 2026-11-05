@@ -35,9 +35,33 @@ Edit the **status** column in the subscribers table:
 - **Paying**: put the end of the paid month in **paid_until** (YYYY-MM-DD). Alerts run until that date.
 - **Cancelled**: nothing is sent. Use this when someone replies UNSUBSCRIBE (those replies arrive in the owner's Gmail).
 
+## Pro subscribers
+
+Pro (see README **Pricing**) is a paying subscriber with two extra columns in the subscribers table:
+
+- **plan**: `Pro` (blank or anything else = Alerts)
+- **team_emails**: up to 2 more addresses, separated by commas, e.g. `ops@firm.co.za, estimator@firm.co.za`
+
+For these to reach the matcher, "Shape subscriber rows" passes them inside `_access`:
+
+```js
+_access: {
+  status: ..., paidUntil: ..., cancelled: ...,   // as now
+  plan: r.plan || '',
+  team: r.team_emails || '',
+},
+```
+
+The matcher then gives each Pro email (only while status is Paying and paid_until hasn't passed):
+
+- `cc`: the team addresses (`""` for everyone else). In "Send alert email", set **Options → CC** to `{{ $json.cc }}`.
+- a "You'll need: …" line under each tender, from the tender's "What you'll need to submit" list (in the alerts file), or "check the tender documents" when there's no list.
+
+Alerts subscribers' emails don't change.
+
 ## Each email
 
-Subject like "4 new tenders for you, Mon, 02 Nov". Up to 10 new tenders (title, buyer, closing date, link), a link to see the rest, up to 3 "closing in 3 days" reminders if they asked, and an unsubscribe line on every email. Sent from the owner's Gmail as "TenderFind SA". A normal Gmail account can send about 500 emails a day.
+Subject like "4 new tenders for you, Mon, 02 Nov". Up to 10 new tenders (title, buyer, closing date, link, and "Need help with this tender? Bid Help (from R1,500)"), a link to see the rest, up to 3 "closing in 3 days" reminders if they asked, and an unsubscribe line on every email. Pro emails add the "You'll need" line and go to the team addresses too. Sent from the owner's Gmail as "TenderFind SA". A normal Gmail account can send about 500 emails a day (each cc address counts).
 
 ## Go-live record (2 Nov 2026)
 

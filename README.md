@@ -15,10 +15,12 @@ TenderFind SA is a fast, mobile-first search engine for South African government
 - **Search** any word ("security guarding", "Polokwane", "cleaning"). Results are ranked, with title matches first.
 - **Filters** for trade, province, closing date, buyer, newly published, and briefing sessions.
 - **Plain-English details** for every tender: what they want, who is buying, where, closing date, briefing session, CIDB grade, B-BBEE level, CSD requirement, and the documents.
+- **"What you'll need to submit"** on every open tender: the returnable documents and forms its own tender documents list (SBD/MBD forms, CSD report, tax PIN, CIDB, B-BBEE and more), each with the document's own words as evidence. If the documents can't be read, the page says "Check the tender documents. We couldn't read them automatically."
 - **"Closing soon" badges**, countdowns and a "Did you miss these?" list.
 - **A page per tender** (`/tender/<id>.html`) that shares nicely on WhatsApp and can be found on Google.
 - **Closed tenders** keep their page for a year, saying "This tender has closed" with similar open tenders.
-- **A sign-up box** on every page for morning tender alerts by trade and province, **by email for now** (WhatsApp later): 14 days free, then R149 a month (see `/pricing.html`).
+- **A sign-up box** on every page for morning tender alerts by trade and province, **by email for now** (WhatsApp later): 14 days free, then the Alerts plan (see **Pricing** below).
+- **Done-for-you services:** Bid Help per tender and Tender Desk (monthly), requested through `/help.html`, plus `/partners.html` for organisations that want alerts for their members.
 - **Light first load:** about 40 KB on the search page. The sign-up form only loads when tapped.
 
 ### The one rule: never invent tender details
@@ -42,7 +44,8 @@ eTenders API ──► fetch.js ──► extract.js ──► build.js ──�
    - Changed closing dates or documents get an "Updated" badge.
    - Closed tenders move to `data/archive/<month>.json`.
    - If the eTenders API is down, it keeps yesterday's data.
-2. **`scripts/extract.js`** downloads the PDFs of new or changed tenders only. It finds briefing sessions, CIDB grades, B-BBEE minimums and CSD requirements with pattern matching. Results are cached in `data/extracted.json`, so each tender is read once.
+2. **`scripts/extract.js`** downloads the PDFs of new or changed tenders only. It finds briefing sessions, CIDB grades, B-BBEE minimums and CSD requirements with pattern matching, and the "What you'll need to submit" checklist (`scripts/lib/checklist.js`). Results are cached in `data/extracted.json`, so each tender is read once.
+   - Tenders read before the checklist existed are re-read for it only, up to 150 a day (`--backfill N` to change; `--cache <file>` to test on a copy).
    - If `ANTHROPIC_API_KEY` is set, Claude Haiku helps when pattern matching finds nothing.
    - Without the key, everything still works.
 3. **`scripts/build.js`** tags each tender with a trade and province, then writes the site into `site/`:
@@ -68,11 +71,13 @@ You can also run it any time: on GitHub, go to **Actions → Daily update → Ru
 | `scripts/lib/normalise.js` | Turns an eTenders record into a tender, and holds the **trade rules** |
 | `scripts/lib/provinces.js` | Works out the **province** from the buyer's name |
 | `scripts/lib/pages.js`, `info-pages.js` | Tender pages, about/privacy pages, sitemap |
-| `scripts/lib/config.js` | **Settings you edit:** site address and operator contact details |
+| `scripts/lib/config.js` | **Settings you edit:** site address, operator contact details and **all prices** |
 | `data/tenders.json` | All open tenders (saved daily by the Action) |
 | `data/extracted.json` | What was found in each tender's documents |
 | `data/archive/` | Closed tenders, one file per month |
 | `data/alerts/` | Daily alerts files for the alert sender (60 days) |
+| `scripts/lib/checklist.js` | Finds "What you'll need to submit" in the document text (tested by `scripts/test-checklist.js`) |
+| `scripts/lib/prices.js` | Turns PRICING into the price text every page shows |
 | `scripts/lib/match.js` | Who gets which tenders, by email or WhatsApp: the same code runs inside n8n (tested by `npm test`) |
 | `docs/email-alerts.md` | **What runs today:** the n8n workflows, tables, sign-up webhook and the go-live checklist |
 | `docs/n8n-alerts.md` | The later WhatsApp design: templates, STOP handling, Meta setup |
@@ -86,7 +91,8 @@ Edit **`scripts/lib/config.js`**:
 
 - `SITE_URL`: the public address. Change it when you add your own domain.
 - `OPERATOR`: your name or business, email and WhatsApp number. These appear on the privacy page as the POPIA responsible party and contact. The WhatsApp number also turns on the "WhatsApp us to subscribe" button on /pricing. **Fill this in before promoting sign-ups.**
-- `PRICING`: the Alerts price and trial length shown on the site. If you change the trial length, change `TRIAL_DAYS` in `scripts/lib/match.js` too.
+- `PRICING`: **every price on the site**, and the trial length. See **Pricing** below for what each one is and what else to change with it.
+- `PAYMENTS_LIVE`: stays `false` until the real PayFast account is approved.
 
 Other settings:
 
@@ -94,6 +100,28 @@ Other settings:
 - **AI help with documents** (optional): on GitHub, go to **Settings → Secrets and variables → Actions → New repository secret**. Name it `ANTHROPIC_API_KEY` and paste your key. Remove the secret to switch AI off.
 
 ---
+
+## Pricing
+
+All prices live in `PRICING` in `scripts/lib/config.js`. Nothing on the site has a price typed in by hand: the pages get them through `scripts/lib/prices.js`, and the hand-written home page marks its prices as `<span data-price="alerts">R149</span>`, which `build.js` fills in. `check-site.js` refuses to deploy a stale home-page price or a leftover old price.
+
+| Plan | Key(s) | Price now | How people buy it |
+|---|---|---|---|
+| Free | | R0 | search on the site |
+| **Alerts** (main plan) | `alerts`, `alertsYear`, `trialDays` | R149 a month / R1,490 a year, 14 days free | sign-up box, then WhatsApp or pay link |
+| **Pro** | `pro`, `proYear`, `proEmails` | R499 a month / R4,990 a year | WhatsApp or help form (`?service=pro`) |
+| **Bid Help** | `bidHelpFrom`, `bidHelpMax` | from R1,500 per tender, quoted up to R5,000 | help form (`?service=bid`) |
+| **Tender Desk** | `deskFrom` | from R3,500 a month | WhatsApp ("Book a call") or help form (`?service=tender-desk`) |
+| CSD / CIDB help | `csdHelpPrice`, `cidbHelpPrice` | R300 / R500 | help form |
+| Partners (bulk seats) | `partnerFrom`, `partnerMembers` | from R5,000 a month for 100 members | `/partners.html`, help form (`?service=partner`) |
+
+**Pro** is Alerts plus: the same email to up to 3 addresses, the "What you'll need to submit" list under each tender in the email, and priority WhatsApp support (answered first by the owner). It's switched on per subscriber in n8n (see [docs/email-alerts.md](docs/email-alerts.md)).
+
+**When you change a price, also change:**
+
+1. `scripts/lib/match.js` (it runs inside n8n and can't read config.js): `ALERTS_PRICE`, `BID_HELP`, `TRIAL_DAYS` and `PRO_EMAILS`. `npm test` fails until they match `PRICING`. Then paste `match.js` into n8n.
+2. The n8n "Payments: pay link" workflow's own price list (monthly, annual, bid, csd, cidb).
+3. The Terms page says price changes are emailed to subscribers 20 working days before they apply to them.
 
 ## Sign-ups (Tally → n8n)
 
@@ -162,6 +190,11 @@ Tender data comes from National Treasury eTenders (public domain) via the offici
 
 ## Roadmap
 
+- **Pricing and services (Nov 2026, built; not yet live until approved):** Pro, Bid Help from R1,500, Tender Desk, the partners page, and "What makes TenderFind different" on the home and pricing pages. See **Pricing**.
+- **"What you'll need to submit" (built):** from the tender documents only, on every tender page and in Pro emails. Older tenders get it within about 5 daily runs (backfill of 150 a day).
+- **Coming soon (shown as such on /pricing):** tenders that municipalities and state companies put only on their own websites, and private-sector tenders. Neither is fetched yet.
+- **Award data (not available):** we wanted to save who won each tender and for how much. National Treasury's eTenders open-data feed (`ocds-api.etenders.gov.za`) doesn't publish it: the `awards` field was empty in every release sampled in Nov 2026 (releases from 2024, 2025 and Aug–Nov 2026), and the API has only the two release endpoints. Nothing is collected. Revisit if the feed starts publishing awards.
+
 - **Email alerts (live since 2 Nov 2026):** n8n workflows, subscriber and run-log tables, and the go-live checklist are in [docs/email-alerts.md](docs/email-alerts.md).
 - **WhatsApp alerts (designed):** templates, STOP handling and WhatsApp Business setup are in [docs/n8n-alerts.md](docs/n8n-alerts.md). They start once a Meta WhatsApp Business account is approved.
-- **Phase F (done):** `/pricing.html` (Free / Alerts R149 a month / Bid Help) and subscriber status (Trial / Paying until a date / Cancelled) with a 14-day trial. The rules are in `scripts/lib/match.js`, and how to record a payment is in [docs/n8n-alerts.md §2a](docs/n8n-alerts.md#2a-subscriber-status-trial-and-payments-phase-f).
+- **Phase F (done):** `/pricing.html` (Free / Alerts / Bid Help) and subscriber status (Trial / Paying until a date / Cancelled) with a 14-day trial. The rules are in `scripts/lib/match.js`, and how to record a payment is in [docs/n8n-alerts.md §2a](docs/n8n-alerts.md#2a-subscriber-status-trial-and-payments-phase-f).

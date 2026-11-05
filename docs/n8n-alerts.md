@@ -54,7 +54,7 @@ Tally fills the first tab. Add two tabs by hand, with these exact headings in ro
 | Tab | Columns | Written by |
 |---|---|---|
 | **Responses** (Tally's tab, keep its name) | Your name · Business name · Your trade(s) · Province(s) you can work in · WhatsApp number · Also remind me 3 days before matching tenders close? · Consent · page · Submitted at … | Tally, automatically |
-| **Status** | Phone · Status · Paid until · Changed · Note | n8n (STOP/START) and you (payments) |
+| **Status** | Phone · Status · Paid until · Changed · Note · Plan · Team emails | n8n (STOP/START) and you (payments). Plan = `Pro` and Team emails (up to 2 more addresses) on a Paying line make it a Pro subscriber (email only). |
 | **Log** | Date · Phone · Kind · Template · Tender IDs · Message ID · Result | n8n, one row per message |
 
 The rules (all in `scripts/lib/match.js`):
