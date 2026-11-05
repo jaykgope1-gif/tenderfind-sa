@@ -123,17 +123,24 @@ function pricingPage(siteUrl) {
   const subscribe = waLink("Hi, I'd like to subscribe to tender alerts");
   const subscribeYear = waLink("Hi, I'd like the yearly tender alerts plan");
   const bidHelp = waLink("Hi, I'd like help with a tender bid");
+  const proWa = waLink("Hi, I'd like the TenderFind Pro plan");
+  const deskWa = waLink("Hi, I'd like to book a call about Tender Desk");
+  const NO_WIN = "<b>We don’t guarantee a win.</b> You submit the bid yourself.";
+  const waBtn = (href, label, cls = "btn wa wide") => (href ? `<a class="${cls}" href="${href}" target="_blank" rel="noopener">${label}</a>` : "");
   const plan = (name, price, sub, items, action) => `<section class="plan${action.main ? " main" : ""}">
-<h2>${name}</h2>
+<h3>${name}</h3>
 <p class="price">${price}${sub ? ` <small>${sub}</small>` : ""}</p>
+${action.who ? `<p class="plan-who">${action.who}</p>` : ""}
 <ul>${items.map((i) => `<li>${i}</li>`).join("")}</ul>
 ${action.html}
 </section>`;
   const body = `<h1 class="page-h">Pricing</h1>
-<p class="lede">Searching tenders is free, always. Pay only if you want them sent to you.</p>
+<p class="lede">Searching tenders is free, always. Pay if you want them sent to you, or if you want us to do the paperwork.</p>
+<section class="plan-group" aria-labelledby="g-yourself">
+<h2 class="group-h" id="g-yourself">Find tenders yourself</h2>
 <div class="plans">
 ${plan("Free", "R0", "", [
-  "Search all open tenders on National Treasury’s eTenders",
+  "Search all open tenders",
   "Filter by trade, province and closing date",
   "A page for each tender with a one-line summary, the key dates and the documents",
   "Closing-soon countdowns and “Did you miss these?”",
@@ -141,40 +148,68 @@ ${plan("Free", "R0", "", [
 ], { html: `<a class="btn wide" href="./">Search tenders</a>` })}
 ${plan("Alerts", P.alerts, "a month", [
   "Everything in Free",
-  "One email every morning with new tenders for your trades and provinces",
+  "One email every morning with new tenders for your trades and provinces. Choose as many as you like.",
   "A reminder 3 days before matching tenders close",
   `<b>${trialDays} days free</b> when you sign up, no payment details needed`,
+  `Or pay ${P.alertsYear} a year: 2 months free (${P.alertsSaving} less)`,
   "Cancel any time: unsubscribe from any email",
-], { main: true, html: PAYMENTS_LIVE
-  ? `${payButton("monthly", `Subscribe: ${P.alerts} a month`)}<p class="small"><a href="#signup">Or start the ${trialDays}-day free trial first</a></p>`
+], { main: true, who: "Our main plan, for most small businesses.", html: (PAYMENTS_LIVE
+  ? `${payButton("monthly", `Subscribe: ${P.alerts} a month`)}<p class="small"><a href="pay/?plan=annual">Or pay ${P.alertsYear} a year</a> · <a href="#signup">Start the free trial first</a></p>`
   : subscribe
-  ? `<a class="btn wa wide" href="${subscribe}" target="_blank" rel="noopener">WhatsApp us to subscribe</a><p class="small"><a href="#signup">Or start the ${trialDays}-day free trial</a></p>`
-  : `<a class="btn wa wide" href="#signup">Start your ${trialDays}-day free trial</a>` })}
-${plan("Alerts yearly", P.alertsYear, "a year", [
+  ? `${waBtn(subscribe, "WhatsApp us to subscribe")}<p class="small"><a href="#signup">Or start the ${trialDays}-day free trial</a>${subscribeYear ? ` · <a href="${subscribeYear}" target="_blank" rel="noopener">Ask for the yearly plan</a>` : ""}</p>`
+  : `<a class="btn wa wide" href="#signup">Start your ${trialDays}-day free trial</a>`) })}
+${plan("Pro", P.pro, "a month", [
   "Everything in Alerts",
-  `<b>2 months free</b>: ${P.alertsSaving} less than paying monthly`,
-  "One payment a year, no monthly debit",
-  "Cancel any time; alerts run to the end of your year",
-], { html: PAYMENTS_LIVE
-  ? payButton("annual", `Subscribe: ${P.alertsYear} a year`, "btn wide")
-  : subscribeYear ? `<a class="btn wide" href="${subscribeYear}" target="_blank" rel="noopener">WhatsApp us for the yearly plan</a>` : "" })}
-${plan("Bid Help", P.bidHelp, "per tender", [
+  `Alerts sent to up to ${PRICING.proEmails} email addresses, so your team sees them too`,
+  "Priority WhatsApp support: we answer Pro customers first",
+  `Or pay ${P.proYear} a year: 2 months free (${P.proSaving} less)`,
+  "Cancel any time",
+], { who: "For businesses that bid a lot: CIDB grade 3 and up, engineering and consulting firms, and suppliers.",
+  html: `${waBtn(proWa, "WhatsApp us for Pro", "btn wide")}<p class="small"><a href="help.html?service=pro">Or send us a request</a></p>` })}
+</div>
+<div class="card coverage">
+<h3>Where the tenders come from</h3>
+<ul class="cover-list">
+<li><span class="tag">Included</span> <b>National Treasury’s eTenders portal:</b> national and provincial departments, municipalities, and state companies like Eskom, Transnet and SANRAL when they post their tenders there.</li>
+<li><span class="tag">Included</span> <b>The Gauteng e-Tender portal:</b> Gauteng department tenders that are not on eTenders.</li>
+<li><span class="tag soon-tag">Coming soon</span> Tenders that municipalities and state companies put only on their own websites.</li>
+<li><span class="tag soon-tag">Coming soon</span> Private-sector tenders.</li>
+</ul>
+</div>
+</section>
+
+<section class="plan-group" aria-labelledby="g-for-you">
+<h2 class="group-h" id="g-for-you">We do the work for you</h2>
+<div class="plans">
+${plan("Bid Help", `<small>from</small> ${P.bidHelpFrom}`, "per tender", [
   "We read the tender documents and list everything you need to submit",
   "We draft your cover letter and a compliance checklist",
   "We flag deadlines, briefing sessions and missing documents",
   `Bigger or complex tenders: we quote you (up to ${P.bidHelpMax}) after we see the documents`,
   "Pay once per tender, before we start",
-  "<b>We don’t guarantee a win.</b> You submit the bid yourself.",
-], { html: `<a class="btn wide" href="help.html?service=bid">Request Bid Help</a>${bidHelp ? `<p class="small"><a href="${bidHelp}" target="_blank" rel="noopener">Or WhatsApp us about Bid Help</a></p>` : ""}` })}
+  NO_WIN,
+], { who: "For one tender you want to get right.", html: `<a class="btn wide" href="help.html?service=bid">Request Bid Help</a>${bidHelp ? `<p class="small"><a href="${bidHelp}" target="_blank" rel="noopener">Or WhatsApp us about Bid Help</a></p>` : ""}` })}
+${plan("Tender Desk", `<small>from</small> ${P.deskFrom}`, "a month", [
+  "We find the right tenders for you",
+  "We keep your CSD, tax clearance and B-BBEE documents up to date, and track when they expire",
+  "We prepare the compliance pack and the returnable-documents checklist for each bid",
+  "We track every deadline and briefing session",
+  "You approve and submit every bid yourself",
+  NO_WIN,
+], { who: "For businesses that want to bid every month but don’t have time for the paperwork.",
+  html: `${waBtn(deskWa, "Book a call on WhatsApp")}<p class="small"><a href="help.html?service=tender-desk">Or send us a request</a></p>` })}
 </div>
+</section>
 <p class="lede">Not registered yet? <a href="registration-help.html">CSD and CIDB registration help</a> from ${P.csd}.</p>
 
 <article class="card prose faq">
 <h2>Questions</h2>
+<h3>Which plan is right for me?</h3>
+<p><b>Free</b> if you only want to look now and then. <b>Alerts</b> (${P.alerts} a month) if you want the new tenders for your trade in your email every morning: this is right for most small businesses. <b>Pro</b> (${P.pro} a month) if you bid often and more than one person in your team needs the alerts. <b>Bid Help</b> (${P.bidHelp}) if you want help with one tender. <b>Tender Desk</b> (${P.desk} a month) if you want us to do the paperwork for you every month. Not sure? <a href="help.html">Ask us</a>.</p>
 <h3>What happens after the free trial?</h3>
 <p>On day ${trialDays + 1} we send you one email saying the trial has ended. Alerts stop unless you subscribe. Nothing is charged automatically.</p>
 <h3>How do I pay?</h3>
-<p>Payments go through <b>PayFast</b>, South Africa’s payment gateway: card, Instant EFT, SnapScan and more. We never see your card or bank details. ${PAYMENTS_LIVE ? "Tap Subscribe to pay. The monthly plan renews every month until you cancel; the yearly plan is one payment a year." : `Online payment is being switched on. Until then, ${subscribe ? "tap “WhatsApp us to subscribe” or reply to any of our emails" : "reply to any of our emails"} and we’ll send you a secure PayFast payment link.`} Your alerts carry on as soon as payment is confirmed.</p>
+<p>Payments go through <b>PayFast</b>, South Africa’s payment gateway: card, Instant EFT, SnapScan and more. We never see your card or bank details. ${PAYMENTS_LIVE ? "Tap Subscribe to pay. The monthly plan renews every month until you cancel; the yearly plan is one payment a year." : `Online payment is being switched on. Until then, ${subscribe ? "tap “WhatsApp us to subscribe” or reply to any of our emails" : "reply to any of our emails"} and we’ll send you a secure PayFast payment link.`} Your alerts carry on as soon as payment is confirmed. For Pro, Bid Help and Tender Desk, WhatsApp us or send a request: we agree the details with you first and then tell you how to pay.</p>
 <h3>How do I cancel?</h3>
 <p>Use the unsubscribe link at the bottom of any alert email, or just reply UNSUBSCRIBE. If you pay monthly, we stop the PayFast payments too. See the <a href="terms.html#refunds">refund and cancellation policy</a>.</p>
 <h3>Can I change my trades or provinces?</h3>
@@ -182,7 +217,7 @@ ${plan("Bid Help", P.bidHelp, "per tender", [
 </article>`;
   return shell({
     title: "Pricing | TenderFind SA",
-    description: `Search all open eTenders government tenders free. Get new tenders for your trade by email every morning for ${P.alerts} a month, with a ${trialDays}-day free trial.`,
+    description: `Search government tenders free. Alerts ${P.alerts} a month (${trialDays} days free), Pro ${P.pro} a month for teams, Bid Help ${P.bidHelp} per tender, and Tender Desk ${P.desk} a month.`,
     canonical: `${siteUrl}/pricing.html`,
     root: "./",
     body,
@@ -199,6 +234,8 @@ ${opt("bid", `Bid Help for a tender (${P.bidHelp})`)}
 ${opt("csd", `CSD registration (${P.csd})`)}
 ${opt("cidb", `CIDB registration (${P.cidb})`)}
 ${opt("csd+cidb", `CSD and CIDB registration (${P.csdCidb})`)}
+${opt("tender-desk", `Tender Desk: we do the bid paperwork every month (${P.desk} a month)`)}
+${opt("pro", `Pro plan: alerts for up to ${PRICING.proEmails} email addresses (${P.pro} a month)`)}
 </select></label>
 <p class="help-tender" id="help-tender" hidden></p>
 <input type="hidden" name="tender">
@@ -227,6 +264,9 @@ ${helpForm("bid")}
 <li>We flag deadlines, briefing sessions and missing documents</li>
 </ul>
 <p>Bigger or complex tenders: we look at the documents first and quote you a price (up to ${P.bidHelpMax}). You pay once we agree the price, before we start.</p>
+<p><b>We don’t guarantee a win.</b> You submit the bid yourself.</p>
+<h2>Tender Desk (${P.desk} a month)</h2>
+<p>We do the bid paperwork for you every month: we find the right tenders, keep your CSD, tax clearance and B-BBEE documents up to date, prepare the compliance pack for each bid and track every deadline. You approve and submit every bid yourself. <a href="pricing.html#g-for-you">See what’s included</a>.</p>
 <p><b>We don’t guarantee a win.</b> You submit the bid yourself.</p>
 <p>Need to register first? See <a href="registration-help.html">CSD and CIDB registration help</a>.</p>
 </article>`;
@@ -273,7 +313,7 @@ function termsPage(siteUrl) {
   const tax = OPERATOR.vatRegistered ? "All prices include VAT." : "We are not registered for VAT, so no VAT is added: the price shown is the full price.";
   const body = `<article class="card prose terms">
 <h1>Terms of service</h1>
-<p>These terms apply when you use tenderfind.co.za, sign up for tender alerts, or buy any of our services. Please read them, especially the parts in <b>bold</b>: they limit our responsibility and explain when you can get your money back. Last updated 4 November 2026.</p>
+<p>These terms apply when you use tenderfind.co.za, sign up for tender alerts, or buy any of our services. Please read them, especially the parts in <b>bold</b>: they limit our responsibility and explain when you can get your money back. Last updated 5 November 2026.</p>
 
 <h2 id="supplier">1. Who we are</h2>
 <dl class="facts">
@@ -292,6 +332,8 @@ ${phone ? `<dt>Phone and WhatsApp</dt><dd>${esc(phone)}</dd>` : ""}
 <li><b>Free search.</b> Searching and reading open tenders on this site is free.</li>
 <li><b>Tender alerts: ${P.alerts} a month, or ${P.alertsYear} a year.</b> One email each morning with the new tenders for the trades and provinces you choose, plus a reminder 3 days before matching tenders close. The first ${trialDays} days are free and we don't ask for payment details. Nothing is charged automatically when the trial ends.</li>
 <li><b>Bid Help: ${P.bidHelp} per tender.</b> We read the tender documents, list everything you must submit, draft a cover letter and a compliance checklist, and flag deadlines and briefing sessions. For bigger or complex tenders we quote a price (up to ${P.bidHelpMax}) after we see the documents, and you agree it before we start. You submit the bid yourself.</li>
+<li><b>Pro: ${P.pro} a month, or ${P.proYear} a year.</b> Everything in tender alerts, sent to up to ${PRICING.proEmails} email addresses you give us, with priority support on WhatsApp.</li>
+<li><b>Tender Desk: ${P.desk} a month.</b> We find suitable tenders for you, keep your CSD, tax clearance and B-BBEE documents up to date and track their expiry dates, prepare the compliance pack and returnable-documents checklist for each bid, and track deadlines and briefing sessions. We agree the monthly price with you before we start. You approve and submit every bid yourself.</li>
 <li><b>CSD registration help: ${P.csd}. CIDB registration help: ${P.cidb}.</b> Once-off fees for our help only. CSD registration itself is free; CIDB fees are paid to the CIDB.</li>
 </ul>
 <p>${tax} Prices are in South African rand.</p>
@@ -309,7 +351,9 @@ ${phone ? `<dt>Phone and WhatsApp</dt><dd>${esc(phone)}</dd>` : ""}
 <li><b>Changed your mind within 7 days:</b> if you cancel within 7 days of paying for a subscription, we refund the full amount.</li>
 <li><b>Monthly plan after 7 days:</b> no refund for the month you're in; the alerts carry on until the end of that month and you're not charged again.</li>
 <li><b>Yearly plan after 7 days:</b> you can still cancel at any time. We refund the full months you haven't used.</li>
-<li><b>Bid Help and registration help:</b> full refund if you cancel before we start. Once we've started, we refund the part of the work we haven't done. We don't refund because a bid wasn't successful or because the CSD or CIDB turned down an application: those decisions aren't ours.</li>
+<li><b>Pro:</b> the same as tender alerts above (monthly or yearly).</li>
+<li><b>Tender Desk:</b> paid monthly, before the month starts. Cancel any time before your next month starts and you won't be charged again. For the month you're in, the help-services rule below applies.</li>
+<li><b>Bid Help, Tender Desk and registration help:</b> full refund if you cancel before we start. Once we've started, we refund the part of the work we haven't done. We don't refund because a bid wasn't successful or because the CSD or CIDB turned down an application: those decisions aren't ours.</li>
 <li><b>If our service fails:</b> if you get no alert emails for 3 working days in a row because of a fault on our side, tell us and we'll refund that month (or add the missing days to your subscription, if you prefer).</li>
 </ul>
 <p>Refunds go back to the way you paid, through PayFast, within 30 days of your request.</p>

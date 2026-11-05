@@ -3,7 +3,7 @@
 const assert = require("assert");
 const path = require("path");
 const fs = require("fs");
-const { MATCH, matchSubscribers, normalisePhone, normaliseEmail, dayOf, parseRow, applyStatus } = require("./lib/match");
+const { MATCH, matchSubscribers, normalisePhone, normaliseEmail, teamEmails, dayOf, parseRow, applyStatus } = require("./lib/match");
 const { PRICING } = require("./lib/config");
 const { P } = require("./lib/prices");
 
@@ -117,6 +117,25 @@ for (const body of [mail("late@example.co.za").text, mail("late@example.co.za").
 assert.ok(/unsubscribe/i.test(mail("late@example.co.za").text));
 assert.ok(/Closing in 3 days/.test(mail("remind@example.co.za").html), "reminders go in the same email");
 assert.strictEqual(eskip("both@example.co.za"), "cancelled", "STOP on WhatsApp also stops email");
+
+// Pro: a Paying line with Plan = Pro sends the same email to up to 2 team addresses (3 in all). Alerts never gets cc.
+assert.strictEqual(MATCH.PRO_EMAILS, PRICING.proEmails, "match.js PRO_EMAILS must equal PRICING.proEmails");
+assert.deepStrictEqual(teamEmails("a@x.co.za; bad, A@X.co.za b@y.co.za c@z.co.za"), ["a@x.co.za", "b@y.co.za", "c@z.co.za"], "valid and unique");
+const prow = (email) => erow(email, { "Your trade(s)": "Cleaning, Construction" });
+const pm = matchSubscribers(alerts, applyStatus([prow("pro@example.co.za"), prow("alerts@example.co.za"), prow("lapsed@example.co.za"), prow("back@example.co.za")], [
+  { Email: "pro@example.co.za", Status: "Paying", "Paid until": day(20), Plan: "Pro", "Team emails": "pro@example.co.za, team1@example.co.za, nope, team2@example.co.za, team3@example.co.za" },
+  { Email: "alerts@example.co.za", Status: "Paying", "Paid until": day(20), "Team emails": "x@example.co.za" },
+  { Email: "lapsed@example.co.za", Status: "Paying", "Paid until": day(-1), Plan: "Pro", "Team emails": "y@example.co.za" },
+  { Email: "back@example.co.za", Status: "Paying", "Paid until": day(20), Plan: "Pro", "Team emails": "z@example.co.za" },
+  { Email: "back@example.co.za", Status: "Trial" },
+]), [], today, "email");
+const pmail = (to) => pm.messages.find((m) => m.to === to);
+assert.strictEqual(pmail("pro@example.co.za").cc, "team1@example.co.za, team2@example.co.za", "Pro: own address not repeated, bad one dropped, cap of 3 addresses");
+assert.strictEqual(pmail("pro@example.co.za").plan, "Pro");
+assert.strictEqual(pmail("alerts@example.co.za").cc, "", "Team emails are ignored without Plan = Pro");
+assert.ok(!pmail("lapsed@example.co.za") && pm.skipped.some((s) => s.to === "lapsed@example.co.za" && /payment due/.test(s.reason)), "lapsed Pro gets nothing");
+assert.ok(!pmail("back@example.co.za") || pmail("back@example.co.za").cc === "", "a later Trial line clears Pro");
+assert.ok(em.messages.filter((m) => m.kind === "new").every((m) => m.cc === "" && m.plan === "Alerts"), "trial subscribers: no cc");
 
 // National tenders: only when nationwide, or the buyer's head office is in the subscriber's province.
 const nat = alerts.new.Cleaning.National;

@@ -12,6 +12,7 @@ const MATCH = {
   // subscriber's provinces and no other place is named. "Not stated" (a local body we couldn't place) is never sent.
   NATIONAL: "National",
   TRIAL_DAYS: 14, // free days from the first sign-up (sign-up day is day 1)
+  PRO_EMAILS: 3, // Pro: the morning email goes to the sign-up address plus up to 2 "Team emails" (cc)
   SITE: "https://tenderfind.co.za",
   // Prices: copies of PRICING in scripts/lib/config.js (this file can't read it inside n8n). npm test fails if they differ.
   ALERTS_PRICE: 149, // Alerts, rand a month (trial-ended email)
@@ -36,6 +37,17 @@ function normalisePhone(cell) {
 function normaliseEmail(cell) {
   const e = String(cell || "").trim().toLowerCase();
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e) ? e : null;
+}
+
+// Pro "Team emails" cell: "a@x.co.za, b@y.co.za" -> valid, unique addresses. The cap (PRO_EMAILS in all, counting
+// the sign-up email) is applied when the message is built, after the sign-up email itself is left out.
+function teamEmails(cell) {
+  const out = [];
+  for (const part of String(cell || "").split(/[,;\s]+/)) {
+    const e = normaliseEmail(part);
+    if (e && !out.includes(e)) out.push(e);
+  }
+  return out;
 }
 
 // "2026-11-01 14:23:11", "2026-11-01T12:23:11Z" -> "2026-11-01" (SA date)
@@ -65,7 +77,7 @@ function parseRow(row) {
     consent: yes(get("Consent")) || Object.keys(row).some((k) => /^i agree/i.test(k) && yes(row[k])),
     reminders: /^yes/i.test(String(get("Reminders", "Also remind me 3 days before matching tenders close?")).trim()), // blank = not asked = no
     signedUp: dayOf(get("Submitted at", "Created at", "Timestamp")),
-    access: row._access || { status: "Trial", paidUntil: "", cancelled: false },
+    access: row._access || { status: "Trial", paidUntil: "", cancelled: false, plan: "Alerts", team: [] },
   };
 }
 
@@ -205,6 +217,8 @@ function trialEndedEmail(sub) {
 //   Cancelled no more messages (unsubscribe / STOP; "Stopped" means the same)
 //   Resumed   undo Cancelled and carry on as before
 // Someone with no lines is on the free trial. A line can name the email, the phone or both.
+// Pro: a Paying line with Plan = "Pro" and, optionally, "Team emails" (up to 2 more addresses, comma-separated).
+// The plan and team emails stay until a later Paying or Trial line changes them.
 function applyStatus(rows, statusRows) {
   const acc = {};
   const keysOf = (email, phone) => [email && `e:${email}`, phone && `p:${phone}`].filter(Boolean);
@@ -212,10 +226,11 @@ function applyStatus(rows, statusRows) {
     const keys = keysOf(normaliseEmail(s.Email), normalisePhone(s.Phone));
     if (!keys.length) continue;
     const st = String(s.Status || "").trim().toLowerCase();
+    const pro = /^pro$/i.test(String(s.Plan || "").trim());
     for (const k of keys) {
-      const a = (acc[k] ||= { status: "Trial", paidUntil: "", cancelled: false });
-      if (st === "paying") Object.assign(a, { status: "Paying", paidUntil: dayOf(s["Paid until"]), cancelled: false });
-      else if (st === "trial") Object.assign(a, { status: "Trial", paidUntil: "", cancelled: false });
+      const a = (acc[k] ||= { status: "Trial", paidUntil: "", cancelled: false, plan: "Alerts", team: [] });
+      if (st === "paying") Object.assign(a, { status: "Paying", paidUntil: dayOf(s["Paid until"]), cancelled: false, plan: pro ? "Pro" : "Alerts", team: pro ? teamEmails(s["Team emails"]) : [] });
+      else if (st === "trial") Object.assign(a, { status: "Trial", paidUntil: "", cancelled: false, plan: "Alerts", team: [] });
       else if (st === "cancelled" || st === "stopped" || st === "unsubscribed") a.cancelled = true;
       else if (st === "resumed" || st === "active") a.cancelled = false;
     }
@@ -227,7 +242,7 @@ function applyStatus(rows, statusRows) {
     // Cancelled on either channel stops both; a paid period on either counts.
     const merged = { ...found[found.length - 1], cancelled: found.some((a) => a.cancelled) };
     const paying = found.find((a) => a.status === "Paying");
-    if (paying) Object.assign(merged, { status: "Paying", paidUntil: paying.paidUntil });
+    if (paying) Object.assign(merged, { status: "Paying", paidUntil: paying.paidUntil, plan: paying.plan, team: paying.team });
     return { ...r, _access: merged };
   });
 }
@@ -284,7 +299,11 @@ function matchSubscribers(alerts, rows, sentToday = [], today = alerts.date, cha
       const fresh = pick(alerts.new, sub, MATCH.MAX_EMAIL);
       const soon = sub.reminders ? pick(alerts.closing_soon, sub, MATCH.MAX_REMIND) : { list: [], total: 0 };
       if (!fresh.list.length && !soon.list.length) { skipped.push({ to: key, reason: "nothing new for their trades today" }); continue; }
-      messages.push({ to: key, kind: "new", tender_ids: [...fresh.list, ...soon.list].map((t) => t.id), ...emailMessage(sub, today, fresh, soon) });
+      // Pro (paid): the same email also goes to their team addresses. `cc` is "" or "a@x.co.za, b@y.co.za",
+      // ready for the CC field of n8n's Gmail node.
+      const pro = sub.access.status === "Paying" && sub.access.plan === "Pro";
+      const cc = (pro ? (sub.access.team || []).filter((e) => e !== key).slice(0, MATCH.PRO_EMAILS - 1) : []).join(", ");
+      messages.push({ to: key, cc, plan: pro ? "Pro" : "Alerts", kind: "new", tender_ids: [...fresh.list, ...soon.list].map((t) => t.id), ...emailMessage(sub, today, fresh, soon) });
       continue;
     }
 
@@ -316,5 +335,5 @@ function matchSubscribers(alerts, rows, sentToday = [], today = alerts.date, cha
 }
 
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { MATCH, parseRow, normalisePhone, normaliseEmail, dayOf, applyStatus, access, matchSubscribers, tenderLine };
+  module.exports = { MATCH, parseRow, normalisePhone, normaliseEmail, teamEmails, dayOf, applyStatus, access, matchSubscribers, tenderLine };
 }
