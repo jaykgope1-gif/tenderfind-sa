@@ -51,7 +51,7 @@ const footerHtml = (root) => `<footer class="site-foot"><div class="container fo
 <div><a class="brand" href="${root}" aria-label="TenderFind SA home">${MARK("#faf8f3", "#1d4a37", "#faf8f3")}TenderFind <b>SA</b></a>
 <p>Government tenders for your trade, emailed every weekday morning. Run by ${esc(OPERATOR.name || "an independent operator")} in Pretoria.</p>
 <p class="foot-note">${esc(DISCLAIMER)} TenderFind SA is independent and doesn’t sell tenders.</p></div>
-<div><h3>Tenders</h3><ul><li><a href="${root}#search">Search tenders</a></li><li><a href="${root}tenders/">Tenders by trade</a></li><li><a href="${root}pricing.html">Price</a></li><li><a href="${root}help.html">Bid Help</a></li><li><a href="${root}registration-help.html">CSD &amp; CIDB help</a></li></ul></div>
+<div><h3>Tenders</h3><ul><li><a href="${root}#search">Search tenders</a></li><li><a href="${root}tenders/">Tenders by trade</a></li><li><a href="${root}pricing.html">Price</a></li><li><a href="${root}help.html">Bid Help</a></li><li><a href="${root}registration-help.html">CSD &amp; CIDB help</a></li><li><a href="${root}partners.html">For partners</a></li></ul></div>
 <div><h3>TenderFind</h3><ul><li><a href="${root}about.html">About</a></li>${OPERATOR.email ? `<li><a href="mailto:${esc(OPERATOR.email)}">${esc(OPERATOR.email)}</a></li>` : ""}<li><a href="${root}terms.html">Terms &amp; refunds</a></li><li><a href="${root}privacy.html">Privacy</a></li></ul></div>
 </div><div class="container foot-base"><p>© ${new Date().getFullYear()} TenderFind SA · Pretoria</p></div></footer>`;
 

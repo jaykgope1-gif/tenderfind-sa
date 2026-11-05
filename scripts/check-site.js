@@ -12,7 +12,7 @@ function fail(msg) {
   process.exit(1);
 }
 
-for (const f of ["index.html", "app.js", "format.js", "signup.js", "style.css", "data/tenders.json", "about.html", "privacy.html", "pricing.html", "sitemap.xml", "robots.txt", "404.html", "help.html", "terms.html", "pay/index.html"]) {
+for (const f of ["index.html", "app.js", "format.js", "signup.js", "style.css", "data/tenders.json", "about.html", "privacy.html", "pricing.html", "sitemap.xml", "robots.txt", "404.html", "help.html", "terms.html", "partners.html", "pay/index.html"]) {
   if (!fs.existsSync(path.join(SITE, f))) fail(`missing site/${f}`);
 }
 

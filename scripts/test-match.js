@@ -136,6 +136,9 @@ assert.strictEqual(pmail("alerts@example.co.za").cc, "", "Team emails are ignore
 assert.ok(!pmail("lapsed@example.co.za") && pm.skipped.some((s) => s.to === "lapsed@example.co.za" && /payment due/.test(s.reason)), "lapsed Pro gets nothing");
 assert.ok(!pmail("back@example.co.za") || pmail("back@example.co.za").cc === "", "a later Trial line clears Pro");
 assert.ok(em.messages.filter((m) => m.kind === "new").every((m) => m.cc === "" && m.plan === "Alerts"), "trial subscribers: no cc");
+// The live n8n flow builds _access from the subscribers table (status, paid_until, plan, team_emails as text).
+const tableRow = { ...prow("table@example.co.za"), _access: { status: "Paying", paidUntil: day(20), cancelled: false, plan: "Pro", team: "a@example.co.za; b@example.co.za, c@example.co.za" } };
+assert.strictEqual(matchSubscribers(alerts, [tableRow], [], today, "email").messages[0].cc, "a@example.co.za, b@example.co.za", "team emails as table text work too");
 
 // Pro emails show "What you'll need" under each tender, only from the tender's checklist; Alerts emails don't.
 const withList = JSON.parse(JSON.stringify(alerts));

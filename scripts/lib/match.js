@@ -316,7 +316,9 @@ function matchSubscribers(alerts, rows, sentToday = [], today = alerts.date, cha
       // Pro (paid): the same email also goes to their team addresses. `cc` is "" or "a@x.co.za, b@y.co.za",
       // ready for the CC field of n8n's Gmail node.
       const pro = sub.access.status === "Paying" && sub.access.plan === "Pro";
-      const cc = (pro ? (sub.access.team || []).filter((e) => e !== key).slice(0, MATCH.PRO_EMAILS - 1) : []).join(", ");
+      // team: a list (Status lines) or the subscribers table's team_emails text, as n8n's "Shape subscriber rows" passes it.
+      const team = Array.isArray(sub.access.team) ? sub.access.team : teamEmails(sub.access.team);
+      const cc = (pro ? team.filter((e) => e !== key).slice(0, MATCH.PRO_EMAILS - 1) : []).join(", ");
       messages.push({ to: key, cc, plan: pro ? "Pro" : "Alerts", kind: "new", tender_ids: [...fresh.list, ...soon.list].map((t) => t.id), ...emailMessage(sub, today, fresh, soon, pro) });
       continue;
     }

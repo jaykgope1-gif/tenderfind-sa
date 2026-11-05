@@ -27,6 +27,7 @@ module.exports = {
     bidHelpFrom: 1500, bidHelpMax: 5000, // Bid Help per tender: "from" price; bigger tenders quoted up to the max
     deskFrom: 3500, // Tender Desk: done-for-you, "from" price per month
     csdHelpPrice: 300, cidbHelpPrice: 500,
+    partnerFrom: 5000, partnerMembers: 100, // /partners.html: bulk alert seats, "from" price a month for this many members
   },
   // false until the real PayFast account is approved: subscribe buttons stay "WhatsApp us" and pay/ links are test-only.
   // When live: set true here AND MODE = 'live' in the n8n "Payments: pay link" workflow.

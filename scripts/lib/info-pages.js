@@ -240,6 +240,7 @@ ${opt("cidb", `CIDB registration (${P.cidb})`)}
 ${opt("csd+cidb", `CSD and CIDB registration (${P.csdCidb})`)}
 ${opt("tender-desk", `Tender Desk: we do the bid paperwork every month (${P.desk} a month)`)}
 ${opt("pro", `Pro plan: alerts for up to ${PRICING.proEmails} email addresses (${P.pro} a month)`)}
+${opt("partner", "Partner: tender alerts for our members or clients")}
 </select></label>
 <p class="help-tender" id="help-tender" hidden></p>
 <input type="hidden" name="tender">
@@ -389,6 +390,65 @@ ${phone ? `<dt>Phone and WhatsApp</dt><dd>${esc(phone)}</dd>` : ""}
   });
 }
 
+// /partners.html: for organisations that support small businesses. Bulk seats are switched on by hand for now
+// (each member signs up with the partner's link; the owner adds Paying lines for them), so the page promises no more.
+function partnersPage(siteUrl) {
+  const wa = waLink("Hi, I'd like to talk about TenderFind alerts for our members");
+  const body = `<h1 class="page-h">Give your members tender alerts</h1>
+<p class="lede">For chambers of commerce, SEDA offices, enterprise development programmes, accountants and CIDB trainers. Help the small businesses you support find government work in time to bid.</p>
+
+<div class="plans">
+<section class="plan main">
+<h2>Bulk seats</h2>
+<p class="price"><small>from</small> ${P.partnerFrom} <small>a month</small></p>
+<p class="plan-who">For up to ${P.partnerMembers} members. Bigger groups: ask us.</p>
+<ul>
+<li>Each member gets the morning tender email for their own trades and provinces (the normal <a href="pricing.html">Alerts plan</a>)</li>
+<li>Members sign up with your own link, so we know they’re yours</li>
+<li>One monthly invoice for your organisation, not one payment per member</li>
+<li>Every tender in plain English, with a list of what to submit from the tender documents</li>
+</ul>
+${wa ? `<a class="btn wa wide" href="${wa}" target="_blank" rel="noopener">WhatsApp us</a>` : ""}
+<p class="small"><a href="#request">Or send us a request</a></p>
+</section>
+<section class="plan">
+<h2>Referral fee</h2>
+<p class="price"><small>Ask us</small></p>
+<p class="plan-who">If you’d rather not pay for seats.</p>
+<ul>
+<li>Share your own sign-up link with your members</li>
+<li>Members pay for their own alerts</li>
+<li>We pay you a referral fee for members who become paying subscribers. Ask us for the details</li>
+</ul>
+<a class="btn wide" href="#request">Ask about referrals</a>
+</section>
+</div>
+
+<article class="card prose">
+<h2>How it works</h2>
+<ol>
+<li>Tell us about your organisation and how many members you have.</li>
+<li>We agree the price and send you your own sign-up link.</li>
+<li>Your members sign up with that link in two minutes: their email, their trade and their provinces.</li>
+<li>From the next morning, they get the new government tenders for their trade by email.</li>
+</ol>
+<p>Your members choose what they receive and can unsubscribe at any time. We only use their details to send the alerts (see our <a href="privacy.html">privacy notice</a>), and we never sell them.</p>
+<p>TenderFind SA doesn’t sell tenders or promise wins. Your members bid themselves. If they want help, we offer <a href="help.html">Bid Help</a> and <a href="pricing.html#g-for-you">Tender Desk</a>.</p>
+</article>
+
+<h2 class="page-h" id="request">Talk to us</h2>
+${helpForm("partner")}`;
+  return shell({
+    title: "Tender alerts for your members | TenderFind SA",
+    description: `Partner with TenderFind SA: give the small businesses you support morning government tender alerts. Bulk seats ${P.partner} a month for ${P.partnerMembers} members, or a referral fee.`,
+    canonical: `${siteUrl}/partners.html`,
+    root: "./",
+    body,
+    signup: false,
+    script: `<script src="help.js" defer></script>\n`,
+  });
+}
+
 // site/pay/index.html: tenderfind.co.za/pay/?plan=monthly&email=... goes straight to the signed PayFast checkout
 // (built in the n8n "Payments: pay link" workflow, where the merchant key lives AND its own price list: keep both in
 // step). Without an email it shows this short form first. Only plans the n8n workflow knows are listed here.
@@ -452,4 +512,4 @@ function payPage() {
 `;
 }
 
-module.exports = { aboutPage, privacyPage, pricingPage, helpPage, registrationHelpPage, termsPage, payPage };
+module.exports = { aboutPage, privacyPage, pricingPage, helpPage, registrationHelpPage, termsPage, payPage, partnersPage };

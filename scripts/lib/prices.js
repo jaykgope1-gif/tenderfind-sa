@@ -20,6 +20,9 @@ const P = {
   cidb: rand(PRICING.cidbHelpPrice),
   csdCidb: rand(PRICING.csdHelpPrice + PRICING.cidbHelpPrice),
   trialDays: String(PRICING.trialDays),
+  partner: `from ${rand(PRICING.partnerFrom)}`,
+  partnerFrom: rand(PRICING.partnerFrom),
+  partnerMembers: String(PRICING.partnerMembers),
 };
 
 // The prices marked in the hand-written site/index.html as <span data-price="key">…</span>.
