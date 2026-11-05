@@ -137,6 +137,20 @@ assert.ok(!pmail("lapsed@example.co.za") && pm.skipped.some((s) => s.to === "lap
 assert.ok(!pmail("back@example.co.za") || pmail("back@example.co.za").cc === "", "a later Trial line clears Pro");
 assert.ok(em.messages.filter((m) => m.kind === "new").every((m) => m.cc === "" && m.plan === "Alerts"), "trial subscribers: no cc");
 
+// Pro emails show "What you'll need" under each tender, only from the tender's checklist; Alerts emails don't.
+const withList = JSON.parse(JSON.stringify(alerts));
+const firstTender = Object.values(withList.new.Cleaning).flat()[0];
+firstTender.checklist = { status: "found", items: ["SBD 4 form", "CSD registration report (your MAAA supplier number)", "a", "b", "c", "d", "e", "f"] };
+const second = Object.values(withList.new.Cleaning).flat()[1];
+if (second) second.checklist = { status: "unreadable", items: [] };
+const st = [{ Email: "pro@example.co.za", Status: "Paying", "Paid until": day(20), Plan: "Pro" }];
+const proMail = matchSubscribers(withList, applyStatus([prow("pro@example.co.za")], st), [], today, "email").messages[0];
+const plainMail = matchSubscribers(withList, [prow("plain@example.co.za")], [], today, "email").messages[0];
+assert.ok(proMail.text.includes("You'll need (from the documents, confirm before bidding): SBD 4 form; CSD registration report") && proMail.text.includes("and 2 more on the tender page"), "Pro: checklist line, at most 6 items");
+assert.ok(proMail.html.includes("You&#39;ll need (from the documents"), "Pro: checklist in the html too");
+if (second) assert.ok(proMail.text.includes("What to submit: check the tender documents. We couldn't read them automatically."), "Pro: says so when the documents couldn't be read");
+assert.ok(!/You'll need|What to submit/.test(plainMail.text + plainMail.html), "Alerts emails have no checklist line");
+
 // National tenders: only when nationwide, or the buyer's head office is in the subscriber's province.
 const nat = alerts.new.Cleaning.National;
 const gp = matchSubscribers(alerts, [erow("gp@example.co.za", { "Your trade(s)": "Cleaning", "Province(s) you can work in": "Gauteng" })], [], today, "email").messages[0];

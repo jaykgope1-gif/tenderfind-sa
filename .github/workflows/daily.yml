@@ -48,7 +48,8 @@ jobs:
         run: node scripts/fetch-gauteng.js
         continue-on-error: true
 
-      # Only new or changed tenders are read. AI is used only if the ANTHROPIC_API_KEY secret exists.
+      # Only new or changed tenders are read, plus up to 150 older ones a day that don't have a
+      # "What you'll need to submit" checklist yet. AI is used only if the ANTHROPIC_API_KEY secret exists.
       - name: Read tender documents
         if: ${{ !inputs.site_only }}
         run: node scripts/extract.js

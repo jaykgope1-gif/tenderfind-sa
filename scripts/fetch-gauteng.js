@@ -136,7 +136,8 @@ async function main() {
   let cache = {};
   try { cache = JSON.parse(fs.readFileSync(CACHE, "utf8")); } catch {}
   for (const { t, row } of listed.values()) {
-    cache[t.id] = { status: "ok", docs: [], extracted_at: now.toISOString(), fields: {
+    // No documents online to read, so the checklist says "check the tender documents".
+    cache[t.id] = { status: "ok", docs: [], extracted_at: now.toISOString(), checklist: { status: "unreadable", section: false, items: [] }, fields: {
       briefing: row.briefing ? { value: row.briefing, source: "portal", snippet: `Briefing session: ${row.briefingText}` } : { value: null, source: "not stated on the portal" },
       cidb_grade: { value: null, source: "not stated on the portal" },
       csd_required: { value: null, source: "not stated on the portal" },

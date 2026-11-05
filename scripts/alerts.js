@@ -39,8 +39,8 @@ function readJson(file, fallback) {
   }
 }
 
-// One tender as the message needs it.
-function entry(t, x) {
+// One tender as the message needs it. cl = its "What you'll need to submit" checklist (Pro emails show it).
+function entry(t, x, cl) {
   const b = x.briefing?.value;
   return {
     id: t.id,
@@ -56,6 +56,8 @@ function entry(t, x) {
     briefing: b ? briefingText(b) : null,
     compulsory_briefing: b ? b.compulsory === true : null,
     cidb: x.cidb_grade?.value || null,
+    // { status: found | none-found | unreadable, items: ["SBD 4 form", …] } or null (not checked yet)
+    checklist: cl ? { status: cl.status, items: cl.items.map((i) => i.label) } : null,
     url: `${SITE_URL}/tender/${t.id}.html`,
   };
 }
@@ -86,8 +88,8 @@ function main() {
     site: SITE_URL,
     note: "National tenders go only to subscribers in their head-office province (hq) or, when nationwide is true, to everyone.",
     counts: { new: fresh.length, closing_soon: remind.length },
-    new: group(fresh.map((t) => entry(t, fields(t)))),
-    closing_soon: group(remind.map((t) => entry(t, fields(t)))),
+    new: group(fresh.map((t) => entry(t, fields(t), extracted[t.id]?.checklist))),
+    closing_soon: group(remind.map((t) => entry(t, fields(t), extracted[t.id]?.checklist))),
   };
 
   fs.mkdirSync(DATA_DIR, { recursive: true });

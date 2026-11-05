@@ -13,7 +13,7 @@
     "serve": "node scripts/serve.js",
     "alerts": "node scripts/alerts.js",
     "check": "node scripts/check-site.js",
-    "test": "node scripts/test-match.js"
+    "test": "node scripts/test-match.js && node scripts/test-checklist.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.3.0",

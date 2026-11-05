@@ -9,9 +9,11 @@ const fs = require("fs");
 const path = require("path");
 const pdf = require("pdf-parse/lib/pdf-parse.js");
 const { STORE, writeJsonAtomic, loadTenders } = require("./lib/store");
+const { findReturnables } = require("./lib/checklist");
 
 const ROOT = path.join(__dirname, "..");
-const CACHE = path.join(ROOT, "data", "extracted.json");
+const DEFAULT_CACHE = path.join(ROOT, "data", "extracted.json");
+const BACKFILL = 150; // tenders read per run only to add the "What you'll need to submit" checklist
 const MAX_BYTES = 10 * 1024 * 1024;
 const DOWNLOAD_TIMEOUT_MS = 45_000;
 const PARSE_TIMEOUT_MS = 60_000;
@@ -216,6 +218,40 @@ async function aiExtract(text) {
 
 // ---------- per tender ----------
 
+// Downloads and reads up to MAX_DOCS PDFs, main tender document first. Returns what happened to each, and the text
+// of the ones that could be read.
+async function readPdfs(t) {
+  const pdfs = (t.documents || []).filter(isPdf).sort((a, b) => docScore(b) - docScore(a)).slice(0, MAX_DOCS);
+  const docs = [];
+  const texts = [];
+  for (const d of pdfs) {
+    const doc = { title: d.title };
+    docs.push(doc);
+    try {
+      const dl = await download(d.url);
+      if (dl.tooLarge) { doc.result = "too-large"; continue; }
+      const parsed = await withTimeout(pdf(dl.buf), PARSE_TIMEOUT_MS, "PDF parse");
+      doc.pages = parsed.numpages;
+      if (parsed.text.replace(/\s/g, "").length < 200) { doc.result = "scanned"; continue; }
+      doc.result = "text";
+      texts.push(parsed.text);
+    } catch (e) {
+      doc.result = "error";
+      doc.error = e.message;
+    }
+  }
+  return { docs, texts };
+}
+
+// For tenders read before the checklist existed: only the checklist, the other fields stay as they are.
+// No need to download when we already know there's nothing to read.
+async function checklistOnly(t, cached) {
+  if (cached.status === "no-pdf" || cached.status === "scanned" || !(t.documents || []).some(isPdf)) {
+    return findReturnables([]);
+  }
+  return findReturnables((await readPdfs(t)).texts);
+}
+
 async function extractTender(t) {
   const out = { status: "ok", docs: [], fields: {}, extracted_at: new Date().toISOString() };
   const set = (k, hit, source) => { out.fields[k] = hit ? { value: hit.value, source, snippet: hit.snippet } : { value: null, source: "not found" }; };
@@ -227,32 +263,20 @@ async function extractTender(t) {
   }
 
   // 2. PDFs.
-  const pdfs = t.documents.filter(isPdf).sort((a, b) => docScore(b) - docScore(a)).slice(0, MAX_DOCS);
-  if (!pdfs.length) out.status = "no-pdf";
-  let mainText = "";
-  for (const d of pdfs) {
-    const doc = { title: d.title };
-    out.docs.push(doc);
-    try {
-      const dl = await download(d.url);
-      if (dl.tooLarge) { doc.result = "too-large"; continue; }
-      const parsed = await withTimeout(pdf(dl.buf), PARSE_TIMEOUT_MS, "PDF parse");
-      doc.pages = parsed.numpages;
-      if (parsed.text.replace(/\s/g, "").length < 200) { doc.result = "scanned"; continue; }
-      doc.result = "text";
-      mainText ||= parsed.text;
-      for (const [k, fn] of Object.entries(FIELDS)) {
-        if (out.fields[k]) continue;
-        const hit = fn(parsed.text, t);
-        if (hit) set(k, hit, "regex");
-      }
-    } catch (e) {
-      doc.result = "error";
-      doc.error = e.message;
+  const { docs, texts } = await readPdfs(t);
+  out.docs = docs;
+  if (!docs.length) out.status = "no-pdf";
+  const mainText = texts[0] || "";
+  for (const text of texts) {
+    for (const [k, fn] of Object.entries(FIELDS)) {
+      if (out.fields[k]) continue;
+      const hit = fn(text, t);
+      if (hit) set(k, hit, "regex");
     }
   }
-  if (pdfs.length && out.docs.every((d) => d.result === "scanned")) out.status = "scanned";
-  else if (pdfs.length && out.docs.every((d) => d.result === "error")) out.status = "error";
+  if (docs.length && docs.every((d) => d.result === "scanned")) out.status = "scanned";
+  else if (docs.length && docs.every((d) => d.result === "error")) out.status = "error";
+  out.checklist = findReturnables(texts);
 
   // 3. AI, only when regex found none of the key details.
   const keyFound = ["briefing", "cidb_grade", "bbbee_level"].some((k) => out.fields[k]);
@@ -285,7 +309,9 @@ function arg(name) {
 
 async function main() {
   const input = arg("input") ? path.resolve(ROOT, arg("input")) : STORE;
+  const CACHE = arg("cache") ? path.resolve(ROOT, arg("cache")) : DEFAULT_CACHE; // --cache <copy> to test without touching data/
   const limit = Number(arg("limit") || Infinity);
+  const backfill = Number(arg("backfill") ?? BACKFILL);
   const ids = arg("ids") ? new Set(arg("ids").split(",")) : null;
 
   const cache = fs.existsSync(CACHE) ? JSON.parse(fs.readFileSync(CACHE, "utf8")) : {};
@@ -316,8 +342,29 @@ async function main() {
       }
     })
   );
+
+  // Checklist backfill: tenders read before the checklist existed, a batch per run, soonest-closing first.
+  const old = tenders.filter((t) => cache[t.id] && !cache[t.id].checklist && cache[t.id].status !== "error").slice(0, backfill);
+  if (!old.length) return;
+  console.log(`Checklist backfill: ${old.length} tenders (${tenders.filter((t) => cache[t.id] && !cache[t.id].checklist).length} without a checklist)`);
+  let n = 0;
+  const q = [...old];
+  await Promise.all(
+    Array.from({ length: CONCURRENCY }, async () => {
+      for (let t; (t = q.shift()); ) {
+        try {
+          cache[t.id].checklist = await checklistOnly(t, cache[t.id]);
+        } catch (e) {
+          console.log(`  ${t.id} checklist failed: ${e.message}`); // tried again next run
+          continue;
+        }
+        console.log(`[checklist ${++n}/${old.length}] ${t.id} ${cache[t.id].checklist.status} (${cache[t.id].checklist.items.length})`);
+        writeJsonAtomic(CACHE, cache, true);
+      }
+    })
+  );
 }
 
 if (require.main === module) main().catch((e) => { console.error(e); process.exit(1); });
 
-module.exports = { extractTender, findBriefing, findCidb, cidbGrades, findBbbee, findCsd };
+module.exports = { extractTender, checklistOnly, findBriefing, findCidb, cidbGrades, findBbbee, findCsd };

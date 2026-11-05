@@ -141,31 +141,45 @@ const UNSUBSCRIBE_TEXT = `Don't want these emails? Reply with UNSUBSCRIBE, or em
 const unsubscribeHtml = () =>
   `Don't want these emails? <a href="mailto:${MATCH.UNSUBSCRIBE_TO}?subject=UNSUBSCRIBE">Unsubscribe</a> (or just reply with UNSUBSCRIBE).`;
 
+// Pro only: "You'll need: SBD 4 form, CSD registration report, …" from the tender's checklist (alerts.js), or why
+// there's no list. Only what the documents say; the tender page has the full list with the documents' own words.
+const MAX_CHECK = 6;
+function checklistLine(t) {
+  const c = t.checklist;
+  if (!c || c.status === "unreadable") return "What to submit: check the tender documents. We couldn't read them automatically.";
+  if (c.status === "none-found" || !c.items.length) return "What to submit: we didn't find a list in the documents. Check the tender documents.";
+  const more = c.items.length - MAX_CHECK;
+  return `You'll need (from the documents, confirm before bidding): ${c.items.slice(0, MAX_CHECK).join("; ")}${more > 0 ? `; and ${more} more on the tender page` : ""}.`;
+}
+
 // Title, buyer, closing date, link, and a Bid Help request link: nothing else, so it reads well on a phone.
+// Pro emails add the checklist line under each tender.
 const helpUrl = (t) => `${MATCH.SITE}/help.html?service=bid&tender=${encodeURIComponent(t.id)}`;
-function emailItem(t) {
+function emailItem(t, pro) {
+  const check = pro ? checklistLine(t) : "";
   return {
-    text: `${t.title}\n${t.buyer || "Buyer not stated"}\nCloses ${shortDate(t.closing_text)}\n${t.url}\nNeed help with this tender? ${helpUrl(t)}`,
+    text: `${t.title}\n${t.buyer || "Buyer not stated"}\nCloses ${shortDate(t.closing_text)}${check ? `\n${check}` : ""}\n${t.url}\nNeed help with this tender? ${helpUrl(t)}`,
     html: `<p style="margin:0 0 16px"><b>${escHtml(t.title)}</b><br>` +
       `${escHtml(t.buyer || "Buyer not stated")}<br>Closes ${escHtml(shortDate(t.closing_text))}<br>` +
+      (check ? `<span style="color:#545b5e;font-size:13px">${escHtml(check)}</span><br>` : "") +
       `<a href="${escHtml(t.url)}" style="color:#0b5d3b;font-weight:bold">View tender</a>` +
       ` · <a href="${escHtml(helpUrl(t))}" style="color:#545b5e">Need help with this tender? Bid Help (${MATCH.BID_HELP})</a></p>`,
   };
 }
 
-function emailMessage(sub, today, fresh, soon) {
+function emailMessage(sub, today, fresh, soon, pro = false) {
   const day = prettyDay(today);
   const sections = [];
   if (fresh.list.length) {
     const more = fresh.total - fresh.list.length;
     sections.push({
       heading: `New today (${fresh.total})`,
-      items: fresh.list.map(emailItem),
+      items: fresh.list.map((t) => emailItem(t, pro)),
       footText: `See all new tenders: ${MATCH.SITE}/${seeAllSuffix(sub)}`,
       footHtml: `<a href="${escHtml(MATCH.SITE + "/" + seeAllSuffix(sub))}">${more > 0 ? `See all ${fresh.total} new tenders on TenderFind SA` : "Open TenderFind SA"}</a>`,
     });
   }
-  if (soon.list.length) sections.push({ heading: "Closing in 3 days", items: soon.list.map(emailItem) });
+  if (soon.list.length) sections.push({ heading: "Closing in 3 days", items: soon.list.map((t) => emailItem(t, pro)) });
 
   const subject = fresh.total
     ? `${fresh.total} new tender${fresh.total === 1 ? "" : "s"} for you, ${day}`
@@ -303,7 +317,7 @@ function matchSubscribers(alerts, rows, sentToday = [], today = alerts.date, cha
       // ready for the CC field of n8n's Gmail node.
       const pro = sub.access.status === "Paying" && sub.access.plan === "Pro";
       const cc = (pro ? (sub.access.team || []).filter((e) => e !== key).slice(0, MATCH.PRO_EMAILS - 1) : []).join(", ");
-      messages.push({ to: key, cc, plan: pro ? "Pro" : "Alerts", kind: "new", tender_ids: [...fresh.list, ...soon.list].map((t) => t.id), ...emailMessage(sub, today, fresh, soon) });
+      messages.push({ to: key, cc, plan: pro ? "Pro" : "Alerts", kind: "new", tender_ids: [...fresh.list, ...soon.list].map((t) => t.id), ...emailMessage(sub, today, fresh, soon, pro) });
       continue;
     }
 

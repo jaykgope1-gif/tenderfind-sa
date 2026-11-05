@@ -103,6 +103,8 @@ function main() {
       bbbee_level: field(x.bbbee_level),
       csd_required: field(x.csd_required),
       location: field(x.location),
+      // "What you'll need to submit": null until extract.js has checked the documents for it.
+      checklist: extracted[t.id]?.checklist || null,
     };
     fs.writeFileSync(path.join(OUT, "t", `${t.id}.json`), JSON.stringify(detail));
     details.push(detail);

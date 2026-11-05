@@ -164,6 +164,7 @@ ${plan("Alerts", P.alerts, "a month", [
 ${plan("Pro", P.pro, "a month", [
   "Everything in Alerts",
   `Alerts sent to up to ${PRICING.proEmails} email addresses, so your team sees them too`,
+  "“What you’ll need to submit” under every tender in your email: the forms and documents listed in its tender documents",
   "Priority WhatsApp support: we answer Pro customers first",
   `Or pay ${P.proYear} a year: 2 months free (${P.proSaving} less)`,
   "Cancel any time",
@@ -335,7 +336,7 @@ ${phone ? `<dt>Phone and WhatsApp</dt><dd>${esc(phone)}</dd>` : ""}
 <li><b>Free search.</b> Searching and reading open tenders on this site is free.</li>
 <li><b>Tender alerts: ${P.alerts} a month, or ${P.alertsYear} a year.</b> One email each morning with the new tenders for the trades and provinces you choose, plus a reminder 3 days before matching tenders close. The first ${trialDays} days are free and we don't ask for payment details. Nothing is charged automatically when the trial ends.</li>
 <li><b>Bid Help: ${P.bidHelp} per tender.</b> We read the tender documents, list everything you must submit, draft a cover letter and a compliance checklist, and flag deadlines and briefing sessions. For bigger or complex tenders we quote a price (up to ${P.bidHelpMax}) after we see the documents, and you agree it before we start. You submit the bid yourself.</li>
-<li><b>Pro: ${P.pro} a month, or ${P.proYear} a year.</b> Everything in tender alerts, sent to up to ${PRICING.proEmails} email addresses you give us, with priority support on WhatsApp.</li>
+<li><b>Pro: ${P.pro} a month, or ${P.proYear} a year.</b> Everything in tender alerts, sent to up to ${PRICING.proEmails} email addresses you give us, with the list of documents to submit under each tender (read from the tender documents by software, so always check the documents), and priority support on WhatsApp.</li>
 <li><b>Tender Desk: ${P.desk} a month.</b> We find suitable tenders for you, keep your CSD, tax clearance and B-BBEE documents up to date and track their expiry dates, prepare the compliance pack and returnable-documents checklist for each bid, and track deadlines and briefing sessions. We agree the monthly price with you before we start. You approve and submit every bid yourself.</li>
 <li><b>CSD registration help: ${P.csd}. CIDB registration help: ${P.cidb}.</b> Once-off fees for our help only. CSD registration itself is free; CIDB fees are paid to the CIDB.</li>
 </ul>

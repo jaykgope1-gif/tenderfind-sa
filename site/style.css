@@ -440,6 +440,12 @@ ul.facts li { padding: 2px var(--s2); border: var(--hair); border-radius: var(--
 .similar li .due.soon { color: var(--red); }
 .similar p { margin-top: var(--s4); }
 .similar .btn.wide { margin-top: var(--s2); }
+.checklist { margin: var(--s5) 0 0; padding-top: var(--s4); border-top: var(--hair); }
+.checklist h2 { font-size: 1.25rem; margin: 0 0 var(--s2); }
+.checklist > p { margin: 0 0 var(--s3); }
+.check-list { list-style: none; margin: 0 0 var(--s3); padding: 0; }
+.check-list li { display: grid; grid-template-columns: 20px 1fr; gap: var(--s2); padding: var(--s2) 0; border-bottom: var(--hair); }
+.check-list .icon { color: var(--green); margin-top: 3px; }
 .help-link { margin: var(--s5) 0 0; padding-top: var(--s4); border-top: var(--hair); }
 .help-link a { font-weight: 700; }
 

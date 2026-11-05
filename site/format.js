@@ -84,7 +84,7 @@
       <dt>Closing date</dt><dd>${esc(closingText(d.closing))}</dd>
       <dt>Briefing session</dt><dd>${fieldHtml(d.briefing, docUrl, briefingText)}${why(d.briefing)}</dd>
       ${reqs.map(([label, f, fmt]) => `<dt>${label}</dt><dd>${fieldHtml(f, docUrl, fmt)}${why(f)}</dd>`).join("")}
-      <dt>Tender documents</dt><dd>${docs}</dd>
+      <dt id="docs">Tender documents</dt><dd>${docs}</dd>
       ${d.portal
         ? `<dt>Where it's advertised</dt><dd>Only on <a href="${esc(d.portal.url)}" target="_blank" rel="noopener">${esc(d.portal.name)}</a>${d.reference ? `: look for <b>${esc(d.reference)}</b>` : ""}</dd>`
         : `<dt>Check it on eTenders</dt><dd>${d.reference ? `Search for <b>${esc(d.reference)}</b> on ` : ""}<a href="https://www.etenders.gov.za/" target="_blank" rel="noopener">etenders.gov.za</a>, the official portal</dd>`}

@@ -25,7 +25,7 @@ const signupHtml = (root) => `<section class="signup" id="signup" aria-labelledb
 // "What makes us different": on the pricing page and the home page (build.js fills the block marked
 // <!-- build:different --> in site/index.html). Only claims the site can back up: the summary is summary.js
 // (rule-based, from the official wording), and the checklist is what extract.js finds in the documents.
-const CHECKLIST_LIVE = false; // true once the per-tender checklist (Phase 4) is built
+const CHECKLIST_LIVE = true; // the per-tender checklist ("What you'll need to submit") is built
 const differentHtml = (root) => `<section class="different" aria-labelledby="diff-h">
 <h2 id="diff-h">What makes TenderFind different</h2>
 <ul class="diff-list">
@@ -148,6 +148,26 @@ function similarHtml(t, list) {
 <p><a class="btn wide" href="${esc(tradeLink)}">See all open ${esc(t.trade)} tenders</a></p></section>`;
 }
 
+// "What you'll need to submit" (open tenders). c = the checklist from extract.js (scripts/lib/checklist.js), or
+// null if the documents haven't been checked for it yet. Only what the documents say, with their own words.
+const CHECK_DOCS = "Check the tender documents. We couldn’t read them automatically.";
+function checklistHtml(c) {
+  const docLink = `<a href="#docs">the tender documents</a>`;
+  let inner;
+  if (!c) inner = `<p class="missing">Check the tender documents. We haven’t checked them for this list yet.</p>`;
+  else if (c.status === "unreadable") inner = `<p class="missing">${esc(CHECK_DOCS)}</p>`;
+  else if (c.status === "none-found") inner = `<p class="missing">We read the documents but didn’t find a list of what to submit. Check the tender documents.</p>`;
+  else {
+    inner = `<p>${c.section ? "The tender documents list these:" : "We didn’t find a full list in the documents, but they include these standard forms:"} <small class="auto">auto-extracted, confirm before bidding</small></p>
+<ul class="check-list">${c.items.map((i) => `<li>${icon("../", "check")}<div><b>${esc(i.label)}</b>${i.snippet ? `<span class="why">From the documents: “${esc(i.snippet)}”</span>` : ""}</div></li>`).join("")}</ul>`;
+  }
+  return `<section class="checklist" id="checklist" aria-labelledby="checklist-h">
+<h2 id="checklist-h">What you’ll need to submit</h2>
+${inner}
+<p class="small">A computer read this list, and it can miss things. The official tender documents always win: read ${docLink} and submit everything they ask for.</p>
+</section>`;
+}
+
 // Keeps "Closes in 3 days" current between daily rebuilds, and flips the page to closed if it passes.
 const COUNTDOWN_SCRIPT = `<script src="../format.js"></script>
 <script>
@@ -192,6 +212,7 @@ ${t.documents?.[0] ? `<a class="btn" href="${esc(t.documents[0].url)}" target="_
 <p class="due${!closed && cd.soon ? " soon" : ""}">${closed ? "Closed" : `<span id="due" data-closing="${esc(t.closing)}">${esc(cd.text)}</span>`} <span class="meta">(${esc(closingText(t.closing))})</span></p>
 ${share}
 ${facts}
+${closed ? "" : checklistHtml(t.checklist)}
 ${closed ? "" : `<p class="help-link"><b>Need help with this tender?</b> We go through the documents with you and give you a checklist of everything to submit. <a href="../help.html?service=bid&amp;tender=${esc(t.id)}">Request Bid Help (${P.bidHelp})</a></p>`}
 </article>
 ${similarHtml(t, similarList)}`;
