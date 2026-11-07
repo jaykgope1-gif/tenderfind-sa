@@ -3042,7 +3042,73 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:17:28.031Z"
+  "extracted_at": "2026-10-31T11:17:28.031Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "Complete, sign, submit SBD1, SBD4 & SBD6.1."
+    },
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "Complete, sign, submit SBD1, SBD4 & SBD6.1."
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "Complete, sign, submit SBD1, SBD4 & SBD6.1."
+    },
+    {
+     "key": "sbd-7",
+     "label": "SBD 7 form",
+     "snippet": "1.4. THE SUCCESSFUL TENDERER WILL BE REQUIRED TO FILL IN AND SIGN A WRITTEN CONTRACT FORM (SBD7)."
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "Companies must be registered with the National Treasury’s Central Supplier Database"
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "Attach a copy of valid Tax Compliance Status pin page (to be confirmed through"
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "(Annexure E) & B-BBEE (Annexure F)"
+    },
+    {
+     "key": "cidb",
+     "label": "CIDB registration",
+     "snippet": "The Tenderer is registered with the Construction Industry Development Board in a"
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "verified through CSD and CIPC)."
+    },
+    {
+     "key": "briefing",
+     "label": "Briefing session attendance certificate",
+     "snippet": "attendance registerandmust sign the attendance register. Certificate of Attendance at"
+    },
+    {
+     "key": "coida",
+     "label": "COIDA letter of good standing",
+     "snippet": "Proof of active registration and in good standing with the compensation fund or with a"
+    },
+    {
+     "key": "professional",
+     "label": "Professional registration (ECSA, SACPCMP)",
+     "snippet": "• Professional Civil Engineer/Technologist/Technician (ECSA Professional"
+    }
+   ]
+  }
  },
  "176110": {
   "status": "ok",
@@ -4137,7 +4203,18 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T10:27:52.291Z"
+  "extracted_at": "2026-10-31T10:27:52.291Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "disclosure (SBD4). Page 17 of 61 NTENTS OF THIS PAGE NOTED: ........................................................ SERVICE PROVID"
+    }
+   ]
+  }
  },
  "176148": {
   "status": "no-pdf",
@@ -4248,7 +4325,73 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:17:29.714Z"
+  "extracted_at": "2026-10-31T11:17:29.714Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "Complete, sign, submit SBD1, SBD4 & SBD6.1."
+    },
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "Complete, sign, submit SBD1, SBD4 & SBD6.1."
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "Complete, sign, submit SBD1, SBD4 & SBD6.1."
+    },
+    {
+     "key": "sbd-7",
+     "label": "SBD 7 form",
+     "snippet": "1.4. THE SUCCESSFUL TENDERER WILL BE REQUIRED TO FILL IN AND SIGN A WRITTEN CONTRACT FORM (SBD7)."
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "Companies must be registered with the National Treasury’s Central Supplier Database"
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "Attach a copy of valid Tax Compliance Status pin page (to be confirmed through"
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "(Annexure E) & B-BBEE (Annexure F)"
+    },
+    {
+     "key": "cidb",
+     "label": "CIDB registration",
+     "snippet": "The Tenderer is registered with the Construction Industry Development Board in a"
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "verified through CSD and CIPC)."
+    },
+    {
+     "key": "briefing",
+     "label": "Briefing session attendance certificate",
+     "snippet": "attendance registerandmust sign the attendance register. Certificate of Attendance at"
+    },
+    {
+     "key": "coida",
+     "label": "COIDA letter of good standing",
+     "snippet": "Proof of active registration and in good standing with the compensation fund or with a"
+    },
+    {
+     "key": "professional",
+     "label": "Professional registration (ECSA, SACPCMP)",
+     "snippet": "• Professional Civil Engineer/Technologist/Technician (ECSA Professional"
+    }
+   ]
+  }
  },
  "176153": {
   "status": "ok",
@@ -5282,7 +5425,12 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:13:27.626Z"
+  "extracted_at": "2026-10-31T11:13:27.626Z",
+  "checklist": {
+   "status": "none-found",
+   "section": false,
+   "items": []
+  }
  },
  "176174": {
   "status": "ok",
@@ -5495,7 +5643,18 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:13:29.345Z"
+  "extracted_at": "2026-10-31T11:13:29.345Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "disclosure (SBD4). Page 17 of 59 NTENTS OF THIS PAGE NOTED: ........................................................ SERVICE PROVID"
+    }
+   ]
+  }
  },
  "176177": {
   "status": "ok",
@@ -5535,7 +5694,28 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:13:30.338Z"
+  "extracted_at": "2026-10-31T11:13:30.338Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "• The Master Registration Number and Tax compliance status PIN to enable the municipality to verify"
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "• Non submission of company registration certificates."
+    },
+    {
+     "key": "jv",
+     "label": "Joint venture agreement (if you bid as a joint venture)",
+     "snippet": "(2) In case of Joint Venture – the Joint Venture Agreement."
+    }
+   ]
+  }
  },
  "176178": {
   "status": "ok",
@@ -6836,7 +7016,73 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:13:30.363Z"
+  "extracted_at": "2026-10-31T11:13:30.363Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "T2.41 Invitation to Tender - SBD 1 (T2.41)"
+    },
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "Bidder's Disclosure - SBD 4 (T2.11)"
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "Proof of Registration on the Central Supplier Database (CSD) (T2.26)"
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "Tax Compliance Status (TCS) PIN to verify on line Compliance Supplier Status via e-Filing"
+    },
+    {
+     "key": "cidb",
+     "label": "CIDB registration",
+     "snippet": "completed within applicable CIDB grading of 7 GB OR Higher in the past 5 years by the tendering entity –"
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "Certified copy of Founding Statement (CK1), if the firm is a close corporation"
+    },
+    {
+     "key": "id",
+     "label": "Certified ID copies (owners or directors)",
+     "snippet": "Submission of a certified copy(s) of identity document(s) if natural person(s) or"
+    },
+    {
+     "key": "rates",
+     "label": "Municipal rates account, not in arrears",
+     "snippet": "T2.23 Certified Proof of Paid Municipal Rates and Taxes (Attach) (T2.23)"
+    },
+    {
+     "key": "briefing",
+     "label": "Briefing session attendance certificate",
+     "snippet": "Site Inspection Certificate as proof for attendance of compulsory briefing meeting (T2.10)"
+    },
+    {
+     "key": "coida",
+     "label": "COIDA letter of good standing",
+     "snippet": "the Workmen's Compensation Fund"
+    },
+    {
+     "key": "pricing",
+     "label": "Pricing schedule or bill of quantities",
+     "snippet": "Complete priced Bill of Quantities to be submitted on the day of the Tender closing date."
+    },
+    {
+     "key": "jv",
+     "label": "Joint venture agreement (if you bid as a joint venture)",
+     "snippet": "Joint Venture Agreement Occupational Health and Safety Specification Geotechnical Investigation Report (If applicable) The second sentence shal"
+    }
+   ]
+  }
  },
  "176210": {
   "status": "no-pdf",
@@ -7092,7 +7338,43 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:15:26.126Z"
+  "extracted_at": "2026-10-31T11:15:26.126Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "• Proof of company registration on central supplier database registration (CSD)"
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "• Tax Pin Access Code (If JV, For Both)"
+    },
+    {
+     "key": "cidb",
+     "label": "CIDB registration",
+     "snippet": "• CIDB grading (only applicable to construction projects)"
+    },
+    {
+     "key": "id",
+     "label": "Certified ID copies (owners or directors)",
+     "snippet": "• Certified ID Copies of All Directors/Members/Shareholders of The Company/Business"
+    },
+    {
+     "key": "rates",
+     "label": "Municipal rates account, not in arrears",
+     "snippet": "• Proof of residence municipal rates and taxes or letters from tribal authority or valid"
+    },
+    {
+     "key": "bank",
+     "label": "Bank confirmation letter",
+     "snippet": "Bank rating letter) Ra"
+    }
+   ]
+  }
  },
  "176221": {
   "status": "ok",
@@ -8017,7 +8299,12 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:14:06.765Z"
+  "extracted_at": "2026-10-31T11:14:06.765Z",
+  "checklist": {
+   "status": "unreadable",
+   "section": false,
+   "items": []
+  }
  },
  "176265": {
   "status": "ok",
@@ -8461,7 +8748,12 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:14:07.788Z"
+  "extracted_at": "2026-10-31T11:14:07.788Z",
+  "checklist": {
+   "status": "none-found",
+   "section": false,
+   "items": []
+  }
  },
  "176278": {
   "status": "ok",
@@ -12667,7 +12959,12 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-01T22:31:26.428Z"
+  "extracted_at": "2026-11-01T22:31:26.428Z",
+  "checklist": {
+   "status": "unreadable",
+   "section": false,
+   "items": []
+  }
  },
  "176374": {
   "status": "ok",
@@ -13578,7 +13875,18 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:17:45.628Z"
+  "extracted_at": "2026-10-31T11:17:45.628Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "disclosure (SBD4). Page 17 of 58 CONTENTS OF THIS PAGE NOTED: ........................................................ SERVICE PROV"
+    }
+   ]
+  }
  },
  "176392": {
   "status": "ok",
@@ -13950,7 +14258,33 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:17:45.785Z"
+  "extracted_at": "2026-10-31T11:17:45.785Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "complete the SBD1 document; however, no proof of"
+    },
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "1.1.10 *SBD 4 – Bidders Disclosure Annexure J Y"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "SBD 6.1 PREFERENCE POINTS CLAIM FORM IN TERMS OF THE PREFERENTIAL PROCUREMENT REGULATIONS 2022 This preference form must"
+    },
+    {
+     "key": "sbd-6.2",
+     "label": "SBD 6.2 form",
+     "snippet": "SBD 6.2 DECLARATION CERTIFICATE FOR LOCAL PRODUCTION AND CONTENT FOR DESIGNATED SECTORS This Standard Bidding Document"
+    }
+   ]
+  }
  },
  "176400": {
   "status": "ok",
@@ -15512,7 +15846,12 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:18:13.161Z"
+  "extracted_at": "2026-10-31T11:18:13.161Z",
+  "checklist": {
+   "status": "unreadable",
+   "section": false,
+   "items": []
+  }
  },
  "176432": {
   "status": "ok",
@@ -15709,7 +16048,53 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:18:13.163Z"
+  "extracted_at": "2026-10-31T11:18:13.163Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "• Bidder’s Information (SBD1)"
+    },
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "T3.1 SBD 4 T3.2 SBD 6.1 THE CONTRACT Part C1: Pricing Data C1.1 Pricing Instructions C.1.2 Pricing Schedule/Bill of Quantities"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "T3.2 SBD 6.1 THE CONTRACT Part C1: Pricing Data C1.1 Pricing Instructions C.1.2 Pricing Schedule/Bill of Quantities C1.3 Form of"
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "6. Use your CSD Credentials to Login. Contact CSD on (csd@treasury.gov.za) in case you"
+    },
+    {
+     "key": "cidb",
+     "label": "CIDB registration",
+     "snippet": "4. The Bidders must be in possession of a valid 7CE or above CIDB rating on the closing date"
+    },
+    {
+     "key": "briefing",
+     "label": "Briefing session attendance certificate",
+     "snippet": "3. Compulsory Briefing session attendance."
+    },
+    {
+     "key": "coida",
+     "label": "COIDA letter of good standing",
+     "snippet": "as proof of workmen’s registration for compensation for injuries or diseases (COIDA)or FEM"
+    },
+    {
+     "key": "pricing",
+     "label": "Pricing schedule or bill of quantities",
+     "snippet": "C.1.2 Pricing Schedule/Bill of Quantities"
+    }
+   ]
+  }
  },
  "176436": {
   "status": "ok",
@@ -16547,7 +16932,68 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:18:18.265Z"
+  "extracted_at": "2026-10-31T11:18:18.265Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "6 Complete, sign, submit SBD1, SBD4 & SBD6.1."
+    },
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "6 Complete, sign, submit SBD1, SBD4 & SBD6.1."
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "6 Complete, sign, submit SBD1, SBD4 & SBD6.1."
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "1 Companies must be registered with the National Treasury’s Central Supplier Database"
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "Attach a copy of valid Tax Compliance Status pin page (to be confirmed through"
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "(Annexure E) & B-BBEE (Annexure F)"
+    },
+    {
+     "key": "cidb",
+     "label": "CIDB registration",
+     "snippet": "The Tenderer is registered with the Construction Industry Development Board in a"
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "verified through CSD and CIPC)."
+    },
+    {
+     "key": "briefing",
+     "label": "Briefing session attendance certificate",
+     "snippet": "attendance register and must sign the attendance register. Certificate of Attendance at"
+    },
+    {
+     "key": "coida",
+     "label": "COIDA letter of good standing",
+     "snippet": "4 Proof of active registration and in good standing with the compensation fund or with a"
+    },
+    {
+     "key": "professional",
+     "label": "Professional registration (ECSA, SACPCMP)",
+     "snippet": "• Professional Civil Engineer/Technologist/Technician (ECSA Professional"
+    }
+   ]
+  }
  },
  "176457": {
   "status": "ok",
@@ -16730,7 +17176,33 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:18:23.514Z"
+  "extracted_at": "2026-10-31T11:18:23.514Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "1.1.9 SBD 1 Invitation to Bid must be filled out by all tenderers. [Foreign suppliers will be subjected to SARS verification and confirm"
+    },
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "1.1.15 **SBD 4 – Bidders Disclosure Annexure J Y √ 1.1.16 Additional Documents required in event of JV:- 1.1.16 .1 Letter of intent to"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "1.1.12 *SBD 6.1 Preference Points Claim Form in terms of PPPFA 2022 regulations Annexure I Y √ 1.1.13 # Specific Goals A ten"
+    },
+    {
+     "key": "sbd-6.2",
+     "label": "SBD 6.2 form",
+     "snippet": "1.1.8 SBD 6.2 Declaration Certificate for Local Production and Local Content (only applicable if designated materials are inc"
+    }
+   ]
+  }
  },
  "176466": {
   "status": "ok",
@@ -18330,7 +18802,12 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:18:47.807Z"
+  "extracted_at": "2026-10-31T11:18:47.807Z",
+  "checklist": {
+   "status": "none-found",
+   "section": false,
+   "items": []
+  }
  },
  "176502": {
   "status": "ok",
@@ -18535,7 +19012,12 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:18:49.235Z"
+  "extracted_at": "2026-10-31T11:18:49.235Z",
+  "checklist": {
+   "status": "none-found",
+   "section": false,
+   "items": []
+  }
  },
  "176506": {
   "status": "no-pdf",
@@ -18612,7 +19094,33 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:18:49.934Z"
+  "extracted_at": "2026-10-31T11:18:49.934Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "1.1.8 *SBD 1 Invitation to Bid must be filled out by all"
+    },
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "1.1.10 *SBD 4 – Bidders Disclosure Annexure J Y"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "1.1.9 *SBD 6.1 Preference Points Claim Form in terms of"
+    },
+    {
+     "key": "sbd-6.2",
+     "label": "SBD 6.2 form",
+     "snippet": "SBD 6.2 DECLARATION CERTIFICATE FOR LOCAL PRODUCTION AND CONTENT FOR DESIGNATED SECTORS Controlled Disclosure Anonymously r"
+    }
+   ]
+  }
  },
  "176508": {
   "status": "ok",
@@ -19053,7 +19561,73 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:18:57.683Z"
+  "extracted_at": "2026-10-31T11:18:57.683Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "Complete SBD1 Completed SBD 6.1 forms Valid SARS Tax PIN Company registration documents / CIPC (CK) Valid B-BBEE Certificate /"
+    },
+    {
+     "key": "sbd-3.1",
+     "label": "SBD 3.1 form",
+     "snippet": "l) Completed SBD 3.1 and 4 forms."
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "Completed SBD 6.1 forms Valid SARS Tax PIN Company registration documents / CIPC (CK) Valid B-BBEE Certificate / Sworn Affidavit NB: All"
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "d) Proof of registration on the Central Suppliers Database (CSD) report will be"
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "Valid SARS Tax PIN Company registration documents / CIPC (CK) Valid B-BBEE Certificate / Sworn Affidavit NB: All the above administrat"
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "Valid B-BBEE Certificate / Sworn Affidavit"
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "Company registration documents / CIPC (CK)"
+    },
+    {
+     "key": "id",
+     "label": "Certified ID copies (owners or directors)",
+     "snippet": "k) Certified ID copies of the company directors not older than 6 months old."
+    },
+    {
+     "key": "rates",
+     "label": "Municipal rates account, not in arrears",
+     "snippet": "j) Attach proof of Company or Shareholders Municipal Rates not older than"
+    },
+    {
+     "key": "coida",
+     "label": "COIDA letter of good standing",
+     "snippet": "h) Valid COIDA’s Letter of Good standing issued by the Department of Labour."
+    },
+    {
+     "key": "pricing",
+     "label": "Pricing schedule or bill of quantities",
+     "snippet": "e) All bid documents and the prescribed Pricing Schedules must be completed"
+    },
+    {
+     "key": "psira",
+     "label": "PSIRA registration",
+     "snippet": "b) A valid company PSIRA registration certificate (valid at closing date and to"
+    }
+   ]
+  }
  },
  "176515": {
   "status": "ok",
@@ -19093,7 +19667,73 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:18:58.781Z"
+  "extracted_at": "2026-10-31T11:18:58.781Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "Complete SBD1 Completed SBD 6.1 forms Valid SARS Tax PIN Company registration documents / CIPC (CK) Valid B-BBEE Certificate /"
+    },
+    {
+     "key": "sbd-3.1",
+     "label": "SBD 3.1 form",
+     "snippet": "m) Completed SBD 3.1 and 4 forms."
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "Completed SBD 6.1 forms Valid SARS Tax PIN Company registration documents / CIPC (CK) Valid B-BBEE Certificate / Sworn Affidavit NB: All"
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "d) Proof of registration on the Central Suppliers Database (CSD) report will be"
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "Valid SARS Tax PIN Company registration documents / CIPC (CK) Valid B-BBEE Certificate / Sworn Affidavit NB: All the above administrat"
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "Valid B-BBEE Certificate / Sworn Affidavit"
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "Company registration documents / CIPC (CK)"
+    },
+    {
+     "key": "id",
+     "label": "Certified ID copies (owners or directors)",
+     "snippet": "l) Certified copies of South African Identity Documents or Smart ID Cards of"
+    },
+    {
+     "key": "rates",
+     "label": "Municipal rates account, not in arrears",
+     "snippet": "k) Submit proof of business address in the form of Municipal account not older"
+    },
+    {
+     "key": "coida",
+     "label": "COIDA letter of good standing",
+     "snippet": "i) Valid Compensation Fund (COIDA) Letter of Good Standing issued by the"
+    },
+    {
+     "key": "pricing",
+     "label": "Pricing schedule or bill of quantities",
+     "snippet": "e) All bid documents and the prescribed Pricing Schedules must be completed"
+    },
+    {
+     "key": "psira",
+     "label": "PSIRA registration",
+     "snippet": "b) A valid company PSIRA registration certificate (valid at closing date and to"
+    }
+   ]
+  }
  },
  "176516": {
   "status": "no-pdf",
@@ -19261,7 +19901,33 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:18:59.921Z"
+  "extracted_at": "2026-10-31T11:18:59.921Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "must complete the SBD1 document; however, no"
+    },
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "1.1.10 *SBD 4 – Bidders Disclosure Annexure J Y"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "SBD 6.1- Preference Points Claim Form in terms"
+    },
+    {
+     "key": "sbd-6.2",
+     "label": "SBD 6.2 form",
+     "snippet": "SBD 6.2 DECLARATION CERTIFICATE FOR LOCAL PRODUCTION AND CONTENT FOR DESIGNATED SECTORS Invitation to Tender Document"
+    }
+   ]
+  }
  },
  "176520": {
   "status": "ok",
@@ -19542,7 +20208,43 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:19:05.859Z"
+  "extracted_at": "2026-10-31T11:19:05.859Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "SECTION 1: SBD1 FORM PART A INVITATION TO BID YOU ARE HEREBY INVITED TO BID FOR REQUIREMENTS OF FOR THE PROVISION OF WEATHER FORECASTING"
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "CSD NO SUPPLIER COMPLIANCE STATUS Yes No OR BBEEE STATUS LEVEL SWORN AFFIDAVIT I"
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "SWORN AFFIDAVIT If Yes, Who was the Cert"
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "- B-BBEE Certificate / Sworn- Affidavit / B-BBEE CIPC Certificate (in case of JV, a"
+    },
+    {
+     "key": "id",
+     "label": "Certified ID copies (owners or directors)",
+     "snippet": "- Certified copy of ID Documents of the Owners and B-BBEE Certificate / Sworn-"
+    },
+    {
+     "key": "jv",
+     "label": "Joint venture agreement (if you bid as a joint venture)",
+     "snippet": "In the case of Joint Ventures, a copy of the Joint Venture Agreement or written confirmation of the"
+    }
+   ]
+  }
  },
  "176525": {
   "status": "ok",
@@ -19928,7 +20630,18 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:19:12.732Z"
+  "extracted_at": "2026-10-31T11:19:12.732Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "disclosure (SBD4). Page 17 of 60 CONTENTS OF THIS PAGE NOTED: ........................................................ SERVICE PROV"
+    }
+   ]
+  }
  },
  "176531": {
   "status": "ok",
@@ -19969,7 +20682,58 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:19:17.874Z"
+  "extracted_at": "2026-10-31T11:19:17.874Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "Section 7: The attached SBD4 must be completed for each tender and be attached as a"
+    },
+    {
+     "key": "sbd-6",
+     "label": "SBD 6 form",
+     "snippet": "Section 8: The attached SBD 6 must be completed for each tender and be attached as a"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "SBD 6.1 PREFERENCE POINTS CLAIM FORM This preference form must form part of all bids invited. It contains general information"
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "Section 4: CSD number: Section 5: Particulars of sole proprietors and partners in partnerships Name Identity number Personal income tax"
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "i) authorizes the Employer to obtain a tax clearance certificate from the South African Revenue"
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "• B-BBEE Certificate / Sworn- Affidavit / B-BBEE CIPC Certificate (in case of JV, a consolidated scorecard will"
+    },
+    {
+     "key": "cidb",
+     "label": "CIDB registration",
+     "snippet": "award on the cidb Register of Projects."
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "• B-BBEE Certificate / Sworn- Affidavit / B-BBEE CIPC Certificate (in case of JV, a consolidated scorecard will"
+    },
+    {
+     "key": "id",
+     "label": "Certified ID copies (owners or directors)",
+     "snippet": "Certified copy of ID Documents of the Owners and B-BBEE"
+    }
+   ]
+  }
  },
  "176532": {
   "status": "ok",
@@ -20014,7 +20778,18 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-10-31T11:19:20.070Z"
+  "extracted_at": "2026-10-31T11:19:20.070Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "disclosure (SBD4). Page 17 of 60 CONTENTS OF THIS PAGE NOTED: ........................................................ SERVICE PROV"
+    }
+   ]
+  }
  },
  "176533": {
   "status": "scanned",
@@ -22899,7 +23674,12 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-04T02:48:32.239Z"
+  "extracted_at": "2026-11-04T02:48:32.239Z",
+  "checklist": {
+   "status": "unreadable",
+   "section": false,
+   "items": []
+  }
  },
  "176625": {
   "status": "ok",
@@ -26939,7 +27719,68 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-03T02:48:22.361Z"
+  "extracted_at": "2026-11-03T02:48:22.361Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "A15: SBD 4: Bidder’s Disclosure Form"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "A16: SBD 6.1: Preference points claim form in terms of Preferential"
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "B4: Central Supplier Database (CSD) proof of registration."
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "B2: SARS Pin issued by the South African Revenue Services."
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "C5: B-BBEE Verification Certificate and B-BBEE Report OR Sworn Affidavit"
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "B6: CIPC Registration documents, Partnership Agreement, JV Agreement and/or"
+    },
+    {
+     "key": "id",
+     "label": "Certified ID copies (owners or directors)",
+     "snippet": "B7: Identity documents of all Shareholders, Directors, Members, Trustees or"
+    },
+    {
+     "key": "briefing",
+     "label": "Briefing session attendance certificate",
+     "snippet": "and Bidder must sign the Attendance Register."
+    },
+    {
+     "key": "coida",
+     "label": "COIDA letter of good standing",
+     "snippet": "Occupational Injuries and Diseases Act (COIDA)."
+    },
+    {
+     "key": "bank",
+     "label": "Bank confirmation letter",
+     "snippet": "B3: Bank Letter: Letter of Good Standing from Bidder’s Bank preferably with bank"
+    },
+    {
+     "key": "pricing",
+     "label": "Pricing schedule or bill of quantities",
+     "snippet": "In Contract Document: C2.2 Activity/Pricing Schedules"
+    }
+   ]
+  }
  },
  "176721": {
   "status": "ok",
@@ -28435,7 +29276,18 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-03T11:22:33.906Z"
+  "extracted_at": "2026-11-03T11:22:33.906Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "mbd-6.1",
+     "label": "MBD 6.1 form",
+     "snippet": "MBD 6.1. There will be no benefits if the schedule is not thoroughly completed. Preference points MUST also be"
+    }
+   ]
+  }
  },
  "176759": {
   "status": "ok",
@@ -29062,7 +29914,98 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-03T11:22:32.424Z"
+  "extracted_at": "2026-11-03T11:22:32.424Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "mbd-1",
+     "label": "MBD 1 form",
+     "snippet": " Invitation to Bid (MBD 1)  Form of Offer / Acceptance  Pricing Schedule – Firm Prices (MBD 3.1)  Non-firm prices form (MBD 3.2)  D"
+    },
+    {
+     "key": "mbd-3.1",
+     "label": "MBD 3.1 form",
+     "snippet": " Pricing Schedule – Firm Prices (MBD 3.1)"
+    },
+    {
+     "key": "mbd-3.2",
+     "label": "MBD 3.2 form",
+     "snippet": " Non-firm prices form (MBD 3.2)"
+    },
+    {
+     "key": "mbd-4",
+     "label": "MBD 4 form",
+     "snippet": " Declaration of Interest Form (MBD 4)"
+    },
+    {
+     "key": "mbd-5",
+     "label": "MBD 5 form",
+     "snippet": " Declaration for Procurement above R10 000 000 (MBD 5)"
+    },
+    {
+     "key": "mbd-6.1",
+     "label": "MBD 6.1 form",
+     "snippet": " Preference Claim Form (MBD 6.1)"
+    },
+    {
+     "key": "mbd-6.2",
+     "label": "MBD 6.2 form",
+     "snippet": " Declaration Certificate for Local Content (MBD 6.2)"
+    },
+    {
+     "key": "mbd-7.1",
+     "label": "MBD 7.1 form",
+     "snippet": " Declaration for Purchase of Goods (MBD 7.1)"
+    },
+    {
+     "key": "mbd-8",
+     "label": "MBD 8 form",
+     "snippet": " Declaration of Bidder’s past SCM practices (MBD 8)"
+    },
+    {
+     "key": "mbd-9",
+     "label": "MBD 9 form",
+     "snippet": " Certificate of Independent Bid Determination (MBD 9)"
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": " Central Supplier Database (CSD) Registration Report"
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": " Valid Tax Clearance Certificate or SARS Pin"
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": " Certified copy of B-BBEE Certificate or Sworn Affidavit signed by the Commissioner of Oath. A"
+    },
+    {
+     "key": "cidb",
+     "label": "CIDB registration",
+     "snippet": " CIDB Registration particulars (CIDB Registration number) where applicable"
+    },
+    {
+     "key": "rates",
+     "label": "Municipal rates account, not in arrears",
+     "snippet": " Municipal rates & taxes statement in the name of the company or any of its director/s (must not be"
+    },
+    {
+     "key": "coida",
+     "label": "COIDA letter of good standing",
+     "snippet": "WORKMAN`S COMPENSATION FUND"
+    },
+    {
+     "key": "pricing",
+     "label": "Pricing schedule or bill of quantities",
+     "snippet": " Pricing Schedule – Firm Prices (MBD 3.1)"
+    }
+   ]
+  }
  },
  "176780": {
   "status": "ok",
@@ -29315,7 +30258,12 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-03T11:22:33.904Z"
+  "extracted_at": "2026-11-03T11:22:33.904Z",
+  "checklist": {
+   "status": "unreadable",
+   "section": false,
+   "items": []
+  }
  },
  "176796": {
   "status": "ok",
@@ -29355,7 +30303,38 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-03T11:22:35.399Z"
+  "extracted_at": "2026-11-03T11:22:35.399Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "• Valid registration on the Central Supplier Database (CSD);"
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "• Valid SARS tax compliance status;"
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "• Valid B-BBEE certificate or sworn affidavit where applicable;"
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "• Company registration documents;"
+    },
+    {
+     "key": "bank",
+     "label": "Bank confirmation letter",
+     "snippet": "• Proof of banking details; • Company profile; and • Any additional supporting documentation required by the ATM. 5.2 Technical requirements The"
+    }
+   ]
+  }
  },
  "176801": {
   "status": "ok",
@@ -30212,7 +31191,68 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-03T13:07:33.827Z"
+  "extracted_at": "2026-11-03T13:07:33.827Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "A15: SBD 4: Bidder’s Disclosure Form"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "A16: SBD 6.1: Preference points claim form in terms of Preferential"
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "B4: Central Supplier Database (CSD) proof of registration."
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "B2: SARS Pin issued by the South African Revenue Services."
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "C5: B-BBEE Verification Certificate and B-BBEE Report OR Sworn Affidavit"
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "B6: CIPC Registration documents, Partnership Agreement, JV Agreement and/or"
+    },
+    {
+     "key": "id",
+     "label": "Certified ID copies (owners or directors)",
+     "snippet": "B7: Identity documents of all Shareholders, Directors, Members, Trustees or"
+    },
+    {
+     "key": "briefing",
+     "label": "Briefing session attendance certificate",
+     "snippet": "and Bidder must sign the Attendance Register."
+    },
+    {
+     "key": "coida",
+     "label": "COIDA letter of good standing",
+     "snippet": "Occupational Injuries and Diseases Act (COIDA)."
+    },
+    {
+     "key": "bank",
+     "label": "Bank confirmation letter",
+     "snippet": "B3: Bank Letter: Letter of Good Standing from Bidder’s Bank preferably with bank"
+    },
+    {
+     "key": "pricing",
+     "label": "Pricing schedule or bill of quantities",
+     "snippet": "In Contract Document: C2.2 Activity/Pricing Schedules"
+    }
+   ]
+  }
  },
  "176822": {
   "status": "ok",
@@ -30839,7 +31879,28 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-03T13:07:31.755Z"
+  "extracted_at": "2026-11-03T13:07:31.755Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "SBD1- Invitation to Bid Yes Must be completed and signed"
+    },
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "SBD4 Interest - Declaration of Yes Must be completed and signed SBD6.1- Preference Claim Form and Certified copy of"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "SBD6.1- Preference Claim Form and"
+    }
+   ]
+  }
  },
  "176831": {
   "status": "ok",
@@ -31068,7 +32129,73 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-03T13:07:32.193Z"
+  "extracted_at": "2026-11-03T13:07:32.193Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "A15: SBD 4: Bidder’s Disclosure Form"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "A16: SBD 6.1: Preference points claim form in terms of Preferential"
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "NB: No award will be made to a supplier or service provider who is not registered on the Central Supplier"
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "B2: SARS Pin issued by the South African Revenue Services."
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "C5: B-BBEE Verification Certificate and B-BBEE Report OR Sworn Affidavit"
+    },
+    {
+     "key": "cidb",
+     "label": "CIDB registration",
+     "snippet": "a) Fully completed and signed form of offer and acceptance (C1.1) (Found in the CIDB PSC document)."
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "B6: CIPC Registration documents, Partnership Agreement, JV Agreement and/or"
+    },
+    {
+     "key": "id",
+     "label": "Certified ID copies (owners or directors)",
+     "snippet": "B7: Identity documents of all Shareholders, Directors, Members, Trustees or"
+    },
+    {
+     "key": "briefing",
+     "label": "Briefing session attendance certificate",
+     "snippet": "and Bidder must sign the Attendance Register."
+    },
+    {
+     "key": "coida",
+     "label": "COIDA letter of good standing",
+     "snippet": "commissioner COIDA (Compensation for Occupational Injuries and Diseases Act) (Letter of good"
+    },
+    {
+     "key": "bank",
+     "label": "Bank confirmation letter",
+     "snippet": "B3: Bank Letter: Letter of Good Standing from Bidder’s Bank preferably with bank"
+    },
+    {
+     "key": "pricing",
+     "label": "Pricing schedule or bill of quantities",
+     "snippet": "In Contract Document: C2.2 Activity/Pricing Schedules"
+    }
+   ]
+  }
  },
  "176835": {
   "status": "ok",
@@ -31343,7 +32470,12 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-04T02:48:31.147Z"
+  "extracted_at": "2026-11-04T02:48:31.147Z",
+  "checklist": {
+   "status": "unreadable",
+   "section": false,
+   "items": []
+  }
  },
  "176839": {
   "status": "ok",
@@ -33101,7 +34233,73 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-03T14:14:06.433Z"
+  "extracted_at": "2026-11-03T14:14:06.433Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "mbd-1",
+     "label": "MBD 1 form",
+     "snippet": "3. MBD 1: INVITATION TO TENDER…"
+    },
+    {
+     "key": "mbd-4",
+     "label": "MBD 4 form",
+     "snippet": "4. MBD 4: DECLARATION OF INTEREST ........................................................................................................................... 18"
+    },
+    {
+     "key": "mbd-5",
+     "label": "MBD 5 form",
+     "snippet": "Financial statements or accounts as per MBD 5."
+    },
+    {
+     "key": "mbd-6.1",
+     "label": "MBD 6.1 form",
+     "snippet": "Proof for claiming points for locality as required in MBD 6.1."
+    },
+    {
+     "key": "mbd-8",
+     "label": "MBD 8 form",
+     "snippet": "6. MBD 8: BIDDER’S PAST PRACTICES…"
+    },
+    {
+     "key": "mbd-9",
+     "label": "MBD 9 form",
+     "snippet": "7. MBD 9: CERTIFICATE OF INDEPENDENT BID DETERMINATION ................................................................................... 33"
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "Tax-compliant status on CSD."
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "TAX COMPLIANCE STATUS TCS PIN"
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "Original or Originally Certified copy of a valid SANAS approved B-BBEE certificate or a valid"
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "completed and / attachments and / CSD, CIPC, if necessary."
+    },
+    {
+     "key": "id",
+     "label": "Certified ID copies (owners or directors)",
+     "snippet": "Identity Documents of all those with equity ownership in the organization. In the case of"
+    },
+    {
+     "key": "rates",
+     "label": "Municipal rates account, not in arrears",
+     "snippet": "Certified copy of director/s municipal account/s."
+    }
+   ]
+  }
  },
  "176870": {
   "status": "no-pdf",
@@ -53038,13 +54236,13 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-07T02:48:59.103Z",
+  "extracted_at": "2026-11-07T10:41:23.784Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
    "items": []
   },
-  "attempts": 1
+  "attempts": 2
  },
  "177248": {
   "status": "ok",
@@ -57598,7 +58796,7 @@
  "gp-hla-4-2-4-2026-03": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-07T02:48:12.246Z",
+  "extracted_at": "2026-11-07T10:41:21.035Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -57636,7 +58834,7 @@
  "gp-gt-gdh-036-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-07T02:48:12.246Z",
+  "extracted_at": "2026-11-07T10:41:21.035Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -57674,7 +58872,7 @@
  "gp-gt-gdh-037-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-07T02:48:12.246Z",
+  "extracted_at": "2026-11-07T10:41:21.035Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -57712,7 +58910,7 @@
  "gp-cogta-01-01-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-07T02:48:12.246Z",
+  "extracted_at": "2026-11-07T10:41:21.035Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -57750,7 +58948,7 @@
  "gp-gt-gdenv-026-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-07T02:48:12.246Z",
+  "extracted_at": "2026-11-07T10:41:21.035Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
