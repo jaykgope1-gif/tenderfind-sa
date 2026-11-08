@@ -52048,82 +52048,6 @@
    ]
   }
  },
- "177208": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "CANCELATION TO ADVERTISE NOTICE RFQ 03 OF 09 OF 2026.pdf",
-    "pages": 1,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "csd_required": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-11-06T11:30:59.065Z",
-  "checklist": {
-   "status": "none-found",
-   "section": false,
-   "items": []
-  }
- },
- "177209": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "CANCELATION TO ADVERTISE NOTICE RFQ 01 OF 09 OF 2026.pdf",
-    "pages": 1,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "csd_required": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-11-06T11:30:59.099Z",
-  "checklist": {
-   "status": "none-found",
-   "section": false,
-   "items": []
-  }
- },
  "177210": {
   "status": "ok",
   "docs": [
@@ -58908,7 +58832,7 @@
  "gp-hla-4-2-4-2026-03": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-08T02:48:04.842Z",
+  "extracted_at": "2026-11-08T10:46:21.407Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -58946,7 +58870,7 @@
  "gp-gt-gdh-036-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-08T02:48:04.842Z",
+  "extracted_at": "2026-11-08T10:46:21.407Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -58984,7 +58908,7 @@
  "gp-gt-gdh-037-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-08T02:48:04.842Z",
+  "extracted_at": "2026-11-08T10:46:21.407Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -59022,7 +58946,7 @@
  "gp-cogta-01-01-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-08T02:48:04.842Z",
+  "extracted_at": "2026-11-08T10:46:21.407Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -59060,7 +58984,7 @@
  "gp-gt-gdenv-026-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-08T02:48:04.842Z",
+  "extracted_at": "2026-11-08T10:46:21.407Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
