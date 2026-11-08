@@ -54236,13 +54236,13 @@
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-07T10:41:23.784Z",
+  "extracted_at": "2026-11-08T02:48:08.825Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
    "items": []
   },
-  "attempts": 2
+  "attempts": 3
  },
  "177248": {
   "status": "ok",
@@ -58793,10 +58793,122 @@
    "items": []
   }
  },
+ "177335": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Volume 1A_FAEL and FAUT.pdf",
+    "pages": 60,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": false,
+     "date": "2026-11-17",
+     "time": "11:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "African Time (CAT) NON-COMPULSORY BRIEFING SESSION Date: 17 November 2026 Time: 11h00, Central African Time (CAT) Venue: Microsoft Teams Meeting ID: 310 039 806 882 755 8 Passcode: 7rh6WY9q Link: https://teams.microsoft.com/meet/3100398068827558?p=WKu5TJgGL3jEoWzIuD BID SUBMISSION - PHYSICAL Location: ATNS"
+   },
+   "cidb_grade": {
+    "value": "3GB",
+    "source": "regex",
+    "snippet": "Construction Industry Development Board (CIDB) grading of 3GB OR higher Bidder to submit proof of registration with Construction Industry Development Board (CIDB) with Grading 3GB OR higher clearly indicating CRS Number [a] ATNS shall verify the"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "............................... 25 36. Registration On the CSD ......................................................................................... 26 37. Registration Certificates and Accreditation with OEMS Or Professional Bodies 26 36. SBD1: Invitat"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-08T02:48:08.852Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "36. SBD1: Invitation to Bid - PART A .............."
+    },
+    {
+     "key": "sbd-3.3",
+     "label": "SBD 3.3 form",
+     "snippet": "37. SBD 3.3 – Pricing Schedule – (Professionals) ....................................................... 29"
+    },
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "39. SBD 4: Bidder’s Disclosure..................................................................................... 37"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "40. SBD 6.1: Preference Points Claim Form in Terms of The Preferential Procurement"
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "30. Central Supplier Database ...................................................................................... 24"
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "32. SARS Tax Clearance Certificate(S) ......................................................................... 25"
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "• Valid B‑BBEE Certificate or Sworn Affidavit (for EMEs/QSEs)"
+    },
+    {
+     "key": "cidb",
+     "label": "CIDB registration",
+     "snippet": "Construction Industry Development Board (CIDB) grading of 3GB OR higher Bidder to submit proof of registration with Construction Ind"
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "• Companies and Intellectual Property Commission (CIPC) Documents"
+    },
+    {
+     "key": "id",
+     "label": "Certified ID copies (owners or directors)",
+     "snippet": "• ID copies of shareholders • Valid B‑BBEE Certificate or Sworn Affidavit (for EMEs/QSEs) 10. Procedures for Submitting Bids 10.1 Closing date"
+    },
+    {
+     "key": "rates",
+     "label": "Municipal rates account, not in arrears",
+     "snippet": "• Municipal account • Lease agreement • Memorandum of Understanding (MoU) with a local"
+    },
+    {
+     "key": "coida",
+     "label": "COIDA letter of good standing",
+     "snippet": "Proof of COIDA compliance (Compensation Fund) OR Registered Mutual Association. Bidder to submit valid Letter of Good Sta"
+    },
+    {
+     "key": "pricing",
+     "label": "Pricing schedule or bill of quantities",
+     "snippet": "35. Pricing Schedule ...................................................................................................... 25"
+    }
+   ]
+  }
+ },
  "gp-hla-4-2-4-2026-03": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-07T10:41:21.035Z",
+  "extracted_at": "2026-11-08T02:48:04.842Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -58834,7 +58946,7 @@
  "gp-gt-gdh-036-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-07T10:41:21.035Z",
+  "extracted_at": "2026-11-08T02:48:04.842Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -58872,7 +58984,7 @@
  "gp-gt-gdh-037-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-07T10:41:21.035Z",
+  "extracted_at": "2026-11-08T02:48:04.842Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -58910,7 +59022,7 @@
  "gp-cogta-01-01-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-07T10:41:21.035Z",
+  "extracted_at": "2026-11-08T02:48:04.842Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -58948,7 +59060,7 @@
  "gp-gt-gdenv-026-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-07T10:41:21.035Z",
+  "extracted_at": "2026-11-08T02:48:04.842Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
