@@ -37416,6 +37416,71 @@
    "items": []
   }
  },
+ "176936": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFP_LAB CHEMICALS_R.pdf",
+    "pages": 45,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "rmation, where necessary, with the National Treasury CSD website and any other regulatory/ industry or any accredited/certification bodies. Should the bidder wish to withdraw its consent as discussed above at any time, it must do so in writing an"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-09T02:48:07.272Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "Application (csd.gov.za)) and to include their Master Registration Number (Supplier MAAA Number) in SBD1"
+    },
+    {
+     "key": "sbd-3.2",
+     "label": "SBD 3.2 form",
+     "snippet": "SBD 3.2 PRICING SCHEDULE Supply and Delivery of Laboratory Chemicals for PPECB OFFER TO BE VALID FOR...90......DAYS FROM"
+    },
+    {
+     "key": "sbd-3.3",
+     "label": "SBD 3.3 form",
+     "snippet": "1. SBD 3.3 – Pricing Schedule 5.3 Physical Submission - Tender Packaging and Delivery 5.3.1 The Technical and Pricing Proposal must be split into"
+    },
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "6. SBD 4 – Bidder Declaration 7. SBD 6.1 - Preference Point Claim Form 8. Valid B-BBEE Certificate ** For a Joint Venture or Consortium, the consol"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "7. SBD 6.1 - Preference Point Claim Form"
+    }
+   ]
+  }
+ },
  "176938": {
   "status": "ok",
   "docs": [
@@ -56063,6 +56128,44 @@
    "items": []
   }
  },
+ "177278": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "CASIDRA PORTAL.pdf",
+    "pages": 2,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-09T02:48:03.457Z",
+  "checklist": {
+   "status": "unreadable",
+   "section": false,
+   "items": []
+  }
+ },
  "177279": {
   "status": "ok",
   "docs": [
@@ -56245,6 +56348,82 @@
      "snippet": "▪ SBD 6.1 Preference points claim form in terms of the Preferential Procurement"
     }
    ]
+  }
+ },
+ "177282": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "CASIDRA PORTAL.pdf",
+    "pages": 2,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-09T02:48:03.459Z",
+  "checklist": {
+   "status": "unreadable",
+   "section": false,
+   "items": []
+  }
+ },
+ "177283": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "CASIDRA PORTAL.pdf",
+    "pages": 2,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-09T02:48:07.091Z",
+  "checklist": {
+   "status": "unreadable",
+   "section": false,
+   "items": []
   }
  },
  "177284": {
@@ -58717,6 +58896,121 @@
    "items": []
   }
  },
+ "177330": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Bid Invitation Notice  - WP11579.pdf",
+    "pages": 1,
+    "result": "text"
+   },
+   {
+    "title": "Bid WP11579.pdf",
+    "pages": 17,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": false,
+     "date": "2026-12-01",
+     "time": "10:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "11:00 NON COMPULSORY BRIEFING Date: 01 December 2026 Time: 10:00 - 12:00 Join: https://teams.microsoft.com/meet/3722609226919545?p=hnY3KeVuE3RKio6ACV Meeting ID: 372 260 922 691 954 5 Passcode: jX6Ny39A SUBMIT TENDER DOCUMENT BID PROPOSALS TO: ALL BID R"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ders are required to constantly verify their TAX Status on CSD to ensure that their task matters are in order SBD 4 C This document must be completed in full. Bidders’ attention is drawn particularly to paragraph 2.3 which requires the bidder to disclose"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-09T02:48:12.344Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "SBD 1 A Bidders are required to complete this document in full and be"
+    },
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "SBD 4 C This document must be completed in full. Bidders’ attention"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "SBD 6.1 D This document must be completed in full. Bidders are advised"
+    }
+   ]
+  }
+ },
+ "177334": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Bid Invitation Notice  - WP11581.pdf",
+    "pages": 1,
+    "result": "text"
+   },
+   {
+    "title": "DIB DOCUMENT WP11581.pdf",
+    "pages": 55,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": false,
+     "date": "2026-11-24",
+     "time": "09:30",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "11:00 NON COMPULSORY BRIEFING Date:24 November 2026 Time:09h30-11h30 Join: https://teams.microsoft.com/meet/3691293256908846?p=h1VmYRGO018z5fRu7W Meeting ID: 369 129 325 690 884 6 Passcode: oW3yx6of SUBMIT TENDER DOCUMENT BID PROPOSALS TO: ALL BID REPONSES MUST"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-09T02:48:11.020Z",
+  "checklist": {
+   "status": "none-found",
+   "section": false,
+   "items": []
+  }
+ },
  "177335": {
   "status": "ok",
   "docs": [
@@ -58829,10 +59123,229 @@
    ]
   }
  },
+ "177338": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Invitation to Tender (ITT) or Request for Proposal (RFP) Fuel Oil Valves.pdf",
+    "pages": 70,
+    "result": "text"
+   },
+   {
+    "title": "Unit 1-6 Fuel Oil Valves  Scope Of Work refurbishment review.pdf",
+    "pages": 12,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": false,
+     "date": "2026-11-17",
+     "time": "10:30",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "losing date and time Clarification meeting Non-compulsory clarification meeting will be held as follows: Date: 17 November 2026 Time: 10:30 am The meeting will be held on MS Teams, Link provided below: Join: https://teams.microsoft.com/meet/3766374895757730?p=5H2PIoRokYepLcV8wv Meeting ID: 376 637 489"
+   },
+   "cidb_grade": {
+    "value": "3ME",
+    "source": "regex",
+    "snippet": "p Manual for supplier Y 1.1.16 CIDB Required Grading: (3ME or Higher) Contract Skills Development Goals (CSDG) (if applicable) N/A Y N/A 1.1.17 Contract Participation Goals (CPG) (if applicable) N/A N/A 1.1.18 Scope of Wor"
+   },
+   "bbbee_level": {
+    "value": "Level 3",
+    "source": "regex",
+    "snippet": "hall migrate and achieve as a non-negotiable a milestone of B-BBEE Level 3 by the end of 2.1 Designated Sectors When applicable the following stipulated minimum threshold for Local Production and Content must be achieved in full by the tenderer YES NO"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "hat must be included in all tenders is the following: -  CSD registration Additional Contractual Requirements that may be included if applicable:  SHEQ requirements;  SDL&I requirements and/or  Financial Analysis  Any other as may be stipulated"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-09T02:48:08.918Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": "must complete the SBD1 document; however, no"
+    },
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "1.1.10 *SBD 4 – Bidders Disclosure Annexure J Y"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "SBD 6.1 PREFERENCE POINTS CLAIM FORM IN TERMS OF THE PREFERENTIAL PROCUREMENT REGULATIONS 2022 This preference form mu"
+    },
+    {
+     "key": "sbd-6.2",
+     "label": "SBD 6.2 form",
+     "snippet": "NOTE: SBD 6.2 Declaration Form and Annex C (Local Content Declaration-Summary Schedule) are"
+    }
+   ]
+  }
+ },
+ "177339": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "NRWDI RFQ FOR SUPPLY AND DELIVERY OF A HPE PROLIANT  DL320 GEN11 16TB BACKUP SOLUTION.pdf",
+    "pages": 15,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "........................................................ CSD NO:.................................................................................................................... Email Address:..........................................................."
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-09T02:48:03.424Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "6. Complete all SBD forms and send back together with your quotation (SBD 4&6.1)"
+    },
+    {
+     "key": "sbd-6",
+     "label": "SBD 6 form",
+     "snippet": "on SBD 6. 3.3 Mandatory Requirements (at Award Stage) a. Non tax compliant Bidders will not be awarded the RFQ. b. Bidders"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "SBD 6.1 PREFERENCE POINTS CLAIM FORM IN TERMS OF THE PREFERENTIAL PROCUREMENT REGULATIONS 2022 This preference form"
+    }
+   ]
+  }
+ },
+ "177343": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "CIPC 11 2026 2027 TOR GEOLOCATION SERVICES.pdf",
+    "pages": 15,
+    "result": "text"
+   },
+   {
+    "title": "CBD FORMS CIPC 11 2026 2027.pdf",
+    "pages": 43,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": "2026-11-23",
+     "time": "12:00",
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "ATE THE BID. 12. BRIEFING SESSION PLEASE NOTE THAT THERE IS A BRIEFING SESSION SCHEDULED FOR THIS. BIDDERS WHO DID NOT AT- TEND THE BRIEFING SESSION WILL NOT BE ALLOWED TO BID COMPUL- SORY BRIEFING SESSION DATE: 23 NOVEMBER 2026 TIME: 12H00 MID-DAY MICROSOFT TEAMS MEETING JOIN: HTTPS://TEAMS.MICROS"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "15 7. Registration on Central Sup- plier Database (CSD The Service Provider is encouraged to be registered as a service provider on the Central Supplier Database (CSD). Visit https://secure.csd.gov.za/ to obtain your. Vendor num- ber. Submit P"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-09T02:48:07.193Z",
+  "checklist": {
+   "status": "found",
+   "section": false,
+   "items": [
+    {
+     "key": "sbd-1",
+     "label": "SBD 1 form",
+     "snippet": " SBD1 - INVITATION TO BIDS  PRICE BREAKDOWN PREFERABLE IN THE BIDDER’S LETTERHEAD SIGNED BY AN AUTHORISED REP- RESENTATIVE NB: Bidders must also"
+    },
+    {
+     "key": "sbd-2",
+     "label": "SBD 2 form",
+     "snippet": "2. SBD 2: TAX CLEARANCE REQUIREMENTS ANNEXURE B BIDDERS TO SUBMIT TAX CLEARANCE PIN"
+    },
+    {
+     "key": "sbd-3.3",
+     "label": "SBD 3.3 form",
+     "snippet": "c) Bidders to complete Pricing Schedule SBD 3.3 (Annexure “C”)"
+    },
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "3. Declaration of Interest –SBD 4 Complete and sign the supplied pro forma document."
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "SBD 6.1 Non-submission will lead to a zero (0) score on BBBEE 5. Declaration of Bidder’s Past Supply Chain Manage"
+    },
+    {
+     "key": "sbd-6.2",
+     "label": "SBD 6.2 form",
+     "snippet": "SBD 6.2 DECLARATION CERTIFICATE FOR LOCAL PRODUCTION AND CONTENT FOR DESIGNATED SECTORS This Standard Bidding Document"
+    },
+    {
+     "key": "sbd-8",
+     "label": "SBD 8 form",
+     "snippet": "Practices – SBD 8 Complete and sign the supplied pro forma document. 6. Certificate of Independent Bid Determination – SBD 9"
+    },
+    {
+     "key": "sbd-9",
+     "label": "SBD 9 form",
+     "snippet": "Determination – SBD 9 Complete and sign the supplied pro forma document. CIPC SD-WAN Page 10 of 15 7. Registration on Central"
+    }
+   ]
+  }
+ },
  "gp-hla-4-2-4-2026-03": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-08T10:46:21.407Z",
+  "extracted_at": "2026-11-09T02:47:59.859Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -58870,7 +59383,7 @@
  "gp-gt-gdh-036-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-08T10:46:21.407Z",
+  "extracted_at": "2026-11-09T02:47:59.859Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -58908,7 +59421,7 @@
  "gp-gt-gdh-037-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-08T10:46:21.407Z",
+  "extracted_at": "2026-11-09T02:47:59.859Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -58946,7 +59459,7 @@
  "gp-cogta-01-01-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-08T10:46:21.407Z",
+  "extracted_at": "2026-11-09T02:47:59.859Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -58984,7 +59497,7 @@
  "gp-gt-gdenv-026-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-08T10:46:21.407Z",
+  "extracted_at": "2026-11-09T02:47:59.859Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
