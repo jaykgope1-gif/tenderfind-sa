@@ -10,7 +10,7 @@ const DISCLAIMER = "Tenders from National Treasury’s eTenders and the Gauteng 
 
 // Shared pieces of every page. site/index.html has the same header, footer and sign-up box (with on-page links).
 const icon = (root, id, cls = "icon") => `<svg class="${cls}" aria-hidden="true"><use href="${root}icons.svg#${id}"/></svg>`;
-const MARK = (bg, sheet, lines) => `<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="${bg}"/><g transform="rotate(-4 16 18)"><rect x="8.5" y="9.5" width="15" height="16" rx="1" fill="${sheet}"/><path d="M11.5 15h9M11.5 18.5h9M11.5 22h5.5" stroke="${lines}" stroke-width="1.7" stroke-linecap="round"/></g><circle cx="16" cy="9.5" r="3" fill="#f3c744" stroke="#16191a" stroke-width="1.2"/></svg>`;
+const MARK = (bg, sheet, lines) => `<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="4" fill="${bg}"/><g transform="rotate(-4 16 18)"><rect x="8.5" y="9.5" width="15" height="16" rx="1" fill="${sheet}"/><path d="M11.5 15h9M11.5 18.5h9M11.5 22h5.5" stroke="${lines}" stroke-width="1.7" stroke-linecap="round"/></g><circle cx="16" cy="9.5" r="3" fill="#c9a227"/></svg>`;
 
 // The sign-up box. site/signup.js loads the Tally form on tap.
 const signupHtml = (root) => `<section class="signup" id="signup" aria-labelledby="signup-h">
@@ -41,14 +41,18 @@ function fillHomeBlocks(html) {
   return html.replace(/(<!-- build:different -->)[\s\S]*?(<!-- \/build:different -->)/, (m, a, b) => `${a}\n${differentHtml("")}\n${b}`);
 }
 
+// The main action on every page, under the thumb on phones: WhatsApp about the Tender-Ready Pack.
+const WA_PACK = OPERATOR.whatsapp ? `https://wa.me/${OPERATOR.whatsapp}?text=${encodeURIComponent(`Hi Jay, I want the Tender-Ready Pack (${P.tenderReady})`)}` : null;
+const stickyHtml = (root) => (WA_PACK ? `<a class="sticky-cta" href="${WA_PACK}" target="_blank" rel="noopener">${icon(root, "chat")}<span>WhatsApp me about the <span class="nw">Tender-Ready Pack</span></span></a>` : "");
+
 const headerHtml = (root, cta) => `<a class="skip" href="#main">Skip to content</a>
 <header class="site-head"><div class="container head-row">
-<a class="brand" href="${root}" aria-label="TenderFind SA home">${MARK("#1d4a37", "#faf8f3", "#1d4a37")}TenderFind <b>SA</b></a>
-<nav class="nav" aria-label="Main"><a href="${root}#board">This week’s tenders</a><a href="${root}#search">Search</a><a href="${root}tenders/">By trade</a><a href="${root}pricing.html">Price</a></nav>
+<a class="brand" href="${root}" aria-label="TenderFind SA home">${MARK("#1d4a37", "#f7f5ef", "#1d4a37")}TenderFind <b>SA</b></a>
+<nav class="nav" aria-label="Main"><a href="${root}#search">Search tenders</a><a href="${root}tenders/">By trade</a><a href="${root}pricing.html">Price</a></nav>
 <a class="btn primary head-cta" href="${cta}" data-signup-jump>Try it free</a>
 </div></header>`;
 const footerHtml = (root) => `<footer class="site-foot"><div class="container foot-grid">
-<div><a class="brand" href="${root}" aria-label="TenderFind SA home">${MARK("#faf8f3", "#1d4a37", "#faf8f3")}TenderFind <b>SA</b></a>
+<div><a class="brand" href="${root}" aria-label="TenderFind SA home">${MARK("#f7f5ef", "#1d4a37", "#f7f5ef")}TenderFind <b>SA</b></a>
 <p>Government tenders for your trade, emailed every weekday morning. Run by ${esc(OPERATOR.name || "an independent operator")} in Pretoria.</p>
 <p class="foot-note">${esc(DISCLAIMER)} TenderFind SA is independent and doesn’t sell tenders.</p></div>
 <div><h3>Tenders</h3><ul><li><a href="${root}#search">Search tenders</a></li><li><a href="${root}tenders/">Tenders by trade</a></li><li><a href="${root}pricing.html">Price</a></li><li><a href="${root}help.html">Bid Help</a></li><li><a href="${root}registration-help.html">CSD &amp; CIDB help</a></li><li><a href="${root}partners.html">For partners</a></li></ul></div>
@@ -129,7 +133,7 @@ ${body}
 ${signup ? signupHtml(root) : ""}
 </main>
 ${footerHtml(root)}
-<a class="sticky-cta" href="${cta}" data-signup-jump>Try it free for ${P.trialDays} days ${icon(root, "go", "icon icon-go")}</a>
+${stickyHtml(root)}
 <script src="${root}ui.js" defer></script>
 ${signup ? `<script src="${root}signup.js" defer></script>
 ` : ""}${script}</body>
