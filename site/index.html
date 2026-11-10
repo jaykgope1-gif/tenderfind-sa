@@ -28,160 +28,151 @@
    {"@type":"WebSite","name":"TenderFind SA","url":"https://tenderfind.co.za/","inLanguage":"en-ZA"},
    {"@type":"Organization","name":"TenderFind SA","url":"https://tenderfind.co.za/","logo":"https://tenderfind.co.za/icon-512.png","email":"info@tenderfind.co.za","areaServed":"ZA"}]}
   </script>
-  <script>if(/^(localhost|127\.0\.0\.1)$/.test(location.hostname))document.documentElement.classList.add("show-placeholders");</script>
   <link rel="preload" href="fonts/fraunces-800.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/public-sans-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/public-sans-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/public-sans-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
-  <link rel="preload" href="data/tenders.json" as="fetch" crossorigin>
 </head>
 <body class="has-sticky home">
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-head">
     <div class="container head-row">
       <a class="brand" href="./" aria-label="TenderFind SA home">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1d4a37"/><g transform="rotate(-4 16 18)"><rect x="8.5" y="9.5" width="15" height="16" rx="1" fill="#faf8f3"/><path d="M11.5 15h9M11.5 18.5h9M11.5 22h5.5" stroke="#1d4a37" stroke-width="1.7" stroke-linecap="round"/></g><circle cx="16" cy="9.5" r="3" fill="#f3c744" stroke="#16191a" stroke-width="1.2"/></svg>
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="4" fill="#1d4a37"/><g transform="rotate(-4 16 18)"><rect x="8.5" y="9.5" width="15" height="16" rx="1" fill="#f7f5ef"/><path d="M11.5 15h9M11.5 18.5h9M11.5 22h5.5" stroke="#1d4a37" stroke-width="1.7" stroke-linecap="round"/></g><circle cx="16" cy="9.5" r="3" fill="#c9a227"/></svg>
         TenderFind <b>SA</b>
       </a>
-      <nav class="nav" aria-label="Main"><a href="#board">This week’s tenders</a><a href="#search">Search</a><a href="#pricing">Price</a><a href="about.html">About</a></nav>
-      <a class="btn primary head-cta" href="#signup" data-signup-jump>Try it free</a>
+      <nav class="nav" aria-label="Main"><a href="#search">Search tenders</a><a href="#signup-section">Tender alerts</a><a href="about.html">About</a></nav>
+      <a class="btn head-cta" href="#prices">Prices</a>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-h">
-      <div class="container hero-grid">
+    <!-- 1. What I do, in one sentence. 2. The main offer, with its price (PRICING.tenderReady). -->
+    <section class="tf-hero" aria-labelledby="hero-h">
+      <div class="container tf-hero-grid">
         <div>
-          <p class="dateline label"><span class="dot" aria-hidden="true"></span><span id="dateline">Every weekday morning</span></p>
-          <h1 id="hero-h">Government tenders for your trade, <span class="hl">in your inbox by 06:45.</span></h1>
-          <p class="sub">Stop finding tenders after they’ve closed.</p>
-          <p class="lead">Every weekday at 06:45 we email you the new government tenders for your trade and province. You see who’s buying, the closing date and any compulsory briefing.</p>
-          <div class="ctas">
-            <a class="btn primary big" href="#signup" data-signup-jump>Try it free for 14 days <svg class="icon icon-go" aria-hidden="true"><use href="icons.svg#go"/></svg></a>
-            <a class="btn quiet big" href="#board">See this week’s tenders</a>
+          <p class="label">Government tenders · small business</p>
+          <h1 id="hero-h">I help small businesses get ready to bid for government tenders.</h1>
+          <p class="tf-lead">CSD registration, tax PIN, B-BBEE affidavit and company profile. Done with you on WhatsApp, in plain language.</p>
+          <a class="btn main" href="https://wa.me/27692898507?text=Hi%20Jay%2C%20I%20want%20the%20Tender-Ready%20Pack%20(R1%2C500)" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="icons.svg#chat"/></svg><span>WhatsApp me about the <span class="nw">Tender-Ready Pack</span></span></a>
+          <div class="tf-person">
+            <img src="img/jay-kgope.jpg" width="52" height="52" alt="">
+            <p><b>Jay Kgope, Pretoria</b>I answer every message myself<br><span class="nw">WhatsApp 069 289 8507</span></p>
           </div>
-          <p class="fine">No card needed. After <span data-price="trialDays">14</span> days it’s <span data-price="alerts">R149</span> a month, or stop. Nothing is charged automatically.</p>
-          <p class="ready-jump"><a href="#tender-ready">Not registered to bid yet? Get tender-ready for <span data-price="tenderReady">R1,500</span> <svg class="icon icon-sm" aria-hidden="true"><use href="icons.svg#down"/></svg></a></p>
-          <div class="picker">
-            <p class="label">What do you do? Open right now:</p>
-            <div class="picker-row" id="picker">
-              <a class="pick" href="?trade=Cleaning#search" data-pick="Cleaning"><svg class="icon" aria-hidden="true"><use href="icons.svg#cleaning"/></svg>Cleaning <span class="count" data-trade-count="Cleaning">–</span></a>
-              <a class="pick" href="?trade=Security#search" data-pick="Security"><svg class="icon" aria-hidden="true"><use href="icons.svg#security"/></svg>Security <span class="count" data-trade-count="Security">–</span></a>
-              <a class="pick" href="?trade=Construction#search" data-pick="Construction"><svg class="icon" aria-hidden="true"><use href="icons.svg#construction"/></svg>Construction <span class="count" data-trade-count="Construction">–</span></a>
-              <a class="pick other" href="tenders/"><svg class="icon" aria-hidden="true"><use href="icons.svg#other"/></svg>Something else</a>
-            </div>
-          </div>
+          <p class="tf-alt"><a href="#signup-section">Or get tender alerts by email, free for <span data-price="trialDays">14</span> days</a></p>
         </div>
 
-        <!-- A real tender closing soon, filled live by app.js. Shows a placeholder while loading so nothing jumps. -->
-        <aside class="notice" id="notice" aria-labelledby="n-title" aria-busy="true">
-          <div class="notice-top"><span class="label">Tender notice</span><span class="stamp" id="n-stamp">Loading</span></div>
-          <p class="n-ref mono" id="n-ref"><span class="skel" style="width:40%"></span></p>
-          <h2 id="n-title"><span class="skel lg"></span><span class="skel lg" style="width:70%"></span></h2>
-          <dl class="n-facts">
-            <div><svg class="icon" aria-hidden="true"><use href="icons.svg#buyer"/></svg><dt>Buyer</dt><dd id="n-buyer"><span class="skel" style="width:60%"></span></dd></div>
-            <div><svg class="icon" aria-hidden="true"><use href="icons.svg#pin"/></svg><dt>Where</dt><dd id="n-where"><span class="skel" style="width:40%"></span></dd></div>
-            <div><svg class="icon" aria-hidden="true"><use href="icons.svg#clock"/></svg><dt>Closes</dt><dd id="n-closes"><span class="skel" style="width:55%"></span></dd></div>
-            <div id="n-brief-row"><svg class="icon" aria-hidden="true"><use href="icons.svg#briefing"/></svg><dt>Briefing</dt><dd id="n-brief"><span class="skel" style="width:50%"></span></dd></div>
-            <div id="n-cidb-row" hidden><svg class="icon" aria-hidden="true"><use href="icons.svg#ref"/></svg><dt>CIDB</dt><dd id="n-cidb"></dd></div>
-          </dl>
-          <a class="n-link" id="n-link" href="#search">Read the full tender <svg class="icon icon-sm" aria-hidden="true"><use href="icons.svg#go"/></svg></a>
-          <p class="n-foot">A real tender, picked live from this morning’s list.</p>
-        </aside>
+        <section class="tf-offer" id="pack" aria-labelledby="pack-h">
+          <div class="tf-offer-top"><span>Main offer</span><span>Once-off</span></div>
+          <div class="tf-offer-body">
+            <h2 id="pack-h">Tender-Ready Pack</h2>
+            <p class="tf-price"><span data-price="tenderReady">R1,500</span></p>
+            <ul class="tf-ticks">
+              <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>CSD registration</b> (your supplier number)</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>SARS tax compliance PIN</b> help</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>B-BBEE sworn affidavit</b>, filled in</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>Document check:</b> CIPC, tax and bank</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>1-page company profile</b></span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>3 months of tender alerts</b> free</span></li>
+            </ul>
+            <a class="btn main wide" href="https://wa.me/27692898507?text=Hi%20Jay%2C%20I%20want%20the%20Tender-Ready%20Pack%20(R1%2C500)" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="icons.svg#chat"/></svg><span>WhatsApp me about the pack</span></a>
+            <p class="tf-num">Or WhatsApp <b>069 289 8507</b></p>
+            <p class="small">My fee is for my help. CSD registration itself is free. You use your own logins and your documents stay private. SARS and the CSD decide approvals, not me. I never promise tender wins.</p>
+          </div>
+        </section>
       </div>
+    </section>
 
+    <!-- 3. How it works -->
+    <section class="section" id="how" aria-labelledby="how-h">
       <div class="container">
-        <ul class="figures" aria-label="Today on TenderFind">
-          <li><b id="stat-open">–</b><span>open government tenders across South Africa right now</span></li>
-          <li><b id="stat-cs">–</b><span id="stat-cs-label">cleaning and security tenders open right now</span></li>
-          <li><b id="stat-week">–</b><span>new tenders published in the last 7 days</span></li>
-        </ul>
+        <h2 class="ruled" id="how-h">How it works</h2>
+        <ol class="tf-steps">
+          <li><div><h3>WhatsApp me</h3><p>Tell me about your business. I tell you what you need and what it costs. Work starts once payment is received.</p></div></li>
+          <li><div><h3>We do it together</h3><p>I guide you step by step on WhatsApp. You log in with your own details, and your documents stay private.</p></div></li>
+          <li><div><h3>You are ready to bid</h3><p>You have your CSD number, tax PIN, B-BBEE affidavit and company profile, and tenders for your trade arrive by email.</p></div></li>
+        </ol>
       </div>
     </section>
 
-    <!-- The main service offer. Price from PRICING.tenderReady; the button opens WhatsApp with a ready message. -->
-    <section class="section ready" id="tender-ready" aria-labelledby="ready-h">
-      <div class="container ready-grid">
+    <!-- 4. Who I am -->
+    <section class="section" id="who" aria-labelledby="who-h">
+      <div class="container tf-who">
+        <img src="img/jay-kgope.jpg" width="400" height="500" alt="Jay Kgope, who runs TenderFind SA" loading="lazy" decoding="async">
         <div>
-          <p class="label">Not ready to bid yet?</p>
-          <h2 id="ready-h">Get tender-ready.</h2>
-          <p class="ready-lead">Everything your business needs before it can bid, done with you on WhatsApp, step by step.</p>
-          <p class="ready-price"><span data-price="tenderReady">R1,500</span> <small>once-off</small></p>
-        </div>
-        <div class="ready-card">
-          <p class="label">Tender-Ready Pack</p>
-          <ul class="ready-list">
-            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>CSD registration</b> (your supplier number)</span></li>
-            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>SARS tax compliance PIN</b> help</span></li>
-            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>B-BBEE sworn affidavit</b>, filled in</span></li>
-            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>Document check:</b> CIPC, tax and bank</span></li>
-            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>1-page company profile</b></span></li>
-            <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>3 months of tender alerts</b> free</span></li>
+          <h2 class="ruled" id="who-h">Run by Jay Kgope in Pretoria.</h2>
+          <p>I started TenderFind because good small businesses keep missing government work they could do, simply because they hear about it too late. Message me on WhatsApp and I will answer you myself.</p>
+          <ul class="tf-contact">
+            <li><span>WhatsApp</span><a href="https://wa.me/27692898507" target="_blank" rel="noopener">069 289 8507</a></li>
+            <li><span>Email</span><a href="mailto:info@tenderfind.co.za">info@tenderfind.co.za</a></li>
+            <li><span>Where</span><b>Pretoria, South Africa</b></li>
           </ul>
-          <a class="btn wa wide big" href="https://wa.me/27692898507?text=Hi%20Jay%2C%20I%20want%20the%20Tender-Ready%20Pack%20(R1%2C500)" target="_blank" rel="noopener">WhatsApp Jay about the pack</a>
-          <p class="ready-num">Or WhatsApp <b>069 289 8507</b></p>
-          <p class="small">Our fee is for our help. CSD registration itself is free. You use your own logins and your documents stay private. SARS and the CSD decide approvals, not us. We never promise tender wins.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="inbox" aria-labelledby="inbox-h">
-      <div class="container reveal split-grid">
-        <figure class="mail-wrap">
-          <div class="mail" role="img" aria-labelledby="mail-subject">
-            <div class="mail-head">
-              <p class="mail-subject" id="mail-subject">New tenders for you</p>
-              <div class="mail-from">
-                <span class="av" aria-hidden="true"><svg viewBox="0 0 32 32"><g transform="rotate(-4 16 18)"><rect x="8.5" y="9.5" width="15" height="16" rx="1" fill="#faf8f3"/><path d="M11.5 15h9M11.5 18.5h9M11.5 22h5.5" stroke="#1d4a37" stroke-width="1.7" stroke-linecap="round"/></g><circle cx="16" cy="9.5" r="3" fill="#f3c744"/></svg></span>
-                <div><b>TenderFind SA</b><br>to me · 06:45</div>
-              </div>
-            </div>
-            <div class="mail-body" id="mail-body"><p>Good morning,</p><span class="skel"></span><span class="skel" style="width:80%"></span><span class="skel" style="width:60%"></span><span class="skel"></span><span class="skel" style="width:70%"></span></div>
-          </div>
-          <figcaption id="mail-caption">Built from this week’s real tenders.</figcaption>
-        </figure>
+    <!-- 5. All prices, from PRICING in scripts/lib/config.js -->
+    <section class="section" id="prices" aria-labelledby="prices-h">
+      <div class="container">
+        <h2 class="ruled" id="prices-h">Prices</h2>
+        <p>Every price, in one place. No hidden fees.</p>
+        <table class="tf-prices">
+          <tbody>
+            <tr class="top"><th scope="row">Tender-Ready Pack <span class="tf-tag">Main offer</span><small>CSD, tax PIN help, B-BBEE affidavit, document check, company profile and 3 months of alerts</small></th><td><span data-price="tenderReady">R1,500</span><small>once-off</small></td></tr>
+            <tr><th scope="row"><a href="registration-help.html">CSD registration help</a></th><td><span data-price="csd">R300</span></td></tr>
+            <tr><th scope="row"><a href="registration-help.html">CIDB registration help</a><small>For construction, building and maintenance tenders</small></th><td><span data-price="cidb">R500</span></td></tr>
+            <tr><th scope="row">CSD and CIDB together</th><td><span data-price="csdCidb">R800</span></td></tr>
+            <tr><th scope="row">Company profile</th><td><span data-price="companyProfile">R800</span></td></tr>
+            <tr><th scope="row"><a href="help.html">Bid Help</a><small>Help with one tender or RFQ</small></th><td>from <span data-price="bidHelpFrom">R1,500</span></td></tr>
+            <tr><th scope="row">Workshop: Get Tender-Ready</th><td><span data-price="workshop">R350</span><small>a person</small></td></tr>
+            <tr><th scope="row">Tender alerts by email<small><span data-price="trialDays">14</span> days free, no card needed</small></th><td><span data-price="alerts">R149</span><small>a month</small></td></tr>
+            <tr><th scope="row">Searching tenders on this site</th><td>Free</td></tr>
+          </tbody>
+        </table>
+        <p class="small">My fee is for my help only. CSD registration itself is free, and any CIDB fees are paid to the CIDB. I never promise a tender win. <a href="pricing.html">More plans for bigger teams</a>.</p>
+      </div>
+    </section>
+
+    <!-- 6. Alerts sign-up -->
+    <section class="section" id="signup-section" aria-labelledby="alerts-h">
+      <div class="container split-grid">
         <div class="split-copy">
-          <h2 id="inbox-h">What lands in your inbox at 06:45</h2>
-          <ol class="points">
-            <li><b>Only your trade, only your provinces.</b> A cleaning company in Pretoria doesn’t need Eskom boiler repairs in Mpumalanga, so you won’t get them.</li>
-            <li><b>Compulsory briefings up front.</b> Miss a compulsory briefing and your bid is out, however good it is. We put the date where you can’t miss it.</li>
-            <li><b>CSD and CIDB, where the documents say.</b> If a tender needs a CIDB grade or CSD registration, it’s on the tender’s page.</li>
-            <li><b>A reminder 3 days before closing,</b> for anything you’re still working on.</li>
-            <li><b>Nothing new for you? No email.</b> We don’t fill your inbox to look busy.</li>
-          </ol>
+          <h2 class="ruled" id="alerts-h">Tenders for your trade, by email every morning.</h2>
+          <p>New government tenders for your trade and province, in your inbox by 06:45. You see who’s buying, the closing date and any compulsory briefing.</p>
+          <p>Four questions: your email, your trade, your provinces, and a tick to say we may email you. Two minutes.</p>
+        </div>
+        <section class="signup" id="signup" aria-labelledby="signup-h">
+          <h2 id="signup-h">Start your free 14 days</h2>
+          <p>No card needed. After <span data-price="trialDays">14</span> days it’s <span data-price="alerts">R149</span> a month (or <span data-price="alertsYear">R1,490</span> a year), or stop. Nothing is charged automatically.</p>
+          <button class="btn wide" type="button" data-signup>Get my tender emails <svg class="icon icon-go" aria-hidden="true"><use href="icons.svg#go"/></svg></button>
+          <div class="signup-form" hidden><iframe title="Sign up for tender alerts" width="100%" height="720" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
+          <p class="signup-fallback" hidden>The form is taking a while. <a href="https://tally.so/r/EqKWVX">Open the sign-up form in a new page</a>.</p>
+          <noscript><p><a href="https://tally.so/r/EqKWVX">Open the sign-up form</a></p></noscript>
+        </section>
+      </div>
+    </section>
+
+    <!-- 7. Questions and answers -->
+    <section class="section" id="faq" aria-labelledby="faq-h">
+      <div class="container narrow">
+        <h2 class="ruled" id="faq-h">Questions people ask</h2>
+        <div class="faq-list">
+          <details><summary>Is CSD registration free?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>Yes. Registering on the CSD is free and you can do it yourself. My fee is for helping you do it properly, the first time.</p></div></details>
+          <details><summary>Do you promise I’ll win a tender?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>No. Nobody honest can. Tenders are public and free, and you bid yourself, the normal way. I help you get ready and find the right ones. See our <a href="terms.html">terms</a> and <a href="privacy.html">privacy notice</a>.</p></div></details>
+          <details><summary>Do I give you my passwords?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>No. You log in with your own details and I guide you. Your documents stay private.</p></div></details>
+          <details><summary>Where do the tenders come from?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>National Treasury’s eTenders portal and the Gauteng e-Tender portal, checked every morning. Some municipalities and state companies put a few tenders only on their own websites; we don’t have those yet.</p></div></details>
+          <details><summary>What does “compulsory briefing” mean?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>The buyer holds a meeting or site visit before the closing date, and only companies that attended may bid. We show the date and time when the documents state it. Always check the documents too.</p></div></details>
+          <details><summary>What happens after the 14 days?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>We send one email to say the trial is over. Nothing is charged. To keep getting tenders, it’s <span data-price="alerts">R149</span> a month or <span data-price="alertsYear">R1,490</span> a year through PayFast.</p></div></details>
+          <details><summary>Can I change my trade or provinces?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>Yes. Sign up again with the same email address and pick again. Your trial still counts from your first sign-up.</p></div></details>
         </div>
       </div>
     </section>
 
-    <section class="section" id="board" aria-labelledby="board-h">
-      <div class="container reveal">
-        <div class="section-head">
-          <h2 id="board-h">On the notice board this week</h2>
-          <p id="board-intro">A few of the tenders published in the last 7 days.</p>
-        </div>
-        <ol class="board-list" id="board-list" aria-live="polite"></ol>
-        <p class="trade-line" id="trade-line"><span class="label">By trade</span></p>
-      </div>
-    </section>
-
-    <section class="section" id="page" aria-labelledby="page-h">
-      <div class="container reveal split-grid">
-        <div class="split-copy">
-          <h2 id="page-h">One page per tender. Readable on your phone.</h2>
-          <p>eTenders gives you a reference number and a pile of PDFs. We pull out what you need first: what they want, who’s buying, where, when it closes, the briefing session, the CIDB grade and the B-BBEE level. Then you open the documents.</p>
-          <p>This is the real page for the tender in the notice at the top. Scroll it.</p>
-          <p><a class="btn" id="page-open" href="#search">Open it full size <svg class="icon icon-go" aria-hidden="true"><use href="icons.svg#go"/></svg></a></p>
-        </div>
-        <div class="device">
-          <iframe id="page-frame" title="A real TenderFind tender page" loading="lazy" tabindex="-1"></iframe>
-        </div>
-      </div>
-    </section>
-
+    <!-- Free search of every open tender (app.js). Emails, tender pages and Google link here, so it stays on this page. -->
     <section class="section" id="search" aria-labelledby="search-h">
       <div class="container search-wrap">
         <div class="section-head">
-          <h2 id="search-h">Search every open tender</h2>
+          <h2 class="ruled" id="search-h">Search every open tender</h2>
           <p>Free, no sign-up. Try a town, a department or a trade.</p>
         </div>
         <form class="search" role="search" onsubmit="return false">
@@ -228,96 +219,9 @@
         </section>
 
         <p id="status" class="status" aria-live="polite">Loading today’s tenders…</p>
-        <ol id="results" class="results">
-          <li class="card skeleton-card" aria-hidden="true"><span class="skel" style="width:20%"></span><span class="skel lg" style="width:85%"></span><span class="skel" style="width:50%"></span></li>
-          <li class="card skeleton-card" aria-hidden="true"><span class="skel" style="width:20%"></span><span class="skel lg" style="width:75%"></span><span class="skel" style="width:45%"></span></li>
-          <li class="card skeleton-card" aria-hidden="true"><span class="skel" style="width:20%"></span><span class="skel lg" style="width:80%"></span><span class="skel" style="width:40%"></span></li>
-        </ol>
+        <ol id="results" class="results"></ol>
         <button id="more" class="btn wide" hidden>Show more tenders</button>
         <p class="see-all" id="see-all" hidden><a href="tenders/">Browse every open tender by trade and province <svg class="icon icon-sm" aria-hidden="true"><use href="icons.svg#go"/></svg></a></p>
-      </div>
-    </section>
-
-    <section class="section" id="who" aria-labelledby="who-h">
-      <div class="container reveal who-grid">
-        <figure class="portrait">
-          <img src="img/jay-kgope.jpg" width="400" height="500" alt="Jay Kgope, who runs TenderFind SA" loading="lazy" decoding="async">
-        </figure>
-        <div>
-          <h2 id="who-h">Run by Jay Kgope in Pretoria. Reply to any email and I’ll answer.</h2>
-          <p>I started TenderFind because good small businesses keep missing government work they could do, simply because they hear about it too late. If something in your email looks wrong, just reply. It comes straight to me.</p>
-          <p><a href="mailto:info@tenderfind.co.za">info@tenderfind.co.za</a></p>
-        </div>
-        <!-- Quote from a real trial user. Hidden on the live site until there's a real quote. -->
-        <figure class="quote placeholder" data-placeholder>
-          <blockquote>“A short quote from a real trial user goes here, in their own words.”</blockquote>
-          <figcaption>Name, company, town</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="section" id="pricing" aria-labelledby="pricing-h">
-      <div class="container reveal price-grid">
-        <div>
-          <h2 id="pricing-h" class="sr">Price</h2>
-          <p class="big-price"><span data-price="alerts">R149</span><span>a month</span></p>
-          <p class="price-sub">after <span data-price="trialDays">14</span> free days, or stop. Or <span data-price="alertsYear">R1,490</span> a year, which is two months free.</p>
-          <a class="btn primary big" href="#signup" data-signup-jump>Start the free 14 days <svg class="icon icon-go" aria-hidden="true"><use href="icons.svg#go"/></svg></a>
-        </div>
-        <ul class="price-list">
-          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>Searching is free.</b> Always. No account needed.</span></li>
-          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>No card for the trial.</b> When it ends we email you once. Nothing is charged automatically.</span></li>
-          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>Cancel by replying UNSUBSCRIBE</b> to any email. Paid securely through PayFast, with a full refund within 7 days.</span></li>
-          <li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><span><b>Need a hand?</b> <a href="help.html">Bid Help</a> <span data-price="bidHelp">from R1,500</span> per tender · <a href="registration-help.html">CSD registration help</a> <span data-price="csd">R300</span> · CIDB <span data-price="cidb">R500</span>.</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section" id="faq" aria-labelledby="faq-h">
-      <div class="container reveal narrow">
-        <h2 id="faq-h">Questions people ask</h2>
-        <div class="faq-list">
-          <details><summary>Where do the tenders come from?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>National Treasury’s eTenders portal and the Gauteng e-Tender portal, checked every morning. Some municipalities and state companies put a few tenders only on their own websites; we don’t have those yet.</p></div></details>
-          <details><summary>Do I need to be on the CSD to use this?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>No. But you’ll need CSD registration to bid on almost any government tender. If you’re not registered yet, we can <a href="registration-help.html">help with CSD and CIDB</a>.</p></div></details>
-          <details><summary>What does “compulsory briefing” mean?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>The buyer holds a meeting or site visit before the closing date, and only companies that attended may bid. We show the date and time when the documents state it. Always check the documents too.</p></div></details>
-          <details><summary>What happens after the 14 days?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>We send one email to say the trial is over. Nothing is charged. To keep getting tenders, it’s <span data-price="alerts">R149</span> a month or <span data-price="alertsYear">R1,490</span> a year through PayFast.</p></div></details>
-          <details><summary>Can I change my trade or provinces?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>Yes. Sign up again with the same email address and pick again. Your trial still counts from your first sign-up.</p></div></details>
-          <details><summary>Do you sell tenders or promise I’ll win?<svg class="icon" aria-hidden="true"><use href="icons.svg#plus"/></svg></summary><div class="answer"><p>No. Tenders are public and free, and you bid yourself, the normal way. We find them and make them easy to read. See our <a href="terms.html">terms</a> and <a href="privacy.html">privacy notice</a>.</p></div></details>
-        </div>
-      </div>
-    </section>
-
-    <div class="section" id="different">
-      <div class="container reveal">
-<!-- build:different -->
-<section class="different" aria-labelledby="diff-h">
-<h2 id="diff-h">What makes TenderFind different</h2>
-<ul class="diff-list">
-<li><svg class="icon" aria-hidden="true"><use href="icons.svg#doc"/></svg><div><h3>Every tender in plain English</h3><p>Each tender starts with a short summary of what they want, then who is buying, where, and when it closes. No need to read a 60-page document to see if it’s for you.</p></div></li>
-<li><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg><div><h3>A checklist of what to submit</h3><p>The returnable documents and forms a tender asks for (SBD forms, CSD report, tax PIN, CIDB grade, B-BBEE), listed from the tender documents, so your bid doesn’t get disqualified for a missing page.</p></div></li>
-<li><svg class="icon" aria-hidden="true"><use href="icons.svg#briefing"/></svg><div><h3>We can do the bid work for you</h3><p>With <a href="help.html">Bid Help</a> and <a href="pricing.html#g-for-you">Tender Desk</a>, we read the documents, build the checklist and prepare the pack. You submit.</p></div></li>
-</ul>
-</section>
-<!-- /build:different -->
-      </div>
-    </div>
-
-    <section class="final" aria-labelledby="final-h">
-      <div class="container final-grid">
-        <div>
-          <h2 id="final-h">Tomorrow’s tenders go out at 06:45. Want them?</h2>
-          <p>Four questions: your email, your trade, your provinces, and a tick to say we may email you. Two minutes.</p>
-        </div>
-        <div>
-          <section class="signup" id="signup" aria-labelledby="signup-h">
-            <h2 id="signup-h">Start your free 14 days</h2>
-            <p>No card needed. After <span data-price="trialDays">14</span> days it’s <span data-price="alerts">R149</span> a month (or <span data-price="alertsYear">R1,490</span> a year), or stop.</p>
-            <button class="btn primary wide big" type="button" data-signup>Get my tender emails <svg class="icon icon-go" aria-hidden="true"><use href="icons.svg#go"/></svg></button>
-            <div class="signup-form" hidden><iframe title="Sign up for tender alerts" width="100%" height="720" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
-            <p class="signup-fallback" hidden>The form is taking a while. <a href="https://tally.so/r/EqKWVX">Open the sign-up form in a new page</a>.</p>
-            <noscript><p><a href="https://tally.so/r/EqKWVX">Open the sign-up form</a></p></noscript>
-          </section>
-        </div>
       </div>
     </section>
   </main>
@@ -326,10 +230,10 @@
     <div class="container foot-grid">
       <div>
         <a class="brand" href="./" aria-label="TenderFind SA home">
-          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#faf8f3"/><g transform="rotate(-4 16 18)"><rect x="8.5" y="9.5" width="15" height="16" rx="1" fill="#1d4a37"/><path d="M11.5 15h9M11.5 18.5h9M11.5 22h5.5" stroke="#faf8f3" stroke-width="1.7" stroke-linecap="round"/></g><circle cx="16" cy="9.5" r="3" fill="#f3c744" stroke="#16191a" stroke-width="1.2"/></svg>
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="4" fill="#f7f5ef"/><g transform="rotate(-4 16 18)"><rect x="8.5" y="9.5" width="15" height="16" rx="1" fill="#1d4a37"/><path d="M11.5 15h9M11.5 18.5h9M11.5 22h5.5" stroke="#f7f5ef" stroke-width="1.7" stroke-linecap="round"/></g><circle cx="16" cy="9.5" r="3" fill="#c9a227"/></svg>
           TenderFind <b>SA</b>
         </a>
-        <p>Government tenders for your trade, emailed every weekday morning. Run by Jay Kgope in Pretoria.</p>
+        <p>Help to get tender-ready, and government tenders for your trade by email. Run by Jay Kgope in Pretoria.</p>
         <p class="foot-note">Tenders from National Treasury’s eTenders and the Gauteng e-Tender portal (public information). TenderFind SA is independent and doesn’t sell tenders. Always confirm details in the official documents before you bid.</p>
       </div>
       <div>
@@ -338,13 +242,13 @@
       </div>
       <div>
         <h3>TenderFind</h3>
-        <ul><li><a href="about.html">About</a></li><li><a href="mailto:info@tenderfind.co.za">info@tenderfind.co.za</a></li><li id="contact" hidden><a id="contact-link" href="#">WhatsApp</a></li><li><a href="terms.html">Terms &amp; refunds</a></li><li><a href="privacy.html">Privacy</a></li></ul>
+        <ul><li><a href="about.html">About</a></li><li><a href="mailto:info@tenderfind.co.za">info@tenderfind.co.za</a></li><li id="contact" hidden><a id="contact-link" href="#">WhatsApp 069 289 8507</a></li><li><a href="terms.html">Terms &amp; refunds</a></li><li><a href="privacy.html">Privacy</a></li></ul>
       </div>
     </div>
     <div class="container foot-base"><p>© 2026 TenderFind SA · Pretoria</p><p id="updated"></p></div>
   </footer>
 
-  <a class="sticky-cta" href="#signup" data-signup-jump>Try it free for 14 days <svg class="icon icon-go" aria-hidden="true"><use href="icons.svg#go"/></svg></a>
+  <a class="sticky-cta" href="https://wa.me/27692898507?text=Hi%20Jay%2C%20I%20want%20the%20Tender-Ready%20Pack%20(R1%2C500)" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="icons.svg#chat"/></svg><span>WhatsApp me about the <span class="nw">Tender-Ready Pack</span></span></a>
 
   <script src="format.js" defer></script>
   <script src="ui.js" defer></script>
