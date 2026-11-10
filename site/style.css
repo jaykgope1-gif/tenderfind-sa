@@ -219,6 +219,24 @@ small, .small { font-size: var(--t-small); color: var(--muted); }
 .section-head { max-width: 46rem; margin: 0 0 var(--s6); }
 .section-head p { color: var(--muted); font-size: 1.125rem; margin: 0; }
 @media (max-width: 560px) { .section { padding: var(--s8) 0; } .section-head { margin-bottom: var(--s5); } }
+/* Tender-Ready Pack: the main service offer, right under the top section. */
+.ready-jump { margin: var(--s4) 0 0; font-weight: 700; }
+.ready-jump a { display: inline-block; padding: var(--s3) 0; color: var(--green); text-underline-offset: 4px; }
+.ready-jump .icon { display: inline-block; vertical-align: -2px; }
+.ready { background: var(--green-soft); }
+.ready-grid { display: grid; gap: var(--s6); align-items: center; }
+@media (min-width: 900px) { .ready-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s8); } }
+.ready-lead { font-size: 1.125rem; margin: 0 0 var(--s4); }
+.ready-price { font-weight: 800; font-size: clamp(3rem, 2.2rem + 4vw, 4.5rem); line-height: 1; letter-spacing: -0.04em; color: var(--green); margin: 0; }
+.ready-price small { font-size: 1.0625rem; font-weight: 600; letter-spacing: 0; }
+.ready-card { background: var(--surface); border: var(--bold); border-radius: var(--r); box-shadow: var(--lift); padding: var(--s5); }
+.ready-card .label { margin: 0 0 var(--s2); color: var(--green); }
+.ready-list { list-style: none; margin: 0 0 var(--s5); padding: 0; }
+.ready-list li { display: grid; grid-template-columns: 20px 1fr; gap: var(--s3); padding: var(--s3) 0; border-bottom: var(--hair); }
+.ready-list .icon { color: var(--green); margin-top: 3px; }
+.ready-card .btn { justify-content: center; text-align: center; }
+.ready-num { text-align: center; margin: var(--s3) 0 var(--s4); }
+.ready-card .small { margin: 0; }
 .split-grid { display: grid; gap: var(--s7); align-items: center; }
 @media (min-width: 900px) { .split-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s8); } }
 .split-copy p { max-width: var(--measure); }
