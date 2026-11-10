@@ -620,5 +620,11 @@ dl.facts dd { margin: 0; }
 .tf-prices tr.top td { color: var(--green); font-size: 1.25rem; }
 .tf-tag { display: inline-block; margin-left: var(--s2); padding: 1px var(--s2); border: 1px solid var(--green); border-radius: var(--r); color: var(--green); font-size: var(--t-label); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; vertical-align: 2px; }
 .home .signup { margin: 0; }
+/* Service pages: the offer box and WhatsApp buttons sit in the page column. */
+.page .tf-offer { margin: 0 0 var(--s6); }
+.page .btn.main, .page .tf-prices + .btn { margin: 0 0 var(--s3); }
+.form-h { margin-top: var(--s7); }
+.plan-group .tf-prices { margin-top: 0; max-width: none; }
+.page > .tf-prices { max-width: none; margin-top: var(--s4); }
 /* Never cover a form while someone is typing in it. */
 body:has(input:focus, textarea:focus, select:focus) .sticky-cta { transform: translateY(160%); }

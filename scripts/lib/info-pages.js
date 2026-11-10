@@ -1,6 +1,6 @@
 // site/about.html, site/privacy.html and site/pricing.html. Plain words; no claims the service can't back up.
 const { esc } = require("./display");
-const { shell, differentHtml, CHECKLIST_LIVE } = require("./pages");
+const { shell, differentHtml, CHECKLIST_LIVE, icon } = require("./pages");
 const { OPERATOR, PRICING, HELP_WEBHOOK, PAYMENTS_LIVE } = require("./config");
 const { P } = require("./prices");
 
@@ -118,6 +118,47 @@ function waLink(text) {
   return OPERATOR.whatsapp ? `https://wa.me/${OPERATOR.whatsapp}?text=${encodeURIComponent(text)}` : null;
 }
 
+// The main action: a filled WhatsApp button with a ready-made message. Empty until a number is set.
+function waMain(text, label) {
+  const href = waLink(text);
+  return href ? `<a class="btn main wide" href="${href}" target="_blank" rel="noopener">${icon("./", "chat")}<span>${label}</span></a>` : "";
+}
+const PACK_MSG = `Hi Jay, I want the Tender-Ready Pack (${P.tenderReady})`;
+const tick = (html) => `<li>${icon("./", "check")}<span>${html}</span></li>`;
+// The Tender-Ready Pack box (same contents as the home page).
+function packHtml() {
+  return `<section class="tf-offer" id="pack" aria-labelledby="pack-h">
+<div class="tf-offer-top"><span>Main offer</span><span>Once-off</span></div>
+<div class="tf-offer-body">
+<h2 id="pack-h">Tender-Ready Pack</h2>
+<p class="tf-price">${P.tenderReady}</p>
+<ul class="tf-ticks">
+${tick("<b>CSD registration</b> (your supplier number)")}
+${tick("<b>SARS tax compliance PIN</b> help")}
+${tick("<b>B-BBEE sworn affidavit</b>, filled in")}
+${tick("<b>Document check:</b> CIPC, tax and bank")}
+${tick("<b>1-page company profile</b>")}
+${tick("<b>3 months of tender alerts</b> free")}
+</ul>
+${waMain(PACK_MSG, "WhatsApp Jay about the pack")}
+<p class="tf-num">Or WhatsApp <b>069 289 8507</b></p>
+<p class="small">Our fee is for our help. CSD registration itself is free. You use your own logins and your documents stay private. SARS and the CSD decide approvals, not us. We never promise tender wins.</p>
+</div>
+</section>`;
+}
+// Every "get ready" service and its price, in one ruled table (pricing page).
+function readyTable() {
+  const row = (name, note, price, per, top) => `<tr${top ? " class=\"top\"" : ""}><th scope="row">${name}${note ? `<small>${note}</small>` : ""}</th><td>${price}${per ? `<small>${per}</small>` : ""}</td></tr>`;
+  return `<table class="tf-prices"><tbody>
+${row("Tender-Ready Pack <span class=\"tf-tag\">Main offer</span>", "CSD, tax PIN help, B-BBEE affidavit, document check, company profile and 3 months of alerts", P.tenderReady, "once-off", true)}
+${row("<a href=\"registration-help.html\">CSD registration help</a>", "", P.csd)}
+${row("<a href=\"registration-help.html\">CIDB registration help</a>", "For construction, building and maintenance tenders", P.cidb)}
+${row("CSD and CIDB together", "", P.csdCidb)}
+${row("Company profile", "", P.companyProfile)}
+${row("Workshop: Get Tender-Ready", "", P.workshop, "a person")}
+</tbody></table>`;
+}
+
 function pricingPage(siteUrl) {
   const { trialDays } = PRICING;
   // Until PayFast is live, "subscribe" means WhatsApp us; once live, it goes to the secure pay page (pay/).
@@ -138,7 +179,12 @@ ${action.html}
 </section>`;
   const body = `<h1 class="page-h">Pricing</h1>
 <p class="lede">Searching tenders is free, always. Pay if you want them sent to you, or if you want us to do the paperwork.</p>
-${differentHtml("./")}
+<section class="plan-group" aria-labelledby="g-ready">
+<h2 class="group-h" id="g-ready">Get tender-ready</h2>
+${readyTable()}
+${waMain(PACK_MSG, "WhatsApp Jay about the Tender-Ready Pack")}
+<p class="small">Our fee is for our help only. CSD registration itself is free, and any CIDB fees are paid to the CIDB. You use your own logins and your documents stay private. We never promise a tender win.</p>
+</section>
 <section class="plan-group" aria-labelledby="g-yourself">
 <h2 class="group-h" id="g-yourself">Find tenders yourself</h2>
 <div class="plans">
@@ -204,7 +250,7 @@ ${plan("Tender Desk", `<small>from</small> ${P.deskFrom}`, "a month", [
   html: `${waBtn(deskWa, "Book a call on WhatsApp")}<p class="small"><a href="help.html?service=tender-desk">Or send us a request</a></p>` })}
 </div>
 </section>
-<p class="lede">Not registered yet? <a href="registration-help.html">CSD and CIDB registration help</a> from ${P.csd}.</p>
+${differentHtml("./")}
 
 <article class="card prose faq">
 <h2>Questions</h2>
@@ -234,10 +280,13 @@ function helpForm(preselect) {
   const opt = (value, text) => `<option value="${value}"${value === preselect ? " selected" : ""}>${esc(text)}</option>`;
   return `<form class="card help-form" id="help-form" data-endpoint="${esc(HELP_WEBHOOK)}" novalidate>
 <label><span>What do you need help with?</span><select name="service" required>
+${opt("tender-ready", `Tender-Ready Pack (${P.tenderReady})`)}
 ${opt("bid", `Bid Help for a tender (${P.bidHelp})`)}
 ${opt("csd", `CSD registration (${P.csd})`)}
 ${opt("cidb", `CIDB registration (${P.cidb})`)}
 ${opt("csd+cidb", `CSD and CIDB registration (${P.csdCidb})`)}
+${opt("profile", `Company profile (${P.companyProfile})`)}
+${opt("workshop", `Workshop: Get Tender-Ready (${P.workshop} a person)`)}
 ${opt("tender-desk", `Tender Desk: we do the bid paperwork every month (${P.desk} a month)`)}
 ${opt("pro", `Pro plan: alerts for up to ${PRICING.proEmails} email addresses (${P.pro} a month)`)}
 ${opt("partner", "Partner: tender alerts for our members or clients")}
@@ -260,6 +309,8 @@ ${opt("partner", "Partner: tender alerts for our members or clients")}
 function helpPage(siteUrl) {
   const body = `<h1 class="page-h">Get help with a tender</h1>
 <p class="lede">Tell us what you need and we'll get back to you within one working day.</p>
+${waMain("Hi Jay, I'd like help with a tender bid", "WhatsApp Jay about Bid Help")}
+<h2 class="page-h form-h" id="request">Or send a request</h2>
 ${helpForm("bid")}
 <article class="card prose">
 <h2>Bid Help (${P.bidHelp} per tender)</h2>
@@ -289,14 +340,21 @@ ${helpForm("bid")}
 function registrationHelpPage(siteUrl) {
   const body = `<h1 class="page-h">CSD and CIDB registration help</h1>
 <p class="lede">You can’t bid on most government tenders without these. We’ll help you get registered properly, the first time.</p>
+${packHtml()}
+<h2 class="page-h form-h">Or one thing at a time</h2>
 <div class="plans">
 <section class="plan"><h2>CSD registration</h2><p class="price">${P.csd} <small>once-off</small></p>
 <ul><li>Register your business on National Treasury’s Central Supplier Database (CSD)</li><li>We check your tax, bank and B-BBEE details are captured correctly</li><li>You get your CSD supplier number (MAAA…) to use on every bid</li></ul></section>
 <section class="plan"><h2>CIDB registration</h2><p class="price">${P.cidb} <small>once-off</small></p>
 <ul><li>For construction, building and maintenance tenders</li><li>We help you choose the right class of works and grade</li><li>We prepare and submit your application on the CIDB portal with you</li></ul></section>
 </div>
-<p class="small">Our fee is for our help only. Registration on the CSD is free; any CIDB fees are paid to the CIDB directly. Approval is decided by the CSD and CIDB, not by us.</p>
-<h2 class="page-h" id="request">Request help</h2>
+<table class="tf-prices"><tbody>
+<tr><th scope="row">CSD and CIDB together</th><td>${P.csdCidb}</td></tr>
+<tr><th scope="row">Company profile</th><td>${P.companyProfile}</td></tr>
+</tbody></table>
+${waLink("Hi Jay, I need help with CSD or CIDB registration") ? `<a class="btn wide" href="${waLink("Hi Jay, I need help with CSD or CIDB registration")}" target="_blank" rel="noopener">${icon("./", "chat")}<span>WhatsApp Jay about CSD or CIDB</span></a>` : ""}
+<p class="small">Our fee is for our help only. Registration on the CSD is free; any CIDB fees are paid to the CIDB directly. Approval is decided by the CSD and CIDB, not by us. You use your own logins, and your documents stay private.</p>
+<h2 class="page-h form-h" id="request">Or send a request</h2>
 ${helpForm("csd")}`;
   return shell({
     title: "CSD and CIDB registration help | TenderFind SA",
