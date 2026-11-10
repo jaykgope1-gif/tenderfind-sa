@@ -217,7 +217,7 @@ ${t.documents?.[0] ? `<a class="btn" href="${esc(t.documents[0].url)}" target="_
 ${share}
 ${facts}
 ${closed ? "" : checklistHtml(t.checklist)}
-${closed ? "" : `<p class="help-link"><b>Need help with this tender?</b> We go through the documents with you and give you a checklist of everything to submit. <a href="../help.html?service=bid&amp;tender=${esc(t.id)}">Request Bid Help (${P.bidHelp})</a></p>`}
+${closed ? "" : `<p class="help-link"><b>Need help with this tender?</b> We go through the documents with you and give you a checklist of everything to submit. <a href="../help.html?service=bid&amp;tender=${esc(t.id)}">Request Bid Help (${P.bidHelp})</a>${OPERATOR.whatsapp ? ` · <a href="https://wa.me/${OPERATOR.whatsapp}?text=${encodeURIComponent(`Hi Jay, I need help with this tender: ${cut(t.summary || t.title, 90)} ${url}`)}" target="_blank" rel="noopener">Or WhatsApp Jay about it</a>` : ""}</p>`}
 </article>
 ${similarHtml(t, similarList)}`;
 
