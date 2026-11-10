@@ -27,6 +27,7 @@ module.exports = {
     bidHelpFrom: 1500, bidHelpMax: 5000, // Bid Help per tender: "from" price; bigger tenders quoted up to the max
     deskFrom: 3500, // Tender Desk: done-for-you, "from" price per month
     csdHelpPrice: 300, cidbHelpPrice: 500,
+    companyProfile: 800, workshop: 350, // once-off company profile; "Get Tender-Ready" workshop, per person
     tenderReady: 1500, // Tender-Ready Pack (once-off): CSD + tax PIN help + B-BBEE affidavit + document check + company profile + 3 months of alerts
     partnerFrom: 5000, partnerMembers: 100, // /partners.html: bulk alert seats, "from" price a month for this many members
   },
