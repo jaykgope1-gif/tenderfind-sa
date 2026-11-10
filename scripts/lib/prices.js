@@ -19,6 +19,7 @@ const P = {
   csd: rand(PRICING.csdHelpPrice),
   cidb: rand(PRICING.cidbHelpPrice),
   csdCidb: rand(PRICING.csdHelpPrice + PRICING.cidbHelpPrice),
+  tenderReady: rand(PRICING.tenderReady),
   trialDays: String(PRICING.trialDays),
   partner: `from ${rand(PRICING.partnerFrom)}`,
   partnerFrom: rand(PRICING.partnerFrom),
