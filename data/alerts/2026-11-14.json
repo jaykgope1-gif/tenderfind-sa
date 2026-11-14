@@ -1,10 +1,10 @@
 {
  "date": "2026-11-14",
- "generated_at": "2026-11-14T02:50:38.538Z",
+ "generated_at": "2026-11-14T10:57:44.735Z",
  "site": "https://tenderfind.co.za",
  "note": "National tenders go only to subscribers in their head-office province (hq) or, when nationwide is true, to everyone.",
  "counts": {
-  "new": 68,
+  "new": 73,
   "closing_soon": 62
  },
  "new": {
@@ -31,6 +31,31 @@
       ]
      },
      "url": "https://tenderfind.co.za/tender/178174.html"
+    },
+    {
+     "id": "178247",
+     "title": "Reviewing, updating and implementation of the departmental file plan for the department… (6 months)",
+     "official_title": "The appointment of a service provider for reviewing, updating and implementation of the departmental file plan for the department of…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Department of Corporative Governance and Traditional Affairs",
+     "province": "National",
+     "trade": "Other",
+     "closing": "2026-11-20T11:00:00+02:00",
+     "closing_text": "Fri, 20 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 3.3 form",
+       "SBD 4 form",
+       "SBD 6.1 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/178247.html"
     },
     {
      "id": "178201",
@@ -340,6 +365,60 @@
       ]
      },
      "url": "https://tenderfind.co.za/tender/178238.html"
+    },
+    {
+     "id": "178246",
+     "title": "Development of a national hazard assessment for nuclear and radiological emergencies in south africa for…",
+     "official_title": "The appointment of a service provider for the development of a national hazard assessment for nuclear and radiological emergencies in…",
+     "nationwide": false,
+     "hq": "Gauteng",
+     "buyer": "National - Department of Electricity and Energy",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-12-08T11:00:00+02:00",
+     "closing_text": "Tue, 08 Dec 2026, 11:00",
+     "briefing": "Compulsory briefing · Mon, 23 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Certified ID copies (owners or directors)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/178246.html"
+    },
+    {
+     "id": "178245",
+     "title": "Assessment to select a suitable nuclear liability convention for south africa for a period of ten (10) weeks…",
+     "official_title": "The appointment of a service provider for assessment to select a suitable nuclear liability convention for south africa for a period of…",
+     "nationwide": false,
+     "hq": "Gauteng",
+     "buyer": "National - Department of Electricity and Energy",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-12-10T11:00:00+02:00",
+     "closing_text": "Thu, 10 Dec 2026, 11:00",
+     "briefing": "Compulsory briefing · Tue, 24 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Certified ID copies (owners or directors)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/178245.html"
     }
    ],
    "Mpumalanga": [
@@ -1194,6 +1273,98 @@
      "url": "https://tenderfind.co.za/tender/178178.html"
     }
    ],
+   "National": [
+    {
+     "id": "178243",
+     "title": "Once-off reception revamp at the national lotteries commission (nlc) Free State (welkom) and Mpumalanga…",
+     "official_title": "Request for quotation (rfq) for the appointment of a suitably qualified service provider to provide once-off reception revamp at the…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "National Lotteries Commission",
+     "province": "National",
+     "trade": "Construction",
+     "closing": "2026-12-01T11:00:00+02:00",
+     "closing_text": "Tue, 01 Dec 2026, 11:00",
+     "briefing": "Compulsory briefing · Tue, 24 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": "2GB",
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "CIDB registration",
+       "Briefing session attendance certificate",
+       "COIDA letter of good standing",
+       "Pricing schedule or bill of quantities",
+       "Joint venture agreement (if you bid as a joint venture)",
+       "Professional registration (SACAP)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/178243.html"
+    },
+    {
+     "id": "178193",
+     "title": "SANPC/2026/022 – rfi: seeking proposals from capable organisations to support the future refurbishment…",
+     "official_title": "Sanpc/2026/022 – rfi: seeking proposals from capable organisations to support the future refurbishment, repurposing and commercial…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "South African National Petroleum Company",
+     "province": "National",
+     "trade": "Construction",
+     "closing": "2027-01-28T11:00:00+02:00",
+     "closing_text": "Thu, 28 Jan 2027, 11:00",
+     "briefing": "Non-compulsory briefing · Wed, 25 Nov · 11:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/178193.html"
+    }
+   ],
+   "Northern Cape": [
+    {
+     "id": "178244",
+     "title": "Once-off reception revamp at the national lotteries commission (nlc) northwest and Northern Cape",
+     "official_title": "Request for quotation (rfq) for the appointment of a suitably qualified service provider to provide once-off reception revamp at the…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "National Lotteries Commission",
+     "province": "Northern Cape",
+     "trade": "Construction",
+     "closing": "2026-12-03T11:00:00+02:00",
+     "closing_text": "Thu, 03 Dec 2026, 11:00",
+     "briefing": "Compulsory briefing · Wed, 25 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": "2GB",
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "CIDB registration",
+       "Briefing session attendance certificate",
+       "COIDA letter of good standing",
+       "Pricing schedule or bill of quantities",
+       "Joint venture agreement (if you bid as a joint venture)",
+       "Professional registration (SACAP)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/178244.html"
+    }
+   ],
    "Eastern Cape": [
     {
      "id": "178188",
@@ -1700,30 +1871,6 @@
       ]
      },
      "url": "https://tenderfind.co.za/tender/178212.html"
-    }
-   ],
-   "National": [
-    {
-     "id": "178193",
-     "title": "SANPC/2026/022 – rfi: seeking proposals from capable organisations to support the future refurbishment…",
-     "official_title": "Sanpc/2026/022 – rfi: seeking proposals from capable organisations to support the future refurbishment, repurposing and commercial…",
-     "nationwide": false,
-     "hq": null,
-     "buyer": "South African National Petroleum Company",
-     "province": "National",
-     "trade": "Construction",
-     "closing": "2027-01-28T11:00:00+02:00",
-     "closing_text": "Thu, 28 Jan 2027, 11:00",
-     "briefing": "Non-compulsory briefing · Wed, 25 Nov · 11:00",
-     "compulsory_briefing": false,
-     "cidb": null,
-     "checklist": {
-      "status": "found",
-      "items": [
-       "SBD 1 form"
-      ]
-     },
-     "url": "https://tenderfind.co.za/tender/178193.html"
     }
    ]
   },
