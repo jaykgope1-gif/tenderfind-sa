@@ -84201,6 +84201,44 @@
    ]
   }
  },
+ "178203": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Goldfields 4iR Advert 13112026.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-15T02:48:10.456Z",
+  "checklist": {
+   "status": "none-found",
+   "section": false,
+   "items": []
+  }
+ },
  "178204": {
   "status": "ok",
   "docs": [
@@ -86979,7 +87017,7 @@
  "gp-hla-4-2-4-2026-03": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-14T10:56:35.675Z",
+  "extracted_at": "2026-11-15T02:48:06.430Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -87017,7 +87055,7 @@
  "gp-gt-gdenv-026-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-14T10:56:35.675Z",
+  "extracted_at": "2026-11-15T02:48:06.430Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
