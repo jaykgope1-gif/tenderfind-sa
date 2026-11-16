@@ -79885,6 +79885,44 @@
    ]
   }
  },
+ "178135": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "PANEL FOR THE APPOINTMENT OF PRIVATE SECURITY SERVICE PROVIDERS TO RENDER SECURITY SERVICES FOR VHEMBE DISTRICT MUNICIPALITY FOR A PERIOD OF 36 MONTHS (RE-ADVERT).pdf",
+    "pages": 48,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-16T02:48:07.530Z",
+  "checklist": {
+   "status": "unreadable",
+   "section": false,
+   "items": []
+  }
+ },
  "178136": {
   "status": "ok",
   "docs": [
@@ -86448,6 +86486,118 @@
    ]
   }
  },
+ "178239": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ_16684_WATER METERING AT CHIEF DAWID STUURMAN INTERNATIONAL AIRPORT (b).pdf",
+    "pages": 75,
+    "result": "text"
+   },
+   {
+    "title": "Evaluation criteria Final (1) Updated.pdf",
+    "pages": 2,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": "2026-11-30",
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "Requirements for the site inspection will be provided as part of the specifications C.2.8 Seek clarification Request clarification of the tender documents, if necessary, by notifying the employer by the Query Closure date of 30 November 2026 C.2.9 Insurance Be aware that the extent o"
+   },
+   "cidb_grade": {
+    "value": "2SO",
+    "source": "regex",
+    "snippet": "ORT. Only tenderers who are a CIDB contractor grading of 2SO or higher as stated on the Tender Data may submit tender offers. TENDER DOCUMENT AVAILABILITY Tender document are available from 16 November 2026 , for free download from National Treasury’s"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. NB: FAILURE TO PROVIDE / OR COMPLY WITH ANY OF T"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-16T02:48:09.207Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "A10: SBD 4: Bidder’s Disclosure Form"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "A11: SBD 6.1: Preference points claim form in terms of Preferential Procurement"
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "B5: Central Supplier Database (CSD) proof of registration."
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "B3: SARS Pin issued by the South African Revenue Services."
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "C5: B-BBEE Verification Certificate and B-BBEE Report OR Sworn Affidavit"
+    },
+    {
+     "key": "cidb",
+     "label": "CIDB registration",
+     "snippet": "award on the CIDB Register of Projects."
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "B7: CIPC Registration documents, Partnership Agreement, JV Agreement and/or"
+    },
+    {
+     "key": "id",
+     "label": "Certified ID copies (owners or directors)",
+     "snippet": "B8: Identity documents of all Shareholders, Directors, Members, Trustees or"
+    },
+    {
+     "key": "briefing",
+     "label": "Briefing session attendance certificate",
+     "snippet": "the Attendance Register. A2: Record of Addenda to Tender Documents A3: Certificate of Authority for Signatory A4: Certificate of Authority"
+    },
+    {
+     "key": "coida",
+     "label": "COIDA letter of good standing",
+     "snippet": "Occupational Injuries and Diseases Act (COIDA)."
+    },
+    {
+     "key": "bank",
+     "label": "Bank confirmation letter",
+     "snippet": "B4: Bank Letter: Letter of Good Standing from Bidder’s Bank preferably with bank"
+    },
+    {
+     "key": "pricing",
+     "label": "Pricing schedule or bill of quantities",
+     "snippet": "In Contract Document : C2.2 Activity/Pricing Schedules"
+    }
+   ]
+  }
+ },
  "178240": {
   "status": "ok",
   "docs": [
@@ -86525,6 +86675,118 @@
      "key": "professional",
      "label": "Professional registration (ECSA)",
      "snippet": "❖ Professional Registration – ECSA Certification for Design Engineer"
+    }
+   ]
+  }
+ },
+ "178241": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "RFQ_16894_Supply, Deliver, Installation, Commission and Testing of the Precision Approach Path Indicators..pdf",
+    "pages": 75,
+    "result": "text"
+   },
+   {
+    "title": "Bid Evaluation Criteria RFQ 16894 (PAPI's).pdf",
+    "pages": 3,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": "2026-11-30",
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "Requirements for the site inspection will be provided as part of the specifications C.2.8 Seek clarification Request clarification of the tender documents, if necessary, by notifying the employer by the Query Closure date of 30 November 2026 C.2.9 Insurance Be aware that the extent o"
+   },
+   "cidb_grade": {
+    "value": "1EP",
+    "source": "regex",
+    "snippet": "ORT. Only tenderers who are a CIDB contractor grading of 1EP or higher as stated on the Tender Data may submit tender offers. TENDER DOCUMENT AVAILABILITY Tender document are available from 16 November 2026 , for free download from National Treasury’s"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "ACH PARTY MUST SUBMIT A SEPARATE TCS CERTIFICATE / PIN / CSD NUMBER. 2.6 WHERE NO TCS PIN IS AVAILABLE BUT THE BIDDER IS REGISTERED ON THE CENTRAL SUPPLIER DATABASE (CSD), A CSD NUMBER MUST BE PROVIDED. NB: FAILURE TO PROVIDE / OR COMPLY WITH ANY OF T"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-16T02:48:09.439Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "sbd-4",
+     "label": "SBD 4 form",
+     "snippet": "A10: SBD 4: Bidder’s Disclosure Form"
+    },
+    {
+     "key": "sbd-6.1",
+     "label": "SBD 6.1 form",
+     "snippet": "A11: SBD 6.1: Preference points claim form in terms of Preferential Procurement"
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "B5: Central Supplier Database (CSD) proof of registration."
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "B3: SARS Pin issued by the South African Revenue Services."
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "C5: B-BBEE Verification Certificate and B-BBEE Report OR Sworn Affidavit"
+    },
+    {
+     "key": "cidb",
+     "label": "CIDB registration",
+     "snippet": "award on the CIDB Register of Projects."
+    },
+    {
+     "key": "company",
+     "label": "Company registration documents (CIPC)",
+     "snippet": "B7: CIPC Registration documents, Partnership Agreement, JV Agreement and/or"
+    },
+    {
+     "key": "id",
+     "label": "Certified ID copies (owners or directors)",
+     "snippet": "B8: Identity documents of all Shareholders, Directors, Members, Trustees or"
+    },
+    {
+     "key": "briefing",
+     "label": "Briefing session attendance certificate",
+     "snippet": "the Attendance Register. A2: Record of Addenda to Tender Documents A3: Certificate of Authority for Signatory A4: Certificate of Authority"
+    },
+    {
+     "key": "coida",
+     "label": "COIDA letter of good standing",
+     "snippet": "Occupational Injuries and Diseases Act (COIDA)."
+    },
+    {
+     "key": "bank",
+     "label": "Bank confirmation letter",
+     "snippet": "B4: Bank Letter: Letter of Good Standing from Bidder’s Bank preferably with bank"
+    },
+    {
+     "key": "pricing",
+     "label": "Pricing schedule or bill of quantities",
+     "snippet": "In Contract Document : C2.2 Activity/Pricing Schedules"
     }
    ]
   }
@@ -87014,10 +87276,86 @@
    ]
   }
  },
+ "178263": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Publication of Names of Bidders iro advertised Competitive Bids - March 2023 Pretoria.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-16T02:48:07.505Z",
+  "checklist": {
+   "status": "none-found",
+   "section": false,
+   "items": []
+  }
+ },
+ "178264": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Publication of Names of Bidders iro advertised Competitive Bids - March 2023 bronkor.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-16T02:48:07.529Z",
+  "checklist": {
+   "status": "none-found",
+   "section": false,
+   "items": []
+  }
+ },
  "gp-hla-4-2-4-2026-03": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-15T02:48:06.430Z",
+  "extracted_at": "2026-11-16T02:48:04.476Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
@@ -87055,7 +87393,7 @@
  "gp-gt-gdenv-026-2026": {
   "status": "ok",
   "docs": [],
-  "extracted_at": "2026-11-15T02:48:06.430Z",
+  "extracted_at": "2026-11-16T02:48:04.476Z",
   "checklist": {
    "status": "unreadable",
    "section": false,
