@@ -26,12 +26,15 @@
   const ymd = lazyFmt("en-CA", {}); // YYYY-MM-DD in SA time
 
   // "2026-11-06" (a date with no time) -> "Fri 6 Nov"
+  // A date that can't be read (e.g. odd wording pulled from a PDF) is shown as-is, never crashes.
   function shortDate(isoDate) {
-    return dayFmt.format(new Date(`${isoDate}T12:00:00+02:00`));
+    const d = new Date(`${isoDate}T12:00:00+02:00`);
+    return isNaN(d) ? String(isoDate) : dayFmt.format(d);
   }
 
   function closingText(iso) {
     const d = new Date(iso);
+    if (isNaN(d)) return String(iso || NOT_STATED);
     return `${fullFmt.format(d)}, ${timeFmt.format(d)}`;
   }
 
@@ -45,6 +48,7 @@
   function countdown(iso, now = new Date()) {
     const end = new Date(iso);
     const ms = end - now;
+    if (isNaN(ms)) return { text: "Closing date not stated", soon: false, closed: false };
     if (ms <= 0) return { text: "Closed", soon: false, closed: true };
     const days = Math.round((Date.parse(ymd.format(end)) - Date.parse(ymd.format(now))) / 864e5);
     const at = timeFmt.format(end);
