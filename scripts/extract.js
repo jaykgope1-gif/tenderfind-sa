@@ -285,6 +285,8 @@ async function extractTender(t) {
       const ai = await aiExtract(mainText);
       if (ai) {
         const b = ai.briefing;
+        // Keep only a real YYYY-MM-DD date; anything else would show wrong on the site.
+        if (b && b.date && !(/^\d{4}-\d{2}-\d{2}$/.test(b.date) && !isNaN(new Date(`${b.date}T12:00:00Z`)))) b.date = null;
         if (b && (b.date || b.venue || b.compulsory != null)) set("briefing", { value: b }, "ai");
         if (ai.cidb_grade) set("cidb_grade", { value: ai.cidb_grade }, "ai");
         if (ai.bbbee_level) set("bbbee_level", { value: ai.bbbee_level }, "ai");
