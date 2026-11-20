@@ -1,5 +1,56 @@
 [
  {
+  "at": "2026-11-20T02:47:52.814Z",
+  "ok": true,
+  "days": {
+   "2026-11-18": {
+    "error": "fetch failed (https://ocds-api.etenders.gov.za/api/OCDSReleases?PageNumber=2&PageSize=1&dateFrom=2026-11-18&dateTo=2026-11-18)"
+   },
+   "2026-11-19": {
+    "releases": 132,
+    "badRecords": 0
+   },
+   "2026-11-20": {
+    "releases": 7,
+    "badRecords": 0
+   }
+  },
+  "partial": [
+   "2026-11-18"
+  ],
+  "releases": 139,
+  "added": 69,
+  "updated": [
+   {
+    "id": "178818",
+    "changes": [
+     "documents"
+    ],
+    "from": "2026-12-10T10:00:00+02:00",
+    "to": "2026-12-10T10:00:00+02:00"
+   },
+   {
+    "id": "178796",
+    "changes": [
+     "documents"
+    ],
+    "from": "2026-12-21T12:00:00+02:00",
+    "to": "2026-12-21T12:00:00+02:00"
+   },
+   {
+    "id": "178822",
+    "changes": [
+     "documents"
+    ],
+    "from": "2027-01-12T11:00:00+02:00",
+    "to": "2027-01-12T11:00:00+02:00"
+   }
+  ],
+  "unchanged": 67,
+  "removed": 10,
+  "total": 1658
+ },
+ {
   "at": "2026-11-19T12:10:06.154Z",
   "ok": true,
   "days": {
@@ -2304,17 +2355,5 @@
    }
   },
   "error": "eTenders API unreachable; kept previous data"
- },
- {
-  "at": "2026-10-31T11:27:09.604Z",
-  "ok": true,
-  "days": {},
-  "seed": "data/raw-sample.json",
-  "releases": 449,
-  "added": 449,
-  "updated": [],
-  "unchanged": 0,
-  "removed": 6,
-  "total": 443
  }
 ]
