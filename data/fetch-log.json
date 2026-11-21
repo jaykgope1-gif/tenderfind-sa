@@ -1,5 +1,46 @@
 [
  {
+  "at": "2026-11-21T02:47:54.963Z",
+  "ok": true,
+  "days": {
+   "2026-11-19": {
+    "releases": 132,
+    "badRecords": 0
+   },
+   "2026-11-20": {
+    "releases": 242,
+    "badRecords": 3
+   },
+   "2026-11-21": {
+    "releases": 0,
+    "badRecords": 0
+   }
+  },
+  "releases": 374,
+  "added": 101,
+  "updated": [
+   {
+    "id": "178799",
+    "changes": [
+     "documents"
+    ],
+    "from": "2026-12-11T11:00:00+02:00",
+    "to": "2026-12-11T11:00:00+02:00"
+   },
+   {
+    "id": "179116",
+    "changes": [
+     "documents"
+    ],
+    "from": "2027-01-11T10:00:00+02:00",
+    "to": "2027-01-11T10:00:00+02:00"
+   }
+  ],
+  "unchanged": 271,
+  "removed": 21,
+  "total": 1759
+ },
+ {
   "at": "2026-11-20T12:12:01.460Z",
   "ok": true,
   "days": {
@@ -2403,30 +2444,6 @@
   "updated": [],
   "unchanged": 443,
   "removed": 6,
-  "total": 443
- },
- {
-  "at": "2026-10-31T11:27:35.466Z",
-  "ok": true,
-  "days": {
-   "2026-10-29": {
-    "releases": 114,
-    "badRecords": 1
-   },
-   "2026-10-30": {
-    "releases": 196,
-    "badRecords": 0
-   },
-   "2026-10-31": {
-    "releases": 3,
-    "badRecords": 0
-   }
-  },
-  "releases": 313,
-  "added": 0,
-  "updated": [],
-  "unchanged": 313,
-  "removed": 0,
   "total": 443
  }
 ]
