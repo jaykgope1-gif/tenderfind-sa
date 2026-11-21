@@ -111489,13 +111489,13 @@
   "status": "ok",
   "docs": [
    {
-    "title": "11 Scope of Work Blue page .pdf",
+    "title": "2 Contents_Notice print on White paper .pdf",
     "pages": 3,
     "result": "text"
    },
    {
-    "title": "2 Contents_Notice print on White paper .pdf",
-    "pages": 3,
+    "title": "1 Cover Page - FUELING.pdf",
+    "pages": 1,
     "result": "text"
    }
   ],
@@ -111510,6 +111510,11 @@
     "source": "regex",
     "snippet": "ct No. Description Compulsory Briefing Technical Enquiries Availability of Tender Document Closing Date THLM/SCM17 /2026 – 2027/WS01 Appointment of a Service Provider for Fueling and Supply of Lubricants for Municipal Fleet as and when required for a period of 36 months. N / A Mr R. Makhubele T: 013 98"
    },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "........................................................ CSD NUMBER ............................................................................. BID AMOUNT OFFERED (EXCL. VAT) ................................................."
+   },
    "cidb_grade": {
     "value": null,
     "source": "not found"
@@ -111518,16 +111523,12 @@
     "value": null,
     "source": "not found"
    },
-   "csd_required": {
-    "value": null,
-    "source": "not found"
-   },
    "location": {
     "value": null,
     "source": "not found"
    }
   },
-  "extracted_at": "2026-11-21T02:49:20.100Z",
+  "extracted_at": "2026-11-21T11:48:19.108Z",
   "checklist": {
    "status": "none-found",
    "section": false,

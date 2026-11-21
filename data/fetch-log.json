@@ -1,5 +1,38 @@
 [
  {
+  "at": "2026-11-21T11:47:41.444Z",
+  "ok": true,
+  "days": {
+   "2026-11-19": {
+    "releases": 132,
+    "badRecords": 0
+   },
+   "2026-11-20": {
+    "releases": 242,
+    "badRecords": 3
+   },
+   "2026-11-21": {
+    "releases": 0,
+    "badRecords": 0
+   }
+  },
+  "releases": 374,
+  "added": 0,
+  "updated": [
+   {
+    "id": "179280",
+    "changes": [
+     "documents"
+    ],
+    "from": "2026-12-14T12:00:00+02:00",
+    "to": "2026-12-14T12:00:00+02:00"
+   }
+  ],
+  "unchanged": 373,
+  "removed": 0,
+  "total": 1759
+ },
+ {
   "at": "2026-11-21T02:47:54.963Z",
   "ok": true,
   "days": {
@@ -2432,18 +2465,6 @@
   "updated": [],
   "unchanged": 313,
   "removed": 0,
-  "total": 443
- },
- {
-  "at": "2026-10-31T11:34:17.990Z",
-  "ok": true,
-  "days": {},
-  "seed": "data/raw-sample.json",
-  "releases": 449,
-  "added": 6,
-  "updated": [],
-  "unchanged": 443,
-  "removed": 6,
   "total": 443
  }
 ]
