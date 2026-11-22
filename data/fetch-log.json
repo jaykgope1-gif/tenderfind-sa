@@ -1,5 +1,29 @@
 [
  {
+  "at": "2026-11-22T11:59:18.723Z",
+  "ok": true,
+  "days": {
+   "2026-11-20": {
+    "releases": 242,
+    "badRecords": 3
+   },
+   "2026-11-21": {
+    "releases": 0,
+    "badRecords": 0
+   },
+   "2026-11-22": {
+    "releases": 0,
+    "badRecords": 0
+   }
+  },
+  "releases": 242,
+  "added": 0,
+  "updated": [],
+  "unchanged": 242,
+  "removed": 0,
+  "total": 1758
+ },
+ {
   "at": "2026-11-22T02:47:55.140Z",
   "ok": true,
   "days": {
@@ -2421,30 +2445,6 @@
  },
  {
   "at": "2026-10-31T17:40:06.519Z",
-  "ok": true,
-  "days": {
-   "2026-10-29": {
-    "releases": 114,
-    "badRecords": 1
-   },
-   "2026-10-30": {
-    "releases": 196,
-    "badRecords": 0
-   },
-   "2026-10-31": {
-    "releases": 3,
-    "badRecords": 0
-   }
-  },
-  "releases": 313,
-  "added": 0,
-  "updated": [],
-  "unchanged": 313,
-  "removed": 0,
-  "total": 443
- },
- {
-  "at": "2026-10-31T17:32:51.954Z",
   "ok": true,
   "days": {
    "2026-10-29": {
