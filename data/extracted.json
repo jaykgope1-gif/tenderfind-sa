@@ -86525,49 +86525,6 @@
    "items": []
   }
  },
- "178749": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "Letter to Extend validity period of Tender signed.pdf",
-    "pages": 1,
-    "result": "text"
-   },
-   {
-    "title": "Tender Validity Extension Acknowledgement.pdf",
-    "pages": 1,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "csd_required": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-11-19T12:11:14.375Z",
-  "checklist": {
-   "status": "none-found",
-   "section": false,
-   "items": []
-  }
- },
  "178750": {
   "status": "ok",
   "docs": [
