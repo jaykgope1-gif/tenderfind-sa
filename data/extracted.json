@@ -34456,66 +34456,6 @@
    "items": []
   }
  },
- "177514": {
-  "status": "ok",
-  "docs": [
-   {
-    "title": "RFQ_Uninterrupted Power Supply (UPS).pdf",
-    "pages": 25,
-    "result": "text"
-   }
-  ],
-  "fields": {
-   "csd_required": {
-    "value": true,
-    "source": "regex",
-    "snippet": "duration specified on page 1 (Bid Validity Period). 4.5 CSD REGISTRATION 4.5.1 Only bid responses from bidders that are registered on the Central Supplier Database (CSD) will be considered. 4.5.2 Bidders are required to register on the CSD and to incl"
-   },
-   "briefing": {
-    "value": null,
-    "source": "not found"
-   },
-   "cidb_grade": {
-    "value": null,
-    "source": "not found"
-   },
-   "bbbee_level": {
-    "value": null,
-    "source": "not found"
-   },
-   "location": {
-    "value": null,
-    "source": "not found"
-   }
-  },
-  "extracted_at": "2026-11-10T02:48:30.019Z",
-  "checklist": {
-   "status": "found",
-   "section": false,
-   "items": [
-    {
-     "key": "sbd-1",
-     "label": "SBD 1 form",
-     "snippet": "All quotations must be submitted to the address and instruction as stipulated in the SBD1 or in the"
-    },
-    {
-     "key": "sbd-3.2",
-     "label": "SBD 3.2 form",
-     "snippet": "SBD 3.2 PRICING SCHEDULE Service and Maintenance of an Uninterrupted Power Supply (UPS) OFFER TO BE VALID FOR...90......D"
-    },
-    {
-     "key": "sbd-4",
-     "label": "SBD 4 form",
-     "snippet": "2. SBD4 - Bidder’s Disclosure;"
-    },
-    {
-     "key": "sbd-6.1",
-     "label": "SBD 6.1 form",
-     "snippet": "5. SBD6.1 – Preference Point Claim Form;"
-    }
-   ]
-  }
- },
  "177517": {
   "status": "ok",
   "docs": [
@@ -111540,6 +111480,567 @@
    "status": "none-found",
    "section": false,
    "items": []
+  }
+ },
+ "179284": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "Document Edet 0379.pdf",
+    "pages": 35,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-23T02:48:12.195Z",
+  "checklist": {
+   "status": "unreadable",
+   "section": false,
+   "items": []
+  }
+ },
+ "179285": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "Document Edet 0377.pdf",
+    "pages": 33,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-23T02:48:15.884Z",
+  "checklist": {
+   "status": "unreadable",
+   "section": false,
+   "items": []
+  }
+ },
+ "179286": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "Document Edet 0378.pdf",
+    "pages": 32,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-23T02:48:17.894Z",
+  "checklist": {
+   "status": "unreadable",
+   "section": false,
+   "items": []
+  }
+ },
+ "179287": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "Document Edet 0376.pdf",
+    "pages": 33,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-23T02:48:20.809Z",
+  "checklist": {
+   "status": "unreadable",
+   "section": false,
+   "items": []
+  }
+ },
+ "179316": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "ENQUIRY -  OLT2128250 - FURN - NGY ERE - GALE HOUSE.pdf",
+    "pages": 8,
+    "result": "text"
+   },
+   {
+    "title": "FINAL LIST - OLT2128250.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-23T02:48:12.169Z",
+  "checklist": {
+   "status": "none-found",
+   "section": false,
+   "items": []
+  }
+ },
+ "179319": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "37263-1S  TENDER DOCUMENT.pdf",
+    "pages": 46,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": "2027-01-15",
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "PERIOD OF 36 MONTHS CLARIFICATION MEETING AND QUERIES Clarification Meeting: There will be no clarification meeting. Queries can be addressed to: Bidders are required to submit email queries relating to the bid. All email queries are to be submitted by 15 January 2027. Email questions and answers will be conso"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "istered on the National Treasury Central Supplier Database (CSD) as a service provider. In the case of a Joint Venture, this requirement will apply individually to each party in the Joint Venture. Registration on the eThekwini Municipality’s Database c"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-23T02:48:24.796Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "mbd-4",
+     "label": "MBD 4 form",
+     "snippet": "(a) MBD 4: Declaration of Interest"
+    },
+    {
+     "key": "mbd-5",
+     "label": "MBD 5 form",
+     "snippet": "(b) MBD 5: Declaration for Procurement Above R10 Million"
+    },
+    {
+     "key": "mbd-6.1",
+     "label": "MBD 6.1 form",
+     "snippet": "5(c) MBD 6.1: Preference Points Claim"
+    },
+    {
+     "key": "mbd-8",
+     "label": "MBD 8 form",
+     "snippet": "(d) MBD 8: Declaration of Bidder’s Past Supply Chain Management Practices"
+    },
+    {
+     "key": "mbd-9",
+     "label": "MBD 9 form",
+     "snippet": "(e) MBD 9: Certificate of Independent Bid Determination"
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "(2) Tax Compliance Status PIN / Tax Clearance Certificate"
+    }
+   ]
+  }
+ },
+ "179320": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "37427-1J   TENDER DOCUMENT .pdf",
+    "pages": 56,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": {
+     "compulsory": null,
+     "date": "2027-01-15",
+     "time": null,
+     "venue": null
+    },
+    "source": "regex",
+    "snippet": "RTY-SIX (36) MONTHS. CLARIFICATION MEETING AND QUERIES Clarification Meeting: Bidders are requested to submit email queries related to the bid. All email queries are to be submitted by 15 January 2027 Email questions and answers will be consolidated and posted on eTenders/Municipal website for the benefit of all"
+   },
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "istered on the National Treasury Central Supplier Database (CSD) as a service provider. In the case of a Joint Venture, this requirement will apply individually to each party in the Joint Venture. Registration on the eThekwini Municipality’s Database c"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-23T02:48:25.193Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "mbd-4",
+     "label": "MBD 4 form",
+     "snippet": "(a) MBD 4: Declaration of Interest"
+    },
+    {
+     "key": "mbd-5",
+     "label": "MBD 5 form",
+     "snippet": "(b) MBD 5: Declaration for Procurement Above R10 Million"
+    },
+    {
+     "key": "mbd-6.1",
+     "label": "MBD 6.1 form",
+     "snippet": "5(c) MBD 6.1: Preference Points Claim"
+    },
+    {
+     "key": "mbd-8",
+     "label": "MBD 8 form",
+     "snippet": "(d) MBD 8: Declaration of Bidder’s Past Supply Chain Management Practices"
+    },
+    {
+     "key": "mbd-9",
+     "label": "MBD 9 form",
+     "snippet": "(e) MBD 9: Certificate of Independent Bid Determination"
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "(2) Tax Compliance Status PIN / Tax Clearance Certificate"
+    }
+   ]
+  }
+ },
+ "179322": {
+  "status": "scanned",
+  "docs": [
+   {
+    "title": "Invitation to Bid - 9-1 - T013-2026-27 Upgrade of Mona Sport Field in Ward 4 - Phase 2.pdf",
+    "pages": 1,
+    "result": "scanned"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-23T02:48:24.770Z",
+  "checklist": {
+   "status": "unreadable",
+   "section": false,
+   "items": []
+  }
+ },
+ "179332": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Advert.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-23T02:48:21.146Z",
+  "checklist": {
+   "status": "none-found",
+   "section": false,
+   "items": []
+  }
+ },
+ "179333": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "Advert.pdf",
+    "pages": 1,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "csd_required": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-23T02:48:22.144Z",
+  "checklist": {
+   "status": "none-found",
+   "section": false,
+   "items": []
+  }
+ },
+ "179338": {
+  "status": "ok",
+  "docs": [
+   {
+    "title": "BID NO 432026 SUPPLY AND DELIVERY OF PPE FOR A PERIOD ENDING 30 JUNE 2027.pdf",
+    "pages": 59,
+    "result": "text"
+   }
+  ],
+  "fields": {
+   "csd_required": {
+    "value": true,
+    "source": "regex",
+    "snippet": "hen a valid invoice is received. 9. Tax Clearance Pin/ CSD Tax compliant report Tax compliant CSD registration report or a SARS tax compliance pin number must be submitted in order for the municipality to verify tax compliance. In the event that a bidde"
+   },
+   "briefing": {
+    "value": null,
+    "source": "not found"
+   },
+   "cidb_grade": {
+    "value": null,
+    "source": "not found"
+   },
+   "bbbee_level": {
+    "value": null,
+    "source": "not found"
+   },
+   "location": {
+    "value": null,
+    "source": "not found"
+   }
+  },
+  "extracted_at": "2026-11-23T02:48:12.194Z",
+  "checklist": {
+   "status": "found",
+   "section": true,
+   "items": [
+    {
+     "key": "mbd-1",
+     "label": "MBD 1 form",
+     "snippet": "MBD 1 : Invitation to bid and terms of conditions for bidding"
+    },
+    {
+     "key": "mbd-3.1",
+     "label": "MBD 3.1 form",
+     "snippet": "MBD 3.1 Contract Data MBD 7.1 Conditions of Contract Checklist for completeness of bid document"
+    },
+    {
+     "key": "mbd-4",
+     "label": "MBD 4 form",
+     "snippet": "MBD 4 : Declaration of Interest"
+    },
+    {
+     "key": "mbd-6.1",
+     "label": "MBD 6.1 form",
+     "snippet": "MBD 6.1 : Preference Points Claim Form - in terms of the Preferential"
+    },
+    {
+     "key": "mbd-7.1",
+     "label": "MBD 7.1 form",
+     "snippet": "MBD 7.1 Conditions of Contract Checklist for completeness of bid document"
+    },
+    {
+     "key": "mbd-8",
+     "label": "MBD 8 form",
+     "snippet": "MBD 8 : Declaration of Bidders' Past Supply Chain Management Practices"
+    },
+    {
+     "key": "mbd-9",
+     "label": "MBD 9 form",
+     "snippet": "MBD 9 : Certificate of Independent Bid Determination"
+    },
+    {
+     "key": "csd",
+     "label": "CSD registration report (your MAAA supplier number)",
+     "snippet": "9. Tax Clearance Pin/ CSD Tax compliant report"
+    },
+    {
+     "key": "tax",
+     "label": "Tax compliance status PIN from SARS (or tax clearance certificate)",
+     "snippet": "9. Tax Clearance Pin/ CSD Tax compliant report"
+    },
+    {
+     "key": "bbbee",
+     "label": "B-BBEE certificate or sworn affidavit",
+     "snippet": "B-BBEE STATUS LEVEL VERIFICATION"
+    },
+    {
+     "key": "rates",
+     "label": "Municipal rates account, not in arrears",
+     "snippet": "A municipal account (not older than 3 (three) months. Or, a"
+    },
+    {
+     "key": "pricing",
+     "label": "Pricing schedule or bill of quantities",
+     "snippet": "MBD 3.1 must be fully completed as no other pricing schedule will be accepted. Payment of"
+    }
+   ]
   }
  },
  "gp-gt-gdenv-026-2026": {
