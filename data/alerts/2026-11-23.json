@@ -1,38 +1,672 @@
 {
  "date": "2026-11-23",
- "generated_at": "2026-11-23T02:49:28.447Z",
+ "generated_at": "2026-11-23T13:42:53.805Z",
  "site": "https://tenderfind.co.za",
  "note": "National tenders go only to subscribers in their head-office province (hq) or, when nationwide is true, to everyone.",
  "counts": {
-  "new": 11,
-  "closing_soon": 107
+  "new": 103,
+  "closing_soon": 108
  },
  "new": {
-  "Sales & auctions": {
+  "Catering": {
    "KwaZulu-Natal": [
     {
-     "id": "179316",
-     "title": "For sale by the buyer: Disposal - purchase, collection and removal of non-funtional furniture from ere…",
-     "official_title": "Disposal - purchase, collection and removal of non-funtional furniture from ere in new germany (gale house) in kzn operating unit",
+     "id": "179377",
+     "title": "Request for price quotation for the catering services for reculatory compliance education and awareness…",
+     "official_title": "Request for price quotation for the catering services for reculatory compliance education and awareness session, kwambonambi local…",
      "nationwide": false,
      "hq": null,
-     "buyer": "ESKOM",
+     "buyer": "National Lotteries Commission",
      "province": "KwaZulu-Natal",
-     "trade": "Sales & auctions",
-     "closing": "2026-11-30T10:00:00+02:00",
-     "closing_text": "Mon, 30 Nov 2026, 10:00",
+     "trade": "Catering",
+     "closing": "2026-11-25T11:00:00+02:00",
+     "closing_text": "Wed, 25 Nov 2026, 11:00",
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
      "checklist": {
-      "status": "none-found",
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Certified ID copies (owners or directors)",
+       "COIDA letter of good standing"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179377.html"
+    },
+    {
+     "id": "179379",
+     "title": "Request for price quotation for the catering services for reculatory compliance education and awareness…",
+     "official_title": "Request for price quotation for the catering services for reculatory compliance education and awareness session, dundee public works…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "National Lotteries Commission",
+     "province": "KwaZulu-Natal",
+     "trade": "Catering",
+     "closing": "2026-11-25T11:00:00+02:00",
+     "closing_text": "Wed, 25 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Certified ID copies (owners or directors)",
+       "COIDA letter of good standing"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179379.html"
+    },
+    {
+     "id": "179383",
+     "title": "Request for price quotation for the catering services for reculatory compliance education and awareness…",
+     "official_title": "Request for price quotation for the catering services for reculatory compliance education and awareness session, tolomane mnyayiza…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "National Lotteries Commission",
+     "province": "KwaZulu-Natal",
+     "trade": "Catering",
+     "closing": "2026-11-25T11:00:00+02:00",
+     "closing_text": "Wed, 25 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Certified ID copies (owners or directors)",
+       "COIDA letter of good standing"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179383.html"
+    },
+    {
+     "id": "179387",
+     "title": "Request for price quotation for the catering services for reculatory compliance education and awareness…",
+     "official_title": "Request for price quotation for the catering services for reculatory compliance education and awareness session, wentworth youth centre…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "National Lotteries Commission",
+     "province": "KwaZulu-Natal",
+     "trade": "Catering",
+     "closing": "2026-11-25T11:00:00+02:00",
+     "closing_text": "Wed, 25 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Certified ID copies (owners or directors)",
+       "COIDA letter of good standing"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179387.html"
+    }
+   ]
+  },
+  "Other": {
+   "National": [
+    {
+     "id": "179394",
+     "title": "Emptying of septic tank at amsterdam SAPS",
+     "official_title": "Emptying of septic tank at amsterdam saps",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Public Works",
+     "province": "National",
+     "trade": "Other",
+     "closing": "2026-11-25T11:00:00+02:00",
+     "closing_text": "Wed, 25 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "unreadable",
       "items": []
      },
-     "url": "https://tenderfind.co.za/tender/179316.html"
+     "url": "https://tenderfind.co.za/tender/179394.html"
+    },
+    {
+     "id": "179475",
+     "title": "Banner POP-UP",
+     "official_title": "Banner POP-UP",
+     "nationwide": false,
+     "hq": "Gauteng",
+     "buyer": "Statistics South Africa",
+     "province": "National",
+     "trade": "Other",
+     "closing": "2026-11-27T11:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 6.1 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179475.html"
+    },
+    {
+     "id": "179421",
+     "title": "Waste management",
+     "official_title": "Provision of waste management",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Eskom National Transmission Company of South Africa",
+     "province": "National",
+     "trade": "Other",
+     "closing": "2026-12-15T11:00:00+02:00",
+     "closing_text": "Tue, 15 Dec 2026, 11:00",
+     "briefing": "Non-compulsory briefing · Wed, 02 Dec · 11:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "SBD 6.2 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179421.html"
+    }
+   ],
+   "Gauteng": [
+    {
+     "id": "179426",
+     "title": "Occupational Safety Measuring Instrumentation for iThemba LABS, Braamfontein, Gauteng",
+     "official_title": "Occupational Safety Measuring Instrumentation for iThemba LABS, Braamfontein, Gauteng",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "National Research Foundation",
+     "province": "Gauteng",
+     "trade": "Other",
+     "closing": "2026-11-27T11:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179426.html"
+    }
+   ],
+   "Limpopo": [
+    {
+     "id": "179287",
+     "title": "Implement business accelarator workshop for 200 selected township and rural business beneficiaries under…",
+     "official_title": "Appointment of a service provider to implement business accelarator workshop for 200 selected township and rural business beneficiaries…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Limpopo - Economic Development Environment & Tourism",
+     "province": "Limpopo",
+     "trade": "Other",
+     "closing": "2026-12-01T11:00:00+02:00",
+     "closing_text": "Tue, 01 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "unreadable",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179287.html"
+    }
+   ],
+   "KwaZulu-Natal": [
+    {
+     "id": "179402",
+     "title": "Pauper and indigent burial services ( 12 months contract)",
+     "official_title": "Provision of pauper and indigent burial services ( 12 months contract)",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Umzimkhulu Local Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Other",
+     "closing": "2026-12-02T10:00:00+02:00",
+     "closing_text": "Wed, 02 Dec 2026, 10:00",
+     "briefing": "Briefing · 10:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 4 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179402.html"
+    },
+    {
+     "id": "179398",
+     "title": "Inanda Forest and Grassland Restoration",
+     "official_title": "Inanda Forest and Grassland Restoration",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Ethekwini Metropolitan Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Other",
+     "closing": "2027-01-29T11:00:00+02:00",
+     "closing_text": "Fri, 29 Jan 2027, 11:00",
+     "briefing": "Compulsory briefing · Mon, 30 Nov · 11:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 4 form",
+       "MBD 5 form",
+       "MBD 6.1 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179398.html"
+    }
+   ],
+   "Eastern Cape": [
+    {
+     "id": "179489",
+     "title": "Vouchers for informal traders",
+     "official_title": "Provision of 50 vouchers for informal traders",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Ingquza Hill Local Municipality",
+     "province": "Eastern Cape",
+     "trade": "Other",
+     "closing": "2026-12-02T12:00:00+02:00",
+     "closing_text": "Wed, 02 Dec 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "Municipal rates account, not in arrears",
+       "Briefing session attendance certificate"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179489.html"
+    },
+    {
+     "id": "179427",
+     "title": "To obtain leased office premises for the South African Human Rights Commission’s (Commission) Eastern Cape…",
+     "official_title": "To obtain leased office premises for the South African Human Rights Commission’s (Commission) Eastern Cape Provincial office.",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "South African Human Rights Commission",
+     "province": "Eastern Cape",
+     "trade": "Other",
+     "closing": "2026-12-15T11:00:00+02:00",
+     "closing_text": "Tue, 15 Dec 2026, 11:00",
+     "briefing": "Non-compulsory briefing · Tue, 01 Dec · 10:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 3.1 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179427.html"
+    }
+   ],
+   "Western Cape": [
+    {
+     "id": "179480",
+     "title": "The purpose of this Request for Proposal is to invite potential bidders to submit proposals… (5 years)",
+     "official_title": "The purpose of this Request for Proposal (RFP) is to invite potential bidders to submit proposals for the leasing of office space for the…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Productivity SA",
+     "province": "Western Cape",
+     "trade": "Other",
+     "closing": "2026-12-14T10:30:00+02:00",
+     "closing_text": "Mon, 14 Dec 2026, 10:30",
+     "briefing": "Briefing · Thu, 03 Dec · 10:30",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 3.2 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "SBD 7.2 form",
+       "SBD 8 form",
+       "SBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179480.html"
+    },
+    {
+     "id": "179429",
+     "title": "To obtain leased office premises for the South African Human Rights Commission’s (Commission) Western Cape…",
+     "official_title": "To obtain leased office premises for the South African Human Rights Commission’s (Commission) Western Cape Provincial office.",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "South African Human Rights Commission",
+     "province": "Western Cape",
+     "trade": "Other",
+     "closing": "2026-12-15T11:00:00+02:00",
+     "closing_text": "Tue, 15 Dec 2026, 11:00",
+     "briefing": "Non-compulsory briefing · Tue, 01 Dec · 11:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 3.1 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179429.html"
     }
    ]
   },
   "Supplies": {
+   "National": [
+    {
+     "id": "179442",
+     "title": "Supply of chicken giblets ncome correctional services",
+     "official_title": "Supply and delivery of chicken giblets ncome correctional services",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Correctional Services",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-26T11:00:00+02:00",
+     "closing_text": "Thu, 26 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "unreadable",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179442.html"
+    },
+    {
+     "id": "179441",
+     "title": "Supply of cleaning material products",
+     "official_title": "Supply and deliver cleaning material products",
+     "nationwide": false,
+     "hq": "Gauteng",
+     "buyer": "National - Environment, Forestry and Fisheries",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-30T11:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 4 form",
+       "SBD 6.1 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179441.html"
+    },
+    {
+     "id": "179457",
+     "title": "Supply of food groceries services",
+     "official_title": "Supply and deliver food groceries services",
+     "nationwide": false,
+     "hq": "Gauteng",
+     "buyer": "National - Environment, Forestry and Fisheries",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-12-01T11:00:00+02:00",
+     "closing_text": "Tue, 01 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 4 form",
+       "SBD 6.1 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179457.html"
+    },
+    {
+     "id": "179385",
+     "title": "Supply of pinhole enamel tester",
+     "official_title": "Supply and delivery of a pinhole enamel tester",
+     "nationwide": false,
+     "hq": "Gauteng",
+     "buyer": "SA Bureau of Standards",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-12-02T11:00:00+02:00",
+     "closing_text": "Wed, 02 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 4 form",
+       "SBD 6.1 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179385.html"
+    },
+    {
+     "id": "179415",
+     "title": "Supply of alcohol (12 months)",
+     "official_title": "Supply and delivery of alcohol for the period of 12 months",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "The South African State Theatre",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-12-03T11:00:00+02:00",
+     "closing_text": "Thu, 03 Dec 2026, 11:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Certified ID copies (owners or directors)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179415.html"
+    },
+    {
+     "id": "179410",
+     "title": "Supply, Installation, Service and Maintenance of the Emergency Response… (36 months)",
+     "official_title": "Supply, Installation, Service and Maintenance of the Emergency Response (ZITON Monitoring panels, smoke, and heat detection equipment) for…",
+     "nationwide": false,
+     "hq": "Gauteng",
+     "buyer": "National Research Foundation",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-12-08T11:00:00+02:00",
+     "closing_text": "Tue, 08 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "PSIRA registration"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179410.html"
+    },
+    {
+     "id": "179440",
+     "title": "Terms of reference/ specifications for procurement of an integrated library management system (lms) for…",
+     "official_title": "Terms of reference/ specifications for procurement of an integrated library management system (lms) for the national library of south africa",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "National Library of South Africa",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2027-01-15T11:00:00+02:00",
+     "closing_text": "Fri, 15 Jan 2027, 11:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 3.1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "SBD 7.2 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179440.html"
+    }
+   ],
+   "Eastern Cape": [
+    {
+     "id": "179422",
+     "title": "Pcr testing for mthatha airport",
+     "official_title": "Procurement of service provider to pcr testing for mthatha airport",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Eastern Cape - Transport",
+     "province": "Eastern Cape",
+     "trade": "Supplies",
+     "closing": "2026-11-27T14:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 14:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 3.1 form",
+       "SBD 4 form",
+       "SBD 6.1 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179422.html"
+    },
+    {
+     "id": "179431",
+     "title": "Friction testing for mthatha airport",
+     "official_title": "Procurement of friction testing for mthatha airport",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Eastern Cape - Transport",
+     "province": "Eastern Cape",
+     "trade": "Supplies",
+     "closing": "2026-11-27T14:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 14:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 3.1 form",
+       "SBD 4 form",
+       "SBD 6.1 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179431.html"
+    },
+    {
+     "id": "179434",
+     "title": "Friction testing for mthatha airport",
+     "official_title": "Procurement of friction testing for mthatha airport",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Eastern Cape - Transport",
+     "province": "Eastern Cape",
+     "trade": "Supplies",
+     "closing": "2026-11-27T14:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 14:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 3.1 form",
+       "SBD 4 form",
+       "SBD 6.1 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179434.html"
+    }
+   ],
    "Northern Cape": [
     {
      "id": "179338",
@@ -68,7 +702,244 @@
      "url": "https://tenderfind.co.za/tender/179338.html"
     }
    ],
+   "Gauteng": [
+    {
+     "id": "179485",
+     "title": "Supply of Welding Materials as per RFQ to Johannesburg Water Langlaagte Depot",
+     "official_title": "Supply and Deliver Welding Materials as per RFQ to Johannesburg Water Langlaagte Depot.",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Johannesburg Water",
+     "province": "Gauteng",
+     "trade": "Supplies",
+     "closing": "2026-11-30T12:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 4 form",
+       "MBD 6.1 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Certified ID copies (owners or directors)",
+       "Municipal rates account, not in arrears",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179485.html"
+    },
+    {
+     "id": "179474",
+     "title": "Supply of exothermic thermite in the Gauteng region on a once off",
+     "official_title": "Request for quotation (rfq) for the supply and delivery of exothermic thermite in the gauteng region on a once off.",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Passenger Rail Agency of South Africa",
+     "province": "Gauteng",
+     "trade": "Supplies",
+     "closing": "2026-12-01T10:00:00+02:00",
+     "closing_text": "Tue, 01 Dec 2026, 10:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "COIDA letter of good standing",
+       "Pricing schedule or bill of quantities",
+       "Joint venture agreement (if you bid as a joint venture)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179474.html"
+    },
+    {
+     "id": "179384",
+     "title": "8/2/9/33ADD Bid for the addition of service providers to the panel for the Supply, Delivery… (36 months)",
+     "official_title": "8/2/9/33ADD Bid for the addition of service providers to the panel for the Supply, Delivery and Fitment of vehicle tyres on an…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Midvaal Local Municipality",
+     "province": "Gauteng",
+     "trade": "Supplies",
+     "closing": "2027-01-27T10:00:00+02:00",
+     "closing_text": "Wed, 27 Jan 2027, 10:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "none-found",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179384.html"
+    }
+   ],
+   "Western Cape": [
+    {
+     "id": "179425",
+     "title": "Supply of Large Digital Sound Console",
+     "official_title": "Supply and Delivery of a Large Digital Sound Console",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Artscape",
+     "province": "Western Cape",
+     "trade": "Supplies",
+     "closing": "2026-11-30T13:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 13:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "SBD 6.2 form",
+       "SBD 8 form",
+       "SBD 9 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179425.html"
+    },
+    {
+     "id": "179432",
+     "title": "Supply of testing equipment for fuel and lubricants for clanwilliam dam in the Western Cape province",
+     "official_title": "Supply and delivery of testing equipment for fuel and lubricants for clanwilliam dam in the western cape province.",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Water and Sanitation",
+     "province": "Western Cape",
+     "trade": "Supplies",
+     "closing": "2026-12-08T11:00:00+02:00",
+     "closing_text": "Tue, 08 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 3.1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179432.html"
+    },
+    {
+     "id": "179458",
+     "title": "Supply of welding consumables for clanwilliam dam in the Western Cape for DWS construction south",
+     "official_title": "Supply and delivery of welding consumables for clanwilliam dam in the western cape for dws construction south.",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Water and Sanitation",
+     "province": "Western Cape",
+     "trade": "Supplies",
+     "closing": "2026-12-08T11:00:00+02:00",
+     "closing_text": "Tue, 08 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 3.1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179458.html"
+    }
+   ],
    "KwaZulu-Natal": [
+    {
+     "id": "179400",
+     "title": "Supply of aminal pound material (12 months)",
+     "official_title": "Supply and deliver of aminal pound material (12 months contract)",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Umzimkhulu Local Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Supplies",
+     "closing": "2026-12-02T12:00:00+02:00",
+     "closing_text": "Wed, 02 Dec 2026, 12:00",
+     "briefing": "Briefing · 11:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 4 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179400.html"
+    },
+    {
+     "id": "179445",
+     "title": "Appointment for a service provider to supply and delivery of axle counter equipment in KZN",
+     "official_title": "Appointment for a service provider to supply and delivery of axle counter equipment in kzn",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Passenger Rail Agency of South Africa",
+     "province": "KwaZulu-Natal",
+     "trade": "Supplies",
+     "closing": "2026-12-08T12:00:00+02:00",
+     "closing_text": "Tue, 08 Dec 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "COIDA letter of good standing",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179445.html"
+    },
+    {
+     "id": "179396",
+     "title": "Supply, deliver, installation and maintenance of fire prevention equipment and system ( 24 months contract)",
+     "official_title": "Supply , deliver, installation and maintenance of fire prevention equipment and system ( 24 months contract)",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Umzimkhulu Local Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Supplies",
+     "closing": "2027-01-22T12:00:00+02:00",
+     "closing_text": "Fri, 22 Jan 2027, 12:00",
+     "briefing": "Briefing · 10:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 4 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179396.html"
+    },
     {
      "id": "179319",
      "title": "Manufacture, supply and delivery of padlocks (36 months)",
@@ -95,6 +966,1012 @@
       ]
      },
      "url": "https://tenderfind.co.za/tender/179319.html"
+    }
+   ],
+   "Limpopo": [
+    {
+     "id": "179363",
+     "title": "Supply of traffic uniform for Makhuduthamaga Local Municipality",
+     "official_title": "Supply and delivery of traffic uniform for Makhuduthamaga Local Municipality.",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Makhuduthamaga Local Municipality",
+     "province": "Limpopo",
+     "trade": "Supplies",
+     "closing": "2026-12-11T12:00:00+02:00",
+     "closing_text": "Fri, 11 Dec 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "none-found",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179363.html"
+    }
+   ]
+  },
+  "Professional services": {
+   "Eastern Cape": [
+    {
+     "id": "179368",
+     "title": "Physical cobit 7 foundation and certification",
+     "official_title": "Physical cobit 7 foundation and certification",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Eastern Cape - Officer of the Premier",
+     "province": "Eastern Cape",
+     "trade": "Professional services",
+     "closing": "2026-11-27T11:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "unreadable",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179368.html"
+    },
+    {
+     "id": "179488",
+     "title": "The appointment of structural engineering services (joe slovo 127 ephp Gqeberha)",
+     "official_title": "Request for quotation (rfq) for: the appointment of structural engineering services (joe slovo 127 ephp gqeberha)",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "National Housing Finance Corporation Limited",
+     "province": "Eastern Cape",
+     "trade": "Professional services",
+     "closing": "2026-11-30T11:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Certified ID copies (owners or directors)",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179488.html"
+    },
+    {
+     "id": "179472",
+     "title": "Quantity Surveying Professional Service Providers to lead a Multi-Disciplinary Team for the Implementation…",
+     "official_title": "Appointment of Quantity Surveying Professional Service Providers to lead a Multi-Disciplinary Team for the Implementation of Stage 4 to…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "THE MVULA TRUST",
+     "province": "Eastern Cape",
+     "trade": "Professional services",
+     "closing": "2026-12-14T12:00:00+02:00",
+     "closing_text": "Mon, 14 Dec 2026, 12:00",
+     "briefing": "Briefing · 05:11",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 2 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "Company registration documents (CIPC)",
+       "Briefing session attendance certificate",
+       "COIDA letter of good standing",
+       "Professional registration (SACPCMP)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179472.html"
+    }
+   ],
+   "National": [
+    {
+     "id": "179443",
+     "title": "Customer Service Excellence Training for One Hundred and Sixteen (116) Contact Centre employees",
+     "official_title": "The Road Accident Fund (RAF) wishes to appoint a suitable service provider to provide Customer Service Excellence Training for One Hundred…",
+     "nationwide": false,
+     "hq": "Gauteng",
+     "buyer": "Road Accident Fund",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-27T12:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "none-found",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179443.html"
+    },
+    {
+     "id": "179416",
+     "title": "Entertainment Services - African traditional singers / dancers or both - Bring their own instruments. -…",
+     "official_title": "Entertainment Services - African traditional singers / dancers or both - Bring their own instruments. - In traditional attire - Maximum…",
+     "nationwide": false,
+     "hq": "Gauteng",
+     "buyer": "Statistics South Africa",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-27T16:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 16:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "unreadable",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179416.html"
+    },
+    {
+     "id": "179498",
+     "title": "Records Management Training and Awareness Workshop",
+     "official_title": "Provision of Records Management Training and Awareness Workshop",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Manufacturing, Engineering and Related Services SETA (merSETA)",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-27T16:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 16:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "SBD 7.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179498.html"
+    },
+    {
+     "id": "179401",
+     "title": "Services provider to supply, deliver, installation and calibration of two analytical laboratory balances",
+     "official_title": "Appointment of a services provider to supply, deliver, installation and calibration of two analytical laboratory balances.",
+     "nationwide": false,
+     "hq": "Gauteng",
+     "buyer": "SA Bureau of Standards",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-30T11:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 4 form",
+       "SBD 6.1 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179401.html"
+    },
+    {
+     "id": "179424",
+     "title": "SANAS Calibration of Adam Equipment GFK-Plus 300 Floor weighing balance",
+     "official_title": "SANAS Calibration of Adam Equipment GFK-Plus 300 Floor weighing balance",
+     "nationwide": false,
+     "hq": "Gauteng",
+     "buyer": "Agricultural Research Council",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-11-30T11:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing · 01:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 4 form",
+       "SBD 6.1 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179424.html"
+    },
+    {
+     "id": "179499",
+     "title": "Additional panellists for the idc youth in film support",
+     "official_title": "Additional panellists for the idc youth in film support",
+     "nationwide": false,
+     "hq": "Gauteng",
+     "buyer": "Industrial Development Corporation of South Africa Limited",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2026-12-14T11:00:00+02:00",
+     "closing_text": "Mon, 14 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Certified ID copies (owners or directors)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179499.html"
+    },
+    {
+     "id": "179437",
+     "title": "Of legal service providers (36 months)",
+     "official_title": "Appointment of a panel of legal service providers for a period of thirty-six (36) months on an ad hoc basis",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "National Library of South Africa",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2027-01-15T11:00:00+02:00",
+     "closing_text": "Fri, 15 Jan 2027, 11:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 3.1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "SBD 7.2 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179437.html"
+    },
+    {
+     "id": "179347",
+     "title": "Services for Occupational Qualification Trades and Short Courses Training at Necsa Learning… (4 years)",
+     "official_title": "Bid for the appointment of qualified service provider/s for the provision of facilitation services for Occupational Qualification Trades…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "South African Nuclear Energy Corporation Limited",
+     "province": "National",
+     "trade": "Professional services",
+     "closing": "2027-01-20T11:00:00+02:00",
+     "closing_text": "Wed, 20 Jan 2027, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "unreadable",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179347.html"
+    }
+   ],
+   "Northern Cape": [
+    {
+     "id": "179351",
+     "title": "Training services for first Aid level 2 and fire fighting",
+     "official_title": "Provision of Training services for first Aid level 2 and fire fighting",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Kgatelopele Local Municipality",
+     "province": "Northern Cape",
+     "trade": "Professional services",
+     "closing": "2026-11-30T11:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 3.1 form",
+       "MBD 4 form",
+       "MBD 6.1 form",
+       "MBD 7.1 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Certified ID copies (owners or directors)",
+       "Municipal rates account, not in arrears",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179351.html"
+    },
+    {
+     "id": "179352",
+     "title": "Training services for 15 laborers on paving of municipal parking",
+     "official_title": "Provision of training services for 15 laborers on paving of municipal parking",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Kgatelopele Local Municipality",
+     "province": "Northern Cape",
+     "trade": "Professional services",
+     "closing": "2026-11-30T12:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 3.1 form",
+       "MBD 4 form",
+       "MBD 6.1 form",
+       "MBD 7.1 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Certified ID copies (owners or directors)",
+       "Municipal rates account, not in arrears",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179352.html"
+    },
+    {
+     "id": "179420",
+     "title": "Undertake the legislative review and amendment of the Northern Cape splum bill within a period 9 months…",
+     "official_title": "Appointment of a service provider to undertake the legislative review and amendment of the northern cape splum bill within a period of…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Rural Development & Land Reform",
+     "province": "Northern Cape",
+     "trade": "Professional services",
+     "closing": "2026-12-15T11:00:00+02:00",
+     "closing_text": "Tue, 15 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 2 form",
+       "SBD 3 form",
+       "SBD 3.3 form",
+       "SBD 4 form",
+       "SBD 6.1 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179420.html"
+    }
+   ],
+   "Gauteng": [
+    {
+     "id": "179362",
+     "title": "Request for suitably qualified service provider to provide two (02) iso 45001: 2018 training modules to six…",
+     "official_title": "Request for suitably qualified service provider to provide two (02) iso 45001:2018 training modules to six (06) officials in gauteng…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "National - Environment, Forestry and Fisheries",
+     "province": "Gauteng",
+     "trade": "Professional services",
+     "closing": "2026-11-30T11:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 11:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179362.html"
+    },
+    {
+     "id": "179423",
+     "title": "Occupational health support services (36 months)",
+     "official_title": "Appointment of a service provider for the provision of occupational health support services for a period of 36 months",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Johannesburg Market",
+     "province": "Gauteng",
+     "trade": "Professional services",
+     "closing": "2027-01-22T11:00:00+02:00",
+     "closing_text": "Fri, 22 Jan 2027, 11:00",
+     "briefing": "Compulsory briefing · Mon, 30 Nov · 11:00 · Joburg Market, Main Building (Opportunity Centre) Please report to the area on",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Municipal rates account, not in arrears"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179423.html"
+    },
+    {
+     "id": "179391",
+     "title": "8/2/9/26ADD (2025-2028) Bid for a panel of suppliers for the supply, delivery and fitment… (36 months)",
+     "official_title": "8/2/9/26ADD (2025-2028) Bid for a panel of suppliers for the supply, delivery and fitment of vehicle batteries on an as and when required…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Midvaal Local Municipality",
+     "province": "Gauteng",
+     "trade": "Professional services",
+     "closing": "2027-01-26T10:00:00+02:00",
+     "closing_text": "Tue, 26 Jan 2027, 10:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "none-found",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179391.html"
+    }
+   ],
+   "Free State": [
+    {
+     "id": "179406",
+     "title": "Once-off professional marking and inspection of hiking trails at oliewenhuis art museum",
+     "official_title": "Request for quotation (rfq) to appoint a service provider for once-off professional marking and inspection of hiking trails at oliewenhuis…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "National Museum Bloemfontein",
+     "province": "Free State",
+     "trade": "Professional services",
+     "closing": "2026-12-03T12:00:00+02:00",
+     "closing_text": "Thu, 03 Dec 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "unreadable",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179406.html"
+    }
+   ],
+   "KwaZulu-Natal": [
+    {
+     "id": "179353",
+     "title": "Branding, marketing and publicity services (36 months)",
+     "official_title": "Panel of service providers for rendering of branding, marketing and publicity services for a period of 36 months",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Zululand District Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Professional services",
+     "closing": "2026-12-07T12:00:00+02:00",
+     "closing_text": "Mon, 07 Dec 2026, 12:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 1 form",
+       "MBD 4 form",
+       "MBD 6.1 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "Company registration documents (CIPC)",
+       "Municipal rates account, not in arrears"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179353.html"
+    },
+    {
+     "id": "179356",
+     "title": "Conduct a clothing production skills training programme for twenty (20) msmes within the clothing… (6 months)",
+     "official_title": "APPOINTMENT OF A SERVICE PROVIDER TO CONDUCT A CLOTHING PRODUCTION SKILLS TRAINING PROGRAMME FOR TWENTY (20) MSMEs WITHIN THE CLOTHING AND…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Kwazulu Natal - Economic Development, Tourism and Environ Affairs",
+     "province": "KwaZulu-Natal",
+     "trade": "Professional services",
+     "closing": "2026-12-07T15:00:00+02:00",
+     "closing_text": "Mon, 07 Dec 2026, 15:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 3 form",
+       "SBD 3.3 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Company registration documents (CIPC)",
+       "Certified ID copies (owners or directors)",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179356.html"
+    },
+    {
+     "id": "179397",
+     "title": "Implement the cooperative governance and business management training for 150 co-operatives… (3 months)",
+     "official_title": "Appointment of a service provider to implement the cooperative governance and business management training for 150 co-operatives within…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Kwazulu Natal - Economic Development, Tourism and Environ Affairs",
+     "province": "KwaZulu-Natal",
+     "trade": "Professional services",
+     "closing": "2026-12-07T15:00:00+02:00",
+     "closing_text": "Mon, 07 Dec 2026, 15:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 3 form",
+       "SBD 3.1 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Company registration documents (CIPC)",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179397.html"
+    },
+    {
+     "id": "179473",
+     "title": "Implementation of a technical and non-technical mentorship programme for nine (09) manufacturing… (3 months)",
+     "official_title": "Appointment of a service provider for the implementation of a technical and non-technical mentorship programme for nine (09) manufacturing…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Kwazulu Natal - Economic Development, Tourism and Environ Affairs",
+     "province": "KwaZulu-Natal",
+     "trade": "Professional services",
+     "closing": "2026-12-07T15:00:00+02:00",
+     "closing_text": "Mon, 07 Dec 2026, 15:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 3 form",
+       "SBD 3.1 form",
+       "SBD 3.3 form",
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Company registration documents (CIPC)",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179473.html"
+    }
+   ],
+   "Mpumalanga": [
+    {
+     "id": "179332",
+     "title": "Of town and regional planning consultants to provide town and regional planning services… (36 months)",
+     "official_title": "Appointment of a panel of town and regional planning consultants to provide town and regional planning services to thembisile hani local…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Thembisile Hani Local Municipality",
+     "province": "Mpumalanga",
+     "trade": "Professional services",
+     "closing": "2026-12-14T12:00:00+02:00",
+     "closing_text": "Mon, 14 Dec 2026, 12:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "none-found",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179332.html"
+    },
+    {
+     "id": "179333",
+     "title": "Events management services for thlm (36 months)",
+     "official_title": "Appointment of a panel of service providers for provision of events management services for thlm for a period of 36 months.",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Thembisile Hani Local Municipality",
+     "province": "Mpumalanga",
+     "trade": "Professional services",
+     "closing": "2026-12-14T12:00:00+02:00",
+     "closing_text": "Mon, 14 Dec 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "none-found",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179333.html"
+    },
+    {
+     "id": "179372",
+     "title": "Of 5 (five) profrssional legal service providers for victor khanye local municipality (36 months)",
+     "official_title": "Appointment of a panel of 5 (five) profrssional legal service providers for a period of 36 (thirty-six) months for victor khanye local…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Victor Khanye Local Municipality",
+     "province": "Mpumalanga",
+     "trade": "Professional services",
+     "closing": "2027-01-28T10:00:00+02:00",
+     "closing_text": "Thu, 28 Jan 2027, 10:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 2 form",
+       "MBD 3.1 form",
+       "MBD 4 form",
+       "MBD 5 form",
+       "MBD 6.1 form",
+       "MBD 7.1 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "Company registration documents (CIPC)",
+       "Municipal rates account, not in arrears",
+       "Briefing session attendance certificate",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179372.html"
+    },
+    {
+     "id": "179389",
+     "title": "Of undertakers to conduct indigent & pauper burials (3 years)",
+     "official_title": "Appointment of a panel of undertakers to conduct indigent & pauper burials for a period of three years (36 months)",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Victor Khanye Local Municipality",
+     "province": "Mpumalanga",
+     "trade": "Professional services",
+     "closing": "2027-01-28T10:00:00+02:00",
+     "closing_text": "Thu, 28 Jan 2027, 10:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 2 form",
+       "MBD 3.1 form",
+       "MBD 4 form",
+       "MBD 5 form",
+       "MBD 6.1 form",
+       "MBD 7.1 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "Company registration documents (CIPC)",
+       "Municipal rates account, not in arrears",
+       "Briefing session attendance certificate",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179389.html"
+    }
+   ]
+  },
+  "Security": {
+   "National": [
+    {
+     "id": "179392",
+     "title": "Service of maintenance, servicing, repair and monitoring of intruder alarm system at the sadpmr (3 years)",
+     "official_title": "Appointment of a bidder to render service of maintenance, servicing, repair and monitoring of intruder alarm system at the sadpmr for a…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "South African Diamond and Precious Metals Regulator",
+     "province": "National",
+     "trade": "Security",
+     "closing": "2026-11-27T11:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 11:00",
+     "briefing": "Briefing · Wed, 25 Nov · 10:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 4 form",
+       "SBD 6.1 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179392.html"
+    }
+   ],
+   "Mpumalanga": [
+    {
+     "id": "179380",
+     "title": "Prevision of security services for the victor khanye local municipality (re-advert) (3 years)",
+     "official_title": "Appointment of a service provider for the prevision of security services for the victor khanye local municipality for a period of (3)…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Victor Khanye Local Municipality",
+     "province": "Mpumalanga",
+     "trade": "Security",
+     "closing": "2027-01-28T10:00:00+02:00",
+     "closing_text": "Thu, 28 Jan 2027, 10:00",
+     "briefing": "Briefing · Mon, 30 Nov · 10:00",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 2 form",
+       "MBD 3.1 form",
+       "MBD 4 form",
+       "MBD 5 form",
+       "MBD 6.1 form",
+       "MBD 7.1 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "Company registration documents (CIPC)",
+       "Municipal rates account, not in arrears",
+       "Briefing session attendance certificate",
+       "Pricing schedule or bill of quantities",
+       "PSIRA registration"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179380.html"
+    }
+   ]
+  },
+  "Cleaning": {
+   "Gauteng": [
+    {
+     "id": "179428",
+     "title": "Request for potential service providers to provide canteen kitchen canopy extraction cleaning… (24 months)",
+     "official_title": "Readvert: REQUEST FOR POTENTIAL SERVICE PROVIDERS TO PROVIDE CANTEEN KITCHEN CANOPY EXTRACTION CLEANING & MAINTENANCE AT 30 HELIUM ROAD…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Automotive Industry Development Centre (AIDC)",
+     "province": "Gauteng",
+     "trade": "Cleaning",
+     "closing": "2026-11-27T11:00:00+02:00",
+     "closing_text": "Fri, 27 Nov 2026, 11:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 4 form",
+       "SBD 6.1 form",
+       "SBD 6.2 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179428.html"
+    }
+   ],
+   "Western Cape": [
+    {
+     "id": "179413",
+     "title": "Supply office cleaning and pest control services in Beaufort West (36 months)",
+     "official_title": "The Road Accident Fund (RAF) wishes to appoint a suitable service provider to supply office cleaning and pest control services in Beaufort…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Road Accident Fund",
+     "province": "Western Cape",
+     "trade": "Cleaning",
+     "closing": "2026-11-30T11:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 11:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 4 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179413.html"
+    },
+    {
+     "id": "179367",
+     "title": "High pressure cleaning services at the petrosa gtl refinery, mossel bay",
+     "official_title": "HIGH PRESSURE CLEANING SERVICES AT THE PetroSA GTL REFINERY, MOSSEL BAY",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "PetroSA",
+     "province": "Western Cape",
+     "trade": "Cleaning",
+     "closing": "2026-12-15T13:00:00+02:00",
+     "closing_text": "Tue, 15 Dec 2026, 13:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "none-found",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179367.html"
+    }
+   ],
+   "National": [
+    {
+     "id": "179378",
+     "title": "Waste collection and recycling",
+     "official_title": "Waste collection and recycling.",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Air Chefs SOC Ltd",
+     "province": "National",
+     "trade": "Cleaning",
+     "closing": "2026-12-02T16:00:00+02:00",
+     "closing_text": "Wed, 02 Dec 2026, 16:00",
+     "briefing": "Compulsory briefing · 13:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "none-found",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179378.html"
+    }
+   ],
+   "Free State": [
+    {
+     "id": "179381",
+     "title": "Once off supply and delivery of gardening equipment",
+     "official_title": "Request for quote for once off supply and delivery of gardening equipment",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "National Museum Bloemfontein",
+     "province": "Free State",
+     "trade": "Cleaning",
+     "closing": "2026-12-04T12:00:00+02:00",
+     "closing_text": "Fri, 04 Dec 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 4 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179381.html"
+    },
+    {
+     "id": "179390",
+     "title": "Implement pest control management at oliewenhuis art museum in respect of the rock hyrax (dassie)…",
+     "official_title": "Request for proposal to implement pest control management at oliewenhuis art museum in respect of the rock hyrax (dassie) - re-advertisement",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "National Museum Bloemfontein",
+     "province": "Free State",
+     "trade": "Cleaning",
+     "closing": "2026-12-04T12:00:00+02:00",
+     "closing_text": "Fri, 04 Dec 2026, 12:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 4 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Municipal rates account, not in arrears"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179390.html"
+    }
+   ],
+   "KwaZulu-Natal": [
+    {
+     "id": "179349",
+     "title": "Proposal for rendering the standard cleaning, hygiene, pest control, fumigation services for… (36 months)",
+     "official_title": "Invitation to submit a proposal for rendering the standard cleaning, hygiene, pest control, fumigation services for the department of land…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Department of Land Reform and Rural Development",
+     "province": "KwaZulu-Natal",
+     "trade": "Cleaning",
+     "closing": "2026-12-14T11:00:00+02:00",
+     "closing_text": "Mon, 14 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "unreadable",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179349.html"
+    },
+    {
+     "id": "179365",
+     "title": "Re advertisement: kwazulu central provincial laundry - appointment of a mechanical engineering entity…",
+     "official_title": "Re advertisement: kwazulu central provincial laundry - appointment of a mechanical engineering entity to provide mechanical engineering…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Kwazulu Natal - Public Works (Head Office)",
+     "province": "KwaZulu-Natal",
+     "trade": "Cleaning",
+     "closing": "2027-01-14T11:00:00+02:00",
+     "closing_text": "Thu, 14 Jan 2027, 11:00",
+     "briefing": "Compulsory briefing · Tue, 01 Dec · 11:00 · KWAZULU CENTRAL PROVINCIAL LAUNDRY (Griffiths Mxenge Highway, Umlazi V)",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "CIDB registration",
+       "Company registration documents (CIPC)",
+       "Professional registration (ECSA)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179365.html"
+    }
+   ]
+  },
+  "Sales & auctions": {
+   "KwaZulu-Natal": [
+    {
+     "id": "179316",
+     "title": "For sale by the buyer: Disposal - purchase, collection and removal of non-funtional furniture from ere…",
+     "official_title": "Disposal - purchase, collection and removal of non-funtional furniture from ere in new germany (gale house) in kzn operating unit",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "ESKOM",
+     "province": "KwaZulu-Natal",
+     "trade": "Sales & auctions",
+     "closing": "2026-11-30T10:00:00+02:00",
+     "closing_text": "Mon, 30 Nov 2026, 10:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "none-found",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179316.html"
     }
    ]
   },
@@ -162,19 +2039,44 @@
     }
    ]
   },
-  "Other": {
-   "Limpopo": [
+  "IT": {
+   "National": [
     {
-     "id": "179287",
-     "title": "Implement business accelarator workshop for 200 selected township and rural business beneficiaries under…",
-     "official_title": "Appointment of a service provider to implement business accelarator workshop for 200 selected township and rural business beneficiaries…",
+     "id": "179495",
+     "title": "Assist Agrement South Africa in procuring a Mimecast Mega Plan for 50 Users to ensure email… (36 months)",
+     "official_title": "Re-advert: Appointment of a service provider to assist Agrement South Africa in procuring a Mimecast Mega Plan for 50 Users to ensure…",
      "nationwide": false,
      "hq": null,
-     "buyer": "Limpopo - Economic Development Environment & Tourism",
-     "province": "Limpopo",
-     "trade": "Other",
-     "closing": "2026-12-01T11:00:00+02:00",
-     "closing_text": "Tue, 01 Dec 2026, 11:00",
+     "buyer": "Agrément South Africa",
+     "province": "National",
+     "trade": "IT",
+     "closing": "2026-12-01T12:00:00+02:00",
+     "closing_text": "Tue, 01 Dec 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "CSD registration report (your MAAA supplier number)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179495.html"
+    },
+    {
+     "id": "179456",
+     "title": "Lease of Handheld Devices with a Specialized Mobile Application Capable of integrating with SAP System…",
+     "official_title": "Lease of Handheld Devices with a Specialized Mobile Application Capable of integrating with SAP System for our Delivery Dispatch Note",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Air Chefs SOC Ltd",
+     "province": "National",
+     "trade": "IT",
+     "closing": "2026-12-01T16:00:00+02:00",
+     "closing_text": "Tue, 01 Dec 2026, 16:00",
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
@@ -182,56 +2084,199 @@
       "status": "unreadable",
       "items": []
      },
-     "url": "https://tenderfind.co.za/tender/179287.html"
+     "url": "https://tenderfind.co.za/tender/179456.html"
     }
-   ]
-  },
-  "Professional services": {
+   ],
+   "Free State": [
+    {
+     "id": "179409",
+     "title": "Once-off supply and deliver of a desktop computer to national museum",
+     "official_title": "Request for quote for once-off supply and deliver of a desktop computer to national museum",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "National Museum Bloemfontein",
+     "province": "Free State",
+     "trade": "IT",
+     "closing": "2026-12-04T12:00:00+02:00",
+     "closing_text": "Fri, 04 Dec 2026, 12:00",
+     "briefing": "No briefing session",
+     "compulsory_briefing": false,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 4 form"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179409.html"
+    }
+   ],
    "Mpumalanga": [
     {
-     "id": "179332",
-     "title": "Of town and regional planning consultants to provide town and regional planning services… (36 months)",
-     "official_title": "Appointment of a panel of town and regional planning consultants to provide town and regional planning services to thembisile hani local…",
+     "id": "179411",
+     "title": "Conduct water use licence application including required pre-application studies for botleng… (24 months)",
+     "official_title": "Appointment of a service provider to conduct water use licence application including required pre-application studies for botleng…",
      "nationwide": false,
      "hq": null,
-     "buyer": "Thembisile Hani Local Municipality",
+     "buyer": "Victor Khanye Local Municipality",
      "province": "Mpumalanga",
-     "trade": "Professional services",
-     "closing": "2026-12-14T12:00:00+02:00",
-     "closing_text": "Mon, 14 Dec 2026, 12:00",
+     "trade": "IT",
+     "closing": "2026-12-10T10:00:00+02:00",
+     "closing_text": "Thu, 10 Dec 2026, 10:00",
      "briefing": null,
      "compulsory_briefing": null,
      "cidb": null,
      "checklist": {
-      "status": "none-found",
-      "items": []
+      "status": "found",
+      "items": [
+       "MBD 2 form",
+       "MBD 3.1 form",
+       "MBD 4 form",
+       "MBD 5 form",
+       "MBD 6.1 form",
+       "MBD 7.1 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "Company registration documents (CIPC)",
+       "Municipal rates account, not in arrears",
+       "Briefing session attendance certificate",
+       "Pricing schedule or bill of quantities"
+      ]
      },
-     "url": "https://tenderfind.co.za/tender/179332.html"
-    },
-    {
-     "id": "179333",
-     "title": "Events management services for thlm (36 months)",
-     "official_title": "Appointment of a panel of service providers for provision of events management services for thlm for a period of 36 months.",
-     "nationwide": false,
-     "hq": null,
-     "buyer": "Thembisile Hani Local Municipality",
-     "province": "Mpumalanga",
-     "trade": "Professional services",
-     "closing": "2026-12-14T12:00:00+02:00",
-     "closing_text": "Mon, 14 Dec 2026, 12:00",
-     "briefing": null,
-     "compulsory_briefing": null,
-     "cidb": null,
-     "checklist": {
-      "status": "none-found",
-      "items": []
-     },
-     "url": "https://tenderfind.co.za/tender/179333.html"
+     "url": "https://tenderfind.co.za/tender/179411.html"
     }
    ]
   },
   "Construction": {
    "KwaZulu-Natal": [
+    {
+     "id": "179418",
+     "title": "Construction of kwaphawini phase 3 electrification project",
+     "official_title": "Scmu010/2026/2027 construction of kwaphawini phase 3 electrification project",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Umkhanyakude District Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Construction",
+     "closing": "2026-12-04T12:00:00+02:00",
+     "closing_text": "Fri, 04 Dec 2026, 12:00",
+     "briefing": "Compulsory briefing · Thu, 26 Nov",
+     "compulsory_briefing": true,
+     "cidb": "4EP",
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 4 form",
+       "MBD 7.2 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "CIDB registration",
+       "Certified ID copies (owners or directors)",
+       "Municipal rates account, not in arrears",
+       "COIDA letter of good standing",
+       "Bank confirmation letter",
+       "Pricing schedule or bill of quantities",
+       "Joint venture agreement (if you bid as a joint venture)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179418.html"
+    },
+    {
+     "id": "179354",
+     "title": "Rural roads asset management system within zululand district municipality (36 months)",
+     "official_title": "Rural roads asset management system within zululand district municipality for a period of 36 months",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Zululand District Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Construction",
+     "closing": "2026-12-07T12:00:00+02:00",
+     "closing_text": "Mon, 07 Dec 2026, 12:00",
+     "briefing": "Compulsory briefing · Fri, 04 Dec · 08:00",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 1 form",
+       "MBD 4 form",
+       "MBD 6.1 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "Company registration documents (CIPC)",
+       "Municipal rates account, not in arrears",
+       "Professional registration (SACPCMP)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179354.html"
+    },
+    {
+     "id": "179447",
+     "title": "Gravel to surface upgrade of 108743 Street and 108694 Street, Inanda, Ward 55 & 57",
+     "official_title": "Gravel to surface upgrade of 108743 Street and 108694 Street, Inanda, Ward 55 & 57",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Ethekwini Metropolitan Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Construction",
+     "closing": "2026-12-11T11:00:00+02:00",
+     "closing_text": "Fri, 11 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "unreadable",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179447.html"
+    },
+    {
+     "id": "179478",
+     "title": "Gravel to surface upgrade of Sosha Road and 106544 Street, and minor stormwater upgrade on Umthathawe Grove…",
+     "official_title": "Gravel to surface upgrade of Sosha Road and 106544 Street, and minor stormwater upgrade on Umthathawe Grove in Inanda, Ward 107",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Ethekwini Metropolitan Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Construction",
+     "closing": "2026-12-11T11:00:00+02:00",
+     "closing_text": "Fri, 11 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "unreadable",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179478.html"
+    },
+    {
+     "id": "179490",
+     "title": "Electrical contractor for the installation of 12 x 3kw solar home systems in emadlangeni village in ward 5",
+     "official_title": "APPOINTMENT OF ELECTRICAL CONTRACTOR FOR THE INSTALLATION OF 12 x 3kW SOLAR HOME SYSTEMS IN EMADLANGENI VILLAGE IN WARD 5",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Emadlangeni Local Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Construction",
+     "closing": "2026-12-11T12:00:00+02:00",
+     "closing_text": "Fri, 11 Dec 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "unreadable",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179490.html"
+    },
     {
      "id": "179322",
      "title": "Upgrade of Mona Sportfield in Ward 4 - Phase 2",
@@ -251,11 +2296,396 @@
       "items": []
      },
      "url": "https://tenderfind.co.za/tender/179322.html"
+    },
+    {
+     "id": "179449",
+     "title": "Construction of 9.4km of 600mm diameter primary bulk gravity pipeline within the kwajobe community water…",
+     "official_title": "Scmu009/2026/2027 - construction of 9.4km of 600mm diameter primary bulk gravity pipeline within the kwajobe community water supply scheme…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Umkhanyakude District Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Construction",
+     "closing": "2026-12-21T12:00:00+02:00",
+     "closing_text": "Mon, 21 Dec 2026, 12:00",
+     "briefing": "Compulsory briefing · Fri, 27 Nov · 12:00",
+     "compulsory_briefing": true,
+     "cidb": "7CE",
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 2 form",
+       "MBD 4 form",
+       "MBD 5 form",
+       "MBD 6.1 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "CIDB registration",
+       "Company registration documents (CIPC)",
+       "Certified ID copies (owners or directors)",
+       "Municipal rates account, not in arrears",
+       "COIDA letter of good standing",
+       "Bank confirmation letter",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179449.html"
+    },
+    {
+     "id": "179350",
+     "title": "Finance(rent to own) and full maintenance lease for the supply, delivery and management of motor… (36 months)",
+     "official_title": "Provision of finance(rent to own) and full maintenance lease for the supply, delivery and management of motor vehicles, water…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Zululand District Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Construction",
+     "closing": "2027-01-19T12:00:00+02:00",
+     "closing_text": "Tue, 19 Jan 2027, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 1 form",
+       "MBD 4 form",
+       "MBD 5 form",
+       "MBD 6.1 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "Company registration documents (CIPC)",
+       "Municipal rates account, not in arrears"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179350.html"
+    },
+    {
+     "id": "179357",
+     "title": "Rates-based panel contract for roadway related construction works to be used as-and-when-required… (3 years)",
+     "official_title": "Rates-based panel contract for roadway related construction works to be used as-and-when-required, for a period of 3 years (CIDB Grades…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Ethekwini Metropolitan Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Construction",
+     "closing": "2027-01-29T11:00:00+02:00",
+     "closing_text": "Fri, 29 Jan 2027, 11:00",
+     "briefing": "Compulsory briefing · Mon, 30 Nov · 10:30",
+     "compulsory_briefing": true,
+     "cidb": "3CE or 4CE",
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 4 form",
+       "MBD 5 form",
+       "MBD 6 form",
+       "MBD 6.1 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "CIDB registration",
+       "Company registration documents (CIPC)",
+       "Pricing schedule or bill of quantities",
+       "Joint venture agreement (if you bid as a joint venture)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179357.html"
+    },
+    {
+     "id": "179361",
+     "title": "Construction of 100 top-structure units at Umbhayi Housing Project, Ward 61",
+     "official_title": "Construction of 100 top-structure units at Umbhayi Housing Project, Ward 61",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Ethekwini Metropolitan Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Construction",
+     "closing": "2027-01-29T11:00:00+02:00",
+     "closing_text": "Fri, 29 Jan 2027, 11:00",
+     "briefing": "Compulsory briefing · Mon, 30 Nov · 10:00",
+     "compulsory_briefing": true,
+     "cidb": "7GB",
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 4 form",
+       "MBD 5 form",
+       "MBD 6 form",
+       "MBD 6.1 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "CIDB registration",
+       "Company registration documents (CIPC)",
+       "Pricing schedule or bill of quantities",
+       "Joint venture agreement (if you bid as a joint venture)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179361.html"
+    },
+    {
+     "id": "179371",
+     "title": "Construction of 42 top-structure units at Richmond Farm A & B Housing Project, Ward 38 & 41",
+     "official_title": "Construction of 42 top-structure units at Richmond Farm A & B Housing Project, Ward 38 & 41",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Ethekwini Metropolitan Municipality",
+     "province": "KwaZulu-Natal",
+     "trade": "Construction",
+     "closing": "2027-01-29T11:00:00+02:00",
+     "closing_text": "Fri, 29 Jan 2027, 11:00",
+     "briefing": "Compulsory briefing · Wed, 02 Dec · 10:00",
+     "compulsory_briefing": true,
+     "cidb": "6GB",
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 4 form",
+       "MBD 5 form",
+       "MBD 6 form",
+       "MBD 6.1 form",
+       "MBD 8 form",
+       "MBD 9 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "CIDB registration",
+       "Pricing schedule or bill of quantities",
+       "Joint venture agreement (if you bid as a joint venture)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179371.html"
+    }
+   ],
+   "Gauteng": [
+    {
+     "id": "179373",
+     "title": "8/2/2/460RE Bid for design, fabrication, installation and maintenance of PML ladders and bins for Midvaal…",
+     "official_title": "8/2/2/460RE Bid for design, fabrication, installation and maintenance of PML ladders and bins on an as and when required basis for Midvaal…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Midvaal Local Municipality",
+     "province": "Gauteng",
+     "trade": "Construction",
+     "closing": "2026-12-10T10:00:00+02:00",
+     "closing_text": "Thu, 10 Dec 2026, 10:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "none-found",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179373.html"
+    },
+    {
+     "id": "179395",
+     "title": "8/2/2/477 (2026-2029) Bid for the provision of operations and maintenance services at Eye of Africa…",
+     "official_title": "8/2/2/477 (2026-2029) Bid for the provision of operations and maintenance services at Eye of Africa and Bantu-Bonke wastewater treatment…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Midvaal Local Municipality",
+     "province": "Gauteng",
+     "trade": "Construction",
+     "closing": "2027-01-28T10:00:00+02:00",
+     "closing_text": "Thu, 28 Jan 2027, 10:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "none-found",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179395.html"
+    },
+    {
+     "id": "179399",
+     "title": "8/2/2/478 Bid for the provision of operations and maintenance services at Vaal Marina Wastewater Treatment…",
+     "official_title": "8/2/2/478 Bid for the provision of operations and maintenance services at Vaal Marina Wastewater Treatment Works (WWTW) for Midvaal Local…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Midvaal Local Municipality",
+     "province": "Gauteng",
+     "trade": "Construction",
+     "closing": "2027-01-28T11:00:00+02:00",
+     "closing_text": "Thu, 28 Jan 2027, 11:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "none-found",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179399.html"
+    }
+   ],
+   "National": [
+    {
+     "id": "179444",
+     "title": "Ssa/18/2026/27 supply and delivery of hardware, plumbing and electrical consumables to the state… (3 years)",
+     "official_title": "Ssa/18/2026/27 supply and delivery of hardware, plumbing and electrical consumables to the state security agency for a period of three (3)…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "State Security Agency",
+     "province": "National",
+     "trade": "Construction",
+     "closing": "2026-12-14T11:00:00+02:00",
+     "closing_text": "Mon, 14 Dec 2026, 11:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": null,
+     "checklist": {
+      "status": "found",
+      "items": [
+       "SBD 1 form",
+       "SBD 2 form",
+       "SBD 3.2 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "Company registration documents (CIPC)",
+       "Pricing schedule or bill of quantities"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179444.html"
+    },
+    {
+     "id": "179454",
+     "title": "Additional Contractors to the Existing Panel of Pre-Qualified Service Providers for the Supply…",
+     "official_title": "Appointment of Additional Contractors to the Existing Panel of Pre-Qualified Service Providers for the Supply and Construction of…",
+     "nationwide": false,
+     "hq": "Gauteng",
+     "buyer": "Sentech Limited",
+     "province": "National",
+     "trade": "Construction",
+     "closing": "2026-12-14T12:00:00+02:00",
+     "closing_text": "Mon, 14 Dec 2026, 12:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "unreadable",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179454.html"
     }
    ]
   },
   "Maintenance & repairs": {
+   "Western Cape": [
+    {
+     "id": "179364",
+     "title": "Quotation for the supply, installation, testing and commissioning of 1200 inventer split Airconditioning unit",
+     "official_title": "Quotation for the supply, installation, testing and commissioning of 1200 inventer split Airconditioning unit",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "George Municipality",
+     "province": "Western Cape",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-12-07T12:00:00+02:00",
+     "closing_text": "Mon, 07 Dec 2026, 12:00",
+     "briefing": "Compulsory briefing",
+     "compulsory_briefing": true,
+     "cidb": "1ME",
+     "checklist": {
+      "status": "found",
+      "items": [
+       "MBD 1 form",
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "CIDB registration"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179364.html"
+    }
+   ],
    "KwaZulu-Natal": [
+    {
+     "id": "179436",
+     "title": "As and when contractor for the servicing and repairing of air-conditioning systems in the KZN… (12 months)",
+     "official_title": "Request for quotation (rfq) for the appointment of an as and when contractor for the servicing and repairing of air-conditioning systems…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Passenger Rail Agency of South Africa",
+     "province": "KwaZulu-Natal",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-12-08T12:00:00+02:00",
+     "closing_text": "Tue, 08 Dec 2026, 12:00",
+     "briefing": "Compulsory briefing · Tue, 01 Dec · 10:00",
+     "compulsory_briefing": true,
+     "cidb": "1ME",
+     "checklist": {
+      "status": "found",
+      "items": [
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "CIDB registration",
+       "Certified ID copies (owners or directors)",
+       "Briefing session attendance certificate",
+       "COIDA letter of good standing",
+       "Pricing schedule or bill of quantities",
+       "Joint venture agreement (if you bid as a joint venture)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179436.html"
+    },
+    {
+     "id": "179345",
+     "title": "Supply of air-conditioning units at Kwazulu-Natal museum - 237 jabu ndlovu street, pietermaritzburg",
+     "official_title": "Tender: supply, delivery, installation and commissioning of air-conditioning units at kwazulu-natal museum - 237 jabu ndlovu street…",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "KwaZulu-Natal Museum",
+     "province": "KwaZulu-Natal",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-12-15T11:00:00+02:00",
+     "closing_text": "Tue, 15 Dec 2026, 11:00",
+     "briefing": "Compulsory briefing · Mon, 30 Nov",
+     "compulsory_briefing": true,
+     "cidb": "3ME",
+     "checklist": {
+      "status": "found",
+      "items": [
+       "CSD registration report (your MAAA supplier number)",
+       "Tax compliance status PIN from SARS (or tax clearance certificate)",
+       "B-BBEE certificate or sworn affidavit",
+       "CIDB registration",
+       "Pricing schedule or bill of quantities",
+       "Joint venture agreement (if you bid as a joint venture)"
+      ]
+     },
+     "url": "https://tenderfind.co.za/tender/179345.html"
+    },
+    {
+     "id": "179476",
+     "title": "Supply and replace two tap changers at ezakheni industrial estate main substation",
+     "official_title": "Appointment of a service provider to supply and replace two tap changers at ezakheni industrial estate main substation",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Kwa-Zulu Natal - Ithala Development Finance Corporation",
+     "province": "KwaZulu-Natal",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-12-15T11:00:00+02:00",
+     "closing_text": "Tue, 15 Dec 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "unreadable",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179476.html"
+    },
     {
      "id": "179320",
      "title": "Maintenance and support of the existing vehicle tracking system (36 months)",
@@ -282,6 +2712,28 @@
       ]
      },
      "url": "https://tenderfind.co.za/tender/179320.html"
+    }
+   ],
+   "Limpopo": [
+    {
+     "id": "179403",
+     "title": "Notification of award for Maintenance of Lifts For 60 Months (5 Years) at Medupi Power Station",
+     "official_title": "Notification of award for Maintenance of Lifts For 60 Months (5 Years) at Medupi Power Station",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "ESKOM",
+     "province": "Limpopo",
+     "trade": "Maintenance & repairs",
+     "closing": "2026-12-14T10:00:00+02:00",
+     "closing_text": "Mon, 14 Dec 2026, 10:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "none-found",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179403.html"
     }
    ]
   }
@@ -993,6 +3445,26 @@
       "items": []
      },
      "url": "https://tenderfind.co.za/tender/179062.html"
+    },
+    {
+     "id": "179442",
+     "title": "Supply of chicken giblets ncome correctional services",
+     "official_title": "Supply and delivery of chicken giblets ncome correctional services",
+     "nationwide": false,
+     "hq": null,
+     "buyer": "Correctional Services",
+     "province": "National",
+     "trade": "Supplies",
+     "closing": "2026-11-26T11:00:00+02:00",
+     "closing_text": "Thu, 26 Nov 2026, 11:00",
+     "briefing": null,
+     "compulsory_briefing": null,
+     "cidb": null,
+     "checklist": {
+      "status": "unreadable",
+      "items": []
+     },
+     "url": "https://tenderfind.co.za/tender/179442.html"
     },
     {
      "id": "177954",
