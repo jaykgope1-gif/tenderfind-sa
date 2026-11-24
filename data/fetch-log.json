@@ -1,5 +1,29 @@
 [
  {
+  "at": "2026-11-24T02:47:57.448Z",
+  "ok": true,
+  "days": {
+   "2026-11-22": {
+    "releases": 8,
+    "badRecords": 0
+   },
+   "2026-11-23": {
+    "releases": 131,
+    "badRecords": 0
+   },
+   "2026-11-24": {
+    "releases": 7,
+    "badRecords": 1
+   }
+  },
+  "releases": 146,
+  "added": 43,
+  "updated": [],
+  "unchanged": 103,
+  "removed": 8,
+  "total": 1829
+ },
+ {
   "at": "2026-11-23T13:40:02.368Z",
   "ok": true,
   "days": {
@@ -2459,29 +2483,5 @@
   "unchanged": 3,
   "removed": 0,
   "total": 449
- },
- {
-  "at": "2026-11-01T06:54:33.086Z",
-  "ok": true,
-  "days": {
-   "2026-10-30": {
-    "releases": 196,
-    "badRecords": 0
-   },
-   "2026-10-31": {
-    "releases": 3,
-    "badRecords": 0
-   },
-   "2026-11-01": {
-    "releases": 0,
-    "badRecords": 0
-   }
-  },
-  "releases": 199,
-  "added": 0,
-  "updated": [],
-  "unchanged": 199,
-  "removed": 0,
-  "total": 443
  }
 ]
