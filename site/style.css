@@ -4,20 +4,20 @@
    - Colour: forest green (brand), warm yellow (only ever a background, with dark text on it), off-white paper,
      near-black ink. Red only for "closing soon". Every text pairing is WCAG AA or better (see the numbers below).
    - Space: one 4px-based scale (--s1 … --s9). Every gap, padding and margin uses it.
-   - Type: Fraunces for display headings, Public Sans for everything else. Five sizes: display, h2, h3, body, small.
+   - Type: Archivo Expanded (wide, like an official stamp) for display headings, Public Sans for everything else. Five sizes: display, h2, h3, body, small.
    - Shape: one corner radius (--r), one hairline (--hair), one strong border (--bold), two shadows (--lift, --lift-sm).
    - Motion: 150ms for states, 500ms for scroll reveals, ease-out only. Nothing moves with "reduce motion". */
 
 /* Size-matched fallbacks: while the web fonts load, Georgia and Arial take up the same space, so nothing jumps
-   when the real fonts arrive (measured: Fraunces 800 at display size is 81.5% of Georgia Bold's width, Public Sans 103.5% of Arial). */
+   when the real fonts arrive (Public Sans measured at 103.5% of Arial; Archivo Expanded roughly matched to Arial Black). */
 /* Brand fonts, served from this site (licences in fonts/). Latin set only, one file per weight:
    fixed-weight files look the same in every browser, including older phones. */
-@font-face { font-family: "Fraunces"; src: url("fonts/fraunces-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Archivo Expanded"; src: url("fonts/archivo-expanded-800.woff") format("woff"); font-weight: 800; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212; }
 @font-face { font-family: "Public Sans"; src: url("fonts/public-sans-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 @font-face { font-family: "Public Sans"; src: url("fonts/public-sans-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 @font-face { font-family: "Public Sans"; src: url("fonts/public-sans-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 @font-face { font-family: "Public Sans"; src: url("fonts/public-sans-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: "Fraunces Fallback"; src: local("Georgia Bold"), local("Georgia-Bold"), local("Georgia"); font-weight: 800; size-adjust: 81.5%; ascent-override: 98%; descent-override: 26%; line-gap-override: 0%; }
+@font-face { font-family: "Archivo Expanded Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800; size-adjust: 96%; ascent-override: 92%; descent-override: 22%; line-gap-override: 0%; }
 @font-face { font-family: "Public Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 400; size-adjust: 103.5%; ascent-override: 92%; descent-override: 23%; line-gap-override: 0%; }
 @font-face { font-family: "Public Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 600 800; size-adjust: 101%; ascent-override: 94%; descent-override: 23%; line-gap-override: 0%; }
 
@@ -47,11 +47,11 @@
   --measure: 38rem;          /* comfortable line length */
 
   /* type */
-  --f-display: "Fraunces", "Fraunces Fallback", Georgia, "Times New Roman", serif;
+  --f-display: "Archivo Expanded", "Archivo Expanded Fallback", "Arial Black", Arial, sans-serif;
   --f-text: "Public Sans", "Public Sans Fallback", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --f-mono: ui-monospace, "SFMono-Regular", "Cascadia Mono", Consolas, monospace;
-  --t-display: clamp(2rem, 1.45rem + 2.7vw, 3.5rem);
-  --t-h2: clamp(1.5rem, 1.25rem + 1.2vw, 2.125rem);
+  --t-display: clamp(1.6rem, 1.2rem + 2vw, 2.75rem);
+  --t-h2: clamp(1.25rem, 1.05rem + 1vw, 1.75rem);
   --t-h3: 1.1875rem;
   --t-body: 1.0625rem;
   --t-small: .875rem;
@@ -86,7 +86,7 @@ a { color: var(--green); text-decoration-thickness: 1px; text-underline-offset: 
 a:hover { color: var(--green-deep); text-decoration-thickness: 2px; }
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
 ::selection { background: var(--green-soft); color: var(--ink); }
-h1, h2 { font-family: var(--f-display); font-weight: 800; letter-spacing: -0.012em; line-height: 1.1; margin: 0 0 var(--s4); text-wrap: balance; }
+h1, h2 { font-family: var(--f-display); font-weight: 800; letter-spacing: -0.01em; line-height: 1.12; margin: 0 0 var(--s4); text-wrap: balance; }
 h1 { font-size: var(--t-display); }
 h2 { font-size: var(--t-h2); }
 h3 { font-family: var(--f-text); font-size: var(--t-h3); font-weight: 700; line-height: 1.35; letter-spacing: -0.005em; margin: 0 0 var(--s2); }
@@ -135,7 +135,7 @@ small, .small { font-size: var(--t-small); color: var(--muted); }
 .site-head { position: sticky; top: 0; z-index: 50; background: var(--paper); border-bottom: 3px double var(--green); }
 
 .head-row { display: flex; align-items: center; gap: var(--s4); min-height: var(--head-h); }
-.brand { display: inline-flex; align-items: center; gap: var(--s2); color: var(--ink); text-decoration: none; font-family: var(--f-display); font-weight: 800; font-size: 1.375rem; letter-spacing: -0.02em; white-space: nowrap; }
+.brand { display: inline-flex; align-items: center; gap: var(--s2); color: var(--ink); text-decoration: none; font-family: var(--f-display); font-weight: 800; font-size: 1.125rem; letter-spacing: -0.02em; white-space: nowrap; }
 .brand:hover { color: var(--ink); }
 .brand-mark { width: 30px; height: 30px; flex: none; }
 .brand b { font: inherit; }
@@ -145,7 +145,17 @@ small, .small { font-size: var(--t-small); color: var(--muted); }
 .head-cta { flex: none; min-height: 42px; padding: var(--s2) var(--s4); font-size: .9375rem; }
 @media (max-width: 960px) { .nav a:nth-child(n+4) { display: none; } }
 @media (max-width: 760px) { .nav { display: none; } .head-cta { margin-left: auto; } }
-@media (max-width: 360px) { .brand { font-size: 1.2rem; } .brand-mark { width: 26px; height: 26px; } }
+/* Phone menu: the nav links in a drop-down, so Search, Alerts and About can be reached from the top. */
+.menu { display: none; position: relative; flex: none; }
+.menu > summary { list-style: none; cursor: pointer; }
+.menu > summary::-webkit-details-marker { display: none; }
+.menu .menu-btn { margin-left: 0; min-width: 44px; padding-left: var(--s3); padding-right: var(--s3); }
+.menu[open] .menu-btn { background: var(--green-soft); }
+.menu-list { position: absolute; right: 0; top: calc(100% + var(--s2)); z-index: 70; display: flex; flex-direction: column; min-width: 230px; padding: var(--s2); background: var(--surface); border: var(--bold); border-radius: var(--r); box-shadow: 0 12px 32px rgba(20, 32, 27, .16); }
+.menu-list a { padding: var(--s3); white-space: nowrap; border-radius: var(--r); color: var(--ink); font-weight: 600; text-decoration: none; }
+.menu-list a:hover, .menu-list a:focus-visible { background: var(--green-soft); color: var(--green-deep); }
+@media (max-width: 760px) { .menu { display: block; } .head-row { gap: var(--s2); } }
+@media (max-width: 360px) { .brand { font-size: 1rem; } .brand-mark { width: 26px; height: 26px; } }
 /* Older header markup on the pay/ pages */
 .top { background: var(--paper); border-bottom: var(--hair); padding: var(--s4) 0; }
 .top .brand span { color: var(--green); }
@@ -222,7 +232,7 @@ small, .small { font-size: var(--t-small); color: var(--muted); }
 .section { padding: var(--s9) 0; border-top: var(--hair); }
 .section-head { max-width: 46rem; margin: 0 0 var(--s6); }
 .section-head p { color: var(--muted); font-size: 1.125rem; margin: 0; }
-@media (max-width: 560px) { .section { padding: var(--s8) 0; } .section-head { margin-bottom: var(--s5); } }
+@media (max-width: 560px) { .section { padding: var(--s7) 0; } .section-head { margin-bottom: var(--s5); } }
 .split-grid { display: grid; gap: var(--s7); align-items: center; }
 @media (min-width: 900px) { .split-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s8); } }
 .split-copy p { max-width: var(--measure); }
@@ -421,7 +431,7 @@ ul.facts li { padding: 2px var(--s2); border: var(--hair); border-radius: var(--
 .sticky-cta { position: fixed; left: var(--s3); right: var(--s3); bottom: var(--s3); z-index: 60; display: none; align-items: center; justify-content: center; gap: var(--s2); min-height: 56px; padding: var(--s3) var(--s5); border: var(--bold); border-radius: var(--r); background: var(--green); color: var(--on-green); font-weight: 700; line-height: 1.25; text-align: center; text-decoration: none; box-shadow: 0 0 0 6px var(--paper); transform: translateY(160%); transition: transform 250ms var(--ease); margin-bottom: env(safe-area-inset-bottom); }
 .sticky-cta:hover { color: var(--on-green); background: var(--green-deep); }
 .sticky-cta.show { transform: none; }
-@media (max-width: 760px) { .sticky-cta { display: flex; } body.has-sticky { padding-bottom: 96px; } }
+@media (max-width: 760px) { .sticky-cta { display: flex; min-height: 48px; padding: var(--s2) var(--s4); } body.has-sticky { padding-bottom: 80px; } }
 
 /* ---------- inner pages ---------- */
 .page { padding-top: var(--s7); padding-bottom: var(--s7); }
@@ -550,13 +560,15 @@ dl.facts dd { margin: 0; }
 /* ---------- performance ---------- */
 /* Sections below the first screen are laid out only when they come near the screen: a big saving on cheap phones.
    Jump links (ui.js) correct their landing spot because these sections only take their real height once drawn. */
-.home .section, .home .final, .home .site-foot { content-visibility: auto; contain-intrinsic-size: auto 900px; }
+/* Only the long tender list gets this. On the normal sections a guessed height made the scrollbar jump
+   and jump links land short, for almost no saving. */
+.home #search { content-visibility: auto; contain-intrinsic-size: auto 2400px; }
 
 /* ---------- small phones (320–400px) ---------- */
 @media (max-width: 400px) {
   :root { --gutter: 16px; }
   .head-row { gap: var(--s2); }
-  .brand { font-size: 1.2rem; gap: 6px; }
+  .brand { font-size: 1rem; gap: 6px; }
   .brand-mark { width: 26px; height: 26px; }
   .head-cta { min-height: 40px; padding: var(--s2) var(--s3); font-size: .875rem; }
   .notice { padding: var(--s5) var(--s4) var(--s4); }
@@ -628,3 +640,17 @@ dl.facts dd { margin: 0; }
 .page > .tf-prices { max-width: none; margin-top: var(--s4); }
 /* Never cover a form while someone is typing in it. */
 body:has(input:focus, textarea:focus, select:focus) .sticky-cta { transform: translateY(160%); }
+
+/* Home page headings in capitals, like a stamp on an official form (tender titles on other pages stay in normal case). */
+.home h1, .home h2 { text-transform: uppercase; letter-spacing: 0; line-height: 1.08; }
+.home .tf-steps h3 { text-transform: none; }
+
+/* More ways I can help: the other services, as cards under the main offer. */
+.tf-services-intro { color: var(--muted); max-width: 40rem; }
+.tf-services { list-style: none; margin: var(--s6) 0 0; padding: 0; display: grid; gap: var(--s4); grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+.tf-svc { display: flex; flex-direction: column; padding: var(--s5); background: var(--surface); border: var(--hair); border-radius: var(--r); }
+.tf-svc h3 { margin: 0 0 var(--s2); }
+.tf-svc-price { margin: 0 0 var(--s3); font: 800 1.375rem/1.2 var(--f-display); color: var(--green); }
+.tf-svc-price small { font: 600 var(--t-small)/1.4 var(--f-text); color: var(--muted); }
+.tf-svc p:not(.tf-svc-price) { color: var(--muted); font-size: .9375rem; }
+.tf-svc .btn { margin-top: auto; align-self: flex-start; }
