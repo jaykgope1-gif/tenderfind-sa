@@ -50,7 +50,7 @@ const headerHtml = (root, cta) => `<a class="skip" href="#main">Skip to content<
 <a class="brand" href="${root}" aria-label="TenderFind SA home">${MARK("#1d4a37", "#f7f5ef", "#1d4a37")}TenderFind <b>SA</b></a>
 <nav class="nav" aria-label="Main"><a href="${root}#search">Search tenders</a><a href="${root}tenders/">By trade</a><a href="${root}pricing.html">Price</a></nav>
 <a class="btn primary head-cta" href="${cta}" data-signup-jump>Try it free</a>
-<details class="menu"><summary class="btn head-cta menu-btn" aria-label="Menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></summary><nav class="menu-list" aria-label="Menu"><a href="${root}#search">Search tenders</a><a href="${root}tenders/">Tenders by trade</a><a href="${root}#prices">Prices</a><a href="${root}help.html">Bid Help</a><a href="${root}about.html">About</a></nav></details>
+<details class="menu"><summary class="btn head-cta menu-btn" aria-label="Menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></summary><nav class="menu-list" aria-label="Menu"><a href="${root}#services">Services</a><a href="${root}#search">Search tenders</a><a href="${root}tenders/">Tenders by trade</a><a href="${root}#prices">Prices</a><a href="${root}help.html">Bid Help</a><a href="${root}about.html">About</a></nav></details>
 </div></header>`;
 const footerHtml = (root) => `<footer class="site-foot"><div class="container foot-grid">
 <div><a class="brand" href="${root}" aria-label="TenderFind SA home">${MARK("#f7f5ef", "#1d4a37", "#f7f5ef")}TenderFind <b>SA</b></a>
@@ -122,7 +122,7 @@ ${canonical ? `<link rel="canonical" href="${esc(canonical)}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preload" href="${root}fonts/fraunces-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="${root}fonts/archivo-expanded-800.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="${root}fonts/public-sans-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="${root}fonts/public-sans-800.woff2" as="font" type="font/woff2" crossorigin>
 ${extraHead}<link rel="stylesheet" href="${root}style.css">
