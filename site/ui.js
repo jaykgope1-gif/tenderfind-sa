@@ -43,10 +43,15 @@
   function onReady() {
     var head = document.querySelector(".site-head");
     var sticky = document.querySelector(".sticky-cta");
-    var signup = document.getElementById("signup");
-    var signupVisible = false;
-    if (signup && sticky && canObserve) {
-      new IntersectionObserver(function (es) { signupVisible = es[0].isIntersecting; update(); }, { threshold: 0.15 }).observe(signup);
+    // Hide the sticky button while something that does the same job is on screen: the sign-up box,
+    // another WhatsApp button, or the footer (so it never sits on top of the footer links).
+    var blockers = new Set();
+    if (sticky && canObserve) {
+      var bo = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) blockers.add(e.target); else blockers.delete(e.target); });
+        update();
+      }, { threshold: 0.15 });
+      document.querySelectorAll('#signup, .site-foot, a.btn.main[href^="https://wa.me/"]').forEach(function (el) { bo.observe(el); });
     }
     var ticking = false;
     function update() {
@@ -55,9 +60,9 @@
       if (head) head.classList.toggle("scrolled", y > 8);
       if (sticky) {
         // Only after the top section is out of view, never on top of the sign-up box, and one button at a time.
-        var hero = document.querySelector(".hero");
+        var hero = document.querySelector(".hero, .tf-hero");
         var past = hero ? hero.getBoundingClientRect().bottom < 0 : y > 420;
-        var on = past && !signupVisible;
+        var on = past && !blockers.size;
         sticky.classList.toggle("show", on);
         document.body.classList.toggle("sticky-on", on);
       }
@@ -92,6 +97,17 @@
       var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
       if (el && !el.closest(".card")) jumpTo(el);
     };
+
+    // Phone menu: close it after a link is tapped, or on a tap anywhere else.
+    document.addEventListener("click", function (e) {
+      document.querySelectorAll("details.menu[open]").forEach(function (d) {
+        if (!d.contains(e.target) || e.target.closest(".menu-list a")) d.open = false;
+      });
+    }, true);
+    document.addEventListener("keydown", function (e) {
+      if (e.key !== "Escape") return;
+      document.querySelectorAll("details.menu[open]").forEach(function (d) { d.open = false; d.querySelector("summary").focus(); });
+    });
 
     document.addEventListener("click", function (e) {
       if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;

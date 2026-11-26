@@ -117,7 +117,7 @@
       return !f.words.length || t._s > 0;
     });
     if (f.sort === "relevance" && f.words.length) list.sort((a, b) => b._s - a._s || a.c.localeCompare(b.c));
-    else if (f.sort === "newest") list.sort((a, b) => b.pu.localeCompare(a.pu) || a.c.localeCompare(b.c));
+    else if (f.sort === "newest") list.sort((a, b) => (b.pu || "").localeCompare(a.pu || "") || a.c.localeCompare(b.c));
     else list.sort((a, b) => a.c.localeCompare(b.c));
     return list;
   }
@@ -245,7 +245,7 @@
     el.q.addEventListener("input", () => {
       clearTimeout(timer);
       timer = setTimeout(() => {
-        if (!sortTouched) el.sort.value = el.q.value.trim() ? "relevance" : "closing";
+        if (!sortTouched) el.sort.value = el.q.value.trim() ? "relevance" : "newest"; // newest by default: "closing soonest" led with tenders closing in minutes
         shown = PAGE;
         render();
       }, 150);
@@ -444,5 +444,15 @@
     }
   }
 
-  init();
+  // The full tender list is about 150 KB. Most visitors read the offer at the top and never reach the
+  // search, so only download it when the search section is getting close (or a link points into it).
+  let started = false;
+  const start = () => { if (!started) { started = true; init(); } };
+  const searchBox = $("search");
+  if (location.hash.length > 1 || location.search || !searchBox || !("IntersectionObserver" in window)) start();
+  else {
+    const near = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { near.disconnect(); start(); } }, { rootMargin: "1200px 0px" });
+    near.observe(searchBox);
+    el.q.addEventListener("focus", start, { once: true });
+  }
 })();

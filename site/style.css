@@ -145,6 +145,16 @@ small, .small { font-size: var(--t-small); color: var(--muted); }
 .head-cta { flex: none; min-height: 42px; padding: var(--s2) var(--s4); font-size: .9375rem; }
 @media (max-width: 960px) { .nav a:nth-child(n+4) { display: none; } }
 @media (max-width: 760px) { .nav { display: none; } .head-cta { margin-left: auto; } }
+/* Phone menu: the nav links in a drop-down, so Search, Alerts and About can be reached from the top. */
+.menu { display: none; position: relative; flex: none; }
+.menu > summary { list-style: none; cursor: pointer; }
+.menu > summary::-webkit-details-marker { display: none; }
+.menu .menu-btn { margin-left: 0; min-width: 44px; padding-left: var(--s3); padding-right: var(--s3); }
+.menu[open] .menu-btn { background: var(--green-soft); }
+.menu-list { position: absolute; right: 0; top: calc(100% + var(--s2)); z-index: 70; display: flex; flex-direction: column; min-width: 230px; padding: var(--s2); background: var(--surface); border: var(--bold); border-radius: var(--r); box-shadow: 0 12px 32px rgba(20, 32, 27, .16); }
+.menu-list a { padding: var(--s3); white-space: nowrap; border-radius: var(--r); color: var(--ink); font-weight: 600; text-decoration: none; }
+.menu-list a:hover, .menu-list a:focus-visible { background: var(--green-soft); color: var(--green-deep); }
+@media (max-width: 760px) { .menu { display: block; } .head-row { gap: var(--s2); } }
 @media (max-width: 360px) { .brand { font-size: 1.2rem; } .brand-mark { width: 26px; height: 26px; } }
 /* Older header markup on the pay/ pages */
 .top { background: var(--paper); border-bottom: var(--hair); padding: var(--s4) 0; }
@@ -222,7 +232,7 @@ small, .small { font-size: var(--t-small); color: var(--muted); }
 .section { padding: var(--s9) 0; border-top: var(--hair); }
 .section-head { max-width: 46rem; margin: 0 0 var(--s6); }
 .section-head p { color: var(--muted); font-size: 1.125rem; margin: 0; }
-@media (max-width: 560px) { .section { padding: var(--s8) 0; } .section-head { margin-bottom: var(--s5); } }
+@media (max-width: 560px) { .section { padding: var(--s7) 0; } .section-head { margin-bottom: var(--s5); } }
 .split-grid { display: grid; gap: var(--s7); align-items: center; }
 @media (min-width: 900px) { .split-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s8); } }
 .split-copy p { max-width: var(--measure); }
@@ -421,7 +431,7 @@ ul.facts li { padding: 2px var(--s2); border: var(--hair); border-radius: var(--
 .sticky-cta { position: fixed; left: var(--s3); right: var(--s3); bottom: var(--s3); z-index: 60; display: none; align-items: center; justify-content: center; gap: var(--s2); min-height: 56px; padding: var(--s3) var(--s5); border: var(--bold); border-radius: var(--r); background: var(--green); color: var(--on-green); font-weight: 700; line-height: 1.25; text-align: center; text-decoration: none; box-shadow: 0 0 0 6px var(--paper); transform: translateY(160%); transition: transform 250ms var(--ease); margin-bottom: env(safe-area-inset-bottom); }
 .sticky-cta:hover { color: var(--on-green); background: var(--green-deep); }
 .sticky-cta.show { transform: none; }
-@media (max-width: 760px) { .sticky-cta { display: flex; } body.has-sticky { padding-bottom: 96px; } }
+@media (max-width: 760px) { .sticky-cta { display: flex; min-height: 48px; padding: var(--s2) var(--s4); } body.has-sticky { padding-bottom: 80px; } }
 
 /* ---------- inner pages ---------- */
 .page { padding-top: var(--s7); padding-bottom: var(--s7); }
@@ -550,7 +560,9 @@ dl.facts dd { margin: 0; }
 /* ---------- performance ---------- */
 /* Sections below the first screen are laid out only when they come near the screen: a big saving on cheap phones.
    Jump links (ui.js) correct their landing spot because these sections only take their real height once drawn. */
-.home .section, .home .final, .home .site-foot { content-visibility: auto; contain-intrinsic-size: auto 900px; }
+/* Only the long tender list gets this. On the normal sections a guessed height made the scrollbar jump
+   and jump links land short, for almost no saving. */
+.home #search { content-visibility: auto; contain-intrinsic-size: auto 2400px; }
 
 /* ---------- small phones (320–400px) ---------- */
 @media (max-width: 400px) {
