@@ -42,7 +42,7 @@ function fillHomeBlocks(html) {
 }
 
 // The main action on every page, under the thumb on phones: WhatsApp about the Tender-Ready Pack.
-const WA_PACK = OPERATOR.whatsapp ? `https://wa.me/${OPERATOR.whatsapp}?text=${encodeURIComponent(`Hi Jay, I want the Tender-Ready Pack (${P.tenderReady})`)}` : null;
+const WA_PACK = OPERATOR.whatsapp ? `https://wa.me/${OPERATOR.whatsapp}?text=${encodeURIComponent(`Hi, I want the Tender-Ready Pack (${P.tenderReady})`)}` : null;
 const stickyHtml = (root) => (WA_PACK ? `<a class="sticky-cta" href="${WA_PACK}" target="_blank" rel="noopener">${icon(root, "chat")}<span>WhatsApp me about the pack</span></a>` : "");
 
 const headerHtml = (root, cta) => `<a class="skip" href="#main">Skip to content</a>
@@ -54,11 +54,11 @@ const headerHtml = (root, cta) => `<a class="skip" href="#main">Skip to content<
 </div></header>`;
 const footerHtml = (root) => `<footer class="site-foot"><div class="container foot-grid">
 <div><a class="brand" href="${root}" aria-label="TenderFind SA home">${MARK("#f7f5ef", "#1d4a37", "#f7f5ef")}TenderFind <b>SA</b></a>
-<p>Government tenders for your trade, emailed every weekday morning. Run by ${esc(OPERATOR.name || "an independent operator")} in Pretoria.</p>
+<p>Government tenders for your trade, emailed every weekday morning. Run by ${esc(OPERATOR.name || "an independent operator")}.</p>
 <p class="foot-note">${esc(DISCLAIMER)} TenderFind SA is independent and doesn’t sell tenders.</p></div>
 <div><h3>Tenders</h3><ul><li><a href="${root}#search">Search tenders</a></li><li><a href="${root}tenders/">Tenders by trade</a></li><li><a href="${root}pricing.html">Price</a></li><li><a href="${root}help.html">Bid Help</a></li><li><a href="${root}registration-help.html">CSD &amp; CIDB help</a></li><li><a href="${root}partners.html">For partners</a></li></ul></div>
 <div><h3>TenderFind</h3><ul><li><a href="${root}about.html">About</a></li>${OPERATOR.email ? `<li><a href="mailto:${esc(OPERATOR.email)}">${esc(OPERATOR.email)}</a></li>` : ""}<li><a href="${root}terms.html">Terms &amp; refunds</a></li><li><a href="${root}privacy.html">Privacy</a></li></ul></div>
-</div><div class="container foot-base"><p>© ${new Date().getFullYear()} TenderFind SA · Pretoria</p></div></footer>`;
+</div><div class="container foot-base"><p>© ${new Date().getFullYear()} TenderFind SA</p></div></footer>`;
 
 const cut = (s, max) => (s.length <= max ? s : s.slice(0, s.lastIndexOf(" ", max - 1)).replace(/[\s,;:.(–-]+$/, "") + "…");
 const place = (t) => t.location?.value || t.province?.value || null;
@@ -218,7 +218,7 @@ ${t.documents?.[0] ? `<a class="btn" href="${esc(t.documents[0].url)}" target="_
 ${share}
 ${facts}
 ${closed ? "" : checklistHtml(t.checklist)}
-${closed ? "" : `<p class="help-link"><b>Need help with this tender?</b> We go through the documents with you and give you a checklist of everything to submit. <a href="../help.html?service=bid&amp;tender=${esc(t.id)}">Request Bid Help (${P.bidHelp})</a>${OPERATOR.whatsapp ? ` · <a href="https://wa.me/${OPERATOR.whatsapp}?text=${encodeURIComponent(`Hi Jay, I need help with this tender: ${cut(t.summary || t.title, 90)} ${url}`)}" target="_blank" rel="noopener">Or WhatsApp Jay about it</a>` : ""}</p>`}
+${closed ? "" : `<p class="help-link"><b>Need help with this tender?</b> We go through the documents with you and give you a checklist of everything to submit. <a href="../help.html?service=bid&amp;tender=${esc(t.id)}">Request Bid Help (${P.bidHelp})</a>${OPERATOR.whatsapp ? ` · <a href="https://wa.me/${OPERATOR.whatsapp}?text=${encodeURIComponent(`Hi, I need help with this tender: ${cut(t.summary || t.title, 90)} ${url}`)}" target="_blank" rel="noopener">Or WhatsApp me about it</a>` : ""}</p>`}
 </article>
 ${similarHtml(t, similarList)}`;
 

@@ -123,7 +123,7 @@ function waMain(text, label) {
   const href = waLink(text);
   return href ? `<a class="btn main wide" href="${href}" target="_blank" rel="noopener">${icon("./", "chat")}<span>${label}</span></a>` : "";
 }
-const PACK_MSG = `Hi Jay, I want the Tender-Ready Pack (${P.tenderReady})`;
+const PACK_MSG = `Hi, I want the Tender-Ready Pack (${P.tenderReady})`;
 const tick = (html) => `<li>${icon("./", "check")}<span>${html}</span></li>`;
 // The Tender-Ready Pack box (same contents as the home page).
 function packHtml() {
@@ -140,7 +140,7 @@ ${tick("<b>Document check:</b> CIPC, tax and bank")}
 ${tick("<b>1-page company profile</b>")}
 ${tick("<b>3 months of tender alerts</b> free")}
 </ul>
-${waMain(PACK_MSG, "WhatsApp Jay about the pack")}
+${waMain(PACK_MSG, "WhatsApp me about the pack")}
 <p class="tf-num">Or WhatsApp <b>069 289 8507</b></p>
 <p class="small">Our fee is for our help. CSD registration itself is free. You use your own logins and your documents stay private. SARS and the CSD decide approvals, not us. We never promise tender wins.</p>
 </div>
@@ -182,7 +182,7 @@ ${action.html}
 <section class="plan-group" aria-labelledby="g-ready">
 <h2 class="group-h" id="g-ready">Get tender-ready</h2>
 ${readyTable()}
-${waMain(PACK_MSG, "WhatsApp Jay about the Tender-Ready Pack")}
+${waMain(PACK_MSG, "WhatsApp me about the Tender-Ready Pack")}
 <p class="small">Our fee is for our help only. CSD registration itself is free, and any CIDB fees are paid to the CIDB. You use your own logins and your documents stay private. We never promise a tender win.</p>
 </section>
 <section class="plan-group" aria-labelledby="g-yourself">
@@ -309,7 +309,7 @@ ${opt("partner", "Partner: tender alerts for our members or clients")}
 function helpPage(siteUrl) {
   const body = `<h1 class="page-h">Get help with a tender</h1>
 <p class="lede">Tell us what you need and we'll get back to you within one working day.</p>
-${waMain("Hi Jay, I'd like help with a tender bid", "WhatsApp Jay about Bid Help")}
+${waMain("Hi, I'd like help with a tender bid", "WhatsApp me about Bid Help")}
 <h2 class="page-h form-h" id="request">Or send a request</h2>
 ${helpForm("bid")}
 <article class="card prose">
@@ -352,7 +352,7 @@ ${packHtml()}
 <tr><th scope="row">CSD and CIDB together</th><td>${P.csdCidb}</td></tr>
 <tr><th scope="row">Company profile</th><td>${P.companyProfile}</td></tr>
 </tbody></table>
-${waLink("Hi Jay, I need help with CSD or CIDB registration") ? `<a class="btn wide" href="${waLink("Hi Jay, I need help with CSD or CIDB registration")}" target="_blank" rel="noopener">${icon("./", "chat")}<span>WhatsApp Jay about CSD or CIDB</span></a>` : ""}
+${waLink("Hi, I need help with CSD or CIDB registration") ? `<a class="btn wide" href="${waLink("Hi, I need help with CSD or CIDB registration")}" target="_blank" rel="noopener">${icon("./", "chat")}<span>WhatsApp me about CSD or CIDB</span></a>` : ""}
 <p class="small">Our fee is for our help only. Registration on the CSD is free; any CIDB fees are paid to the CIDB directly. Approval is decided by the CSD and CIDB, not by us. You use your own logins, and your documents stay private.</p>
 <h2 class="page-h form-h" id="request">Or send a request</h2>
 ${helpForm("csd")}`;
