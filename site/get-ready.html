@@ -3,43 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <title>TenderFind SA | Get Tender-Ready. Find Tenders. Get Real Help to Bid.</title>
 <meta name="description" content="Daily South African government tender alerts plus hands-on WhatsApp help with CSD and CIDB registration, tax compliance, B-BBEE affidavits and bid documents. Plain language. A real person.">
 <style>
+/* Same fonts and colours as site/style.css */
+@font-face{font-family:"Archivo Expanded";src:url("fonts/archivo-expanded-800.woff") format("woff");font-weight:800;font-display:swap}
+@font-face{font-family:"Public Sans";src:url("fonts/public-sans-400.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Public Sans";src:url("fonts/public-sans-600.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Public Sans";src:url("fonts/public-sans-700.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Public Sans";src:url("fonts/public-sans-800.woff2") format("woff2");font-weight:800;font-display:swap}
 :root{
-  --ink:#0f1b2d;--ink2:#3b4a5e;--muted:#6b7a8f;--line:#e3e8ef;
-  --bg:#ffffff;--soft:#f5f7fa;--brand:#0a7d4f;--brand2:#085f3c;--brandsoft:#e7f5ee;
-  --gold:#f2b705;--goldsoft:#fff6d6;--radius:14px;--max:1120px;
+  --ink:#14201b;--ink2:#33403a;--muted:#55605a;--line:#d8d4c7;
+  --bg:#f7f5ef;--surface:#ffffff;--soft:#efece3;--brand:#1d4a37;--brand2:#143629;--brandsoft:#e8efea;
+  --gold:#ecdca0;--goldpress:#e0cd86;--mark:#c9a227;--goldsoft:#f6efd2;--radius:3px;--max:1160px;
+  --f-display:"Archivo Expanded","Arial Black",Arial,sans-serif;
+  --f-text:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px}
+body{font-family:var(--f-text);color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px}
 a{color:inherit}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-h1,h2,h3{line-height:1.2;letter-spacing:-.01em}
-h1{font-size:clamp(2rem,5vw,3.3rem);font-weight:800}
-h2{font-size:clamp(1.6rem,3.5vw,2.3rem);font-weight:800;margin-bottom:12px}
+h1,h2,h3{line-height:1.15;letter-spacing:-.01em}
+h1,h2{font-family:var(--f-display);text-wrap:balance}
+h1{font-size:clamp(1.6rem,1.2rem + 2vw,2.75rem);font-weight:800}
+h2{font-size:clamp(1.3rem,1.05rem + 1vw,1.85rem);font-weight:800;margin-bottom:12px}
 h3{font-size:1.15rem;font-weight:700}
 .lead{font-size:1.15rem;color:var(--ink2)}
-.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--brand);background:var(--brandsoft);padding:6px 12px;border-radius:99px;margin-bottom:16px}
+.eyebrow{display:inline-block;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px;padding-bottom:4px;border-bottom:2px solid var(--mark)}
 section{padding:80px 0}
 .center{text-align:center}
 .sub{max-width:680px;margin:0 auto 40px;color:var(--ink2)}
 
 /* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 26px;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:1rem;transition:transform .15s,background .15s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 26px;border-radius:var(--radius);font-weight:700;text-decoration:none;border:2px solid var(--brand);cursor:pointer;font-size:1rem;transition:transform .15s,background .15s}
 .btn:hover{transform:translateY(-1px)}
 .btn-primary{background:var(--brand);color:#fff}
 .btn-primary:hover{background:var(--brand2)}
-.btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
-.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-ghost{background:var(--surface);color:var(--brand)}
+.btn-gold{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.btn-gold:hover{background:var(--goldpress)}
 .btn-block{width:100%}
 .wa-ico{width:20px;height:20px;fill:currentColor}
 
 /* nav */
-nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav{position:sticky;top:0;z-index:50;background:rgba(247,245,239,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
-.logo{font-weight:800;font-size:1.25rem;text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo{font-family:var(--f-display);font-weight:800;font-size:1.05rem;text-decoration:none;display:flex;align-items:center;gap:8px;color:var(--ink)}
 .logo span{color:var(--brand)}
 .logo-mark{width:30px;height:30px;border-radius:8px;background:var(--brand);display:grid;place-items:center;color:#fff;font-size:.9rem}
 .navlinks{display:flex;gap:26px;align-items:center}
@@ -49,7 +60,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 @media(max-width:860px){.navlinks a:not(.btn){display:none}}
 
 /* hero */
-.hero{padding:70px 0 80px;background:linear-gradient(180deg,var(--brandsoft) 0%,#fff 100%)}
+.hero{padding:70px 0 80px;background:var(--bg);border-bottom:1px solid var(--line)}
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
 .hero h1 em{font-style:normal;color:var(--brand)}
 .hero .lead{margin:20px 0 30px}
@@ -57,13 +68,13 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;color:var(--ink2);font-size:.93rem}
 .trust div{display:flex;align-items:center;gap:7px}
 .tick{color:var(--brand);font-weight:900}
-.hero-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 20px 50px rgba(15,27,45,.09)}
+.hero-card{background:var(--surface);border:2px solid var(--brand);border-radius:var(--radius);padding:26px}
 .hero-card h3{margin-bottom:4px}
 .hero-card .small{color:var(--muted);font-size:.88rem;margin-bottom:16px}
 .alert-item{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px;font-size:.92rem}
 .alert-item b{display:block}
 .alert-item .meta{color:var(--muted);font-size:.82rem;margin-top:2px}
-.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:99px;background:var(--goldsoft);color:#7a5c00;margin-right:6px}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:var(--radius);background:var(--gold);color:var(--ink);margin-right:6px}
 .tag.g{background:var(--brandsoft);color:var(--brand2)}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
 
@@ -75,14 +86,14 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 @media(max-width:800px){.pain-grid{grid-template-columns:1fr}}
 
 /* main offer */
-.offer{background:var(--ink);color:#fff;border-radius:22px;padding:56px;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
-.offer .eyebrow{background:rgba(242,183,5,.15);color:var(--gold)}
-.offer h2{color:#fff}
-.offer p{color:#c9d3e0}
+.offer{background:var(--brand);color:#f7f5ef;border-radius:var(--radius);padding:56px;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.offer .eyebrow{color:#c9d6cf}
+.offer h2{color:#f7f5ef}
+.offer p{color:#c9d6cf}
 .offer ul{list-style:none;margin:24px 0}
-.offer li{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.1);display:flex;gap:12px}
+.offer li{padding:9px 0;border-bottom:1px solid rgba(247,245,239,.15);display:flex;gap:12px}
 .offer li .tick{color:var(--gold)}
-.price-box{background:#fff;color:var(--ink);border-radius:var(--radius);padding:32px;text-align:center}
+.price-box{background:var(--surface);color:var(--ink);border-radius:var(--radius);padding:32px;text-align:center}
 .price-box .was{color:var(--muted);font-size:.9rem}
 .price-box .price{font-size:3.2rem;font-weight:800;line-height:1;margin:8px 0}
 .price-box .price small{font-size:1rem;font-weight:600;color:var(--muted)}
@@ -91,20 +102,20 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 
 /* services */
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.svc{border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;background:#fff}
+.svc{border:1px solid var(--line);border-top:2px solid var(--brand);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;background:var(--surface)}
 .svc .p{font-size:1.6rem;font-weight:800;margin:10px 0 6px}
 .svc .p small{font-size:.9rem;font-weight:600;color:var(--muted)}
 .svc p{color:var(--ink2);font-size:.95rem;flex:1;margin-bottom:18px}
 .svc .btn{padding:11px 16px;font-size:.92rem}
 @media(max-width:900px){.svc-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.svc-grid{grid-template-columns:1fr}}
-.addon{margin-top:22px;background:var(--goldsoft);border-radius:var(--radius);padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.addon{margin-top:22px;background:var(--goldsoft);border:1px solid var(--gold);border-radius:var(--radius);padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
 
 /* alerts plan */
 .plans{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:860px;margin:0 auto}
-.plan{border:2px solid var(--line);border-radius:var(--radius);padding:32px;background:#fff}
+.plan{border:2px solid var(--line);border-radius:var(--radius);padding:32px;background:var(--surface)}
 .plan.hot{border-color:var(--brand);position:relative}
-.plan.hot::before{content:"Most popular";position:absolute;top:-13px;left:24px;background:var(--brand);color:#fff;font-size:.75rem;font-weight:700;padding:4px 12px;border-radius:99px}
+.plan.hot::before{content:"Most popular";position:absolute;top:-13px;left:24px;background:var(--brand);color:#fff;font-size:.75rem;font-weight:700;padding:4px 12px;border-radius:var(--radius)}
 .plan .p{font-size:2.4rem;font-weight:800;margin:8px 0}
 .plan .p small{font-size:1rem;color:var(--muted);font-weight:600}
 .plan ul{list-style:none;margin:18px 0 24px}
@@ -113,7 +124,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 
 /* steps */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
-.step{padding:24px;border-radius:var(--radius);background:#fff;border:1px solid var(--line)}
+.step{padding:24px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--line)}
 .step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;margin-bottom:14px}
 .step p{color:var(--ink2);font-size:.95rem;margin-top:6px}
 @media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
@@ -122,14 +133,14 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 /* workshop */
 .ws{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .dates{display:grid;gap:12px}
-.date{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:12px;padding:16px 20px;background:#fff}
+.date{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;background:var(--surface)}
 .date.past{opacity:.45}
 .date b{font-size:1.05rem}
 .date .btn{padding:9px 16px;font-size:.9rem}
 @media(max-width:860px){.ws{grid-template-columns:1fr}}
 
 /* compare */
-table{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;background:var(--surface);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
 th,td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line);font-size:.95rem}
 th{background:var(--soft);font-weight:700}
 td.us{background:var(--brandsoft);font-weight:700;color:var(--brand2)}
@@ -137,12 +148,12 @@ td.us{background:var(--brandsoft);font-weight:700;color:var(--brand2)}
 
 /* about */
 .about{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;max-width:860px;margin:0 auto}
-.avatar{width:120px;height:120px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:2.4rem;font-weight:800}
+.avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;border:2px solid var(--brand)}
 @media(max-width:600px){.about{grid-template-columns:1fr;text-align:center}.avatar{margin:0 auto}}
 
 /* promise */
 .promise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.promise{padding:22px;border-left:4px solid var(--brand);background:var(--soft);border-radius:0 12px 12px 0}
+.promise{padding:22px;border-left:4px solid var(--brand);background:var(--soft);border-radius:0 var(--radius) var(--radius) 0}
 .promise p{color:var(--ink2);font-size:.94rem;margin-top:4px}
 @media(max-width:800px){.promise-grid{grid-template-columns:1fr}}
 
@@ -157,26 +168,26 @@ details p{margin-top:12px;color:var(--ink2)}
 
 /* order form */
 .order{background:var(--soft)}
-.form{max-width:640px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px}
+.form{max-width:640px;margin:0 auto;background:var(--surface);border:2px solid var(--brand);border-radius:var(--radius);padding:34px}
 .field{margin-bottom:18px}
 label{display:block;font-weight:700;font-size:.93rem;margin-bottom:6px}
-input,select,textarea{width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;background:#fff;color:var(--ink)}
+input,select,textarea{width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:var(--radius);font:inherit;font-size:1rem;background:var(--surface);color:var(--ink)}
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--brand)}
 .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media(max-width:560px){.row2{grid-template-columns:1fr}}
-.total{display:flex;justify-content:space-between;align-items:center;background:var(--brandsoft);border-radius:10px;padding:14px 18px;margin:6px 0 20px;font-weight:700}
+.total{display:flex;justify-content:space-between;align-items:center;background:var(--brandsoft);border-radius:var(--radius);padding:14px 18px;margin:6px 0 20px;font-weight:700}
 .total .amt{font-size:1.5rem;color:var(--brand2)}
 .check{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:.9rem;color:var(--ink2)}
 .check input{width:auto;margin-top:4px}
-.err{color:#c0392b;font-size:.88rem;margin-top:8px;display:none}
+.err{color:#b42318;font-size:.88rem;margin-top:8px;display:none}
 .form-note{font-size:.83rem;color:var(--muted);margin-top:14px;text-align:center}
 
 /* final cta */
 .final{background:var(--brand);color:#fff;text-align:center}
 .final h2{color:#fff}
-.final p{color:#d6f0e3;max-width:600px;margin:0 auto 28px}
+.final p{color:#c9d6cf;max-width:600px;margin:0 auto 28px}
 
-footer{background:var(--ink);color:#aeb9c8;padding:46px 0 30px;font-size:.9rem}
+footer{background:var(--brand2);color:#c9d6cf;padding:46px 0 30px;font-size:.9rem}
 .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
 footer h4{color:#fff;margin-bottom:10px}
 footer a{text-decoration:none;display:block;padding:3px 0}
@@ -185,7 +196,7 @@ footer a:hover{color:#fff}
 @media(max-width:760px){.foot{grid-template-columns:1fr}}
 
 /* floating whatsapp */
-.float-wa{position:fixed;right:18px;bottom:18px;z-index:60;background:#25d366;color:#fff;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 25px rgba(0,0,0,.2);text-decoration:none}
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:60;background:var(--brand);color:#fff;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 25px rgba(0,0,0,.2);text-decoration:none}
 .float-wa svg{width:30px;height:30px;fill:#fff}
 </style>
 </head>
@@ -195,7 +206,7 @@ footer a:hover{color:#fff}
 
 <nav>
   <div class="wrap">
-    <a href="#top" class="logo"><div class="logo-mark">TF</div>TenderFind<span>SA</span></a>
+    <a href="/" class="logo" aria-label="TenderFind SA home"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="4" fill="#1d4a37"/><g transform="rotate(-4 16 18)"><rect x="8.5" y="9.5" width="15" height="16" rx="1" fill="#f7f5ef"/><path d="M11.5 15h9M11.5 18.5h9M11.5 22h5.5" stroke="#1d4a37" stroke-width="1.7" stroke-linecap="round"/></g><circle cx="16" cy="9.5" r="3" fill="#c9a227"/></svg>TenderFind <span>SA</span></a>
     <div class="navlinks">
       <a href="#pack">Tender-Ready Pack</a>
       <a href="#services">Services</a>
@@ -263,7 +274,7 @@ footer a:hover{color:#fff}
         </ul>
       </div>
       <div class="price-box">
-        <div class="was">Bought separately: R2,547+</div>
+        <div class="was">CSD (R300) + company profile (R800) + 3 months alerts (R447) = R1,547, plus tax PIN, B-BBEE and document help included</div>
         <div class="price">R1,500<small> once-off</small></div>
         <div class="note">Need it fast? Add 48-hour Express for +R200.</div>
         <a href="#order" class="btn btn-primary btn-block" data-pick="pack">Get my Tender-Ready Pack</a>
@@ -353,7 +364,7 @@ footer a:hover{color:#fff}
 <section>
   <div class="wrap">
     <div class="about">
-      <div class="avatar">JB</div>
+      <img class="avatar" src="img/jay-kgope.jpg" width="120" height="120" alt="J Boipelo Kgope">
       <div>
         <span class="eyebrow">Who you'll deal with</span>
         <h2>Hi, I'm J Boipelo Kgope</h2>
@@ -422,7 +433,7 @@ footer a:hover{color:#fff}
       <div class="field"><label class="check"><input type="checkbox" id="consent" required> I agree that TenderFind SA may contact me about this request. My details are kept private under POPIA.</label></div>
       <button class="btn btn-primary btn-block" type="submit"><svg class="wa-ico"><use href="#wa"/></svg>Send on WhatsApp</button>
       <p class="err" id="err">Please add your name and tick the consent box.</p>
-      <p class="form-note">Prefer email? <a href="mailto:jobkgope1@gmail.com">jobkgope1@gmail.com</a></p>
+      <p class="form-note">Prefer email? <a href="mailto:info@tenderfind.co.za">info@tenderfind.co.za</a></p>
     </form>
   </div>
 </section>
@@ -440,7 +451,7 @@ footer a:hover{color:#fff}
     <div class="foot">
       <div><h4>TenderFind SA</h4><p>Tender alerts and hands-on help for small South African businesses.</p></div>
       <div><h4>Services</h4><a href="#pack">Tender-Ready Pack</a><a href="#services">Registrations</a><a href="#services">Bid Help</a><a href="#alerts">Tender alerts</a><a href="#workshop">Workshop</a></div>
-      <div><h4>Contact</h4><a class="wa-link" data-msg="Hi TenderFind SA" href="#">WhatsApp: 069 289 8507</a><a href="mailto:jobkgope1@gmail.com">jobkgope1@gmail.com</a><a href="/">tenderfind.co.za</a></div>
+      <div><h4>Contact</h4><a class="wa-link" data-msg="Hi TenderFind SA" href="#">WhatsApp: 069 289 8507</a><a href="mailto:info@tenderfind.co.za">info@tenderfind.co.za</a><a href="/">tenderfind.co.za</a></div>
     </div>
     <div class="legal">TenderFind SA is an independent service and is not part of National Treasury, the CSD, SARS, CIDB or any government department. Registering on the CSD is free; our fees are for assistance. We do not guarantee the award of any tender. Personal information is handled in line with POPIA.<br>© <span id="yr"></span> TenderFind SA. All rights reserved.</div>
   </div>
