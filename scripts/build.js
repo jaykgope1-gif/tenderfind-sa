@@ -153,7 +153,7 @@ function writePages(open, stored, now) {
   for (const p of landing) fs.writeFileSync(path.join(LANDING, p.file), p.html);
 
   const today = now.toISOString().slice(0, 10);
-  const extra = ["help.html", "registration-help.html", "terms.html", "partners.html", ...landing.map((p) => (p.file === "index.html" ? "tenders/" : `tenders/${p.file}`))];
+  const extra = ["get-ready.html", "help.html", "registration-help.html", "terms.html", "partners.html", ...landing.map((p) => (p.file === "index.html" ? "tenders/" : `tenders/${p.file}`))];
   fs.writeFileSync(path.join(SITE, "sitemap.xml"), pages.sitemap(SITE_URL, listed, today, extra));
   fs.writeFileSync(path.join(SITE, "robots.txt"), pages.robots(SITE_URL));
   fs.writeFileSync(path.join(SITE, "404.html"), pages.notFound(SITE_URL));

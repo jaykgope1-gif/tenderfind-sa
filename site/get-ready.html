@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TenderFind SA | Get Tender-Ready. Find Tenders. Get Real Help to Bid.</title>
+<meta name="description" content="Daily South African government tender alerts plus hands-on WhatsApp help with CSD and CIDB registration, tax compliance, B-BBEE affidavits and bid documents. Plain language. A real person.">
+<style>
+:root{
+  --ink:#0f1b2d;--ink2:#3b4a5e;--muted:#6b7a8f;--line:#e3e8ef;
+  --bg:#ffffff;--soft:#f5f7fa;--brand:#0a7d4f;--brand2:#085f3c;--brandsoft:#e7f5ee;
+  --gold:#f2b705;--goldsoft:#fff6d6;--radius:14px;--max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.2;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,5vw,3.3rem);font-weight:800}
+h2{font-size:clamp(1.6rem,3.5vw,2.3rem);font-weight:800;margin-bottom:12px}
+h3{font-size:1.15rem;font-weight:700}
+.lead{font-size:1.15rem;color:var(--ink2)}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--brand);background:var(--brandsoft);padding:6px 12px;border-radius:99px;margin-bottom:16px}
+section{padding:80px 0}
+.center{text-align:center}
+.sub{max-width:680px;margin:0 auto 40px;color:var(--ink2)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 26px;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:1rem;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand2)}
+.btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-block{width:100%}
+.wa-ico{width:20px;height:20px;fill:currentColor}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-weight:800;font-size:1.25rem;text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo span{color:var(--brand)}
+.logo-mark{width:30px;height:30px;border-radius:8px;background:var(--brand);display:grid;place-items:center;color:#fff;font-size:.9rem}
+.navlinks{display:flex;gap:26px;align-items:center}
+.navlinks a{text-decoration:none;color:var(--ink2);font-weight:600;font-size:.95rem}
+.navlinks a:hover{color:var(--brand)}
+.navlinks .btn{padding:10px 18px;color:#fff}
+@media(max-width:860px){.navlinks a:not(.btn){display:none}}
+
+/* hero */
+.hero{padding:70px 0 80px;background:linear-gradient(180deg,var(--brandsoft) 0%,#fff 100%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.hero h1 em{font-style:normal;color:var(--brand)}
+.hero .lead{margin:20px 0 30px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;color:var(--ink2);font-size:.93rem}
+.trust div{display:flex;align-items:center;gap:7px}
+.tick{color:var(--brand);font-weight:900}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 20px 50px rgba(15,27,45,.09)}
+.hero-card h3{margin-bottom:4px}
+.hero-card .small{color:var(--muted);font-size:.88rem;margin-bottom:16px}
+.alert-item{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px;font-size:.92rem}
+.alert-item b{display:block}
+.alert-item .meta{color:var(--muted);font-size:.82rem;margin-top:2px}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:99px;background:var(--goldsoft);color:#7a5c00;margin-right:6px}
+.tag.g{background:var(--brandsoft);color:var(--brand2)}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+
+/* problem */
+.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pain{background:var(--soft);border-radius:var(--radius);padding:26px}
+.pain .q{font-size:1.6rem;margin-bottom:10px}
+.pain p{color:var(--ink2);margin-top:6px}
+@media(max-width:800px){.pain-grid{grid-template-columns:1fr}}
+
+/* main offer */
+.offer{background:var(--ink);color:#fff;border-radius:22px;padding:56px;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.offer .eyebrow{background:rgba(242,183,5,.15);color:var(--gold)}
+.offer h2{color:#fff}
+.offer p{color:#c9d3e0}
+.offer ul{list-style:none;margin:24px 0}
+.offer li{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.1);display:flex;gap:12px}
+.offer li .tick{color:var(--gold)}
+.price-box{background:#fff;color:var(--ink);border-radius:var(--radius);padding:32px;text-align:center}
+.price-box .was{color:var(--muted);font-size:.9rem}
+.price-box .price{font-size:3.2rem;font-weight:800;line-height:1;margin:8px 0}
+.price-box .price small{font-size:1rem;font-weight:600;color:var(--muted)}
+.price-box .note{font-size:.85rem;color:var(--muted);margin:12px 0 20px}
+@media(max-width:900px){.offer{grid-template-columns:1fr;padding:32px}}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;background:#fff}
+.svc .p{font-size:1.6rem;font-weight:800;margin:10px 0 6px}
+.svc .p small{font-size:.9rem;font-weight:600;color:var(--muted)}
+.svc p{color:var(--ink2);font-size:.95rem;flex:1;margin-bottom:18px}
+.svc .btn{padding:11px 16px;font-size:.92rem}
+@media(max-width:900px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.svc-grid{grid-template-columns:1fr}}
+.addon{margin-top:22px;background:var(--goldsoft);border-radius:var(--radius);padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+
+/* alerts plan */
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:860px;margin:0 auto}
+.plan{border:2px solid var(--line);border-radius:var(--radius);padding:32px;background:#fff}
+.plan.hot{border-color:var(--brand);position:relative}
+.plan.hot::before{content:"Most popular";position:absolute;top:-13px;left:24px;background:var(--brand);color:#fff;font-size:.75rem;font-weight:700;padding:4px 12px;border-radius:99px}
+.plan .p{font-size:2.4rem;font-weight:800;margin:8px 0}
+.plan .p small{font-size:1rem;color:var(--muted);font-weight:600}
+.plan ul{list-style:none;margin:18px 0 24px}
+.plan li{padding:6px 0;display:flex;gap:10px;color:var(--ink2)}
+@media(max-width:700px){.plans{grid-template-columns:1fr}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.step{padding:24px;border-radius:var(--radius);background:#fff;border:1px solid var(--line)}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;margin-bottom:14px}
+.step p{color:var(--ink2);font-size:.95rem;margin-top:6px}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
+
+/* workshop */
+.ws{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.dates{display:grid;gap:12px}
+.date{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:12px;padding:16px 20px;background:#fff}
+.date.past{opacity:.45}
+.date b{font-size:1.05rem}
+.date .btn{padding:9px 16px;font-size:.9rem}
+@media(max-width:860px){.ws{grid-template-columns:1fr}}
+
+/* compare */
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+th,td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line);font-size:.95rem}
+th{background:var(--soft);font-weight:700}
+td.us{background:var(--brandsoft);font-weight:700;color:var(--brand2)}
+.tablewrap{overflow-x:auto}
+
+/* about */
+.about{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;max-width:860px;margin:0 auto}
+.avatar{width:120px;height:120px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:2.4rem;font-weight:800}
+@media(max-width:600px){.about{grid-template-columns:1fr;text-align:center}.avatar{margin:0 auto}}
+
+/* promise */
+.promise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.promise{padding:22px;border-left:4px solid var(--brand);background:var(--soft);border-radius:0 12px 12px 0}
+.promise p{color:var(--ink2);font-size:.94rem;margin-top:4px}
+@media(max-width:800px){.promise-grid{grid-template-columns:1fr}}
+
+/* faq */
+.faq{max-width:820px;margin:0 auto}
+details{border-bottom:1px solid var(--line);padding:20px 0}
+summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-size:1.05rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.4rem;color:var(--brand);line-height:1}
+details[open] summary::after{content:"−"}
+details p{margin-top:12px;color:var(--ink2)}
+
+/* order form */
+.order{background:var(--soft)}
+.form{max-width:640px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px}
+.field{margin-bottom:18px}
+label{display:block;font-weight:700;font-size:.93rem;margin-bottom:6px}
+input,select,textarea{width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:1rem;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--brand)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.row2{grid-template-columns:1fr}}
+.total{display:flex;justify-content:space-between;align-items:center;background:var(--brandsoft);border-radius:10px;padding:14px 18px;margin:6px 0 20px;font-weight:700}
+.total .amt{font-size:1.5rem;color:var(--brand2)}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:.9rem;color:var(--ink2)}
+.check input{width:auto;margin-top:4px}
+.err{color:#c0392b;font-size:.88rem;margin-top:8px;display:none}
+.form-note{font-size:.83rem;color:var(--muted);margin-top:14px;text-align:center}
+
+/* final cta */
+.final{background:var(--brand);color:#fff;text-align:center}
+.final h2{color:#fff}
+.final p{color:#d6f0e3;max-width:600px;margin:0 auto 28px}
+
+footer{background:var(--ink);color:#aeb9c8;padding:46px 0 30px;font-size:.9rem}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;margin-bottom:10px}
+footer a{text-decoration:none;display:block;padding:3px 0}
+footer a:hover{color:#fff}
+.legal{border-top:1px solid rgba(255,255,255,.1);margin-top:30px;padding-top:20px;font-size:.8rem;line-height:1.7}
+@media(max-width:760px){.foot{grid-template-columns:1fr}}
+
+/* floating whatsapp */
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:60;background:#25d366;color:#fff;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 25px rgba(0,0,0,.2);text-decoration:none}
+.float-wa svg{width:30px;height:30px;fill:#fff}
+</style>
+</head>
+<body>
+
+<svg style="display:none"><symbol id="wa" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></symbol></svg>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="logo"><div class="logo-mark">TF</div>TenderFind<span>SA</span></a>
+    <div class="navlinks">
+      <a href="#pack">Tender-Ready Pack</a>
+      <a href="#services">Services</a>
+      <a href="#alerts">Alerts</a>
+      <a href="#workshop">Workshop</a>
+      <a href="#faq">FAQ</a>
+      <a href="#order" class="btn btn-primary">Get started</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">For small South African businesses</span>
+      <h1>Stop missing tenders.<br><em>Get tender-ready</em> with a real person helping you.</h1>
+      <p class="lead">We find government tenders that fit your business, help you get registered and compliant, and guide you through the bid documents. In plain language, on WhatsApp.</p>
+      <div class="hero-ctas">
+        <a href="#pack" class="btn btn-primary">Get the Tender-Ready Pack — R1,500</a>
+        <a class="btn btn-ghost wa-link" data-msg="Hi, I want to know more about getting tender-ready." href="#"><svg class="wa-ico"><use href="#wa"/></svg>Ask on WhatsApp</a>
+      </div>
+      <div class="trust">
+        <div><span class="tick">✓</span> Reply within 1 hour (business hours)</div>
+        <div><span class="tick">✓</span> You keep your own logins</div>
+        <div><span class="tick">✓</span> POPIA: your documents stay private</div>
+      </div>
+    </div>
+    <div class="hero-card" aria-label="Example of a daily alert email">
+      <h3>Your daily tender alert</h3>
+      <p class="small">Example of what lands in your inbox each morning</p>
+      <div class="alert-item"><span class="tag g">Cleaning</span><span class="tag">RFQ</span><b>Office cleaning services — 12 months</b><div class="meta">Municipality · Closes in 9 days · CSD required</div></div>
+      <div class="alert-item"><span class="tag g">Construction</span><span class="tag">CIDB 1GB</span><b>Repairs to community hall roof</b><div class="meta">Provincial dept · Closes in 14 days</div></div>
+      <div class="alert-item"><span class="tag g">Catering</span><span class="tag">RFQ</span><b>Catering for training workshops</b><div class="meta">Public entity · Closes in 6 days</div></div>
+      <p class="small" style="margin:10px 0 0">Filtered to your trade and province. No noise.</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">Sound familiar?</span><h2>Tenders feel impossible when you're on your own</h2>
+    <p class="sub">The work is out there. Most small businesses lose out before they even start, because of paperwork, not because of their skills.</p></div>
+    <div class="pain-grid">
+      <div class="pain"><div class="q">😩</div><h3>"I don't know where to find them"</h3><p>Tenders are spread across eTenders, municipalities and departments. Checking every site every day is a full-time job.</p></div>
+      <div class="pain"><div class="q">📄</div><h3>"The paperwork confuses me"</h3><p>CSD, tax PIN, B-BBEE, SBD forms, CIDB grading. One missing document and your bid is out.</p></div>
+      <div class="pain"><div class="q">📵</div><h3>"Nobody explains it to me"</h3><p>Other sites send you a list and leave you alone. You need someone who answers your questions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pack" style="padding-top:0">
+  <div class="wrap">
+    <div class="offer">
+      <div>
+        <span class="eyebrow">Main offer</span>
+        <h2>The Tender-Ready Pack</h2>
+        <p>Everything a small business needs before it can bid, done with you step by step. Most clients finish in about a week, depending on SARS and other offices.</p>
+        <ul>
+          <li><span class="tick">✓</span>CSD (Central Supplier Database) registration, done with you</li>
+          <li><span class="tick">✓</span>Help getting your SARS Tax Compliance Status PIN</li>
+          <li><span class="tick">✓</span>B-BBEE sworn affidavit (for qualifying small businesses)</li>
+          <li><span class="tick">✓</span>Full document check, so nothing is missing</li>
+          <li><span class="tick">✓</span>1-page professional company profile</li>
+          <li><span class="tick">✓</span>3 months of daily tender alerts free (worth R447)</li>
+        </ul>
+      </div>
+      <div class="price-box">
+        <div class="was">Bought separately: R2,547+</div>
+        <div class="price">R1,500<small> once-off</small></div>
+        <div class="note">Need it fast? Add 48-hour Express for +R200.</div>
+        <a href="#order" class="btn btn-primary btn-block" data-pick="pack">Get my Tender-Ready Pack</a>
+        <a class="btn btn-ghost btn-block wa-link" style="margin-top:10px" data-msg="Hi, I'm interested in the Tender-Ready Pack (R1,500). Can you tell me more?" href="#"><svg class="wa-ico"><use href="#wa"/></svg>Questions? WhatsApp me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="background:var(--soft)">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">All services</span><h2>Only need one thing? Pick it here.</h2>
+    <p class="sub">Clear, fixed prices. Payment before we start, so there are no surprises for either of us.</p></div>
+    <div class="svc-grid">
+      <div class="svc"><h3>CSD Registration</h3><div class="p">R300</div><p>Get onto the Central Supplier Database so government can buy from you. Done with you, using your own email and cellphone.</p><a href="#order" class="btn btn-ghost" data-pick="csd">Choose</a></div>
+      <div class="svc"><h3>CIDB Registration</h3><div class="p">R500</div><p>Needed for construction and building tenders. We help you apply for the right grading.</p><a href="#order" class="btn btn-ghost" data-pick="cidb">Choose</a></div>
+      <div class="svc"><h3>CSD + CIDB Combo</h3><div class="p">R800</div><p>Both registrations together for construction businesses. One person handles it all, and you get a better price.</p><a href="#order" class="btn btn-ghost" data-pick="combo">Choose</a></div>
+      <div class="svc"><h3>Company Profile</h3><div class="p">R800</div><p>A clean, professional company profile you can attach to bids and send to clients.</p><a href="#order" class="btn btn-ghost" data-pick="profile">Choose</a></div>
+      <div class="svc"><h3>Bid Help — RFQs</h3><div class="p"><small>from </small>R1,500</div><p>We go through the quotation request with you, check every form and help you submit a complete, on-time response.</p><a href="#order" class="btn btn-ghost" data-pick="rfq">Choose</a></div>
+      <div class="svc"><h3>Tender Desk</h3><div class="p"><small>from </small>R3,500<small>/month</small></div><p>Your outsourced tender assistant. We watch tenders, keep your documents current and help with your bids every month.</p><a href="#order" class="btn btn-ghost" data-pick="desk">Choose</a></div>
+    </div>
+    <div class="addon">
+      <div><b>Group or association?</b> Register 10+ members on CSD at R250 each.</div>
+      <a class="btn btn-gold wa-link" data-msg="Hi, I'd like a group deal for CSD registration for 10+ members." href="#">Ask for a group deal</a>
+    </div>
+  </div>
+</section>
+
+<section id="alerts">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">Tender alerts</span><h2>New tenders in your inbox every morning</h2>
+    <p class="sub">We check the tender sites daily and send you only the ones that match your trade and province.</p></div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free trial</h3><div class="p">R0<small> / 14 days</small></div>
+        <ul><li><span class="tick">✓</span>Full daily alerts</li><li><span class="tick">✓</span>Choose your trades and provinces</li><li><span class="tick">✓</span>No card needed to start</li></ul>
+        <a href="signup/" class="btn btn-ghost btn-block">Start free</a>
+      </div>
+      <div class="plan hot">
+        <h3>Alerts</h3><div class="p">R149<small> / month</small></div>
+        <ul><li><span class="tick">✓</span>Daily alerts by email</li><li><span class="tick">✓</span>Filtered by trade and province</li><li><span class="tick">✓</span>Ask questions on WhatsApp</li><li><span class="tick">✓</span>Cancel anytime</li></ul>
+        <a href="signup/" class="btn btn-primary btn-block">Get alerts</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--soft)">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">How it works</span><h2>Four simple steps</h2><p class="sub">No jargon. You always know what's happening next.</p></div>
+    <div class="steps">
+      <div class="step"><h3>Message us</h3><p>Fill in the form or WhatsApp us. We reply within an hour in business hours.</p></div>
+      <div class="step"><h3>Pay & send documents</h3><p>We send a clear list of what we need. You pay, then we start the same day.</p></div>
+      <div class="step"><h3>We do it with you</h3><p>We work through each step together, on your own accounts. You stay in control.</p></div>
+      <div class="step"><h3>Start bidding</h3><p>You get alerts, a document checklist and help whenever a good tender comes up.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="workshop">
+  <div class="wrap ws">
+    <div>
+      <span class="eyebrow">Live workshop</span>
+      <h2>"Get Tender-Ready" workshop</h2>
+      <p class="lead">Two hours. Learn how tenders work, what documents you need, where to find them and the mistakes that get bids thrown out. Bring your questions.</p>
+      <p style="margin-top:16px;font-size:1.3rem"><b>R350</b> <span style="color:var(--muted)">· early bird R250</span></p>
+    </div>
+    <div class="dates" id="dates"></div>
+  </div>
+</section>
+
+<section style="background:var(--soft)">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">Why TenderFind SA</span><h2>Other sites give you a list. We give you a helper.</h2></div>
+    <div class="tablewrap"><table>
+      <tr><th></th><th>Typical tender list sites</th><th>TenderFind SA</th></tr>
+      <tr><td>Daily tender alerts</td><td>✓</td><td class="us">✓</td></tr>
+      <tr><td>Filtered to your trade and province</td><td>Sometimes</td><td class="us">✓</td></tr>
+      <tr><td>Real person on WhatsApp</td><td>✗</td><td class="us">✓</td></tr>
+      <tr><td>Help with CSD, tax PIN, B-BBEE</td><td>✗</td><td class="us">✓</td></tr>
+      <tr><td>Help filling in bid documents</td><td>✗</td><td class="us">✓</td></tr>
+      <tr><td>Plain-language explanations</td><td>✗</td><td class="us">✓</td></tr>
+    </table></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="about">
+      <div class="avatar">JB</div>
+      <div>
+        <span class="eyebrow">Who you'll deal with</span>
+        <h2>Hi, I'm J Boipelo Kgope</h2>
+        <p class="lead">I started TenderFind SA because small businesses keep losing work to paperwork, not to better competitors. When you message TenderFind, you talk to me, not a call centre. I'll explain every step until it makes sense.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="center"><h2>Our promises to you</h2><p class="sub">Honest rules we work by, every time.</p></div>
+    <div class="promise-grid">
+      <div class="promise"><h3>Honest, always</h3><p>Nobody can promise you'll win a tender, and we never will. We make sure your bid is complete and correct.</p></div>
+      <div class="promise"><h3>Your accounts, your logins</h3><p>We register with you, on your own email, number and passwords. You own everything.</p></div>
+      <div class="promise"><h3>Private documents</h3><p>Your documents are kept private under POPIA and deleted when the job is done.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="background:var(--soft)">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">Questions</span><h2>Frequently asked questions</h2></div>
+    <div class="faq">
+      <details><summary>Isn't CSD registration free?</summary><p>Yes. Registering on the CSD with National Treasury is free, and you can do it yourself. Our fee is for doing it with you, checking your details are correct, and fixing problems so your registration doesn't get stuck.</p></details>
+      <details><summary>Will you help me win a tender?</summary><p>We help you submit complete, correct, on-time bids, which is where most small businesses lose out. But nobody can guarantee a win, and anyone who promises that is not being honest with you.</p></details>
+      <details><summary>What documents do I need to start?</summary><p>Usually your CIPC company registration, director ID copies, bank confirmation letter and SARS details. We send you an exact checklist after your first message.</p></details>
+      <details><summary>How fast is it?</summary><p>Most registrations are done in a few working days. Some steps depend on SARS, CIPC or CIDB. Need it urgently? Add Express 48-hour for R200 and we prioritise your work.</p></details>
+      <details><summary>How do I pay?</summary><p>By EFT. We send our banking details on WhatsApp or email. Registrations and packs are paid upfront. Bid Help is 50% upfront and 50% before submission.</p></details>
+      <details><summary>Do you work outside Gauteng?</summary><p>Yes. Everything is done online and on WhatsApp, so we can help businesses anywhere in South Africa.</p></details>
+      <details><summary>Can I cancel alerts?</summary><p>Yes, anytime. No contracts.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="order" class="order">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">Get started</span><h2>Tell us what you need</h2><p class="sub">Fill this in and it opens WhatsApp with your message ready. We reply within an hour in business hours.</p></div>
+    <form class="form" id="orderForm" novalidate>
+      <div class="row2">
+        <div class="field"><label for="name">Your name</label><input id="name" required autocomplete="name"></div>
+        <div class="field"><label for="biz">Business name</label><input id="biz" autocomplete="organization"></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="trade">Your trade</label>
+          <select id="trade"><option>Cleaning</option><option>Construction</option><option>Catering</option><option>Security</option><option>Transport</option><option>IT & electronics</option><option>Supply & delivery</option><option>Professional services</option><option>Other</option></select></div>
+        <div class="field"><label for="prov">Province</label>
+          <select id="prov"><option>Gauteng</option><option>Limpopo</option><option>Mpumalanga</option><option>North West</option><option>KwaZulu-Natal</option><option>Free State</option><option>Eastern Cape</option><option>Western Cape</option><option>Northern Cape</option></select></div>
+      </div>
+      <div class="field"><label for="svc">What do you need?</label>
+        <select id="svc">
+          <option value="pack" data-price="1500">Tender-Ready Pack — R1,500</option>
+          <option value="csd" data-price="300">CSD registration — R300</option>
+          <option value="cidb" data-price="500">CIDB registration — R500</option>
+          <option value="combo" data-price="800">CSD + CIDB — R800</option>
+          <option value="profile" data-price="800">Company profile — R800</option>
+          <option value="rfq" data-price="1500" data-from="1">Bid Help (RFQ) — from R1,500</option>
+          <option value="desk" data-price="3500" data-from="1" data-month="1">Tender Desk — from R3,500/month</option>
+          <option value="workshop" data-price="350">Workshop seat — R350</option>
+          <option value="alerts" data-price="149" data-month="1">Tender alerts — R149/month</option>
+          <option value="trial" data-price="0">Free 14-day alerts trial</option>
+        </select></div>
+      <div class="field"><label class="check"><input type="checkbox" id="express"> Add Express 48-hour (+R200)</label></div>
+      <div class="total"><span>Estimated total</span><span class="amt" id="total">R1,500</span></div>
+      <div class="field"><label for="msg">Anything else? (optional)</label><textarea id="msg" rows="3" placeholder="e.g. I already have CSD but my tax status is not compliant"></textarea></div>
+      <div class="field"><label class="check"><input type="checkbox" id="consent" required> I agree that TenderFind SA may contact me about this request. My details are kept private under POPIA.</label></div>
+      <button class="btn btn-primary btn-block" type="submit"><svg class="wa-ico"><use href="#wa"/></svg>Send on WhatsApp</button>
+      <p class="err" id="err">Please add your name and tick the consent box.</p>
+      <p class="form-note">Prefer email? <a href="mailto:jobkgope1@gmail.com">jobkgope1@gmail.com</a></p>
+    </form>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>The next tender in your trade is already out there.</h2>
+    <p>Get your documents sorted now, so you're ready when it counts.</p>
+    <a href="#pack" class="btn btn-gold">Get the Tender-Ready Pack</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><h4>TenderFind SA</h4><p>Tender alerts and hands-on help for small South African businesses.</p></div>
+      <div><h4>Services</h4><a href="#pack">Tender-Ready Pack</a><a href="#services">Registrations</a><a href="#services">Bid Help</a><a href="#alerts">Tender alerts</a><a href="#workshop">Workshop</a></div>
+      <div><h4>Contact</h4><a class="wa-link" data-msg="Hi TenderFind SA" href="#">WhatsApp: 069 289 8507</a><a href="mailto:jobkgope1@gmail.com">jobkgope1@gmail.com</a><a href="/">tenderfind.co.za</a></div>
+    </div>
+    <div class="legal">TenderFind SA is an independent service and is not part of National Treasury, the CSD, SARS, CIDB or any government department. Registering on the CSD is free; our fees are for assistance. We do not guarantee the award of any tender. Personal information is handled in line with POPIA.<br>© <span id="yr"></span> TenderFind SA. All rights reserved.</div>
+  </div>
+</footer>
+
+<a class="float-wa wa-link" data-msg="Hi TenderFind SA, I need help with tenders." href="#" aria-label="Chat on WhatsApp"><svg><use href="#wa"/></svg></a>
+
+<script>
+(function(){
+  var WA = "27692898507";
+  function waUrl(t){ return "https://wa.me/" + WA + "?text=" + encodeURIComponent(t); }
+
+  // WhatsApp links
+  document.querySelectorAll(".wa-link").forEach(function(a){
+    a.href = waUrl(a.getAttribute("data-msg") || "Hi TenderFind SA");
+    a.target = "_blank"; a.rel = "noopener";
+  });
+
+  // Workshop dates (past ones greyed out automatically)
+  var dates = [["2026-11-28","Sat 28 November 2026"],["2026-12-12","Sat 12 December 2026"],["2027-01-05","Tue 5 January 2027"]];
+  var box = document.getElementById("dates"), today = new Date(); today.setHours(0,0,0,0);
+  dates.forEach(function(d){
+    var past = new Date(d[0] + "T00:00:00") < today;
+    var el = document.createElement("div");
+    el.className = "date" + (past ? " past" : "");
+    el.innerHTML = "<b>" + d[1] + "</b>" + (past ? "<span>Done</span>" :
+      '<a class="btn btn-primary" target="_blank" rel="noopener" href="' + waUrl("Hi, I want to book a seat for the Get Tender-Ready workshop on " + d[1] + ".") + '">Book seat</a>');
+    box.appendChild(el);
+  });
+
+  // Order form
+  var svc = document.getElementById("svc"), exp = document.getElementById("express"), tot = document.getElementById("total");
+  function fmt(n){ return "R" + n.toLocaleString("en-ZA").replace(/ |\s/g, ","); }
+  function update(){
+    var o = svc.options[svc.selectedIndex], p = +o.dataset.price;
+    var canExpress = ["pack","csd","cidb","combo","profile"].indexOf(o.value) > -1;
+    exp.disabled = !canExpress; if(!canExpress) exp.checked = false;
+    if (exp.checked) p += 200;
+    tot.textContent = p === 0 ? "Free" : (o.dataset.from ? "from " : "") + fmt(p) + (o.dataset.month ? "/month" : "");
+  }
+  svc.addEventListener("change", update); exp.addEventListener("change", update); update();
+
+  document.querySelectorAll("[data-pick]").forEach(function(b){
+    b.addEventListener("click", function(){ svc.value = b.dataset.pick; update(); });
+  });
+
+  document.getElementById("orderForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var name = document.getElementById("name").value.trim();
+    var ok = name && document.getElementById("consent").checked;
+    document.getElementById("err").style.display = ok ? "none" : "block";
+    if (!ok) return;
+    var o = svc.options[svc.selectedIndex];
+    var lines = [
+      "Hi TenderFind SA, I'd like to get started.",
+      "Name: " + name,
+      "Business: " + (document.getElementById("biz").value.trim() || "-"),
+      "Trade: " + document.getElementById("trade").value,
+      "Province: " + document.getElementById("prov").value,
+      "Service: " + o.text + (exp.checked ? " + Express 48h" : ""),
+      "Estimated total: " + tot.textContent
+    ];
+    var m = document.getElementById("msg").value.trim();
+    if (m) lines.push("Note: " + m);
+    window.open(waUrl(lines.join("\n")), "_blank", "noopener");
+  });
+
+  document.getElementById("yr").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
